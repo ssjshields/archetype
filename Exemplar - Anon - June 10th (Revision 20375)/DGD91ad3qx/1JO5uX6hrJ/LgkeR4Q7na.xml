@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+
+	<theme name="monster-party-frame" ref="resizableframe">
+		<param name="border"><border>0,0,0,0</border></param>
+		<param name="background"><image>frame-draggable-alpha.background</image></param>
+		<theme name="content" ref="-defaults">
+		<param name="defaultGap"><dimension>5,5</dimension></param>
+		<param name="smallGap"><dimension>8,8</dimension></param>
+		<param name="mediumGap"><dimension>10,10</dimension></param>
+		<param name="largeGap"><dimension>15,15</dimension></param>
+		<param name="namedGaps"><map/></param>
+		<param name="border"><border>7,8,3,8</border></param>
+			<theme name="button" ref="-defaults" allowWildcard="true">
+				<param name="background"><image>ui-button.background</image></param>
+				<param name="overlay"><image>icon1</image></param>
+			</theme> 
+			<theme name="button-move" ref="-defaults" allowWildcard="true">
+				<param name="background"><image>ui-button.background</image></param>
+				<param name="overlay"><image>icon-unlock</image></param>
+			</theme>
+		</theme>
+	</theme>
+	
+	<theme name="monster-party-frame-locked" ref="monster-party-frame">
+		<param name="titleAreaTop"><int>8</int></param>
+		<param name="titleAreaLeft"><int>11</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>0</int></param>
+		<param name="border"><border>0</border></param>
+		<param name="background"><image>frame-draggable-alpha.background</image></param>
+		<param name="border"><border>0,8,3,8</border></param>
+		<theme name="content" ref="-defaults">
+			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="namedGaps"><map/></param>
+			<param name="border"><border>7,0,0,0</border></param>
+			<theme name="button" ref="-defaults" allowWildcard="true">
+				<param name="background"><image>ui-button.background</image></param>
+				<param name="overlay"><image>icon1</image></param>
+			</theme>
+			<theme name="button-move" ref="-defaults" allowWildcard="true">
+				<param name="background"><image>ui-button.background</image></param>
+				<param name="overlay"><image>icon2</image></param> 
+			</theme>
+		</theme>
+	</theme>
+	
+	<theme name="monster-slot-empty" ref="-defaults">
+		<param name="background"><image>none</image></param>
+		<param name="overlay"><image>Party-Frame-Box-Disabled</image></param>
+	</theme>
+	
+	<theme name="monster-slot" ref="-defaults">
+		<param name="background"><image>Party-Frame-Box</image></param>
+		<param name="minWidth"><int>31</int></param>
+		<param name="minHeight"><int>32</int></param>
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar-green.*</image></param>
+			<param name="border"><border>0,0,0,0</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-orange" ref="monster-slot">
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar-orange.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-red" ref="monster-slot">
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-purple" ref="monster-slot">
+		<param name="background"><image>Party-Frame-Box-Disabled</image></param>
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+	
+	<theme name="monster-slot-h" ref="-defaults">
+		<param name="background"><image>Party-Frame-Box-Disabled</image></param>
+		<param name="background"><image>ui-button.background</image></param>
+		<param name="minWidth"><int>46</int></param>
+		<param name="minHeight"><int>48</int></param>
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar-green.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+	<theme name="monster-slot-h-empty" ref="monster-slot-h"/>
+
+	<theme name="monster-slot-h-orange" ref="monster-slot-h">
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar-orange.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-h-red" ref="monster-slot-h">
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-h-purple" ref="monster-slot-h">
+		<param name="background"><image>monster-slot-purple</image></param>
+		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>mi-hpbar.*</image></param>
+			<param name="border"><border>background.border</border></param>
+			<param name="minWidth"><int>100</int></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-selected" ref="-defaults">
+		<param name="background"><image>monster-slot-selected</image></param>
+	</theme>
+</themes>

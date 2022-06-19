@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+
+	<theme name="guildwindow" ref="base-tabbed-frame">
+	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<param name="fadeDurationActivate"><int>150</int></param>
+	<param name="fadeDurationDeactivate"><int>210000</int></param>
+	<param name="background"><image>Team-Window</image></param>
+	<param name="titleAreaTop"><int>8</int></param>
+		<param name="titleAreaLeft"><int>44</int></param>
+		<param name="titleAreaRight"><int>-30</int></param>
+		<param name="titleAreaBottom"><int>30</int></param>
+		<param name="closeButtonX"><int>-26</int></param>
+		<param name="closeButtonY"><int>12</int></param>
+		<theme name="settings-frame" ref="resizableframe">
+			<param name="background"><image>ui-frame.background</image></param>
+			<theme name="changemotd" ref="-defaults" allowWildcard="true">
+				<param name="background"><image>none</image></param>
+				<param name="border"><border>15,15,5,5</border></param>
+				<param name="defaultGap"><dimension>5,5</dimension></param>
+				<param name="smallGap"><dimension>8,8</dimension></param>
+				<param name="mediumGap"><dimension>10,10</dimension></param>
+				<param name="largeGap"><dimension>15,15</dimension></param>
+				<param name="namedGaps"><map/></param>
+				<param name="maxWidth"><int>150</int></param>
+				<param name="maxHeight"><int>150</int></param>
+				<theme name="scrollpane">
+					<param name="background"><image>none</image></param>
+					<param name="overlay"><image>none</image></param>
+					<theme name="hscrollbar" ref="hscrollbar"/>  
+					<theme name="vscrollbar" ref="vscrollbar-white"/>
+					<param name="border"><border>0,0,0,0</border></param>
+					<param name="maxWidth"><int>32767</int></param>
+					<param name="maxHeight"><int>32767</int></param>
+					<param name="hasDragButton"><bool>false</bool></param>
+					<param name="autoScrollArea"><int>5</int></param>
+					<param name="autoScrollSpeed"><int>10</int></param>
+					<param name="minHeight"><int>170</int></param>
+					<theme name="editfield" ref="editfield" allowWildcard="true">
+						<param name="background"><image>ui-inputbox.background</image></param>
+						<param name="font"><font>pb-dark</font></param>
+						<theme name="renderer" ref="-input">
+							<param name="font"><font>pb-dark</font></param>
+						</theme>
+						<param name="border"><border>3</border></param>
+						<param name="passwordChar"><int>35</int></param>
+						<param name="maxWidth"><int>32767</int></param>
+						<param name="columns"><int>25</int></param>
+						<param name="mouseCursor"><cursor>cursor.text</cursor></param>
+						<param name="autocompletion-height"><int>250</int></param>
+						<param name="minWidth"><int>478</int></param>
+					</theme>
+				</theme>
+			</theme>
+		</theme>
+		<theme name="dialoglayout" ref="dialoglayout">
+			<param name="border"><border>0,10,0,0</border></param>
+			<theme name="tabbedpane" ref="base-tabbed-pane">
+				<param name="minWidth"><int>540</int></param>
+				<param name="minHeight"><int>330</int></param>
+				<theme name="container" ref="container">
+					<param name="border"><border>0,0,0,0</border></param>
+					<theme name="dialoglayout" ref="dialoglayout">
+						<theme name="motdscroll">
+							<param name="background"><image>none</image></param>
+							<param name="overlay"><image>none</image></param>
+							<theme name="hscrollbar" ref="hscrollbar"/> 
+							<theme name="vscrollbar" ref="vscrollbar-white"/>
+							<param name="border"><border>3</border></param>
+
+							<param name="maxWidth"><int>32767</int></param>
+							<param name="maxHeight"><int>32767</int></param>
+							<param name="hasDragButton"><bool>false</bool></param>
+							<param name="autoScrollArea"><int>5</int></param>
+							<param name="autoScrollSpeed"><int>10</int></param>
+							<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
+							<param name="minWidth"><int>450</int></param>
+							<param name="minHeight"><int>1</int></param>
+					
+							<theme name="textarea" ref="-defaults">
+								<param name="background"><image>none</image></param>
+								<param name="minWidth"><int>450</int></param>
+								<param name="fonts"><map>
+									<param name="default"><font>pb-dark</font></param>
+								</map></param>
+								<param name="classes"><map/></param>
+								<param name="images"><map>
+									<param name="icon-gm"><image>icon-gm</image></param>
+									<param name="icon-cm"><image>icon-cm</image></param>
+									<param name="icon-hgm"><image>icon-hgm</image></param>
+									<param name="icon-dev"><image>icon-dev</image></param>
+									<param name="icon-adm"><image>icon-admin</image></param>
+								</map></param>
+							</theme>
+						</theme>
+						<theme name="button" ref="button">
+							<param name="border"><border>0,30,0,30</border></param>
+						</theme>
+						<theme name="editfield" ref="editfield">
+							<param name="background"><image>ui-inputbox.background</image></param>
+							<param name="font"><font>pb-dark</font></param>
+							<theme name="renderer" ref="-input">
+								<param name="font"><font>pb-dark</font></param>
+								<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+							</theme>
+						</theme>
+						<theme name="scrollpane">
+							<param name="background"><image>none</image></param>
+							<param name="overlay"><image>none</image></param>
+							<theme name="hscrollbar" ref="hscrollbar"/> 
+							<theme name="vscrollbar" ref="vscrollbar-white"/>
+							<param name="border"><border>0</border></param>
+							<param name="minWidth"><int>100</int></param>
+							<param name="minHeight"><int>100</int></param>
+							<param name="maxWidth"><int>32767</int></param>
+							<param name="maxHeight"><int>32767</int></param>
+							<param name="hasDragButton"><bool>false</bool></param>
+							<param name="autoScrollArea"><int>5</int></param>
+							<param name="autoScrollSpeed"><int>10</int></param>
+							<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
+							<theme name="dialoglayout" ref="-defaults">
+								<param name="background"><image>none</image></param>
+								<param name="border"><border>0,0,0,0</border></param>
+								<param name="defaultGap"><dimension>3,3</dimension></param>
+								<param name="smallGap"><dimension>8,8</dimension></param>
+								<param name="mediumGap"><dimension>10,10</dimension></param>
+								<param name="largeGap"><dimension>15,15</dimension></param>
+								<param name="namedGaps"><map/></param>
+								<param name="minWidth"><int>300</int></param>
+								<param name="maxWidth"><int>300</int></param>
+								<theme name="button" ref="-defaults" allowWildcard="true">
+									<param name="minWidth"><int>100</int></param>
+									<param name="width"><int>100</int></param>
+									<param name="border"><border>5,0</border></param>
+									<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+								</theme>
+
+								<theme name="label-title-icon" ref="label" allowWildcard="true">
+									<param name="border"><border>1,5,0,5</border></param>
+									<param name="minWidth"><int>24</int></param>
+									<param name="font"><font>pb-dark</font></param>
+								</theme>
+								<theme name="label-title-small" ref="label" allowWildcard="true">
+									<param name="background"><image>ui-header.background</image></param>
+									<param name="textAlignment"><enum type="alignment">left</enum></param>
+									<param name="border"><border>6</border></param>
+									<param name="minWidth"><int>100</int></param>
+									<param name="font"><font>pb-dark</font></param>
+								</theme>
+								<theme name="label-title-small2" ref="label" allowWildcard="true">
+									<param name="background"><image>ui-header.background</image></param>
+									<param name="textAlignment"><enum type="alignment">left</enum></param>
+									<param name="border"><border>6</border></param>
+									<param name="minWidth"><int>100</int></param>
+									<param name="font"><font>pb-dark</font></param>
+								</theme>
+
+								<theme name="label-title-small3" ref="label" allowWildcard="true">
+									<param name="background"><image>ui-header.background</image></param>
+									<param name="textAlignment"><enum type="alignment">left</enum></param>
+									<param name="border"><border>1</border></param>
+									<param name="minWidth"><int>90</int></param>
+									<param name="font"><font>pb-dark</font></param>
+									<param name="textAlignment"><enum type="alignment">center</enum></param>
+								</theme>
+
+								<theme name="label-title-small4" ref="label" allowWildcard="true">
+									<param name="background"><image>ui-header.background</image></param>
+									<param name="textAlignment"><enum type="alignment">left</enum></param>
+									<param name="border"><border>1</border></param>
+									<param name="minWidth"><int>60</int></param>
+									<param name="font"><font>pb-dark</font></param>
+									<param name="textAlignment"><enum type="alignment">center</enum></param>
+								</theme>
+
+								<theme name="label-value-icon" ref="label-title-icon" allowWildcard="true">
+									<param name="background"><image>ui-inputbox.background</image></param>
+								</theme>
+								<theme name="label-value-small" ref="label-title-small" allowWildcard="true">
+									<param name="background"><image>ui-inputbox.background</image></param>
+								</theme>
+								<theme name="label-value-small2" ref="label-title-small2" allowWildcard="true">
+									<param name="background"><image>ui-inputbox.background</image></param>
+								</theme>
+								<theme name="label-value-small3" ref="label-title-small3" allowWildcard="true">
+									<param name="background"><image>ui-inputbox.background</image></param>
+								</theme>
+								<theme name="label-value-small4" ref="label-title-small3" allowWildcard="true">
+									<param name="background"><image>ui-inputbox.background</image></param>
+								</theme>
+
+								<theme name="label-title-perm" ref="label" allowWildcard="true">
+									<param name="background"><image>ui-header.background</image></param>
+									<param name="border"><border>5,5,5,5</border></param>
+									<param name="minWidth"><int>130</int></param>
+									<param name="maxWidth"><int>300</int></param>
+									<param name="font"><font>pb-dark</font></param>
+									<param name="textAlignment"><enum type="alignment">center</enum></param>
+								</theme>
+
+								<theme name="label-title-perm-val" ref="label-title-perm">
+									<param name="minWidth"><int>100</int></param>
+									<param name="maxWidth"><int>150</int></param>
+								</theme>
+
+								<theme name="editfield" ref="editfield">
+									<param name="minWidth"><int>130</int></param>
+									<param name="maxWidth"><int>130</int></param>
+								</theme>
+
+								<theme name="togglebutton" ref="togglebutton">
+									<param name="minWidth"><int>100</int></param>
+									<param name="maxWidth"><int>150</int></param>
+								</theme>
+							</theme>
+						</theme>
+					</theme>
+				</theme>
+				<param name="inputMap"><inputMapDef>
+					<action name="nextTab">CTRL TAB</action>
+					<action name="prevTab">CTRL SHIFT TAB</action>
+				</inputMapDef></param>
+			</theme>
+		</theme>
+	</theme>
+
+	<theme name="member-table" ref="table" allowWildcard="true">
+		<param name="columnWidths">
+			<map>
+				<param name="0"><int>font.EM * 14</int></param>
+			</map>
+		</param>
+		<theme name="box-layout-row" ref="-defaults" allowWildcard="true">
+			<param name="background"><image>ui-table-row.background</image></param>
+			<param name="border"><border>0,0</border></param>
+			<param name="spacing"><int>30</int></param>
+			<param name="alignment"><enum type="alignment">CENTER</enum></param>
+			<theme name="label" ref="label">
+				<param name="border"><border>0,0</border></param>
+			</theme>
+		</theme>
+	</theme>
+
+	<theme name="changerank" ref="-defaults" allowWildcard="true">
+		<param name="background"><image>none</image></param>
+		<param name="border"><border>40,10,10,10</border></param>
+		<param name="defaultGap"><dimension>5,5</dimension></param>
+		<param name="smallGap"><dimension>8,8</dimension></param>
+		<param name="mediumGap"><dimension>10,10</dimension></param>
+		<param name="largeGap"><dimension>15,15</dimension></param>
+		<param name="namedGaps"><map/></param>
+	</theme>
+
+	<theme name="headshot-row" ref="label" allowWildcard="true">
+		<param name="font"><font>pb-dark</font></param>
+		<param name="border"><border>0,0,0,0</border></param>
+		<param name="background"><image>ui-table-row.background</image></param>
+		<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+</themes>
