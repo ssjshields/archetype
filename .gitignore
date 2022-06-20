@@ -6,5 +6,7 @@ res/
 shaders/
 sprites/
 strings/
+themes/android/
+themes/default/
 data.pak
 resources.zip
