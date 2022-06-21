@@ -1500,7 +1500,7 @@
 	</images>
 	
 	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
-		<area name="poke-summary-dex" xywh="*" inset="-239,-80,-100,-280"/>
+		<area name="poke-summary-dex" xywh="*" inset="-211,0,0,0"/>
 	</images>
 	
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
