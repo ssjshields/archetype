@@ -227,8 +227,6 @@
 	<theme name="broker-window" ref="base-tabbed-frame">
 		<param name="background"><image>GTL-Window</image></param>
 	    <param name="fadeColorInactive"><color>#99FFFFFF</color></param>
-	    <param name="fadeDurationActivate"><int>150</int></param>
-	    <param name="fadeDurationDeactivate"><int>210000</int></param>
 		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>50</int></param>
 		<param name="titleAreaRight"><int>-30</int></param>
