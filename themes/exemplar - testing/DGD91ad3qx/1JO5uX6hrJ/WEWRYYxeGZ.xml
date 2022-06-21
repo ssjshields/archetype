@@ -174,8 +174,9 @@
 
     <theme name="monstergear-pic" ref="label" allowWildcard="true">
         <param name="textAlignment"><enum type="alignment">top</enum></param>
+		<param name="background"><image>PokeDex-Mon-Background</image></param>
         <param name="border"><border>0,0,0,0</border></param>
-        <param name="font"><font>alphabeta-pokename</font></param>
+        <param name="font"><font>symbols-white</font></param>
     </theme>
 
     <theme name="label-title-dex" ref="label" allowWildcard="true">

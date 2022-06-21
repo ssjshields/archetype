@@ -1659,4 +1659,7 @@
 		</composed>
 	</images>
 	
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
+	<area name="PokeDex-Mon-Background" xywh="*"/>
+	</images>
 </themes>
