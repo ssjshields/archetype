@@ -4,10 +4,6 @@
 	<theme name="monster-frame" ref="resizableframe">
     <param name="overlay"><image>poke-summary-arrow</image></param>
 	<param name="background"><image>Poke-Summary-Window</image></param>
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
-	<param name="fadeDurationActivate"><int>150</int></param>
-    <param name="fadeDurationDeactivate"><int>210000</int></param>
-		
 		<param name="border"><border>0,5,0,0</border></param>
 
 		<param name="maxWidth"><int>439</int></param>
