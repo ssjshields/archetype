@@ -1368,7 +1368,7 @@
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/alert-background-new.png" filter="lineal">
-		<area name="alert-background-new" xywh="*"/>
+		<area name="alert-background-new" xywh="*" inset="0,-39,0,0"/>
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/mail-alert-icon-new.png" filter="lineal">
