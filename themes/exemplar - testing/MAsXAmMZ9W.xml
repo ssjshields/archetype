@@ -1495,6 +1495,10 @@
 		</composed>
 	</images>
 	
+	<images file="res/custom/x2eLtlMVtE/poke-summary-arrow.png" filter="lineal">
+		<area name="poke-summary-arrow" xywh="*"/>
+	</images>
+	
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
 		<area name="MainTCTexture-Overlay" xywh="*"/>
 	</images>

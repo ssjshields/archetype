@@ -2,6 +2,7 @@
 <themes>
 
 	<theme name="monster-frame" ref="resizableframe">
+    <param name="overlay"><image>poke-summary-arrow</image></param>
 	<param name="background"><image>Poke-Summary-Window</image></param>
 	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
 	<param name="fadeDurationActivate"><int>150</int></param>
@@ -47,19 +48,20 @@
 		</theme>
 
 		<theme name="itemplate" ref="-defaults">
-			<param name="background"><image>none</image></param>
+			<!--<param name="background"><image>none</image></param>
 			<param name="minHeight"><int>34</int></param>
-			<param name="maxHeight"><int>34</int></param>
-			<param name="border"><border>10,22</border></param>
+			<param name="maxHeight"><int>34</int></param>-->
+			<param name="border"><border>120,22</border></param>
 			<theme name="label" ref="-defaults">
 				<param name="font"><font>alphabeta-item-held</font></param>		
 			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-			
 			</theme>
-			<theme name="label2" ref="-defaults">
+
+
+	<!--<theme name="label2" ref="-defaults">
 				<param name="font"><font>alphabeta-item-held</font></param>
 				<param name="border"><border>0,4,1,0</border></param>
-			</theme>
+			</theme>-->	
 			<param name="defaultGap"><dimension>2,0</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
