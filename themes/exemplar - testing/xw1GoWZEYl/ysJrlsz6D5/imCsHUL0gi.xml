@@ -151,8 +151,8 @@
             <param name="largeGap"><dimension>15,15</dimension></param>
             <param name="namedGaps"><map/></param>
             <theme name="label" ref="label">
-                <param name="fadeDurationShow"><int>0</int></param>
-                <param name="fadeDurationHide"><int>0</int></param>
+                <param name="fadeDurationShow"><int>200</int></param>
+                <param name="fadeDurationHide"><int>200</int></param>
                 <param name="minWidth"><int>150</int></param>
                 <param name="font"><font>alphabeta-highlight-button</font></param>
                 <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
