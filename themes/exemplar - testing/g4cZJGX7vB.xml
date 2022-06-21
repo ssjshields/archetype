@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
+	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
+		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,B3" splity="T3,B3"/>
+		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#4aaae1"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#78c2ea"/>
+		</animation>
+	</images>
+
 	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="nearest">
-		<grid name="ui-frame.background" weightsX="0,1,0" weightsY="0,0,1,0">
+		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="5,4,10,11"/>
 			<area xywh="18,4,10,11" tiled="true"/>
 			<area xywh="30,4,10,11"/>
@@ -32,7 +40,7 @@
 			<area xywh="67,133,6,5"/>
 		</grid>
 
-	<grid name="ui-frame-red.background" weightsX="0,1,0" weightsY="0,0,1,0" inset="0,5,0,0">
+	<grid name="ui-frame-red.background-old" weightsX="0,1,0" weightsY="0,0,1,0" inset="0,5,0,0">
 			<area xywh="46,4,10,11"/>
 			<area xywh="59,4,10,11" tiled="true"/>
 			<area xywh="71,4,10,11"/>
@@ -46,7 +54,7 @@
 			<area xywh="58,69,10,5"/>
 			<area xywh="71,69,10,5"/>
 		</grid>
-		<grid name="ui-frame-green.background" weightsX="0,1,0" weightsY="0,0,1,0">
+		<grid name="ui-frame-green.background-old" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="90,4,10,11"/>
 			<area xywh="103,4,10,11" tiled="true"/>
 			<area xywh="115,4,10,11"/>
@@ -60,6 +68,21 @@
 			<area xywh="102,69,10,5"/>
 			<area xywh="115,69,10,5"/>
 		</grid>
+
+		<composed name="ui-frame.background">
+            <alias ref="ui-frame.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+        </composed>
+
+        <composed name="ui-frame-red.background">
+            <alias ref="ui-frame-red.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+        </composed>
+
+        <composed name="ui-frame-green.background">
+            <alias ref="ui-frame-green.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+        </composed>
 
 		<grid name="ui-inner-frame.background" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="5,82,10,11"/>
@@ -75,7 +98,22 @@
 			<area xywh="33,133,10,5"/>
 			<area xywh="67,133,10,5"/>
 		</grid>
+		
+		<composed name="ui-frame.background">
+            <alias ref="ui-frame.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+        </composed>
 
+        <composed name="ui-frame-red.background">
+            <alias ref="ui-frame-red.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+        </composed>
+
+        <composed name="ui-frame-green.background">
+            <alias ref="ui-frame-green.background-old"/>
+            <alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+        </composed>
+		
 		<grid name="ui-inner-frame-tabbed.background" weightsX="0,1,0" inset="25,0,0,0" weightsY="0,0,1,0">
 			<area xywh="5,82,10,11"/>
 			<area xywh="33,82,10,11" tiled="true"/>
@@ -748,5 +786,6 @@
 			<alias ref="ui-popup-button.selected" if="selected" />
 			<alias ref="ui-popup-button.default"/>
 		</select>
+		
 	</images>
 </themes>
