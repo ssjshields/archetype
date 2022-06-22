@@ -290,7 +290,7 @@
           <font>battle-item</font>
         </param>
         <param name="border">
-          <border>0,0,25,0</border>
+          <border>0,2,0,0</border>
         </param>
       </theme>
     </theme>
@@ -302,10 +302,10 @@
         <int>300</int>
       </param>
       <param name="maxHeight">
-        <int>300</int>
+        <int>210</int>
       </param>
       <param name="minHeight">
-        <int>300</int>
+        <int>210</int>
       </param>
       <theme name="dialoglayout" ref="-dialog">
         <param name="defaultGap">

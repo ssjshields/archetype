@@ -2,7 +2,7 @@
 <themes>
 
 	<fontDef name="battle" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#BF000000" size="47" hinting="Full"/>
-	<fontDef name="battle-item" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium"/>
+	<fontDef name="battle-item" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="24" hinting="Medium"/>
 	<fontDef name="battle-map" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#BF000000" size="48" hinting="Full"/>
 	<fontDef name="braille" ref="battle"/>
 
