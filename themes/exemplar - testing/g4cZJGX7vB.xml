@@ -460,12 +460,12 @@
 		<select name="ui-checkbox.background">
 			<composed if="disabled + selected + hover">
 				<alias ref="ui-button.disabled"/>
-				<alias ref="ui-checkbox.animation"/>
 				<alias ref="ui-button.hover-animation"/>
+				<alias ref="ui-checkbox.animation"/>
 			</composed>
 			<composed if="hover + selected">
-				<alias ref="ui-checkbox.selected"/>
 				<alias ref="ui-button.hover-animation"/>
+				<alias ref="ui-checkbox.animation"/>
 			</composed>
 			<composed if="disabled + selected">
 				<alias ref="ui-button.disabled"/>
