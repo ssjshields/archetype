@@ -602,8 +602,8 @@
 		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="9,31,-2,16"/>
 		<area name="battle-ui-self-slim" xywh="815,520,299,28"/>
 
-		<area name="battle-ability" xywh="674,15,136,9"/>
-		<area name="battle-ability-flip" xywh="674,15,-136,9"/>
+		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>
+		<area name="battle-ability-flip" xywh="674,15,-136,9" inset="-23,60,1,0"/>
 
 		<area name="battle-button.default" xywh="321,145,96,30"/>
 		<area name="battle-button.hover" xywh="321,176,96,30"/>
