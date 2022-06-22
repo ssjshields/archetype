@@ -4,9 +4,21 @@
 	<fontDef name="battle" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#BF000000" size="47" hinting="Full"/>
 	<fontDef name="battle-name" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="0.9" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="24" hinting="Medium" offsetY="-1"/>
 	<fontDef name="battle-hp-text" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="0.9" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="24" hinting="Medium" offsetY="-1" offsetX="-24"/>
-	<fontDef name="battle-item" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="24" hinting="Medium"/>
+	<fontDef name="battle-item" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="24" hinting="Medium" offsetY="25" offsetX="-710"/>
 	<fontDef name="battle-map" filename="res/fonts/battle.ttf" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#BF000000" size="48" hinting="Full"/>
 	<fontDef name="braille" ref="battle"/>
+	<fontDef name="move-name" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#c7d3d5" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+		<fontParam if="disabled" color="#9fabaf"/>
+		<fontParam if="hover" color="#FFFFFF"/>
+		<fontParam if="selected" color="#FFFFFF"/>
+		<fontParam if="keyboardFocus" color="#FFFFFF"/>
+	</fontDef>
+	<fontDef name="move-pp" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#7f9096" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+		<fontParam if="disabled" color="#9fabaf"/>
+		<fontParam if="hover" color="#FFFFFF"/>
+		<fontParam if="selected" color="#FFFFFF"/>
+		<fontParam if="keyboardFocus" color="#FFFFFF"/>
+	</fontDef>
 
 	<fontDef name="alphabeta-highlight-button" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#7f9096" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="#9fabaf"/>

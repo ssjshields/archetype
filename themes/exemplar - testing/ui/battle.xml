@@ -107,12 +107,12 @@
 	</theme>
 
 	<theme name="battle-move-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-button</font></param>
-		<param name="border"><border>9,10,8,92</border></param>
+		<param name="font"><font>move-name</font></param>
+		<param name="font2"><font>move-pp</font></param>
+		<param name="border"><border>13,12,7,92</border></param>
 		<param name=""><image>button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>	
-		<param name="textAlignment2"><enum type="alignment">LEFT</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOMLEFT</enum></param>
 		<param name="minWidth"><int>209</int></param>
 		<param name="minHeight"><int>41</int></param>
 		<theme name="eff-nve" ref="label">
@@ -143,7 +143,6 @@
 		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 	</theme>
 	<theme name="battle-move-button-left" ref="battle-move-button" allowWildcard="true">
-		<param name="textAlignment2"><enum type="alignment">RIGHT</enum></param>
 	</theme>
 
 	<theme name="battle-button-return" ref="-defaults" allowWildcard="true">
@@ -257,8 +256,8 @@
 		<param name="maxHeight"><int>350</int></param>
 		<param name="minHeight"><int>350</int></param>
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="border"><border>0</border></param>
-			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="border"><border>0,20,0,0</border></param>
+			<param name="defaultGap"><dimension>740,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
@@ -267,7 +266,9 @@
 			<param name="namedGaps"><map/></param>
 			<theme name="label-black" ref="-defaults" allowWildcard="true">
 				<param name="font"><font>battle-item</font></param>
-				<param name="border"><border>0,2,0,0</border></param>
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="minHeight"><int>210</int></param>
+				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 			</theme>
 		</theme>
 		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
@@ -275,6 +276,7 @@
 			<param name="maxWidth"><int>300</int></param>
 			<param name="maxHeight"><int>210</int></param>
 			<param name="minHeight"><int>210</int></param>
+			<param name="scrollbarsAlwaysVisible"><bool>true</bool></param>
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
