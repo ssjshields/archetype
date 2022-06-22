@@ -178,7 +178,7 @@
 		<param name="titleAreaBottom"><int>30</int></param>
 		<param name="border"><border>10,10</border></param>
 		<param name="minWidth"><int>580</int></param>
-		<param name="minHeight"><int>420</int></param>
+		<param name="minHeight"><int>460</int></param>
 		<param name="maxWidth"><int>580</int></param>
 		<param name="maxHeight"><int>420</int></param>
 		<param name="closeButtonX"><int>-26</int></param>

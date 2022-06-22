@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
+
+	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
+		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,B3" splity="T3,B3"/>
+		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#4aaae1"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#78c2ea"/>
+		</animation>
+	</images>
+	
 	<images file="res/custom/WGRfhUrISa/text-bubble.png" filter="nearest">
 		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
 		<area name="text-bubble-arrow.background" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32"/>
@@ -459,33 +468,33 @@
 	</images>
 
 	<images file="effectivity_buttons_lang" filter="nearest">
-		<area name="eff.status" xywh="12,107,104,18"/>
-		<area name="eff.immune" xywh="12,59,104,18"/>
-		<area name="eff.se" xywh="12,2,104,18"/>
-		<area name="eff.e" xywh="12,21,104,18"/>
-		<area name="eff.nve" xywh="12,39,104,18"/>
-		<area name="eff.bg" xywh="12,83,104,18"/>
-		<composed name="eff.nve.background">
-			<alias ref="eff.bg"/>
-			<alias ref="eff.nve" />
-		</composed>
-		<composed name="eff.se.background">
-			<alias ref="eff.bg"/>
-			<alias ref="eff.se" />
-		</composed>
-		<composed name="eff.e.background">
-			<alias ref="eff.bg"/>
-			<alias ref="eff.e" />
+		<area name="eff.bg" xywh="0,0,49,14" inset="2,143,2,-88"/>
+		<area name="eff.status" xywh="0,20,49,14" inset="2,143,2,-88"/>
+		<area name="eff.immune" xywh="0,40,49,14" inset="2,143,2,-88"/>
+		<area name="eff.nve" xywh="0,60,49,14" inset="2,143,2,-88"/>
+		<area name="eff.e" xywh="0,80,49,14" inset="2,143,2,-88"/>
+		<area name="eff.se" xywh="0,100,49,14" inset="2,143,2,-88"/>
+
+		<composed name="eff.status.background">
+			<alias ref="eff.bg" tint="#91a2f7"/>
+			<alias ref="eff.status"/>
 		</composed>
 		<composed name="eff.immune.background">
-			<alias ref="eff.bg"/>
-			<alias ref="eff.immune" />
+			<alias ref="eff.bg" tint="#854f9c"/>
+			<alias ref="eff.immune"/>
 		</composed>
-		<composed name="eff.status.background">
-			<alias ref="eff.bg"/>
-			<alias ref="eff.status" />
+		<composed name="eff.nve.background">
+			<alias ref="eff.bg" tint="#ff4040"/>
+			<alias ref="eff.nve"/>
 		</composed>
-
+		<composed name="eff.e.background">
+			<alias ref="eff.bg" tint="#ffffff"/>
+			<alias ref="eff.e"/>
+		</composed>
+		<composed name="eff.se.background">
+			<alias ref="eff.bg" tint="#de8a00"/>
+			<alias ref="eff.se"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/2sTxAVRCoW/pc_slots.png" filter="nearest">
@@ -531,11 +540,11 @@
 	</images>
 
 	<images file="res/custom/bW6A5DARII/battle-hud.png" filter="nearest">
-		<area name="progress.progressImage" xywh="27,21,1,2" tint="#90F8A0" inset="5,2"/>
+		<area name="progress.progressImage" xywh="60,21,1,2" tint="#90F8A0" inset="5,2"/>
 		<area name="xp-progressbar.progressImage" xywh="27,21,1,2" tint="#3035CE" inset="5,2"/>
-		<area name="health-progressbar.progressImage" xywh="20,9,1,4" inset="1,1,1,1"/>
-		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="1,1,1,1"/>
-		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,1,1,1"/>
+		<area name="health-progressbar.progressImage" xywh="20,9,1,4" inset="-34,0,34,0"/>
+		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="-34,0,34,0"/>
+		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="-34,0,34,0"/>
 		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="1,1,1,1"/>
 
 		<grid name="xp-progressbar.background" weightsX="0,1,0" weightsY="1">
@@ -568,23 +577,24 @@
 			<area xywh="351,41,5,2"/>
 		</grid>
 
-		<grid name="health-progressbar.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="35,8,2,6"/>
-			<area xywh="37,8,1,6"/>
-			<area xywh="46,8,2,6"/>
-		</grid>
+        <grid name="health-progressbar.background" weightsX="0,1,0" weightsY="1">
+            <area xywh="35,8,2,2"/>
+            <area xywh="37,8,1,2"/>
+            <area xywh="46,8,2,2"/>
+        </grid>
 
-		<grid name="health-progressbar-orange.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="35,8,2,6"/>
-			<area xywh="37,8,1,6"/>
-			<area xywh="46,8,2,6"/>
-		</grid>
+        <grid name="health-progressbar-orange.background" weightsX="0,1,0" weightsY="1">
+            <area xywh="35,8,2,2"/>
+            <area xywh="37,8,1,2"/>
+            <area xywh="46,8,2,2"/>
+        </grid>
 
-		<grid name="health-progressbar-green.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="35,8,2,6"/>
-			<area xywh="37,8,1,6"/>
-			<area xywh="46,8,2,6"/>
-		</grid>
+        <grid name="health-progressbar-green.background" weightsX="0,1,0" weightsY="1">
+            <area xywh="35,8,2,2"/>
+            <area xywh="37,8,1,2"/>
+            <area xywh="46,8,2,2"/>
+        </grid>
+
 		<area name="battle-ui-enemy" xywh="0,36,307,28"/>
 		<area name="battle-ui-float" xywh="306,65,307,28"/>
 		<area name="battle-ui-self" xywh="0,66,299,40"/>
@@ -1182,9 +1192,15 @@
 		</animation>
 
 	</images>
+	
 	<images file="res/custom/2sTxAVRCoW/pc-window.png" filter="nearest">
-		<area name="pc-frame" xywh="*"/>
+		<area name="pc-frame-Background" xywh="*"/>
+		<composed name="pc-frame">
+			<alias ref="pc-frame-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
+	
 	<images file="res/contestgui.png" filter="nearest">
 		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>
 		<area name="ui-contest-top.background" xywh="91,8,33,7" splitx="L5,R5" splity="T5,B0"/>
@@ -1252,7 +1268,11 @@
 	</images>
 	
 	<images file="res/custom/UYAXMcaF2k/FAQ-Window.png" filter="lineal">
-		<area name="FAQ-Window" xywh="*"/>
+		<area name="FAQ-Window-Background" xywh="*"/>
+		<composed name="FAQ-Window">
+			<alias ref="FAQ-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/613wCZrdxv/bg.png" filter="nearest">
@@ -1268,27 +1288,51 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Window.png" filter="lineal">
-		<area name="Login-Window" xywh="*"/>
+		<area name="Login-Window-Background" xywh="*"/>
+		<composed name="Login-Window">
+			<alias ref="Login-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="15,2,11,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Server-Window.png" filter="lineal">
-		<area name="Login-Server-Window" xywh="*"/>
+		<area name="Login-Server-Window-Background" xywh="*"/>
+		<composed name="Login-Server-Window">
+			<alias ref="Login-Server-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="78,10,78,18"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Client-Management-Window.png" filter="lineal">
-		<area name="Client-Management-Window" xywh="*"/>
+		<area name="Client-Management-Window-Background" xywh="*"/>
+		<composed name="Client-Management-Window">
+			<alias ref="Client-Management-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Mod-Management-Window.png" filter="lineal">
-		<area name="Mod-Management-Window" xywh="*"/>
+		<area name="Mod-Management-Window-Background" xywh="*"/>
+		<composed name="Mod-Management-Window">
+			<alias ref="Mod-Management-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/oYY1ozW6Ec/Instance-Window.png" filter="lineal">
-		<area name="Instance-Window" xywh="*"/>
+		<area name="Instance-Window-Background" xywh="*"/>
+		<composed name="Instance-Window">
+			<alias ref="Instance-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/k0Z2GYiAoU/Settings-Window.png" filter="lineal">
-		<area name="Settings-Window" xywh="*"/>
+		<area name="Settings-Window-Background" xywh="*"/>
+		<composed name="Settings-Window">
+			<alias ref="Settings-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar.png" filter="lineal">
@@ -1296,11 +1340,19 @@
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-PM-Window.png" filter="lineal">
-		<area name="Chat-PM-Window" xywh="*"/>
+		<area name="Chat-PM-Window-Background" xywh="*"/>
+		<composed name="Chat-PM-Window">
+			<alias ref="Chat-PM-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Settings-Window.png" filter="lineal">
-		<area name="Chat-Settings-Window" xywh="*"/>
+		<area name="Chat-Settings-Window-Background" xywh="*"/>
+		<composed name="Chat-Settings-Window">
+			<alias ref="Chat-Settings-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Main-Buttons-Overlay.png" filter="lineal">
@@ -1316,7 +1368,7 @@
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/alert-background-new.png" filter="lineal">
-		<area name="alert-background-new" xywh="*"/>
+		<area name="alert-background-new" xywh="*" inset="0,-39,0,0"/>
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/mail-alert-icon-new.png" filter="lineal">
@@ -1436,7 +1488,19 @@
 	</images>
 	
 	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
-		<area name="Poke-Summary-Window" xywh="*"/>
+		<area name="Poke-Summary-Window-Background" xywh="*"/>
+		<composed name="Poke-Summary-Window">
+			<alias ref="Poke-Summary-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/x2eLtlMVtE/poke-summary-arrow.png" filter="lineal">
+		<area name="poke-summary-arrow" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
+		<area name="poke-summary-dex" xywh="*" inset="-208,0,0,0"/>
 	</images>
 	
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
@@ -1444,7 +1508,11 @@
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD" xywh="*"/>
+		<area name="Bag-HUD-Background" xywh="*"/>
+		<composed name="Bag-HUD">
+			<alias ref="Bag-HUD-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,4,2,7"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
@@ -1460,23 +1528,43 @@
 	</images>
 
 	<images file="res/custom/7BGCabK5FN/Social-Window.png" filter="lineal">
-		<area name="Social-Window" xywh="*"/>
+		<area name="Social-Window-Background" xywh="*"/>
+		<composed name="Social-Window">
+			<alias ref="Social-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/Team-Window.png" filter="lineal">
-		<area name="Team-Window" xywh="*"/>
+		<area name="Team-Window-Background" xywh="*"/>
+		<composed name="Team-Window">
+			<alias ref="Team-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/CLyo0siyqa/MM-Signup-Window.png" filter="lineal">
-		<area name="MM-Signup-Window" xywh="*"/>
+		<area name="MM-Signup-Window-Background" xywh="*"/>
+		<composed name="MM-Signup-Window">
+			<alias ref="MM-Signup-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/CLyo0siyqa/Tournament-Window.png" filter="lineal">
-		<area name="Tournament-Window" xywh="*"/>
+		<area name="Tournament-Window-Background" xywh="*"/>
+		<composed name="Tournament-Window">
+			<alias ref="Tournament-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="6,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Window.png" filter="lineal">
-		<area name="PokeDex-Window" xywh="*"/>
+		<area name="PokeDex-Window-Background" xywh="*"/>
+		<composed name="PokeDex-Window">
+			<alias ref="PokeDex-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Button.png" filter="lineal">
@@ -1484,7 +1572,11 @@
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Window.png" filter="lineal">
-		<area name="GTL-Window" xywh="*"/>
+		<area name="GTL-Window-Background" xywh="*"/>
+		<composed name="GTL-Window">
+			<alias ref="GTL-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/oxBkYbkgnn/GTL-Poke-Button.png" filter="lineal">
@@ -1496,7 +1588,11 @@
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Window.png" filter="lineal">
-		<area name="Gift-Shop-Window" xywh="*"/>
+		<area name="Gift-Shop-Window-Background" xywh="*"/>
+		<composed name="Gift-Shop-Window">
+			<alias ref="Gift-Shop-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/cs0o8e55UY/Town-Map-Window.png" filter="lineal">
@@ -1508,27 +1604,51 @@
 	</images>
 
 	<images file="res/custom/vbJDdMc09s/Poke-Shop-Window.png" filter="lineal">
-		<area name="Poke-Shop-Window" xywh="*"/>
+		<area name="Poke-Shop-Window-Background" xywh="*"/>
+		<composed name="Poke-Shop-Window">
+			<alias ref="Poke-Shop-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/FnTKbfeNe9/Breed-Window.png" filter="lineal">
-		<area name="Breed-Window" xywh="*"/>
+		<area name="Breed-Window-Background" xywh="*"/>
+		<composed name="Breed-Window">
+			<alias ref="Breed-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/n2PYj7dBl4/Berry-Plot-Window.png" filter="lineal">
-		<area name="Berry-Plot-Window" xywh="*"/>
+		<area name="Berry-Plot-Window-Background" xywh="*"/>
+		<composed name="Berry-Plot-Window">
+			<alias ref="Berry-Plot-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Window.png" filter="lineal">
-		<area name="Game-Corner-Window" xywh="*"/>
+		<area name="Game-Corner-Window-Background" xywh="*"/>
+		<composed name="Game-Corner-Window">
+			<alias ref="Game-Corner-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/Yeug7CU84O/Move-Relearner-Window.png" filter="lineal">
-		<area name="Move-Relearner-Window" xywh="*"/>
+		<area name="Move-Relearner-Window-Background" xywh="*"/>
+		<composed name="Move-Relearner-Window">
+			<alias ref="Move-Relearner-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/Yeug7CU84O/Move-Forget-Window.png" filter="lineal">
-		<area name="Move-Forget-Window" xywh="*"/>
+		<area name="Move-Forget-Window-Background" xywh="*"/>
+		<composed name="Move-Forget-Window">
+			<alias ref="Move-Forget-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="10,99,228,66"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/Yeug7CU84O/Move-Forget-Window-Overlay.png" filter="lineal">
@@ -1540,7 +1660,14 @@
 	</images>
 	
 	<images file="res/custom/t4iajP1aNf/Trade-Window.png" filter="lineal">
-		<area name="Trade-Window" xywh="*"/>
+		<area name="Trade-Window-Background" xywh="*"/>
+		<composed name="Trade-Window">
+			<alias ref="Trade-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
+	<area name="PokeDex-Mon-Background" xywh="*"/>
+	</images>
 </themes>
