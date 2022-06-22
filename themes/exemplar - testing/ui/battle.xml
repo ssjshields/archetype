@@ -254,91 +254,45 @@
 	</theme>
 	
 	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
-    <param name="maxHeight">
-      <int>350</int>
-    </param>
-    <param name="minHeight">
-      <int>350</int>
-    </param>
-    <theme name="dialoglayout" ref="-defaults">
-      <param name="border">
-        <border>0</border>
-      </param>
-      <param name="defaultGap">
-        <dimension>5,5</dimension>
-      </param>
-      <param name="smallGap">
-        <dimension>8,8</dimension>
-      </param>
-      <param name="mediumGap">
-        <dimension>10,10</dimension>
-      </param>
-      <param name="largeGap">
-        <dimension>15,15</dimension>
-      </param>
-      <param name="maxHeight">
-        <int>500</int>
-      </param>
-      <param name="minHeight">
-        <int>500</int>
-      </param>
-      <param name="namedGaps">
-        <map/>
-      </param>
-      <theme name="label-black" ref="-defaults" allowWildcard="true">
-        <param name="font">
-          <font>battle-item</font>
-        </param>
-        <param name="border">
-          <border>0,2,0,0</border>
-        </param>
-      </theme>
-    </theme>
-    <theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-      <param name="minWidth">
-        <int>300</int>
-      </param>
-      <param name="maxWidth">
-        <int>300</int>
-      </param>
-      <param name="maxHeight">
-        <int>210</int>
-      </param>
-      <param name="minHeight">
-        <int>210</int>
-      </param>
-      <theme name="dialoglayout" ref="-dialog">
-        <param name="defaultGap">
-          <dimension>0,0</dimension>
-        </param>
-        <theme name="button" ref="-defaults" allowWildcard="true">
-          <param name="font">
-            <font>alphabeta-chat-highlight-button</font>
-          </param>
-          <param name="border">
-            <border>2,0,4,0</border>
-          </param>
-          <param name="">
-            <image>button-small.*</image>
-          </param>
-          <param name="textAlignment">
-            <enum type="alignment">CENTER</enum>
-          </param>
-        </theme>
-      </theme>
-    </theme>
+		<param name="maxHeight"><int>350</int></param>
+		<param name="minHeight"><int>350</int></param>
+		<theme name="dialoglayout" ref="-defaults">
+			<param name="border"><border>0</border></param>
+			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="maxHeight"><int>500</int></param>
+			<param name="minHeight"><int>500</int></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="label-black" ref="-defaults" allowWildcard="true">
+				<param name="font"><font>battle-item</font></param>
+				<param name="border"><border>0,2,0,0</border></param>
+			</theme>
+		</theme>
+		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+			<param name="minWidth"><int>300</int></param>
+			<param name="maxWidth"><int>300</int></param>
+			<param name="maxHeight"><int>210</int></param>
+			<param name="minHeight"><int>210</int></param>
+			<theme name="dialoglayout" ref="-dialog">
+				<param name="defaultGap"><dimension>0,0</dimension></param>
+				<theme name="button" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+					<param name="border"><border>2,0,4,0</border></param>
+					<param name=""><image>button-small.*</image></param>
+					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				</theme>
+			</theme>
+		</theme>
 
-    <theme name="dialoglayout" ref="dialoglayout">
-      <theme name="use-button" ref="button" allowWildcard="true">
-        <param name="minWidth">
-          <int>80</int>
-        </param>
-        <param name="maxWidth">
-          <int>80</int>
-        </param>
-      </theme>
-    </theme>
-  </theme>
+		<theme name="dialoglayout" ref="dialoglayout">
+			<theme name="use-button" ref="button" allowWildcard="true">
+				<param name="minWidth"><int>80</int></param>
+				<param name="maxWidth"><int>80</int></param>
+			</theme>
+		</theme>
+	</theme>
 
 	<theme name="monster-preview-panel" ref="-defaults">
 		<param name="background"><image>none</image></param>
