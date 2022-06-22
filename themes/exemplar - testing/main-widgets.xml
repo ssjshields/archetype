@@ -28,7 +28,7 @@
 	</theme>
 
 	<theme name="logingui" ref="-defaults">
-	<param name="background"><image>login-background</image></param>
+	<param name="background"><image>login-background-animation</image></param>
 		<theme name="logo" ref="-defaults">
 			<param name="background"><image>background-image</image></param>
 		</theme>
