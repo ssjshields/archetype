@@ -597,9 +597,9 @@
 			<area xywh="351,41,5,2"/>
 		</grid>
 
-		<area name="battle-ui-enemy" xywh="815,520,307,28"/>
-		<area name="battle-ui-float" xywh="815,520,307,28"/>
-		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="9,31,-2,16"/>
+		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,34"/>
+		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,84"/>
+		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="19,31,-2,16"/>
 		<area name="battle-ui-self-slim" xywh="815,520,299,28"/>
 
 		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>

@@ -64,7 +64,7 @@
 	</theme>
 
 	<theme name="redlabel" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>mechabold-battle-pokename</font></param>
+		<param name="font"><font>battle-name</font></param>
 		<param name="border"><border>0,0,6,0</border></param>
 	</theme>
 
