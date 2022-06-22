@@ -74,7 +74,7 @@
 
 	<theme name="monster-slot-red" ref="monster-slot">
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
-			<param name=""><image>mi-hpbar.*</image></param>
+			<param name=""><image>mi-hpbar-red.*</image></param>
 			<param name="border"><border>background.border</border></param>
 			<param name="minWidth"><int>100</int></param>
 		</theme>

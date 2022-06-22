@@ -91,7 +91,7 @@
 	</theme>
 
 	<theme name="health-progressbar-red" ref="-defaults" allowWildcard="true">
-		<param name=""><image>health-progressbar.*</image></param>
+		<param name=""><image>health-progressbar-red.*</image></param>
 		<param name="overlay"><image>Battle-UI-Bug-Fix-Overlay</image></param>
 		<param name="border"><border>1,0,0,0</border></param>
 		<!--<param name="border"><border>background.border</border></param>-->
@@ -100,8 +100,8 @@
 
 	<theme name="xp-progressbar" ref="-defaults" allowWildcard="true">
 		<param name=""><image>health-progressbar-xp.*</image></param>
+		<param name="overlay"><image>EXP-Overlay</image></param>
 		<param name="border"><border>3,0,0,0</border></param>
-		<param name="background"><image>Battle-EXP-Bar</image></param>
 		<param name="border"><border>0,0,0,0</border></param>
 		<param name="minWidth"><int>100</int></param>
 	</theme>
