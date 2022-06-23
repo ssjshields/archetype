@@ -17,7 +17,7 @@
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	<theme name="monsterdex-button-caught" ref="monsterdex-button" allowWildcard="true">
-		<param name="background"><image>ui-button.background-green</image></param>
+		<param name="background"><image>PokeDex-Caught</image></param>
 	</theme>
 
 	<theme name="monsterdex-button-caught-ot" ref="monsterdex-button" allowWildcard="true">

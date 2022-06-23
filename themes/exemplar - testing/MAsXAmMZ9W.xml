@@ -1587,6 +1587,7 @@
 		</animation>
 		<composed name="PokeDex-Button" inset="-2,0,1,0">
 			<alias ref="dex-button-outline" tint="#2d3b40"/>
+			<alias ref="dex-button-inner" tint="#262d3b40" if="hover | keyboardFocus"/>
 			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught" inset="-2,0,1,0">
