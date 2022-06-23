@@ -1337,7 +1337,7 @@
 		<area name="Instance-Window-Background" xywh="*"/>
 		<composed name="Instance-Window">
 			<alias ref="Instance-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Highlight-Overlay" inset="3,3,3,3"/>
 		</composed>
 	</images>
 
