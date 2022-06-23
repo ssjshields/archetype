@@ -527,8 +527,8 @@
 
 			<select center="true">
 				<animation if="keyboardFocus" timeSource="keyboardFocus">
-					<frame duration="2000" ref="pcslot.border.selected" tint="#2a96da"/>
-					<frame duration="2000" ref="pcslot.border.selected" tint="#a3d4f9"/>
+					<frame duration="1500" ref="pcslot.border.selected" tint="#2a96da"/>
+					<frame duration="1500" ref="pcslot.border.selected" tint="#bff0ff"/>
 				</animation>
 				<alias ref="pcslot.border.default" />
 			</select>
@@ -1575,6 +1575,30 @@
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Button.png" filter="lineal">
 		<area name="PokeDex-Button" xywh="*"/>
+	</images>
+
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
+		<area name="dex-button-outline" xywh="0,0,9,9" splitx="L2,R2" splity="T2,B2"/>
+		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2"/>
+		<area name="dex-button-active" xywh="0,11,46,2" splity="T0,B2"/>
+		<animation name="dex-button-active-animation" timeSource="keyboardFocus">
+			<frame duration="1500" ref="dex-button-active" tint="#2a96da"/>
+			<frame duration="1500" ref="dex-button-active" tint="#bff0ff"/>
+		</animation>
+		<composed name="PokeDex-Button" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#2d3b40"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
+		<composed name="PokeDex-Caught" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#2a97dc"/>
+			<alias ref="dex-button-inner" tint="#262a97dc" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
+		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#84e426"/>
+			<alias ref="dex-button-inner" tint="#2684e426" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Window.png" filter="lineal">
