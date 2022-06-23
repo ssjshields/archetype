@@ -498,21 +498,20 @@
 	</images>
 
 	<images file="res/custom/2sTxAVRCoW/pc_slots.png" filter="nearest">
-		<area name="pcslot.bg.default" xywh="3,1,60,50"/>
-		<area name="pcslot.bg.active" xywh="66,1,60,50"/>
-		<area name="pcslot.inner.default" xywh="3,53,60,50"/>
-		<area name="pcslot.inner.active" xywh="66,53,60,50"/>
-		<area name="pcslot.inner.filtered" xywh="129,53,60,50"/>
-		<area name="pcslot.bg.overlay.default" xywh="66,104,60,50"/>
-		<area name="pcslot.bg.overlay.disabled" xywh="3,104,60,50"/>
-		<area name="pcslot.border.default" xywh="3,157,60,50"/>
-		<area name="pcslot.border.selected" xywh="66,157,60,50"/>
-		<area name="pcslot.border.selected2" xywh="66,157,60,50" inset="-1" />
-		<area name="pcslot.border.filtered" xywh="129,157,60,50"/>
+		<area name="pcslot.bg.default" xywh="3,1,58,48"/>
+		<area name="pcslot.bg.active" xywh="66,1,58,48"/>
+		<area name="pcslot.inner.default" xywh="3,53,58,48"/>
+		<area name="pcslot.inner.active" xywh="66,53,58,48"/>
+		<area name="pcslot.inner.filtered" xywh="129,53,58,48"/>
+		<area name="pcslot.bg.overlay.default" xywh="66,104,58,48"/>
+		<area name="pcslot.bg.overlay.disabled" xywh="3,104,58,48"/>
+		<area name="pcslot.border.default" xywh="3,157,58,48"/>
+		<area name="pcslot.border.selected" xywh="66,157,58,48"/>
+		<area name="pcslot.border.filtered" xywh="129,157,58,48"/>
 		<composed name="pc-slot.background">
 
 			<select center="true">
-				<alias ref="pcslot.bg.active" if="filtered"/>
+				<alias ref="pcslot.border.filtered" if="filtered"/>
 				<alias ref="pcslot.bg.default" />
 			</select>
 
@@ -528,13 +527,10 @@
 
 			<select center="true">
 				<animation if="keyboardFocus" timeSource="keyboardFocus">
-					<frame duration="400" ref="pcslot.border.selected2" tint="#FFFFFFFF"/>
-					<frame duration="400" ref="pcslot.border.selected" tint="#FFFFFFFF"/>
+					<frame duration="2000" ref="pcslot.border.selected" tint="#2a96da"/>
+					<frame duration="2000" ref="pcslot.border.selected" tint="#a3d4f9"/>
 				</animation>
 				<alias ref="pcslot.border.default" />
-			</select>
-			<select center="true">
-				<alias ref="pcslot.border.filtered" inset="2" if="filtered"/>
 			</select>
 		</composed>
 	</images>
