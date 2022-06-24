@@ -1063,9 +1063,22 @@
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
+		
+		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
 
 		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<animation name="mi-hpbar-red.progressImage" timeSource="enabled">
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
+		</animation>
+		
+		<area name="mi-hpbar-base-party.progressImage" xywh="52,89,5,4" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled">
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
 		</animation>
@@ -1082,9 +1095,24 @@
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
+		
+		<area name="mi-hpbar-party.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-party.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
 
 		<area name="mi-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-green.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+		
+		<area name="mi-hpbar-green-party.progressImage" xywh="72,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="7,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
@@ -1485,6 +1513,10 @@
 		<area name="Party-Frame-Box-Overlay" xywh="*"/>
 	</images>
 	
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay-2.png" filter="lineal">
+		<area name="Party-Frame-Box-Overlay-2" xywh="*"/>
+	</images>
+	
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="lineal">
 		<area name="Party-Frame-Box-Disabled" xywh="*"/>
 	</images>
@@ -1606,7 +1638,7 @@
 		<area name="GTL-Window-Background" xywh="*"/>
 		<composed name="GTL-Window">
 			<alias ref="GTL-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Highlight-Overlay" inset="2,9,2,2"/>
 		</composed>
 	</images>
 	
