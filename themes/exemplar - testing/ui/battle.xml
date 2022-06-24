@@ -256,8 +256,8 @@
 		<param name="maxHeight"><int>350</int></param>
 		<param name="minHeight"><int>350</int></param>
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="border"><border>0,20,0,0</border></param>
-			<param name="defaultGap"><dimension>740,5</dimension></param>
+			<param name="border"><border>0,10,0,0</border></param>
+			<param name="defaultGap"><dimension>15,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
@@ -332,6 +332,7 @@
 	<theme name="battle-run" ref="rbattle-run" allowWildcard="true"/>
 	<theme name="battle-win" ref="rbattle" allowWildcard="true"/>
 	<theme name="battle-shift" ref="rbattle" allowWildcard="true"/>
+    <theme name="battle-rotate" ref="rbattle-pokemon" allowWildcard="true"/>
 	<theme name="battle-ball" ref="rbattle-ball" allowWildcard="true"/>
 	<theme name="battle-bait" ref="rbattle-bag" allowWildcard="true"/>
 	<theme name="battle-rock" ref="rbattle-fight" allowWildcard="true"/>

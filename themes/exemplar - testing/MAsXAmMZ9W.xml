@@ -554,8 +554,8 @@
 					<frame duration="1000" ref="health-progressbar-base.progressImage" tint="#ffffff"/>
 				</animation>
 		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-green.progressImage" xywh="23,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-xp.progressImage" xywh="21,9,1,4" inset="0,-49,2,2"/>
+		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,-49,-1,0"/>
+		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,2"/>
 
 		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
@@ -1050,7 +1050,7 @@
 			<alias ref="mi-tab9.selected" if="selected | hover"/>
 			<alias ref="mi-tab9.default"/>
 		</select>
-		<area name="mi-xpbar.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<area name="mi-xpbar.progressImage" xywh="72,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-xpbar.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="7,88,1,8"/>
 			<area xywh="90,88,1,8"/>
@@ -1083,7 +1083,7 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 
-		<area name="mi-hpbar-green.progressImage" xywh="72,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<area name="mi-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-green.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="7,88,1,8"/>
 			<area xywh="90,88,1,8"/>
