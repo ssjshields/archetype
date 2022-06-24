@@ -1474,19 +1474,58 @@
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Fight-Icon.png" filter="lineal">
-		<area name="Battle-Fight-Icon" xywh="*"/>
+		<grid name="Battle-Fight-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Bag-Icon.png" filter="lineal">
-		<area name="Battle-Bag-Icon" xywh="*"/>
+		<grid name="Battle-Bag-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Pokemon-Icon.png" filter="lineal">
-		<area name="Battle-Pokemon-Icon" xywh="*"/>
+		<grid name="Battle-Pokemon-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+
+	<images file="res/custom/bW6A5DARII/Battle-Rotate-Icon.png" filter="lineal">
+		<grid name="Battle-Rotate-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Run-Icon.png" filter="lineal">
-		<area name="Battle-Run-Icon" xywh="*"/>
+		<grid name="Battle-Run-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
 	</images>
 		
 	<images file="res/custom/bW6A5DARII/Battle-Text-Background.png" filter="lineal">

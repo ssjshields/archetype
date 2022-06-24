@@ -331,8 +331,8 @@
 	<theme name="battle-bag" ref="rbattle-bag" allowWildcard="true"/>
 	<theme name="battle-run" ref="rbattle-run" allowWildcard="true"/>
 	<theme name="battle-win" ref="rbattle" allowWildcard="true"/>
-	<theme name="battle-shift" ref="rbattle" allowWildcard="true"/>
-    <theme name="battle-rotate" ref="rbattle-pokemon" allowWildcard="true"/>
+	<theme name="battle-shift" ref="rbattle-rotate" allowWildcard="true"/>
+    <theme name="battle-rotate" ref="rbattle-rotate" allowWildcard="true"/>
 	<theme name="battle-ball" ref="rbattle-ball" allowWildcard="true"/>
 	<theme name="battle-bait" ref="rbattle-bag" allowWildcard="true"/>
 	<theme name="battle-rock" ref="rbattle-fight" allowWildcard="true"/>

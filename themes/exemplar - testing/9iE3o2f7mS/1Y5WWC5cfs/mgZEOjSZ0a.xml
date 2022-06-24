@@ -159,6 +159,16 @@
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
+
+	<theme name="rbattle-rotate" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>battle-label-highlight-new</font></param>
+		<param name="font2"><font>symbols-white</font></param>
+		<param name="border"><border>0,0,1,0</border></param>
+		<param name=""><image>button.*</image></param>
+		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
+	</theme>
 	
 	<theme name="rbattle-run" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
