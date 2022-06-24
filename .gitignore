@@ -9,3 +9,13 @@ themes/default/
 themes/exemplar/
 data.pak
 resources.zip
+strings/strings_zh.xml
+strings/strings_zh-Hant.xml
+strings/strings_pt-BR.xml
+strings/strings_ko.xml
+strings/strings_ja.xml
+strings/strings_it.xml
+strings/strings_fr.xml
+strings/strings_es.xml
+strings/strings_en.xml
+strings/strings_de.xml
