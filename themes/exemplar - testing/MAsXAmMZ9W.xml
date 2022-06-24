@@ -1606,7 +1606,7 @@
 		<area name="GTL-Window-Background" xywh="*"/>
 		<composed name="GTL-Window">
 			<alias ref="GTL-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 	

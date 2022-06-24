@@ -6,9 +6,9 @@
 		<param name="overlay"><image>none</image></param>
 		<theme name="hscrollbar" ref="hscrollbar"/>
 		<theme name="vscrollbar" ref="vscrollbar-white"/>
-		<param name="border"><border>0,10,0,10</border></param>
+		<param name="border"><border>10,10,0,10</border></param>
 		<param name="minWidth"><int>705</int></param>
-		<param name="minHeight"><int>390</int></param>
+		<param name="minHeight"><int>420</int></param>
 		<param name="maxWidth"><int>32767</int></param>
 		<param name="maxHeight"><int>32767</int></param>
 		<param name="hasDragButton"><bool>false</bool></param>
@@ -139,25 +139,27 @@
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-small" ref="label-value-small">
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="border"><border>0</border></param>
 			</theme>
 			<theme name="label-title-small2" ref="label-value-small2">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>13,0,13,0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-small2-centered" ref="label-title-small2">
-			<param name="border"><border>0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-smallest" ref="label-value-smallest">
-			<param name="border"><border>0</border></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			<param name="border"><border>13,0,13,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 			</theme>
 			<theme name="label-title-icon" ref="label-value-icon">
 			<param name="border"><border>6</border></param>
 				<param name="background"><image>ui-header.background</image></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			
 			<theme name="label-button-medium" ref="label-value-medium">
@@ -249,6 +251,7 @@
 						<theme name="label" ref="label" allowWildcard="true">
 							<param name="border"><border>10,10,0,0</border></param>
 							<param name="background"><image>none</image></param>
+							
 						</theme>
 						<theme name="label-info" ref="label">
 							<param name="background"><image>ui-inputbox.background</image></param>
