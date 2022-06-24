@@ -555,7 +555,7 @@
 				</animation>
 		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="1,-49,-1,0"/>
 		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,2"/>
+		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,0"/>
 
 		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
