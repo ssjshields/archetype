@@ -111,7 +111,7 @@
 
         <composed name="ui-frame-green.background">
             <alias ref="ui-frame-green.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
         </composed>
 		
 		<grid name="ui-inner-frame-tabbed.background" weightsX="0,1,0" inset="25,0,0,0" weightsY="0,0,1,0">
