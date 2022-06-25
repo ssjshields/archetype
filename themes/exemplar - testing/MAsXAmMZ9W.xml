@@ -1071,7 +1071,7 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 
-		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="-1,1,1,-1" sizeOverwriteH="0"/>
 		<animation name="mi-hpbar-red.progressImage" timeSource="enabled">
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
