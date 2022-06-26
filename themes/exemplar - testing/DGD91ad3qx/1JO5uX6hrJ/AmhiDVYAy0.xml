@@ -281,7 +281,7 @@
 	</theme>
 
 	<theme name="monsterframe-xp-progressbar" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-green.*</image></param>
+		<param name=""><image>mi-xpbar.*</image></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="minWidth"><int>50</int></param>
 		<param name="overlay"><image>poke-summary-dex</image></param>
@@ -306,25 +306,25 @@
 	</theme>
 
 	<theme name="monsterframe-happiness-progressbar" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-green.*</image></param>
+		<param name=""><image>mi-hpbar-violet.*</image></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="minWidth"><int>50</int></param>
 	</theme>
 
 	<theme name="monsterframe-progressbar-contest-0" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar.*</image></param>
+		<param name=""><image>progressbar-white.*</image></param>
 	</theme>
 	<theme name="monsterframe-progressbar-contest-1" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-xpbar.*</image></param>
+		<param name=""><image>progressbar-white.*</image></param>
 	</theme>
 	<theme name="monsterframe-progressbar-contest-2" ref="-defaults" allowWildcard="true">
-		<param name=""><image>progressbar-pink.*</image></param>
+		<param name=""><image>progressbar-white.*</image></param>
 	</theme>
 	<theme name="monsterframe-progressbar-contest-3" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-green.*</image></param>
+		<param name=""><image>progressbar-white.*</image></param>
 	</theme>
 	<theme name="monsterframe-progressbar-contest-4" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-orange.*</image></param>
+		<param name=""><image>progressbar-white.*</image></param>
 	</theme>
 	<theme name="monsterframe-progressbar-contest-total" ref="-defaults" allowWildcard="true">
 		<param name=""><image>progressbar-white.*</image></param>

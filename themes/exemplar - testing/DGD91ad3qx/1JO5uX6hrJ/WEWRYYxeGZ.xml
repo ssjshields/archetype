@@ -50,25 +50,25 @@
 			<param name="font"><font>pb-dark</font></param>
 
 			<theme name="progressbar-hp" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-attack" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-defense" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-spatk" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-spdef" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-speed" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 			<theme name="progressbar-total" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 		</theme>
 
@@ -105,7 +105,7 @@
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="progressbar-blue" ref="-defaults" allowWildcard="true">	
-				<param name=""><image>mi-hpbar-green.*</image></param>
+				<param name=""><image>mi-xpbar.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<param name="minWidth"><int>180</int></param>
 				<param name="minHeight"><int>8</int></param>
@@ -113,7 +113,7 @@
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="progressbar-green" ref="-defaults" allowWildcard="true">
-				<param name=""><image>mi-xpbar.*</image></param>
+				<param name=""><image>mi-hpbar-green.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<param name="minWidth"><int>180</int></param>
 				<param name="minHeight"><int>8</int></param>
