@@ -1111,7 +1111,7 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-green-party.progressImage" xywh="72,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="7,88,1,8"/>
 			<area xywh="90,88,1,8"/>
