@@ -331,18 +331,14 @@
 			<alias ref="ui-button.disabled.selected" if="disabled + (hover | keyboardFocus | selected)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
 			<alias ref="ui-button.pressed" if="pressed"/>
-			<alias ref="ui-button.selected.hover" if="hover + (keyboardFocus)"/>
-			<alias ref="ui-button.selected" if="keyboardFocus"/>
-			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.hover" if="hover | keyboardFocus"/>
 			<alias ref="ui-button.default"/>
 		</select>
 		
 		<select name="ui-button-bag.background">
 			<alias ref="ui-button.disabled.selected" if="disabled + (hover | keyboardFocus | selected)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
-			<alias ref="ui-button.selected.hover" if="hover + (keyboardFocus)"/>
-			<alias ref="ui-button.selected" if="keyboardFocus"/>
-			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.hover" if="hover | keyboardFocus"/>
 			<alias ref="ui-button.default"/>
 		</select>
 
