@@ -814,6 +814,17 @@
 			<area xywh="185,223,5,3"/>
 		</grid>
 
+		<area name="Blue-Highlight" xywh="200,181,5,46" splitx="L0,R4"/>
+		<animation name="Blue-Highlight-Animation" timeSource="enabled">
+			<frame duration="1500" ref="Blue-Highlight" tint="#2a96da"/>
+			<frame duration="1500" ref="Blue-Highlight" tint="#bff0ff"/>
+		</animation>
+
+		<composed name="frame-draggable-alpha-highlight.background">
+			<alias ref="frame-draggable-alpha.background"/>
+			<alias ref="Blue-Highlight-Animation"/>
+		</composed>
+
 		<grid name="frame-alpha.background" weightsX="0,1,0" weightsY="0,1,0">
 			<area xywh="3,181,3,3"/>
 			<area xywh="6,181,8,3"/>

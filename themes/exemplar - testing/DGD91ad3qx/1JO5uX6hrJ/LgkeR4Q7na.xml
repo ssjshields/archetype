@@ -7,7 +7,7 @@
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>-1</int></param>
 		<param name="border"><border>0,0,0,0</border></param>
-		<param name="background"><image>frame-draggable-alpha.background</image></param>
+		<param name="background"><image>frame-draggable-alpha-highlight.background</image></param>
 		<theme name="content" ref="-defaults">
 		<param name="defaultGap"><dimension>5,5</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
