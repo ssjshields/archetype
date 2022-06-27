@@ -147,9 +147,9 @@
 
 	<theme name="battle-button-return" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta-highlight-button</font></param>
-		<param name="border"><border>2,25,1,8</border></param>
+		<param name="border"><border>2,20,1,10</border></param>
 		<param name=""><image>battle-button-return.*</image></param>
-		<param name="textAlignment"><enum type="alignment">left</enum></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
 			<param name="border"><border>2,4</border></param>
 			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
@@ -257,7 +257,7 @@
 		<param name="minHeight"><int>350</int></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0,10,0,0</border></param>
-			<param name="defaultGap"><dimension>20,5</dimension></param>
+			<param name="defaultGap"><dimension>15,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
