@@ -1596,15 +1596,15 @@
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD-Background" xywh="*"/>
+		<area name="Bag-HUD-Background" xywh="*" inset="0,0,0,-3"/>
 		<composed name="Bag-HUD">
 			<alias ref="Bag-HUD-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,4,2,7"/>
+			<alias ref="Highlight-Overlay" inset="2,4,2,-1"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
-		<area name="Bag-HUD-Overlay" xywh="*"/>
+		<area name="Bag-HUD-Overlay" xywh="*" inset="0,0,0,-3"/>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-Frame-Item-Box.png" filter="lineal">

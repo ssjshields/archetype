@@ -19,12 +19,12 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="tabbedpane" ref="-defaults">
-			<param name="minWidth"><int>440</int></param>
-				<param name="maxWidth"><int>440</int></param>
+			<param name="minWidth"><int>432</int></param>
+				<param name="maxWidth"><int>432</int></param>
 				<param name="minHeight"><int>353</int></param>
 					<param name="maxHeight"><int>353</int></param>
 
-				<param name="border"><border>0,1,0,4</border></param>
+				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
 						<param name="background"><image>none</image></param>
