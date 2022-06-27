@@ -173,7 +173,7 @@
 			<param name=""><image>ui-button.*</image></param>
 			<param name="border"><border>0,6</border></param>
 			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="minWidth"><int>190</int></param>
+			<param name="minWidth"><int>191</int></param>
 		</theme>
 		<theme name="valueEdit" ref="editfield">
 			<theme name="renderer" ref="renderer">
