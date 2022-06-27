@@ -1544,7 +1544,7 @@
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/battle-learn-label.png" filter="lineal">
-		<area name="battle-learn-label" xywh="*"/>
+		<area name="battle-learn-label" xywh="*" inset="1,0,0,0"/>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Bag-Text-Background.png" filter="lineal">
