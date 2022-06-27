@@ -8,7 +8,7 @@
 		<param name="titleAreaLeft"><int>18</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>75</int></param>
-		<param name="closeButtonX"><int>-34</int></param>
+		<param name="closeButtonX"><int>-26</int></param>
 		<param name="closeButtonY"><int>49</int></param>
 		<param name="border"><border>10,0,0,0</border></param>
 		<theme name="dialoglayout" ref="-defaults">
