@@ -38,10 +38,10 @@
 			<param name="titleAreaLeft"><int>44</int></param>
 			<param name="titleAreaRight"><int>-20</int></param>
 			<param name="titleAreaBottom"><int>30</int></param>
-			<param name="minWidth"><int>300</int></param>
+			<param name="minWidth"><int>338</int></param>
 			<param name="minHeight"><int>150</int></param>
-			<param name="minWidth"><int>300</int></param>
-			<param name="minHeight"><int>150</int></param>
+			<param name="maxWidth"><int>338</int></param>
+			<param name="maxHeight"><int>150</int></param>
 			<theme name="dialoglayout" ref="dialoglayout">
 				<param name="defaultGap"><dimension>8,8</dimension></param>
 				<param name="border"><border>60,20,20,20</border></param>
@@ -55,6 +55,8 @@
 			<param name="border"><border>14,100</border></param>
 			<param name="minWidth"><int>340</int></param>
 			<param name="minHeight"><int>110</int></param>
+			<param name="maxWidth"><int>340</int></param>
+			<param name="maxHeight"><int>110</int></param>
 				</theme>
 		<theme name="label" ref="label">
 			<param name="font"><font>alphabeta-border</font></param>
