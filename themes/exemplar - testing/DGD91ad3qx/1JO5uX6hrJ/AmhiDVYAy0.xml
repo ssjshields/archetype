@@ -294,13 +294,13 @@
 	</theme>
 
 	<theme name="monsterframe-hp-progressbar-orange" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-green.*</image></param>
+		<param name=""><image>mi-hpbar-orange.*</image></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="minWidth"><int>50</int></param>
 	</theme>
 
 	<theme name="monsterframe-hp-progressbar-red" ref="-defaults" allowWildcard="true">
-		<param name=""><image>mi-hpbar-green.*</image></param>
+		<param name=""><image>mi-hpbar-red.*</image></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="minWidth"><int>50</int></param>
 	</theme>
