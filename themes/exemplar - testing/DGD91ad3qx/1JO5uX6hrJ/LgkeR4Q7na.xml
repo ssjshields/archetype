@@ -53,13 +53,11 @@
 	</theme>
 	
 	<theme name="monster-slot-empty" ref="-defaults">
-		<param name="background"><image>none</image></param>
-		<param name="overlay"><image>Party-Frame-Box-Disabled</image></param>
+		<param name="background"><image>Party-Frame-Box-Disabled</image></param>
 	</theme>
 	
 	<theme name="monster-slot" ref="-defaults">
 		<param name="background"><image>Party-Frame-Box</image></param>
-		<param name="overlay"><image>Party-Frame-Box-Overlay-2</image></param>
 		<param name="border"><border>0,0,0,0</border></param>
 		<param name="minWidth"><int>31</int></param>
 		<param name="minHeight"><int>32</int></param>
@@ -72,7 +70,6 @@
 	</theme>
 
 	<theme name="monster-slot-orange" ref="monster-slot">
-		<param name="overlay"><image>Party-Frame-Box-Overlay-2</image></param>
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
 			<param name=""><image>mi-hpbar-orange-party.*</image></param>
 			<param name="overlay"><image>Party-Frame-Box-Overlay</image></param>
@@ -93,7 +90,7 @@
 	<theme name="monster-slot-purple" ref="monster-slot">
 		<param name="background"><image>Party-Frame-Box-Disabled</image></param>
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
-			<param name=""><image>mi-hpbar-party.*</image></param>
+			<param name="background"><image>none</image></param>
 			<param name="border"><border>background.border</border></param>
 			<param name="minWidth"><int>100</int></param>
 		</theme>
@@ -112,7 +109,6 @@
 	<theme name="monster-slot-h-empty" ref="monster-slot-h"/>
 
 	<theme name="monster-slot-h-orange" ref="monster-slot-h">
-		<param name="overlay"><image>Party-Frame-Box-Overlay-2</image></param>
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
 			<param name=""><image>mi-hpbar-orange-party.*</image></param>
 			<param name="overlay"><image>Party-Frame-Box-Overlay</image></param>
@@ -122,7 +118,6 @@
 	</theme>
 
 	<theme name="monster-slot-h-red" ref="monster-slot-h">
-		<param name="overlay"><image>Party-Frame-Box-Overlay-2</image></param>
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
 			<param name=""><image>mi-hpbar-party.*</image></param>
 			<param name="overlay"><image>Party-Frame-Box-Overlay</image></param>
@@ -132,9 +127,9 @@
 	</theme>
 
 	<theme name="monster-slot-h-purple" ref="monster-slot-h">
-		<param name="background"><image>monster-slot-purple</image></param>
+		<param name="background"><image>Party-Frame-Box-Disabled</image></param>
 		<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
-			<param name=""><image>mi-hpbar-party.*</image></param>
+			<param name="background"><image>none</image></param>
 			<param name="border"><border>background.border</border></param>
 			<param name="minWidth"><int>100</int></param>
 		</theme>

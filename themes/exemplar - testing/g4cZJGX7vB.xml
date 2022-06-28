@@ -768,9 +768,8 @@
 			<alias ref="ui-tab.default"/>
 		</select>
 
-		<composed name="monster-slot-selected">
-			<alias ref="ui-button.default"/>
-			<alias ref="ui-popup-button.hover" inset="2,2,1,1"/>
+		<composed name="monster-slot-selected" inset="-1,-1,2,-1">
+			<alias ref="ui-popup-button.hover"/>
 		</composed>
 
 		<area name="button-npc-dark.selected" xywh="400,117,8,9" splitx="L20,R7" splity="T6,B8"/>

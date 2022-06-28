@@ -1075,9 +1075,9 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
+		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
@@ -1088,14 +1088,20 @@
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
 		</animation>
 		
-		<area name="mi-hpbar-base-party.progressImage" xywh="52,89,5,4" inset="-1,1,1,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-red.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar-base-party.progressImage" xywh="52,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
 		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled">
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
 			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
 		</animation>
 
-		<grid name="mi-hpbar-red.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
+		<grid name="mi-hpbar-red-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
@@ -1107,9 +1113,9 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-party.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="-1,1,1,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-party.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
+		<area name="mi-hpbar-party.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
@@ -1122,9 +1128,9 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="-1,1,1,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
+		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
@@ -1568,21 +1574,13 @@
 	</images>
 	
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay.png" filter="lineal">
-		<area name="Party-Frame-Box-Overlay" xywh="*"/>
+		<area name="Party-Frame-Box-Overlay" xywh="*" inset="0,-1,0,-3"/>
 	</images>
-	
-	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay-2.png" filter="lineal">
-		<area name="Party-Frame-Box-Overlay-2" xywh="*"/>
-	</images>
-	
+		
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="lineal">
 		<area name="Party-Frame-Box-Disabled" xywh="*"/>
 	</images>
-	
-	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled-Overlay.png" filter="lineal">
-		<area name="Party-Frame-Box-Disabled-Overlay" xywh="*"/>
-	</images>
-	
+		
 	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
 		<area name="Poke-Summary-Window-Background" xywh="*"/>
 		<composed name="Poke-Summary-Window">
