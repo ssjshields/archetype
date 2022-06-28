@@ -161,6 +161,10 @@
 								<param name="minWidth"><int>110</int></param>
 								<param name="font"><font>alphabeta-small</font></param>
 							</theme>
+							
+							<theme name="label-hidden-ability" ref="label-monster-value">
+                                <param name="font"><font>alphabeta-yellow</font></param>
+                            </theme>
 
 							<theme name="label-monster-value-stat-complete" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-value</image></param>
