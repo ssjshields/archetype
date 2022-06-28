@@ -335,7 +335,7 @@
 			<alias ref="ui-button.default"/>
 		</select>
 		
-		<select name="ui-button-bag.background">
+		<select name="ui-button-bag.background" inset="-2,0,2,0">
 			<alias ref="ui-button.disabled.selected" if="disabled + (hover | keyboardFocus | selected)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
 			<alias ref="ui-button.hover" if="hover | keyboardFocus"/>
