@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<strings lang="en-ex" lang_full="EN - Exemplar" is_primary="1">
+  <!-- OVERRIDES START - EDIT AT YOUR OWN RISK!!! -->
+
+  
+      <string id="1526"> </string>
+  <!-- Login Screen -->
+  <!-- (Custom title header & TL area) -->
+		<string id="1170">GUI By:\nAnonymousPoke, nurver &amp; realmadrid1809\n\nLoaded ROMs:</string>
+		<string id="1000">Login</string>
+
+  <!-- Settings Window -->
+  <!-- (Custom title header) -->
+		<string id="1200">Settings                                      Compatible Revision: 19478   |   GUI By: AnonymousPoke &amp; nurver&#35;7626   |</string>
+
+  <!-- Server Select Header Text -->
+  <!-- (These strings are needed for appropriate spacing on Server Select Window) -->
+		<string id="1010">                                </string>
+		<string id="1011">                                </string>
+		<string id="1012">                                </string>
+        <string id="1013">Server Select</string>
+		<string id="1049">Character Select</string>		
+
+  <!-- Pokémon to POKéMON -->
+		<!--<string id="0">POKéMON</string>-->
+ 
+  <!-- BERRIES -> Berries  -->
+  <!-- (These strings do not reside within any language file - From game dump thanks to WB) -->
+		<string id="4">Berries</string>
+		<string id="300014">Berries</string>
+		<string id="310018">Berries</string>
+
+  <!-- Shared Cancel Text from "GO BACK" to "RETURN" -->
+  <!-- (Better text replacement that is used in many areas beyond Battle screen) -->
+		<string id="58">Return</string>
+		<string id="5029">Confirm</string>
+  
+  <!-- Custom Safari Ball Amount Text -->
+  <!-- (Properly displays "Ball" and the correct amount left - Minimal look) -->
+		<string id="5109">Ball ({00})</string>
+		<string id="5100">Fight</string>
+		<string id="5104">Bag</string>
+		<string id="5106">Run</string>
+		<string id="5108">Ball</string>
+		<string id="5118">Mud</string>
+		<string id="5110">Stone</string>
+		<string id="5112">Bait</string>
+		<string id="5114">Shift</string>
+		<string id="5116">Forfeit</string>
+		<string id="5120">Summary</string>
+  
+  <!-- PvP SHORT BATTLE STATUS INFO -->
+		<string id="5200">Turn #{00}</string>
+		<string id="5201">Time: {00}</string>
+  
+  <!-- Custom Halloween Item Sentence Structure - Fix by Nurver -->
+  <!-- (Properly displays Halloween item text with Exemplar) -->
+		<string id="101608">A tasty cookie exclusive to Halloween.\nRestores 25% HP when eaten.\nWhen fighting Pumpking, clears\nstat modifications from allied field.</string>
+		<string id="101609">A tasty cookie exclusive to Halloween.\nRestores 25% HP when eaten.\nWhen fighting Pumpking, grants the ability {STRING_210064}\nand causes attacks to drain their target. Lasts 5 turns.</string>
+		<string id="101610">A tasty cookie exclusive to Halloween.\nRestores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field by 33%.</string>
+		<string id="101611">A tasty cookie exclusive to Halloween.\nRestores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field of status ailments.</string>
+		<string id="101612">A tasty cookie exclusive to Halloween.\nRestores 25% HP when eaten.\nWhen fighting Pumpking, doubles\nallied field's speed. Lasts 4 turns.</string>
+ 
+  <!-- OVERRIDES END - EDIT AT YOUR OWN RISK!!! -->
+</strings>

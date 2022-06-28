@@ -117,6 +117,7 @@
 	<fontDef name="alphabeta-teal" ref="alphabeta" color="#81ddf1"/>
 	<fontDef name="alphabeta-red" ref="alphabeta" color="#f05858"/>
 	<fontDef name="alphabeta-yellow" ref="alphabeta" color="#e2c57e"/>
+	<fontDef name="alphabeta-hidden-ability" ref="alphabeta" color="#fffc01"/>
 	<fontDef name="alphabeta-brown" ref="alphabeta" color="#ff8484"/>
 	<fontDef name="alphabeta-gm" ref="alphabeta" color="#5e98ff"/>
 	<fontDef name="alphabeta-cm" ref="alphabeta" color="#58ff64"/>

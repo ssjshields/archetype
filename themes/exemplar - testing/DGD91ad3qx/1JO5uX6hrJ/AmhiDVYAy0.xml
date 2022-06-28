@@ -163,7 +163,7 @@
 							</theme>
 							
 							<theme name="label-hidden-ability" ref="label-monster-value">
-                                <param name="font"><font>alphabeta-yellow</font></param>
+                                <param name="font"><font>alphabeta-hidden-ability</font></param>
                             </theme>
 
 							<theme name="label-monster-value-stat-complete" ref="label" allowWildcard="true">
