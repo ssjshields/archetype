@@ -1405,15 +1405,23 @@
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Main-Buttons-Overlay.png" filter="lineal">
-		<area name="Chat-Main-Buttons-Overlay" xywh="*"/>
+		<area name="Chat-Main-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Small-Buttons-Overlay.png" filter="lineal">
-		<area name="Chat-Small-Buttons-Overlay" xywh="*"/>
+		<area name="Chat-Small-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
 	</images>
 	
-	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Overlay.png" filter="lineal">
-		<area name="Chat-Minimize-Button-Overlay" xywh="*"/>
+	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Default.png" filter="lineal">
+		<area name="Chat-Minimize-Button-Default" xywh="*"/>
+	</images>
+
+	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Hover.png" filter="lineal">
+		<area name="Chat-Minimize-Button-Hover" xywh="*"/>
+		<composed name="Chat-Minimize-Button-Overlay">
+			<alias ref="Chat-Minimize-Button-Default"/>
+			<alias ref="Chat-Minimize-Button-Hover" if="hover | keyboardFocus"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/alert-background-new.png" filter="lineal">
