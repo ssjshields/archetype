@@ -2,9 +2,9 @@
 <themes>
 
 	<theme name="guildwindow" ref="base-tabbed-frame">
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>
 	<param name="fadeDurationActivate"><int>150</int></param>
-	<param name="fadeDurationDeactivate"><int>210000</int></param>
+	<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 	<param name="background"><image>Team-Window</image></param>
 	<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>44</int></param>
