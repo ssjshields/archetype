@@ -2,9 +2,9 @@
 <themes>
 
 	<theme name="label-area-market" ref="-defaults">
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>
 	<param name="fadeDurationActivate"><int>150</int></param>
-	<param name="fadeDurationDeactivate"><int>210000</int></param>
+	<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 		<param name="background"><image>ui-inner-frame.background</image></param>
 		<param name="border"><border>15</border></param>
 		<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -27,9 +27,9 @@
 	</theme>
 	
 	<theme name="gc-shop" ref="base-frame-padded" allowWildcard="true">	
-    <param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>
 	<param name="fadeDurationActivate"><int>150</int></param>
-	<param name="fadeDurationDeactivate"><int>210000</int></param>
+	<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 	<param name="background"><image>Game-Corner-Window</image></param>
 	<param name="titleAreaTop"><int>10</int></param>
 	<param name="titleAreaLeft"><int>44</int></param>
@@ -56,7 +56,7 @@
 	</theme>
 	
 	<theme name="itemshop" ref="base-tabbed-frame">
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 	<param name="background"><image>Poke-Shop-Window</image></param>
 	<param name="titleAreaTop"><int>10</int></param>
 	<param name="titleAreaLeft"><int>44</int></param>
@@ -113,7 +113,7 @@
 	</theme>
 	
 	<theme name="gameshop" ref="base-tabbed-frame">
-    <param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 	<param name="background"><image>Gift-Shop-Window</image></param>
 	<param name="titleAreaTop"><int>9</int></param>
 	<param name="titleAreaLeft"><int>43</int></param>
