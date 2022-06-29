@@ -301,6 +301,10 @@
 			<frame duration="150" ref="ui-button.hover.background"/>
 			<frame duration="1" ref="ui-button.hover.background"/>
 		</animation>
+		<animation name="ui-button.keyboardFocus-animation" timeSource="keyboardFocus">
+			<frame duration="1500" ref="ui-button.hover.background" tint="#ffffff"/>
+			<frame duration="1500" ref="ui-button.hover.background" tint="#c6c6c6"/>
+		</animation>
 		
 		<composed name="ui-button.pressed">
 			<alias ref="ui-button.pressed.background"/>
@@ -310,6 +314,11 @@
 		<composed name="ui-button.hover">
 			<alias ref="ui-button.default"/>
 			<alias ref="ui-button.hover-animation"/>
+		</composed>
+
+		<composed name="ui-button.keyboardFocus">
+			<alias ref="ui-button.default"/>
+			<alias ref="ui-button.keyboardFocus-animation"/>
 		</composed>
 
 		<composed name="ui-button.selected">
@@ -331,14 +340,17 @@
 			<alias ref="ui-button.disabled.selected" if="disabled + (hover | keyboardFocus | selected)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
 			<alias ref="ui-button.pressed" if="pressed"/>
-			<alias ref="ui-button.hover" if="hover | keyboardFocus"/>
+			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.default"/>
 		</select>
 		
 		<select name="ui-button-bag.background" inset="-2,0,2,0">
 			<alias ref="ui-button.disabled.selected" if="disabled + (hover | keyboardFocus | selected)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
-			<alias ref="ui-button.hover" if="hover | keyboardFocus"/>
+			<alias ref="ui-button.pressed" if="pressed"/>
+			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.default"/>
 		</select>
 
@@ -463,6 +475,10 @@
 				<alias ref="ui-button.hover-animation"/>
 				<alias ref="ui-checkbox.animation"/>
 			</composed>
+			<composed if="keyboardFocus + selected">
+				<alias ref="ui-button.keyboardFocus-animation"/>
+				<alias ref="ui-checkbox.animation"/>
+			</composed>
 			<composed if="disabled + selected">
 				<alias ref="ui-button.disabled"/>
 				<alias ref="ui-checkbox.animation"/>
@@ -472,6 +488,10 @@
 			<composed if="hover">
 				<alias ref="ui-button.default"/>
 				<alias ref="ui-button.hover-animation"/>
+			</composed>
+			<composed if="keyboardFocus">
+				<alias ref="ui-button.default"/>
+				<alias ref="ui-button.keyboardFocus-animation"/>
 			</composed>
 			<alias ref="ui-button.default"/>
 		</select>
@@ -678,14 +698,14 @@
 			<alias ref="ui-misc-btn.background"/>
 		</select>
 
-		<animation name="ui-popup-button.hover" timeSource="hover" count="1">
-			<frame duration="150" ref="ui-popup-button.selected" tint="#00FFFFFF"/>
-			<frame duration="1" ref="ui-popup-button.selected" tint="#FFFFFFFF"/>
+		<animation name="ui-popup-button.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="ui-popup-button.selected" tint="#ffffff"/>
+			<frame duration="1500" ref="ui-popup-button.selected" tint="#c6c6c6"/>
 		</animation>
 
 		<select name="ui-popup-button.background">
-			<alias ref="ui-popup-button.selected" if="keyboardFocus | selected"/>
-			<alias ref="ui-popup-button.hover" if="hover"/>
+			<alias ref="ui-popup-button.selected" if="selected | hover"/>
+			<alias ref="ui-popup-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-popup-button.default"/>
 		</select>
 
@@ -769,7 +789,7 @@
 		</select>
 
 		<composed name="monster-slot-selected" inset="-1,-1,2,-1">
-			<alias ref="ui-popup-button.hover"/>
+			<alias ref="ui-popup-button.selected"/>
 		</composed>
 
 		<area name="button-npc-dark.selected" xywh="400,117,8,9" splitx="L20,R7" splity="T6,B8"/>

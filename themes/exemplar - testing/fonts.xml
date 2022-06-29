@@ -179,6 +179,7 @@
 	<fontDef name="messagebox" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 	
 	<fontDef name="battle-button-arrows" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#c7d3d5" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
+		<fontParam if="disabled" color="#637073"/>
 		<fontParam if="hover" color="#FFFFFF"/>
 		<fontParam if="pressed" color="#FFFFFF"/>
 		<fontParam if="keyboardFocus" color="#FFFFFF"/>

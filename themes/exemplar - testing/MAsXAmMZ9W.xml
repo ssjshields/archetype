@@ -607,24 +607,36 @@
 
 		<area name="battle-button-return.default" xywh="218,145,96,30"/>
 		<area name="battle-button-return.hover" xywh="218,176,96,30"/>
+		<animation name="battle-button-return.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="battle-button-return.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-return.hover" tint="#c6c6c6"/>
+		</animation>
 		<area name="battle-button-return.disabled" xywh="218,207,96,30"/>
 
 		<area name="battle-button-confirm.default" xywh="424,145,96,30"/>
 		<area name="battle-button-confirm.hover" xywh="424,176,96,30"/>
+		<animation name="battle-button-confirm.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="battle-button-confirm.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-confirm.hover" tint="#c6c6c6"/>
+		</animation>
 		<area name="battle-button-confirm.disabled" xywh="424,207,96,30"/>
 
 		<area name="battle-button-switch.default" xywh="2,145,209,52"/>
 		<area name="battle-button-switch.hover" xywh="2,200,209,52"/>
+		<animation name="battle-button-switch.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="battle-button-switch.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-switch.hover" tint="#c6c6c6"/>
+		</animation>
 		<area name="battle-button-switch.disabled" xywh="2,257,209,52"/>
 		<area name="battle-button-switch.disabledhover" xywh="218,257,209,52"/>
 		<area name="battle-area" xywh="6,312,800,115"/>
 
 		<select name="battle-button-switch.background">
 			<alias ref="battle-button-switch.disabledhover" if="disabled + (targeted | keyboardFocus)"/>
-			<alias ref="battle-button-switch.hover" if="keyboardFocus"/>
+			<alias ref="battle-button-switch.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="battle-button-switch.disabled" if="disabled"/>
 			<alias ref="battle-button-switch.hover" if="targeted"/>
-			<alias ref="battle-button-switch.hover" if="selected"/>
+			<alias ref="battle-button-switch.hover" if="hover"/>
 			<alias ref="battle-button-switch.default"/>
 		</select>
 
@@ -636,16 +648,16 @@
 		</select>
 
 		<select name="battle-button-return.background">
-			<alias ref="battle-button-return.hover" if="hover | keyboardFocus"/>
+			<alias ref="battle-button-return.hover" if="hover"/>
 			<alias ref="battle-button-return.disabled" if="disabled"/>
-			<alias ref="battle-button-return.hover" if="selected"/>
+			<alias ref="battle-button-return.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="battle-button-return.default"/>
 		</select>
 
 		<select name="battle-button-confirm.background">
-			<alias ref="battle-button-confirm.hover" if="hover | keyboardFocus"/>
+			<alias ref="battle-button-confirm.hover" if="hover"/>
 			<alias ref="battle-button-confirm.disabled" if="disabled"/>
-			<alias ref="battle-button-confirm.hover" if="selected"/>
+			<alias ref="battle-button-confirm.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="battle-button-confirm.default"/>
 		</select>
 
@@ -672,35 +684,46 @@
 		<area name="button-npc.ok" xywh="378,71,36,28" splitx="L20,R7" splity="T6,B8"/>
 		<area name="button-toggle.default" xywh="308,9,66,30" splitx="L20,R5" splity="T6,B8"/>
 		<area name="button-toggle.hover" xywh="308,40,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<animation name="button-toggle.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="button-toggle.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-toggle.hover" tint="#c6c6c6"/>
+		</animation>
 		<area name="button-toggle.disabled" xywh="308,71,66,30" splitx="L20,R5" splity="T6,B8"/>
 		<area name="button-toggle.disabled-hover" xywh="308,102,66,30" splitx="L20,R5" splity="T6,B8"/>
 		<area name="button-tiny.default" xywh="227,9,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tiny.hover" xywh="227,40,66,30" splitx="L5,R5" splity="T6,B8"/>
+		<animation name="button-tiny.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="button-tiny.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-tiny.hover" tint="#c6c6c6"/>
+		</animation>
 		<area name="button-tiny.disabled" xywh="227,71,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-small.default" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
 		<area name="button-small.hover" xywh="227,40,66,30" splitx="L25,R25" splity="T6,B8"/>
-		<area name="button-small.disabled" xywh="227,71,66,30" splitx="L25,R25" splity="T6,B8"/>
+		<animation name="button-small.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="button-small.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-small.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="button-small.disabled" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
 
 		<area name="button-tab.default" xywh="227,9,66,25" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tab.hover" xywh="227,40,66,25" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tab.disabled" xywh="227,71,66,25" splitx="L5,R5" splity="T6,B8"/>
 
 		<area name="button.default" xywh="7,7,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.hover1" xywh="8,62,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.hover" xywh="8,62,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.hover2" xywh="61,62,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.hover3" xywh="114,62,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.hover4" xywh="169,62,52,52" splitx="L8,R8" splity="T8,B8"/>
 
-		<animation name="button.hover" timeSource="hover" count="1">
-			<frame duration="50" ref="button.hover1" tint="#FFFFFFFF"/>
-			<frame duration="50" ref="button.hover2" tint="#FFFFFFFF"/>
-			<frame duration="50" ref="button.hover3" tint="#FFFFFFFF"/>
-			<frame duration="50" ref="button.hover4" tint="#FFFFFFFF"/>
-		</animation>
 
 		<area name="button.disabled" xywh="61,7,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.selected1" xywh="114,7,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.selected2" xywh="169,7,52,52" splitx="L8,R8" splity="T8,B8"/>
+
+		<animation name="button.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="button.selected1" tint="#ffffff"/>
+			<frame duration="1500" ref="button.selected1" tint="#c6c6c6"/>
+		</animation>
 
 		<animation name="button.selected" timeSource="selected">
 			<frame duration="400" ref="button.selected1" tint="#FFFFFFFF"/>
@@ -710,6 +733,8 @@
 		<select name="button-toggle.background">
 			<alias ref="button-toggle.hover" if="hover + selected"/>
 			<alias ref="button-toggle.hover" if="hover"/>
+			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus + selected"/>
+			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="button-toggle.disabled" if="hover + !selected"/>
 			<alias ref="button-toggle.disabled" if="disabled"/>
 			<alias ref="button-toggle.default" if="selected"/>
@@ -738,14 +763,16 @@
 		</select>
 
 		<select name="button-tiny.background">
-			<alias ref="button-tiny.hover" if="hover | keyboardFocus"/>
+			<alias ref="button-tiny.hover" if="hover"/>
+			<alias ref="button-tiny.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="button-tiny.disabled" if="disabled"/>
 			<alias ref="button-tiny.hover" if="selected"/>
 			<alias ref="button-tiny.default"/>
 		</select>
 
 		<select name="button-small.background">
-			<alias ref="button-small.hover" if="hover | keyboardFocus"/>
+			<alias ref="button-small.hover" if="hover"/>
+			<alias ref="button-small.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="button-small.disabled" if="disabled"/>
 			<alias ref="button-small.hover" if="selected"/>
 			<alias ref="button-small.default"/>
@@ -753,9 +780,9 @@
 
 		<select name="button.background">
 			<alias ref="button.hover" if="hover"/>
-			<alias ref="button.selected" if="hover | keyboardFocus"/>
+			<alias ref="button.selected" if="hover"/>
 			<alias ref="button.disabled" if="disabled"/>
-			<alias ref="button.hover" if="selected"/>
+			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="button.default"/>
 		</select>
 
