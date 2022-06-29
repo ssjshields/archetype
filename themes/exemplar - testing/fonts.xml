@@ -207,6 +207,7 @@
 	<fontDef name="console-orange" ref="alphabeta" color="#FF9900"/>
 	<fontDef name="console" ref="alphabeta" color="#FFFFFF"/>
 
+	<fontDef name="symbols-white-no-highlight" filename="res/fonts/DejaVuLGCSans.ttf" color="#7f9096" kerning="true" hinting="AutoSlight" size="14" incremental="false" characters="┌├└─←→↑↓▸◂↖↗↙↘☒➤↻☒⇲"/>
 	<fontDef name="symbols-white" filename="res/fonts/DejaVuLGCSans.ttf" color="#7f9096" kerning="true" hinting="AutoSlight" size="14" incremental="false" characters="┌├└─←→↑↓▸◂↖↗↙↘☒➤↻☒⇲">
 	<fontParam if="disabled" color="#9fabaf"/>
 		<fontParam if="hover" color="#FFFFFF"/>

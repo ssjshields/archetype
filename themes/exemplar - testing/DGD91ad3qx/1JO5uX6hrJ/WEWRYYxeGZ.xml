@@ -25,7 +25,7 @@
 	</theme>
 
 	<theme name="monsterdex-button-evo-tree" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>symbols-white</font></param>
+		<param name="font"><font>symbols-white-no-highlight</font></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
