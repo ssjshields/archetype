@@ -1167,10 +1167,10 @@
 		<area name="trainer-card.background" xywh="0,0,454,287"/>
 	</images>
 	<images file="gameshop_lang">
-		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-8,11,8,-11"/>
-		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-8,11,8,-11"/>
-		<area name="shop-item-sale.background" xywh="133,0,57,57" inset="-8,11,8,-11"/>
-		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-8,11,8,-11"/>
+		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-sale.background" xywh="133,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-9,11,8,-11"/>
 	</images>
 	<images file="res/water-levels.png" filter="nearest">
 		<area name="teardrop" xywh="3,3,8,11"/>
