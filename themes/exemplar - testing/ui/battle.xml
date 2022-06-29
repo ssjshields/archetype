@@ -149,9 +149,9 @@
 		<param name="font"><font>alphabeta-highlight-button</font></param>
 		<param name="border"><border>2,25,1,8</border></param>
 		<param name=""><image>battle-button-return.*</image></param>
-		<param name="textAlignment"><enum type="alignment">left</enum></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
-			<param name="border"><border>2,4</border></param>
+			<!--<param name="border"><border>2,4</border></param>-->
 			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 		</theme>
 		<theme name="label-button" ref="label" allowWildcard="true">
@@ -161,6 +161,7 @@
 	</theme>
 	<theme name="battle-button-confirm" ref="battle-button-return" allowWildcard="true">
 		<param name=""><image>battle-button-confirm.*</image></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
 	<theme name="battle-button" ref="-defaults" allowWildcard="true">
