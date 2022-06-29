@@ -629,14 +629,19 @@
 		</animation>
 		<area name="battle-button-switch.disabled" xywh="2,257,209,52"/>
 		<area name="battle-button-switch.disabledhover" xywh="218,257,209,52"/>
+		<animation name="battle-button-switch.disabledkeyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#c6c6c6"/>
+		</animation>
 		<area name="battle-area" xywh="6,312,800,115"/>
 
 		<select name="battle-button-switch.background">
-			<alias ref="battle-button-switch.disabledhover" if="disabled + (targeted | keyboardFocus)"/>
-			<alias ref="battle-button-switch.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="battle-button-switch.disabledhover" if="disabled + (targeted | hover)"/>
+			<alias ref="battle-button-switch.disabledkeyboardFocus" if="disabled + (targeted | keyboardFocus)"/>
 			<alias ref="battle-button-switch.disabled" if="disabled"/>
 			<alias ref="battle-button-switch.hover" if="targeted"/>
 			<alias ref="battle-button-switch.hover" if="hover"/>
+			<alias ref="battle-button-switch.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="battle-button-switch.default"/>
 		</select>
 
