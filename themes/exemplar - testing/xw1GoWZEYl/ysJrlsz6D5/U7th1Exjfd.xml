@@ -12,7 +12,7 @@
 	
 	<theme name="settings-panel" ref="base-frame" allowWildcard="true">
         <param name="background"><image>Settings-Window</image></param>
-            <param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	    <!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="titleAreaTop"><int>8</int></param>
         <param name="titleAreaLeft"><int>44</int></param>
         <param name="titleAreaRight"><int>-30</int></param>
