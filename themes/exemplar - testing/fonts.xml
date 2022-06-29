@@ -100,7 +100,9 @@
 		<fontParam if="disabled" color="#9fabaf"/>
 	</fontDef>
 	<fontDef name="alphabeta-white-chat" ref="alphabeta" color="#FFFFFF"/>
-	<fontDef name="alphabeta-main-system" ref="alphabeta" color="#6a808a"/>
+	<!--<fontDef name="alphabeta-main-system" ref="alphabeta" color="#6a808a"/>-->
+	<fontDef name="alphabeta-main-system" ref="alphabeta" color="#e2e2e2"/>
+	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="#e2e2e2"/>
 	<fontDef name="alphabeta-main-system-2" ref="alphabeta-battle-feed" color="#e2e2e2" kerning="true" hinting="AutoSlight" size="12" size_cjk="12"/>
 	<fontDef name="alphabeta-white" ref="alphabeta" color="#FFFFFF"/>
 	<fontDef name="alphabeta-shiny" ref="alphabeta" color="#fef340"/>

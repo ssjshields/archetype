@@ -60,7 +60,7 @@
 						<param name="channel"><font>alphabeta-yellow</font></param>
 						<param name="team"><font>alphabeta-brown</font></param>
 						<param name="system"><font>alphabeta-main-system</font></param>
-						<param name="battle"><font>alphabeta-battle-feed</font></param>
+						<param name="battle"><font>alphabeta-main-battle</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images"><map>
