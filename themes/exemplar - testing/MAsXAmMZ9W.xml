@@ -1671,8 +1671,15 @@
 		<area name="Bag-Frame-Item-Box" xywh="*"/>
 	</images>
 	
-	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay.png" filter="lineal">
-		<area name="TM-Button-Overlay" xywh="*"/>
+	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Default.png" filter="lineal">
+		<area name="TM-Button-Overlay-Default" xywh="*" inset="-1,1,3,1"/>
+	</images>
+	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Disabled.png" filter="lineal">
+		<area name="TM-Button-Overlay-Disabled" xywh="*" inset="-1,1,3,1"/>
+		<select name="TM-Button-Overlay">
+			<alias ref="TM-Button-Overlay-Disabled" if="disabled"/>
+			<alias ref="TM-Button-Overlay-Default"/>
+		</select>
 	</images>
 
 	<images file="res/custom/7BGCabK5FN/Social-Window.png" filter="lineal">
