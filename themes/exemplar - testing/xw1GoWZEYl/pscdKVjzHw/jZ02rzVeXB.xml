@@ -2,7 +2,6 @@
 <themes>
 
 	<theme name="social-window" ref="base-tabbed-frame">
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
 	<param name="background"><image>Social-Window</image></param>
 	<param name="titleAreaTop"><int>8</int></param>
 	<param name="titleAreaLeft"><int>44</int></param>
@@ -10,8 +9,6 @@
 	<param name="titleAreaBottom"><int>30</int></param>
 	<param name="closeButtonX"><int>-26</int></param>
 	<param name="closeButtonY"><int>13</int></param>
-		<param name="fadeDurationShow"><int>200</int></param>
-		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<param name="inputMap"><inputMapDef>
@@ -23,7 +20,7 @@
 	</theme>
 	
 	<theme name="mail-window" ref="base-tabbed-frame">
-	<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+	<!--<param name="fadeColorInactive"><color>#D4FFFFFF</color></param>-->
 	<param name="titleAreaTop"><int>9</int></param>
 	<param name="titleAreaLeft"><int>18</int></param>
 	<param name="titleAreaRight"><int>-30</int></param>
