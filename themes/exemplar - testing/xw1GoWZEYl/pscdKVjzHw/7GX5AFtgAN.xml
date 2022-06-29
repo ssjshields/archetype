@@ -159,9 +159,9 @@
 	</theme>
 
 	<theme name="chatframe-locked" ref="chatframe">
-		<param name="fadeColorInactive"><color>#64FFFFFF</color></param>
+		<param name="fadeColorInactive"><color>#B3FFFFFF</color></param>
 		<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>90000</int></param>
+		<param name="fadeDurationDeactivate"><int>15000</int></param>
 	</theme>
 
 	<theme name="chatframe-hidden" ref="-defaults">
