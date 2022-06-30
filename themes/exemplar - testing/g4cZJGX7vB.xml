@@ -10,7 +10,7 @@
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="nearest">
-		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0">
+		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0" inset="0,-4,-4,-4">
 			<area xywh="5,4,10,11"/>
 			<area xywh="18,4,10,11" tiled="true"/>
 			<area xywh="30,4,10,11"/>
@@ -69,21 +69,6 @@
 			<area xywh="115,69,10,5"/>
 		</grid>
 
-		<composed name="ui-frame.background">
-            <alias ref="ui-frame.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-        </composed>
-
-        <composed name="ui-frame-red.background">
-            <alias ref="ui-frame-red.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-        </composed>
-
-        <composed name="ui-frame-green.background">
-            <alias ref="ui-frame-green.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-        </composed>
-
 		<grid name="ui-inner-frame.background" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="5,82,10,11"/>
 			<area xywh="33,82,10,11" tiled="true"/>
@@ -101,7 +86,7 @@
 		
 		<composed name="ui-frame.background">
             <alias ref="ui-frame.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+            <alias ref="Highlight-Overlay" inset="2,-2,-2,-2"/>
         </composed>
 
         <composed name="ui-frame-red.background">

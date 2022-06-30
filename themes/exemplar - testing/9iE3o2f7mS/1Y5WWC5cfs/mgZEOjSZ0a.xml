@@ -584,11 +584,11 @@
 	<theme name="base-frame" ref="resizableframe" allowWildcard="true">
         <param name="background"><image>ui-frame.background</image></param>
         <param name="titleAreaTop"><int>0</int></param>
-        <param name="titleAreaLeft"><int>10</int></param>
+        <param name="titleAreaLeft"><int>6</int></param>
         <param name="titleAreaRight"><int>-1</int></param>
         <param name="titleAreaBottom"><int>40</int></param>
         <param name="closeButtonX"><int>-24</int></param>
-        <param name="closeButtonY"><int>10</int></param>
+        <param name="closeButtonY"><int>14</int></param>
         <param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
         <param name="fadeDurationActivate"><int>200</int></param>
         <param name="fadeDurationDeactivate"><int>200</int></param>
