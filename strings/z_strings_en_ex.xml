@@ -2,8 +2,8 @@
 <strings lang="en-ex" lang_full="EN - Exemplar" is_primary="1">
   <!-- OVERRIDES START - EDIT AT YOUR OWN RISK!!! -->
 
-  
-      <string id="1526"> </string>
+  <!-- whisper -->
+      <!--<string id="1526">/w</string>-->
   <!-- Login Screen -->
   <!-- (Custom title header & TL area) -->
 		<string id="1170">GUI By:\nAnonymousPoke, nurver &amp; realmadrid1809\n\nLoaded ROMs:</string>
