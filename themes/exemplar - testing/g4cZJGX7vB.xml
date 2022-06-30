@@ -10,7 +10,7 @@
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="nearest">
-		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0" inset="0,-4,-4,-4">
+		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0" inset="0,-4,-4,-5">
 			<area xywh="5,4,10,11"/>
 			<area xywh="18,4,10,11" tiled="true"/>
 			<area xywh="30,4,10,11"/>
