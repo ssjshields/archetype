@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--<ds_strings_archive archive_type="0" lang="de" region_id="2">
+<ds_strings_archive archive_type="0" lang="de" region_id="2">
 
     <string block_id="0" entry_id="103" table_id="15">{01} von\n       {00} wirkt!</string>
     <string block_id="0" entry_id="14" table_id="15">{02} wird von {00} {01}\nin den Kampf geschickt!</string>
@@ -28,4 +28,4 @@
     <string block_id="0" entry_id="10" table_id="283">{00} verstaut {01}\nin der {02}-Tasche.</string>
     <string block_id="0" entry_id="11" table_id="283">{00} verstaut {01}\nin der {02}-Tasche.</string>
 
-</ds_strings_archive>-->
+</ds_strings_archive>

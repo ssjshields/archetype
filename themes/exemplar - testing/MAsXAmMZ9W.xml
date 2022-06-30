@@ -807,9 +807,9 @@
 
 		<select name="button.background">
 			<alias ref="button.hover" if="hover"/>
-			<alias ref="button.selected" if="hover"/>
-			<alias ref="button.disabled" if="disabled"/>
 			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button.selected" if="selected"/>
+			<alias ref="button.disabled" if="disabled"/>
 			<alias ref="button.default"/>
 		</select>
 
@@ -1612,7 +1612,7 @@
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/battle-learn-label.png" filter="lineal">
-		<area name="battle-learn-label" xywh="*" inset="1,0,0,0"/>
+		<area name="battle-learn-label" xywh="*" inset="1,0,0,0" splitx="L5,R5"/>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Battle-Bag-Text-Background.png" filter="lineal">

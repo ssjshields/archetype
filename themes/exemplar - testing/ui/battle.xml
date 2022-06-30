@@ -170,7 +170,6 @@
 		<param name="font2"><font>alphabeta-chat-highlight-button</font></param>
 		<param name="border"><border>7,0</border></param>
 		<theme name="label" ref="label" allowWildcard="true">
-			<param name="border"><border>3,4</border></param>
 			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 			<param name="border"><border>8,3,0,1</border></param>
 		</theme>
@@ -199,7 +198,7 @@
 	
 	<theme name="battle-panel" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>battle-area</image></param>
-		<param name="border"><border>7,5</border></param>
+		<param name="border"><border>8,5</border></param>
 		<param name="defaultGap"><dimension>7,4</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -207,7 +206,7 @@
 		<param name="namedGaps"><map/></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0</border></param>
-			<param name="defaultGap"><dimension>5,0</dimension></param>
+			<param name="defaultGap"><dimension>7,4</dimension></param>
 			<param name="smallGap"><dimension>8,0</dimension></param>
 			<param name="mediumGap"><dimension>10,0</dimension></param>
 			<param name="largeGap"><dimension>15,0</dimension></param>
@@ -250,7 +249,7 @@
 
 	<theme name="battle-panel-dark" ref="battle-panel" allowWildcard="true">
 		<param name="background"><image>battle-learn-label</image></param>
-		<param name="border"><border>9,0,0,0</border></param>
+		<param name="border"><border>5,8,0,0</border></param>
 	</theme>
 	
 	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
