@@ -88,7 +88,7 @@
 		<param name="fadeInTime"><int>250</int></param>
 		<param name="overlay"><image>none</image></param>
 		<theme name="label" ref="-defaults">
-			<param name="font"><font>tooltip-font</font></param>
+			<param name="font"><font>tooltip-font-white</font></param>
 		</theme>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0</border></param>
@@ -98,7 +98,7 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="label" ref="-defaults">
-				<param name="font"><font>tooltip-font</font></param>
+				<param name="font"><font>tooltip-font-white</font></param>
 			</theme>
 		</theme>
 	</theme>

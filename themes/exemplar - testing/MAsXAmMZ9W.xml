@@ -405,27 +405,22 @@
 			<area xywh="15,297,4,7"/>
 		</grid>
 
-		<grid name="tooltip-left.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
-			<area xywh="4,325,4,4"/>
-			<area xywh="6,325,2,4"/>
-			<area xywh="8,325,7,4"/>
-			<area xywh="15,325,2,4"/>
-			<area xywh="15,325,4,4"/>
-			<area xywh="4,328,4,4"/>
-			<area xywh="6,328,2,4"/>
-			<area xywh="8,328,7,4"/>
-			<area xywh="15,328,2,4"/>
-			<area xywh="15,328,4,4"/>
-			<area xywh="4,330,4,2"/>
-			<area xywh="6,330,2,2"/>
-			<area xywh="8,330,7,2"/>
-			<area xywh="15,330,2,2"/>
-			<area xywh="15,330,4,2"/>
-			<area xywh="4,335,4,7"/>
-			<area xywh="6,335,2,7"/>
-			<area xywh="8,335,7,7"/>
-			<area xywh="15,335,2,7"/>
-			<area xywh="15,335,4,7"/>
+		<grid name="tooltip-left.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5" inset="-2,-2,-2,-2">
+			<area xywh="2,324,4,4"/>
+			<area xywh="6,324,2,4"/>
+			<area xywh="8,324,7,4"/>
+			<area xywh="15,324,2,4"/>
+			<area xywh="17,324,4,4"/>
+			<area xywh="2,328,4,7"/>
+			<area xywh="6,328,2,7"/>
+			<area xywh="8,328,7,7"/>
+			<area xywh="15,328,2,7"/>
+			<area xywh="17,328,4,7"/>
+			<area xywh="2,335,4,8"/>
+			<area xywh="6,335,2,8"/>
+			<area xywh="8,335,7,8"/>
+			<area xywh="15,335,2,8"/>
+			<area xywh="17,335,4,8"/>
 		</grid>
 
 		<grid name="chat-npc-bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
