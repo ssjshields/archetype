@@ -3,9 +3,9 @@
 
 	<theme name="pc-frame" ref="resizableframe">
 		<param name="background"><image>pc-frame</image></param>
-		<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
+		<!--<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
 		<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>210000</int></param>
+		<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 		<param name="titleAreaTop"><int>6</int></param>
 		<param name="titleAreaLeft"><int>52</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
