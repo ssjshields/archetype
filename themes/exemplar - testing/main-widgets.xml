@@ -133,7 +133,7 @@
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
-			<param name="border"><border>40,7,7,7</border></param>
+			<param name="border"><border>40,7,7,6</border></param>
 			<theme name="container" ref="-dialog" allowWildcard="true">
 				<param name="border"><border>7,7</border></param>
 				<param name="background"><image>none</image></param>

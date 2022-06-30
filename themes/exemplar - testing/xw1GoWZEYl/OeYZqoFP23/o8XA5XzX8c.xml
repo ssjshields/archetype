@@ -8,7 +8,7 @@
 	<param name="titleAreaBottom"><int>30</int></param>
 	<param name="closeButtonX"><int>-28</int></param>
 	<param name="closeButtonY"><int>12</int></param>
-		<param name="border"><border>35,10,10,10</border></param>
+		<param name="border"><border>35,10,10,4</border></param>
 		<param name="minWidth"><int>600</int></param>
 		<param name="minHeight"><int>350</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
