@@ -152,7 +152,7 @@
 	</theme>
 
 	<theme name="chat-playername" ref="button" allowWildcard="true">
-		<!--<param name="border"><border>0,0,0,0</border></param>-->
+		<param name="border"><border>0,0,0,0</border></param>
 		<param name="background"><image>none</image></param>
 		<param name="font"><font>alphabeta-white</font></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
