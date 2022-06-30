@@ -86,7 +86,7 @@
 		
 		<composed name="ui-frame.background">
             <alias ref="ui-frame.background-old"/>
-            <alias ref="Highlight-Overlay" inset="2,-2,-2,-2"/>
+            <alias ref="Highlight-Overlay" inset="2,-2,-2,-3"/>
         </composed>
 
         <composed name="ui-frame-red.background">
