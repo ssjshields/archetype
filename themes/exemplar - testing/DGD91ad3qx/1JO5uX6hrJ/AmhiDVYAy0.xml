@@ -14,13 +14,13 @@
 			<param name="border"><border>1,283,5,5</border></param>
 		</theme>
 
-		<param name="titleAreaTop"><int>6</int></param>
+		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>11</int></param>
 		<param name="titleAreaRight"><int>-30</int></param>
 		<param name="titleAreaBottom"><int>30</int></param>
 
 		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>11</int></param>
+		<param name="closeButtonY"><int>12</int></param>
 
 		<theme name="nameplate" ref="-defaults">
 			<param name="minWidth"><int>340</int></param>
@@ -76,7 +76,7 @@
 			<theme name="tabbedpane" ref="-defaults">
 				<param name="minWidth"><int>245</int></param>
 				<param name="background"><image>none</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
+				<param name="border"><border>2,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
 						<param name=""><image>ui-tab-button.*</image></param>
@@ -88,7 +88,7 @@
 				<theme name="container" ref="-defaults">
 					 <theme name="dialoglayout" ref="-defaults">
 						<param name="minHeight"><int>90</int></param>
-						<param name="border"><border>10,0,0,0</border></param>
+						<param name="border"><border>8,0,0,0</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
