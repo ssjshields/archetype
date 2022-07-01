@@ -325,7 +325,6 @@
 			<alias ref="ui-button.hover" if="disabled + hover"/>
 			<alias ref="ui-button.keyboardFocus" if="disabled + keyboardFocus"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
-			<alias ref="ui-button.pressed" if="pressed"/>
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.default"/>
@@ -335,7 +334,6 @@
 			<alias ref="ui-button.hover" if="disabled + hover"/>
 			<alias ref="ui-button.keyboardFocus" if="disabled + keyboardFocus"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
-			<alias ref="ui-button.pressed" if="pressed"/>
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.default"/>
