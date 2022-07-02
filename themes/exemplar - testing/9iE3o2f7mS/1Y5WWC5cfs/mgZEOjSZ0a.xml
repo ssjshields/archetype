@@ -401,7 +401,7 @@
 				<param name="minHeight"><int>26</int></param>
 				<param name="minDisplayedRows"><int>1</int></param>
 				<param name="font"><font>listbox-display-highlight-button</font></param>
-				<param name="border"><border>0,7</border></param>
+				<param name="border"><border>0,0,2,0</border></param>
 				<param name=""><image>ui-popup-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
@@ -412,7 +412,7 @@
 			<param name="fixedCellWidth"><bool>false</bool></param>
 			<param name="fixedCellHeight"><bool>false</bool></param>
 			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="border"><border>4,7</border></param>
+			<param name="border"><border>7</border></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			<param name="maxHeight"><int>270</int></param>
 			<param name="maxWidth"><int>250</int></param>
