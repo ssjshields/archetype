@@ -154,7 +154,7 @@
 							<theme name="label-monster-value" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-value</image></param>
 								<param name="textAlignment"><enum type="alignment">left</enum></param>
-								<param name="border"><border>4,5,5,25</border></param>
+								<param name="border"><border>4,5,5,10</border></param>
 								<param name="maxWidth"><int>110</int></param>
 								<param name="minWidth"><int>110</int></param>
 								<param name="font"><font>alphabeta-small</font></param>
@@ -167,7 +167,7 @@
 							<theme name="label-monster-value-stat-complete" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-value</image></param>
 								<param name="textAlignment"><enum type="alignment">left</enum></param>
-								<param name="border"><border>4,5,5,25</border></param>
+								<param name="border"><border>4,5,5,10</border></param>
 								<param name="maxWidth"><int>110</int></param>
 								<param name="minWidth"><int>110</int></param>
 								<param name="font"><font>alphabeta-lightgreen</font></param>
@@ -176,7 +176,7 @@
 							<theme name="label-monster-value-stat-bad" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-value</image></param>
 								<param name="textAlignment"><enum type="alignment">left</enum></param>
-								<param name="border"><border>4,5,5,25</border></param>
+								<param name="border"><border>4,5,5,10</border></param>
 								<param name="maxWidth"><int>110</int></param>
 								<param name="minWidth"><int>110</int></param>
 								<param name="font"><font>alphabeta-red</font></param>
