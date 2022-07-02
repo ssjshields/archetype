@@ -8,7 +8,7 @@
 		<theme name="vscrollbar" ref="vscrollbar-white"/>
 		<param name="border"><border>10,0,0,0</border></param>
 		<param name="minWidth"><int>800</int></param>
-		<param name="minHeight"><int>420</int></param>
+		<param name="minHeight"><int>423</int></param>
 		<param name="maxWidth"><int>32767</int></param>
 		<param name="maxHeight"><int>32767</int></param>
 		<param name="hasDragButton"><bool>false</bool></param>
