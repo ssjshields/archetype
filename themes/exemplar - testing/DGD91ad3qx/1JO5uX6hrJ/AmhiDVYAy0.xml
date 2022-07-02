@@ -131,23 +131,24 @@
 							</theme>
 
 							<theme name="label-skill-use-name" ref="button" allowWildcard="true">
-								<param name=""><image>mi-skill-use.*</image></param>
+								<param name="background"><image>mi-skill-use</image></param>
 								<param name="border"><border>0,0,1,40</border></param>
 								<param name="minHeight"><int>42</int></param>
 								<param name="maxHeight"><int>42</int></param>
 								<param name="minWidth"><int>164</int></param>
 								<param name="maxWidth"><int>164</int></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+								<param name="font"><font>alphabeta-highlight-button-summary-move</font></param>
 							</theme>
 
 							<theme name="label-skill-name" ref="button" allowWildcard="true">
-								<param name="background"><image>mi-skill</image></param>
-								<param name="border"><border>0,0,0,41</border></param>
-								<param name="minHeight"><int>43</int></param>
-								<param name="maxHeight"><int>43</int></param>
+								<param name="background"><image>mi-skill-use</image></param>
+								<param name="border"><border>0,0,1,40</border></param>
+								<param name="minHeight"><int>42</int></param>
+								<param name="maxHeight"><int>42</int></param>
 								<param name="minWidth"><int>164</int></param>
 								<param name="maxWidth"><int>164</int></param>
-
+								<param name="font"><font>alphabeta-small</font></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 							</theme>
 

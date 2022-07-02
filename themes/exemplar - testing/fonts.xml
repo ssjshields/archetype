@@ -26,6 +26,11 @@
 		<fontParam if="selected" color="#FFFFFF"/>
 		<fontParam if="keyboardFocus" color="#FFFFFF"/>
 	</fontDef>
+
+	<fontDef name="alphabeta-highlight-button-summary-move" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#7f9096" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
+		<fontParam if="disabled" color="#9fabaf"/>
+		<fontParam if="hover" color="#FFFFFF"/>
+	</fontDef>
 	
 	<fontDef name="alphabeta-highlight-button-pc" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#7f9096" kerning="true" hinting="AutoSlight" size="9" size_cjk="9">
 		<fontParam if="disabled" color="#9fabaf"/>
