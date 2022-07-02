@@ -123,7 +123,6 @@
 
 	<theme name="item-widget" ref="resizableframe" allowWildcard="true">
 		<param name="border"><border>15</border></param>
-		<param name="minWidth"><int>310</int></param>
 		<param name="minHeight"><int>120</int></param>
 		<param name="maxWidth"><int>500</int></param>
 		<param name="background"><image>ui-popup.background</image></param>
@@ -135,9 +134,9 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="button" ref="button" allowWildcard="true">
-				<param name="background"><image>ui-inputbox-2px-btn.background</image></param>
+				<param name="background"><image>ui-button.background</image></param>
 				<param name="border"><border>5</border></param>
-				<param name="font"><font>pb-dark</font></param>
+				<param name="font"><font>pb-dark-highlight-button</font></param>
 			</theme>
 			<theme name="spritelabel" ref="-defaults">
 				<param name="font"><font>pb-dark</font></param>
