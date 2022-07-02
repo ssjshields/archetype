@@ -2,6 +2,7 @@
 <themes>
 
 	<theme name="pc-frame" ref="resizableframe">
+		<param name="border"><border>28,0,0,0</border></param>
 		<param name="background"><image>pc-frame</image></param>
 		<!--<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
 		<param name="fadeDurationActivate"><int>150</int></param>
@@ -25,12 +26,13 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 					<theme name="editfield" ref="editfield">
 						<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+			<param name="border"><border>110</border></param>
 					</theme>
 
 			<param name="namedGaps"><map/></param>
 			<theme name="container" ref="-defaults">
 				<param name="background"><image>none</image></param>
-				<param name="border"><border>0,2,0,0</border></param>
+				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="search-dialog" ref="dialoglayout">
 					<param name="border"><border>18,0,0,0</border></param>
 	
@@ -153,46 +155,48 @@
 
 				</theme>
 				<theme name="tabbedpane" ref="-defaults">
-					<param name="minWidth"><int>230</int></param>
+					<param name="minWidth"><int>663</int></param>
 					<param name="background"><image>none</image></param>
-					<param name="border"><border>14,0,0,0</border></param>
+					<param name="border"><border>17,1,0,0</border></param>
 					<theme name="tabbox" ref="-defaults">
 						<theme name="tabbutton" ref="togglebutton">
 							<param name="font"><font>alphabeta-highlight-button</font></param>
 							<param name=""><image>button-toggle.*</image></param>
 						</theme>
 						<param name="border"><border>0,0,0,0</border></param>
-						<param name="spacing"><int>8</int></param>
+						<param name="spacing"><int>1</int></param>
 						<param name="alignment"><enum type="alignment">FILL</enum></param>
 					</theme>
 					 <theme name="scrollControls" ref="-defaults">
-						<param name="border"><border>0,0,0,0</border></param>
+						<param name="border"><border>0,3,0,0</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
 						<param name="largeGap"><dimension>15,15</dimension></param>
 						<param name="namedGaps"><map>
-							<param name="scrollButtons"><gap>9</gap></param>
+							<param name="scrollButtons"><gap>1</gap></param>
 						</map></param>
 						<theme name="scrollLeft" ref="button">
-							<param name="text"><string>&lt;</string></param>
+							<param name="text"><string>&lt;&lt;</string></param>
+							<param name=""><image>pc-arrows.*</image></param>
 						</theme>
 						<theme name="scrollRight" ref="button">
-							<param name="text"><string>&gt;</string></param>
+							<param name="text"><string>&gt;&gt;</string></param>
+							<param name=""><image>pc-arrows.*</image></param>
 						</theme>
 					</theme>
 					<theme name="container" ref="-defaults">
-						<param name="border"><border>22,10,0,0</border></param>
+						<param name="border"><border>10,3,0,0</border></param>
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-							<param name="border"><border>3,15,25,10</border></param>
+							<param name="border"><border>10,0,14,0</border></param>
 							<param name="minWidth"><int>600</int></param>
 							<theme name="dialoglayout" ref="-defaults">
-							 <param name="defaultGap"><dimension>3,3</dimension></param>
+							 <param name="defaultGap"><dimension>6,6</dimension></param>
 							 <param name="smallGap"><dimension>8,8</dimension></param>
 							 <param name="mediumGap"><dimension>10,10</dimension></param>
 							 <param name="largeGap"><dimension>15,15</dimension></param>
 							 <param name="namedGaps"><map/></param>
-							 <param name="border"><border>0,3,0,0</border></param>
+							 <param name="border"><border>0,10,0,0</border></param>
 							 <theme name="pc-slot" ref="-defaults">
 								 <param name="background"><image>pc-slot.background</image></param>
 								 <param name="minWidth"><int>32</int></param>
@@ -206,7 +210,7 @@
 						 </theme>
 						</theme>
 						 <theme name="dialoglayout" ref="-defaults">
-							<param name="defaultGap"><dimension>5,5</dimension></param>
+							<param name="defaultGap"><dimension>6,5</dimension></param>
 							<param name="smallGap"><dimension>8,8</dimension></param>
 							<param name="mediumGap"><dimension>10,10</dimension></param>
 							<param name="largeGap"><dimension>15,15</dimension></param>

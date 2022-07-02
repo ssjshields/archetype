@@ -1305,6 +1305,24 @@
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
+
+	<images file="res/custom/2sTxAVRCoW/pc-arrows.background.png" filter="nearest">
+		<area name="pc-arrows.default" xywh="29,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<area name="pc-arrows.hover" xywh="0,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<area name="pc-arrows.disabled" xywh="58,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<animation name="pc-arrows.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="pc-arrows.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="pc-arrows.hover" tint="#c6c6c6"/>
+		</animation>
+		<select name="pc-arrows.background" inset="1,0,2,0">
+			<alias ref="pc-arrows.hover" if="disabled + hover"/>
+			<alias ref="pc-arrows.keyboardFocus" if="disabled + keyboardFocus"/>
+			<alias ref="pc-arrows.disabled" if="disabled"/>
+			<alias ref="pc-arrows.hover" if="hover"/>
+			<alias ref="pc-arrows.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="pc-arrows.default"/>
+		</select>
+	</images>
 	
 	<images file="res/contestgui.png" filter="nearest">
 		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>

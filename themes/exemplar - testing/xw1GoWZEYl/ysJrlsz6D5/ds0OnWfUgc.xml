@@ -12,9 +12,9 @@
 
 		<theme name="hud-item-button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="border"><border>7,0</border></param>
+			<param name="border"><border>0,26,0,0</border></param>
 			<param name="background"><image>ui-button.background</image></param>
-			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
 
 		<theme name="dialoglayout" ref="-defaults">
