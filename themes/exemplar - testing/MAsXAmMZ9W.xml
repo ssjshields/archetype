@@ -1032,6 +1032,7 @@
 	<images file="res/custom/x2eLtlMVtE/monster-info.png" filter="nearest">
 		<area name="mi-label-title" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
 		<area name="mi-label-title-inset" inset="0,6" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
+		<area name="mi-label-item" xywh="7,63,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,6,3,-6"/>
 		<area name="mi-label-value" xywh="25,58,125,25" splitx="L2,R2" splity="T2,B2"/>
 		<area name="mi-label-value-blue" tint="#FFFFFF" xywh="181,21,57,47" splitx="L2,R2" splity="T2,B2"/>
 		<area name="mi-label-value-inset" xywh="25,58,125,25" inset="0,-22,0,0" splitx="L2,R2" splity="T2,B2"/>
@@ -1637,11 +1638,7 @@
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
-	
-	<images file="res/custom/x2eLtlMVtE/poke-summary-arrow.png" filter="lineal">
-		<area name="poke-summary-arrow" xywh="*"/>
-	</images>
-	
+		
 	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
 		<area name="poke-summary-dex" xywh="*" inset="-192,181,175,17"/>
 	</images>

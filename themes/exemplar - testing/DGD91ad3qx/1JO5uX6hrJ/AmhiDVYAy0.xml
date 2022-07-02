@@ -2,7 +2,6 @@
 <themes>
 
 	<theme name="monster-frame" ref="resizableframe">
-    <param name="overlay"><image>poke-summary-arrow</image></param>
 	<param name="background"><image>Poke-Summary-Window</image></param>
 		<param name="border"><border>0,5,0,0</border></param>
 
@@ -46,18 +45,16 @@
 		<theme name="itemplate" ref="-defaults">
 			<!--<param name="background"><image>none</image></param>
 			<param name="minHeight"><int>34</int></param>
-			<param name="maxHeight"><int>34</int></param>
-			<param name="border"><border>120,22</border></param>-->
+			<param name="maxHeight"><int>34</int></param>-->
+			<param name="border"><border>20,4,0,0</border></param>
 			<theme name="label" ref="-defaults">
 				<param name="font"><font>symbols-white</font></param>		
-			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
-
-
-	<theme name="label2" ref="-defaults">
+			<theme name="label2" ref="-defaults">
 				<param name="font"><font>alphabeta-item-held</font></param>
-				<param name="border"><border>90,22</border></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<param name="border"><border>0,20,0,0</border></param>
+				<param name="background"><image>mi-label-item</image></param>
 			</theme>
 			<param name="defaultGap"><dimension>2,0</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
