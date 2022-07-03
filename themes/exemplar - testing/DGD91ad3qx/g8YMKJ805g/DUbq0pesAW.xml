@@ -18,11 +18,10 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="tabbedpane" ref="-defaults">
-			<param name="minWidth"><int>432</int></param>
+				<param name="minWidth"><int>432</int></param>
 				<param name="maxWidth"><int>432</int></param>
 				<param name="minHeight"><int>353</int></param>
-					<param name="maxHeight"><int>353</int></param>
-
+				<param name="maxHeight"><int>353</int></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
@@ -34,13 +33,17 @@
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>10,0,0,0</border></param>
+					<param name="border"><border>3,0,0,0</border></param>
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="-defaults">
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 							<theme name="vscrollbar" ref="vscrollbar-white"/>
 							<theme name="dialoglayout" ref="-dialog">
-								<param name="border"><border>0</border></param>
+								<param name="border"><border>7,0,10,0</border></param>
+									<theme name="label" ref="label" allowWildcard="true">
+										<param name="background"><image>bag-category-label</image></param>
+										<param name="border"><border>0,15,0,0</border></param>
+									</theme>
 							</theme>
 						</theme>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -65,44 +68,44 @@
 
 	<theme name="inventory-button" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta-highlight-button</font></param>
-		<param name="border"><border>1,1,2,0</border></param>
+		<param name="border"><border>2,0,1,0</border></param>
 		<param name="background"><image>ui-button-item-bag.background</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
-	   <theme name="item-move-dialog-button" ref="-defaults" allowWildcard="true">
-    <param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
-    <param name="font2"><font>alphabeta-highlight-tm-move-button</font></param>
-    <param name="border"><border>11,15,18,15</border></param>
-    <param name="background"><image>ui-button-bag.background</image></param>
-    <param name="overlay"><image>TM-Button-Overlay-Disabled</image></param>
-    <param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
-    <param name="textAlignment2"><enum type="alignment">BOTTOMLEFT</enum></param>
-    <param name="minWidth"><int>213</int></param>
-    <param name="minHeight"><int>54</int></param>
+	<theme name="item-move-dialog-button" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="border"><border>12,15,17,15</border></param>
+		<param name="background"><image>ui-button-bag.background</image></param>
+		<param name="overlay"><image>TM-Button-Overlay-Disabled</image></param>
+		<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOMLEFT</enum></param>
+		<param name="minWidth"><int>213</int></param>
+		<param name="minHeight"><int>54</int></param>
     </theme>
 
     <theme name="item-use-dialog-button" ref="-defaults" allowWildcard="true">
-    <param name="font"><font>alphabeta-highlight-tm-button</font></param>
-    <param name="font2"><font>alphabeta-highlight-tm-button</font></param>
-    <param name="border"><border>11,15,18,15</border></param>
-    <param name="background"><image>ui-button-bag.background</image></param>
-    <param name="overlay"><image>TM-Button-Overlay</image></param>
-    <param name="textAlignment"><enum type="alignment">TOP</enum></param>
-    <param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-    <param name="minWidth"><int>213</int></param>
-    <param name="minHeight"><int>54</int></param>
+		<param name="font"><font>alphabeta-highlight-tm-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-button</font></param>
+		<param name="border"><border>12,15,17,15</border></param>
+		<param name="background"><image>ui-button-bag.background</image></param>
+		<param name="overlay"><image>TM-Button-Overlay</image></param>
+		<param name="textAlignment"><enum type="alignment">TOP</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
+		<param name="minWidth"><int>213</int></param>
+		<param name="minHeight"><int>54</int></param>
     </theme>
 
 	<theme name="tm-button" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-button-bag.background</image></param>
-		<param name="border"><border>5,0,8,0</border></param>
+		<param name="border"><border>6,40,7,6</border></param>
 		<param name="font"><font>alphabeta-highlight-button</font></param>
-		<param name="minWidth"><int>196</int></param>
-		<param name="maxWidth"><int>196</int></param>
+		<param name="minWidth"><int>197</int></param>
+		<param name="maxWidth"><int>197</int></param>
 		<param name="minHeight"><int>36</int></param>
 		<param name="maxHeight"><int>36</int></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 	</theme>
 
 	<theme name="hotkeybar" ref="resizableframe">

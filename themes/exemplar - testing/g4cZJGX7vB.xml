@@ -334,11 +334,11 @@
 			<alias ref="ui-button.background"/>
 		</composed>
 
-		<composed name="ui-button-bag.background" inset="-2,0,2,0">
+		<composed name="ui-button-bag.background" inset="-1,0,1,0">
 			<alias ref="ui-button.background"/>
 		</composed>
 
-		<composed name="ui-button-item-bag.background" inset="-2,0,0,0">
+		<composed name="ui-button-item-bag.background" inset="-1,0,-1,0">
 			<alias ref="ui-button.background"/>
 		</composed>
 
