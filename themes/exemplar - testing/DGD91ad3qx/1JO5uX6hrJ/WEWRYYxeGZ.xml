@@ -159,12 +159,12 @@
 				 <theme name="dialoglayout" ref="dialoglayout">
 				<theme name="button" ref="button" allowWildcard="true">
 					<param name="font"><font>alphabeta-highlight-button</font></param>
-					<param name="border"><border>7,11</border></param>
+					<param name="border"><border>7,0</border></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				</theme>
 					<param name="minWidth"><int>550</int></param>
 					<param name="border"><border>0,0,0,0</border></param>
-					<param name="defaultGap"><dimension>5,0</dimension></param>
+					<param name="defaultGap"><dimension>5,9</dimension></param>
 					<param name="smallGap"><dimension>8,8</dimension></param>
 					<param name="mediumGap"><dimension>10,10</dimension></param>
 					<param name="largeGap"><dimension>15,15</dimension></param>
