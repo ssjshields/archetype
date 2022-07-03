@@ -286,7 +286,7 @@
 			<frame duration="150" ref="ui-button.hover.background"/>
 			<frame duration="1" ref="ui-button.hover.background"/>
 		</animation>
-		<animation name="ui-button.keyboardFocus-animation" timeSource="keyboardFocus">
+		<animation name="ui-button.keyboardFocus-animation" timeSource="enabled">
 			<frame duration="1500" ref="ui-button.hover.background" tint="#ffffff"/>
 			<frame duration="1500" ref="ui-button.hover.background" tint="#c6c6c6"/>
 		</animation>
@@ -334,15 +334,13 @@
 			<alias ref="ui-button.background"/>
 		</composed>
 
-		
-		<select name="ui-button-bag.background" inset="-2,0,2,0">
-			<alias ref="ui-button.hover" if="disabled + hover"/>
-			<alias ref="ui-button.keyboardFocus" if="disabled + keyboardFocus"/>
-			<alias ref="ui-button.disabled" if="disabled"/>
-			<alias ref="ui-button.hover" if="hover"/>
-			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="ui-button.default"/>
-		</select>
+		<composed name="ui-button-bag.background" inset="-2,0,2,0">
+			<alias ref="ui-button.background"/>
+		</composed>
+
+		<composed name="ui-button-item-bag.background" inset="-2,0,0,0">
+			<alias ref="ui-button.background"/>
+		</composed>
 
 		<alias name="ui-button.background-defaultdex" ref="ui-button.background"/>
 
@@ -688,7 +686,7 @@
 			<alias ref="ui-misc-btn.background"/>
 		</select>
 
-		<animation name="ui-popup-button.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="ui-popup-button.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="ui-popup-button.selected" tint="#ffffff"/>
 			<frame duration="1500" ref="ui-popup-button.selected" tint="#c6c6c6"/>
 		</animation>

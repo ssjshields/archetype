@@ -543,7 +543,7 @@
 			</select>
 
 			<select center="true">
-				<animation if="keyboardFocus" timeSource="keyboardFocus">
+				<animation if="keyboardFocus" timeSource="enabled">
 					<frame duration="1500" ref="pcslot.border.selected" tint="#2a96da"/>
 					<frame duration="1500" ref="pcslot.border.selected" tint="#bff0ff"/>
 				</animation>
@@ -624,7 +624,7 @@
 
 		<area name="battle-button-return.default" xywh="218,145,96,30"/>
 		<area name="battle-button-return.hover" xywh="218,176,96,30"/>
-		<animation name="battle-button-return.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="battle-button-return.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="battle-button-return.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="battle-button-return.hover" tint="#c6c6c6"/>
 		</animation>
@@ -632,7 +632,7 @@
 
 		<area name="battle-button-confirm.default" xywh="424,145,96,30"/>
 		<area name="battle-button-confirm.hover" xywh="424,176,96,30"/>
-		<animation name="battle-button-confirm.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="battle-button-confirm.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="battle-button-confirm.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="battle-button-confirm.hover" tint="#c6c6c6"/>
 		</animation>
@@ -640,13 +640,13 @@
 
 		<area name="battle-button-switch.default" xywh="2,145,209,52"/>
 		<area name="battle-button-switch.hover" xywh="2,200,209,52"/>
-		<animation name="battle-button-switch.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="battle-button-switch.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="battle-button-switch.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="battle-button-switch.hover" tint="#c6c6c6"/>
 		</animation>
 		<area name="battle-button-switch.disabled" xywh="2,257,209,52"/>
 		<area name="battle-button-switch.disabledhover" xywh="218,257,209,52"/>
-		<animation name="battle-button-switch.disabledkeyboardFocus" timeSource="keyboardFocus">
+		<animation name="battle-button-switch.disabledkeyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#ffffff"/>
 			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#c6c6c6"/>
 		</animation>
@@ -706,7 +706,7 @@
 		<area name="button-npc.ok" xywh="378,71,36,28" splitx="L20,R7" splity="T6,B8"/>
 		<area name="button-toggle.default" xywh="308,9,66,30" splitx="L20,R5" splity="T6,B8"/>
 		<area name="button-toggle.hover" xywh="308,40,66,30" splitx="L20,R5" splity="T6,B8"/>
-		<animation name="button-toggle.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="button-toggle.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="button-toggle.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="button-toggle.hover" tint="#c6c6c6"/>
 		</animation>
@@ -714,14 +714,14 @@
 		<area name="button-toggle.disabled-hover" xywh="308,102,66,30" splitx="L20,R5" splity="T6,B8"/>
 		<area name="button-tiny.default" xywh="227,9,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tiny.hover" xywh="227,40,66,30" splitx="L5,R5" splity="T6,B8"/>
-		<animation name="button-tiny.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="button-tiny.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="button-tiny.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="button-tiny.hover" tint="#c6c6c6"/>
 		</animation>
 		<area name="button-tiny.disabled" xywh="227,71,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-small.default" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
 		<area name="button-small.hover" xywh="227,40,66,30" splitx="L25,R25" splity="T6,B8"/>
-		<animation name="button-small.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="button-small.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="button-small.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="button-small.hover" tint="#c6c6c6"/>
 		</animation>
@@ -742,7 +742,7 @@
 		<area name="button.selected1" xywh="114,7,52,52" splitx="L8,R8" splity="T8,B8"/>
 		<area name="button.selected2" xywh="169,7,52,52" splitx="L8,R8" splity="T8,B8"/>
 
-		<animation name="button.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="button.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="button.selected1" tint="#ffffff"/>
 			<frame duration="1500" ref="button.selected1" tint="#c6c6c6"/>
 		</animation>
@@ -1310,7 +1310,7 @@
 		<area name="pc-arrows.default" xywh="29,0,29,19" splitx="L4,R4" splity="T4,B4"/>
 		<area name="pc-arrows.hover" xywh="0,0,29,19" splitx="L4,R4" splity="T4,B4"/>
 		<area name="pc-arrows.disabled" xywh="58,0,29,19" splitx="L4,R4" splity="T4,B4"/>
-		<animation name="pc-arrows.keyboardFocus" timeSource="keyboardFocus">
+		<animation name="pc-arrows.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="pc-arrows.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="pc-arrows.hover" tint="#c6c6c6"/>
 		</animation>
@@ -1666,15 +1666,28 @@
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD-Background" xywh="*" inset="0,0,0,-3"/>
+		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-2,-3"/>
 		<composed name="Bag-HUD">
 			<alias ref="Bag-HUD-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,4,2,-1"/>
+			<alias ref="Highlight-Overlay" inset="2,4,0,-1"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
-		<area name="Bag-HUD-Overlay" xywh="*" inset="0,0,0,-3"/>
+		<area name="Bag-HUD-Overlay" xywh="*" inset="-2,0,-5,-3"/>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
+		<area name="Bag-Tab-New.default" xywh="*"/>
+		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#ffffff"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#BFc6c6c6"/>
+		</animation>
+		<select name="Bag-Tab-New.background">
+			<alias ref="Bag-Tab-New.default" if="hover"/>
+			<alias ref="Bag-Tab-New.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="Bag-Tab-New.default" if="selected"/>
+		</select>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-Frame-Item-Box.png" filter="lineal">
@@ -1740,7 +1753,7 @@
 		<area name="dex-button-outline" xywh="0,0,9,9" splitx="L2,R2" splity="T2,B2"/>
 		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2"/>
 		<area name="dex-button-active" xywh="0,11,46,2" splity="T0,B2"/>
-		<animation name="dex-button-active-animation" timeSource="keyboardFocus">
+		<animation name="dex-button-active-animation" timeSource="enabled">
 			<frame duration="1500" ref="dex-button-active" tint="#2a96da"/>
 			<frame duration="1500" ref="dex-button-active" tint="#bff0ff"/>
 		</animation>
