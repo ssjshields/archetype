@@ -329,6 +329,11 @@
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.default"/>
 		</select>
+
+		<composed name="main-hud-button.background" inset="-3,0,-3,0">
+			<alias ref="ui-button.background"/>
+		</composed>
+
 		
 		<select name="ui-button-bag.background" inset="-2,0,2,0">
 			<alias ref="ui-button.hover" if="disabled + hover"/>
