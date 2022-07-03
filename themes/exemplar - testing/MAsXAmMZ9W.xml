@@ -1740,7 +1740,7 @@
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Window.png" filter="lineal">
-		<area name="PokeDex-Window-Background" xywh="*"/>
+		<area name="PokeDex-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="PokeDex-Window">
 			<alias ref="PokeDex-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
