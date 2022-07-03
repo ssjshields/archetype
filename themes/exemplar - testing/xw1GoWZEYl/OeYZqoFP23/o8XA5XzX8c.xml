@@ -34,7 +34,7 @@
 		<param name="textAlignment"><enum type="alignment">center</enum></param>
 		<param name="background"><image>ui-header.background</image></param>
 		<param name="border"><border>3,3</border></param>
-		<param name="minWidth"><int>150</int></param>
+		<param name="minWidth"><int>144</int></param>
 		<param name="minHeight"><int>41</int></param>
 	</theme>
 	
