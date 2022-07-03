@@ -1680,13 +1680,14 @@
 	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
 		<area name="Bag-Tab-New.default" xywh="*"/>
 		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="#ffffff"/>
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="#BFc6c6c6"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#218dd5"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#1d5d88"/>
 		</animation>
 		<select name="Bag-Tab-New.background">
-			<alias ref="Bag-Tab-New.default" if="hover"/>
+			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="hover"/>
 			<alias ref="Bag-Tab-New.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="Bag-Tab-New.default" if="selected"/>
+			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="selected"/>
+			<alias ref="Bag-Tab-New.default" tint="#263238"/>
 		</select>
 	</images>
 	
