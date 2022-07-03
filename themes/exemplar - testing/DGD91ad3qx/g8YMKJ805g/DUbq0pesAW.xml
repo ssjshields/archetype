@@ -20,8 +20,8 @@
 			<theme name="tabbedpane" ref="-defaults">
 				<param name="minWidth"><int>432</int></param>
 				<param name="maxWidth"><int>432</int></param>
-				<param name="minHeight"><int>353</int></param>
-				<param name="maxHeight"><int>353</int></param>
+				<param name="minHeight"><int>383</int></param>
+				<param name="maxHeight"><int>383</int></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
@@ -33,7 +33,7 @@
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>3,0,0,0</border></param>
+					<param name="border"><border>3,0,26,0</border></param>
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="-defaults">
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">

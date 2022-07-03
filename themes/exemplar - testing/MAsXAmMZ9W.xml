@@ -1667,7 +1667,7 @@
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-2,-3" splity="T100,B30"/>
+		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-2,-3" splity="T100,B50"/>
 		<composed name="Bag-HUD">
 			<alias ref="Bag-HUD-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,4,0,-1"/>
