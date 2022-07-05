@@ -251,7 +251,7 @@
 	</theme>
 
 	<theme name="monster-frame-tab" ref="-defaults" allowWildcard="true">
-		<param name="minWidth"><int>20</int></param>
+		<param name="minWidth"><int>21</int></param>
 		<param name="minHeight"><int>20</int></param>
 	</theme>
 
