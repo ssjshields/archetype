@@ -10,7 +10,7 @@
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 			<param name="font"><font>title-font-black</font></param>
-			<param name="border"><border>1,292,5,5</border></param>
+			<param name="border"><border>1,283,5,5</border></param>
 		</theme>
 
 		<param name="titleAreaTop"><int>8</int></param>
@@ -25,7 +25,7 @@
 			<param name="minWidth"><int>340</int></param>
 			<param name="minHeight"><int>34</int></param>
 			<param name="maxHeight"><int>34</int></param>
-			<param name="border"><border>5,7,4,3</border></param>
+			<param name="border"><border>3,10,4,3</border></param>
 			<theme name="label" ref="-defaults">
 				<param name="font"><font>alphabeta-pokename</font></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
@@ -43,19 +43,18 @@
 		</theme>
 
 		<theme name="itemplate" ref="-defaults">
-			<!--<param name="minHeight"><int>34</int></param>
+			<!--<param name="background"><image>none</image></param>
+			<param name="minHeight"><int>34</int></param>
 			<param name="maxHeight"><int>34</int></param>-->
-			<param name="border"><border>21,5,0,0</border></param>
+			<param name="border"><border>20,4,0,0</border></param>
 			<theme name="label" ref="-defaults">
-			<param name="background"><image>mi-label-item</image></param>
-			<param name="border"><border>0,20,0,5</border></param>
-				<param name="font"><font>alphabeta-small</font></param>		
+				<param name="font"><font>symbols-white</font></param>		
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 			<theme name="label2" ref="-defaults">
-				<param name="font"><font>alphabeta-small</font></param>
-				<param name="border"><border>0,5,0,0</border></param>
-				<param name="background"><image>mi-label-item-value</image></param>
+				<param name="font"><font>alphabeta-item-held</font></param>
+				<param name="border"><border>0,20,0,0</border></param>
+				<param name="background"><image>mi-label-item</image></param>
 			</theme>
 			<param name="defaultGap"><dimension>2,0</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
@@ -65,7 +64,7 @@
 		</theme>
 
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="border"><border>8,5,5,5</border></param>
+			<param name="border"><border>5</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -75,19 +74,19 @@
 			<theme name="tabbedpane" ref="-defaults">
 				<param name="minWidth"><int>245</int></param>
 				<param name="background"><image>none</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
+				<param name="border"><border>2,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
 						<param name=""><image>ui-tab-button.*</image></param>
 					</theme>
-					<param name="border"><border>1,0</border></param>
-					<param name="spacing"><int>5</int></param>
+					<param name="border"><border>0,1</border></param>
+					<param name="spacing"><int>7</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="-defaults">
 					 <theme name="dialoglayout" ref="-defaults">
 						<param name="minHeight"><int>90</int></param>
-						<param name="border"><border>9,0,0,0</border></param>
+						<param name="border"><border>8,0,0,0</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -252,7 +251,7 @@
 	</theme>
 
 	<theme name="monster-frame-tab" ref="-defaults" allowWildcard="true">
-		<param name="minWidth"><int>20</int></param>
+		<param name="minWidth"><int>21</int></param>
 		<param name="minHeight"><int>20</int></param>
 	</theme>
 
