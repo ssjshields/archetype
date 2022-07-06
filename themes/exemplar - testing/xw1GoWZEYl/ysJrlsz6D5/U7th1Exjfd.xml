@@ -26,7 +26,7 @@
 				<param name="minWidth"><int>230</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="border"><border>50,0,0,0</border></param>
+					<param name="border"><border>51,0,0,0</border></param>
 					<theme name="tabbutton" ref="togglebutton">
 						<param name="minWidth"><int>90</int></param>
 						<param name="border"><border>5,0,5,10</border></param>
