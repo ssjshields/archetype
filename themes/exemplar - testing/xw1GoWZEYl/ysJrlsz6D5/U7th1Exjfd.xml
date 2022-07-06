@@ -19,14 +19,14 @@
         <param name="titleAreaBottom"><int>30</int></param>
         <param name="closeButtonY"><int>13</int></param>
         <theme name="dialoglayout" ref="dialoglayout">
-            <param name="border"><border>0,10,10,10</border></param>
+            <param name="border"><border>40,10,10,10</border></param>
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<param name="tabPosition"><enum type="tabposition">LEFT</enum></param>
 				<param name="border"><border>0,15,0,0</border></param>
 				<param name="minWidth"><int>230</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="border"><border>51,0,0,0</border></param>
+					<param name="border"><border>6,0,10,0</border></param>
 					<theme name="tabbutton" ref="togglebutton">
 						<param name="minWidth"><int>90</int></param>
 						<param name="border"><border>5,0,5,10</border></param>
@@ -38,12 +38,12 @@
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="container">
-					<param name="border"><border>45,0,0,0</border></param>
+					<param name="border"><border>0,0,10,0</border></param>
 					<theme name="settings-scrollpane" ref="-defaults" allowWildcard="true">
 						<theme name="hscrollbar" ref="hscrollbar"/> 
 						<theme name="vscrollbar" ref="vscrollbar-white"/>
 						<param name="minWidth"><int>472</int></param>
-						<param name="minHeight"><int>418</int></param>
+						<param name="minHeight"><int>413</int></param>
 						<param name="maxWidth"><int>32767</int></param>
 						<param name="maxHeight"><int>32767</int></param>
 						<param name="hasDragButton"><bool>false</bool></param>
