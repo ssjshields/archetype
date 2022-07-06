@@ -134,28 +134,32 @@
 	</theme>
 
 	<theme name="seed-plant-dialog" ref="base-frame">
-		<param name="titleAreaTop"><int>7</int></param>
-		<param name="titleAreaLeft"><int>44</int></param>
-		<param name="titleAreaRight"><int>300</int></param>
-		<param name="titleAreaBottom"><int>30</int></param>
-		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>13</int></param>
-		<param name="background"><image>Berry-Plot-Window</image></param>
-        <param name="minHeight"><int>10</int></param>
-        <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
+		<theme name="title" ref="title">
+		<param name="border"><border>14,12,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
+		<param name="titleAreaTop"><int>0	</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>-1</int></param>
+		<param name="closeButtonX"><int>-21</int></param>
+		<param name="closeButtonY"><int>10</int></param>
+       <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
             <param name="background"><image>none</image></param>
-            <param name="border"><border>80,8,5,8</border></param>
-            <param name="defaultGap"><dimension>5,2</dimension></param>
+            <param name="border"><border>40,5,5,5</border></param>
+            <param name="defaultGap"><dimension>5,0</dimension></param>
             <param name="smallGap"><dimension>8,8</dimension></param>
             <param name="mediumGap"><dimension>10,10</dimension></param>
             <param name="largeGap"><dimension>15,15</dimension></param>
             <param name="namedGaps"><map/></param>
             <theme name="label" ref="label">
-                <param name="fadeDurationShow"><int>200</int></param>
+				<param name="minHeight"><int>65</int></param>
+				<param name="fadeDurationShow"><int>200</int></param>
                 <param name="fadeDurationHide"><int>200</int></param>
-                <param name="minWidth"><int>150</int></param>
-                <param name="font"><font>alphabeta-highlight-button</font></param>
-                <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+                <param name="minWidth"><int>350</int></param>
+                <param name="font"><font>alphabeta</font></param>
+                <param name="textAlignment"><enum type="alignment">Center</enum></param>
             </theme>
         </theme>
     </theme>
