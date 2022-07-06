@@ -28,12 +28,13 @@
 				<theme name="tabbox" ref="tabbox">
 					<param name="border"><border>50,0,0,0</border></param>
 					<theme name="tabbutton" ref="togglebutton">
+						<param name="minWidth"><int>90</int></param>
 						<param name="border"><border>5,0,5,10</border></param>
 						<param name=""><image>ui-tab-vertical.*</image></param>
 						<param name="font"><font>pb-tab</font></param>
 						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 					</theme>
-					<param name="spacing"><int>5</int></param>
+					<param name="spacing"><int>8</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="container">
@@ -41,7 +42,7 @@
 					<theme name="settings-scrollpane" ref="-defaults" allowWildcard="true">
 						<theme name="hscrollbar" ref="hscrollbar"/> 
 						<theme name="vscrollbar" ref="vscrollbar-white"/>
-						<param name="minWidth"><int>500</int></param>
+						<param name="minWidth"><int>472</int></param>
 						<param name="minHeight"><int>418</int></param>
 						<param name="maxWidth"><int>32767</int></param>
 						<param name="maxHeight"><int>32767</int></param>
