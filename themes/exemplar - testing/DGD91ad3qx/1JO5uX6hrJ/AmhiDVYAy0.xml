@@ -55,7 +55,7 @@
 			<theme name="label2" ref="-defaults">
 				<param name="font"><font>alphabeta-small</font></param>
 				<param name="border"><border>0,5,0,0</border></param>
-				<param name="background"><image>none</image></param>
+				<param name="background"><image>mi-label-item-value</image></param>
 			</theme>
 			<param name="defaultGap"><dimension>2,0</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
@@ -133,7 +133,7 @@
 
 							<theme name="label-skill-use-name" ref="button" allowWildcard="true">
 								<param name="background"><image>mi-skill-use</image></param>
-								<param name="border"><border>0,3,1,50</border></param>
+								<param name="border"><border>0,0,1,40</border></param>
 								<param name="minHeight"><int>42</int></param>
 								<param name="maxHeight"><int>42</int></param>
 								<param name="minWidth"><int>164</int></param>
@@ -144,7 +144,7 @@
 
 							<theme name="label-skill-name" ref="button" allowWildcard="true">
 								<param name="background"><image>mi-skill-use</image></param>
-								<param name="border"><border>0,3,1,50</border></param>
+								<param name="border"><border>0,0,1,40</border></param>
 								<param name="minHeight"><int>42</int></param>
 								<param name="maxHeight"><int>42</int></param>
 								<param name="minWidth"><int>164</int></param>
