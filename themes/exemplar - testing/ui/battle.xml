@@ -5,7 +5,7 @@
 		<param name="defaultGap"><dimension>2,2</dimension></param>
 		<theme name="battle-text" ref="label" allowWildcard="true">
 			<param name="font"><font>battle</font></param>
-				<param name="border"><border>21,17,7,7</border></param>
+			<param name="border"><border>21,17,7,7</border></param>
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>battle-hp-text</font></param>
@@ -198,15 +198,15 @@
 	
 	<theme name="battle-panel" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>battle-area</image></param>
-		<param name="border"><border>8,5</border></param>
-		<param name="defaultGap"><dimension>7,4</dimension></param>
+		<param name="border"><border>5,8,6,11</border></param>
+		<param name="defaultGap"><dimension>7,3</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0</border></param>
-			<param name="defaultGap"><dimension>7,4</dimension></param>
+			<param name="defaultGap"><dimension>7,3</dimension></param>
 			<param name="smallGap"><dimension>8,0</dimension></param>
 			<param name="mediumGap"><dimension>10,0</dimension></param>
 			<param name="largeGap"><dimension>15,0</dimension></param>
@@ -253,8 +253,11 @@
 	</theme>
 	
 	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
+		<param name="background"><image>battle-area-bag</image></param>
 		<param name="maxHeight"><int>350</int></param>
 		<param name="minHeight"><int>350</int></param>
+		<param name="border"><border>5,10,6,8</border></param>
+		<param name="defaultGap"><dimension>7,1</dimension></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0,10,0,0</border></param>
 			<param name="defaultGap"><dimension>20,5</dimension></param>
@@ -267,7 +270,7 @@
 			<theme name="label-black" ref="-defaults" allowWildcard="true">
 				<param name="font"><font>battle-item</font></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minHeight"><int>210</int></param>
+				<param name="minHeight"><int>208</int></param>
 				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 			</theme>
 		</theme>
