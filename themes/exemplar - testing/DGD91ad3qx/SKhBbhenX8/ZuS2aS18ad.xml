@@ -106,50 +106,53 @@
 		
 			<theme name="label-title-normal" ref="label-value-small2">
 				<param name="overlay"><image>ui-sort-default.background</image></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 
 			</theme>
 			<theme name="label-title-desc" ref="label-value-small2">
 				<param name="overlay"><image>ui-sort-desc.background</image></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-asc" ref="label-value-small2">
 				<param name="overlay"><image>ui-sort-asc.background</image></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			
 			<theme name="label-title-medium" ref="label-value-medium">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-medium2" ref="label-value-medium2">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="minWidth"><int>200</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-medium3" ref="label-value-medium3">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-medium4" ref="label-value-medium4">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-small" ref="label-value-small">
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 			</theme>
 			<theme name="label-title-small2" ref="label-value-small2">
 				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>7,0,6,0</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-small2-centered" ref="label-title-small2">
@@ -157,11 +160,11 @@
 			</theme>
 			<theme name="label-title-smallest" ref="label-value-smallest">
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			<param name="border"><border>7,0,6,0</border></param>
+			<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 			</theme>
 			<theme name="label-title-icon" ref="label-value-icon">
-			<param name="border"><border>6</border></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
