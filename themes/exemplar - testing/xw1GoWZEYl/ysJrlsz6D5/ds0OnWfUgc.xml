@@ -140,11 +140,12 @@
 			</theme>
 			<theme name="spritelabel" ref="-defaults">
 				<param name="font"><font>pb-dark</font></param>
-				<param name="border"><border>0,28,0,0</border></param>
+				<param name="border"><border>0,26,0,1</border></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 			<theme name="label" ref="-defaults">
 				<param name="font"><font>pb-dark</font></param>
+				<param name="border"><border>15,1,0,1</border></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 		</theme>
