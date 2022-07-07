@@ -227,7 +227,12 @@
 			<alias ref="chat-button-brown.active" if="selected"/>
 			<alias ref="chat-button.disabled"/>
 		</select>
-		<area name="color-picker" xywh="5,308,13,11" splitx="L2,R2" splity="T2,B2" inset="0,0"/>
+		<area name="color-picker-default" xywh="5,308,13,11" splitx="L2,R2" splity="T2,B2" inset="1"/>
+		<area name="color-picker-keyboardFocus" xywh="4,307,15,13" splitx="L2,R2" splity="T2,B2" inset="-2"/>
+		<select name="color-picker">
+			<alias ref="color-picker-keyboardFocus" if="keyboardFocus | hover"/>
+			<alias ref="color-picker-default"/>
+		</select>
 		<area name="close-handle" xywh="0,500,12,12"/>
 		<area name="minimize-handle" xywh="29,500,12,12"/>
 		<area name="close-handle-blue" xywh="15,503,9,9"/>
