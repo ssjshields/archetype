@@ -780,7 +780,7 @@
                 <param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="label" ref="-defaults">
-				<param name="font"><font>mechabold-TC-content</font></param>
+				<param name="font"><font>alphabeta-border-TC</font></param>
 				<param name="border"><border>5,0,0,0</border></param>
 			</theme>
 			<theme name="spritelabel" ref="-defaults">
