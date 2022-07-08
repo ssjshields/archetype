@@ -3,13 +3,27 @@
 	
 	<theme name="inventory-tabbedframe" ref="resizableframe">
 		<param name="background"><image>Bag-HUD</image></param>
-		<param name="overlay"><image>Bag-HUD-Overlay-Button</image></param>
 		<!--<param name="titleAreaTop"><int>36</int></param>-->
-		<param name="titleAreaLeft"><int>18</int></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>745</int></param>
+		<param name="titleAreaBottom"><int>-1</int></param>
 		<param name="closeButtonX"><int>212</int></param>
-		<param name="closeButtonY"><int>366</int></param>
+		<param name="closeButtonY"><int>362</int></param>
+		<theme name="closeButton" ref="closeButton">
+			<param name="background"><image>Bag-Close-Button</image></param>
+			<param name="minWidth"><int>24</int></param>
+			<param name="minHeight"><int>24</int></param>
+		</theme>
+		<theme name="title" ref="title">
+			<param name="border"><border>51,21,0,0</border></param>
+			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+		</theme>
+		<theme name="editfield" ref="editfield" allowWildcard="true">
+			<param name="background"><image>ui-inputbox-bag.background</image></param>
+			<param name="border"><border>4,0,5,1</border></param>
+			<param name="overlay"><image>Search-Icon-Bag</image></param>
+		</theme>
 		<param name="border"><border>10,0,0,0</border></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0,0,0,0</border></param>

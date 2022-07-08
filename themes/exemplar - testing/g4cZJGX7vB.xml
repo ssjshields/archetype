@@ -497,6 +497,9 @@
 			</composed>
 			<alias ref="ui-inputbox.default"/>
 		</select>
+		<composed name="ui-inputbox-bag.background">
+			<alias ref="ui-inputbox.background" inset="0,-5,0,-24"/>
+		</composed>
 
 		<area name="ui-inputbox.red" xywh="326,26,16,16" splitx="L3,R3" splity="T3,B3" tint="#444e52"/>
 		<area name="ui-inputbox.yellow" xywh="326,26,16,16" splitx="L3,R3" splity="T3,B3" tint="#ffff6a"/>
