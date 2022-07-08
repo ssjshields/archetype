@@ -1686,6 +1686,10 @@
 		<area name="Bag-HUD-Overlay" xywh="*" inset="-2,0,-5,-3"/>
 	</images>
 
+	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay-Button.png" filter="nearest">
+		<area name="Bag-HUD-Overlay-Button" xywh="*" inset="0,0,-2,-3" splity="T100,B50"/>
+	</images>
+
 	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
 		<area name="Bag-Tab-New.default" xywh="*"/>
 		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
