@@ -85,7 +85,7 @@
 				<param name="background"><image>none</image></param>
 			</theme>
 			<theme name="label" ref="-defaults">
-				<param name="font"><font>symbols-white</font></param>
+				<param name="font"><font>tooltip-font</font></param>
 				<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
 			</theme>
 			<theme name="label-normal" ref="-defaults">
