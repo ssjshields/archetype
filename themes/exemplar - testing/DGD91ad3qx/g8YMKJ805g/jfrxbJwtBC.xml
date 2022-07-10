@@ -14,7 +14,7 @@
 		<param name="closeButtonX"><int>-23</int></param>
 		<param name="closeButtonY"><int>17</int></param>
 		<theme name="editfield" ref="editfield" allowWildcard="true">
-			<param name="border"><border>2,5,0,22</border></param>
+			<param name="border"><border>2,5,0,24</border></param>
 			<param name="background"><image>ui-inputbox-pc.background</image></param>
 			<param name="overlay"><image>Search-Icon-PC</image></param>
 		</theme>

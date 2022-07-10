@@ -1680,7 +1680,7 @@
 			<alias ref="Search-Icon" inset="0,24,0,-24"/>
 		</composed>
 		<composed name="Search-Icon-PC">
-			<alias ref="Search-Icon" inset="2,0,-2,0"/>
+			<alias ref="Search-Icon" inset="3,0,-3,0"/>
 		</composed>
 	</images>
 
