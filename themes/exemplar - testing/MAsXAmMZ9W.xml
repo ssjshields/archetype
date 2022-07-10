@@ -1137,6 +1137,13 @@
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
+
+		<area name="switch-hpbar-orange.progressImage" xywh="67,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<grid name="switch-hpbar-orange.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
 		
 		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
@@ -1152,6 +1159,18 @@
 		</animation>
 		
 		<grid name="mi-hpbar-red.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="switch-hpbar-base.progressImage" xywh="52,89,5,4" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<animation name="switch-hpbar-red.progressImage" timeSource="enabled">
+			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#ffffff"/>
+		</animation>
+		
+		<grid name="switch-hpbar-red.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
 			<area xywh="7,88,1,8"/>
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
@@ -1190,6 +1209,14 @@
 			<area xywh="90,88,1,8"/>
 			<area xywh="201,88,1,8"/>
 		</grid>
+
+		<area name="switch-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<grid name="switch-hpbar-green.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
 		
 		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
