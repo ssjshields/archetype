@@ -97,7 +97,7 @@
 		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>5,10,5,23</border></param>
+			<param name="border"><border>4,10,5,23</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -158,7 +158,7 @@
 				<param name="alignment"><enum type="alignment">FILL</enum></param>
 			</theme>
 			<theme name="container" ref="container">
-				<param name="border"><border>7,5,0,3</border></param>
+				<param name="border"><border>6,5,0,3</border></param>
 				<theme name="dialoglayout" ref="dialoglayout">
 					<theme name="button" ref="button" allowWildcard="true">
 						<param name="font"><font>alphabeta-highlight-button</font></param>

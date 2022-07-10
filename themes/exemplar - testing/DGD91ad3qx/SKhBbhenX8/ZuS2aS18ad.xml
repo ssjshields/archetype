@@ -251,18 +251,18 @@
 						<param name="border"><border>5,3,0,8</border></param>
 							<param name="background"><image>none</image></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="spacing"><int>7</int></param>
-					<theme name="tabbutton" ref="tabbutton">
-							<param name="border"><border>0,20,0,20</border></param>
-				</theme>
+					<param name="spacing"><int>18</int></param>
 				</theme>
 				<theme name="container" ref="container">
 					<param name="background"><image>none</image></param>
-					 <theme name="dialoglayout" ref="dialoglayout">
+					<theme name="dialoglayout" ref="dialoglayout">
+						<theme name="editfield" ref="editfield" allowWildcard="true">
+							<param name="border"><border>0,5,0,22</border></param>
+							<param name="overlay"><image>Search-Icon</image></param>
+						</theme>
 						<param name="border"><border>4,10,2,10</border></param>
 						<param name="namedGaps"><map/></param>
 						<param name="background"><image>none</image></param>
-
 						<theme name="label" ref="label" allowWildcard="true">
 							<param name="border"><border>10,10,0,0</border></param>
 							<param name="background"><image>none</image></param>

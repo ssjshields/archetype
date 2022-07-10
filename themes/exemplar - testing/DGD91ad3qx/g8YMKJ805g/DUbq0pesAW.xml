@@ -21,7 +21,7 @@
 		</theme>
 		<theme name="editfield" ref="editfield" allowWildcard="true">
 			<param name="background"><image>ui-inputbox-bag.background</image></param>
-			<param name="border"><border>4,0,5,1</border></param>
+			<param name="border"><border>0,0,0,1</border></param>
 			<param name="overlay"><image>Search-Icon-Bag</image></param>
 		</theme>
 		<param name="border"><border>10,0,0,0</border></param>

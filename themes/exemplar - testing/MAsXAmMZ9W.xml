@@ -253,7 +253,7 @@
 			<frame ref="none" duration="500"/>
 		</animation>
 
-		<area name="-editfield.cursor" xywh="0,496,1,1" tint="sub-color"/>
+		<area name="-editfield.cursor" xywh="0,496,1,1" tint="sub-color" inset="-1,0,1,0"/>
 		<animation name="editfield.cursor" timeSource="keyboardFocus">
 			<frame ref="-editfield.cursor" duration="500"/>
 			<frame ref="none" duration="500"/>
@@ -1675,9 +1675,12 @@
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
-		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,0,5,0"/>
+		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
 		<composed name="Search-Icon-Bag">
-			<alias ref="Search-Icon" inset="0,20,0,-20"/>
+			<alias ref="Search-Icon" inset="0,24,0,-24"/>
+		</composed>
+		<composed name="Search-Icon-PC">
+			<alias ref="Search-Icon" inset="2,0,-2,0"/>
 		</composed>
 	</images>
 

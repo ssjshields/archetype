@@ -207,7 +207,8 @@
 	<theme name="editfield" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-inputbox.background</image></param>
 		<param name="font"><font>pb-dark-highlight-button</font></param>
-		<param name="border"><border>4,5,5,5</border></param>
+				<param name="minHeight"><int>29</int></param>
+		<param name="border"><border>0,5,0,5</border></param>
 		<param name="passwordChar"><int>35</int></param>
 		<param name="maxWidth"><int>32767</int></param>
 		<param name="columns"><int>20</int></param>
@@ -216,13 +217,15 @@
 		<param name="selection"><image>editfield.selection</image></param>
 		<theme name="renderer" ref="-input">
 			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="border"><border>0,5</border></param>
-
-			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+			<param name="border"><border>0,0,1,0</border></param>
+			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 		</theme>
 		<param name="autocompletion-height"><int>150</int></param>
 	</theme>
-	<theme name="editfield-search" ref="editfield"/>
+	<theme name="editfield-search" ref="editfield">
+							<param name="border"><border>0,5,0,22</border></param>
+							<param name="overlay"><image>Search-Icon</image></param>
+	</theme>
 	<theme name="editfield-fancy" ref="editfield"/>
 
 	<theme name="editfieldautocompletionwindow" ref="-defaults">
@@ -537,10 +540,10 @@
 		<theme name="tabbox" ref="-defaults">
 			<theme name="tabbutton" ref="-defaults">
 				<param name="background"><image>ui-tab.background</image></param>
- 				<param name="border"><border>0,20,0,20</border></param>
+ 				<param name="border"><border>0,20,3,20</border></param>
  				<param name="font"><font>pb-dark-highlight-button</font></param>
 			</theme>
-			<param name="border"><border>0,10,0,0</border></param>
+			<param name="border"><border>1,10,0,0</border></param>
 			<param name="spacing"><int>0</int></param>
 			<param name="alignment"><enum type="alignment">FILL</enum></param>
 		</theme>
