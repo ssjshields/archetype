@@ -17,7 +17,7 @@
 		<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>0,0,0,0</border></param>
+			<param name="border"><border>17,0,0,0</border></param>
 			<param name="defaultGap"><dimension>4,4</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -32,7 +32,7 @@
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 			<theme name="label" ref="label">
-				<param name="border"><border>23,0,0,0</border></param>
+				<param name="border"><border>14,0,0,0</border></param>
 			</theme>
 			
 			<theme name="label-value-medium" ref="label">
