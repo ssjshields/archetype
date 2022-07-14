@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<strings lang="en-a" lang_full="English - Archetype" is_primary="1">
+  <!-- chat active channel button ; whispering edit -->
+      <!--<string id="1526">/w</string>-->
+	  
+  <!-- Pokémon -> POKéMON ; experimental, shared across ui -->
+		<!--<string id="0">POKéMON</string>-->
+ 
+  <!-- login Screen -->
+		<string id="1170">GUI:\nAnonymousPoke, nurver &amp; realmadrid1809\n</string>
+		<string id="1000">Login</string>
+
+  <!-- settings window title-->
+		<string id="1200">Settings</string>
+
+  <!-- server select headers -->
+		<string id="1010">                                </string>
+		<string id="1011">                                </string>
+		<string id="1012">                                </string>
+        <string id="1013">Server Select</string>
+		<string id="1049">Character Select</string>	
+
+  <!-- BERRIES -> Berries ; thanks wingboner o7 -->
+		<string id="4">Berries</string>
+		<string id="300014">Berries</string>
+		<string id="310018">Berries</string>
+
+  <!-- global ui buttons -->
+		<string id="58">Return</string>
+		<string id="5029">Confirm</string>
+  
+  <!-- safari -->
+		<string id="5109">Ball ({00})</string>
+		<string id="5100">Fight</string>
+		<string id="5104">Bag</string>
+		<string id="5106">Run</string>
+		<string id="5108">Ball</string>
+		<string id="5118">Mud</string>
+		<string id="5110">Stone</string>
+		<string id="5112">Bait</string>
+		<string id="5114">Shift</string>
+		<string id="5116">Forfeit</string>
+		<string id="5120">Summary</string>
+  
+  <!-- PvP short battle stats -->
+		<string id="5200">Turn #{00}</string>
+		<string id="5201">Time: {00}</string>
+  
+  <!-- "better" daycare ; sinnoh -->
+		<string id="16779080">I'm the Day-Care Man.\nWould you like to trade?</string>
+		<string id="16779082">You won't get these {STRING_0} back.\nAre you sure?</string>
+		<string id="16779083">I will keep two of your {STRING_0},\nin return you'll receive an egg.</string>
+  
+  <!-- "better" halloween strings  -->
+		<string id="101608">Restores 25% HP when eaten.\nWhen fighting Pumpking, clears\nstat modifications from allied field.</string>
+		<string id="101609">Restores 25% HP when eaten.\nWhen fighting Pumpking, grants the ability {STRING_210064}\nand causes attacks to drain their target. Lasts 5 turns.</string>
+		<string id="101610">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field by 33%.</string>
+		<string id="101611">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field of status ailments.</string>
+		<string id="101612">Restores 25% HP when eaten.\nWhen fighting Pumpking, doubles\nallied field's speed. Lasts 4 turns.</string>
+</strings>
