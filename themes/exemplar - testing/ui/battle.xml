@@ -213,7 +213,7 @@
 	
 	<theme name="battle-panel" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>battle-area</image></param>
-		<param name="border"><border>5,8,6,11</border></param>
+		<param name="border"><border>5,8,5,11</border></param>
 		<param name="defaultGap"><dimension>7,3</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -271,7 +271,7 @@
 		<param name="background"><image>battle-area-bag</image></param>
 		<param name="maxHeight"><int>350</int></param>
 		<param name="minHeight"><int>350</int></param>
-		<param name="border"><border>5,10,6,8</border></param>
+		<param name="border"><border>5,10,5,8</border></param>
 		<param name="defaultGap"><dimension>7,1</dimension></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0,10,0,0</border></param>

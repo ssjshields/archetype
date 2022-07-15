@@ -1704,7 +1704,7 @@
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
 		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
 		<composed name="Search-Icon-Bag">
-			<alias ref="Search-Icon" inset="0,24,0,-24"/>
+			<alias ref="Search-Icon" inset="0,15,0,-15"/>
 		</composed>
 		<composed name="Search-Icon-PC">
 			<alias ref="Search-Icon" inset="3,0,-3,0"/>
@@ -1713,15 +1713,15 @@
 
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-2,-3" splity="T100,B50"/>
+		<area name="Bag-HUD-Background" xywh="*" inset="0,0,5,3" splity="T100,B50"/>
 		<composed name="Bag-HUD">
 			<alias ref="Bag-HUD-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,4,0,-1"/>
+			<alias ref="Highlight-Overlay" inset="2,4,7,5"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
-		<area name="Bag-HUD-Overlay" xywh="*" inset="-2,0,-5,-3"/>
+		<area name="Bag-HUD-Overlay" xywh="*"/>
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Default.png" filter="nearest">

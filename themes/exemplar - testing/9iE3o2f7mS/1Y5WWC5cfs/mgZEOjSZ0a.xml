@@ -278,12 +278,10 @@
 
 	<theme name="vscrollbar-white" ref="-defaults" allowWildcard="true">
 		<theme name="upbutton" ref="-defaults">
-			<param name=""><image>vscrollbar-white.upbutton.*</image></param>
-			<param name="minHeight"><int>9</int></param>
+			<param name="background"><image>none</image></param>
 		</theme>
 		<theme name="downbutton" ref="-defaults">
-			<param name=""><image>vscrollbar-white.downbutton.*</image></param>
-			<param name="minHeight"><int>9</int></param>
+			<param name="background"><image>none</image></param>
 		</theme>
 		<theme name="thumb" ref="-defaults">
 			<param name=""><image>vscrollbar-white.thumb.*</image></param>
