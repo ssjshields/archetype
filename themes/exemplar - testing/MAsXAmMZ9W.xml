@@ -1467,7 +1467,7 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Client-Management-Window.png" filter="lineal">
-		<area name="Client-Management-Window-Background" xywh="*"/>
+		<area name="Client-Management-Window-Background" xywh="*" splitx="L50,R50" splity="T100,T50"/>
 		<composed name="Client-Management-Window">
 			<alias ref="Client-Management-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
@@ -1851,7 +1851,7 @@
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Window.png" filter="lineal">
-		<area name="Gift-Shop-Window-Background" xywh="*"/>
+		<area name="Gift-Shop-Window-Background" xywh="*" splitx="L50,R50" splity="T100,T50"/>
 		<composed name="Gift-Shop-Window">
 			<alias ref="Gift-Shop-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
