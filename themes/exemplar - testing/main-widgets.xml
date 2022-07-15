@@ -553,7 +553,7 @@
 		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 			<param name="border"><border>10</border></param>
 			<param name="minWidth"><int>200</int></param>
-			<param name="minHeight"><int>100</int></param>
+			<param name="minHeight"><int>0</int></param>
 			<param name="maxHeight"><int>400</int></param>
 			<param name="background"><image>ui-popup.background</image></param>
 			<theme name="vscrollbar" ref="vscrollbar-white"/>
