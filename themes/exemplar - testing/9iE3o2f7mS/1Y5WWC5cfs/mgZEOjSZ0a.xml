@@ -223,8 +223,8 @@
 		<param name="autocompletion-height"><int>150</int></param>
 	</theme>
 	<theme name="editfield-search" ref="editfield">
-							<param name="border"><border>0,5,0,24</border></param>
-							<param name="overlay"><image>Search-Icon</image></param>
+		<param name="border"><border>0,5,0,24</border></param>
+		<param name="overlay"><image>Search-Icon</image></param>
 	</theme>
 	<theme name="editfield-fancy" ref="editfield"/>
 

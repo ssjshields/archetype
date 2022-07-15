@@ -37,8 +37,8 @@
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
-		<param name="minWidth"><int>578</int></param>
-		<param name="maxWidth"><int>578</int></param>
+		<param name="minWidth"><int>569</int></param>
+		<param name="maxWidth"><int>569</int></param>
 		<param name="minHeight"><int>510</int></param>
 
 		<theme name="widget" ref="label" allowWildcard="true">
@@ -97,13 +97,15 @@
 		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>4,10,5,23</border></param>
-			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="border"><border>4,20,5,5</border></param>
+			<param name="defaultGap"><dimension>6,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
-			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="namedGaps"><map/></param>
+			<theme name="editfield-search" ref="editfield-search">
+				<param name="maxWidth"><int>246</int></param>
+			</theme>
 			<theme name="label" ref="label" allowWildcard="true">
 				<param name="background"><image>bag-category-label</image></param>
 				<param name="border"><border>0,15,0,0</border></param>
@@ -111,7 +113,7 @@
 			<theme name="progressbar-blue" ref="-defaults" allowWildcard="true">	
 				<param name=""><image>mi-xpbar.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>183</int></param>
+				<param name="minWidth"><int>182</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -119,7 +121,7 @@
 			<theme name="progressbar-green" ref="-defaults" allowWildcard="true">
 				<param name=""><image>mi-hpbar-green.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>183</int></param>
+				<param name="minWidth"><int>182</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -127,7 +129,7 @@
 			<theme name="progressbar-white" ref="-defaults" allowWildcard="true">
 				<param name=""><image>progressbar-white.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>183</int></param>
+				<param name="minWidth"><int>182</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -147,14 +149,13 @@
 				<param name="border"><border>10,1</border></param>
 			</theme>
 		</theme>
-		<param name="border"><border>5,13,8,0</border></param>
+		<param name="border"><border>5,3,8,0</border></param>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
 			<param name="background"><image>none</image></param>
 			<param name="minWidth"><int>100</int></param>
 			<param name="minHeight"><int>620</int></param>
-			<param name="border"><border>30,0,0,0</border></param>
+			<param name="border"><border>30,10,0,0</border></param>
 			<theme name="tabbox" ref="tabbox">
-				<param name="spacing"><int>18</int></param>
 				<param name="alignment"><enum type="alignment">FILL</enum></param>
 			</theme>
 			<theme name="container" ref="container">
@@ -173,7 +174,7 @@
 					<param name="largeGap"><dimension>15,15</dimension></param>
 					<param name="namedGaps"><map/></param>
 					<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-						<param name="border"><border>0,0,0,20</border></param>
+						<param name="border"><border>0,0,0,2</border></param>
 						<theme name="vscrollbar" ref="vscrollbar-white"/>
 					</theme>
 				</theme>
@@ -203,7 +204,7 @@
         <param name="background"><image>ui-table-row.background</image></param>
         <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
         <param name="border"><border>4,10,4,10</border></param>
-        <param name="minWidth"><int>281</int></param>
+        <param name="minWidth"><int>280</int></param>
         <param name="minHeight"><int>54</int></param>
         <param name="font"><font>pb-dark</font></param>
     </theme>

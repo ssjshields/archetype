@@ -251,7 +251,6 @@
 						<param name="border"><border>5,3,0,8</border></param>
 							<param name="background"><image>none</image></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="spacing"><int>18</int></param>
 				</theme>
 				<theme name="container" ref="container">
 					<param name="background"><image>none</image></param>
