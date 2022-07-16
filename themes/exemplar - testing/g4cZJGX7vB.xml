@@ -676,10 +676,6 @@
 		</select>
 
 		<select name="ui-table-row.background">
-			<composed if="selected | keyboardFocus">
-				<alias ref="ui-inputbox.default"/>
-				<alias ref="ui-inputbox.selected" inset="1"/>
-			</composed>
 			<alias ref="ui-inputbox.default" inset="1"/>
 		</select>
 
@@ -690,7 +686,12 @@
 			</composed>
 			<alias ref="ui-misc-btn.background"/>
 		</select>
-
+		
+		<grid name="ui-dex-info.background" weightsX="87,293" weightsY="1" inset="0,0,0,-280">
+			<alias ref="ui-table-header.background"/>
+			<alias ref="ui-table-row.background"/>
+		</grid>	
+		
 		<animation name="ui-popup-button.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="ui-popup-button.selected" tint="#ffffff"/>
 			<frame duration="1500" ref="ui-popup-button.selected" tint="#c6c6c6"/>

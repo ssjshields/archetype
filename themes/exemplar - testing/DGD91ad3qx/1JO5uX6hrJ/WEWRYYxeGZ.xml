@@ -37,15 +37,15 @@
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
-		<param name="minWidth"><int>569</int></param>
-		<param name="maxWidth"><int>569</int></param>
+		<param name="minWidth"><int>567</int></param>
+		<param name="maxWidth"><int>567</int></param>
 		<param name="minHeight"><int>510</int></param>
 
 		<theme name="widget" ref="label" allowWildcard="true">
 			<param name="background"><image>ui-table-header.background</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 			<param name="border"><border>36,6,1,6</border></param>
-			<param name="minWidth"><int>263</int></param>
+			<param name="minWidth"><int>262</int></param>
 			<param name="minHeight"><int>78</int></param>
 			<param name="font"><font>pb-dark</font></param>
 
@@ -87,17 +87,22 @@
 		<param name="background"><image>PokeDex-Window</image></param>
 		<!--<param name="fadeDurationActivate"><int>150</int></param>
 		<param name="fadeDurationDeactivate"><int>900</int></param>-->
-		<param name="titleAreaTop"><int>8</int></param>
-		<param name="titleAreaLeft"><int>44</int></param>
-		<param name="titleAreaRight"><int>-30</int></param>
-		<param name="titleAreaBottom"><int>30</int></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>34</int></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>15,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
 		<param name="closeButtonX"><int>-26</int></param>
 		<param name="closeButtonY"><int>13</int></param>
 		<param name="fadeDurationShow"><int>200</int></param>
 		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>4,20,5,5</border></param>
+			<param name="border"><border>4,20,5,9</border></param>
 			<param name="defaultGap"><dimension>6,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -143,13 +148,20 @@
 				<theme name="dialoglayout" ref="dialoglayout">
 					<param name="border"><border>5,1,4,0</border></param>
 				</theme>
-				<theme name="vscrollbar" ref="vscrollbar-white"/>
+				<theme name="vscrollbar" ref="vscrollbar-white">
+							<theme name="upbutton" ref="-defaults">
+								<param name="border"><border>2,0,0,0</border></param>
+							</theme>
+							<theme name="downbutton" ref="-defaults">
+								<param name="border"><border>4,0,0,0</border></param>
+							</theme>
+			</theme>
 			</theme>
 			<theme name="combobox" ref="combobox" allowWildcard="true">
 				<param name="border"><border>10,1</border></param>
 			</theme>
 		</theme>
-		<param name="border"><border>5,3,8,0</border></param>
+		<param name="border"><border>5,3,8,1</border></param>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
 			<param name="background"><image>none</image></param>
 			<param name="minWidth"><int>100</int></param>
@@ -166,16 +178,22 @@
 						<param name="border"><border>7,0</border></param>
 						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					</theme>
-					<param name="minWidth"><int>550</int></param>
-					<param name="border"><border>0,0,0,0</border></param>
+					<param name="border"><border>0,0,2,0</border></param>
 					<param name="defaultGap"><dimension>5,9</dimension></param>
 					<param name="smallGap"><dimension>8,8</dimension></param>
 					<param name="mediumGap"><dimension>10,10</dimension></param>
 					<param name="largeGap"><dimension>15,15</dimension></param>
 					<param name="namedGaps"><map/></param>
 					<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-						<param name="border"><border>0,0,0,2</border></param>
-						<theme name="vscrollbar" ref="vscrollbar-white"/>
+						<param name="border"><border>0,0,9,6</border></param>
+						<theme name="vscrollbar" ref="vscrollbar-white">
+							<theme name="upbutton" ref="-defaults">
+								<param name="border"><border>1,0,0,0</border></param>
+							</theme>
+							<theme name="downbutton" ref="-defaults">
+								<param name="border"><border>2,0,0,0</border></param>
+							</theme>
+					</theme>
 					</theme>
 				</theme>
 			</theme>
@@ -194,17 +212,17 @@
     </theme>
 
     <theme name="label-title-dex" ref="label" allowWildcard="true">
-        <param name="background"><image>ui-table-header.background</image></param>
+        <param name="background"><image>ui-dex-info.background</image></param>
         <param name="border"><border>21,5,21,5</border></param>
         <param name="minWidth"><int>100</int></param>
         <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
 
     <theme name="label-value-dex2" ref="label" allowWildcard="true">
-        <param name="background"><image>ui-table-row.background</image></param>
+        <param name="background"><image>none</image></param>
         <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-        <param name="border"><border>4,10,4,10</border></param>
-        <param name="minWidth"><int>280</int></param>
+        <param name="border"><border>4,10,4,4</border></param>
+        <param name="minWidth"><int>274</int></param>
         <param name="minHeight"><int>54</int></param>
         <param name="font"><font>pb-dark</font></param>
     </theme>
@@ -262,7 +280,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<param name="border"><border>5</border></param>
-		<param name="minWidth"><int>223</int></param>
+		<param name="minWidth"><int>222</int></param>
 		<param name="minHeight"><int>30</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
@@ -300,7 +318,7 @@
 		<param name="columnWidths">
 			<map>
 				<param name="0"><int>100</int></param>
-				<param name="1"><int>201</int></param>
+				<param name="1"><int>200</int></param>
 				<param name="2"><int>65</int></param>
 				<param name="3"><int>65</int></param>
 				<param name="4"><int>65</int></param>
