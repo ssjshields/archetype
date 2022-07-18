@@ -698,8 +698,9 @@
 		</animation>
 
 		<select name="ui-popup-button.background">
-			<alias ref="ui-popup-button.selected" if="selected | hover"/>
+			<alias ref="ui-popup-button.selected" if="hover"/>
 			<alias ref="ui-popup-button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="ui-popup-button.selected" if="selected"/>
 			<alias ref="ui-popup-button.default"/>
 		</select>
 

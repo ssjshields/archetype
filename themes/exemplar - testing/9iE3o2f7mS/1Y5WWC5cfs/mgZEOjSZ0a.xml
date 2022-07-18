@@ -378,12 +378,12 @@
 		<theme name="display" ref="label">
 			<param name="font"><font>pb-dark-highlight-button</font></param>
 			<param name="focus"><image>input.background</image></param>
-			<param name="border"><border>5,5</border></param>
+			<param name="border"><border>5,5,5,0</border></param>
 			<param name="minWidth"><int>100</int></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<param name="font"><font>pb-dark-highlight-button</font></param>
-		<param name="border"><border>0,8,0,8</border></param>
+		<param name="border"><border>0,8,0,5</border></param>
 		<param name=""><image>ui-button.*</image></param>
 		<param name="minWidth"><int>150</int></param>
 		<param name="minHeight"><int>25</int></param>
@@ -402,7 +402,7 @@
 				<param name="minHeight"><int>26</int></param>
 				<param name="minDisplayedRows"><int>1</int></param>
 				<param name="font"><font>listbox-display-highlight-button</font></param>
-				<param name="border"><border>0,0,2,0</border></param>
+				<param name="border"><border>0,9,2,0</border></param>
 				<param name=""><image>ui-popup-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
@@ -413,7 +413,7 @@
 			<param name="fixedCellWidth"><bool>false</bool></param>
 			<param name="fixedCellHeight"><bool>false</bool></param>
 			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="border"><border>7</border></param>
+			<param name="border"><border>5</border></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			<param name="maxHeight"><int>270</int></param>
 			<param name="maxWidth"><int>250</int></param>
