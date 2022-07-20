@@ -143,6 +143,8 @@
 		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 	</theme>
 	<theme name="battle-move-button-left" ref="battle-move-button" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
 	</theme>
 
 	<theme name="battle-button-return" ref="-defaults" allowWildcard="true">

@@ -83,7 +83,7 @@
 
 	<theme name="item-move-dialog-button" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
 		<param name="border"><border>12,15,17,15</border></param>
 		<param name="background"><image>ui-button-bag.background</image></param>
 		<param name="overlay"><image>TM-Button-Overlay-Disabled</image></param>
