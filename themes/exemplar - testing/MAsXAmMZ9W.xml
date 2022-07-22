@@ -1498,8 +1498,16 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar.png" filter="lineal">
-		<area name="Chat-Minimized-Bar" xywh="*"/>
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="lineal">
+		<area name="Chat-Minimized-Bar-Default" xywh="*"/>
+	</images>
+
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Hover.png" filter="lineal">
+		<area name="Chat-Minimized-Bar-Hover" xywh="*"/>
+		<select name="Chat-Minimized-Bar">
+			<alias ref="Chat-Minimized-Bar-Hover" if="hover"/>
+			<alias ref="Chat-Minimized-Bar-Default"/>
+		</select>
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-PM-Window.png" filter="lineal">
