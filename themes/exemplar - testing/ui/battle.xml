@@ -297,6 +297,14 @@
 			<param name="maxHeight"><int>210</int></param>
 			<param name="minHeight"><int>210</int></param>
 			<param name="scrollbarsAlwaysVisible"><bool>true</bool></param>
+			<theme name="vscrollbar" ref="vscrollbar-white" allowWildcard="true">
+				<theme name="upbutton" ref="-defaults">
+					<param name="border"><border>1,0,0,0</border></param>
+				</theme>
+				<theme name="downbutton" ref="-defaults">
+					<param name="border"><border>1,0,0,0</border></param>
+				</theme>
+			</theme>
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
