@@ -7,19 +7,24 @@
 		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>80</int></param>
-		<param name="closeButtonX"><int>-25</int></param>
-		<param name="closeButtonY"><int>49</int></param>
+		<param name="titleAreaBottom"><int>-1</int></param>
+		<param name="closeButtonX"><int>211</int></param>
+		<param name="closeButtonY"><int>-32</int></param>
+		<theme name="closeButton" ref="closeButton">
+			<param name="background"><image>Bag-Close-Button</image></param>
+			<param name="minWidth"><int>24</int></param>
+			<param name="minHeight"><int>24</int></param>
+		</theme>
 		<theme name="title" ref="title">
-			<param name="border"><border>51,26,0,0</border></param>
+			<param name="border"><border>51,23,0,0</border></param>
 			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
 		</theme>
 		<theme name="editfield" ref="editfield-search" allowWildcard="true">
 			<param name="background"><image>ui-inputbox-bag.background</image></param>
-			<param name="border"><border>0,5,0,9</border></param>
+			<param name="border"><border>0,2,0,12</border></param>
 			<param name="overlay"><image>Search-Icon-Bag</image></param>
 		</theme>
-		<param name="border"><border>10,0,0,0</border></param>
+		<param name="border"><border>10,0,0,3</border></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0,0,0,0</border></param>
 			<param name="defaultGap"><dimension>0,0</dimension></param>
@@ -28,8 +33,8 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="tabbedpane" ref="-defaults">
-				<param name="minHeight"><int>400</int></param>
-				<param name="maxHeight"><int>400</int></param>
+				<param name="minHeight"><int>432</int></param>
+				<param name="maxHeight"><int>432</int></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
@@ -41,13 +46,14 @@
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>3,5,0,3</border></param>
+					<param name="border"><border>3,2,0,0</border></param>
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="-defaults">
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+								<param name="border"><border>0,0,26,0</border></param>
 							<theme name="vscrollbar" ref="vscrollbar-white"/>
 							<theme name="dialoglayout" ref="-dialog">
-								<param name="border"><border>7,0,0,4</border></param>
+								<param name="border"><border>7,0,7,4</border></param>
 									<theme name="label" ref="label" allowWildcard="true">
 										<param name="background"><image>bag-category-label</image></param>
 										<param name="border"><border>0,15,0,0</border></param>

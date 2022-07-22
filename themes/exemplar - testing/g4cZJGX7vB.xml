@@ -498,7 +498,7 @@
 			<alias ref="ui-inputbox.default"/>
 		</select>
 		<composed name="ui-inputbox-bag.background">
-			<alias ref="ui-inputbox.background" inset="0,0,0,-15"/>
+			<alias ref="ui-inputbox.background" inset="0,-3,0,-12"/>
 		</composed>
 		<composed name="ui-inputbox-pc.background">
 			<alias ref="ui-inputbox.background" inset="-2,0,-3,0"/>
