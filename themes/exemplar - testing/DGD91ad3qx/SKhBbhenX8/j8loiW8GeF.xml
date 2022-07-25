@@ -156,7 +156,7 @@
 									<param name="alignment"><enum type="alignment">FILL</enum></param>
 								</theme>
 								<theme name="container" ref="-dialog">
-									<param name="border"><border>0,0,0,0</border></param>
+									<param name="border"><border>0,9,0,0</border></param>
 									<theme name="scrollpane" ref="scrollpane">
 										<param name="minWidth"><int>838</int></param>
 									</theme>
