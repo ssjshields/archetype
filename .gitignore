@@ -24,3 +24,15 @@ strings/z_strings_en_ex.xml
 strings/Unova_Edits_de.xml
 strings/Unova2_Edits_de.xml
 strings/Sinnoh_Edits_de.xml
+strings/strings_de_archetype.xml
+strings/strings_en_archetype_gba.xml
+strings/strings_en_archetype_nds_sinnoh.xml
+strings/strings_en_archetype_nds_unova.xml
+strings/strings_es_archetype.xml
+strings/strings_fr_archetype.xml
+strings/strings_it_archetype.xml
+strings/strings_ja_archetype.xml
+strings/strings_ko_archetype.xml
+strings/strings_pt-BR_archetype.xml
+strings/strings_zh-Hant_archetype.xml
+strings/strings_zh_archetype.xml
