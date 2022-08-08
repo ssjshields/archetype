@@ -114,16 +114,23 @@
 	
 	<theme name="gameshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
-	<param name="background"><image>Gift-Shop-Window</image></param>
-	<param name="titleAreaTop"><int>9</int></param>
-	<param name="titleAreaLeft"><int>43</int></param>
-	<param name="titleAreaBottom"><int>30</int></param>
-	<param name="closeButtonX"><int>-26</int></param>
-	<param name="closeButtonY"><int>12</int></param>
-		<param name="minWidth"><int>880</int></param>
-		<param name="minHeight"><int>595</int></param>
+		<param name="background"><image>Gift-Shop-Window</image></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>30</int></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>11,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
+		<param name="closeButtonX"><int>-26</int></param>
+		<param name="closeButtonY"><int>8</int></param>
+		<param name="minWidth"><int>550</int></param>
+		<param name="minHeight"><int>593</int></param>
 		<theme name="sortby" ref="-defaults">
 			<param name="font"><font>pb-dark</font></param>
+			<param name="border"><border>0,0,3,0</border></param>
 		</theme>
 		<theme name="points" ref="-defaults">
 			<param name="background"><image>ui-inputbox.background</image></param>
@@ -132,15 +139,16 @@
 		</theme>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="tabbedpane" ref="base-tabbed-pane">
+					<param name="border"><border>1,0,0,0</border></param>
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
-						<param name="background"><image>ui-tab-shop.background</image></param>
+						<param name="background"><image>ui-tab.background</image></param>
 					</theme>
 				</theme>
 				<param name="minWidth"><int>250</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>35,5,40,5</border></param>
+					<param name="border"><border>30,0,33,5</border></param>
 					<theme name="dialoglayout" ref="-defaults">
 
 						<theme name="dialoglayout" ref="-dialog">
@@ -149,16 +157,16 @@
 								<param name="background"><image>none</image></param>
 								<param name="border"><border>0,0,0,0</border></param>
 								<theme name="tabbox" ref="-defaults">
+									<param name="border"><border>5,0</border></param>
 									<theme name="tabbutton" ref="button">
-										<param name="border"><border>20,5</border></param>
+										<param name="border"><border>15,5</border></param>
 									</theme>
-									<param name="spacing"><int>3</int></param>
+									<param name="spacing"><int>1</int></param>
 									<param name="alignment"><enum type="alignment">FILL</enum></param>
 								</theme>
 								<theme name="container" ref="-dialog">
 									<param name="border"><border>0,9,0,0</border></param>
 									<theme name="scrollpane" ref="scrollpane">
-										<param name="minWidth"><int>838</int></param>
 									</theme>
 									<theme name="sp" ref="scrollpane">
 										<theme name="vscrollbar" ref="vscrollbar-white"/>
@@ -167,9 +175,7 @@
 								</theme>
 							</theme>
 						</theme>
-						<param name="border"><border>8,5</border></param>
-						<param name="minWidth"><int>838</int></param>
-						<param name="maxWidth"><int>838</int></param>
+						<param name="border"><border>5,5</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -187,17 +193,17 @@
 	
 	<theme name="gameshop-item" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-inputbox.background</image></param>
-		<param name="border"><border>10,5,10,5</border></param>
-		<param name="defaultGap"><dimension>5,5</dimension></param>
+		<param name="border"><border>5,0,5,5</border></param>
+		<param name="defaultGap"><dimension>0,5</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
-		<param name="minWidth"><int>420</int></param>
-		<param name="maxWidth"><int>407</int></param>
+		<param name="minWidth"><int>310</int></param>
+		<param name="maxWidth"><int>310</int></param>
 		<param name="namedGaps"><map/></param>
 		<theme name="label" ref="-defaults">
 			<param name="font"><font>pb-dark</font></param>
-			<param name="minWidth"><int>310</int></param>
+			<param name="minWidth"><int>227</int></param>
 		</theme>
 		<theme name="item-name" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
@@ -225,24 +231,24 @@
 	<theme name="gameshop-item-addon" ref="gameshop-item" allowWildcard="true">
 		<param name="background"><image>ui-inputbox.background</image></param>
 		<param name="border"><border>0</border></param>
-		<param name="minWidth"><int>280</int></param>
-		<param name="maxWidth"><int>407</int></param>
+		<param name="minWidth"><int>310</int></param>
+		<param name="maxWidth"><int>310</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
-			<param name="border"><border>10,5,10,5</border></param>
-			<param name="defaultGap"><dimension>25,2</dimension></param>	
+			<param name="border"><border>5,0,5,0</border></param>
+			<param name="defaultGap"><dimension>0,5</dimension></param>	
 			<theme name="label" ref="-defaults">
-				<param name="minWidth"><int>250</int></param>
+				<param name="minWidth"><int>200</int></param>
 				<param name="font"><font>pb-dark</font></param>
-				<param name="textAlignment"><enum type="alignment">center</enum></param>
+				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="spritelabel" ref="spritelabel">
 				<param name="background"><image>none</image></param>
 			</theme>
 			<theme name="item-name" ref="-defaults">
-				<param name="minWidth"><int>250</int></param>
-				<param name="border"><border>4</border></param>
+				<param name="minWidth"><int>200</int></param>
+				<param name="border"><border>5,0,0,0</border></param>
 				<param name="font"><font>pb-dark</font></param>
-				<param name="textAlignment"><enum type="alignment">center</enum></param>
+				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="label-special" ref="-defaults">
 				<param name="background"><image>none</image></param>
