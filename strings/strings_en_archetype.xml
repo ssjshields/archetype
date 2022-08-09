@@ -29,6 +29,9 @@
 		<string id="58">Return</string>
 		<string id="5029">Confirm</string>
   
+  <!-- battle -->	
+		<string id="1440">Min catch rate: {00}\nMax catch rate: {00}</string> <!-- force catch rate style -->
+		
   <!-- safari -->
 		<string id="5109">Ball ({00})</string>
 		<string id="5100">Fight</string>
