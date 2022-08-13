@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ds_strings_archive archive_type="0" lang="en-a" region_id="3">
+  <!-- pokémon center -->
+        <string block_id="0" entry_id="121" table_id="213">Heal your Pokémon?</string> <!-- day? night? need confirm -->
+		<string block_id="0" entry_id="0" table_id="213">Heal your Pokémon?</string> <!-- day? night? need confirm -->
+		<string block_id="0" entry_id="2" table_id="213">Restored Pokémon to full health.</string> <!-- do not modify this line; pointless -->
+		<string block_id="0" entry_id="1" table_id="213">...</string> <!-- nurse joy thinking -->
+		<string block_id="0" entry_id="3" table_id="213">Bye-bye!</string> <!-- depart nurse joy -->
+</ds_strings_archive>

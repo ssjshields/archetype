@@ -7,18 +7,18 @@
 		<!--<string id="0">POKéMON</string>-->
  
   <!-- login Screen -->
-		<string id="1170">GUI:\nAnonymousPoke, nurver &amp; realmadrid1809\n</string>
-		<string id="1000">Login</string>
+		<string id="1170">GUI:\nAnonymousPoke, nurver &amp; realmadrid1809\n</string> <!-- ROMs loaded line -->
+		<string id="1000">Login</string> <!-- shared button and window title -->
 
   <!-- settings window title-->
-		<string id="1200">Settings</string>
+		<string id="1200">Settings</string> <!-- window title -->
 
   <!-- server select headers -->
-		<string id="1010">                                </string>
-		<string id="1011">                                </string>
-		<string id="1012">                                </string>
-        <string id="1013">Server Select</string>
-		<string id="1049">Character Select</string>	
+		<string id="1010">                                </string>  <!-- removes redundant text -->
+		<string id="1011">                                </string>  <!-- removes redundant text -->
+		<string id="1012">                                </string>  <!-- removes redundant text -->
+        <string id="1013">Server Select</string> <!-- window title -->
+		<string id="1049">Character Select</string>	<!-- window title -->
 
   <!-- BERRIES -> Berries ; thanks wingboner o7 -->
 		<string id="4">Berries</string>
