@@ -1774,7 +1774,7 @@
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/Team-Window.png" filter="lineal">
-		<area name="Team-Window-Background" xywh="*"/>
+		<area name="Team-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Team-Window">
 			<alias ref="Team-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
@@ -1782,7 +1782,7 @@
 	</images>
 	
 	<images file="res/custom/CLyo0siyqa/MM-Signup-Window.png" filter="lineal">
-		<area name="MM-Signup-Window-Background" xywh="*"/>
+		<area name="MM-Signup-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="MM-Signup-Window">
 			<alias ref="MM-Signup-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
@@ -1790,7 +1790,7 @@
 	</images>
 	
 	<images file="res/custom/CLyo0siyqa/Tournament-Window.png" filter="lineal">
-		<area name="Tournament-Window-Background" xywh="*"/>
+		<area name="Tournament-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Tournament-Window">
 			<alias ref="Tournament-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="6,2,2,2"/>
