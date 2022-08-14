@@ -2,7 +2,7 @@
 <themes>
 
 	<fontDef name="battle" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#BF000000" size="28" hinting="Full"/>
-    <fontDef name="battle-name" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="18" hinting="Full" offsetY="-3"/>
+    <fontDef name="battle-name" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
 	<fontDef name="battle-hp-text" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="0.9" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="16" hinting="Medium" offsetY="0" offsetX="-24"/>
 	<fontDef name="battle-item" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="16.5" hinting="Medium" offsetY="6" offsetX="0"/>
 	<fontDef name="battle-map" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>

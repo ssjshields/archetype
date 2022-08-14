@@ -65,7 +65,7 @@
 
 	<theme name="redlabel" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>battle-name</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
+		<param name="border"><border>0,0,3,0</border></param>
 	</theme>
 
 	<theme name="time-progressbar" ref="-defaults" allowWildcard="true">
