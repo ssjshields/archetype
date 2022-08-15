@@ -50,7 +50,7 @@
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="-defaults">
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-								<param name="border"><border>0,0,26,0</border></param>
+								<param name="border"><border>4,0,30,0</border></param>
 							<theme name="vscrollbar" ref="vscrollbar-white"/>
 							<theme name="dialoglayout" ref="-dialog">
 								<param name="border"><border>7,0,7,4</border></param>
