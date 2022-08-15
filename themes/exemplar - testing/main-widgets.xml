@@ -34,10 +34,10 @@
 		</theme>
 		<theme name="login-window" ref="base-frame" allowWildcard="true">
 		<param name="background"><image>Login-Window</image></param>
-			<param name="titleAreaTop"><int>31</int></param>
+			<param name="titleAreaTop"><int>32</int></param>
 			<param name="titleAreaLeft"><int>44</int></param>
 			<param name="titleAreaRight"><int>-20</int></param>
-			<param name="titleAreaBottom"><int>30</int></param>
+			<param name="titleAreaBottom"><int>31</int></param>
 			<param name="minWidth"><int>338</int></param>
 			<param name="minHeight"><int>150</int></param>
 			<param name="maxWidth"><int>338</int></param>
