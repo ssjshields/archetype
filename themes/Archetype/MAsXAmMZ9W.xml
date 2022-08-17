@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+
+	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
+		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,B3" splity="T3,B3"/>
+		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#4aaae1"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#78c2ea"/>
+		</animation>
+		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
+			<area xywh="0,0,7,7" splitx="L3,B3" splity="T3,B3" inset="0,0,0,0"/>
+			<area xywh="0,0,7,7" splitx="L3,B3" splity="T3,B3" inset="0,8,0,0"/>
+		</grid>
+		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus">
+			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#4aaae1"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#78c2ea"/>
+		</animation>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/text-bubble.png" filter="nearest">
+		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
+		<area name="text-bubble-arrow.background" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32"/>
+		<area name="text-bubble-arrow.background1" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
+		<area name="text-bubble-arrow.background2" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
+		<area name="text-bubble-arrow.background3" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
+		<area name="text-bubble-arrow.background4" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="3,0,-3,0"/>
+		<area name="text-bubble-arrow.background5" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="4,0,-4,0"/>
+		<area name="text-bubble-arrow.background6" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
+		<area name="text-bubble-arrow.background7" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
+
+		<animation name="text-bubble-arrow.background" timeSource="enabled">
+			<frame ref="text-bubble-arrow.background1" duration="110"/>
+			<frame ref="text-bubble-arrow.background2" duration="80"/>
+			<frame ref="text-bubble-arrow.background3" duration="40"/>
+			<frame ref="text-bubble-arrow.background4" duration="20"/>
+			<frame ref="text-bubble-arrow.background5" duration="40"/>
+			<frame ref="text-bubble-arrow.background6" duration="80"/>
+			<frame ref="text-bubble-arrow.background7" duration="110"/>
+			<frame ref="text-bubble-arrow.background6" duration="80"/>
+			<frame ref="text-bubble-arrow.background5" duration="40"/>
+			<frame ref="text-bubble-arrow.background4" duration="20"/>
+			<frame ref="text-bubble-arrow.background3" duration="40"/>
+			<frame ref="text-bubble-arrow.background2" duration="80"/>
+		</animation>
+	</images>
+	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="nearest">
+		<area name="white.background" xywh="11,313,1,1"/>
+		<area name="interface.background" xywh="4,10,61,44" splitx="L5,R5" splity="T4,B6" inset="-25"/>
+		<area name="popup-button.default" xywh="109,12,34,22" splitx="L2,R2" splity="T1,B1"/>
+		<area name="popup-button.hover" xywh="109,35,34,22" splitx="L2,R2" splity="T1,B1"/>
+		<area name="input.background" xywh="146,13,45,19" splitx="L5,R5" splity="T5,B5" border="3,0"/>
+		<area name="chat-input.background" xywh="79,91,37,23" splitx="L5,R5" splity="T5,B5" border="3" tint="#C8FFFFFF"/>
+		<area name="ui-red-button.default" xywh="199,11,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-red-button.hover" xywh="199,32,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-blue-button.default" xywh="290,11,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-blue-button.hover" xywh="290,32,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-green-button.default" xywh="378,11,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-green-button.hover" xywh="378,32,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-bg-button.default" xywh="423,12,44,23" splitx="L15,R16" splity="T8,B10" inset="-2,0,-2,0"/>
+		<area name="ui-bg-button.hover" xywh="423,36,44,23" splitx="L15,R16" splity="T8,B10" inset="-2,0,-2,0"/>
+		<area name="ui-bg2-button.default" xywh="426,15,37,17" splitx="L4,R4" splity="T4,B4" inset="0,0,2,5"/>
+		<area name="ui-bg2-button.hover" xywh="426,39,37,17" splitx="L4,R4" splity="T4,B4" inset="0,0,0,5"/>
+		<area name="ui-tab-button.default" xywh="333,9,40,21" splitx="L10,R11" splity="T9,B4" inset="-5,-5,0,-5"/>
+		<area name="ui-tab-button.hover" xywh="333,30,40,21" splitx="L7,R7" splity="T12,B5" inset="-5,-5,0,-5"/>
+		<area name="ui-tab-button.disabled" xywh="333,51,40,21" splitx="L7,R7" splity="T10,B7" inset="-5,-5,0,-5"/>
+		<area name="ui-violet-button.default" xywh="245,11,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-violet-button.hover" xywh="245,32,39,19" splitx="L7,R7" splity="T6,B8"/>
+		<area name="ui-violet-button.pressed" xywh="246,53,37,19" splitx="L6,R6" splity="T6,B8"/>
+		<area name="hud.background" xywh="4,58,33,27" splity="T6,B6" border="8,6,6,6" splitx="L6,R6"/>
+		<area name="popup.background" xywh="4,58,33,27" splity="T4,B4" border="8,5,3,5" splitx="L4,R4"/>
+		<area name="monster-slot-green" xywh="42,59,23,25" tint="#a040c955" sizeOverwriteH="40"/>
+		<area name="monster-slot-orange" xywh="42,59,23,25" tint="#a0f7b529"/>
+		<area name="monster-slot-red" xywh="42,59,23,25" tint="#a0f7635a"/>
+		<area name="monster-slot-purple" xywh="42,59,23,25" tint="#a09781cf"/>
+		<area name="monster-slot-selected" xywh="42,59,23,25" tint="#a0ffffff"/>
+		<area name="game-shop-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="30,0,30,-7"/>
+		<area name="tab-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="25,0,0,-5"/>
+		<area name="tab-area2" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="25,0,0,-7"/>
+		<area name="tab-area3" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="15,0,0,-17"/>
+		<area name="inner-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="0,5,0,0"/>
+		<area name="movetutor-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="0,5,0,-5"/>
+		<area name="label-area.background" xywh="159,92,24,22" splitx="L3,R3" splity="T3,B3"/>
+		<grid name="xp-monster-frame.background" weightsX="0,1,0" weightsY="1" inset="-1,0,0,0">
+			<area xywh="186,92,22,6"/>
+			<area xywh="210,92,1,6"/>
+			<area xywh="215,92,4,6"/>
+		</grid>
+		<area name="xp-monster-frame.progressImage" xywh="211,92,1,6"/>
+
+		<grid name="progressbar.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="206,100,2,8"/>
+			<area xywh="212,100,1,8"/>
+			<area xywh="215,100,2,8"/>
+		</grid>
+		<area name="progressbar.progressImage" xywh="211,100,1,8" inset="0,2,0,0"/>
+
+		<grid name="progressbar-green.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="206,100,2,8"/>
+			<area xywh="212,100,1,8"/>
+			<area xywh="215,100,2,8"/>
+		</grid>
+		<area name="progressbar-green.progressImage" xywh="209,100,1,8" inset="0,2,0,0"/>
+
+		<area name="monster-frame-nameplate" xywh="224,91,7,34" splitx="L2,R3" inset="0,-5,0,0"/>
+
+		<area name="inner-tab" xywh="26,128,14,14" splitx="L5,R5" splity="T5,B5"/>
+		<area name="inner-tab-orange" xywh="142,128,14,14" splitx="L5,R5" splity="T5,B5"/>
+
+		<area name="label-hbg-title" xywh="5,109,15,10" splitx="L2,R2" splity="T2,B4" inset="-2,-2"/>
+		<area name="label-hbg-value" xywh="5,118,15,8" splitx="L2,R2" splity="T2,B3" inset="-3,-2,-2,-2"/>
+		<area name="label-hbg-vai-value" xywh="5,118,15,8" splitx="L2,R2" splity="T2,B3" inset="-3,-2,-2,-2"/>
+
+		<area name="label-bg-title" xywh="4,128,9,15" splitx="L3,R4" splity="T2,B2" inset="0,-2"/>
+		<area name="label-bg-title-dex" xywh="4,128,9,15" splitx="L3,R2" splity="T2,B2" inset="-2,0,-2,0"/>
+		<area name="label-bg-value-dex" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-2,0"/>
+		<area name="label-bg-value" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-2,-17"/>
+		<area name="label-bg-value-arrow" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-3,-17"/>
+		<area name="label-bg-value2" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-2,-70"/>
+		<area name="label-bg-value-type" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-4,-70"/>
+		<area name="label-bg-value3" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,0,-3,-14"/>
+		<area name="label-bg-value4" xywh="43,121,24,22" splitx="L5,R5" splity="T5,B5" inset="0"/>
+		<area name="label-bg-value5" xywh="29,110,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,0,-2,0"/>
+		<area name="inner-dialog-text" xywh="43,87,24,32" splitx="L4,R4" splity="T9,B10" tiled="true" border="6,0,0,0"/>
+		<area name="label-bg-settings-value" xywh="13,128,8,15" splitx="L3,R2" splity="T2,B2" inset="-2,-5,-2,0"/>
+		<area name="friends-list-bg" xywh="78,119,27,26" splitx="L11,R11" splity="T11,B11" inset="0"/>
+		<area name="trade-slot-normal" xywh="43,121,24,22" splitx="L5,R5" splity="T5,B5" inset="0"/>
+		<area name="trade-slot-shiny" xywh="109,119,28,26" splitx="L8,R8" splity="T8,B8" inset="-2"/>
+		
+		<select name="popup-button.background">
+			<alias ref="popup-button.hover" if="hover | keyboardFocus"/>
+			<alias ref="popup-button.default"/>
+		</select>
+		<grid name="chatframe.background" weightsX="0,0,1,0" weightsY="0,0,1,0" border="0,5,5,5" tint="#FFFFFF">
+			<area xywh="4,54,4,4"/>
+			<area xywh="13,54,2,4" sizeOverwriteH="45"/>
+			<area xywh="30,54,2,4"/>
+			<area xywh="33,54,4,4"/>
+			<area xywh="4,58,4,4"/>
+			<area xywh="19,58,3,4" sizeOverwriteH="45"/>
+			<area xywh="25,58,2,4"/>
+			<area xywh="33,58,4,4"/>
+			<area xywh="4,72,4,2"/>
+			<area xywh="16,77,3,2"/>
+			<area xywh="26,78,3,2"/>
+			<area xywh="33,73,4,2"/>
+			<area xywh="4,78,4,7"/>
+			<area xywh="13,78,3,7"/>
+			<area xywh="24,78,3,7"/>
+			<area xywh="33,78,4,7"/>
+		</grid>
+		<grid name="chatframe2.background" weightsX="0,0,1,0" weightsY="0,1,0" border="36,5,7,5" tint="#FFFFFF">
+			<area xywh="4,212,11,32"/>
+			<area xywh="18,212,3,32" sizeOverwriteH="40"/>
+			<area xywh="46,212,4,32"/>
+			<area xywh="48,212,12,32"/>
+			<area xywh="4,243,11,2"/>
+			<area xywh="31,243,7,2"/>
+			<area xywh="46,243,5,2"/>
+			<area xywh="49,243,11,2"/>
+			<area xywh="4,246,11,6"/>
+			<area xywh="24,246,9,6"/>
+			<area xywh="31,246,16,6"/>
+			<area xywh="49,246,11,6"/>
+		</grid>
+		<grid name="chatframe-black.background" weightsX="0,0,1,0" weightsY="0,0,1,0" border="0,5,5,5" tint="#FFFFFF">
+			<area xywh="64,212,5,4"/>
+			<area xywh="71,212,3,4" sizeOverwriteH="45"/>
+			<area xywh="83,212,2,4"/>
+			<area xywh="92,212,5,4"/>
+			<area xywh="64,218,5,15"/>
+			<area xywh="71,218,3,15"/>
+			<area xywh="83,218,3,15"/>
+			<area xywh="92,218,5,15"/>
+			<area xywh="64,218,5,15"/>
+			<area xywh="71,218,3,15"/>
+			<area xywh="83,218,3,15"/>
+			<area xywh="92,218,5,15"/>
+			<area xywh="64,232,5,7"/>
+			<area xywh="71,232,3,7"/>
+			<area xywh="83,232,3,7"/>
+			<area xywh="92,232,5,7"/>
+		</grid>
+		<area name="input-black.default" xywh="100,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,2"/>
+		<area name="input-black.inactive" xywh="100,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,2"/>
+		<area name="monster-preview-bg" xywh="167,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,0" />
+
+		<select name="input-black.background">
+			<alias ref="input-black.default" if="selected | keyboardFocus"/>
+			<alias ref="input-black.inactive"/>
+		</select>
+
+		<area name="chat-button.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0"/>
+
+		<area name="chat-button-orange.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#FF9900"/>
+		<area name="chat-button-lightgreen.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#66FF66"/>
+		<area name="chat-button-purple.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#FF99FF"/>
+		<area name="chat-button-teal.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#81ddf1"/>
+		<area name="chat-button-yellow.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#e2c57e"/>
+		<area name="chat-button-brown.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#ff8484"/>
+
+		<area name="chat-button.disabled" xywh="134,226,28,12" splitx="L2,R2" splity="T2,B2" inset="0,0"/>
+		<select name="chat-button.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+
+		<select name="chat-button-orange.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-orange.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<select name="chat-button-lightgreen.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-lightgreen.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<select name="chat-button-purple.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-purple.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<select name="chat-button-teal.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-teal.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<select name="chat-button-yellow.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-yellow.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<select name="chat-button-brown.background">
+			<alias ref="chat-button.disabled" if="disabled"/>
+			<alias ref="chat-button-brown.active" if="selected"/>
+			<alias ref="chat-button.disabled"/>
+		</select>
+		<area name="color-picker-default" xywh="5,308,13,11" splitx="L2,R2" splity="T2,B2" inset="1"/>
+		<area name="color-picker-keyboardFocus" xywh="4,307,15,13" splitx="L2,R2" splity="T2,B2" inset="-2"/>
+		<select name="color-picker">
+			<alias ref="color-picker-keyboardFocus" if="keyboardFocus | hover"/>
+			<alias ref="color-picker-default"/>
+		</select>
+		<area name="close-handle" xywh="0,500,12,12"/>
+		<area name="minimize-handle" xywh="29,500,12,12"/>
+		<area name="close-handle-blue" xywh="15,503,9,9"/>
+		<area name="combobox-picker.background" xywh="8,504,7,7" inset="-1,0,-1,0" sizeOverwriteH="7" sizeOverwriteV="7"/>
+
+		<area name="console.background" xywh="43,100,1,1" tint="#B0000000"/>
+		<area name="-console.cursor" xywh="5,291,6,1" center="true" inset="14,0,0,0"/>
+		<animation name="console.cursor" timeSource="keyboardFocus">
+			<frame ref="-console.cursor" duration="500"/>
+			<frame ref="none" duration="500"/>
+		</animation>
+
+		<area name="-editfield.cursor" xywh="0,496,1,1" tint="sub-color" inset="-1,0,1,0"/>
+		<animation name="editfield.cursor" timeSource="keyboardFocus">
+			<frame ref="-editfield.cursor" duration="500"/>
+			<frame ref="none" duration="500"/>
+		</animation>
+		<area name="editfield.selection" tint="sub-color" xywh="0,496,1,1"/>
+
+		<alias name="-frame.minimizeIcon" ref="minimize-handle" inset="2,3,3,3"/>
+
+		<alias name="-frame.closeIcon" ref="close-handle" inset="2,3,3,3"/>
+		<select name="frame.closebutton.background">
+			<alias ref="-frame.closeIcon" if="armed"/>
+			<alias ref="-frame.closeIcon"/>
+		</select>
+		<select name="frame.minimizebutton.background">
+			<alias ref="-frame.minimizeIcon" if="armed"/>
+			<alias ref="-frame.minimizeIcon"/>
+		</select>
+
+		<select name="vscrollbar.upbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,1,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,1,7,7"/>
+			<area tint="#2d3b40" xywh="5,1,7,7"/>
+		</select>
+		<select name="vscrollbar.downbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="14,1,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="14,1,7,7"/>
+			<area tint="#2d3b40" xywh="14,1,7,7"/>
+		</select>
+		<select name="vscrollbar.thumb.background">
+			<area splity="T2,T5" tint="#2a97dc" if="pressed" xywh="22,1,7,7"/>
+			<area splity="T3,T4" tint="#2a97dc" if="hover" xywh="22,1,7,7"/>
+			<area splity="T3,T6" tint="#2d3b40" xywh="22,1,7,7"/>
+		</select>
+		<select name="vscrollbar-transparent.thumb.background">
+			<area splity="T2,T5" tint="#53737373" if="pressed" xywh="22,1,7,7"/>
+			<area splity="T3,T4" tint="#53999999" if="hover" xywh="22,1,7,7"/>
+			<area splity="T3,T6" tint="#53FFFFFF" xywh="22,1,7,7"/>
+		</select>
+		<select name="vscrollbar-white.thumb.background">
+			<area splity="T2,T5" tint="#2a97dc" if="pressed" xywh="22,1,7,7"/>
+			<area splity="T3,T4" tint="#2a97dc" if="hover" xywh="22,1,7,7"/>
+			<area splity="T3,T6" tint="#2d3b40" xywh="22,1,7,7"/>
+		</select>
+
+		<select name="hscrollbar.thumb.background">
+			<area tint="#2a97dc" if="pressed" xywh="5,28,7,7" splitx="L2,R2"/>
+			<area tint="#2a97dc" if="hover" xywh="5,28,7,7" splitx="L2,R2"/>
+			<area tint="#2d3b40" xywh="5,28,7,7" splitx="L2,R2"/>
+		</select>
+		<select name="hscrollbar.leftbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,20,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,20,7,7"/>
+			<area tint="#2d3b40" xywh="5,20,7,7"/>
+		</select>
+		<select name="hscrollbar.rightbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,11,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,11,7,7"/>
+			<area tint="#2d3b40" xywh="5,11,7,7"/>
+		</select>
+
+		<select name="hscrollbar-white.thumb.background">
+			<area tint="#2a97dc" if="pressed" xywh="5,28,7,7" splitx="L2,R2"/>
+			<area tint="#2a97dc" if="hover" xywh="5,28,7,7" splitx="L2,R2"/>
+			<area tint="#2d3b40" xywh="5,28,7,7" splitx="L2,R2"/>
+		</select>
+		<select name="hscrollbar-white.leftbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,20,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,20,7,7"/>
+			<area tint="#2d3b40" xywh="5,20,7,7"/>
+		</select>
+		<select name="hscrollbar-white.rightbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,11,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,11,7,7"/>
+			<area tint="#2d3b40" xywh="5,11,7,7"/>
+		</select>
+		<select name="vscrollbar-white.upbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="5,1,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="5,1,7,7"/>
+			<area tint="#2d3b40" xywh="5,1,7,7"/>
+		</select>
+		<select name="vscrollbar-white.downbutton.background" center="true">
+			<area tint="#2a97dc" if="pressed" xywh="14,1,7,7"/>
+			<area tint="#2a97dc" if="hover" xywh="14,1,7,7"/>
+			<area tint="#2d3b40" xywh="14,1,7,7"/>
+		</select>
+		<area name="monster-frame-tab-empty.default" xywh="94,147,28,30" inset="-10,0,10,0"/>
+		<area name="monster-frame-tab-empty.selected" xywh="94,177,28,30" inset="-10,0,10,0"/>
+
+		<select name="monster-frame-tab-empty.background">
+			<alias ref="monster-frame-tab-empty.selected" if="selected | hover"/>
+			<alias ref="monster-frame-tab-empty.default"/>
+		</select>
+
+		<area name="icon-gm" xywh="4,256,26,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-jgm" xywh="93,256,26,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-sgm" xywh="121,256,30,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-cm" xywh="32,256,26,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-mod" xywh="60,256,31,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-admin" xywh="66,271,30,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-dev" xywh="35,271,29,13" center="true" inset="0,0,1,0"/>
+		<area name="icon-hgm" xywh="4,271,30,13" center="true" inset="0,0,1,0"/>
+
+		<area name="monstergear-pic" xywh="66,308,21,16" center="true" inset="0,0,1,0" splitx="L9,R9" splity="T5,B5"/>
+		<area name="row.background" xywh="23,308,17,15" inset="0,1,2,2" splitx="L5,R5" splity="T5,B5"/>
+		<area name="row-header.background" xywh="45,308,17,15" inset="0,-1,2,-1" splitx="L5,R5" splity="T5,B5"/>
+
+		<area name="inventory-slot.default" xywh="43,288,17,18" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
+		<area name="inventory-slot.selected" xywh="64,286,19,20" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
+		<area name="inventory-slot.multi" xywh="87,286,19,20" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
+		<area name="inventory-slot.multiselected" xywh="113,286,19,20" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
+
+		<select name="inventory-slot">
+			<alias ref="inventory-slot.multiselected" if="hover | keyboardFocus"/>
+			<alias ref="inventory-slot.multi" if="selected"/>
+			<alias ref="inventory-slot.selected" if="hover | keyboardFocus"/>
+			<alias ref="inventory-slot.default"/>
+		</select>
+
+		<grid name="chat-bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
+			<area xywh="4,287,4,4"/>
+			<area xywh="6,287,2,4"/>
+			<area xywh="8,287,7,4"/>
+			<area xywh="15,287,2,4"/>
+			<area xywh="15,287,4,4"/>
+			<area xywh="4,290,4,4"/>
+			<area xywh="6,290,2,4"/>
+			<area xywh="8,290,7,4"/>
+			<area xywh="15,290,2,4"/>
+			<area xywh="15,290,4,4"/>
+			<area xywh="4,292,4,2"/>
+			<area xywh="6,292,2,2"/>
+			<area xywh="8,292,7,2"/>
+			<area xywh="15,292,2,2"/>
+			<area xywh="15,292,4,2"/>
+			<area xywh="4,297,4,7"/>
+			<area xywh="6,297,2,7"/>
+			<area xywh="8,297,7,7"/>
+			<area xywh="15,297,2,7"/>
+			<area xywh="15,297,4,7"/>
+		</grid>
+
+		<grid name="bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
+			<area xywh="4,287,4,4"/>
+			<area xywh="6,287,2,4"/>
+			<area xywh="8,287,2,4"/>
+			<area xywh="15,287,2,4"/>
+			<area xywh="15,287,4,4"/>
+			<area xywh="4,290,4,4"/>
+			<area xywh="6,290,2,4"/>
+			<area xywh="8,290,2,4"/>
+			<area xywh="15,290,2,4"/>
+			<area xywh="15,290,4,4"/>
+			<area xywh="4,292,4,2"/>
+			<area xywh="6,292,2,2"/>
+			<area xywh="8,292,2,2"/>
+			<area xywh="15,292,2,2"/>
+			<area xywh="15,292,4,2"/>
+			<area xywh="4,297,4,7"/>
+			<area xywh="6,297,2,7"/>
+			<area xywh="14,297,2,7"/>
+			<area xywh="15,297,2,7"/>
+			<area xywh="15,297,4,7"/>
+		</grid>
+
+		<grid name="tooltip-left.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5" inset="-6,-6,-6,-6">
+			<area xywh="3,325,8,8"/>
+			<area xywh="11,325,1,8"/>
+			<area xywh="12,325,9,8"/>
+			<area xywh="21,325,1,8"/>
+			<area xywh="22,325,8,8"/>
+			<area xywh="3,333,8,7"/>
+			<area xywh="11,333,1,7"/>
+			<area xywh="12,333,9,7"/>
+			<area xywh="21,333,1,7"/>
+			<area xywh="22,333,8,7"/>
+			<area xywh="3,340,8,12"/>
+			<area xywh="11,340,1,12"/>
+			<area xywh="12,340,9,12"/>
+			<area xywh="21,340,1,12"/>
+			<area xywh="22,340,8,12"/>
+		</grid>
+
+		<grid name="chat-npc-bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
+			<area xywh="4,325,4,4"/>
+			<area xywh="6,325,2,4"/>
+			<area xywh="8,325,7,4"/>
+			<area xywh="15,325,2,4"/>
+			<area xywh="15,325,4,4"/>
+			<area xywh="4,328,4,4"/>
+			<area xywh="6,328,2,4"/>
+			<area xywh="8,328,7,4"/>
+			<area xywh="15,328,2,4"/>
+			<area xywh="15,328,4,4"/>
+			<area xywh="4,330,4,2"/>
+			<area xywh="6,330,2,2"/>
+			<area xywh="8,330,7,2"/>
+			<area xywh="15,330,2,2"/>
+			<area xywh="15,330,4,2"/>
+			<area xywh="4,335,4,7"/>
+			<area xywh="6,335,2,7"/>
+			<area xywh="8,335,7,7"/>
+			<area xywh="15,335,2,7"/>
+			<area xywh="15,335,4,7"/>
+		</grid>
+
+		<grid name="monstergear-pic.background" weightsX="0,1,1,0" weightsY="0,1,0" tint="#FFFFFFFF">
+			<area xywh="66,308,8,6"/>
+			<area xywh="75,308,2,4"/>
+			<area xywh="75,308,2,4"/>
+			<area xywh="78,308,9,6"/>
+			<area xywh="66,312,8,4" tiled="true"/>
+			<area xywh="75,312,2,4"/>
+			<area xywh="75,312,2,4"/>
+			<area xywh="78,312,9,4" tiled="true"/>
+			<area xywh="66,319,8,6"/>
+			<area xywh="75,319,2,6"/>
+			<area xywh="75,319,2,6"/>
+			<area xywh="78,319,9,6"/>
+		</grid>
+	</images>
+
+	<images file="res/custom/j4iabP1aXf/iconreel.png" filter="nearest">
+		<area name="icon.bookmark" xywh="0,0,16,16"/>
+		<area name="icon.home" xywh="16,0,16,16"/>
+		<area name="icon.arrow-up" xywh="32,0,16,16"/>
+		<area name="icon.refresh" xywh="48,0,16,16"/>
+		<area name="icon.folder" xywh="64,0,16,16"/>
+		<area name="icon.key" xywh="80,0,16,16"/>
+		<area name="icon.folder2" xywh="96,0,16,16"/>
+		<area name="icon.folder-open" xywh="112,0,16,16"/>
+		<area name="icon.select-none" xywh="0,16,16,16"/>
+		<area name="icon.select-all" xywh="16,16,16,16"/>
+		<area name="icon.market" xywh="32,16,16,16"/>
+		<area name="icon.color-picker" xywh="48,16,16,16"/>
+		<area name="icon.chat-baloon" xywh="64,16,16,16"/>
+		<area name="icon.edit" xywh="80,16,16,16"/>
+	</images>
+
+	<images file="textures/icon_set.png" filter="nearest">
+		<area name="icon.cross" xywh="0,0,16,16" center="true"/>
+		<area name="icon.colorwheel" xywh="16,0,16,16" center="true"/>
+	</images>
+
+	<images file="effectivity_buttons_lang" filter="nearest">
+		<area name="eff.bg" xywh="0,0,49,14" inset="2,143,2,-88"/>
+		<area name="eff.status" xywh="0,20,49,14" inset="2,143,2,-88"/>
+		<area name="eff.immune" xywh="0,40,49,14" inset="2,143,2,-88"/>
+		<area name="eff.nve" xywh="0,60,49,14" inset="2,143,2,-88"/>
+		<area name="eff.e" xywh="0,80,49,14" inset="2,143,2,-88"/>
+		<area name="eff.se" xywh="0,100,49,14" inset="2,143,2,-88"/>
+
+		<composed name="eff.status.background">
+			<alias ref="eff.bg" tint="#91a2f7"/>
+			<alias ref="eff.status"/>
+		</composed>
+		<composed name="eff.immune.background">
+			<alias ref="eff.bg" tint="#854f9c"/>
+			<alias ref="eff.immune"/>
+		</composed>
+		<composed name="eff.nve.background">
+			<alias ref="eff.bg" tint="#ff4040"/>
+			<alias ref="eff.nve"/>
+		</composed>
+		<composed name="eff.e.background">
+			<alias ref="eff.bg" tint="#ffffff"/>
+			<alias ref="eff.e"/>
+		</composed>
+		<composed name="eff.se.background">
+			<alias ref="eff.bg" tint="#de8a00"/>
+			<alias ref="eff.se"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/2sTxAVRCoW/pc_slots.png" filter="nearest">
+		<area name="pcslot.bg.default" xywh="3,1,58,48"/>
+		<area name="pcslot.bg.active" xywh="66,1,58,48"/>
+		<area name="pcslot.inner.default" xywh="3,53,58,48"/>
+		<area name="pcslot.inner.active" xywh="66,53,58,48"/>
+		<area name="pcslot.inner.filtered" xywh="129,53,58,48"/>
+		<area name="pcslot.bg.overlay.default" xywh="66,104,58,48"/>
+		<area name="pcslot.bg.overlay.disabled" xywh="3,104,58,48"/>
+		<area name="pcslot.border.default" xywh="3,157,58,48"/>
+		<area name="pcslot.border.selected" xywh="66,157,58,48"/>
+		<area name="pcslot.border.filtered" xywh="129,157,58,48"/>
+		<composed name="pc-slot.background">
+
+			<select center="true">
+				<alias ref="pcslot.border.filtered" if="filtered"/>
+				<alias ref="pcslot.bg.default" />
+			</select>
+
+			<select center="true">
+				<alias ref="pcslot.bg.overlay.disabled" if="obey"/>
+			</select>
+
+			<select center="true">
+				<alias ref="pcslot.inner.filtered" if="selected + filtered"/>
+				<alias ref="pcslot.inner.active" if="selected"/>
+				<alias ref="pcslot.inner.default" />
+			</select>
+
+			<select center="true">
+				<animation if="keyboardFocus" timeSource="enabled">
+					<frame duration="1500" ref="pcslot.border.selected" tint="#2a96da"/>
+					<frame duration="1500" ref="pcslot.border.selected" tint="#bff0ff"/>
+				</animation>
+				<alias ref="pcslot.border.default" />
+			</select>
+		</composed>
+	</images>
+
+	<images file="res/custom/bW6A5DARII/Battle-UI-Bug-Fix-Overlay.png" filter="lineal">
+		<area name="Battle-UI-Bug-Fix-Overlay" xywh="*" inset="1,-49,-2,0"/>
+	</images>
+
+	<images file="res/custom/bW6A5DARII/EXP-Overlay.png" filter="lineal">
+		<area name="EXP-Overlay" repeatx="true" xywh="*" inset="-1,-49,1,0"/>
+	</images>
+
+
+	<images file="res/custom/bW6A5DARII/battle-hud.png" filter="nearest">
+		<area name="progress.progressImage" xywh="27,21,1,2" tint="#90F8A0" inset="5,2"/>
+		<area name="xp-progressbar.progressImage" xywh="27,21,1,2" tint="#3035CE" inset="5,2"/>
+		<area name="health-progressbar.progressImage" tint="#dc2222" xywh="20,9,1,4" inset="1,-49,-1,0"/>
+		<area name="health-progressbar-base.progressImage" xywh="20,9,1,4"/>
+				<animation name="health-progressbar-red.progressImage" inset="1,-49,-1,0" timeSource="enabled">
+					<frame duration="1000" ref="health-progressbar-base.progressImage" tint="#dc2222"/>
+					<frame duration="1000" ref="health-progressbar-base.progressImage" tint="#ffffff"/>
+				</animation>
+		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="1,-49,-1,0"/>
+		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,-49,-1,0"/>
+		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,0"/>
+
+		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-orange.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-green.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,B4" splity="T2,B3" inset="-1,-49,-1,-3"/>
+
+		<grid name="xp-progressbar.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="15,18,5,8"/>
+			<area xywh="20,18,1,8"/>
+			<area xywh="28,18,5,8"/>
+		</grid>
+
+		<grid name="time-progressbar.background" weightsX="0,1,0" weightsY="0,1,0">
+			<area xywh="324,13,5,1"/>
+			<area xywh="329,13,5,1" tiled="true"/>
+			<area xywh="351,13,5,1"/>
+			<area xywh="324,14,5,12"/>
+			<area xywh="329,14,5,12" tiled="true"/>
+			<area xywh="351,14,5,12"/>
+			<area xywh="324,26,5,1"/>
+			<area xywh="329,26,5,1" tiled="true"/>
+			<area xywh="351,26,5,1"/>
+		</grid>
+
+		<grid name="time-progressbar.progressImage" weightsX="0,1,0" weightsY="0,1,0">
+			<area xywh="324,29,5,2"/>
+			<area xywh="329,29,5,2"/>
+			<area xywh="351,29,5,2"/>
+			<area xywh="324,31,5,10"/>
+			<area xywh="329,31,5,10"/>
+			<area xywh="351,31,5,10"/>
+			<area xywh="324,41,5,2"/>
+			<area xywh="329,41,5,2"/>
+			<area xywh="351,41,5,2"/>
+		</grid>
+
+		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,34"/>
+		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,84"/>
+		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="19,31,-2,16"/>
+		<area name="battle-ui-self-slim" xywh="815,520,299,28"/>
+
+		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>
+		<area name="battle-ability-flip" xywh="674,15,-136,9" inset="-23,60,1,0"/>
+
+		<area name="battle-button.default" xywh="321,145,96,30"/>
+		<area name="battle-button.hover" xywh="321,176,96,30"/>
+		<area name="battle-button.disabled" xywh="321,207,96,30"/>
+
+		<area name="battle-button-return.default" xywh="218,145,96,30"/>
+		<area name="battle-button-return.hover" xywh="218,176,96,30"/>
+		<animation name="battle-button-return.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="battle-button-return.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-return.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="battle-button-return.disabled" xywh="218,207,96,30"/>
+
+		<area name="battle-button-confirm.default" xywh="424,145,96,30"/>
+		<area name="battle-button-confirm.hover" xywh="424,176,96,30"/>
+		<animation name="battle-button-confirm.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="battle-button-confirm.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-confirm.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="battle-button-confirm.disabled" xywh="424,207,96,30"/>
+
+		<area name="battle-button-switch.default" xywh="2,145,209,52"/>
+		<area name="battle-button-switch.hover" xywh="2,200,209,52"/>
+		<animation name="battle-button-switch.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="battle-button-switch.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-switch.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="battle-button-switch.disabled" xywh="2,257,209,52"/>
+		<area name="battle-button-switch.disabledhover" xywh="218,257,209,52"/>
+		<animation name="battle-button-switch.disabledkeyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#ffffff"/>
+			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#c6c6c6"/>
+		</animation>
+		<area name="battle-area" xywh="6,312,800,115"/>
+		<area name="battle-area-bag" xywh="6,313,800,114" inset="1,0,0,0"/>
+
+		<select name="battle-button-switch.background">
+			<alias ref="battle-button-switch.disabledkeyboardFocus" if="disabled + (targeted | keyboardFocus)"/>
+			<alias ref="battle-button-switch.disabled" if="disabled"/>
+			<alias ref="battle-button-switch.hover" if="targeted"/>
+			<alias ref="battle-button-switch.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="battle-button-switch.default"/>
+		</select>
+
+		<select name="battle-button.background">
+			<alias ref="battle-button.hover" if="hover | keyboardFocus"/>
+			<alias ref="battle-button.disabled" if="disabled"/>
+			<alias ref="battle-button.hover" if="selected"/>
+			<alias ref="battle-button.default"/>
+		</select>
+
+		<select name="battle-button-return.background">
+			<alias ref="battle-button-return.hover" if="hover"/>
+			<alias ref="battle-button-return.disabled" if="disabled"/>
+			<alias ref="battle-button-return.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="battle-button-return.default"/>
+		</select>
+
+		<select name="battle-button-confirm.background">
+			<alias ref="battle-button-confirm.hover" if="hover"/>
+			<alias ref="battle-button-confirm.disabled" if="disabled"/>
+			<alias ref="battle-button-confirm.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="battle-button-confirm.default"/>
+		</select>
+
+		<grid name="battle-area-frame" weightsX="1" weightsY="0,1">
+			<area xywh="7,445,800,30"/>
+			<area xywh="7,475,800,5" tiled="true"/>
+		</grid>
+
+	</images>
+
+	<images file="res/custom/j4iabP1aXf/main-hud.png" filter="nearest">
+		<grid name="mapsBack" weightsX="0,1,0" weightsY="0,1">
+            <area xywh="347,168,78,112"/>
+            <area xywh="425,168,96,112"/>
+            <area xywh="521,168,39,112"/>
+            <area xywh="347,280,78,1"/>
+            <area xywh="425,280,96,1"/>
+            <area xywh="521,280,39,1"/>
+        </grid>
+		<area name="button-npc.default" xywh="378,40,36,28" splitx="L20,R7" splity="T6,B8"/>
+		<area name="hud-menu.background" xywh="311,506,241,46"/>
+		<area name="button-npc.selected" xywh="378,7,36,26" inset="-3,0,3,0" splitx="L20,R7" splity="T6,B8"/>
+		<area name="ul-list" xywh="383,17,12,15"/>
+		<area name="button-npc.ok" xywh="378,71,36,28" splitx="L20,R7" splity="T6,B8"/>
+		<area name="button-toggle.default" xywh="308,9,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<area name="button-toggle.hover" xywh="308,40,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<animation name="button-toggle.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="button-toggle.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-toggle.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="button-toggle.disabled" xywh="308,71,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<area name="button-toggle.disabled-hover" xywh="308,102,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<area name="button-tiny.default" xywh="227,9,66,30" splitx="L5,R5" splity="T6,B8"/>
+		<area name="button-tiny.hover" xywh="227,40,66,30" splitx="L5,R5" splity="T6,B8"/>
+		<animation name="button-tiny.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="button-tiny.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-tiny.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="button-tiny.disabled" xywh="227,71,66,30" splitx="L5,R5" splity="T6,B8"/>
+		<area name="button-small.default" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
+		<area name="button-small.hover" xywh="227,40,66,30" splitx="L25,R25" splity="T6,B8"/>
+		<animation name="button-small.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="button-small.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button-small.hover" tint="#c6c6c6"/>
+		</animation>
+		<area name="button-small.disabled" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
+
+		<area name="button-tab.default" xywh="227,9,66,25" splitx="L5,R5" splity="T6,B8"/>
+		<area name="button-tab.hover" xywh="227,40,66,25" splitx="L5,R5" splity="T6,B8"/>
+		<area name="button-tab.disabled" xywh="227,71,66,25" splitx="L5,R5" splity="T6,B8"/>
+
+		<area name="button.default" xywh="7,7,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.hover" xywh="8,62,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.hover2" xywh="61,62,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.hover3" xywh="114,62,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.hover4" xywh="169,62,52,52" splitx="L8,R8" splity="T8,B8"/>
+
+
+		<area name="button.disabled" xywh="61,7,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.selected1" xywh="114,7,52,52" splitx="L8,R8" splity="T8,B8"/>
+		<area name="button.selected2" xywh="169,7,52,52" splitx="L8,R8" splity="T8,B8"/>
+
+		<animation name="button.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="button.selected1" tint="#ffffff"/>
+			<frame duration="1500" ref="button.selected1" tint="#c6c6c6"/>
+		</animation>
+
+		<animation name="button.selected" timeSource="selected">
+			<frame duration="400" ref="button.selected1" tint="#FFFFFFFF"/>
+			<frame duration="400" ref="button.selected2" tint="#FFFFFFFF"/>
+		</animation>
+
+		<select name="button-toggle.background">
+			<alias ref="button-toggle.hover" if="hover + selected"/>
+			<alias ref="button-toggle.hover" if="hover"/>
+			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus + selected"/>
+			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button-toggle.disabled" if="hover + !selected"/>
+			<alias ref="button-toggle.disabled" if="disabled"/>
+			<alias ref="button-toggle.default" if="selected"/>
+			<alias ref="button-toggle.disabled"/>
+		</select>
+
+		<select name="button-tab.background">
+			<alias ref="button-tab.hover" if="hover | keyboardFocus" tint="#FFFFFF"/>
+			<alias ref="button-tab.disabled" if="disabled"/>
+			<alias ref="button-tab.hover" if="selected" tint="#FFFFFF"/>
+			<alias ref="button-tab.default" tint="#FFFFFF"/>
+		</select>
+
+		<select name="button-tiny-blue.background">
+			<alias ref="button-tiny.hover" if="hover | keyboardFocus" tint="#99d3ff"/>
+			<alias ref="button-tiny.disabled" if="disabled"/>
+			<alias ref="button-tiny.hover" if="selected" tint="#99d3ff"/>
+			<alias ref="button-tiny.default" tint="#99d3ff"/>
+		</select>
+
+		<select name="button-tiny-green.background">
+			<alias ref="button-tiny.hover" if="hover | keyboardFocus" tint="#6fdf00"/>
+			<alias ref="button-tiny.disabled" if="disabled"/>
+			<alias ref="button-tiny.hover" if="selected" tint="#6fdf00"/>
+			<alias ref="button-tiny.default" tint="#6fdf00"/>
+		</select>
+
+		<select name="button-tiny.background">
+			<alias ref="button-tiny.hover" if="hover"/>
+			<alias ref="button-tiny.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button-tiny.disabled" if="disabled"/>
+			<alias ref="button-tiny.hover" if="selected"/>
+			<alias ref="button-tiny.default"/>
+		</select>
+
+		<select name="button-small.background">
+			<alias ref="button-small.hover" if="hover"/>
+			<alias ref="button-small.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button-small.disabled" if="disabled"/>
+			<alias ref="button-small.hover" if="selected"/>
+			<alias ref="button-small.default"/>
+		</select>
+
+		<select name="button.background">
+			<alias ref="button.hover" if="hover"/>
+			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button.selected" if="selected"/>
+			<alias ref="button.disabled" if="disabled"/>
+			<alias ref="button.default"/>
+		</select>
+
+		<area name="frame.background" xywh="3,181,517,45"/>
+		<area name="frame-split.background1" xywh="101,233,89,173" splitx="L3,R3" splity="T3,B3"/>
+		<grid name="frame-split.background2" weightsX="0,1,0" weightsY="0,1,0">
+			<area xywh="3,181,3,3"/>
+			<area xywh="6,181,8,3"/>
+			<area xywh="89,181,3,3"/>
+			<area xywh="3,184,3,8"/>
+			<area xywh="104,236,83,167" repeatX="true" repeatY="true" sizeOverwriteV="0"/>
+			<area xywh="89,184,3,8"/>
+			<area xywh="3,223,3,3"/>
+			<area xywh="6,223,3,3"/>
+			<area xywh="89,223,3,3"/>
+		</grid>
+		<grid name="frame-split.background" weightsX="0,1,0" weightsY="0,1,0">
+			<area xywh="3,181,3,3"/>
+			<area xywh="6,181,8,3"/>
+			<area xywh="89,181,3,3"/>
+			<area xywh="3,184,3,8"/>
+			<area xywh="12,188,8,8" repeatX="true" repeatY="true"/>
+			<area xywh="89,184,3,8"/>
+			<area xywh="3,223,3,3"/>
+			<area xywh="6,223,3,3"/>
+			<area xywh="89,223,3,3"/>
+		</grid>
+
+		<grid name="frame-draggable.background" weightsX="0,1,0" weightsY="0,0,1,0">
+			<area xywh="99,179,7,7"/>
+			<area xywh="108,179,8,7"/>
+			<area xywh="185,179,8,7"/>
+			<area xywh="99,184,7,19"/>
+			<area xywh="108,184,8,19"/>
+			<area xywh="185,184,8,19"/>
+			<area xywh="99,210,7,8"/>
+			<area xywh="111,213,8,8" repeatX="true" repeatY="true"/>
+			<area xywh="185,208,8,8"/>
+			<area xywh="99,223,7,6"/>
+			<area xywh="104,223,3,6"/>
+			<area xywh="185,223,8,6"/>
+		</grid>
+
+		<grid name="frame-draggable-alpha.background" weightsX="0,1,0" weightsY="0,0,1,0">
+			<area xywh="101,181,5,5"/>
+			<area xywh="108,181,8,5"/>
+			<area xywh="185,181,5,5"/>
+			<area xywh="101,184,5,19"/>
+			<area xywh="108,184,8,19"/>
+			<area xywh="185,184,5,19"/>
+			<area xywh="101,210,5,8"/>
+			<area xywh="111,213,8,8" repeatX="true" repeatY="true" tint="#99FFFFFF"/>
+			<area xywh="185,208,5,8"/>
+			<area xywh="101,223,5,3"/>
+			<area xywh="104,223,3,3"/>
+			<area xywh="185,223,5,3"/>
+		</grid>
+
+		<area name="Blue-Highlight" xywh="200,181,5,46" splitx="L0,R4"/>
+		<animation name="Blue-Highlight-Animation" timeSource="enabled">
+			<frame duration="1500" ref="Blue-Highlight" tint="#2a96da"/>
+			<frame duration="1500" ref="Blue-Highlight" tint="#bff0ff"/>
+		</animation>
+
+		<composed name="frame-draggable-alpha-highlight.background">
+			<alias ref="frame-draggable-alpha.background"/>
+			<alias ref="Blue-Highlight-Animation"/>
+		</composed>
+
+		<grid name="frame-alpha.background" weightsX="0,1,0" weightsY="0,1,0">
+			<area xywh="3,181,3,3"/>
+			<area xywh="6,181,8,3"/>
+			<area xywh="89,181,3,3"/>
+			<area xywh="3,184,3,8"/>
+			<area xywh="13,189,8,8" repeatX="true" repeatY="true" tint="#99FFFFFF"/>
+			<area xywh="89,184,3,8"/>
+			<area xywh="3,223,3,3"/>
+			<area xywh="6,223,3,3"/>
+			<area xywh="89,223,3,3"/>
+		</grid>
+
+		<area name="chat.top.background" tint="#FFFFFFFF" xywh="171,309,29,29" splitx="L5,R5" splity="T5,B1" inset="-10,-3,-3,-3"/>
+		<area name="chat.bottom.background" tint="#FFFFFFFF" xywh="240,308,5,5" inset="-5,-3,0,-3"/>
+		<area name="chat.content.background" tint="#FFFFFFFF" xywh="240,308,5,5" inset="0,-3,0,-3"/>
+		<area name="chat.bottom-alt.background" tint="#FFFFFFFF" xywh="307,313,5,5" inset="-5,-3,0,-3"/>
+
+		<area name="label1.background" tint="#95949494" xywh="9,191,5,5" inset="0,0,0,0"/>
+		<area name="label2.background" tint="#99949494" xywh="9,191,5,5" inset="0,0,0,0"/>
+		<area name="label3.background" tint="#9900aeff" xywh="9,191,5,5" inset="0,0,0,0"/>
+		<area name="label4.background" tint="#99ff0000" xywh="9,191,5,5" inset="0,0,0,0"/>
+		<area name="label5.background" tint="#55FFFFFF" xywh="9,191,5,5" inset="0,0,0,0"/>
+		<area name="label6.background" tint="#FF999999" xywh="108,184,5,5" inset="0,0,0,0"/>
+
+		<area name="table-header.background" tint="#55949494" xywh="9,191,5,5" inset="1,1,1,1"/>
+		<area name="table-row.background" tint="#99949494" xywh="9,191,5,5" inset="1,1,1,1"/>
+		<area name="table-row.background2" tint="#99bcd6ff" xywh="108,184,5,5" inset="1,1,1,1"/>
+
+		<select name="table.td.background">
+			<alias ref="table-row.background2" if="selected"/>
+			<alias ref="table-row.background"/>
+		</select>
+
+		<area name="testicon" xywh="45,236,16,16" inset="8,6,8,100"/>
+		<area name="testicon2" xywh="45,236,16,16" inset="8,4,8,120"/>
+
+		<area name="hotbar-item" xywh="196,181,36,45" inset="0,0,0,0" splitx="L5,R4" splity="T22,B23"/>
+
+		<area name="icon1" xywh="12,237,12,12" inset="0,0,0,0"/>
+		<area name="icon2" xywh="27,237,12,12" inset="0,0,0,0"/>
+		<area name="icon3" xywh="45,236,16,16" inset="0,0,0,0"/>
+		<area name="icon4" xywh="63,236,16,16" inset="0,0,0,0"/>
+		<area name="icon5" xywh="82,236,16,16" inset="0,0,0,0"/>
+		<area name="icon6" xywh="104,236,16,16" inset="0,0,0,0"/>
+		<area name="icon7" xywh="124,236,16,16" inset="0,0,0,0"/>
+		<area name="icon-unlock" xywh="168,237,12,12" inset="0,0,0,0"/>
+
+		<area name="is-leader" xywh="145,236,16,16" inset="0,0,0,0"/>
+		<area name="trainer-icon1" xywh="9,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon2" xywh="35,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon3" xywh="60,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon4" xywh="86,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon5" xywh="106,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon6" xywh="131,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon7" xywh="154,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon8" xywh="175,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon9" xywh="200,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon10" xywh="220,461,18,18" inset="0,0,0,0"/>
+		<area name="trainer-icon11" xywh="240,460,18,18" inset="0,0,0,0"/>
+
+		<area name="gmicon1.default" xywh="8,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon2.default" xywh="33,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon3.default" xywh="58,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon4.default" xywh="83,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon5.default" xywh="105,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon6.default" xywh="129,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon7.default" xywh="151,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon8.default" xywh="172,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+
+		<area name="chaticon.default" xywh="197,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="chaticon.hide" xywh="219,482,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+
+		<select name="chaticon.background">
+			<alias ref="chaticon.default" if="selected"/>
+			<alias ref="chaticon.hide"/>
+		</select>
+
+		<select name="gmicon1.background">
+			<alias ref="gmicon1.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon1.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon1.default"/>
+		</select>
+
+		<select name="gmicon2.background">
+			<alias ref="gmicon2.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon2.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon2.default"/>
+		</select>
+
+		<select name="gmicon3.background">
+			<alias ref="gmicon3.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon3.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon3.default"/>
+		</select>
+
+		<select name="gmicon4.background">
+			<alias ref="gmicon4.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon4.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon4.default"/>
+		</select>
+
+		<select name="gmicon5.background">
+			<alias ref="gmicon5.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon5.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon5.default"/>
+		</select>
+
+		<animation name="gmicon5special.background" timeSource="enabled">
+			<frame duration="900" ref="gmicon5.default" tint="#FFff3c00"/>
+			<frame duration="900" ref="gmicon5.default" tint="#FFFFFFFF"/>
+		</animation>
+
+		<select name="gmicon6.background">
+			<alias ref="gmicon6.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon6.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon6.default"/>
+		</select>
+
+		<select name="gmicon7.background">
+			<alias ref="gmicon7.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon7.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon7.default"/>
+		</select>
+
+		<select name="gmicon8.background">
+			<alias ref="gmicon8.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
+			<alias ref="gmicon8.default" tint="#1f7bc9" if="selected"/>
+			<alias ref="gmicon8.default"/>
+		</select>
+
+		<select name="button-npc.background">
+			<alias ref="button-npc.selected" if="hover | keyboardFocus"/>
+			<alias ref="button-npc.selected" if="selected"/>
+			<alias ref="button-npc.default"/>
+		</select>
+
+		<area name="editfield.background" xywh="9,260,125,25" splitx="L4,R4" splity="T4,B4" sizeOverwriteH="0"/>
+		<area name="tabbed-area.background" xywh="9,288,125,81" splitx="L3,R3" splity="T3,B3"/>
+		<area name="monster-icon.background" xywh="140,260,155,155" splitx="L9,R12" splity="T8,B13" sizeOverwriteH="155" sizeOverwriteV="155"/>
+
+		<area name="button-popup.default" xywh="8,371,125,25"/>
+
+		<select name="button-popup.background">
+			<alias ref="button-popup.default" if="hover | keyboardFocus"/>
+			<alias ref="button-popup.default" tint="#00FFFFFF"/>
+		</select>
+
+		<area name="button-icon.default" xywh="8,371,25,25"/>
+		<select name="button-icon.background">
+			<alias ref="button-icon.default" tint="#FFdcaa69" if="selected"/>
+			<alias ref="button-icon.default" if="hover | keyboardFocus"/>
+			<alias ref="button-icon.default" tint="#00FFFFFF"/>
+		</select>
+	</images>
+
+	<images file="res/custom/x2eLtlMVtE/monster-info.png" filter="nearest">
+		<area name="mi-label-title" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
+		<area name="mi-label-title-inset" inset="0,6" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
+		<area name="mi-label-item" xywh="7,63,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,6,3,-6"/>
+		<area name="bag-category-label" xywh="7,63,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,1,3,-1"/>
+		<area name="mi-label-value" xywh="25,58,125,25" splitx="L2,R2" splity="T2,B2"/>
+		<area name="mi-label-value-blue" tint="#FFFFFF" xywh="181,21,57,47" splitx="L2,R2" splity="T2,B2"/>
+		<area name="mi-label-value-inset" xywh="25,58,125,25" inset="0,-22,0,0" splitx="L2,R2" splity="T2,B2"/>
+		<area name="mi-nameplate" xywh="7,101,165,17" splitx="L2,R2" splity="T6,B6"/>
+		<area name="mi-skill" xywh="22,118,164,42"/>
+		<area name="mi-skill-use" xywh="203,117,165,42"/>
+		<area name="mi-skill-use-selected" xywh="203,75,165,42"/>
+		<area name="mi-bg" xywh="279,226,234,231"/>
+		<area name="mi-frame" xywh="6,194,506,316"/>
+		<grid name="mi-frame-grid" weightsX="1,1" weightsY="1,1,1">
+			<area xywh="5,193,274,33"/>
+			<area xywh="279,193,234,33"/>
+			<area xywh="5,226,274,231"/>
+			<alias ref="mi-bg"/>
+			<area xywh="5,457,274,52"/>
+			<area xywh="279,457,234,52"/>
+		</grid>
+		<area name="mi-frame-type" xywh="279,226,229,231" tint="#c68a55"/>
+		<area name="mi-tab1.default" xywh="5,32,20,20"/>
+		<area name="mi-tab1.selected" xywh="5,6,20,20"/>
+		<area name="mi-tab2.default" xywh="31,32,20,20"/>
+		<area name="mi-tab2.selected" xywh="31,6,20,20"/>
+		<area name="mi-tab3.default" xywh="56,32,20,20"/>
+		<area name="mi-tab3.selected" xywh="56,6,20,20"/>
+		<area name="mi-tab4.default" xywh="85,32,20,20"/>
+		<area name="mi-tab4.selected" xywh="85,6,20,20"/>
+		<area name="mi-tab5.selected" xywh="112,6,20,20"/>
+		<area name="mi-tab5.default" xywh="112,32,20,20"/>
+		<area name="mi-tab6.selected" xywh="138,6,20,20"/>
+		<area name="mi-tab6.default" xywh="138,32,20,20"/>
+		<area name="mi-tab7.selected" xywh="158,6,20,20"/>
+		<area name="mi-tab7.default" xywh="158,32,20,20"/>
+		<area name="mi-tab8.selected" xywh="243,6,20,20"/>
+		<area name="mi-tab8.default" xywh="243,32,20,20"/>
+		<area name="mi-tab9.selected" xywh="263,6,20,20"/>
+		<area name="mi-tab9.default" xywh="263,32,20,20"/>
+
+		<select name="mi-skill-use.background">
+			<alias ref="mi-skill-use-selected" if="selected | hover"/>
+			<alias ref="mi-skill-use"/>
+		</select>
+
+		<select name="mi-tab1.background">
+			<alias ref="mi-tab1.selected" if="selected | hover"/>
+			<alias ref="mi-tab1.default"/>
+		</select>
+		<select name="mi-tab2.background">
+			<alias ref="mi-tab2.selected" if="selected | hover"/>
+			<alias ref="mi-tab2.default"/>
+		</select>
+		<select name="mi-tab3.background">
+			<alias ref="mi-tab3.selected" if="selected | hover"/>
+			<alias ref="mi-tab3.default"/>
+		</select>
+		<select name="mi-tab4.background">
+			<alias ref="mi-tab4.selected" if="selected | hover"/>
+			<alias ref="mi-tab4.default"/>
+		</select>
+		<select name="mi-tab5.background">
+			<alias ref="mi-tab5.selected" if="selected | hover"/>
+			<alias ref="mi-tab5.default"/>
+		</select>
+		<select name="mi-tab6.background">
+			<alias ref="mi-tab6.selected" if="selected | hover"/>
+			<alias ref="mi-tab6.default"/>
+		</select>
+		<select name="mi-tab7.background">
+			<alias ref="mi-tab7.selected" if="selected | hover"/>
+			<alias ref="mi-tab7.default"/>
+		</select>
+		<select name="mi-tab8.background">
+			<alias ref="mi-tab8.selected" if="selected | hover"/>
+			<alias ref="mi-tab8.default"/>
+		</select>
+		<select name="mi-tab9.background">
+			<alias ref="mi-tab9.selected" if="selected | hover"/>
+			<alias ref="mi-tab9.default"/>
+		</select>
+		<area name="mi-xpbar.progressImage" xywh="72,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="mi-xpbar.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar-orange.progressImage" xywh="67,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-orange.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="switch-hpbar-orange.progressImage" xywh="67,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<grid name="switch-hpbar-orange.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+		
+		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<animation name="mi-hpbar-red.progressImage" timeSource="enabled">
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
+		</animation>
+		
+		<grid name="mi-hpbar-red.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="switch-hpbar-base.progressImage" xywh="52,89,5,4" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<animation name="switch-hpbar-red.progressImage" timeSource="enabled">
+			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#ffffff"/>
+		</animation>
+		
+		<grid name="switch-hpbar-red.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar-base-party.progressImage" xywh="52,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled">
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
+		</animation>
+
+		<grid name="mi-hpbar-red-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+		
+		<area name="mi-hpbar-party.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+
+		<area name="mi-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-green.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="switch-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
+		<grid name="switch-hpbar-green.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		
+		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
+			<area xywh="201,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="mi-hpbar-violet.progressImage" xywh="62,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="mi-hpbar-violet.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="progressbar-white.progressImage" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="progressbar-white.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="progressbar-orange.progressImage" tint="#c68a55" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="progressbar-orange.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+
+		<area name="progressbar-pink.progressImage" tint="#FF99CC" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
+		<grid name="progressbar-pink.background" weightsX="0,1,0" weightsY="1">
+			<area xywh="7,88,1,8"/>
+			<area xywh="90,88,1,8"/>
+			<area xywh="201,88,1,8"/>
+		</grid>
+	</images>
+	<images file="res/custom/u7wRvcSChn/MainTCTexture.png">
+		<area name="trainer-card.background" xywh="0,0,454,287"/>
+	</images>
+	<images file="gameshop_lang">
+		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-sale.background" xywh="133,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-9,11,8,-11"/>
+	</images>
+	<images file="res/water-levels.png" filter="nearest">
+		<area name="teardrop" xywh="3,3,8,11"/>
+		<area name="teardrop.warning" xywh="13,3,8,11"/>
+		<area name="water-level.background" xywh="3,17,14,15" splitx="L5,R5" splity="T5,B5"/>
+		<area name="water-level.warning" xywh="19,17,14,15" splitx="L5,R5" splity="T5,B5"/>
+
+		<composed name="water-level.dry.basic">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+		<composed name="water-level.dry.red">
+			<alias ref="water-level.warning" tint="#78FFFFFF"/>
+			<alias ref="teardrop.warning" center="true" inset="0,-36,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop.warning" center="true" inset="0,-18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop.warning" center="true" tint="#78FFFFFF"/>
+			<alias ref="teardrop.warning" center="true" inset="0,18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop.warning" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+
+		<animation name="water-level.dry" timeSource="enabled">
+			<frame duration="400" ref="water-level.dry.basic" tint="#FFFFFFFF"/>
+			<frame duration="400" ref="water-level.dry.red" tint="#FFFFFFFF"/>
+		</animation>
+
+		<composed name="water-level.1">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+		<composed name="water-level.2">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+		<composed name="water-level.3">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+		<composed name="water-level.4">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#78FFFFFF"/>
+		</composed>
+		<composed name="water-level.5">
+			<alias ref="water-level.background" tint="#78FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-36,0,0" tint="#FFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,-18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,18,0,0" tint="#FFFFFFFF"/>
+			<alias ref="teardrop" center="true" inset="0,36,0,0" tint="#FFFFFFFF"/>
+		</composed>
+
+		<animation name="water-level.blue" timeSource="enabled">
+			<frame duration="400" ref="water-level.5" tint="#FF3186c9"/>
+			<frame duration="400" ref="water-level.5" tint="#FFFFFFFF"/>
+		</animation>
+
+	</images>
+	
+	<images file="res/custom/2sTxAVRCoW/pc-window.png" filter="nearest">
+		<area name="pc-frame-Background" xywh="*"/>
+		<composed name="pc-frame">
+			<alias ref="pc-frame-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/2sTxAVRCoW/pc-arrows.background.png" filter="nearest">
+		<area name="pc-arrows.default" xywh="29,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<area name="pc-arrows.hover" xywh="0,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<area name="pc-arrows.disabled" xywh="58,0,29,19" splitx="L4,R4" splity="T4,B4"/>
+		<animation name="pc-arrows.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="pc-arrows.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="pc-arrows.hover" tint="#c6c6c6"/>
+		</animation>
+		<select name="pc-arrows.background" inset="1,0,2,0">
+			<alias ref="pc-arrows.hover" if="disabled + hover"/>
+			<alias ref="pc-arrows.keyboardFocus" if="disabled + keyboardFocus"/>
+			<alias ref="pc-arrows.disabled" if="disabled"/>
+			<alias ref="pc-arrows.hover" if="hover"/>
+			<alias ref="pc-arrows.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="pc-arrows.default"/>
+		</select>
+	</images>
+	
+	<images file="res/contestgui.png" filter="nearest">
+		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>
+		<area name="ui-contest-top.background" xywh="91,8,33,7" splitx="L5,R5" splity="T5,B0"/>
+		<area name="ui-contest-special.background" xywh="132,8,10,44" splity="T21,B22"/>
+		<area name="ui-contest-separator.background" xywh="101,15,5,5" splitx="L5,R5" splity="T5,B0"/>
+		<area name="ui-contest-bottom.background" xywh="91,28,33,7" splitx="L5,R5" splity="T0,B5"/>
+		<area name="ui-contest-button.base" xywh="3,2,67,28" splitx="L5,R6" splity="T5,B11"/>
+		<area name="ui-contest-button.tint" xywh="6,5,60,19" splitx="L2,R2" splity="T3,B4" tint="#6d8498"/>
+		<area name="ui-contest-button.hover" xywh="6,5,60,19" splitx="L2,R2" splity="T3,B4" tint="#91adc6"/>
+		<area name="ui-contest-button.disabled" xywh="6,5,60,19" splitx="L2,R2" splity="T3,B4" tint="#6d8498"/>
+		<area name="ui-contest-button.pressed.background" xywh="6,35,60,19" splitx="L2,R2" splity="T4,B3" tint="#91adc6"/>
+		<area name="ui-contest-button.selected.background" xywh="6,5,60,19" splitx="L2,R2" splity="T3,B4" tint="#3d5680"/>
+
+		<area name="ui-contest-progress.progressImage2" tint="#3f7efd" xywh="5,59,110,7" splitx="L3,R3" splity="T2,B2"/>
+		<grid name="ui-contest-progress.progressImage" weightsX="0,1,0" weightsY="1" tint="#8c98b0">
+			<area xywh="5,59,3,7"/>
+			<area xywh="9,59,1,7"/>
+			<area xywh="112,59,3,7"/>
+		</grid>
+
+		<area name="ui-contest-progress.background" xywh="5,69,143,7" splitx="L3,R3" splity="T2,B2"/>
+
+		<animation name="ui-contest-button.hover-animation" timeSource="hover" count="1">
+			<frame duration="150" ref="ui-contest-button.hover" tint="#00FFFFFF"/>
+			<frame duration="1" ref="ui-contest-button.hover" tint="#99FFFFFF"/>
+		</animation>
+
+		<composed name="ui-contest-button.default">
+			<alias ref="ui-contest-button.base" inset="0"/>
+			<alias ref="ui-contest-button.tint"/>
+		</composed>
+
+		<composed name="ui-contest-button.pressed">
+			<alias ref="ui-contest-button.pressed.background"/>
+		</composed>
+
+		<composed name="ui-contest-button.hover">
+			<alias ref="ui-contest-button.default"/>
+			<alias ref="ui-contest-button.hover-animation"/>
+		</composed>
+
+		<composed name="ui-contest-button.selected">
+			<alias ref="ui-contest-button.default"/>
+			<alias ref="ui-contest-button.selected.background"/>
+		</composed>
+
+		<composed name="ui-contest-button.selected.hover">
+			<alias ref="ui-contest-button.default"/>
+			<alias ref="ui-contest-button.selected.background"/>
+			<alias ref="ui-contest-button.hover-animation"/>
+		</composed>
+
+		<composed name="ui-contest-button.disabled.selected">
+			<alias ref="ui-contest-button.disabled"/>
+		</composed>
+
+		<select name="ui-contest-button.background">
+			<alias ref="ui-contest-button.pressed" if="pressed"/>
+			<alias ref="ui-contest-button.selected.hover" if="hover + (keyboardFocus)"/>
+			<alias ref="ui-contest-button.selected" if="keyboardFocus"/>
+			<alias ref="ui-contest-button.hover" if="hover"/>
+			<alias ref="ui-contest-button.default"/>
+		</select>
+
+	</images>
+	
+	<images file="res/custom/UYAXMcaF2k/FAQ-Window.png" filter="lineal">
+		<area name="FAQ-Window-Background" xywh="*"/>
+		<composed name="FAQ-Window">
+			<alias ref="FAQ-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/613wCZrdxv/bg.png" filter="nearest">
+		<area name="background-image" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/background.png" filter="lineal">
+		<area name="login-background" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Login-CharSelect-Window.png" filter="lineal">
+		<area name="Login-CharSelect-Window" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Login-Window.png" filter="lineal">
+		<area name="Login-Window-Background" xywh="*"/>
+		<composed name="Login-Window">
+			<alias ref="Login-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="15,2,11,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Login-Server-Window.png" filter="lineal">
+		<area name="Login-Server-Window-Background" xywh="*"/>
+		<composed name="Login-Server-Window">
+			<alias ref="Login-Server-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="78,10,78,18"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Client-Management-Window.png" filter="lineal">
+		<area name="Client-Management-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Client-Management-Window">
+			<alias ref="Client-Management-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Mod-Management-Window.png" filter="lineal">
+		<area name="Mod-Management-Window-Background" xywh="*"/>
+		<composed name="Mod-Management-Window">
+			<alias ref="Mod-Management-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/oYY1ozW6Ec/Instance-Window.png" filter="lineal">
+		<area name="Instance-Window-Background" xywh="*"/>
+		<composed name="Instance-Window">
+			<alias ref="Instance-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="3,3,3,3"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/k0Z2GYiAoU/Settings-Window.png" filter="lineal">
+		<area name="Settings-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50" sizeOverwriteH="32" sizeOverwriteV="32"/>
+		<composed name="Settings-Window">
+			<alias ref="Settings-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="lineal">
+		<area name="Chat-Minimized-Bar-Default" xywh="*"/>
+	</images>
+
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Hover.png" filter="lineal">
+		<area name="Chat-Minimized-Bar-Hover" xywh="*"/>
+		<select name="Chat-Minimized-Bar">
+			<alias ref="Chat-Minimized-Bar-Hover" if="hover"/>
+			<alias ref="Chat-Minimized-Bar-Default"/>
+		</select>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-PM-Window.png" filter="lineal">
+		<area name="Chat-PM-Window-Background" xywh="*"/>
+		<composed name="Chat-PM-Window">
+			<alias ref="Chat-PM-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-Settings-Window.png" filter="lineal">
+		<area name="Chat-Settings-Window-Background" xywh="*"/>
+		<composed name="Chat-Settings-Window">
+			<alias ref="Chat-Settings-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-Main-Buttons-Overlay.png" filter="lineal">
+		<area name="Chat-Main-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-Small-Buttons-Overlay.png" filter="lineal">
+		<area name="Chat-Small-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Default.png" filter="lineal">
+		<area name="Chat-Minimize-Button-Default" xywh="*"/>
+	</images>
+
+	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Hover.png" filter="lineal">
+		<area name="Chat-Minimize-Button-Hover" xywh="*"/>
+		<composed name="Chat-Minimize-Button-Overlay">
+			<alias ref="Chat-Minimize-Button-Default"/>
+			<alias ref="Chat-Minimize-Button-Hover" if="hover | keyboardFocus"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/alert-background-new.png" filter="lineal">
+		<area name="alert-background-new" xywh="*" inset="0,-39,0,0"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/mail-alert-icon-new.png" filter="lineal">
+		<area name="mail-alert-icon-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/location-alert-icon-new.png" filter="lineal">
+		<area name="location-alert-icon-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/money-alert-icon-new.png" filter="lineal">
+		<area name="money-alert-icon-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/moon-alert-icon-new.png" filter="lineal">
+		<area name="moon-alert-icon-new" xywh="*"/>
+	</images>
+
+	<images file="res/custom/PeZyHRX0G6/sun-up-alert-icon-new.png" filter="lineal">
+		<area name="sun-up-alert-icon-new" xywh="*"/>
+	</images>
+
+	<images file="res/custom/PeZyHRX0G6/sun-alert-icon-new.png" filter="lineal">
+		<area name="sun-alert-icon-new" xywh="*"/>
+	</images>	
+	
+	<images file="res/custom/PeZyHRX0G6/active-alert-icon-new.png" filter="lineal">
+		<area name="active-alert-icon-new" xywh="*"/>
+	</images>
+
+	<images file="res/custom/PeZyHRX0G6/repel-alert-icon-new.png" filter="lineal">
+		<area name="repel-alert-icon-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/time-alert-icon-new.png" filter="lineal">
+		<area name="time-alert-icon-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/donator-alert-new.png" filter="lineal">
+		<area name="donator-alert-new" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/Menu-HUD-Overlay.png" filter="lineal">
+		<area name="Menu-HUD-Overlay" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/Small-HUD.png" filter="lineal">
+		<area name="Small-HUD" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay.png" filter="lineal">
+		<area name="Small-HUD-Overlay" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/Menu-HUD.png" filter="lineal">
+		<area name="Menu-HUD" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/Hotkey-Bar-Frame.png" filter="lineal">
+		<area name="Hotkey-Bar-Frame" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="lineal">
+		<area name="active-item-tl" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/bW6A5DARII/Battle-Fight-Icon.png" filter="lineal">
+		<grid name="Battle-Fight-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+	
+	<images file="res/custom/bW6A5DARII/Battle-Bag-Icon.png" filter="lineal">
+		<grid name="Battle-Bag-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+	
+	<images file="res/custom/bW6A5DARII/Battle-Pokemon-Icon.png" filter="lineal">
+		<grid name="Battle-Pokemon-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+
+	<images file="res/custom/bW6A5DARII/Battle-Rotate-Icon.png" filter="lineal">
+		<grid name="Battle-Rotate-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+	
+	<images file="res/custom/bW6A5DARII/Battle-Run-Icon.png" filter="lineal">
+		<grid name="Battle-Run-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,50,5"/>
+			<area xywh="55,0,5,5"/>
+			<area xywh="0,5,50,40"/>
+			<area xywh="55,5,5,40"/>
+			<area xywh="0,45,50,5"/>
+			<area xywh="55,45,5,5"/>
+		</grid>
+	</images>
+			
+	<images file="res/custom/bW6A5DARII/battle-learn-label.png" filter="lineal">
+		<area name="battle-learn-label" xywh="*" inset="1,0,0,0" splitx="L5,R5"/>
+	</images>
+	
+	<images file="res/custom/bW6A5DARII/Battle-Bag-Text-Background.png" filter="lineal">
+		<area name="Battle-Bag-Text-Background" xywh="*"/>
+	</images>
+		
+	<images file="res/custom/bW6A5DARII/battle-item-frame.png" filter="lineal">
+		<area name="battle-item-frame" xywh="*"/>
+	</images>
+
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box.png" filter="lineal">
+		<area name="Party-Frame-Box" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay.png" filter="lineal">
+		<area name="Party-Frame-Box-Overlay" xywh="*" inset="0,-1,0,-3"/>
+	</images>
+		
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="lineal">
+		<area name="Party-Frame-Box-Disabled" xywh="*"/>
+	</images>
+		
+	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
+		<area name="Poke-Summary-Window-Background" xywh="*" inset="0,0,-1,0"/>
+		<composed name="Poke-Summary-Window">
+			<alias ref="Poke-Summary-Window-Background"/>
+			<alias ref="Highlight-Overlay-Summary" inset="2,2,1,4"/>
+		</composed>
+	</images>
+		
+	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
+		<area name="poke-summary-dex" xywh="*" inset="-192,196,175,2"/>
+	</images>
+	
+	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
+		<area name="MainTCTexture-Overlay" xywh="*"/>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
+		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
+		<composed name="Search-Icon-Bag">
+			<alias ref="Search-Icon" inset="0,12,0,-12"/>
+		</composed>
+		<composed name="Search-Icon-PC">
+			<alias ref="Search-Icon" inset="3,0,-3,0"/>
+		</composed>
+	</images>
+
+	
+	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
+		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-1,0" splity="T100,B50"/>
+		<composed name="Bag-HUD">
+			<alias ref="Bag-HUD-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,4,1,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
+		<area name="Bag-HUD-Overlay" xywh="*"/>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Default.png" filter="nearest">
+		<area name="Bag-Close-Button-Default" xywh="*"/>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Hover.png" filter="nearest">
+		<area name="Bag-Close-Button-Hover" xywh="*"/>
+		<composed name="Bag-Close-Button">
+			<alias ref="Bag-Close-Button-Default"/>
+			<alias ref="Bag-Close-Button-Hover" if="hover | keyboardFocus"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
+		<area name="Bag-Tab-New.default" xywh="*"/>
+		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#218dd5"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="#1d5d88"/>
+		</animation>
+		<select name="Bag-Tab-New.background">
+			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="hover"/>
+			<alias ref="Bag-Tab-New.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="selected"/>
+			<alias ref="Bag-Tab-New.default" tint="#263238"/>
+		</select>
+	</images>
+	
+	<images file="res/custom/D7wRvcSChn/Bag-Frame-Item-Box.png" filter="lineal">
+		<area name="Bag-Frame-Item-Box" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Default.png" filter="lineal">
+		<area name="TM-Button-Overlay-Default" xywh="*" inset="0,1,2,1"/>
+	</images>
+	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Disabled.png" filter="lineal">
+		<area name="TM-Button-Overlay-Disabled" xywh="*" inset="0,1,2,1"/>
+		<select name="TM-Button-Overlay">
+			<alias ref="TM-Button-Overlay-Disabled" if="disabled"/>
+			<alias ref="TM-Button-Overlay-Default"/>
+		</select>
+	</images>
+
+	<images file="res/custom/7BGCabK5FN/Social-Window.png" filter="lineal">
+		<area name="Social-Window-Background" xywh="*"/>
+		<composed name="Social-Window">
+			<alias ref="Social-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/CLyo0siyqa/Team-Window.png" filter="lineal">
+		<area name="Team-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Team-Window">
+			<alias ref="Team-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/CLyo0siyqa/MM-Signup-Window.png" filter="lineal">
+		<area name="MM-Signup-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="MM-Signup-Window">
+			<alias ref="MM-Signup-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/CLyo0siyqa/Tournament-Window.png" filter="lineal">
+		<area name="Tournament-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Tournament-Window">
+			<alias ref="Tournament-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="6,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Window.png" filter="lineal">
+		<area name="PokeDex-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="PokeDex-Window">
+			<alias ref="PokeDex-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Button.png" filter="lineal">
+		<area name="PokeDex-Button" xywh="*"/>
+	</images>
+
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
+		<area name="dex-button-outline" xywh="0,0,9,9" splitx="L2,R2" splity="T2,B2"/>
+		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2"/>
+		<area name="dex-button-active" xywh="0,11,46,2" splity="T0,B2"/>
+		<animation name="dex-button-active-animation" timeSource="enabled">
+			<frame duration="1500" ref="dex-button-active" tint="#2a96da"/>
+			<frame duration="1500" ref="dex-button-active" tint="#bff0ff"/>
+		</animation>
+		<composed name="PokeDex-Button" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#2d3b40"/>
+			<alias ref="dex-button-inner" tint="#262d3b40" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
+		<composed name="PokeDex-Caught" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#2a97dc"/>
+			<alias ref="dex-button-inner" tint="#262a97dc" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
+		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
+			<alias ref="dex-button-outline" tint="#84e426"/>
+			<alias ref="dex-button-inner" tint="#2684e426" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/oxBkYbkgnn/GTL-Window.png" filter="lineal">
+		<area name="GTL-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="GTL-Window" inset="0,-7,0,0">
+			<alias ref="GTL-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/oxBkYbkgnn/GTL-Poke-Button.png" filter="lineal">
+		<area name="GTL-Poke-Button" xywh="*"/>
+	</images>
+
+	<images file="res/custom/xKY3dlupNV/Mail-Window.png" filter="lineal">
+		<area name="Mail-Window" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Window.png" filter="lineal">
+		<area name="Gift-Shop-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Gift-Shop-Window" inset="-4,0,0,0">
+			<alias ref="Gift-Shop-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/cs0o8e55UY/Town-Map-Window.png" filter="lineal">
+		<area name="Town-Map-Window" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/cs0o8e55UY/Town-Map-Window-Overlay.png" filter="lineal">
+		<area name="Town-Map-Window-Overlay" xywh="*"/>
+	</images>
+
+	<images file="res/custom/vbJDdMc09s/Poke-Shop-Window.png" filter="lineal">
+		<area name="Poke-Shop-Window-Background" xywh="*"/>
+		<composed name="Poke-Shop-Window">
+			<alias ref="Poke-Shop-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/FnTKbfeNe9/Breed-Window.png" filter="lineal">
+		<area name="Breed-Window-Background" xywh="*"/>
+		<composed name="Breed-Window">
+			<alias ref="Breed-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/n2PYj7dBl4/Berry-Plot-Window.png" filter="lineal">
+		<area name="Berry-Plot-Window-Background" xywh="*"/>
+		<composed name="Berry-Plot-Window">
+			<alias ref="Berry-Plot-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Window.png" filter="lineal">
+		<area name="Game-Corner-Window-Background" xywh="*"/>
+		<composed name="Game-Corner-Window">
+			<alias ref="Game-Corner-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/Yeug7CU84O/Move-Relearner-Window.png" filter="lineal">
+		<area name="Move-Relearner-Window-Background" xywh="*"/>
+		<composed name="Move-Relearner-Window">
+			<alias ref="Move-Relearner-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/Yeug7CU84O/Move-Forget-Window.png" filter="lineal">
+		<area name="Move-Forget-Window-Background" xywh="*"/>
+		<composed name="Move-Forget-Window">
+			<alias ref="Move-Forget-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="10,99,228,66"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/Yeug7CU84O/Move-Forget-Window-Overlay.png" filter="lineal">
+		<area name="Move-Forget-Window-Overlay" xywh="*"/>
+	</images>
+	
+	
+	<images file="res/custom/t4iajP1aNf/Trade-Window.png" filter="lineal">
+		<area name="Trade-Window-Background" xywh="*"/>
+		<composed name="Trade-Window">
+			<alias ref="Trade-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
+	<area name="PokeDex-Mon-Background" xywh="*" inset="2,1,-2,1"/>
+	</images>
+</themes>

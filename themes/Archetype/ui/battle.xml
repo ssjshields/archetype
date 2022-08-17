@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+
+	<theme name="battlegui" ref="-defaults">
+		<param name="defaultGap"><dimension>2,2</dimension></param>
+		<theme name="battle-text" ref="label" allowWildcard="true">
+			<param name="font"><font>battle</font></param>
+			<param name="border"><border>21,17,7,7</border></param>
+		</theme>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>battle-hp-text</font></param>
+			<param name="border"><border>0,0,7,0</border></param>
+		</theme>
+		<param name="border"><border>65,64,64,65</border></param>
+		<theme name="ball-count" ref="-defaults">
+			<param name="border"><border>0</border></param>
+			<param name="defaultGap"><dimension>2,2</dimension></param>
+			<param name="smallGap"><dimension>2,2</dimension></param>
+			<param name="mediumGap"><dimension>2,2</dimension></param>
+			<param name="largeGap"><dimension>2,2</dimension></param>
+			<param name="namedGaps"><map/></param>
+		</theme>
+	</theme>
+
+	<theme name="battle-ability" ref="-defaults">
+		<param name="background"><image>battle-ability</image></param>
+		<param name="minWidth"><int>270</int></param>
+		<param name="maxWidth"><int>270</int></param>
+		<param name="minHeight"><int>20</int></param>
+		<param name="maxHeight"><int>20</int></param>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>mechabold-battle-ability-fix</font></param>
+			<param name="border"><border>1</border></param>
+		</theme>
+	</theme>
+
+	<theme name="battle-ability-enemy" ref="-defaults">
+		<param name="background"><image>battle-ability-flip</image></param>
+		<param name="minWidth"><int>270</int></param>
+		<param name="maxWidth"><int>270</int></param>
+		<param name="minHeight"><int>20</int></param>
+		<param name="maxHeight"><int>20</int></param>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>mechabold-battle-ability-fix-enemy</font></param>
+			<param name="border"><border>1</border></param>
+		</theme>
+	</theme>
+
+	<theme name="battle-gui-enemy" ref="-defaults">
+		<param name="background"><image>battle-ui-enemy</image></param>
+	</theme>
+
+	<theme name="battle-gui-float" ref="-defaults">
+		<param name="background"><image>battle-ui-float</image></param>
+	</theme>
+
+	<theme name="battle-gui-self" ref="-defaults">
+		<param name="background"><image>battle-ui-self</image></param>
+		<param name="border"><border>0,0,0,0</border></param>
+	</theme>
+
+	<theme name="battle-gui-self-slim" ref="-defaults">
+		<param name="background"><image>battle-ui-self-slim</image></param>
+	</theme>
+
+	<theme name="redlabel" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>battle-name</font></param>
+		<param name="border"><border>0,0,3,0</border></param>
+	</theme>
+
+	<theme name="time-progressbar" ref="-defaults" allowWildcard="true">
+		<param name=""><image>time-progressbar.*</image></param>
+		<param name="border"><border>background.border</border></param>
+		<param name="minWidth"><int>100</int></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+	</theme>
+
+	<theme name="health-progressbar" ref="-defaults" allowWildcard="true">
+		<param name=""><image>health-progressbar-green.*</image></param>
+		<param name="overlay"><image>Battle-UI-Bug-Fix-Overlay</image></param>
+		<param name="border"><border>1,0,0,0</border></param>
+		<param name="minWidth"><int>100</int></param>
+	</theme>
+
+	<theme name="health-progressbar-orange" ref="-defaults" allowWildcard="true">
+		<param name=""><image>health-progressbar-orange.*</image></param>
+		<param name="overlay"><image>Battle-UI-Bug-Fix-Overlay</image></param>
+		<param name="border"><border>1,0,0,0</border></param>
+		<!--<param name="border"><border>background.border</border></param>-->
+		<param name="minWidth"><int>100</int></param>
+	</theme>
+
+	<theme name="health-progressbar-red" ref="-defaults" allowWildcard="true">
+		<param name=""><image>health-progressbar-red.*</image></param>
+		<param name="overlay"><image>Battle-UI-Bug-Fix-Overlay</image></param>
+		<param name="border"><border>1,0,0,0</border></param>
+		<!--<param name="border"><border>background.border</border></param>-->
+		<param name="minWidth"><int>100</int></param>
+	</theme>
+
+	<theme name="xp-progressbar" ref="-defaults" allowWildcard="true">
+		<param name=""><image>health-progressbar-xp.*</image></param>
+		<param name="overlay"><image>EXP-Overlay</image></param>
+		<param name="border"><border>3,0,0,0</border></param>
+		<param name="border"><border>0,0,0,0</border></param>
+		<param name="minWidth"><int>100</int></param>
+	</theme>
+
+	<theme name="battle-move-button" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>move-name</font></param>
+		<param name="font2"><font>move-pp</font></param>
+		<param name="border"><border>13,12,7,92</border></param>
+		<param name=""><image>button.*</image></param>
+		<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>	
+		<param name="textAlignment2"><enum type="alignment">BOTTOMLEFT</enum></param>
+		<param name="minWidth"><int>209</int></param>
+		<param name="minHeight"><int>41</int></param>
+		<theme name="eff-nve" ref="label">
+			<param name=""><image>eff.nve.*</image></param>
+			<param name="border"><border>0</border></param>
+		</theme>
+		<theme name="eff-se" ref="label">
+			<param name=""><image>eff.se.*</image></param>
+			<param name="border"><border>0</border></param>
+		</theme>
+		<theme name="eff-i" ref="label">
+			<param name=""><image>eff.immune.*</image></param>
+			<param name="border"><border>0</border></param>
+		</theme>
+		<theme name="eff-e" ref="label">
+			<param name=""><image>eff.e.*</image></param>
+			<param name="border"><border>0</border></param>
+		</theme>
+		<theme name="eff-status" ref="label">
+			<param name=""><image>eff.status.*</image></param>
+			<param name="border"><border>0</border></param>
+		</theme>
+	</theme>
+	<theme name="battle-move-button-red" ref="battle-move-button" allowWildcard="true">
+		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+	</theme>
+	<theme name="battle-move-button-green" ref="battle-move-button" allowWildcard="true">
+		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+	</theme>
+	<theme name="battle-move-button-left" ref="battle-move-button" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
+	</theme>
+
+	<theme name="battle-button-return" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="border"><border>2,25,1,8</border></param>
+		<param name=""><image>battle-button-return.*</image></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		<theme name="label" ref="label" allowWildcard="true">
+			<!--<param name="border"><border>2,4</border></param>-->
+			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		</theme>
+		<theme name="label-button" ref="label" allowWildcard="true">
+			<param name="border"><border>4,4,0,4</border></param>
+			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		</theme>
+	</theme>
+	<theme name="battle-button-confirm" ref="battle-button-return" allowWildcard="true">
+		<param name=""><image>battle-button-confirm.*</image></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+	</theme>
+
+	<theme name="battle-button" ref="-defaults" allowWildcard="true">
+		<param name=""><image>battle-button-switch.*</image></param>
+		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font2"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="border"><border>7,0</border></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		<theme name="label" ref="label" allowWildcard="true">
+			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="border"><border>8,10,0,0</border></param>
+		</theme>
+		<theme name="monsterframe-hp-progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>switch-hpbar-green.*</image></param>
+			<param name="border"><border>0,7,0,4</border></param>
+			<param name="minWidth"><int>50</int></param>
+		</theme>
+		<theme name="monsterframe-hp-progressbar-orange" ref="-defaults" allowWildcard="true">
+			<param name=""><image>switch-hpbar-orange.*</image></param>
+			<param name="border"><border>0,7,0,4</border></param>
+			<param name="minWidth"><int>50</int></param>
+		</theme>
+		<theme name="monsterframe-hp-progressbar-red" ref="-defaults" allowWildcard="true">
+			<param name=""><image>switch-hpbar-red.*</image></param>
+			<param name="border"><border>0,7,0,4</border></param>
+			<param name="minWidth"><int>50</int></param>
+		</theme>
+	</theme>
+
+	<theme name="battle-button-ui" ref="-defaults" allowWildcard="true">
+		<param name=""><image>ui-button.*</image></param>
+		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font2"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="border"><border>7,0</border></param>
+		<theme name="label" ref="label" allowWildcard="true">
+			<param name="border"><border>3,3</border></param>
+			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		</theme>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+	</theme>
+
+	<theme name="battle-item-pic" ref="label" allowWildcard="true">
+			<param name="background"><image>battle-item-frame</image></param>
+	</theme>
+
+	<theme name="battle-frame" ref="-defaults" allowWildcard="true">
+		<param name="background"><image>label1.background</image></param>
+	</theme>
+	
+	<theme name="battle-panel" ref="-defaults" allowWildcard="true">
+		<param name="background"><image>battle-area</image></param>
+		<param name="border"><border>5,8,5,11</border></param>
+		<param name="defaultGap"><dimension>7,3</dimension></param>
+		<param name="smallGap"><dimension>8,8</dimension></param>
+		<param name="mediumGap"><dimension>10,10</dimension></param>
+		<param name="largeGap"><dimension>15,15</dimension></param>
+		<param name="namedGaps"><map/></param>
+		<theme name="dialoglayout" ref="-defaults">
+			<param name="border"><border>0</border></param>
+			<param name="defaultGap"><dimension>7,3</dimension></param>
+			<param name="smallGap"><dimension>8,0</dimension></param>
+			<param name="mediumGap"><dimension>10,0</dimension></param>
+			<param name="largeGap"><dimension>15,0</dimension></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="label-black" ref="-defaults" allowWildcard="true">
+				<param name="border"><border>25,5,0,5</border></param>
+				<param name="font"><font>battle-item</font></param>
+			</theme>
+		</theme>
+		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+			<param name="minWidth"><int>300</int></param>
+			<param name="maxWidth"><int>300</int></param>
+			<param name="maxHeight"><int>76</int></param>
+			<param name="minHeight"><int>76</int></param>
+			<theme name="dialoglayout" ref="-dialog">
+				<param name="defaultGap"><dimension>0,0</dimension></param>
+				<theme name="button" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>alphabeta-highlight-button</font></param>
+					<param name="border"><border>0</border></param>
+					<param name=""><image>button-small.*</image></param>
+					<param name="textAlignment"><enum type="alignment">center</enum></param>
+				</theme>
+			</theme>
+		</theme>
+		<theme name="label-black" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>title-font-black-bag</font></param>
+			<param name=""><image>button-small.hover.*</image></param>
+			<param name="minWidth"><int>145</int></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		</theme>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>battle-button-arrows</font></param>
+		</theme>
+		<theme name="button" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>battle-button-arrows</font></param>
+			<param name=""><image>button-small.*</image></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		</theme>
+	</theme>
+
+	<theme name="battle-panel-dark" ref="battle-panel" allowWildcard="true">
+		<param name="background"><image>battle-learn-label</image></param>
+		<param name="border"><border>5,8,0,0</border></param>
+	</theme>
+	
+	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
+		<param name="background"><image>battle-area-bag</image></param>
+		<param name="maxHeight"><int>350</int></param>
+		<param name="minHeight"><int>350</int></param>
+		<param name="border"><border>5,10,5,8</border></param>
+		<param name="defaultGap"><dimension>7,1</dimension></param>
+		<theme name="dialoglayout" ref="-defaults">
+			<param name="border"><border>0,10,0,0</border></param>
+			<param name="defaultGap"><dimension>20,5</dimension></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="maxHeight"><int>500</int></param>
+			<param name="minHeight"><int>500</int></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="label-black" ref="-defaults" allowWildcard="true">
+				<param name="font"><font>battle-item</font></param>
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="minHeight"><int>208</int></param>
+				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			</theme>
+		</theme>
+		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+			<param name="minWidth"><int>300</int></param>
+			<param name="maxWidth"><int>300</int></param>
+			<param name="maxHeight"><int>210</int></param>
+			<param name="minHeight"><int>210</int></param>
+			<param name="scrollbarsAlwaysVisible"><bool>true</bool></param>
+			<theme name="vscrollbar" ref="vscrollbar-white" allowWildcard="true">
+				<theme name="upbutton" ref="-defaults">
+					<param name="border"><border>1,0,0,0</border></param>
+				</theme>
+				<theme name="downbutton" ref="-defaults">
+					<param name="border"><border>1,0,0,0</border></param>
+				</theme>
+			</theme>
+			<theme name="dialoglayout" ref="-dialog">
+				<param name="defaultGap"><dimension>0,0</dimension></param>
+				<theme name="button" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+					<param name="border"><border>2,0,4,0</border></param>
+					<param name=""><image>button-small.*</image></param>
+					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				</theme>
+			</theme>
+		</theme>
+
+		<theme name="dialoglayout" ref="dialoglayout">
+			<theme name="use-button" ref="button" allowWildcard="true">
+				<param name="minWidth"><int>80</int></param>
+				<param name="maxWidth"><int>80</int></param>
+			</theme>
+		</theme>
+	</theme>
+
+	<theme name="monster-preview-panel" ref="-defaults">
+		<param name="background"><image>none</image></param>
+		<param name="border"><border>0</border></param>
+	</theme>
+
+	<theme name="monster-preview-panel-boxlayout" ref="boxlayout">
+		<param name="background"><image>monster-preview-bg</image></param>
+		<param name="border"><border>10</border></param>
+		<param name="spacing"><int>3</int></param>
+		<param name="alignment"><enum type="alignment">TOP</enum></param>
+		<param name="minWidth"><int>170</int></param>
+		<param name="maxWidth"><int>170</int></param>
+		<param name="minHeight"><int>305</int></param>
+		<param name="maxHeight"><int>305</int></param>
+	</theme>
+
+	<theme name="monster-preview-panel-boxlayout2" ref="boxlayout">
+		<param name="border"><border>0</border></param>
+		<param name="spacing"><int>3</int></param>
+		<param name="alignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+
+	<theme name="monster-preview-panel-label" ref="label">
+		<param name="border"><border>0</border></param>
+	</theme>
+
+	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
+		<param name="border"><border>55,0</border></param>
+	</theme>
+
+	<theme name="battle-fight" ref="rbattle-fight" allowWildcard="true"/>
+	<theme name="battle-switch" ref="rbattle-pokemon" allowWildcard="true"/>
+	<theme name="battle-bag" ref="rbattle-bag" allowWildcard="true"/>
+	<theme name="battle-run" ref="rbattle-run" allowWildcard="true"/>
+	<theme name="battle-win" ref="rbattle" allowWildcard="true"/>
+	<theme name="battle-shift" ref="rbattle-rotate" allowWildcard="true"/>
+    <theme name="battle-rotate" ref="rbattle-rotate" allowWildcard="true"/>
+	<theme name="battle-ball" ref="rbattle-ball" allowWildcard="true"/>
+	<theme name="battle-bait" ref="rbattle-bag" allowWildcard="true"/>
+	<theme name="battle-rock" ref="rbattle-fight" allowWildcard="true"/>
+</themes>
