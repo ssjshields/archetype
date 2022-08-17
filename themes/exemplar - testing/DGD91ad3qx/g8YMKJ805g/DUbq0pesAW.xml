@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+	
+	<theme name="inventory-tabbedframe" ref="resizableframe">
+		<param name="background"><image>Bag-HUD</image></param>
+		<!--<param name="titleAreaTop"><int>36</int></param>-->
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>-1</int></param>
+		<param name="closeButtonX"><int>211</int></param>
+		<param name="closeButtonY"><int>-32</int></param>
+		<theme name="closeButton" ref="closeButton">
+			<param name="background"><image>Bag-Close-Button</image></param>
+			<param name="minWidth"><int>24</int></param>
+			<param name="minHeight"><int>24</int></param>
+		</theme>
+		<theme name="title" ref="title">
+			<param name="border"><border>51,23,0,0</border></param>
+			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+		</theme>
+		<theme name="editfield" ref="editfield-search" allowWildcard="true">
+			<param name="background"><image>ui-inputbox-bag.background</image></param>
+			<param name="border"><border>0,2,0,12</border></param>
+			<param name="overlay"><image>Search-Icon-Bag</image></param>
+		</theme>
+		<param name="border"><border>10,0,0,3</border></param>
+		<theme name="dialoglayout" ref="-defaults">
+			<param name="border"><border>0,0,0,0</border></param>
+			<param name="defaultGap"><dimension>0,0</dimension></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="tabbedpane" ref="-defaults">
+				<param name="minHeight"><int>432</int></param>
+				<param name="maxHeight"><int>432</int></param>
+				<param name="border"><border>0,0,0,0</border></param>
+				<theme name="tabbox" ref="-defaults">
+					<theme name="tabbutton" ref="togglebutton">
+						<param name="background"><image>none</image></param>
+					</theme>
+					<param name="overlay"><image>Bag-HUD-Overlay</image></param>
+					<param name="border"><border>0,2,20,0</border></param>
+					<param name="spacing"><int>6</int></param>
+					<param name="alignment"><enum type="alignment">FILL</enum></param>
+				</theme>
+				<theme name="container" ref="-defaults">
+					<param name="border"><border>3,2,0,0</border></param>
+					<param name="background"><image>none</image></param>
+					<theme name="dialoglayout" ref="-defaults">
+						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+								<param name="border"><border>4,0,30,0</border></param>
+							<theme name="vscrollbar" ref="vscrollbar-white"/>
+							<theme name="dialoglayout" ref="-dialog">
+								<param name="border"><border>7,0,7,4</border></param>
+									<theme name="label" ref="label" allowWildcard="true">
+										<param name="background"><image>bag-category-label</image></param>
+										<param name="border"><border>0,15,0,0</border></param>
+									</theme>
+							</theme>
+						</theme>
+						<param name="defaultGap"><dimension>5,5</dimension></param>
+						<param name="smallGap"><dimension>8,8</dimension></param>
+						<param name="mediumGap"><dimension>10,10</dimension></param>
+						<param name="largeGap"><dimension>5,5</dimension></param>
+						<param name="namedGaps"><map/></param>
+					</theme>
+				</theme>
+				<param name="inputMap"><inputMapDef>
+					<action name="nextTab">CTRL TAB</action>
+					<action name="prevTab">CTRL SHIFT TAB</action>
+				</inputMapDef></param>
+			</theme>
+		</theme>
+	</theme>
+
+	<theme name="inventory-tab-empty" ref="-defaults" allowWildcard="true">
+		 <param name="background"><image>Bag-Tab-New.background</image></param>
+		 <param name="border"><border>24,6</border></param>
+	</theme>
+
+	<theme name="inventory-button" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="border"><border>2,0,1,0</border></param>
+		<param name="background"><image>ui-button-item-bag.background</image></param>
+		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
+	</theme>
+
+	<theme name="item-move-dialog-button" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
+		<param name="border"><border>12,15,17,15</border></param>
+		<param name="background"><image>ui-button-bag.background</image></param>
+		<param name="overlay"><image>TM-Button-Overlay-Disabled</image></param>
+		<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOMLEFT</enum></param>
+		<param name="minWidth"><int>213</int></param>
+		<param name="minHeight"><int>54</int></param>
+    </theme>
+
+    <theme name="item-use-dialog-button" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-highlight-tm-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-tm-button</font></param>
+		<param name="border"><border>12,15,17,15</border></param>
+		<param name="background"><image>ui-button-bag.background</image></param>
+		<param name="overlay"><image>TM-Button-Overlay</image></param>
+		<param name="textAlignment"><enum type="alignment">TOP</enum></param>
+		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
+		<param name="minWidth"><int>213</int></param>
+		<param name="minHeight"><int>54</int></param>
+    </theme>
+
+	<theme name="tm-button" ref="-defaults" allowWildcard="true">
+		<param name="background"><image>ui-button-bag.background</image></param>
+		<param name="border"><border>6,40,7,6</border></param>
+		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="minWidth"><int>197</int></param>
+		<param name="maxWidth"><int>197</int></param>
+		<param name="minHeight"><int>36</int></param>
+		<param name="maxHeight"><int>36</int></param>
+		<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+
+	<theme name="hotkeybar" ref="resizableframe">
+		<param name="background"><image>Hotkey-Bar-Frame</image></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>0</int></param>
+		<param name="titleAreaBottom"><int>0</int></param>
+		<param name="hasCloseButton"><bool>false</bool></param>
+		<param name="closeButtonX"><int>0</int></param>
+		<param name="closeButtonY"><int>0</int></param>
+		<param name="hasResizeHandle"><bool>false</bool></param>
+		<param name="resizeHandleX"><int>0</int></param>
+		<param name="resizeHandleY"><int>0</int></param>
+		<param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
+		<param name="fadeDurationActivate"><int>150</int></param>
+		<param name="fadeDurationDeactivate"><int>150</int></param>
+		<param name="fadeDurationShow"><int>0</int></param>
+		<param name="fadeDurationHide"><int>0</int></param>
+		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
+		<theme name="title" ref="-defaults">
+			<param name="textAlignment"><enum type="alignment">left</enum></param>
+			<param name="font"><font>alphabeta-white</font></param>
+		</theme>
+		<theme name="closeButton" ref="-defaults"/>
+		<theme name="resizeHandle" ref="-defaults"/>
+		<param name="border"><border>0,2,0,2</border></param>
+		<theme name="content" ref="-defaults">
+			<param name="defaultGap"><dimension>7,5</dimension></param>
+			<param name="border"><border>3,5,0,5</border></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="item-slot" ref="-defaults">
+				<param name="background"><image>none</image></param>
+				<param name="border"><border>7,3,7,3</border></param>
+				<param name="font2"><font>hotkey-button</font></param>
+				<!--alphabeta-white-shadow-->
+				
+				<param name="font"><font>hotkey-button2</font></param>	
+				<param name="minWidth"><int>41</int></param>
+				<param name="maxWidth"><int>42</int></param>
+				<param name="minHeight"><int>36</int></param>	
+				<param name="textAlignment2"><enum type="alignment">TOPLEFT</enum></param>
+				<param name="textAlignment"><enum type="alignment">BOTTOMLEFT</enum></param>		
+			</theme>
+		</theme>
+	</theme>
+	<theme name="hotkeybar-frame-visible" ref="hotkeybar">
+		<param name="background"><image>Hotkey-Bar-Frame</image></param>	
+	</theme>
+</themes>

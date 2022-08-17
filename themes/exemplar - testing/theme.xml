@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+	<constantDef name="main-theme-color"><color>#6a889b</color></constantDef>
+	<constantDef name="main-color"><color>#5db1ff</color></constantDef>
+	<constantDef name="sub-color"><color>#5db1ff</color></constantDef>
+	<constantDef name="tooltip-tint"><color>#FF565D63</color></constantDef>
+	<include filename="fonts.xml"/>
+	<fontGen/>
+	<include filename="CI0qVFbRMm.xml"/>
+	<include filename="MAsXAmMZ9W.xml"/>
+	<include filename="w42Wg9V90m.xml"/>
+	<include filename="g4cZJGX7vB.xml"/>
+	<include filename="9iE3o2f7mS/1Y5WWC5cfs/mgZEOjSZ0a.xml"/>
+	<include filename="xw1GoWZEYl/ysJrlsz6D5/ds0OnWfUgc.xml"/>
+	<include filename="ui/battle.xml"/>
+	<include filename="DGD91ad3qx/1JO5uX6hrJ/6fXFEBleHp.xml"/>
+	<include filename="DGD91ad3qx/1JO5uX6hrJ/LgkeR4Q7na.xml"/>
+	<include filename="DGD91ad3qx/g8YMKJ805g/DUbq0pesAW.xml"/>
+	<include filename="xw1GoWZEYl/pscdKVjzHw/7GX5AFtgAN.xml"/>
+	<include filename="DGD91ad3qx/1JO5uX6hrJ/WEWRYYxeGZ.xml"/>
+	<include filename="DGD91ad3qx/1JO5uX6hrJ/AmhiDVYAy0.xml"/>
+	<include filename="DGD91ad3qx/g8YMKJ805g/jfrxbJwtBC.xml"/>
+	<include filename="xw1GoWZEYl/OeYZqoFP23/o8XA5XzX8c.xml"/>
+	<include filename="xw1GoWZEYl/ysJrlsz6D5/U7th1Exjfd.xml"/>
+	<include filename="DGD91ad3qx/g8YMKJ805g/wgw9UwGMyB.xml"/>
+	<include filename="xw1GoWZEYl/K4qRJbC16s/416muZ9cTB.xml"/>
+	<include filename="xw1GoWZEYl/pscdKVjzHw/jZ02rzVeXB.xml"/>
+	<include filename="xw1GoWZEYl/dpjiXpUcmF/zJZywAPRtq.xml"/>
+	<include filename="DGD91ad3qx/g8YMKJ805g/uvyCpCQjLd.xml"/>
+	<include filename="DGD91ad3qx/SKhBbhenX8/j8loiW8GeF.xml"/>
+	<include filename="DGD91ad3qx/g8YMKJ805g/RT0Z3n06xH.xml"/>
+	<include filename="xw1GoWZEYl/ysJrlsz6D5/imCsHUL0gi.xml"/>
+	<include filename="DGD91ad3qx/SKhBbhenX8/ZuS2aS18ad.xml"/>
+	<include filename="xw1GoWZEYl/pscdKVjzHw/A7MJtHIlDa.xml"/>
+	<include filename="main-widgets.xml"/>
+</themes>
