@@ -570,7 +570,7 @@
 	</images>
 
 	<images file="res/custom/bW6A5DARII/EXP-Overlay.png" filter="lineal">
-		<area name="EXP-Overlay" repeatx="true" xywh="*" inset="-1,-49,1,0"/>
+		<area name="EXP-Overlay" xywh="*" inset="-1,-49,1,0"/>
 	</images>
 
 
@@ -626,7 +626,8 @@
 		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,34"/>
 		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,84"/>
 		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="19,31,-2,16"/>
-		<area name="battle-ui-self-slim" xywh="815,520,299,28"/>
+		<!--<area name="battle-ui-self-slim" xywh="815,520,299,28"/>-->
+			<area name="battle-ui-self-slim" xywh="2,2,2,2"/>
 
 		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>
 		<area name="battle-ability-flip" xywh="674,15,-136,9" inset="-23,60,1,0"/>
