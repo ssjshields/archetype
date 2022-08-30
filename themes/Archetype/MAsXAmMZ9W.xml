@@ -1452,7 +1452,7 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Window.png" filter="lineal">
-		<area name="Login-Window-Background" xywh="*"/>
+		<area name="Login-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Login-Window">
 			<alias ref="Login-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="15,2,11,2"/>
