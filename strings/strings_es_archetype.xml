@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<strings lang="en-es" lang_full="Spanish - Archetype">
+  <!-- PvP short battle stats -->
+		<!--<string id="5200">Turn #{00}</string>
+		<string id="5201">Time: {00}</string>-->
+  
+  <!-- login Screen -->
+		<string id="1170">ROMs:</string> <!-- ROMs loaded line -->
+		<string id="1004">→ github.com/ssjshields/pokemmo-archetype</string> <!-- announcements -->
+
+  <!-- settings window title-->
+		<!--<string id="1200">Settings</string>--> <!-- window title -->
+
+  <!-- server select headers -->
+		<string id="1010">                                </string>  <!-- removes redundant text -->
+		<string id="1011">                                </string>  <!-- removes redundant text -->
+		<string id="1012">                                </string>  <!-- removes redundant text -->
+
+  <!-- global ui -->
+		<!--<string id="58">Return</string>
+		<string id="5029">Confirm</string>-->
+		<!--<string id="1526">/w</string> chat active channel button ; whispering edit -->
+		<!--<string id="0">POKéMON</string> Pokémon -> POKéMON ; experimental --> 
+  
+  <!-- "better" daycare ; sinnoh -->
+		<!--<string id="16779080">I'm the Day-Care Man.\nWould you like to trade?</string>
+		<string id="16779082">You won't get these {STRING_0} back.\nAre you sure?</string>
+		<string id="16779083">I will keep two of your {STRING_0},\nin return you'll receive an egg.</string>-->
+ 
+  <!-- battle -->
+		<string id="5109">BOLA ({00})</string> <!-- minimal look -->
+ 
+  <!-- "better" halloween strings ; thanks nurver  -->
+		<string id="101608">Restores 25% HP when eaten.\nWhen fighting Pumpking, clears\nstat modifications from allied field.</string>
+		<string id="101609">Restores 25% HP when eaten.\nWhen fighting Pumpking, grants the ability {STRING_210064}\nand causes attacks to drain their target. Lasts 5 turns.</string>
+		<string id="101610">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field by 33%.</string>
+		<string id="101611">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field of status ailments.</string>
+		<string id="101612">Restores 25% HP when eaten.\nWhen fighting Pumpking, doubles\nallied field's speed. Lasts 4 turns.</string>
+	
+  <!-- region link ferry -->
+		<!--<string id="16780100">Where would you like to go?</string>
+		<string id="16780102">Leaving will send your {STRING_0} to the PC.</string>
+		<string id="16780103">...</string>
+		<string id="16780104">Come back anytime.</string>
+		<string id="16780105">Your PC does not have enough room.\nYou can't deposit all of your {STRING_0}.</string>-->
+
+  <!-- region return -->
+		<!--<string id="16780130">Forget something in {00}?</string>-->
+
+  <!-- mailman -->
+		<!--<string id="16780150">Would you like to send some mail?</string>
+		<string id="16780151">I have some mail for you, {01}!</string>-->
+
+</strings>
