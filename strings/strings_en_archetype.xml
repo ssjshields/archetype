@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<strings lang="en-a" lang_full="English - Archetype" is_primary="1">
+<strings lang="en-a" lang_full="English - Archetype">
   <!-- BERRIES -> Berries ; thanks wingboner -->
 		<string id="4">Berries</string>
 		<string id="300014">Berries</string>
@@ -57,4 +57,19 @@
 		<string id="101610">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field by 33%.</string>
 		<string id="101611">Restores 25% HP when eaten.\nWhen fighting Pumpking, heals the\nallied field of status ailments.</string>
 		<string id="101612">Restores 25% HP when eaten.\nWhen fighting Pumpking, doubles\nallied field's speed. Lasts 4 turns.</string>
+	
+  <!-- region link ferry -->
+		<string id="16780100">Where would you like to go?</string>
+		<string id="16780102">Leaving will send your {STRING_0} to the PC.</string>
+		<string id="16780103">...</string>
+		<string id="16780104">Come back anytime.</string>
+		<string id="16780105">Your PC does not have enough room.\nYou can't deposit all of your {STRING_0}.</string>
+
+  <!-- region return -->
+		<string id="16780130">Forget something in {00}?</string>
+
+  <!-- mailman -->
+		<string id="16780150">Would you like to send some mail?</string>
+		<string id="16780151">I have some mail for you, {01}!</string>
+
 </strings>
