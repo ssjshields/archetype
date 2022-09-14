@@ -599,29 +599,9 @@
 			<area xywh="28,18,5,8"/>
 		</grid>
 
-		<grid name="time-progressbar.background" weightsX="0,1,0" weightsY="0,1,0">
-			<area xywh="324,13,5,1"/>
-			<area xywh="329,13,5,1" tiled="true"/>
-			<area xywh="351,13,5,1"/>
-			<area xywh="324,14,5,12"/>
-			<area xywh="329,14,5,12" tiled="true"/>
-			<area xywh="351,14,5,12"/>
-			<area xywh="324,26,5,1"/>
-			<area xywh="329,26,5,1" tiled="true"/>
-			<area xywh="351,26,5,1"/>
-		</grid>
+		<area name="time-progressbar.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="0,0,-2,-2"/>
 
-		<grid name="time-progressbar.progressImage" weightsX="0,1,0" weightsY="0,1,0">
-			<area xywh="324,29,5,2"/>
-			<area xywh="329,29,5,2"/>
-			<area xywh="351,29,5,2"/>
-			<area xywh="324,31,5,10"/>
-			<area xywh="329,31,5,10"/>
-			<area xywh="351,31,5,10"/>
-			<area xywh="324,41,5,2"/>
-			<area xywh="329,41,5,2"/>
-			<area xywh="351,41,5,2"/>
-		</grid>
+		<area name="time-progressbar.progressImage" xywh="23,9,1,4" inset="1"/>
 
 		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,34"/>
 		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,84"/>

@@ -69,6 +69,7 @@
 	</theme>
 
 	<theme name="time-progressbar" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>alphabeta-border-HUD</font></param>
 		<param name=""><image>time-progressbar.*</image></param>
 		<param name="border"><border>background.border</border></param>
 		<param name="minWidth"><int>100</int></param>
