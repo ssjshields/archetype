@@ -587,11 +587,11 @@
 		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,-49,-1,0"/>
 		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,0"/>
 
-		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-orange.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-green.background" xywh="0,0,9,6" splitx="L4,B4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,B4" splity="T2,B3" inset="-1,-49,-1,-3"/>
+		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-orange.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-green.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
+		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="-1,-49,-1,-3"/>
 
 		<grid name="xp-progressbar.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="15,18,5,8"/>
@@ -623,11 +623,20 @@
 			<area xywh="351,41,5,2"/>
 		</grid>
 
-		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,34"/>
-		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,B4" splity="T2,B3" inset="10,21,6,84"/>
-		<area name="battle-ui-self" xywh="0,20,9,6" splitx="L4,B4" splity="T2,B3" inset="19,31,-2,16"/>
-		<!--<area name="battle-ui-self-slim" xywh="815,520,299,28"/>-->
-			<area name="battle-ui-self-slim" xywh="2,2,2,2"/>
+		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,34"/>
+		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,84"/>
+		<area name="battle-ui-self-large" xywh="0,20,9,6" splitx="L4,R4" splity="T2,B3" inset="19,31,-2,16"/>
+		<area name="battle-ui-self-slim" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="11,31,7,16"/>
+		<area name="battle-ui-heart1" xywh="0,50,16,16" splitx="L16,R0" splity="T16,B0" inset="23,114,-23,-114"/>
+		<area name="battle-ui-heart2" xywh="20,50,18,18" splitx="L18,R0" splity="T18,B0" inset="22,113,-22,-113"/>
+		<animation name="battle-ui-heart" timeSource="enabled">
+			<frame duration="1400" ref="battle-ui-heart1"/>
+			<frame duration="100" ref="battle-ui-heart2"/>
+		</animation>
+		<composed name="battle-ui-self">
+			<alias ref="battle-ui-self-large"/>
+			<alias ref="battle-ui-heart"/>
+		</composed>
 
 		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>
 		<area name="battle-ability-flip" xywh="674,15,-136,9" inset="-23,60,1,0"/>
