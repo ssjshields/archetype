@@ -35,6 +35,7 @@
 			<theme name="tabbedpane" ref="-defaults">
 				<param name="minHeight"><int>432</int></param>
 				<param name="maxHeight"><int>432</int></param>
+				<param name="minWidth"><int>435</int></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<theme name="tabbutton" ref="togglebutton">
