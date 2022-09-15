@@ -103,7 +103,7 @@
 	</fontDef>
 	
 	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-110" offsetY="-69"/>
-	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-10" offsetY="-1"/>
+	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-10" offsetY="79"/>
 	
 	<fontDef name="hotkey-button" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="hotkey-button2" ref="hotkey-button"  color="#26FFFFFF"/>
@@ -158,6 +158,7 @@
 	<fontDef name="alphabeta-border-overworld" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
 	<fontDef name="alphabeta-border-battle" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#d4dadc" kerning="true" hinting="AutoSlight" size="12.7" size_cjk="12.7"/>
 	<fontDef name="alphabeta-border-HUD" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#f2f2f2" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.5" border_color="#233031"/>
+	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1"/>
 	<fontDef name="alphabeta-border-TC" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#9facaf" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#233031"/>
 	<fontDef name="alphabeta-border" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v2" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1.2" border_color="#233031"/>
