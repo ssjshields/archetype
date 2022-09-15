@@ -706,14 +706,14 @@
 		<area name="button-npc.selected" xywh="378,7,36,26" inset="-3,0,3,0" splitx="L20,R7" splity="T6,B8"/>
 		<area name="ul-list" xywh="383,17,12,15"/>
 		<area name="button-npc.ok" xywh="378,71,36,28" splitx="L20,R7" splity="T6,B8"/>
-		<area name="button-toggle.default" xywh="308,9,66,30" splitx="L20,R5" splity="T6,B8"/>
-		<area name="button-toggle.hover" xywh="308,40,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<area name="button-toggle.default" xywh="308,9,64,30" splitx="L5,R5" splity="T6,B8" />
+		<area name="button-toggle.hover" xywh="308,40,64,30" splitx="L5,R5" splity="T6,B8"/>
 		<animation name="button-toggle.keyboardFocus" timeSource="enabled">
 			<frame duration="1500" ref="button-toggle.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="button-toggle.hover" tint="#c6c6c6"/>
 		</animation>
-		<area name="button-toggle.disabled" xywh="308,71,66,30" splitx="L20,R5" splity="T6,B8"/>
-		<area name="button-toggle.disabled-hover" xywh="308,102,66,30" splitx="L20,R5" splity="T6,B8"/>
+		<area name="button-toggle.disabled" xywh="308,71,64,30" splitx="L5,R5" splity="T6,B8"/>
+		<area name="button-toggle.disabled-hover" xywh="308,102,64,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tiny.default" xywh="227,9,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<area name="button-tiny.hover" xywh="227,40,66,30" splitx="L5,R5" splity="T6,B8"/>
 		<animation name="button-tiny.keyboardFocus" timeSource="enabled">
@@ -754,7 +754,7 @@
 			<frame duration="400" ref="button.selected2" tint="#FFFFFFFF"/>
 		</animation>
 
-		<select name="button-toggle.background">
+		<select name="button-toggle.background" sizeOverwriteH="27">
 			<alias ref="button-toggle.hover" if="hover + selected"/>
 			<alias ref="button-toggle.hover" if="hover"/>
 			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus + selected"/>
