@@ -1764,7 +1764,7 @@
 	</images>
 
 	<images file="res/custom/7BGCabK5FN/Social-Window.png" filter="lineal">
-		<area name="Social-Window-Background" xywh="*"/>
+		<area name="Social-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Social-Window">
 			<alias ref="Social-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
@@ -1845,7 +1845,11 @@
 	</images>
 
 	<images file="res/custom/xKY3dlupNV/Mail-Window.png" filter="lineal">
-		<area name="Mail-Window" xywh="*"/>
+		<area name="Mail-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50" sizeOverwriteH="32"/>
+		<composed name="Mail-Window">
+			<alias ref="Mail-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Window.png" filter="lineal">

@@ -3,15 +3,23 @@
 
 	<theme name="social-window" ref="base-tabbed-frame">
 	<param name="background"><image>Social-Window</image></param>
-	<param name="titleAreaTop"><int>8</int></param>
-	<param name="titleAreaLeft"><int>44</int></param>
-	<param name="titleAreaRight"><int>-30</int></param>
-	<param name="titleAreaBottom"><int>30</int></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>34</int></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>15,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
 	<param name="closeButtonX"><int>-26</int></param>
 	<param name="closeButtonY"><int>13</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="tabbedpane" ref="base-tabbed-pane">
+				<param name="background"><image>none</image></param>
+				<param name="border"><border>5,0,0,0</border></param>
 				<param name="inputMap"><inputMapDef>
+					<action name="nextTab">CTRL TAB</action>
 					<action name="nextTab">CTRL TAB</action>
 					<action name="prevTab">CTRL SHIFT TAB</action>
 				</inputMapDef></param>
@@ -21,14 +29,23 @@
 	
 	<theme name="mail-window" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#D4FFFFFF</color></param>-->
-	<param name="titleAreaTop"><int>9</int></param>
-	<param name="titleAreaLeft"><int>18</int></param>
-	<param name="titleAreaRight"><int>-30</int></param>
-	<param name="titleAreaBottom"><int>30</int></param>
-	<param name="closeButtonX"><int>-26</int></param>
-	<param name="closeButtonY"><int>12</int></param>
+		<param name="background"><image>Mail-Window</image></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>34</int></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>15,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
+		<param name="closeButtonX"><int>-26</int></param>
+		<param name="closeButtonY"><int>12</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
+						<param name="border"><border>0,3,0,0</border></param>
 			<theme name="tabbedpane" ref="base-tabbed-pane">
+				<param name="background"><image>none</image></param>
+				<param name="border"><border>5,0,0,0</border></param>
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
 						<param name="background"><image>ui-tab-shop.background</image></param>
@@ -42,7 +59,7 @@
 						<param name="background"><image>none</image></param>
 		
 						<theme name="label" ref="label" allowWildcard="true">
-							<param name="border"><border>10,10,0,0</border></param>
+							<param name="border"><border>10,11,0,0</border></param>
 							<param name="background"><image>none</image></param>
 						</theme>
 
@@ -64,9 +81,9 @@
 		<param name="overlay"><image>none</image></param>
 		<theme name="hscrollbar" ref="hscrollbar"/>  <!-- not used -->
 		<theme name="vscrollbar" ref="vscrollbar-white"/>
-		<param name="border"><border>10,10,10,7</border></param>
-		<param name="minWidth"><int>445</int></param>
-		<param name="minHeight"><int>400</int></param>
+		<param name="border"><border>8,10,10,7</border></param>
+		<param name="minWidth"><int>438</int></param>
+		<param name="minHeight"><int>398</int></param>
 		<param name="maxWidth"><int>32767</int></param>
 		<param name="maxHeight"><int>32767</int></param>
 		<param name="hasDragButton"><bool>false</bool></param>
@@ -76,14 +93,29 @@
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="background"><image>none</image></param>
 			<param name="border"><border>0,0,0,0</border></param>
-			<param name="defaultGap"><dimension>4,5</dimension></param>
+			<param name="defaultGap"><dimension>7,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
-			<param name="minWidth"><int>415</int></param>
-			<param name="maxWidth"><int>415</int></param>
+			<param name="minWidth"><int>405</int></param>
+			<param name="maxWidth"><int>405</int></param>
 			
+			<theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
+				<theme name="valueDisplay" ref="valueDisplay">
+				<param name="minWidth"><int>210</int></param>
+				</theme>
+			</theme>
+
+			<theme name="monster-slot" ref="monster-slot">
+				<param name="background"><image>mail-slot.background</image></param>
+			</theme>
+			<theme name="item-slot" ref="-defaults">
+				<param name="background"><image>mail-slot.background</image></param>
+				<param name="textAlignment"><enum type="alignment">bottom</enum></param>
+				<param name="border"><border>2</border></param>
+			</theme>
+
 			<theme name="button-small2" ref="button" allowWildcard="true">
 				<param name="minWidth"><int>88</int></param>
 			</theme>
@@ -92,30 +124,35 @@
 				<param name="background"><image>ui-inputbox.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>160</int></param>
+				<param name="minHeight"><int>29</int></param>
+				<param name="minWidth"><int>153</int></param>
 			</theme>
 			<theme name="label-value-small" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-inputbox.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
+				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>135</int></param>
 			</theme>
 			<theme name="label-value-small2" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-inputbox.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
+				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>88</int></param>
 			</theme>
 			<theme name="label-value-smallest" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-inputbox.background</image></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 				<param name="border"><border>1</border></param>
+				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>60</int></param>
 			</theme>
 			<theme name="label-value-icon" ref="label" allowWildcard="true">
 				<param name="background"><image>none</image></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 				<param name="border"><border>1</border></param>
+				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>60</int></param>
 			</theme>
 
@@ -136,12 +173,13 @@
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="scrollpane" ref="scrollpane">
+				<param name="minHeight"><int>140</int></param>
 				<theme name="hscrollbar" ref="hscrollbar"/>
 				<theme name="editfield" ref="editfield">
 					<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
 					<param name="autocompletion-height"><int>150</int></param>
-					<param name="minWidth"><int>265</int></param>
-					<param name="minHeight"><int>100</int></param>
+					<param name="minWidth"><int>268</int></param>
+					<param name="minHeight"><int>140</int></param>
 					
 				</theme>
 			</theme>
@@ -160,8 +198,8 @@
 		<theme name="dialoglayout" ref="dialoglayout">
 
 			<theme name="editfield" ref="editfield">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="minHeight"><int>26</int></param>
+				<param name="background"><image>ui-inputbox.background</image></param>
+				<param name="minHeight"><int>29</int></param>
 
 				<theme name="renderer" ref="renderer">
 					<param name="border"><border>4,5</border></param>

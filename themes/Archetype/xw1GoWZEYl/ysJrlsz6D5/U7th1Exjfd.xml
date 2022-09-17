@@ -176,6 +176,7 @@
 			<param name="font"><font>pb-dark-highlight-button</font></param>
 			<param name="minWidth"><int>191</int></param>
 		</theme>
+
 		<theme name="valueEdit" ref="editfield">
 			<theme name="renderer" ref="renderer">
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>

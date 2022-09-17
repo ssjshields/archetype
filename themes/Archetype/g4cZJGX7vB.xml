@@ -330,6 +330,11 @@
 			<alias ref="ui-button.default"/>
 		</select>
 
+		<select name="mail-slot.background">
+			<alias ref="ui-button.disabled" if="disabled"/>
+			<alias ref="ui-button.default"/>
+		</select>
+
 		<composed name="main-hud-button.background" inset="-3,0,-3,0">
 			<alias ref="ui-button.background"/>
 		</composed>
