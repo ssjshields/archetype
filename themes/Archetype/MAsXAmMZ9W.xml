@@ -1861,13 +1861,13 @@
 	</images>
 	
 	<images file="res/custom/cs0o8e55UY/Town-Map-Window.png" filter="lineal">
-		<area name="Town-Map-Window" xywh="*"/>
+		<area name="Town-Map-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Town-Map-Window">
+			<alias ref="Town-Map-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
 	</images>
 	
-	<images file="res/custom/cs0o8e55UY/Town-Map-Window-Overlay.png" filter="lineal">
-		<area name="Town-Map-Window-Overlay" xywh="*"/>
-	</images>
-
 	<images file="res/custom/vbJDdMc09s/Poke-Shop-Window.png" filter="lineal">
 		<area name="Poke-Shop-Window-Background" xywh="*"/>
 		<composed name="Poke-Shop-Window">
@@ -1877,7 +1877,7 @@
 	</images>
 	
 	<images file="res/custom/FnTKbfeNe9/Breed-Window.png" filter="lineal">
-		<area name="Breed-Window-Background" xywh="*"/>
+		<area name="Breed-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Breed-Window">
 			<alias ref="Breed-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
