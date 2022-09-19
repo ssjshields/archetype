@@ -2,16 +2,21 @@
 <themes>
 
 	<theme name="town-map" ref="base-tabbed-frame">
-
-		
-		<param name="titleAreaTop"><int>14</int></param>
-		<param name="titleAreaLeft"><int>20</int></param>
-		<param name="titleAreaBottom"><int>30</int></param>
-		<param name="closeButtonX"><int>-35</int></param>
-		<param name="closeButtonY"><int>16</int></param>
-		<param name="border"><border>1,0</border></param>
+		<param name="background"><image>Town-Map-Window</image></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>34</int></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>15,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
+		<param name="closeButtonX"><int>-26</int></param>
+		<param name="closeButtonY"><int>13</int></param>
+		<param name="border"><border>0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
-			<param name="border"><border>40,12,6,5</border></param>
+			<param name="border"><border>34,5,5,5</border></param>
 			<theme name="switch-map" ref="-defaults">
 				<param name="background"><image>none</image></param>
 			</theme>
