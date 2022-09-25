@@ -1869,7 +1869,7 @@
 	</images>
 	
 	<images file="res/custom/vbJDdMc09s/Poke-Shop-Window.png" filter="lineal">
-		<area name="Poke-Shop-Window-Background" xywh="*"/>
+		<area name="Poke-Shop-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Poke-Shop-Window">
 			<alias ref="Poke-Shop-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
@@ -1893,7 +1893,7 @@
 	</images>
 
 	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Window.png" filter="lineal">
-		<area name="Game-Corner-Window-Background" xywh="*"/>
+		<area name="Game-Corner-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Game-Corner-Window">
 			<alias ref="Game-Corner-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
