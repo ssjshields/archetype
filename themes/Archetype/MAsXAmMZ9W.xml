@@ -1692,7 +1692,7 @@
 	</images>
 		
 	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
-		<area name="poke-summary-dex" xywh="*" inset="-192,196,175,2"/>
+		<area name="poke-summary-dex" xywh="*" inset="-192,196,175,2" splitx="L32,R0"/>
 	</images>
 	
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
