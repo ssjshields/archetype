@@ -618,8 +618,8 @@
 			<alias ref="battle-ui-heart"/>
 		</composed>
 
-		<area name="battle-ability" xywh="674,15,136,9" inset="-91,0,69,60"/>
-		<area name="battle-ability-flip" xywh="674,15,-136,9" inset="57,60,-79,0"/>
+		<area name="battle-ability" xywh="606,15,210,42" inset="-91,30,69,30"/>
+		<area name="battle-ability-flip" xywh="606,15,210,42" inset="57,30,-79,30"/>
 
 		<area name="battle-button.default" xywh="321,145,96,30"/>
 		<area name="battle-button.hover" xywh="321,176,96,30"/>

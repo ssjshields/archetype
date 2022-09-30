@@ -102,8 +102,8 @@
 		<fontParam if="keyboardFocus" color="#FFFFFF"/>
 	</fontDef>
 	
-	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-110" offsetY="-69"/>
-	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-10" offsetY="79"/>
+	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-36" offsetY="-69"/>
+	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-36" offsetY="79"/>
 	
 	<fontDef name="hotkey-button" filename="res/fonts/NotoSans-Medium.ttc" color="#FFFFFF" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="hotkey-button2" ref="hotkey-button"  color="#26FFFFFF"/>
