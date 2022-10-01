@@ -1482,10 +1482,10 @@
 	</images>
 	
 	<images file="res/custom/oYY1ozW6Ec/Instance-Window.png" filter="lineal">
-		<area name="Instance-Window-Background" xywh="*"/>
+		<area name="Instance-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Instance-Window">
 			<alias ref="Instance-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="3,3,3,3"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 
