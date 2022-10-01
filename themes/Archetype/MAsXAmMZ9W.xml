@@ -1602,7 +1602,7 @@
 	</images>
 	
 	<images file="res/custom/SCI0vPmuJ3/Menu-HUD.png" filter="lineal">
-		<area name="Menu-HUD" xywh="*"/>
+		<area name="Menu-HUD" xywh="*" splitx="L10,R10"/>
 	</images>
 	
 	<images file="res/custom/SCI0vPmuJ3/Hotkey-Bar-Frame.png" filter="lineal">

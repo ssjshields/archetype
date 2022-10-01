@@ -3,7 +3,7 @@
 
 	<theme name="hud-panel" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>Menu-HUD</image></param>
-		<param name="border"><border>9,7,9,7</border></param>
+		<param name="border"><border>9,6,9,6</border></param>
 		<param name="defaultGap"><dimension>5,5</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
