@@ -870,6 +870,7 @@
 	</theme>
 	<theme name="menupopup" ref="-dialog">
 		<param name="border"><border>0</border></param>
+		<param name="background"><image>ui-copymenu.background</image></param>
 		<theme name="button" ref="popup-button">
 			<param name="border"><border>5</border></param>
 			<param name="minWidth"><int>80</int></param>

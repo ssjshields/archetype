@@ -799,6 +799,8 @@
 		<composed name="button-npc.background">
 			<alias ref="ui-popup-button.background"/>
 		</composed>
+
+		<area name="ui-copymenu.background" xywh="8,83,2,2"/>
 		
 	</images>
 </themes>
