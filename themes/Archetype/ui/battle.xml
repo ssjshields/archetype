@@ -32,6 +32,7 @@
 			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix</font></param>
 			<param name="border"><border>1</border></param>
+			<param name="minWidth"><int>140</int></param>
 		</theme>
 	</theme>
 
@@ -45,6 +46,7 @@
 			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix-enemy</font></param>
 			<param name="border"><border>1</border></param>
+			<param name="minWidth"><int>140</int></param>
 		</theme>
 	</theme>
 
