@@ -29,6 +29,7 @@
 		<param name="minHeight"><int>20</int></param>
 		<param name="maxHeight"><int>20</int></param>
 		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix</font></param>
 			<param name="border"><border>1</border></param>
 		</theme>
@@ -41,6 +42,7 @@
 		<param name="minHeight"><int>20</int></param>
 		<param name="maxHeight"><int>20</int></param>
 		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix-enemy</font></param>
 			<param name="border"><border>1</border></param>
 		</theme>
