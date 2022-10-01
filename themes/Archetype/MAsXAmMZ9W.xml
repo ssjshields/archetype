@@ -1444,7 +1444,7 @@
 		<area name="Login-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="Login-Window">
 			<alias ref="Login-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="15,2,11,2"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 	
@@ -1452,7 +1452,16 @@
 		<area name="Login-Server-Window-Background" xywh="*"/>
 		<composed name="Login-Server-Window">
 			<alias ref="Login-Server-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="78,10,78,18"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+		<area name="Login-Server-Window-Overlay" xywh="24,34,270,34" inset="-60,-187,55,-6"/>
+	</images>
+
+	<images file="res/custom/613wCZrdxv/Login-CharSelect-Window.png" filter="lineal">
+		<area name="Login-CharSelect-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+		<composed name="Login-CharSelect-Window">
+			<alias ref="Login-CharSelect-Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 	

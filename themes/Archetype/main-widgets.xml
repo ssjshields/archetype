@@ -33,31 +33,56 @@
 			<param name="background"><image>background-image</image></param>
 		</theme>
 		<theme name="login-window" ref="base-frame" allowWildcard="true">
-		<param name="background"><image>Login-Window</image></param>
-			<param name="titleAreaTop"><int>31</int></param>
-			<param name="titleAreaLeft"><int>44</int></param>
-			<param name="titleAreaRight"><int>-20</int></param>
-			<param name="titleAreaBottom"><int>29</int></param>
-			<param name="minWidth"><int>338</int></param>
-			<param name="minHeight"><int>150</int></param>
-			<param name="maxWidth"><int>338</int></param>
-			<param name="maxHeight"><int>150</int></param>
+			<param name="background"><image>Login-Window</image></param>
+			<param name="titleAreaTop"><int>0</int></param>
+			<param name="titleAreaLeft"><int>0</int></param>
+			<param name="titleAreaRight"><int>-1</int></param>
+			<param name="titleAreaBottom"><int>34</int></param>
+			<theme name="title" ref="-defaults">
+				<param name="border"><border>15,49,2,0</border></param>
+				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+				<param name="font"><font>title-font</font></param>
+			</theme>
+			<param name="minWidth"><int>316</int></param>
+			<param name="minHeight"><int>154</int></param>
+			<param name="maxWidth"><int>316</int></param>
+			<param name="maxHeight"><int>154</int></param>
+			<param name="border"><border>0,0</border></param>
 			<theme name="dialoglayout" ref="dialoglayout">
-				<param name="defaultGap"><dimension>8,8</dimension></param>
-				<param name="border"><border>60,20,20,20</border></param>
+				<param name="defaultGap"><dimension>5,5</dimension></param>
+				<param name="border"><border>43,15,14,14</border></param>
 			</theme>
 		</theme>
 		<theme name="serverselect-window" ref="base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Server-Window</image></param>
-			<param name="titleAreaTop"><int>94</int></param>
-			<param name="titleAreaLeft"><int>51</int></param>
-			<param name="titleAreaBottom"><int>30</int></param>
-			<param name="border"><border>14,100</border></param>
-			<param name="minWidth"><int>340</int></param>
-			<param name="minHeight"><int>110</int></param>
-			<param name="maxWidth"><int>340</int></param>
-			<param name="maxHeight"><int>110</int></param>
+			<param name="titleAreaTop"><int>0</int></param>
+			<param name="titleAreaLeft"><int>0</int></param>
+			<param name="titleAreaRight"><int>-1</int></param>
+			<param name="titleAreaBottom"><int>34</int></param>
+			<theme name="title" ref="-defaults">
+				<param name="border"><border>15,49,2,0</border></param>
+				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+				<param name="font"><font>title-font</font></param>
+			</theme>
+			<param name="border"><border>0,0</border></param>
+			<param name="minWidth"><int>316</int></param>
+			<param name="minHeight"><int>154</int></param>
+			<param name="maxWidth"><int>316</int></param>
+			<param name="maxHeight"><int>154</int></param>
+			<theme name="dialoglayout" ref="dialoglayout">
+				<param name="border"><border>37,0,0,0</border></param>
+				<param name="defaultGap"><dimension>15,13</dimension></param>
+				<theme name="label" ref="label">
+					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+					<param name="minWidth"><int>77</int></param>
+					<param name="minHeight"><int>44</int></param>
 				</theme>
+		<theme name="button" ref="button">
+			<param name="overlay"><image>Login-Server-Window-Overlay</image></param>
+			<param name="maxHeight"><int>29</int></param>
+		</theme>
+			</theme>
+		</theme>
 		<theme name="label" ref="label">
 			<param name="font"><font>alphabeta-border</font></param>
 		</theme>
@@ -124,16 +149,22 @@
 	<theme name="characterselectgui" ref="logingui">
         <param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
         <theme name="login-panel" ref="base-frame" allowWildcard="true">
-            <param name="titleAreaTop"><int>8</int></param>
-            <param name="titleAreaLeft"><int>9</int></param>
-			<param name="titleAreaRight"><int>-30</int></param>
-			<param name="titleAreaBottom"><int>30</int></param>
+ 			<param name="background"><image>Login-CharSelect-Window</image></param>
+			<param name="titleAreaTop"><int>0</int></param>
+			<param name="titleAreaLeft"><int>0</int></param>
+			<param name="titleAreaRight"><int>-1</int></param>
+			<param name="titleAreaBottom"><int>34</int></param>
+			<theme name="title" ref="-defaults">
+				<param name="border"><border>15,49,2,0</border></param>
+				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+				<param name="font"><font>title-font</font></param>
+			</theme>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
-			<param name="border"><border>40,7,7,6</border></param>
+			<param name="border"><border>40,10,10,10</border></param>
 			<theme name="container" ref="-dialog" allowWildcard="true">
 				<param name="border"><border>7,7</border></param>
 				<param name="background"><image>none</image></param>
