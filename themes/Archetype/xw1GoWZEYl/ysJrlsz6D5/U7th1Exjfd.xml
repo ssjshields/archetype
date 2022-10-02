@@ -2,7 +2,7 @@
 <themes>
 	<theme name="settings-label-area" ref="-defaults">	
 		<param name="background"><image>none</image></param>
-		<param name="border"><border>2,5</border></param>
+		<param name="border"><border>0</border></param>
 		<param name="defaultGap"><dimension>5,5</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -25,17 +25,18 @@
 		<param name="closeButtonX"><int>-26</int></param>
 		<param name="closeButtonY"><int>13</int></param>
         <theme name="dialoglayout" ref="dialoglayout">
-            <param name="border"><border>40,10,10,10</border></param>
+            <param name="border"><border>40,7,8,8</border></param>
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<param name="tabPosition"><enum type="tabposition">LEFT</enum></param>
 				<param name="border"><border>0,15,0,0</border></param>
 				<param name="minWidth"><int>230</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="border"><border>6,0,10,0</border></param>
+					<param name="border"><border>1,0,10,0</border></param>
 					<theme name="tabbutton" ref="togglebutton">
 						<param name="minWidth"><int>90</int></param>
-						<param name="border"><border>5,0,5,10</border></param>
+						<param name="minHeight"><int>28</int></param>
+						<param name="border"><border>0,0,0,10</border></param>
 						<param name=""><image>ui-tab-vertical.*</image></param>
 						<param name="font"><font>pb-tab</font></param>
 						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
@@ -44,19 +45,19 @@
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="container">
-					<param name="border"><border>0,0,10,0</border></param>
+					<param name="border"><border>0,0,0,0</border></param>
 					<theme name="settings-scrollpane" ref="-defaults" allowWildcard="true">
 						<theme name="hscrollbar" ref="hscrollbar"/> 
 						<theme name="vscrollbar" ref="vscrollbar-white"/>
-						<param name="minWidth"><int>472</int></param>
-						<param name="minHeight"><int>413</int></param>
+						<param name="minWidth"><int>518</int></param>
+						<param name="minHeight"><int>507</int></param>
 						<param name="maxWidth"><int>32767</int></param>
 						<param name="maxHeight"><int>32767</int></param>
 						<param name="hasDragButton"><bool>false</bool></param>
 						<param name="autoScrollArea"><int>5</int></param>
 						<param name="autoScrollSpeed"><int>10</int></param>
 						<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
-						<param name="border"><border>0</border></param>
+						<param name="border"><border>0,0,8,0</border></param>
 						<theme name="dialoglayout" ref="-defaults">
 							<param name="border"><border>0</border></param>
 							<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -91,18 +92,20 @@
 		<param name="font"><font>alphabeta-orange-shadow</font></param>
 		<param name="minWidth"><int>455</int></param>
 		<param name="maxWidth"><int>455</int></param>
-		<param name="border"><border>5</border></param>
-		<param name="textAlignment"><enum type="alignment">left</enum></param>
+		<param name="minHeight"><int>31</int></param>
+		<param name="textAlignment"><enum type="alignment">center</enum></param>
+		<param name="border"><border>3,0,3,0</border></param>
 	</theme>
 	<theme name="label-settings-title" ref="label" allowWildcard="true">
 		<param name="background"><image>ui-header.background</image></param>
-		<param name="minWidth"><int>200</int></param>
-		<param name="minHeight"><int>28</int></param>
-		<param name="border"><border>2,6,3,0</border></param>
+		<param name="minWidth"><int>250</int></param>
+		<param name="minHeight"><int>31</int></param>
+		<param name="border"><border>3,0,3,0</border></param>
+		<param name="textAlignment"><enum type="alignment">center</enum></param>
 	</theme>
 	<theme name="label-settings-title-small" ref="label-settings-title" allowWildcard="true">
 		<param name="minWidth"><int>80</int></param>
-		<param name="textAlignment"><enum type="alignment">left</enum></param>
+		<param name="textAlignment"><enum type="alignment">center</enum></param>
 	</theme>
 	
 	<theme name="label-settings-value" ref="label" allowWildcard="true">
@@ -142,7 +145,7 @@
 	<theme name="label-settings-value-small" ref="label" allowWildcard="true">
 		<param name="background"><image>none</image></param>
 		<param name="textAlignment"><enum type="alignment">left</enum></param>
-		<param name="border"><border>3,0,0,0</border></param>
+		<param name="border"><border>0,0,0,0</border></param>
 		<param name="maxWidth"><int>250</int></param>
 		<param name="minWidth"><int>80</int></param>
 		<param name="font"><font>pb-dark</font></param>
@@ -157,7 +160,7 @@
 	<theme name="label-settings-vai" ref="valueadjuster" allowWildcard="true">
 		<param name="background"><image>none</image></param>
 		<param name="textAlignment"><enum type="alignment">left</enum></param>
-		<param name="border"><border>0,0,0,20</border></param>
+		<param name="border"><border>0,0,0,0</border></param>
 		<param name="maxWidth"><int>250</int></param>
 		<param name="minWidth"><int>250</int></param>
 		<param name="font"><font>pb-dark</font></param>
