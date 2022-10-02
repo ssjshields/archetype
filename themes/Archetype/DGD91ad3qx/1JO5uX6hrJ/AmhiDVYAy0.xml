@@ -2,7 +2,7 @@
 <themes>
 
 	<theme name="monster-frame" ref="resizableframe">
-	<param name="background"><image>Poke-Summary-Window</image></param>
+		<param name="background"><image>Poke-Summary-Window</image></param>
 		<param name="border"><border>0,5,0,0</border></param>
 
 		<param name="maxWidth"><int>439</int></param>
@@ -16,10 +16,10 @@
 		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>11</int></param>
 		<param name="titleAreaRight"><int>-30</int></param>
-		<param name="titleAreaBottom"><int>30</int></param>
+		<param name="titleAreaBottom"><int>32</int></param>
 
 		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>12</int></param>
+		<param name="closeButtonY"><int>13</int></param>
 
 		<theme name="nameplate" ref="-defaults">
 			<param name="minWidth"><int>340</int></param>
@@ -45,16 +45,16 @@
 		<theme name="itemplate" ref="-defaults">
 			<!--<param name="minHeight"><int>34</int></param>
 			<param name="maxHeight"><int>34</int></param>-->
-			<param name="border"><border>21,5,0,0</border></param>
+			<param name="border"><border>21,1,0,0</border></param>
 			<theme name="label" ref="-defaults">
 			<param name="background"><image>mi-label-item</image></param>
-			<param name="border"><border>0,20,0,5</border></param>
+			<param name="border"><border>0,20,0,4</border></param>
 				<param name="font"><font>alphabeta-small</font></param>		
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 			<theme name="label2" ref="-defaults">
 				<param name="font"><font>alphabeta-small</font></param>
-				<param name="border"><border>0,5,0,0</border></param>
+				<param name="border"><border>0,0,0,0</border></param>
 				<param name="background"><image>none</image></param>
 			</theme>
 			<param name="defaultGap"><dimension>2,0</dimension></param>
@@ -65,7 +65,7 @@
 		</theme>
 
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="border"><border>8,5,5,5</border></param>
+			<param name="border"><border>8,0,5,0</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -80,14 +80,14 @@
 					<theme name="tabbutton" ref="togglebutton">
 						<param name=""><image>ui-tab-button.*</image></param>
 					</theme>
-					<param name="border"><border>1,0</border></param>
+					<param name="border"><border>0,6,0,0</border></param>
 					<param name="spacing"><int>5</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="-defaults">
 					 <theme name="dialoglayout" ref="-defaults">
 						<param name="minHeight"><int>90</int></param>
-						<param name="border"><border>9,0,0,0</border></param>
+						<param name="border"><border>9,2,0,0</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -96,7 +96,7 @@
 
 						<theme name="label-monster-area" ref="-defaults">
 							<param name="background"><image>none</image></param>
-							<param name="border"><border>3,5</border></param>
+							<param name="border"><border>4,0,4,15</border></param>
 							<param name="defaultGap"><dimension>5,7</dimension></param>
 							<param name="smallGap"><dimension>8,8</dimension></param>
 							<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -112,8 +112,8 @@
 
 							<theme name="label-monster-title" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-title</image></param>
-								<param name="border"><border>0,14,2,4</border></param>
-								<param name="minWidth"><int>100</int></param>
+								<param name="border"><border>0,14,2,0</border></param>
+								<param name="minWidth"><int>112</int></param>
 								<param name="font"><font>alphabeta-small</font></param>
 							</theme>
 
