@@ -159,8 +159,8 @@
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-smallest" ref="label-value-smallest">
-			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			<param name="border"><border>6,0,7,0</border></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 			</theme>
 			<theme name="label-title-icon" ref="label-value-icon">
@@ -213,11 +213,17 @@
 			<theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
 				<param name="width"><int>136</int></param>
 			</theme>
-	<theme name="combobox" ref="combobox" allowWildcard="true">
-		<theme name="display" ref="display">
-		</theme>
-		<param name="minWidth"><int>194</int></param>
-		</theme>
+			<theme name="item-slot" ref="item-slot">
+				<param name="background"><image>mail-slot.background</image></param>
+			</theme>
+			<theme name="monster-slot" ref="monster-slot">
+				<param name="background"><image>mail-slot.background</image></param>
+			</theme>
+			<theme name="combobox" ref="combobox" allowWildcard="true">
+				<param name="minWidth"><int>194</int></param>
+				<theme name="display" ref="display">
+				</theme>
+			</theme>
 		</theme>
 		<theme name="search-dialog" ref="dialoglayout">
 			<param name="border"><border>0,0,0,0</border></param>
