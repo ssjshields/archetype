@@ -176,11 +176,14 @@
 				<param name="minHeight"><int>140</int></param>
 				<theme name="hscrollbar" ref="hscrollbar"/>
 				<theme name="editfield" ref="editfield">
-					<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+					<param name="textAlignment"><enum type="alignment">right</enum></param>
 					<param name="autocompletion-height"><int>150</int></param>
 					<param name="minWidth"><int>268</int></param>
 					<param name="minHeight"><int>140</int></param>
-					
+					<theme name="renderer" ref="renderer">
+						<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+						<param name="border"><border>6,0,0,0</border></param>
+					</theme>
 				</theme>
 			</theme>
 			<theme name="editfield" ref="editfield">
