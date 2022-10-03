@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ds_strings_archive archive_type="0" lang="en-a" region_id="2">
-  <!-- battle -->
-		<string block_id="0" entry_id="17" table_id="15">Go get 'em, {01}!</string> <!-- monster deploy normal -->
-		<string block_id="0" entry_id="103" table_id="15">       {00}'s\n{01}</string> <!-- better ability offset -->
-</ds_strings_archive>
