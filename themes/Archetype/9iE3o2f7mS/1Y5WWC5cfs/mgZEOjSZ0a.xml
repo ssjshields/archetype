@@ -534,7 +534,7 @@
 
 	<theme name="base-tabbed-pane" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>none</image></param>
-				<param name="border"><border>5,3,0,8</border></param>
+				<param name="border"><border>5,3,0,0</border></param>
 		<theme name="tabbox" ref="-defaults">
 			<theme name="tabbutton" ref="-defaults">
 				<param name="background"><image>ui-tab.background</image></param>
