@@ -31,17 +31,6 @@
 	<param name="fadeDurationActivate"><int>150</int></param>
 	<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 	<param name="background"><image>Game-Corner-Window</image></param>
-		<param name="titleAreaTop"><int>0</int></param>
-		<param name="titleAreaLeft"><int>0</int></param>
-		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>34</int></param>
-		<theme name="title" ref="-defaults">
-			<param name="border"><border>15,49,2,0</border></param>
-			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
-			<param name="font"><font>title-font</font></param>
-		</theme>
-		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>13</int></param>
 		<param name="border"><border>30,0,0,0</border></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0</border></param>
@@ -65,17 +54,6 @@
 	<theme name="itemshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>Poke-Shop-Window</image></param>
-		<param name="titleAreaTop"><int>0</int></param>
-		<param name="titleAreaLeft"><int>0</int></param>
-		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>34</int></param>
-		<theme name="title" ref="-defaults">
-			<param name="border"><border>15,49,2,0</border></param>
-			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
-			<param name="font"><font>title-font</font></param>
-		</theme>
-		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>13</int></param>
 		<theme name="itemshop-dialoglayout-left" ref="-defaults">
 			<param name="background"><image>none</image></param>
 			<param name="border"><border>10,9,8,5</border></param>
@@ -133,19 +111,13 @@
 	<theme name="gameshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>Gift-Shop-Window</image></param>
-		<param name="titleAreaTop"><int>0</int></param>
-		<param name="titleAreaLeft"><int>0</int></param>
-		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>30</int></param>
-		<theme name="title" ref="-defaults">
-			<param name="border"><border>11,49,2,0</border></param>
-			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
-			<param name="font"><font>title-font</font></param>
-		</theme>
-		<param name="closeButtonX"><int>-26</int></param>
-		<param name="closeButtonY"><int>8</int></param>
 		<param name="minWidth"><int>550</int></param>
 		<param name="minHeight"><int>593</int></param>
+		<param name="border"><border>26,0,3,5</border></param>
+		<param name="closeButtonY"><int>8</int></param>
+		<theme name="title" ref="title">
+			<param name="border"><border>10,49,2,0</border></param>
+		</theme>
 		<theme name="sortby" ref="-defaults">
 			<param name="font"><font>pb-dark</font></param>
 			<param name="border"><border>0,0,3,0</border></param>
@@ -157,7 +129,7 @@
 		</theme>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="tabbedpane" ref="base-tabbed-pane">
-					<param name="border"><border>1,0,0,0</border></param>
+					<param name="border"><border>5,0,0,0</border></param>
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
 						<param name="background"><image>ui-tab.background</image></param>

@@ -11,10 +11,8 @@
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>44</int></param>
-		<theme name="title" ref="-defaults">
+		<theme name="title" ref="title">
 			<param name="border"><border>20,54,2,0</border></param>
-			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
-			<param name="font"><font>title-font</font></param>
 		</theme>
 		<param name="closeButtonX"><int>-23</int></param>
 		<param name="closeButtonY"><int>17</int></param>

@@ -17,7 +17,6 @@
 		</theme>
 		<theme name="title" ref="title">
 			<param name="border"><border>51,23,0,0</border></param>
-			<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
 		</theme>
 		<theme name="editfield" ref="editfield-search" allowWildcard="true">
 			<param name="background"><image>ui-inputbox-bag.background</image></param>
