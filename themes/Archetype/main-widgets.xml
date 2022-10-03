@@ -77,10 +77,10 @@
 					<param name="minWidth"><int>77</int></param>
 					<param name="minHeight"><int>44</int></param>
 				</theme>
-		<theme name="button" ref="button">
-			<param name="overlay"><image>Login-Server-Window-Overlay</image></param>
-			<param name="maxHeight"><int>29</int></param>
-		</theme>
+				<theme name="button" ref="button">
+					<param name="overlay"><image>Login-Server-Overlay</image></param>
+					<param name="maxHeight"><int>29</int></param>
+				</theme>
 			</theme>
 		</theme>
 		<theme name="label" ref="label">

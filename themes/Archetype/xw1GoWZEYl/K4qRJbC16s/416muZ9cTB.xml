@@ -8,13 +8,13 @@
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>34</int></param>
 		<theme name="title" ref="-defaults">
-			<param name="border"><border>19,49,2,0</border></param>
+			<param name="border"><border>15,49,2,0</border></param>
 			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 			<param name="font"><font>title-font</font></param>
 		</theme>
-	<param name="closeButtonY"><int>17</int></param>
+			<param name="closeButtonY"><int>13</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
-			<param name="border"><border>5</border></param>
+			<param name="border"><border>0,5,0,5</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -23,16 +23,16 @@
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<param name="background"><image>none</image></param>
 				<param name="minWidth"><int>450</int></param>
-				<param name="border"><border>5,0,0,0</border></param>
+				<param name="border"><border>6,0,0,0</border></param>
 				<theme name="tabbox" ref="tabbox">
-					<param name="border"><border>0,9,0,0</border></param>
+					<param name="border"><border>0,8,0,0</border></param>
 					<param name="spacing"><int>5</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="container" ref="container">
 					<theme name="dialoglayout" ref="dialoglayout">
 						<param name="background"><image>none</image></param>
-						<param name="border"><border>5,6,10,5</border></param>
+						<param name="border"><border>5,6,7,5</border></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>

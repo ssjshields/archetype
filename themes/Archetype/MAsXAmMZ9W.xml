@@ -2,20 +2,37 @@
 <themes>
 
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
-		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,B3" splity="T3,B3"/>
+		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#4aaae1"/>
 			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#78c2ea"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
-			<area xywh="0,0,7,7" splitx="L3,B3" splity="T3,B3" inset="0,0,0,0"/>
-			<area xywh="0,0,7,7" splitx="L3,B3" splity="T3,B3" inset="0,8,0,0"/>
+			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
+			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
 		</grid>
 		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#4aaae1"/>
 			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#78c2ea"/>
 		</animation>
 	</images>
+
+	<images file="res/custom/Tabbox-Background.png" filter="lineal">
+		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="32"  sizeOverwriteV="32"/>
+	</images>
+
+	<images file="res/custom/Window-Background.png" filter="lineal">
+		<area name="Window-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="32"  sizeOverwriteV="32"/>
+		<composed name="Window-Background-Highlight">
+			<alias ref="Window-Background"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+		<composed name="Tabbed-Window-Background-Highlight">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Tabbox-Background"/>
+		</composed>
+	</images>
+	
 	
 	<images file="res/custom/WGRfhUrISa/text-bubble.png" filter="nearest">
 		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
@@ -1419,81 +1436,72 @@
 		</select>
 
 	</images>
-	
-	<images file="res/custom/UYAXMcaF2k/FAQ-Window.png" filter="lineal">
-		<area name="FAQ-Window-Background" xywh="*"/>
-		<composed name="FAQ-Window">
-			<alias ref="FAQ-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
 
 	<images file="res/custom/613wCZrdxv/bg.png" filter="nearest">
 		<area name="background-image" xywh="*"/>
 	</images>
 	
-	<images file="res/custom/613wCZrdxv/background.png" filter="lineal">
-		<area name="login-background" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/613wCZrdxv/Login-CharSelect-Window.png" filter="lineal">
-		<area name="Login-CharSelect-Window" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/613wCZrdxv/Login-Window.png" filter="lineal">
-		<area name="Login-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Login-Window">
-			<alias ref="Login-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
-	<images file="res/custom/613wCZrdxv/Login-Server-Window.png" filter="lineal">
-		<area name="Login-Server-Window-Background" xywh="*"/>
-		<composed name="Login-Server-Window">
-			<alias ref="Login-Server-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-		<area name="Login-Server-Window-Overlay" xywh="24,34,270,34" inset="-60,-187,55,-6"/>
-	</images>
-
-	<images file="res/custom/613wCZrdxv/Login-CharSelect-Window.png" filter="lineal">
-		<area name="Login-CharSelect-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Login-CharSelect-Window">
-			<alias ref="Login-CharSelect-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
-	<images file="res/custom/613wCZrdxv/Client-Management-Window.png" filter="lineal">
-		<area name="Client-Management-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Client-Management-Window">
-			<alias ref="Client-Management-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
-	<images file="res/custom/613wCZrdxv/Mod-Management-Window.png" filter="lineal">
-		<area name="Mod-Management-Window-Background" xywh="*"/>
-		<composed name="Mod-Management-Window">
-			<alias ref="Mod-Management-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
-	<images file="res/custom/oYY1ozW6Ec/Instance-Window.png" filter="lineal">
-		<area name="Instance-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Instance-Window">
-			<alias ref="Instance-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-
-	<images file="res/custom/k0Z2GYiAoU/Settings-Window.png" filter="lineal">
-		<area name="Settings-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50" sizeOverwriteH="32" sizeOverwriteV="32"/>
+	<images file="res/custom/k0Z2GYiAoU/Settings-Icon.png" filter="lineal">
+		<area name="Settings-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Settings-Window">
-			<alias ref="Settings-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Settings-Icon" inset="10,15,0,0"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/UYAXMcaF2k/FAQ-Icon.png" filter="lineal">
+		<area name="FAQ-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="FAQ-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="FAQ-Icon" inset="10,15,0,0"/>
+		</composed>
+	</images>
+		
+	<images file="res/custom/613wCZrdxv/Login-CharSelect-Icon.png" filter="lineal">
+		<area name="Login-CharSelect-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Login-CharSelect-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Login-CharSelect-Icon" inset="10,15,0,0"/>
+		</composed>
+		<composed name="Social-Window">
+			<alias ref="Login-CharSelect-Window"/>
+			<alias ref="Tabbox-Background"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Login-Icon.png" filter="lineal">
+		<area name="Login-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Login-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Login-Icon" inset="10,15,0,0"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Login-Server-Icon.png" filter="lineal">
+		<area name="Login-Server-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Login-Server-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Login-Server-Icon" inset="10,15,0,0"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/613wCZrdxv/Login-Server-Overlay.png" filter="lineal">
+		<area name="Login-Server-Overlay" xywh="*" inset="-94,-211,-31,-28"/>
+	</images>
+	
+	<images file="res/custom/613wCZrdxv/Mod-Management-Icon.png" filter="lineal">
+		<area name="Mod-Management-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Mod-Management-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Mod-Management-Icon" inset="10,15,0,0"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
+		<area name="Instance-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Instance-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Instance-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
@@ -1509,19 +1517,11 @@
 		</select>
 	</images>
 	
-	<images file="res/custom/WGRfhUrISa/Chat-PM-Window.png" filter="lineal">
-		<area name="Chat-PM-Window-Background" xywh="*"/>
-		<composed name="Chat-PM-Window">
-			<alias ref="Chat-PM-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
-	<images file="res/custom/WGRfhUrISa/Chat-Settings-Window.png" filter="lineal">
-		<area name="Chat-Settings-Window-Background" xywh="*"/>
-		<composed name="Chat-Settings-Window">
-			<alias ref="Chat-Settings-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+	<images file="res/custom/WGRfhUrISa/Chat-Icon.png" filter="lineal">
+		<area name="Chat-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Chat-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Chat-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
@@ -1772,43 +1772,35 @@
 		</select>
 	</images>
 
-	<images file="res/custom/7BGCabK5FN/Social-Window.png" filter="lineal">
-		<area name="Social-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Social-Window">
-			<alias ref="Social-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-
-	<images file="res/custom/CLyo0siyqa/Team-Window.png" filter="lineal">
-		<area name="Team-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/CLyo0siyqa/Team-Icon.png" filter="lineal">
+		<area name="Team-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Team-Window">
-			<alias ref="Team-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="Team-Icon" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/CLyo0siyqa/MM-Signup-Window.png" filter="lineal">
-		<area name="MM-Signup-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/CLyo0siyqa/MM-Signup-Icon.png" filter="lineal">
+		<area name="MM-Signup-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="MM-Signup-Window">
-			<alias ref="MM-Signup-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="MM-Signup-Icon" inset="10,15,0,0"/>
+		</composed>
+		<composed name="Tournament-Window">
+			<alias ref="MM-Signup-Window"/>
+			<alias ref="Tabbox-Background"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/CLyo0siyqa/Tournament-Window.png" filter="lineal">
-		<area name="Tournament-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="Tournament-Window">
-			<alias ref="Tournament-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="6,2,2,2"/>
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Icon.png" filter="lineal">
+		<area name="PokeDex-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Move-Relearner-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="PokeDex-Icon" inset="10,15,0,0"/>
 		</composed>
-	</images>
-
-	<images file="res/custom/d9nZVhUoCU/PokeDex-Window.png" filter="lineal">
-		<area name="PokeDex-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
 		<composed name="PokeDex-Window">
-			<alias ref="PokeDex-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Move-Relearner-Window"/>
+			<alias ref="Tabbox-Background"/>
 		</composed>
 	</images>
 	
@@ -1841,87 +1833,67 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/oxBkYbkgnn/GTL-Window.png" filter="lineal">
-		<area name="GTL-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
-		<composed name="GTL-Window" inset="0,-7,0,0">
-			<alias ref="GTL-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,9,2,2"/>
+	<images file="res/custom/oxBkYbkgnn/GTL-Icon.png" filter="lineal">
+		<area name="GTL-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="GTL-Window">
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="GTL-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
-	
-	<images file="res/custom/oxBkYbkgnn/GTL-Poke-Button.png" filter="lineal">
-		<area name="GTL-Poke-Button" xywh="*"/>
-	</images>
 
-	<images file="res/custom/xKY3dlupNV/Mail-Window.png" filter="lineal">
-		<area name="Mail-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50" sizeOverwriteH="32"/>
+	<images file="res/custom/xKY3dlupNV/Mail-Icon.png" filter="lineal">
+		<area name="Mail-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mail-Window">
-			<alias ref="Mail-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="Mail-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Window.png" filter="lineal">
-		<area name="Gift-Shop-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Icon.png" filter="lineal">
+		<area name="Gift-Shop-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Gift-Shop-Window" inset="-4,0,0,0">
-			<alias ref="Gift-Shop-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="Gift-Shop-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/cs0o8e55UY/Town-Map-Window.png" filter="lineal">
-		<area name="Town-Map-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/cs0o8e55UY/Town-Map-Icon.png" filter="lineal">
+		<area name="Town-Map-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Town-Map-Window">
-			<alias ref="Town-Map-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Town-Map-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/vbJDdMc09s/Poke-Shop-Window.png" filter="lineal">
-		<area name="Poke-Shop-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/vbJDdMc09s/Poke-Shop-Icon.png" filter="lineal">
+		<area name="Poke-Shop-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Poke-Shop-Window">
-			<alias ref="Poke-Shop-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="Poke-Shop-Icon" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/FnTKbfeNe9/Breed-Window.png" filter="lineal">
-		<area name="Breed-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/FnTKbfeNe9/Breed-Icon.png" filter="lineal">
+		<area name="Breed-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Breed-Window">
-			<alias ref="Breed-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Breed-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
-	<images file="res/custom/n2PYj7dBl4/Berry-Plot-Window.png" filter="lineal">
-		<area name="Berry-Plot-Window-Background" xywh="*"/>
-		<composed name="Berry-Plot-Window">
-			<alias ref="Berry-Plot-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-
-	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Window.png" filter="lineal">
-		<area name="Game-Corner-Window-Background" xywh="*" splitx="L50,R50" splity="T100,B50"/>
+	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Icon.png" filter="lineal">
+		<area name="Game-Corner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Game-Corner-Window">
-			<alias ref="Game-Corner-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-
-	<images file="res/custom/Yeug7CU84O/Move-Relearner-Window.png" filter="lineal">
-		<area name="Move-Relearner-Window-Background" xywh="*"/>
-		<composed name="Move-Relearner-Window">
-			<alias ref="Move-Relearner-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Game-Corner-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/Yeug7CU84O/Move-Forget-Window.png" filter="lineal">
-		<area name="Move-Forget-Window-Background" xywh="*"/>
-		<composed name="Move-Forget-Window">
-			<alias ref="Move-Forget-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="10,99,228,66"/>
+	<images file="res/custom/Yeug7CU84O/Move-Forget-Icon.png" filter="lineal">
+		<area name="Move-Forget-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Move-Forget-Window" inset="8,97,226,64">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Move-Forget-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
@@ -1935,6 +1907,13 @@
 		<composed name="Trade-Window">
 			<alias ref="Trade-Window-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+		</composed>
+	</images>
+	<images file="res/custom/t4iajP1aNf/Trade-Icon.png" filter="lineal">
+		<area name="Trade-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
+		<composed name="Trade-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Trade-Icon" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	
