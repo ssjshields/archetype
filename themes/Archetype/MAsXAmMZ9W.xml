@@ -4,48 +4,70 @@
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
-			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#4aaae1"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#78c2ea"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="highlight-color"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="main-color"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
 		</grid>
 		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus">
-			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#4aaae1"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#78c2ea"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="highlight-color"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="main-color"/>
 		</animation>
 	</images>
 
 	<images file="res/custom/Tabbox-Background.png" filter="lineal">
-		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="32"  sizeOverwriteV="32"/>
+		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="sub-color"/>
+		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
+		<area name="Background-Color-Pure" xywh="6,35,2,2" tint="background-color"/>
+		<area name="Sub-Color-Pure" xywh="6,35,2,2" tint="sub-color"/>
+		<area name="Accent-Color-Pure" xywh="6,35,2,2" tint="accent-color"/>
 	</images>
 
-	<images file="res/custom/Window-Background.png" filter="lineal">
-		<area name="Window-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="32"  sizeOverwriteV="32"/>
+	<images file="res/custom/Window-Primary-Background.png" filter="lineal">
+		<area name="Window-Primary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="background-color"/>
+	</images>
+
+	<images file="res/custom/Window-Sub-Background.png" filter="lineal">
+		<area name="Window-Sub-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="sub-color"/>
+	</images>
+
+	<images file="res/custom/Window-Main-Background.png" filter="lineal">
+		<area name="Window-Main-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="main-color"/>
+	</images>
+
+	<images file="res/custom/Shadow-Background.png" filter="lineal">
+		<area name="Shadow-Background" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<composed name="Window-Background-Highlight">
-			<alias ref="Window-Background"/>
+			<alias ref="Shadow-Background"/>
+			<alias ref="Window-Main-Background"/>
+			<alias ref="Window-Primary-Background"/>
+			<alias ref="Window-Sub-Background"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 		<composed name="Tabbed-Window-Background-Highlight">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Tabbox-Background"/>
 		</composed>
+		<composed name="text-bubble.background" inset="8">
+			<alias ref="Shadow-Background"/>
+			<alias ref="Window-Main-Background"/>
+			<alias ref="Background-Color-Pure" inset="5"/>
+		</composed>
 	</images>
 	
 	
-	<images file="res/custom/WGRfhUrISa/text-bubble.png" filter="nearest">
-		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
-		<area name="text-bubble-arrow.background" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32"/>
-		<area name="text-bubble-arrow.background1" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
-		<area name="text-bubble-arrow.background2" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
-		<area name="text-bubble-arrow.background3" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
-		<area name="text-bubble-arrow.background4" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="3,0,-3,0"/>
-		<area name="text-bubble-arrow.background5" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="4,0,-4,0"/>
-		<area name="text-bubble-arrow.background6" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
-		<area name="text-bubble-arrow.background7" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
+	<images file="res/custom/WGRfhUrISa/text-bubble-arrow.png" filter="nearest">
+		<area name="text-bubble-arrow.background1" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
+		<area name="text-bubble-arrow.background2" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
+		<area name="text-bubble-arrow.background3" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
+		<area name="text-bubble-arrow.background4" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="3,0,-3,0"/>
+		<area name="text-bubble-arrow.background5" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="4,0,-4,0"/>
+		<area name="text-bubble-arrow.background6" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
+		<area name="text-bubble-arrow.background7" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
 
-		<animation name="text-bubble-arrow.background" timeSource="enabled">
+		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="font-color">
 			<frame ref="text-bubble-arrow.background1" duration="110"/>
 			<frame ref="text-bubble-arrow.background2" duration="80"/>
 			<frame ref="text-bubble-arrow.background3" duration="40"/>
@@ -62,61 +84,12 @@
 	</images>
 	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="nearest">
 		<area name="white.background" xywh="11,313,1,1"/>
-		<area name="interface.background" xywh="4,10,61,44" splitx="L5,R5" splity="T4,B6" inset="-25"/>
-		<area name="popup-button.default" xywh="109,12,34,22" splitx="L2,R2" splity="T1,B1"/>
-		<area name="popup-button.hover" xywh="109,35,34,22" splitx="L2,R2" splity="T1,B1"/>
 		<area name="input.background" xywh="146,13,45,19" splitx="L5,R5" splity="T5,B5" border="3,0"/>
-		<area name="chat-input.background" xywh="79,91,37,23" splitx="L5,R5" splity="T5,B5" border="3" tint="#C8FFFFFF"/>
-		<area name="ui-red-button.default" xywh="199,11,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-red-button.hover" xywh="199,32,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-blue-button.default" xywh="290,11,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-blue-button.hover" xywh="290,32,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-green-button.default" xywh="378,11,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-green-button.hover" xywh="378,32,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-bg-button.default" xywh="423,12,44,23" splitx="L15,R16" splity="T8,B10" inset="-2,0,-2,0"/>
-		<area name="ui-bg-button.hover" xywh="423,36,44,23" splitx="L15,R16" splity="T8,B10" inset="-2,0,-2,0"/>
-		<area name="ui-bg2-button.default" xywh="426,15,37,17" splitx="L4,R4" splity="T4,B4" inset="0,0,2,5"/>
-		<area name="ui-bg2-button.hover" xywh="426,39,37,17" splitx="L4,R4" splity="T4,B4" inset="0,0,0,5"/>
-		<area name="ui-tab-button.default" xywh="333,9,40,21" splitx="L10,R11" splity="T9,B4" inset="-5,-5,0,-5"/>
-		<area name="ui-tab-button.hover" xywh="333,30,40,21" splitx="L7,R7" splity="T12,B5" inset="-5,-5,0,-5"/>
-		<area name="ui-tab-button.disabled" xywh="333,51,40,21" splitx="L7,R7" splity="T10,B7" inset="-5,-5,0,-5"/>
-		<area name="ui-violet-button.default" xywh="245,11,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-violet-button.hover" xywh="245,32,39,19" splitx="L7,R7" splity="T6,B8"/>
-		<area name="ui-violet-button.pressed" xywh="246,53,37,19" splitx="L6,R6" splity="T6,B8"/>
-		<area name="hud.background" xywh="4,58,33,27" splity="T6,B6" border="8,6,6,6" splitx="L6,R6"/>
 		<area name="popup.background" xywh="4,58,33,27" splity="T4,B4" border="8,5,3,5" splitx="L4,R4"/>
-		<area name="monster-slot-green" xywh="42,59,23,25" tint="#a040c955" sizeOverwriteH="40"/>
-		<area name="monster-slot-orange" xywh="42,59,23,25" tint="#a0f7b529"/>
-		<area name="monster-slot-red" xywh="42,59,23,25" tint="#a0f7635a"/>
-		<area name="monster-slot-purple" xywh="42,59,23,25" tint="#a09781cf"/>
-		<area name="monster-slot-selected" xywh="42,59,23,25" tint="#a0ffffff"/>
-		<area name="game-shop-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="30,0,30,-7"/>
 		<area name="tab-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="25,0,0,-5"/>
 		<area name="tab-area2" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="25,0,0,-7"/>
 		<area name="tab-area3" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="15,0,0,-17"/>
 		<area name="inner-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="0,5,0,0"/>
-		<area name="movetutor-area" xywh="122,92,25,24" splitx="L10,R4" splity="T10,B11" inset="0,5,0,-5"/>
-		<area name="label-area.background" xywh="159,92,24,22" splitx="L3,R3" splity="T3,B3"/>
-		<grid name="xp-monster-frame.background" weightsX="0,1,0" weightsY="1" inset="-1,0,0,0">
-			<area xywh="186,92,22,6"/>
-			<area xywh="210,92,1,6"/>
-			<area xywh="215,92,4,6"/>
-		</grid>
-		<area name="xp-monster-frame.progressImage" xywh="211,92,1,6"/>
-
-		<grid name="progressbar.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="206,100,2,8"/>
-			<area xywh="212,100,1,8"/>
-			<area xywh="215,100,2,8"/>
-		</grid>
-		<area name="progressbar.progressImage" xywh="211,100,1,8" inset="0,2,0,0"/>
-
-		<grid name="progressbar-green.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="206,100,2,8"/>
-			<area xywh="212,100,1,8"/>
-			<area xywh="215,100,2,8"/>
-		</grid>
-		<area name="progressbar-green.progressImage" xywh="209,100,1,8" inset="0,2,0,0"/>
 
 		<area name="monster-frame-nameplate" xywh="224,91,7,34" splitx="L2,R3" inset="0,-5,0,0"/>
 
@@ -143,10 +116,6 @@
 		<area name="trade-slot-normal" xywh="43,121,24,22" splitx="L5,R5" splity="T5,B5" inset="0"/>
 		<area name="trade-slot-shiny" xywh="109,119,28,26" splitx="L8,R8" splity="T8,B8" inset="-2"/>
 		
-		<select name="popup-button.background">
-			<alias ref="popup-button.hover" if="hover | keyboardFocus"/>
-			<alias ref="popup-button.default"/>
-		</select>
 		<grid name="chatframe.background" weightsX="0,0,1,0" weightsY="0,0,1,0" border="0,5,5,5" tint="#FFFFFF">
 			<area xywh="4,54,4,4"/>
 			<area xywh="13,54,2,4" sizeOverwriteH="45"/>
@@ -165,103 +134,16 @@
 			<area xywh="24,78,3,7"/>
 			<area xywh="33,78,4,7"/>
 		</grid>
-		<grid name="chatframe2.background" weightsX="0,0,1,0" weightsY="0,1,0" border="36,5,7,5" tint="#FFFFFF">
-			<area xywh="4,212,11,32"/>
-			<area xywh="18,212,3,32" sizeOverwriteH="40"/>
-			<area xywh="46,212,4,32"/>
-			<area xywh="48,212,12,32"/>
-			<area xywh="4,243,11,2"/>
-			<area xywh="31,243,7,2"/>
-			<area xywh="46,243,5,2"/>
-			<area xywh="49,243,11,2"/>
-			<area xywh="4,246,11,6"/>
-			<area xywh="24,246,9,6"/>
-			<area xywh="31,246,16,6"/>
-			<area xywh="49,246,11,6"/>
-		</grid>
-		<grid name="chatframe-black.background" weightsX="0,0,1,0" weightsY="0,0,1,0" border="0,5,5,5" tint="#FFFFFF">
-			<area xywh="64,212,5,4"/>
-			<area xywh="71,212,3,4" sizeOverwriteH="45"/>
-			<area xywh="83,212,2,4"/>
-			<area xywh="92,212,5,4"/>
-			<area xywh="64,218,5,15"/>
-			<area xywh="71,218,3,15"/>
-			<area xywh="83,218,3,15"/>
-			<area xywh="92,218,5,15"/>
-			<area xywh="64,218,5,15"/>
-			<area xywh="71,218,3,15"/>
-			<area xywh="83,218,3,15"/>
-			<area xywh="92,218,5,15"/>
-			<area xywh="64,232,5,7"/>
-			<area xywh="71,232,3,7"/>
-			<area xywh="83,232,3,7"/>
-			<area xywh="92,232,5,7"/>
-		</grid>
-		<area name="input-black.default" xywh="100,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,2"/>
-		<area name="input-black.inactive" xywh="100,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,2"/>
 		<area name="monster-preview-bg" xywh="167,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,0" />
 
-		<select name="input-black.background">
-			<alias ref="input-black.default" if="selected | keyboardFocus"/>
-			<alias ref="input-black.inactive"/>
-		</select>
-
-		<area name="chat-button.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0"/>
-
-		<area name="chat-button-orange.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#FF9900"/>
-		<area name="chat-button-lightgreen.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#66FF66"/>
-		<area name="chat-button-purple.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#FF99FF"/>
-		<area name="chat-button-teal.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#81ddf1"/>
-		<area name="chat-button-yellow.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#e2c57e"/>
-		<area name="chat-button-brown.active" xywh="134,212,28,12" splitx="L8,R8" splity="T6,B5" inset="0,0" tint="#ff8484"/>
-
-		<area name="chat-button.disabled" xywh="134,226,28,12" splitx="L2,R2" splity="T2,B2" inset="0,0"/>
-		<select name="chat-button.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-
-		<select name="chat-button-orange.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-orange.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-		<select name="chat-button-lightgreen.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-lightgreen.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-		<select name="chat-button-purple.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-purple.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-		<select name="chat-button-teal.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-teal.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-		<select name="chat-button-yellow.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-yellow.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
-		<select name="chat-button-brown.background">
-			<alias ref="chat-button.disabled" if="disabled"/>
-			<alias ref="chat-button-brown.active" if="selected"/>
-			<alias ref="chat-button.disabled"/>
-		</select>
 		<area name="color-picker-default" xywh="5,308,13,11" splitx="L2,R2" splity="T2,B2" inset="1"/>
-		<area name="color-picker-keyboardFocus" xywh="4,307,15,13" splitx="L2,R2" splity="T2,B2" inset="-2"/>
 		<select name="color-picker">
-			<alias ref="color-picker-keyboardFocus" if="keyboardFocus | hover"/>
+			<alias ref="color-picker-default" inset="-2" if="keyboardFocus | hover"/>
 			<alias ref="color-picker-default"/>
 		</select>
-		<area name="close-handle" xywh="0,500,12,12"/>
-		<area name="minimize-handle" xywh="29,500,12,12"/>
+		<area name="close-handle" xywh="0,500,12,12" tint="icon-color"/>
+		<area name="minimize-handle" xywh="29,500,12,12" tint="icon-color"/>
 		<area name="close-handle-blue" xywh="15,503,9,9"/>
-		<area name="combobox-picker.background" xywh="8,504,7,7" inset="-1,0,-1,0" sizeOverwriteH="7" sizeOverwriteV="7"/>
 
 		<area name="console.background" xywh="43,100,1,1" tint="#B0000000"/>
 		<area name="-console.cursor" xywh="5,291,6,1" center="true" inset="14,0,0,0"/>
@@ -270,12 +152,12 @@
 			<frame ref="none" duration="500"/>
 		</animation>
 
-		<area name="-editfield.cursor" xywh="0,496,1,1" tint="sub-color" inset="-1,0,1,0"/>
+		<area name="-editfield.cursor" xywh="0,496,1,1" tint="main-color" inset="-1,0,1,0"/>
 		<animation name="editfield.cursor" timeSource="keyboardFocus">
 			<frame ref="-editfield.cursor" duration="500"/>
 			<frame ref="none" duration="500"/>
 		</animation>
-		<area name="editfield.selection" tint="sub-color" xywh="0,496,1,1"/>
+		<area name="editfield.selection" tint="main-color" xywh="0,496,1,1"/>
 
 		<alias name="-frame.minimizeIcon" ref="minimize-handle" inset="2,3,3,3"/>
 
@@ -356,13 +238,6 @@
 			<area tint="#2a97dc" if="hover" xywh="14,1,7,7"/>
 			<area tint="#2d3b40" xywh="14,1,7,7"/>
 		</select>
-		<area name="monster-frame-tab-empty.default" xywh="94,147,28,30" inset="-10,0,10,0"/>
-		<area name="monster-frame-tab-empty.selected" xywh="94,177,28,30" inset="-10,0,10,0"/>
-
-		<select name="monster-frame-tab-empty.background">
-			<alias ref="monster-frame-tab-empty.selected" if="selected | hover"/>
-			<alias ref="monster-frame-tab-empty.default"/>
-		</select>
 
 		<area name="icon-gm" xywh="4,256,26,13" center="true" inset="0,0,1,0"/>
 		<area name="icon-jgm" xywh="93,256,26,13" center="true" inset="0,0,1,0"/>
@@ -372,10 +247,6 @@
 		<area name="icon-admin" xywh="66,271,30,13" center="true" inset="0,0,1,0"/>
 		<area name="icon-dev" xywh="35,271,29,13" center="true" inset="0,0,1,0"/>
 		<area name="icon-hgm" xywh="4,271,30,13" center="true" inset="0,0,1,0"/>
-
-		<area name="monstergear-pic" xywh="66,308,21,16" center="true" inset="0,0,1,0" splitx="L9,R9" splity="T5,B5"/>
-		<area name="row.background" xywh="23,308,17,15" inset="0,1,2,2" splitx="L5,R5" splity="T5,B5"/>
-		<area name="row-header.background" xywh="45,308,17,15" inset="0,-1,2,-1" splitx="L5,R5" splity="T5,B5"/>
 
 		<area name="inventory-slot.default" xywh="43,288,17,18" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
 		<area name="inventory-slot.selected" xywh="64,286,19,20" inset="0,-1,-1,-1" splitx="L5,R5" splity="T5,B5"/>
@@ -474,21 +345,6 @@
 			<area xywh="8,335,7,7"/>
 			<area xywh="15,335,2,7"/>
 			<area xywh="15,335,4,7"/>
-		</grid>
-
-		<grid name="monstergear-pic.background" weightsX="0,1,1,0" weightsY="0,1,0" tint="#FFFFFFFF">
-			<area xywh="66,308,8,6"/>
-			<area xywh="75,308,2,4"/>
-			<area xywh="75,308,2,4"/>
-			<area xywh="78,308,9,6"/>
-			<area xywh="66,312,8,4" tiled="true"/>
-			<area xywh="75,312,2,4"/>
-			<area xywh="75,312,2,4"/>
-			<area xywh="78,312,9,4" tiled="true"/>
-			<area xywh="66,319,8,6"/>
-			<area xywh="75,319,2,6"/>
-			<area xywh="75,319,2,6"/>
-			<area xywh="78,319,9,6"/>
 		</grid>
 	</images>
 
@@ -1442,7 +1298,7 @@
 	</images>
 	
 	<images file="res/custom/k0Z2GYiAoU/Settings-Icon.png" filter="lineal">
-		<area name="Settings-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Settings-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Settings-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Settings-Icon" inset="10,15,0,0"/>
@@ -1450,7 +1306,7 @@
 	</images>
 
 	<images file="res/custom/UYAXMcaF2k/FAQ-Icon.png" filter="lineal">
-		<area name="FAQ-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="FAQ-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="FAQ-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="FAQ-Icon" inset="10,15,0,0"/>
@@ -1458,7 +1314,7 @@
 	</images>
 		
 	<images file="res/custom/613wCZrdxv/Login-CharSelect-Icon.png" filter="lineal">
-		<area name="Login-CharSelect-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-CharSelect-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-CharSelect-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Login-CharSelect-Icon" inset="10,15,0,0"/>
@@ -1470,7 +1326,7 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Icon.png" filter="lineal">
-		<area name="Login-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Login-Icon" inset="10,15,0,0"/>
@@ -1478,7 +1334,7 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Server-Icon.png" filter="lineal">
-		<area name="Login-Server-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-Server-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-Server-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Login-Server-Icon" inset="10,15,0,0"/>
@@ -1490,7 +1346,7 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Mod-Management-Icon.png" filter="lineal">
-		<area name="Mod-Management-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Mod-Management-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mod-Management-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Mod-Management-Icon" inset="10,15,0,0"/>
@@ -1498,7 +1354,7 @@
 	</images>
 	
 	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
-		<area name="Instance-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Instance-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Instance-Icon" inset="10,15,0,0"/>
@@ -1518,7 +1374,7 @@
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Icon.png" filter="lineal">
-		<area name="Chat-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Chat-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Chat-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Chat-Icon" inset="10,15,0,0"/>
@@ -1709,7 +1565,7 @@
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
-		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
+		<area name="Search-Icon" xywh="*" tint="icon-color" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
 		<composed name="Search-Icon-Bag">
 			<alias ref="Search-Icon" inset="0,12,0,-12"/>
 		</composed>
@@ -1719,18 +1575,29 @@
 	</images>
 
 	
+	<images file="res/custom/D7wRvcSChn/Bag-HUD-Buttons.png" filter="lineal">
+		<area name="Bag-HUD-Buttons" xywh="*" splity="T35,B0"/>
+	</images>
+
+	<images file="res/custom/D7wRvcSChn/Bag-HUD-Icons.png" filter="lineal">
+		<area name="Bag-HUD-Icons" xywh="*" tint="icon-color" splity="T35,B0"/>
+		<composed name="Bag-HUD-Overlay">
+			<alias ref="Bag-HUD-Buttons"/>
+			<alias ref="Bag-HUD-Icons"/>
+		</composed>
+	</images>
+
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
 		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-1,0" splity="T100,B50"/>
 		<composed name="Bag-HUD">
 			<alias ref="Bag-HUD-Background"/>
+			<alias ref="Sub-Color-Pure" inset="5,7,371,5"/>
+			<alias ref="Sub-Color-Pure" inset="406,7,4,5"/>
+			<alias ref="Bag-HUD-Overlay" tint="#c6c6c6" inset="10"/>
 			<alias ref="Highlight-Overlay" inset="2,4,1,2"/>
 		</composed>
 	</images>
 	
-	<images file="res/custom/D7wRvcSChn/Bag-HUD-Overlay.png" filter="lineal">
-		<area name="Bag-HUD-Overlay" xywh="*"/>
-	</images>
-
 	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Default.png" filter="nearest">
 		<area name="Bag-Close-Button-Default" xywh="*"/>
 	</images>
@@ -1746,14 +1613,14 @@
 	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
 		<area name="Bag-Tab-New.default" xywh="*"/>
 		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="#218dd5"/>
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="#1d5d88"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="main-color"/>
+			<frame duration="1500" ref="Bag-Tab-New.default" tint="accent-color"/>
 		</animation>
 		<select name="Bag-Tab-New.background">
-			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="hover"/>
+			<alias ref="Bag-Tab-New.default" tint="main-color" if="hover"/>
 			<alias ref="Bag-Tab-New.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="Bag-Tab-New.default" tint="#218dd5" if="selected"/>
-			<alias ref="Bag-Tab-New.default" tint="#263238"/>
+			<alias ref="Bag-Tab-New.default" tint="main-color" if="selected"/>
+			<alias ref="Bag-Tab-New.default" tint="sub-color"/>
 		</select>
 	</images>
 	
@@ -1773,7 +1640,7 @@
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/Team-Icon.png" filter="lineal">
-		<area name="Team-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Team-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Team-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Team-Icon" inset="6,11,0,0"/>
@@ -1781,7 +1648,7 @@
 	</images>
 	
 	<images file="res/custom/CLyo0siyqa/MM-Signup-Icon.png" filter="lineal">
-		<area name="MM-Signup-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="MM-Signup-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="MM-Signup-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="MM-Signup-Icon" inset="10,15,0,0"/>
@@ -1793,7 +1660,7 @@
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Icon.png" filter="lineal">
-		<area name="PokeDex-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="PokeDex-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Move-Relearner-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="PokeDex-Icon" inset="10,15,0,0"/>
@@ -1834,7 +1701,7 @@
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Icon.png" filter="lineal">
-		<area name="GTL-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="GTL-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="GTL-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="GTL-Icon" inset="10,15,0,0"/>
@@ -1842,7 +1709,7 @@
 	</images>
 
 	<images file="res/custom/xKY3dlupNV/Mail-Icon.png" filter="lineal">
-		<area name="Mail-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Mail-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mail-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Mail-Icon" inset="10,15,0,0"/>
@@ -1850,7 +1717,7 @@
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Icon.png" filter="lineal">
-		<area name="Gift-Shop-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Gift-Shop-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Gift-Shop-Window" inset="-4,0,0,0">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Gift-Shop-Icon" inset="10,15,0,0"/>
@@ -1858,7 +1725,7 @@
 	</images>
 	
 	<images file="res/custom/cs0o8e55UY/Town-Map-Icon.png" filter="lineal">
-		<area name="Town-Map-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Town-Map-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Town-Map-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Town-Map-Icon" inset="10,15,0,0"/>
@@ -1866,7 +1733,7 @@
 	</images>
 	
 	<images file="res/custom/vbJDdMc09s/Poke-Shop-Icon.png" filter="lineal">
-		<area name="Poke-Shop-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Poke-Shop-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Poke-Shop-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Poke-Shop-Icon" inset="6,11,0,0"/>
@@ -1874,7 +1741,7 @@
 	</images>
 	
 	<images file="res/custom/FnTKbfeNe9/Breed-Icon.png" filter="lineal">
-		<area name="Breed-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Breed-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Breed-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Breed-Icon" inset="10,15,0,0"/>
@@ -1882,7 +1749,7 @@
 	</images>
 
 	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Icon.png" filter="lineal">
-		<area name="Game-Corner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Game-Corner-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Game-Corner-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Game-Corner-Icon" inset="10,15,0,0"/>
@@ -1890,7 +1757,7 @@
 	</images>
 	
 	<images file="res/custom/Yeug7CU84O/Move-Forget-Icon.png" filter="lineal">
-		<area name="Move-Forget-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Move-Forget-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Move-Forget-Window" inset="8,97,226,64">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Move-Forget-Icon" inset="10,15,0,0"/>
@@ -1910,7 +1777,7 @@
 		</composed>
 	</images>
 	<images file="res/custom/t4iajP1aNf/Trade-Icon.png" filter="lineal">
-		<area name="Trade-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Trade-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Trade-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Trade-Icon" inset="6,11,0,0"/>

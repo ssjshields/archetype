@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<constantDef name="main-theme-color"><color>#6a889b</color></constantDef>
-	<constantDef name="main-color"><color>#5db1ff</color></constantDef>
-	<constantDef name="sub-color"><color>#5db1ff</color></constantDef>
-	<constantDef name="tooltip-tint"><color>#FF565D63</color></constantDef>
+	<constantDef name="main-color"><color>#2eb2f8</color></constantDef>
+	<constantDef name="background-color"><color>#1c2328</color></constantDef>
+	<constantDef name="sub-color"><color>#263238</color></constantDef>
+	<constantDef name="accent-color"><color>#2d3b40</color></constantDef>
+	<constantDef name="icon-color"><color>#ffffff</color></constantDef>
+	<constantDef name="highlight-color"><color>#66ffffff</color></constantDef>
+	<constantDef name="font-color"><color>#ffffff</color></constantDef>
 	<include filename="fonts.xml"/>
 	<fontGen/>
 	<include filename="CI0qVFbRMm.xml"/>
