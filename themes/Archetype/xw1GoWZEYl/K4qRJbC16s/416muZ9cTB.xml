@@ -207,7 +207,7 @@
 		</theme>
 	</theme>
 
-	<theme name="matchmakingframe" ref="base-frame">
+	<theme name="matchmakingframe" ref="new-base-frame">
 		<param name="background"><image>MM-Signup-Window</image></param>
 		<param name="border"><border>20,18,6,6</border></param>
 		<param name="minWidth"><int>705</int></param>
@@ -819,7 +819,7 @@
 		</theme>
 	</theme>
 
-	<theme name="mm-rental-window" ref="base-frame">
+	<theme name="mm-rental-window" ref="new-base-frame">
 		<theme name="dialoglayout" ref="-defaults">
 			<theme name="pc-slot" ref="-defaults">
 				<param name="background"><image>inventory-slot</image></param>

@@ -23,7 +23,7 @@
 		</theme>
 	</theme>
 
-	<theme name="breed-window" ref="base-frame">
+	<theme name="breed-window" ref="new-base-frame">
 		<param name="background"><image>Breed-Window</image></param>
 		<param name="minWidth"><int>640</int></param>
 		<param name="minHeight"><int>561</int></param>
@@ -121,7 +121,7 @@
 		</theme>
 	</theme>
 
-	<theme name="seed-plant-dialog" ref="base-frame">
+	<theme name="seed-plant-dialog" ref="new-base-frame">
 		<param name="titleAreaTop"><int>0	</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
@@ -150,7 +150,7 @@
         </theme>
     </theme>
 
-	<theme name="high-score-window" ref="base-frame">
+	<theme name="high-score-window" ref="new-base-frame">
 		<param name="minWidth"><int>770</int></param>
 		<param name="minHeight"><int>400</int></param>
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">
@@ -195,7 +195,7 @@
 				</theme>
 		</theme>
 	</theme>
-    <theme name="scoreboard-window" ref="base-frame">
+    <theme name="scoreboard-window" ref="new-base-frame">
         <param name="minWidth"><int>400</int></param>
         <param name="minHeight"><int>320</int></param>
         <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
@@ -236,7 +236,7 @@
             </theme>
         </theme>
     </theme>
-    <theme name="donation-link-dialog" ref="base-frame">
+    <theme name="donation-link-dialog" ref="new-base-frame">
 		<param name="minWidth"><int>350</int></param>
 		<param name="minHeight"><int>150</int></param>
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">

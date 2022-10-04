@@ -5,7 +5,7 @@
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="highlight-color"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="main-color"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#00000000"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
@@ -13,20 +13,20 @@
 		</grid>
 		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="highlight-color"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="main-color"/>
+			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#00000000"/>
 		</animation>
 	</images>
 
 	<images file="res/custom/Tabbox-Background.png" filter="lineal">
 		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="sub-color"/>
 		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
-		<area name="Background-Color-Pure" xywh="6,35,2,2" tint="background-color"/>
+		<area name="Secondary-Color-Pure" xywh="6,35,2,2" tint="secondary-color"/>
 		<area name="Sub-Color-Pure" xywh="6,35,2,2" tint="sub-color"/>
 		<area name="Accent-Color-Pure" xywh="6,35,2,2" tint="accent-color"/>
 	</images>
 
 	<images file="res/custom/Window-Primary-Background.png" filter="lineal">
-		<area name="Window-Primary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="background-color"/>
+		<area name="Window-Primary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="secondary-color"/>
 	</images>
 
 	<images file="res/custom/Window-Sub-Background.png" filter="lineal">
@@ -34,7 +34,7 @@
 	</images>
 
 	<images file="res/custom/Window-Main-Background.png" filter="lineal">
-		<area name="Window-Main-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="main-color"/>
+		<area name="Window-Main-Background" xywh="*" splitx="L10,R10" splity="T10,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="main-color"/>
 	</images>
 
 	<images file="res/custom/Shadow-Background.png" filter="lineal">
@@ -53,7 +53,7 @@
 		<composed name="text-bubble.background" inset="8">
 			<alias ref="Shadow-Background"/>
 			<alias ref="Window-Main-Background"/>
-			<alias ref="Background-Color-Pure" inset="5"/>
+			<alias ref="Secondary-Color-Pure" inset="7"/>
 		</composed>
 	</images>
 	
@@ -67,7 +67,7 @@
 		<area name="text-bubble-arrow.background6" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
 		<area name="text-bubble-arrow.background7" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
 
-		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="font-color">
+		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="font-main-color">
 			<frame ref="text-bubble-arrow.background1" duration="110"/>
 			<frame ref="text-bubble-arrow.background2" duration="80"/>
 			<frame ref="text-bubble-arrow.background3" duration="40"/>
@@ -171,46 +171,10 @@
 			<alias ref="-frame.minimizeIcon"/>
 		</select>
 
-		<select name="vscrollbar.upbutton.background" center="true">
-			<area tint="#2a97dc" if="pressed" xywh="5,1,7,7"/>
-			<area tint="#2a97dc" if="hover" xywh="5,1,7,7"/>
-			<area tint="#2d3b40" xywh="5,1,7,7"/>
-		</select>
-		<select name="vscrollbar.downbutton.background" center="true">
-			<area tint="#2a97dc" if="pressed" xywh="14,1,7,7"/>
-			<area tint="#2a97dc" if="hover" xywh="14,1,7,7"/>
-			<area tint="#2d3b40" xywh="14,1,7,7"/>
-		</select>
-		<select name="vscrollbar.thumb.background">
-			<area splity="T2,T5" tint="#2a97dc" if="pressed" xywh="22,1,7,7"/>
-			<area splity="T3,T4" tint="#2a97dc" if="hover" xywh="22,1,7,7"/>
-			<area splity="T3,T6" tint="#2d3b40" xywh="22,1,7,7"/>
-		</select>
-		<select name="vscrollbar-transparent.thumb.background">
-			<area splity="T2,T5" tint="#53737373" if="pressed" xywh="22,1,7,7"/>
-			<area splity="T3,T4" tint="#53999999" if="hover" xywh="22,1,7,7"/>
-			<area splity="T3,T6" tint="#53FFFFFF" xywh="22,1,7,7"/>
-		</select>
 		<select name="vscrollbar-white.thumb.background">
-			<area splity="T2,T5" tint="#2a97dc" if="pressed" xywh="22,1,7,7"/>
-			<area splity="T3,T4" tint="#2a97dc" if="hover" xywh="22,1,7,7"/>
-			<area splity="T3,T6" tint="#2d3b40" xywh="22,1,7,7"/>
-		</select>
-
-		<select name="hscrollbar.thumb.background">
-			<area tint="#2a97dc" if="pressed" xywh="5,28,7,7" splitx="L2,R2"/>
-			<area tint="#2a97dc" if="hover" xywh="5,28,7,7" splitx="L2,R2"/>
-			<area tint="#2d3b40" xywh="5,28,7,7" splitx="L2,R2"/>
-		</select>
-		<select name="hscrollbar.leftbutton.background" center="true">
-			<area tint="#2a97dc" if="pressed" xywh="5,20,7,7"/>
-			<area tint="#2a97dc" if="hover" xywh="5,20,7,7"/>
-			<area tint="#2d3b40" xywh="5,20,7,7"/>
-		</select>
-		<select name="hscrollbar.rightbutton.background" center="true">
-			<area tint="#2a97dc" if="pressed" xywh="5,11,7,7"/>
-			<area tint="#2a97dc" if="hover" xywh="5,11,7,7"/>
-			<area tint="#2d3b40" xywh="5,11,7,7"/>
+			<area splity="T2,T5" tint="main-color" if="pressed" xywh="22,1,7,7"/>
+			<area splity="T3,T4" tint="main-color" if="hover" xywh="22,1,7,7"/>
+			<area splity="T3,T6" tint="sub-color" xywh="22,1,7,7"/>
 		</select>
 
 		<select name="hscrollbar-white.thumb.background">
@@ -1589,12 +1553,14 @@
 
 	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
 		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-1,0" splity="T100,B50"/>
-		<composed name="Bag-HUD">
-			<alias ref="Bag-HUD-Background"/>
-			<alias ref="Sub-Color-Pure" inset="5,7,371,5"/>
-			<alias ref="Sub-Color-Pure" inset="406,7,4,5"/>
-			<alias ref="Bag-HUD-Overlay" tint="#c6c6c6" inset="10"/>
-			<alias ref="Highlight-Overlay" inset="2,4,1,2"/>
+		<composed name="Bag-HUD" inset="0,2,-1,0">
+			<alias ref="Shadow-Background"/>
+			<alias ref="Window-Main-Background"/>
+			<alias ref="Secondary-Color-Pure" inset="5"/>
+			<alias ref="Sub-Color-Pure" inset="5,5,372,5"/>
+			<alias ref="Sub-Color-Pure" inset="406,5,5,5"/>
+			<alias ref="Bag-HUD-Overlay" tint="#c6c6c6" inset="10,8,10,10"/>
+			<alias ref="Highlight-Overlay" inset="2,3,2,2"/>
 		</composed>
 	</images>
 	

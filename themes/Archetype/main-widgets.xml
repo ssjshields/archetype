@@ -32,7 +32,7 @@
 		<theme name="logo" ref="-defaults">
 			<param name="background"><image>background-image</image></param>
 		</theme>
-		<theme name="login-window" ref="base-frame" allowWildcard="true">
+		<theme name="login-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Window</image></param>
 			<param name="minWidth"><int>316</int></param>
 			<param name="minHeight"><int>154</int></param>
@@ -44,7 +44,7 @@
 				<param name="border"><border>43,15,14,14</border></param>
 			</theme>
 		</theme>
-		<theme name="serverselect-window" ref="base-frame" allowWildcard="true">
+		<theme name="serverselect-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Server-Window</image></param>
 			<param name="border"><border>0,0</border></param>
 			<param name="minWidth"><int>316</int></param>
@@ -73,7 +73,7 @@
 			<param name="background"><image>label2.background</image></param>
 			<param name="border"><border>5</border></param>
 		</theme>
-		<theme name="login-panel" ref="base-frame" allowWildcard="true">
+		<theme name="login-panel" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>label1.background</image></param>
 			<param name="border"><border>20</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -130,7 +130,7 @@
 
 	<theme name="characterselectgui" ref="logingui">
         <param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
-        <theme name="login-panel" ref="base-frame" allowWildcard="true">
+        <theme name="login-panel" ref="new-base-frame" allowWildcard="true">
  			<param name="background"><image>Login-CharSelect-Window</image></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
@@ -871,7 +871,7 @@
 		</theme>
 	</theme>
 
-	<theme name="faq-frame" ref="base-frame">
+	<theme name="faq-frame" ref="new-base-frame">
 	<param name="background"><image>FAQ-Window</image></param>
 		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>44</int></param>
@@ -1016,7 +1016,7 @@
 		</theme>
 	</theme>
 
-	<theme name="petitionframe" ref="base-frame">
+	<theme name="petitionframe" ref="new-base-frame">
 		<param name="minWidth"><int>500</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="border"><border>45,15,15,15</border></param>
@@ -1080,7 +1080,7 @@
 		</theme>
 	</theme>
 
-	<theme name="shared-minimized" ref="base-frame">
+	<theme name="shared-minimized" ref="new-base-frame">
 		<param name="minWidth"><int>40</int></param>
 		<param name="maxWidth"><int>40</int></param>
 		<param name="background"><image>none</image></param>
@@ -1170,7 +1170,7 @@
 	</theme>
 
 
-	<theme name="word-ping-window" ref="base-frame">
+	<theme name="word-ping-window" ref="new-base-frame">
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>none</image></param>
 			<param name="border"><border>40,8,5,8</border></param>

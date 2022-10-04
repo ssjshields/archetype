@@ -170,7 +170,7 @@
 		<param name="minHeight"><int>24</int></param>
 	</theme>
 
-	<theme name="chat-tab-settings" ref="base-frame">
+	<theme name="chat-tab-settings" ref="new-base-frame">
 		<param name="background"><image>Chat-Window</image></param>
 		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>44</int></param>
@@ -286,7 +286,7 @@
 		<param name="font"><font>pb-dark-highlight-button</font></param>
 	</theme>
 
-	<theme name="pm-box-frame" ref="base-frame">
+	<theme name="pm-box-frame" ref="new-base-frame">
 	<param name="background"><image>Chat-Window</image></param>
 	<param name="titleAreaTop"><int>8</int></param>
 	<param name="titleAreaLeft"><int>44</int></param>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<theme name="instance-window" ref="base-frame">
+	<theme name="instance-window" ref="new-base-frame">
 		<param name="background"><image>Instance-Window</image></param>
 		<param name="border"><border>0,0,8,8</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">

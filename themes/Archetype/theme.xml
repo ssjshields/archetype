@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<constantDef name="main-color"><color>#2eb2f8</color></constantDef>
-	<constantDef name="background-color"><color>#1c2328</color></constantDef>
-	<constantDef name="sub-color"><color>#263238</color></constantDef>
-	<constantDef name="accent-color"><color>#2d3b40</color></constantDef>
-	<constantDef name="icon-color"><color>#ffffff</color></constantDef>
-	<constantDef name="highlight-color"><color>#66ffffff</color></constantDef>
-	<constantDef name="font-color"><color>#ffffff</color></constantDef>
+
+<!--default: 2eb2f8--><constantDef name="main-color"><color>#2eb2f8</color></constantDef>
+
+<!--default: 1c2328--><constantDef name="secondary-color"><color>#1c2328</color></constantDef>
+
+<!--default: 263238--><constantDef name="sub-color"><color>#263238</color></constantDef>
+
+<!--default: 2d3b40--><constantDef name="accent-color"><color>#2d3b40</color></constantDef>
+
+
+
+<!--default: ffffff--><constantDef name="icon-color"><color>#ffffff</color></constantDef>
+
+<!--default: 36ffffff--><constantDef name="highlight-color"><color>#36ffffff</color></constantDef>
+
+
+
+<!--default: ffffff--><constantDef name="font-main-color"><color>#ffffff</color></constantDef>
+
+<!--default: 7f9096--><constantDef name="font-secondary-color"><color>#7f9096</color></constantDef>
+
+<!--default: acb7b9--><constantDef name="font-tertiary-color"><color>#acb7b9</color></constantDef>
+
+<!--default: 637073--><constantDef name="font-disabled-color"><color>#637073</color></constantDef>
+
+
+
+<!--default: cb4e03--><constantDef name="reshiram-color"><color>#cb4e03</color></constantDef>
+
+<!--default: 00a5c9--><constantDef name="zekrom-color"><color>#00a5c9</color></constantDef>
+
+
+
+<!--default: 82e026--><constantDef name="hp-high-color"><color>#82e026</color></constantDef>
+
+<!--default: --><constantDef name="hp-mid-color"><color>#00a5c9</color></constantDef>
+
+<!--default: --><constantDef name="hp-low-color"><color>#cb4e03</color></constantDef>
+
+<!--default: --><constantDef name="xp-color"><color>#00a5c9</color></constantDef>
+
+<!--default: --><constantDef name="friendship-color"><color>#00a5c9</color></constantDef>
+
+
+
 	<include filename="fonts.xml"/>
 	<fontGen/>
 	<include filename="CI0qVFbRMm.xml"/>

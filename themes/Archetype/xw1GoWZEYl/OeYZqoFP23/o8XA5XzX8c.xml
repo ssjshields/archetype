@@ -112,7 +112,7 @@
 		</theme>
 	</theme>
 
-	<theme name="wardrobe" ref="base-frame">
+	<theme name="wardrobe" ref="new-base-frame">
 		<param name="border"><border>35,10,3,5</border></param>
 		<param name="minWidth"><int>745</int></param>
 		<param name="minHeight"><int>300</int></param>

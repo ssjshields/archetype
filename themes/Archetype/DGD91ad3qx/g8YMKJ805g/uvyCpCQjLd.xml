@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<theme name="trade-frame" ref="base-frame">
+	<theme name="trade-frame" ref="new-base-frame">
 	<param name="background"><image>Trade-Window</image></param>
 		<param name="titleAreaTop"><int>6</int></param>
 		<param name="titleAreaLeft"><int>43</int></param>

@@ -452,8 +452,6 @@
 	</theme>
 
 	<theme name="tabbedframe" ref="resizableframe">
-		<param name="fadeDurationShow"><int>200</int></param>
-		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>5</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -582,13 +580,8 @@
 		</inputMapDef></param>
 	</theme>
 
-	<theme name="base-frame" ref="resizableframe" allowWildcard="true">
+	<theme name="new-base-frame" ref="resizableframe" allowWildcard="true">
         <param name="background"><image>ui-frame.background</image></param>
-        <param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
-        <param name="fadeDurationActivate"><int>200</int></param>
-        <param name="fadeDurationDeactivate"><int>200</int></param>
-        <param name="fadeDurationShow"><int>200</int></param>
-        <param name="fadeDurationHide"><int>200</int></param>
         <param name="border"><border>2</border></param>
         <theme name="dialoglayout" ref="-defaults">
             <param name="border"><border>40,0,0,0</border></param>
@@ -600,17 +593,20 @@
         </theme>
     </theme>
 
-	<theme name="base-frame-padded" ref="base-frame">
+	<theme name="base-frame" ref="new-base-frame" allowWildcard="true">
+		<param name="closeButtonX"><int>-22</int></param>
+		<param name="closeButtonY"><int>17</int></param>
+		<theme name="title" ref="title">
+			<param name="border"><border>19,12,2,0</border></param>
+		</theme>
+	</theme>
+
+	<theme name="base-frame-padded" ref="new-base-frame">
 		<param name="border"><border>36,0,0,0</border></param>
 	</theme>
 
 	<theme name="base-tabbed-frame" ref="resizableframe" allowWildcard="true">
-		<param name="background"><image>ui-frame-red.background</image></param>
-		<param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
-		<param name="fadeDurationActivate"><int>200</int></param>
-		<param name="fadeDurationDeactivate"><int>200</int></param>
-		<param name="fadeDurationShow"><int>200</int></param>
-		<param name="fadeDurationHide"><int>200</int></param>
+		<param name="background"><image>ui-frame.background</image></param>
 		<param name="border"><border>30,0,3,5</border></param>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="background"><image>none</image></param>
@@ -624,13 +620,10 @@
 	</theme>
 	
 	<theme name="base-tabbed-frame-customization" ref="resizableframe" allowWildcard="true">
-		<param name="background"><image>ui-frame-green.background</image></param>
-		<param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
-		<param name="fadeDurationActivate"><int>200</int></param>
-		<param name="fadeDurationDeactivate"><int>200</int></param>
-		<param name="fadeDurationShow"><int>200</int></param>
-		<param name="fadeDurationHide"><int>200</int></param>
-		<param name="border"><border>30,0,3,5</border></param>
+		<param name="background"><image>Settings-Window</image></param>
+		<theme name="title" ref="title">
+			<param name="border"><border>4,37,2,0</border></param>
+		</theme>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="background"><image>none</image></param>
 			<param name="border"><border>0,0,0,0</border></param>

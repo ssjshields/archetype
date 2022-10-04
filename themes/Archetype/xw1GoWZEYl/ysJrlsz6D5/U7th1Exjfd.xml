@@ -10,7 +10,7 @@
 		<param name="namedGaps"><map/></param>
 	</theme>
 	
-	<theme name="settings-panel" ref="base-frame" allowWildcard="true">
+	<theme name="settings-panel" ref="new-base-frame" allowWildcard="true">
         <param name="background"><image>Settings-Window</image></param>
 	    <!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
         <theme name="dialoglayout" ref="dialoglayout">
@@ -182,7 +182,7 @@
 		</theme>
 	</theme>
 
-	<theme name="mods-panel" ref="base-frame" allowWildcard="true">
+	<theme name="mods-panel" ref="new-base-frame" allowWildcard="true">
 		<param name="background"><image>Mod-Management-Window</image></param>
 			<param name="titleAreaTop"><int>8</int></param>
 			<param name="titleAreaLeft"><int>44</int></param>
@@ -220,7 +220,7 @@
 		</theme>
 	</theme>
 
-	<theme name="rom-panel" ref="base-frame" allowWildcard="true">
+	<theme name="rom-panel" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Mod-Management-Window</image></param>
 			<param name="titleAreaTop"><int>8</int></param>
 			<param name="titleAreaLeft"><int>44</int></param>

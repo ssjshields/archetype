@@ -74,7 +74,7 @@
 		</theme>
 	</theme>
 
-	<theme name="adminframe-nontab" ref="base-frame">
+	<theme name="adminframe-nontab" ref="new-base-frame">
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="border"><border>40,5,10,10</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>

@@ -216,20 +216,20 @@
 	</images>
 
 	<images file="res/custom/613wCZrdxv/background-overlay1.png" filter="lineal">
-		<area name="login-background-overlay1" xywh="*"/>
+		<area name="login-background-overlay1" xywh="*" tint="zekrom-color"/>
 		<animation name="login-background-overlay-blue" timeSource="enabled">
-			<frame ref="login-background-overlay1" tint="#144c69" duration="3000"/>
-			<frame ref="login-background-overlay1" tint="#00a5c9" duration="3000"/>
+			<frame ref="login-background-overlay1" duration="3000"/>
+			<frame ref="login-background-overlay1" tint="#50ffffff" duration="3000"/>
 		</animation>
 	</images>
 
 
 
 	<images file="res/custom/613wCZrdxv/background-overlay2.png" filter="lineal">
-		<area name="login-background-overlay2" xywh="*"/>
+		<area name="login-background-overlay2" xywh="*" tint="reshiram-color"/>
 		<animation name="login-background-overlay-red" timeSource="enabled">
-			<frame ref="login-background-overlay2" tint="#54301f" duration="3000"/>
-			<frame ref="login-background-overlay2" tint="#cb4e03" duration="3000"/>
+			<frame ref="login-background-overlay2" duration="3000"/>
+			<frame ref="login-background-overlay2" tint="#50ffffff" duration="3000"/>
 		</animation>
 	</images>
 
