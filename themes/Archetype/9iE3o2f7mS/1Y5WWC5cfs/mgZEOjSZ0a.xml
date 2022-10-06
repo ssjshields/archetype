@@ -130,7 +130,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	
-	<theme name="rbattle-fight" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-fight" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
 		<param name="font2"><font>symbols-white</font></param>
 		<param name="border"><border>0,0,1,0</border></param>
@@ -140,7 +140,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	
-	<theme name="rbattle-bag" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-bag" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
 		<param name="font2"><font>symbols-white</font></param>
 		<param name="border"><border>0,0,1,0</border></param>
@@ -150,7 +150,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	
-	<theme name="rbattle-pokemon" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-pokemon" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
 		<param name="font2"><font>symbols-white</font></param>
 		<param name="border"><border>0,0,1,0</border></param>
@@ -160,7 +160,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
-	<theme name="rbattle-rotate" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-rotate" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
 		<param name="font2"><font>symbols-white</font></param>
 		<param name="border"><border>0,0,1,0</border></param>
@@ -170,7 +170,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	
-	<theme name="rbattle-run" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-run" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>battle-label-highlight-new</font></param>
 		<param name="font2"><font>symbols-white</font></param>
 		<param name="border"><border>0,0,1,0</border></param>
@@ -180,7 +180,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 	
-	<theme name="rbattle-ball" ref="-defaults" allowWildcard="true">
+	<theme name="rbattle-ball" ref="rbattle" allowWildcard="true">
 		<param name="font"><font>symbols-white</font></param>
 		<param name="font2"><font>battle-label-highlight-new</font></param>
 		<param name="border"><border>0,0,18,0</border></param>
@@ -207,7 +207,7 @@
 	<theme name="editfield" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-inputbox.background</image></param>
 		<param name="font"><font>pb-dark-highlight-button</font></param>
-				<param name="minHeight"><int>29</int></param>
+		<param name="minHeight"><int>29</int></param>
 		<param name="border"><border>5,5,5,5</border></param>
 		<param name="passwordChar"><int>35</int></param>
 		<param name="maxWidth"><int>32767</int></param>
@@ -532,7 +532,7 @@
 
 	<theme name="base-tabbed-pane" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>none</image></param>
-				<param name="border"><border>5,3,0,0</border></param>
+		<param name="border"><border>5,3,0,0</border></param>
 		<theme name="tabbox" ref="-defaults">
 			<theme name="tabbutton" ref="-defaults">
 				<param name="background"><image>ui-tab.background</image></param>
@@ -594,12 +594,39 @@
     </theme>
 
 	<theme name="base-frame" ref="new-base-frame" allowWildcard="true">
+        <param name="background"><image>gc.background</image></param>
 		<param name="closeButtonX"><int>-22</int></param>
 		<param name="closeButtonY"><int>17</int></param>
 		<theme name="title" ref="title">
 			<param name="border"><border>19,12,2,0</border></param>
 		</theme>
 	</theme>
+
+	<theme name="base-frame-vertical-tabs" ref="resizableframe" allowWildcard="true">
+        <param name="background"><image>ui-frame.background</image></param>
+        <param name="border"><border>0</border></param>
+        <theme name="dialoglayout" ref="dialoglayout">
+			<param name="border"><border>42,10,10,10</border></param>
+			<theme name="tabbedpane" ref="base-tabbed-pane">
+				<param name="tabPosition"><enum type="tabposition">LEFT</enum></param>
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="background"><image>none</image></param>
+				<theme name="tabbox" ref="tabbox">
+					<param name="border"><border>1,1,10,0</border></param>
+					<param name="spacing"><int>7</int></param>
+					<param name="alignment"><enum type="alignment">FILL</enum></param>
+					<theme name="tabbutton" ref="togglebutton">
+						<param name="minWidth"><int>123</int></param>
+						<param name="minHeight"><int>29</int></param>
+						<param name="border"><border>0,8,0,0</border></param>
+						<param name=""><image>ui-tab-vertical.*</image></param>
+						<param name="font"><font>pb-tab</font></param>
+						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+					</theme>
+				</theme>
+			</theme>
+        </theme>
+    </theme>
 
 	<theme name="base-frame-padded" ref="new-base-frame">
 		<param name="border"><border>36,0,0,0</border></param>
@@ -1001,7 +1028,7 @@
 			<param name="font"><font>alphabeta-white</font></param>
 		</theme>
 		<theme name="closeButton" ref="-defaults">
-			<param name="background"><image>close-handle-blue</image></param>
+			<param name="background"><image>frame.closebutton.background</image></param>
 			<param name="minWidth"><int>5</int></param>
 			<param name="minHeight"><int>5</int></param>
 		</theme>

@@ -325,7 +325,7 @@
 		</theme>
 	</theme>
 	<theme name="dex-move-table-name-label" ref="label">
-		<param name="minWidth"><int>201</int></param>
+		<param name="minWidth"><int>200</int></param>
 		<param name="minHeight"><int>28</int></param>
    		<param name="border"><border>2,8,2,8</border></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>

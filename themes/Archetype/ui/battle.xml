@@ -173,8 +173,8 @@
 
 	<theme name="battle-button" ref="-defaults" allowWildcard="true">
 		<param name=""><image>battle-button-switch.*</image></param>
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-		<param name="font2"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font2"><font>alphabeta-highlight-button</font></param>
 		<param name="border"><border>7,0</border></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
@@ -313,7 +313,7 @@
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
-					<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+					<param name="font"><font>alphabeta-highlight-button</font></param>
 					<param name="border"><border>2,0,4,0</border></param>
 					<param name=""><image>button-small.*</image></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>

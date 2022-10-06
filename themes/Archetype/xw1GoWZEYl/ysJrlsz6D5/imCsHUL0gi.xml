@@ -122,14 +122,14 @@
 	</theme>
 
 	<theme name="seed-plant-dialog" ref="new-base-frame">
-		<param name="titleAreaTop"><int>0	</int></param>
+		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>-1</int></param>
-		<param name="closeButtonX"><int>-21</int></param>
+		<param name="closeButtonX"><int>-26</int></param>
 		<param name="closeButtonY"><int>13</int></param>
 		<theme name="title" ref="title">
-			<param name="border"><border>15,11,2,0</border></param>
+			<param name="border"><border>15,15,2,0</border></param>
 		</theme>
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">
             <param name="background"><image>none</image></param>

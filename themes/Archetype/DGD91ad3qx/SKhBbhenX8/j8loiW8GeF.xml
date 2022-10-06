@@ -149,7 +149,7 @@
 								<theme name="tabbox" ref="-defaults">
 									<param name="border"><border>5,0</border></param>
 									<theme name="tabbutton" ref="button">
-										<param name="border"><border>15,5</border></param>
+										<param name="border"><border>10,5</border></param>
 									</theme>
 									<param name="spacing"><int>1</int></param>
 									<param name="alignment"><enum type="alignment">FILL</enum></param>

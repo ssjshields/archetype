@@ -23,7 +23,7 @@
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
-						<param name="background"><image>ui-tab-shop.background</image></param>
+						<param name="background"><image>ui-tab.background</image></param>
 					</theme>
 				</theme>
 				<theme name="container" ref="container">

@@ -10,29 +10,11 @@
 		<param name="namedGaps"><map/></param>
 	</theme>
 	
-	<theme name="settings-panel" ref="new-base-frame" allowWildcard="true">
+	<theme name="settings-panel" ref="base-frame-vertical-tabs" allowWildcard="true">
         <param name="background"><image>Settings-Window</image></param>
 	    <!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
         <theme name="dialoglayout" ref="dialoglayout">
-            <param name="border"><border>40,7,8,8</border></param>
-			<theme name="tabbedpane" ref="base-tabbed-pane">
-				<param name="tabPosition"><enum type="tabposition">LEFT</enum></param>
-				<param name="border"><border>0,15,0,0</border></param>
-				<param name="minWidth"><int>230</int></param>
-				<param name="background"><image>none</image></param>
-				<theme name="tabbox" ref="tabbox">
-					<param name="border"><border>1,0,10,0</border></param>
-					<theme name="tabbutton" ref="togglebutton">
-						<param name="minWidth"><int>90</int></param>
-						<param name="minHeight"><int>28</int></param>
-						<param name="border"><border>0,0,0,10</border></param>
-						<param name=""><image>ui-tab-vertical.*</image></param>
-						<param name="font"><font>pb-tab</font></param>
-						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-					</theme>
-					<param name="spacing"><int>8</int></param>
-					<param name="alignment"><enum type="alignment">FILL</enum></param>
-				</theme>
+			<theme name="tabbedpane" ref="tabbedpane">
 				<theme name="container" ref="container">
 					<param name="border"><border>0,0,0,0</border></param>
 					<theme name="settings-scrollpane" ref="-defaults" allowWildcard="true">

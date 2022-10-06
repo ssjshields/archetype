@@ -3,22 +3,22 @@
 
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
-		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
-			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="highlight-color"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset" tint="#00000000"/>
+		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#66FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#33FFFFFF"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
 		</grid>
-		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus">
-			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="highlight-color"/>
-			<frame duration="2500" ref="Highlight-Overlay-Asset-Summary" tint="#00000000"/>
+		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#66FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#33FFFFFF"/>
 		</animation>
 	</images>
 
 	<images file="res/custom/Tabbox-Background.png" filter="lineal">
-		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="sub-color"/>
+		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="sub-color"/>
 		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
 		<area name="Secondary-Color-Pure" xywh="6,35,2,2" tint="secondary-color"/>
 		<area name="Sub-Color-Pure" xywh="6,35,2,2" tint="sub-color"/>
@@ -26,15 +26,20 @@
 	</images>
 
 	<images file="res/custom/Window-Primary-Background.png" filter="lineal">
-		<area name="Window-Primary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="secondary-color"/>
+		<area name="Window-Primary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="secondary-color"/>
 	</images>
 
 	<images file="res/custom/Window-Sub-Background.png" filter="lineal">
-		<area name="Window-Sub-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="sub-color"/>
+		<area name="Window-Sub-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="sub-color"/>
+		<area name="Window-Accent" xywh="5,5,36,26" splitx="L4,R4" splity="T4,B4" sizeOverwriteH="12"  sizeOverwriteV="12"/>
 	</images>
 
-	<images file="res/custom/Window-Main-Background.png" filter="lineal">
-		<area name="Window-Main-Background" xywh="*" splitx="L10,R10" splity="T10,B10" sizeOverwriteH="12"  sizeOverwriteV="12" tint="main-color"/>
+	<images file="res/custom/Gradient.png" filter="lineal">
+		<area name="Gradient" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" tint="main-color"/>
+		<composed name="Window-Main-Background">
+			<alias ref="Gradient" inset="2"/>
+			<alias ref="Gradient" inset="3" tint="#eaeff2"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/Shadow-Background.png" filter="lineal">
@@ -55,6 +60,52 @@
 			<alias ref="Window-Main-Background"/>
 			<alias ref="Secondary-Color-Pure" inset="7"/>
 		</composed>
+
+		<composed name="ui-button.hover">
+			<alias ref="Window-Main-Background" inset="-1"/>
+		</composed>
+		<composed name="ui-button.disabled"> 
+			<alias ref="Window-Accent" inset="1" tint="accent-color"/>
+		</composed>
+		<composed name="ui-button.default">
+			<alias ref="Sub-Color-Pure"  inset="1"/>
+			<alias ref="Window-Accent" inset="1" tint="accent-color"/>
+		</composed>
+		<animation name="ui-button.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="ui-button.hover"/>
+			<frame duration="1500" ref="ui-button.hover" tint="#cccccc"/>
+		</animation>
+		
+		<select name="ui-button.background" sizeOverwriteH="29" sizeOverwriteV="29">
+			<alias ref="ui-button.hover" if="disabled + hover"/>
+			<alias ref="ui-button.keyboardFocus" if="disabled + keyboardFocus"/>
+			<alias ref="ui-button.disabled" if="disabled"/>
+			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="ui-button.default"/>
+		</select>
+
+		<composed name="button.default">
+			<alias ref="Sub-Color-Pure" inset="1"/>
+			<alias ref="Window-Accent" inset="1" tint="main-color"/>
+			<alias ref="Window-Accent" inset="2" tint="main-color"/>
+		</composed>
+		<composed name="button.hover">
+			<alias ref="Gradient" inset="1"/>
+			<alias ref="Gradient" inset="3" tint="#e2e2e2"/>
+		</composed>
+		<animation name="button.keyboardFocus" timeSource="enabled">
+			<frame duration="1500" ref="button.hover" tint="#ffffff"/>
+			<frame duration="1500" ref="button.hover" tint="#c6c6c6"/>
+		</animation>
+
+		<select name="button.background" sizeOverwriteH="52" sizeOverwriteV="52">
+			<alias ref="button.hover" if="hover" inset="2,2,2,-1"/>
+			<alias ref="button.keyboardFocus" if="keyboardFocus" inset="2,2,2,-1"/>
+			<alias ref="button.hover" if="selected" inset="2,2,2,-1"/>
+			<alias ref="button.default" if="disabled" inset="2,2,2,-1"/>
+			<alias ref="button.default" inset="2,2,2,-1"/>
+		</select>
 	</images>
 	
 	
@@ -141,9 +192,8 @@
 			<alias ref="color-picker-default" inset="-2" if="keyboardFocus | hover"/>
 			<alias ref="color-picker-default"/>
 		</select>
-		<area name="close-handle" xywh="0,500,12,12" tint="icon-color"/>
-		<area name="minimize-handle" xywh="29,500,12,12" tint="icon-color"/>
-		<area name="close-handle-blue" xywh="15,503,9,9"/>
+		<area name="close-handle" xywh="0,500,12,12" tint="font-main-color"/>
+		<area name="minimize-handle" xywh="29,500,12,12" tint="font-main-color"/>
 
 		<area name="console.background" xywh="43,100,1,1" tint="#B0000000"/>
 		<area name="-console.cursor" xywh="5,291,6,1" center="true" inset="14,0,0,0"/>
@@ -412,33 +462,31 @@
 
 
 	<images file="res/custom/bW6A5DARII/battle-hud.png" filter="nearest">
-		<area name="progress.progressImage" xywh="27,21,1,2" tint="#90F8A0" inset="5,2"/>
-		<area name="xp-progressbar.progressImage" xywh="27,21,1,2" tint="#3035CE" inset="5,2"/>
-		<area name="health-progressbar.progressImage" tint="#dc2222" xywh="20,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-base.progressImage" xywh="20,9,1,4"/>
-				<animation name="health-progressbar-red.progressImage" inset="1,-49,-1,0" timeSource="enabled">
-					<frame duration="1000" ref="health-progressbar-base.progressImage" tint="#dc2222"/>
-					<frame duration="1000" ref="health-progressbar-base.progressImage" tint="#ffffff"/>
-				</animation>
-		<area name="health-progressbar-orange.progressImage" xywh="22,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-green.progressImage" xywh="21,9,1,4" inset="1,-49,-1,0"/>
-		<area name="health-progressbar-xp.progressImage" xywh="23,9,1,4" inset="0,-49,2,0"/>
+		<area name="progressbar.progressImage" xywh="20,9,1,4"/>
+
+		<animation name="health-progressbar-red.progressImage" inset="1,-49,-1,0" timeSource="enabled">
+			<frame duration="1000" ref="progressbar.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="progressbar.progressImage" tint="#ffffff"/>
+		</animation>
+		<composed name="health-progressbar-orange.progressImage" inset="1,-49,-1,0">
+			<alias ref="progressbar.progressImage" tint="hp-mid-color"/>
+		</composed>
+		<composed name="health-progressbar-green.progressImage" inset="1,-49,-1,0">
+			<alias ref="progressbar.progressImage" tint="hp-high-color"/>
+		</composed>
+		<composed name="health-progressbar-xp.progressImage" inset="0,-49,2,0">
+			<alias ref="progressbar.progressImage" tint="xp-color"/>
+		</composed>
+		<composed name="time-progressbar.progressImage" inset="1">
+			<alias ref="progressbar.progressImage" tint="main-color"/>
+		</composed>
 
 		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-orange.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-green.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
 		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="-1,-49,-1,-3"/>
-
-		<grid name="xp-progressbar.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="15,18,5,8"/>
-			<area xywh="20,18,1,8"/>
-			<area xywh="28,18,5,8"/>
-		</grid>
-
 		<area name="time-progressbar.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="0,0,-2,-2"/>
-
-		<area name="time-progressbar.progressImage" xywh="23,9,1,4" inset="1"/>
 
 		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,34"/>
 		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,84"/>
@@ -446,7 +494,7 @@
 		<area name="battle-ui-self-slim" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="11,31,7,16"/>
 		<area name="battle-ui-heart1" xywh="0,50,16,16" splitx="L16,R0" splity="T16,B0" inset="23,114,-23,-114"/>
 		<area name="battle-ui-heart2" xywh="20,50,18,18" splitx="L18,R0" splity="T18,B0" inset="22,113,-22,-113"/>
-		<animation name="battle-ui-heart" timeSource="enabled">
+		<animation name="battle-ui-heart" timeSource="enabled" tint="main-color">
 			<frame duration="1400" ref="battle-ui-heart1"/>
 			<frame duration="100" ref="battle-ui-heart2"/>
 		</animation>
@@ -457,26 +505,6 @@
 
 		<area name="battle-ability" xywh="606,15,-210,42" inset="-91,0,69,60"/>
 		<area name="battle-ability-flip" xywh="606,15,-210,42" inset="57,60,-79,0"/>
-
-		<area name="battle-button.default" xywh="321,145,96,30"/>
-		<area name="battle-button.hover" xywh="321,176,96,30"/>
-		<area name="battle-button.disabled" xywh="321,207,96,30"/>
-
-		<area name="battle-button-return.default" xywh="218,145,96,30"/>
-		<area name="battle-button-return.hover" xywh="218,176,96,30"/>
-		<animation name="battle-button-return.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="battle-button-return.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="battle-button-return.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="battle-button-return.disabled" xywh="218,207,96,30"/>
-
-		<area name="battle-button-confirm.default" xywh="424,145,96,30"/>
-		<area name="battle-button-confirm.hover" xywh="424,176,96,30"/>
-		<animation name="battle-button-confirm.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="battle-button-confirm.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="battle-button-confirm.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="battle-button-confirm.disabled" xywh="424,207,96,30"/>
 
 		<area name="battle-button-switch.default" xywh="2,145,209,52"/>
 		<area name="battle-button-switch.hover" xywh="2,200,209,52"/>
@@ -501,26 +529,19 @@
 			<alias ref="battle-button-switch.default"/>
 		</select>
 
-		<select name="battle-button.background">
-			<alias ref="battle-button.hover" if="hover | keyboardFocus"/>
-			<alias ref="battle-button.disabled" if="disabled"/>
-			<alias ref="battle-button.hover" if="selected"/>
-			<alias ref="battle-button.default"/>
-		</select>
+		<area name="return-button-icon" xywh="0,70,20,30" splitx="L20,R0" tint="icon-color"/>
+		<composed name="battle-button-return.background" sizeOverwriteH="96" sizeOverwriteV="30">
+			<alias ref="button.background" inset="0,-3,-2,0"/>
+			<alias ref="Secondary-Color-Pure" inset="10,5,7,77"/>
+			<alias ref="return-button-icon"/>
+		</composed>
 
-		<select name="battle-button-return.background">
-			<alias ref="battle-button-return.hover" if="hover"/>
-			<alias ref="battle-button-return.disabled" if="disabled"/>
-			<alias ref="battle-button-return.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="battle-button-return.default"/>
-		</select>
-
-		<select name="battle-button-confirm.background">
-			<alias ref="battle-button-confirm.hover" if="hover"/>
-			<alias ref="battle-button-confirm.disabled" if="disabled"/>
-			<alias ref="battle-button-confirm.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="battle-button-confirm.default"/>
-		</select>
+		<area name="confirm-button-icon" xywh="0,100,20,30" splitx="L20,R0" tint="icon-color"/>
+		<composed name="battle-button-confirm.background" sizeOverwriteH="96" sizeOverwriteV="30">
+			<alias ref="button.background" inset="0,-3,-2,0"/>
+			<alias ref="Secondary-Color-Pure" inset="10,5,7,77"/>
+			<alias ref="confirm-button-icon"/>
+		</composed>
 
 		<grid name="battle-area-frame" weightsX="1" weightsY="0,1">
 			<area xywh="7,445,800,30"/>
@@ -538,116 +559,38 @@
             <area xywh="425,280,96,1"/>
             <area xywh="521,280,39,1"/>
         </grid>
-		<area name="button-npc.default" xywh="378,40,36,28" splitx="L20,R7" splity="T6,B8"/>
-		<area name="hud-menu.background" xywh="311,506,241,46"/>
-		<area name="button-npc.selected" xywh="378,7,36,26" inset="-3,0,3,0" splitx="L20,R7" splity="T6,B8"/>
 		<area name="ul-list" xywh="383,17,12,15"/>
-		<area name="button-npc.ok" xywh="378,71,36,28" splitx="L20,R7" splity="T6,B8"/>
-		<area name="button-toggle.default" xywh="308,9,64,30" splitx="L5,R5" splity="T6,B8" />
-		<area name="button-toggle.hover" xywh="308,40,64,30" splitx="L5,R5" splity="T6,B8"/>
-		<animation name="button-toggle.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="button-toggle.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="button-toggle.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="button-toggle.disabled" xywh="308,71,64,30" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-toggle.disabled-hover" xywh="308,102,64,30" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-tiny.default" xywh="227,9,66,30" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-tiny.hover" xywh="227,40,66,30" splitx="L5,R5" splity="T6,B8"/>
-		<animation name="button-tiny.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="button-tiny.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="button-tiny.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="button-tiny.disabled" xywh="227,71,66,30" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-small.default" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
-		<area name="button-small.hover" xywh="227,40,66,30" splitx="L25,R25" splity="T6,B8"/>
-		<animation name="button-small.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="button-small.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="button-small.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="button-small.disabled" xywh="227,9,66,30" splitx="L25,R25" splity="T6,B8"/>
 
-		<area name="button-tab.default" xywh="227,9,66,25" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-tab.hover" xywh="227,40,66,25" splitx="L5,R5" splity="T6,B8"/>
-		<area name="button-tab.disabled" xywh="227,71,66,25" splitx="L5,R5" splity="T6,B8"/>
-
-		<area name="button.default" xywh="7,7,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.hover" xywh="8,62,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.hover2" xywh="61,62,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.hover3" xywh="114,62,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.hover4" xywh="169,62,52,52" splitx="L8,R8" splity="T8,B8"/>
-
-
-		<area name="button.disabled" xywh="61,7,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.selected1" xywh="114,7,52,52" splitx="L8,R8" splity="T8,B8"/>
-		<area name="button.selected2" xywh="169,7,52,52" splitx="L8,R8" splity="T8,B8"/>
-
-		<animation name="button.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="button.selected1" tint="#ffffff"/>
-			<frame duration="1500" ref="button.selected1" tint="#c6c6c6"/>
-		</animation>
-
-		<animation name="button.selected" timeSource="selected">
-			<frame duration="400" ref="button.selected1" tint="#FFFFFFFF"/>
-			<frame duration="400" ref="button.selected2" tint="#FFFFFFFF"/>
-		</animation>
-
-		<select name="button-toggle.background" sizeOverwriteH="27">
-			<alias ref="button-toggle.hover" if="hover + selected"/>
-			<alias ref="button-toggle.hover" if="hover"/>
-			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus + selected"/>
-			<alias ref="button-toggle.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="button-toggle.disabled" if="hover + !selected"/>
-			<alias ref="button-toggle.disabled" if="disabled"/>
-			<alias ref="button-toggle.default" if="selected"/>
-			<alias ref="button-toggle.disabled"/>
+		<select name="button-toggle.background" sizeOverwriteH="27" sizeOverwriteV="30" inset="1,-1,2,-1">
+			<alias ref="ui-button.hover" if="hover + selected"/>
+			<alias ref="ui-button.hover" if="hover"/>
+			<alias ref="ui-button.keyboardFocus" if="keyboardFocus + selected"/>
+			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="ui-button.default" if="hover + !selected"/>
+			<alias ref="ui-button.default" if="disabled"/>
+			<alias ref="ui-button.hover" if="selected"/>
+			<alias ref="ui-button.default"/>
 		</select>
 
-		<select name="button-tab.background">
-			<alias ref="button-tab.hover" if="hover | keyboardFocus" tint="#FFFFFF"/>
-			<alias ref="button-tab.disabled" if="disabled"/>
-			<alias ref="button-tab.hover" if="selected" tint="#FFFFFF"/>
-			<alias ref="button-tab.default" tint="#FFFFFF"/>
+		<select name="button-tab.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
+			<alias ref="button.hover" if="hover | keyboardFocus"/>
+			<alias ref="button.default" if="disabled"/>
+			<alias ref="button.hover" if="selected"/>
+			<alias ref="button.default" tint="#FFFFFF"/>
 		</select>
 
-		<select name="button-tiny-blue.background">
-			<alias ref="button-tiny.hover" if="hover | keyboardFocus" tint="#99d3ff"/>
-			<alias ref="button-tiny.disabled" if="disabled"/>
-			<alias ref="button-tiny.hover" if="selected" tint="#99d3ff"/>
-			<alias ref="button-tiny.default" tint="#99d3ff"/>
-		</select>
-
-		<select name="button-tiny-green.background">
-			<alias ref="button-tiny.hover" if="hover | keyboardFocus" tint="#6fdf00"/>
-			<alias ref="button-tiny.disabled" if="disabled"/>
-			<alias ref="button-tiny.hover" if="selected" tint="#6fdf00"/>
-			<alias ref="button-tiny.default" tint="#6fdf00"/>
-		</select>
-
-		<select name="button-tiny.background">
-			<alias ref="button-tiny.hover" if="hover"/>
-			<alias ref="button-tiny.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="button-tiny.disabled" if="disabled"/>
-			<alias ref="button-tiny.hover" if="selected"/>
-			<alias ref="button-tiny.default"/>
-		</select>
-
-		<select name="button-small.background">
-			<alias ref="button-small.hover" if="hover"/>
-			<alias ref="button-small.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="button-small.disabled" if="disabled"/>
-			<alias ref="button-small.hover" if="selected"/>
-			<alias ref="button-small.default"/>
-		</select>
-
-		<select name="button.background">
+		<select name="button-small.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
 			<alias ref="button.hover" if="hover"/>
 			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="button.selected" if="selected"/>
-			<alias ref="button.disabled" if="disabled"/>
+			<alias ref="button.default" if="disabled"/>
+			<alias ref="button.hover" if="selected"/>
 			<alias ref="button.default"/>
 		</select>
 
-		<area name="frame.background" xywh="3,181,517,45"/>
+		<composed name="button-tiny.background">
+			<alias ref="button-small.background"/>
+		</composed>
+
 		<area name="frame-split.background1" xywh="101,233,89,173" splitx="L3,R3" splity="T3,B3"/>
 		<grid name="frame-split.background2" weightsX="0,1,0" weightsY="0,1,0">
 			<area xywh="3,181,3,3"/>
@@ -737,7 +680,6 @@
 		<area name="label5.background" tint="#55FFFFFF" xywh="9,191,5,5" inset="0,0,0,0"/>
 		<area name="label6.background" tint="#FF999999" xywh="108,184,5,5" inset="0,0,0,0"/>
 
-		<area name="table-header.background" tint="#55949494" xywh="9,191,5,5" inset="1,1,1,1"/>
 		<area name="table-row.background" tint="#99949494" xywh="9,191,5,5" inset="1,1,1,1"/>
 		<area name="table-row.background2" tint="#99bcd6ff" xywh="108,184,5,5" inset="1,1,1,1"/>
 
@@ -841,12 +783,6 @@
 			<alias ref="gmicon8.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
 			<alias ref="gmicon8.default" tint="#1f7bc9" if="selected"/>
 			<alias ref="gmicon8.default"/>
-		</select>
-
-		<select name="button-npc.background">
-			<alias ref="button-npc.selected" if="hover | keyboardFocus"/>
-			<alias ref="button-npc.selected" if="selected"/>
-			<alias ref="button-npc.default"/>
 		</select>
 
 		<area name="editfield.background" xywh="9,260,125,25" splitx="L4,R4" splity="T4,B4" sizeOverwriteH="0"/>
@@ -1643,26 +1579,31 @@
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
 		<area name="dex-button-outline" xywh="0,0,9,9" splitx="L2,R2" splity="T2,B2"/>
-		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2"/>
-		<area name="dex-button-active" xywh="0,11,46,2" splity="T0,B2"/>
-		<animation name="dex-button-active-animation" timeSource="enabled">
-			<frame duration="1500" ref="dex-button-active" tint="#2a96da"/>
-			<frame duration="1500" ref="dex-button-active" tint="#bff0ff"/>
+		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2" tint="#26FFFFFF"/>
+		<area name="dex-button-active1" xywh="0,11,46,2" splity="T0,B2" tint="main-color"/>
+		<area name="dex-button-active2" xywh="0,13,46,2" splity="T0,B2" tint="sub-color"/>
+		<animation name="dex-button-active1-animation" timeSource="enabled">
+			<frame duration="1500" ref="dex-button-active1"/>
+			<frame duration="1500" ref="dex-button-active1" tint="#80FFFFFF"/>
 		</animation>
+		<composed name="dex-button-active">
+			<alias ref="dex-button-active2"/>
+			<alias ref="dex-button-active1-animation"/>
+		</composed>
 		<composed name="PokeDex-Button" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="#2d3b40"/>
-			<alias ref="dex-button-inner" tint="#262d3b40" if="hover | keyboardFocus"/>
-			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+			<alias ref="dex-button-outline" tint="accent-color"/>
+			<alias ref="dex-button-inner" tint="accent-color" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="#2a97dc"/>
-			<alias ref="dex-button-inner" tint="#262a97dc" if="hover | keyboardFocus"/>
-			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+			<alias ref="dex-button-outline" tint="xp-color"/>
+			<alias ref="dex-button-inner" tint="xp-color" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="#84e426"/>
-			<alias ref="dex-button-inner" tint="#2684e426" if="hover | keyboardFocus"/>
-			<alias ref="dex-button-active-animation" if="keyboardFocus"/>
+			<alias ref="dex-button-outline" tint="hp-high-color"/>
+			<alias ref="dex-button-inner" tint="hp-high-color" if="hover | keyboardFocus"/>
+			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 	</images>
 
@@ -1751,6 +1692,6 @@
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
-	<area name="PokeDex-Mon-Background" xywh="*" inset="2,1,-2,1"/>
+		<area name="PokeDex-Mon-Background" xywh="*" inset="2,1,-2,1"/>
 	</images>
 </themes>

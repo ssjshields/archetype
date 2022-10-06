@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-<!--default: 2eb2f8--><constantDef name="main-color"><color>#2eb2f8</color></constantDef>
+<!--default: 42b9ff--><constantDef name="main-color"><color>#42b9ff</color></constantDef>
 
 <!--default: 1c2328--><constantDef name="secondary-color"><color>#1c2328</color></constantDef>
 
@@ -13,17 +13,17 @@
 
 <!--default: ffffff--><constantDef name="icon-color"><color>#ffffff</color></constantDef>
 
-<!--default: 36ffffff--><constantDef name="highlight-color"><color>#36ffffff</color></constantDef>
+<!--default: ffffff--><constantDef name="highlight-color"><color>#ffffff</color></constantDef>
 
 
 
 <!--default: ffffff--><constantDef name="font-main-color"><color>#ffffff</color></constantDef>
 
-<!--default: 7f9096--><constantDef name="font-secondary-color"><color>#7f9096</color></constantDef>
+<!--default: 84959b--><constantDef name="font-secondary-color"><color>#84959b</color></constantDef>
 
 <!--default: acb7b9--><constantDef name="font-tertiary-color"><color>#acb7b9</color></constantDef>
 
-<!--default: 637073--><constantDef name="font-disabled-color"><color>#637073</color></constantDef>
+<!--default: BF637073--><constantDef name="font-disabled-color"><color>#9984959b</color></constantDef>
 
 
 
@@ -35,11 +35,11 @@
 
 <!--default: 82e026--><constantDef name="hp-high-color"><color>#82e026</color></constantDef>
 
-<!--default: --><constantDef name="hp-mid-color"><color>#00a5c9</color></constantDef>
+<!--default: ecd031--><constantDef name="hp-mid-color"><color>#ecd031</color></constantDef>
 
-<!--default: --><constantDef name="hp-low-color"><color>#cb4e03</color></constantDef>
+<!--default: dc2222--><constantDef name="hp-low-color"><color>#dc2222</color></constantDef>
 
-<!--default: --><constantDef name="xp-color"><color>#00a5c9</color></constantDef>
+<!--default: 2eb2f8--><constantDef name="xp-color"><color>#2eb2f8</color></constantDef>
 
 <!--default: --><constantDef name="friendship-color"><color>#00a5c9</color></constantDef>
 
