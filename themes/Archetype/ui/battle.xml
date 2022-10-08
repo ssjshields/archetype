@@ -32,7 +32,7 @@
 			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix</font></param>
 			<param name="border"><border>1</border></param>
-			<param name="minWidth"><int>140</int></param>
+			<param name="minWidth"><int>180</int></param>
 		</theme>
 	</theme>
 
@@ -46,7 +46,7 @@
 			<param name="textAlignment"><enum type="alignment">right</enum></param>
 			<param name="font"><font>mechabold-battle-ability-fix-enemy</font></param>
 			<param name="border"><border>1</border></param>
-			<param name="minWidth"><int>140</int></param>
+			<param name="minWidth"><int>180</int></param>
 		</theme>
 	</theme>
 
@@ -104,7 +104,7 @@
 	</theme>
 
 	<theme name="xp-progressbar" ref="-defaults" allowWildcard="true">
-		<param name=""><image>health-progressbar-xp.*</image></param>
+		<param name=""><image>xp-progressbar.*</image></param>
 		<param name="overlay"><image>EXP-Overlay</image></param>
 		<param name="border"><border>3,0,0,0</border></param>
 		<param name="border"><border>0,0,0,0</border></param>
@@ -260,7 +260,7 @@
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>battle-button-arrows</font></param>
+			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>battle-button-arrows</font></param>
@@ -275,7 +275,6 @@
 	</theme>
 	
 	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
-		<param name="background"><image>battle-area-bag</image></param>
 		<param name="maxHeight"><int>350</int></param>
 		<param name="minHeight"><int>350</int></param>
 		<param name="border"><border>5,10,5,8</border></param>
@@ -314,7 +313,7 @@
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
 					<param name="font"><font>alphabeta-highlight-button</font></param>
-					<param name="border"><border>2,0,4,0</border></param>
+					<param name="border"><border>2,0,3,0</border></param>
 					<param name=""><image>button-small.*</image></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				</theme>
@@ -359,14 +358,34 @@
 		<param name="border"><border>55,0</border></param>
 	</theme>
 
-	<theme name="battle-fight" ref="rbattle-fight" allowWildcard="true"/>
-	<theme name="battle-switch" ref="rbattle-pokemon" allowWildcard="true"/>
-	<theme name="battle-bag" ref="rbattle-bag" allowWildcard="true"/>
-	<theme name="battle-run" ref="rbattle-run" allowWildcard="true"/>
+	<theme name="battle-fight" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Fight-Icon</image></param>
+	</theme>
+	<theme name="battle-switch" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
+	</theme>
+	<theme name="battle-bag" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Bag-Icon</image></param>
+	</theme>
+	<theme name="battle-run" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Run-Icon</image></param>
+	</theme>
 	<theme name="battle-win" ref="rbattle" allowWildcard="true"/>
-	<theme name="battle-shift" ref="rbattle-rotate" allowWildcard="true"/>
-    <theme name="battle-rotate" ref="rbattle-rotate" allowWildcard="true"/>
-	<theme name="battle-ball" ref="rbattle-ball" allowWildcard="true"/>
-	<theme name="battle-bait" ref="rbattle-bag" allowWildcard="true"/>
-	<theme name="battle-rock" ref="rbattle-fight" allowWildcard="true"/>
+	<theme name="battle-shift" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
+	</theme>
+    <theme name="battle-rotate" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
+	</theme>
+	<theme name="battle-ball" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
+		<param name="font2"><font>battle-label-highlight-safari</font></param>
+		<param name="textAlignment2"><enum type="alignment">right</enum></param>
+	</theme>
+	<theme name="battle-bait" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Bag-Icon</image></param>
+	</theme>
+	<theme name="battle-rock" ref="rbattle" allowWildcard="true">
+		<param name="overlay"><image>Battle-Fight-Icon</image></param>
+	</theme>
 </themes>

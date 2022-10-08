@@ -21,14 +21,14 @@
 						<theme name="hscrollbar" ref="hscrollbar"/> 
 						<theme name="vscrollbar" ref="vscrollbar-white"/>
 						<param name="minWidth"><int>518</int></param>
-						<param name="minHeight"><int>507</int></param>
+						<param name="minHeight"><int>396</int></param>
 						<param name="maxWidth"><int>32767</int></param>
 						<param name="maxHeight"><int>32767</int></param>
 						<param name="hasDragButton"><bool>false</bool></param>
 						<param name="autoScrollArea"><int>5</int></param>
 						<param name="autoScrollSpeed"><int>10</int></param>
 						<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
-						<param name="border"><border>0,0,8,0</border></param>
+						<param name="border"><border>0,0,5,0</border></param>
 						<theme name="dialoglayout" ref="-defaults">
 							<param name="border"><border>0</border></param>
 							<param name="defaultGap"><dimension>5,5</dimension></param>

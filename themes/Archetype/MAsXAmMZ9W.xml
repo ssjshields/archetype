@@ -4,8 +4,8 @@
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
-			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#66FFFFFF"/>
-			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#33FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#70FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#35FFFFFF"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
@@ -19,6 +19,7 @@
 
 	<images file="res/custom/Tabbox-Background.png" filter="lineal">
 		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="sub-color"/>
+		<area name="Pure" xywh="6,35,2,2"/>
 		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
 		<area name="Secondary-Color-Pure" xywh="6,35,2,2" tint="secondary-color"/>
 		<area name="Sub-Color-Pure" xywh="6,35,2,2" tint="sub-color"/>
@@ -40,6 +41,11 @@
 			<alias ref="Gradient" inset="2"/>
 			<alias ref="Gradient" inset="3" tint="#eaeff2"/>
 		</composed>
+	</images>
+
+	<images file="res/custom/Fade.png" filter="lineal">
+		<area name="Fade-Right" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
+		<area name="Fade-Left" xywh="0,0,-800,10" sizeOverwriteH="12" sizeOverwriteV="12"/>
 	</images>
 
 	<images file="res/custom/Shadow-Background.png" filter="lineal">
@@ -71,17 +77,16 @@
 			<alias ref="Sub-Color-Pure"  inset="1"/>
 			<alias ref="Window-Accent" inset="1" tint="accent-color"/>
 		</composed>
-		<animation name="ui-button.keyboardFocus" timeSource="enabled">
+		<animation name="ui-button.keyboardFocus" timeSource="selected">
 			<frame duration="1500" ref="ui-button.hover"/>
 			<frame duration="1500" ref="ui-button.hover" tint="#cccccc"/>
 		</animation>
 		
 		<select name="ui-button.background" sizeOverwriteH="29" sizeOverwriteV="29">
-			<alias ref="ui-button.hover" if="disabled + hover"/>
-			<alias ref="ui-button.keyboardFocus" if="disabled + keyboardFocus"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="ui-button.hover" if="selected"/>
 			<alias ref="ui-button.default"/>
 		</select>
 
@@ -94,18 +99,49 @@
 			<alias ref="Gradient" inset="1"/>
 			<alias ref="Gradient" inset="3" tint="#e2e2e2"/>
 		</composed>
-		<animation name="button.keyboardFocus" timeSource="enabled">
+		<composed name="button.disabled">
+			<alias ref="Secondary-Color-Pure" inset="1"/>
+			<alias ref="button.default" tint="#a0ffffff"/>
+		</composed>
+		<composed name="button.disabled-focus">
+			<alias ref="button.disabled"/>
+			<alias ref="button.hover" tint="#40ffffff"/>
+		</composed>
+		<animation name="button.keyboardFocus" timeSource="keyboardFocus">
 			<frame duration="1500" ref="button.hover" tint="#ffffff"/>
 			<frame duration="1500" ref="button.hover" tint="#c6c6c6"/>
 		</animation>
 
 		<select name="button.background" sizeOverwriteH="52" sizeOverwriteV="52">
+			<alias ref="button.disabled" if="disabled" inset="2,2,2,-1"/>
 			<alias ref="button.hover" if="hover" inset="2,2,2,-1"/>
 			<alias ref="button.keyboardFocus" if="keyboardFocus" inset="2,2,2,-1"/>
 			<alias ref="button.hover" if="selected" inset="2,2,2,-1"/>
-			<alias ref="button.default" if="disabled" inset="2,2,2,-1"/>
 			<alias ref="button.default" inset="2,2,2,-1"/>
 		</select>
+
+		<select name="button-toggle.background" sizeOverwriteH="27" sizeOverwriteV="30">
+			<alias ref="ui-button.background" inset="1,-1,2,-1"/>
+		</select>
+
+		<select name="pc-arrows.background" sizeOverwriteH="29" sizeOverwriteV="29">
+			<alias ref="ui-button.background" inset="1,0,2,0"/>
+		</select>
+
+		<select name="button-tab.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
+			<alias ref="button.hover" if="hover | keyboardFocus"/>
+			<alias ref="button.default" if="disabled"/>
+			<alias ref="button.hover" if="selected"/>
+			<alias ref="button.default" tint="#FFFFFF"/>
+		</select>
+
+		<select name="button-small.background" sizeOverwriteH="66" sizeOverwriteV="30">
+			<alias ref="button.background" inset="-1,-2,-1,1"/>
+		</select>
+
+		<composed name="button-tiny.background">
+			<alias ref="button-small.background"/>
+		</composed>
 	</images>
 	
 	
@@ -443,7 +479,7 @@
 			</select>
 
 			<select center="true">
-				<animation if="keyboardFocus" timeSource="enabled">
+				<animation if="keyboardFocus" timeSource="keyboardFocus">
 					<frame duration="1500" ref="pcslot.border.selected" tint="#2a96da"/>
 					<frame duration="1500" ref="pcslot.border.selected" tint="#bff0ff"/>
 				</animation>
@@ -453,11 +489,11 @@
 	</images>
 
 	<images file="res/custom/bW6A5DARII/Battle-UI-Bug-Fix-Overlay.png" filter="lineal">
-		<area name="Battle-UI-Bug-Fix-Overlay" xywh="*" inset="1,-49,-2,0"/>
+		<area name="Battle-UI-Bug-Fix-Overlay" xywh="*" inset="1,-49,-2,0" tint="secondary-color"/>
 	</images>
 
 	<images file="res/custom/bW6A5DARII/EXP-Overlay.png" filter="lineal">
-		<area name="EXP-Overlay" xywh="*" inset="-1,-49,1,0"/>
+		<area name="EXP-Overlay" xywh="*" inset="-1,-49,1,0" tint="secondary-color"/>
 	</images>
 
 
@@ -468,66 +504,101 @@
 			<frame duration="1000" ref="progressbar.progressImage" tint="#dc2222"/>
 			<frame duration="1000" ref="progressbar.progressImage" tint="#ffffff"/>
 		</animation>
-		<composed name="health-progressbar-orange.progressImage" inset="1,-49,-1,0">
-			<alias ref="progressbar.progressImage" tint="hp-mid-color"/>
-		</composed>
-		<composed name="health-progressbar-green.progressImage" inset="1,-49,-1,0">
-			<alias ref="progressbar.progressImage" tint="hp-high-color"/>
-		</composed>
-		<composed name="health-progressbar-xp.progressImage" inset="0,-49,2,0">
-			<alias ref="progressbar.progressImage" tint="xp-color"/>
-		</composed>
-		<composed name="time-progressbar.progressImage" inset="1">
-			<alias ref="progressbar.progressImage" tint="main-color"/>
-		</composed>
+		<composed name="health-progressbar-orange.progressImage" inset="1,-49,-1,0"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
+		<composed name="health-progressbar-green.progressImage" inset="1,-49,-1,0"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
+		<composed name="xp-progressbar.progressImage" inset="0,-49,2,0"><alias ref="progressbar.progressImage" tint="xp-color"/></composed>
+		<composed name="time-progressbar.progressImage" inset="1"><alias ref="progressbar.progressImage" tint="main-color"/></composed>
 
-		<area name="health-progressbar.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-red.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-orange.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-green.background" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3" inset="1,-49,-4,-3"/>
-		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="-1,-49,-1,-3"/>
-		<area name="time-progressbar.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3" inset="0,0,-2,-2"/>
+		<composed name="health-progressbar.background">
+			<area name="progressbar-shadow" xywh="0,0,9,6" splitx="L4,R4" splity="T2,B3"/>
+			<alias ref="Secondary-Color-Pure" inset="0,0,2,2"/>
+			<alias ref="Sub-Color-Pure" inset="1,1,3,3"/>
+		</composed>
+		<composed name="health-progressbar-red.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="health-progressbar-orange.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="health-progressbar-green.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="health-progressbar-xp.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="time-progressbar.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="xp-progressbar.background" inset="-1,-49,-1,-3">
+			<area name="xp-progressbar-shadow" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3"/>
+			<alias ref="Secondary-Color-Pure" inset="0,0,2,2"/>
+			<alias ref="Sub-Color-Pure" inset="1,1,3,3"/>
+		</composed>
+		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3"/>
 
 		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,34"/>
 		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,84"/>
-		<area name="battle-ui-self-large" xywh="0,20,9,6" splitx="L4,R4" splity="T2,B3" inset="19,31,-2,16"/>
 		<area name="battle-ui-self-slim" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="11,31,7,16"/>
-		<area name="battle-ui-heart1" xywh="0,50,16,16" splitx="L16,R0" splity="T16,B0" inset="23,114,-23,-114"/>
-		<area name="battle-ui-heart2" xywh="20,50,18,18" splitx="L18,R0" splity="T18,B0" inset="22,113,-22,-113"/>
+
+		<area name="battle-ui-heart1" xywh="0,50,16,16" splitx="L16,R0" splity="T16,B0" inset="4,83,-4,-83"/>
+		<area name="battle-ui-heart2" xywh="20,50,18,18" splitx="L18,R0" splity="T18,B0" inset="3,82,-3,-82"/>
 		<animation name="battle-ui-heart" timeSource="enabled" tint="main-color">
 			<frame duration="1400" ref="battle-ui-heart1"/>
 			<frame duration="100" ref="battle-ui-heart2"/>
 		</animation>
-		<composed name="battle-ui-self">
-			<alias ref="battle-ui-self-large"/>
+		<composed name="battle-ui-self" inset="19,31,-2,16">
+			<area name="battle-ui-shadow" xywh="0,20,9,6" splitx="L4,R4" splity="T2,B3"/>
+			<alias ref="Secondary-Color-Pure" inset="0,0,2,2" tint="#E0FFFFFF"/>
 			<alias ref="battle-ui-heart"/>
 		</composed>
 
-		<area name="battle-ability" xywh="606,15,-210,42" inset="-91,0,69,60"/>
-		<area name="battle-ability-flip" xywh="606,15,-210,42" inset="57,60,-79,0"/>
+		<composed name="battle-ability" inset="-91,7,69,53">
+			<alias ref="Fade-Left" tint="secondary-color"/>
+			<grid weightsX="1,0" weightsY="1">
+				<area xywh="0,0,0,0"/>
+				<alias ref="Main-Color-Pure" sizeOverwriteH="2"/>
+			</grid>
+		</composed>
+		<composed name="battle-ability-flip" inset="57,60,-79,0">
+			<alias ref="Fade-Left" tint="secondary-color"/>
+			<grid weightsX="1,0" weightsY="1">
+				<area xywh="0,0,0,0"/>
+				<alias ref="Main-Color-Pure" sizeOverwriteH="2"/>
+			</grid>
+		</composed>
 
-		<area name="battle-button-switch.default" xywh="2,145,209,52"/>
-		<area name="battle-button-switch.hover" xywh="2,200,209,52"/>
-		<animation name="battle-button-switch.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="battle-button-switch.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="battle-button-switch.hover" tint="#c6c6c6"/>
-		</animation>
-		<area name="battle-button-switch.disabled" xywh="2,257,209,52"/>
-		<area name="battle-button-switch.disabledhover" xywh="218,257,209,52"/>
-		<animation name="battle-button-switch.disabledkeyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#ffffff"/>
-			<frame duration="1500" ref="battle-button-switch.disabledhover" tint="#c6c6c6"/>
-		</animation>
-		<area name="battle-area" xywh="6,312,800,115"/>
-		<area name="battle-area-bag" xywh="6,313,800,114" inset="1,0,0,0"/>
+		<composed name="battle-area" inset="1,0,0,0">
+			<alias ref="Fade-Right" tint="secondary-color"/>
+			<grid weightsX="0,1" weightsY="1">
+				<alias ref="Main-Color-Pure" sizeOverwriteH="2"/>
+				<area xywh="0,0,0,0"/>
+			</grid>
+		</composed>
+		<composed name="battle-learn-label" inset="1,0,0,0">
+			<alias ref="Secondary-Color-Pure"/>
+			<grid weightsX="0,1" weightsY="1">
+				<alias ref="Main-Color-Pure" sizeOverwriteH="2"/>
+				<area xywh="0,0,0,0"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="1">
+				<area xywh="0,0,0,0"/>
+				<alias ref="Main-Color-Pure" sizeOverwriteH="2"/>
+			</grid>
+		</composed>
 
-		<select name="battle-button-switch.background">
-			<alias ref="battle-button-switch.disabledkeyboardFocus" if="disabled + (targeted | keyboardFocus)"/>
-			<alias ref="battle-button-switch.disabled" if="disabled"/>
-			<alias ref="battle-button-switch.hover" if="targeted"/>
-			<alias ref="battle-button-switch.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="battle-button-switch.default"/>
-		</select>
+		<area name="Switch-Monster-Disabled-Small" xywh="60,0,34,34"/>
+		<grid name="Switch-Monster-Background" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="6" sizeOverwriteV="6"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="34" sizeOverwriteV="6"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="6"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="6" sizeOverwriteV="34"/>
+			<composed sizeOverwriteH="34" sizeOverwriteV="34">
+				<alias ref="Secondary-Color-Pure"/>
+				<alias ref="Switch-Monster-Disabled-Small" tint="accent-color" if="disabled"/>
+			</composed>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="34"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="6" sizeOverwriteV="6"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="34" sizeOverwriteV="6"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="6"/>
+		</grid>
+		<composed name="battle-button-switch.background" inset="2,2,2,-1">
+			<alias ref="button.default"/>
+			<alias ref="button.disabled" if="disabled"/>
+			<alias ref="button.hover" if="targeted"/>
+			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
+			<alias ref="button.disabled-focus" if="disabled + (targeted | keyboardFocus)"/>
+			<alias ref="Switch-Monster-Background"/>
+		</composed>
 
 		<area name="return-button-icon" xywh="0,70,20,30" splitx="L20,R0" tint="icon-color"/>
 		<composed name="battle-button-return.background" sizeOverwriteH="96" sizeOverwriteV="30">
@@ -542,12 +613,6 @@
 			<alias ref="Secondary-Color-Pure" inset="10,5,7,77"/>
 			<alias ref="confirm-button-icon"/>
 		</composed>
-
-		<grid name="battle-area-frame" weightsX="1" weightsY="0,1">
-			<area xywh="7,445,800,30"/>
-			<area xywh="7,475,800,5" tiled="true"/>
-		</grid>
-
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/main-hud.png" filter="nearest">
@@ -560,36 +625,6 @@
             <area xywh="521,280,39,1"/>
         </grid>
 		<area name="ul-list" xywh="383,17,12,15"/>
-
-		<select name="button-toggle.background" sizeOverwriteH="27" sizeOverwriteV="30" inset="1,-1,2,-1">
-			<alias ref="ui-button.hover" if="hover + selected"/>
-			<alias ref="ui-button.hover" if="hover"/>
-			<alias ref="ui-button.keyboardFocus" if="keyboardFocus + selected"/>
-			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="ui-button.default" if="hover + !selected"/>
-			<alias ref="ui-button.default" if="disabled"/>
-			<alias ref="ui-button.hover" if="selected"/>
-			<alias ref="ui-button.default"/>
-		</select>
-
-		<select name="button-tab.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
-			<alias ref="button.hover" if="hover | keyboardFocus"/>
-			<alias ref="button.default" if="disabled"/>
-			<alias ref="button.hover" if="selected"/>
-			<alias ref="button.default" tint="#FFFFFF"/>
-		</select>
-
-		<select name="button-small.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
-			<alias ref="button.hover" if="hover"/>
-			<alias ref="button.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="button.default" if="disabled"/>
-			<alias ref="button.hover" if="selected"/>
-			<alias ref="button.default"/>
-		</select>
-
-		<composed name="button-tiny.background">
-			<alias ref="button-small.background"/>
-		</composed>
 
 		<area name="frame-split.background1" xywh="101,233,89,173" splitx="L3,R3" splity="T3,B3"/>
 		<grid name="frame-split.background2" weightsX="0,1,0" weightsY="0,1,0">
@@ -1108,24 +1143,6 @@
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
-
-	<images file="res/custom/2sTxAVRCoW/pc-arrows.background.png" filter="nearest">
-		<area name="pc-arrows.default" xywh="29,0,29,19" splitx="L4,R4" splity="T4,B4"/>
-		<area name="pc-arrows.hover" xywh="0,0,29,19" splitx="L4,R4" splity="T4,B4"/>
-		<area name="pc-arrows.disabled" xywh="58,0,29,19" splitx="L4,R4" splity="T4,B4"/>
-		<animation name="pc-arrows.keyboardFocus" timeSource="enabled">
-			<frame duration="1500" ref="pc-arrows.hover" tint="#ffffff"/>
-			<frame duration="1500" ref="pc-arrows.hover" tint="#c6c6c6"/>
-		</animation>
-		<select name="pc-arrows.background" inset="1,0,2,0">
-			<alias ref="pc-arrows.hover" if="disabled + hover"/>
-			<alias ref="pc-arrows.keyboardFocus" if="disabled + keyboardFocus"/>
-			<alias ref="pc-arrows.disabled" if="disabled"/>
-			<alias ref="pc-arrows.hover" if="hover"/>
-			<alias ref="pc-arrows.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="pc-arrows.default"/>
-		</select>
-	</images>
 	
 	<images file="res/contestgui.png" filter="nearest">
 		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>
@@ -1255,6 +1272,23 @@
 	
 	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
 		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Battle-Run-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="Instance-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Run-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Run-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 		<composed name="Instance-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Instance-Icon" inset="10,15,0,0"/>
@@ -1367,69 +1401,6 @@
 	
 	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="lineal">
 		<area name="active-item-tl" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/bW6A5DARII/Battle-Fight-Icon.png" filter="lineal">
-		<grid name="Battle-Fight-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,50,5"/>
-			<area xywh="55,0,5,5"/>
-			<area xywh="0,5,50,40"/>
-			<area xywh="55,5,5,40"/>
-			<area xywh="0,45,50,5"/>
-			<area xywh="55,45,5,5"/>
-		</grid>
-	</images>
-	
-	<images file="res/custom/bW6A5DARII/Battle-Bag-Icon.png" filter="lineal">
-		<grid name="Battle-Bag-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,50,5"/>
-			<area xywh="55,0,5,5"/>
-			<area xywh="0,5,50,40"/>
-			<area xywh="55,5,5,40"/>
-			<area xywh="0,45,50,5"/>
-			<area xywh="55,45,5,5"/>
-		</grid>
-	</images>
-	
-	<images file="res/custom/bW6A5DARII/Battle-Pokemon-Icon.png" filter="lineal">
-		<grid name="Battle-Pokemon-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,50,5"/>
-			<area xywh="55,0,5,5"/>
-			<area xywh="0,5,50,40"/>
-			<area xywh="55,5,5,40"/>
-			<area xywh="0,45,50,5"/>
-			<area xywh="55,45,5,5"/>
-		</grid>
-	</images>
-
-	<images file="res/custom/bW6A5DARII/Battle-Rotate-Icon.png" filter="lineal">
-		<grid name="Battle-Rotate-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,50,5"/>
-			<area xywh="55,0,5,5"/>
-			<area xywh="0,5,50,40"/>
-			<area xywh="55,5,5,40"/>
-			<area xywh="0,45,50,5"/>
-			<area xywh="55,45,5,5"/>
-		</grid>
-	</images>
-	
-	<images file="res/custom/bW6A5DARII/Battle-Run-Icon.png" filter="lineal">
-		<grid name="Battle-Run-Icon" weightsX="0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,50,5"/>
-			<area xywh="55,0,5,5"/>
-			<area xywh="0,5,50,40"/>
-			<area xywh="55,5,5,40"/>
-			<area xywh="0,45,50,5"/>
-			<area xywh="55,45,5,5"/>
-		</grid>
-	</images>
-			
-	<images file="res/custom/bW6A5DARII/battle-learn-label.png" filter="lineal">
-		<area name="battle-learn-label" xywh="*" inset="1,0,0,0" splitx="L5,R5"/>
-	</images>
-	
-	<images file="res/custom/bW6A5DARII/Battle-Bag-Text-Background.png" filter="lineal">
-		<area name="Battle-Bag-Text-Background" xywh="*"/>
 	</images>
 		
 	<images file="res/custom/bW6A5DARII/battle-item-frame.png" filter="lineal">
@@ -1549,6 +1520,27 @@
 		</composed>
 	</images>
 	
+	<images file="res/custom/bW6A5DARII/Rotate-Icon.png" filter="lineal">
+		<area name="Rotate-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Battle-Rotate-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="Rotate-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Rotate-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Rotate-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+	</images>
+
 	<images file="res/custom/CLyo0siyqa/MM-Signup-Icon.png" filter="lineal">
 		<area name="MM-Signup-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="MM-Signup-Window">
@@ -1559,6 +1551,23 @@
 			<alias ref="MM-Signup-Window"/>
 			<alias ref="Tabbox-Background"/>
 		</composed>
+		<composed name="Battle-Fight-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="MM-Signup-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Fight-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Fight-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Icon.png" filter="lineal">
@@ -1571,18 +1580,37 @@
 			<alias ref="Move-Relearner-Window"/>
 			<alias ref="Tabbox-Background"/>
 		</composed>
-	</images>
-	
-	<images file="res/custom/d9nZVhUoCU/PokeDex-Button.png" filter="lineal">
-		<area name="PokeDex-Button" xywh="*"/>
+		<composed name="Battle-Pokemon-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="PokeDex-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Pokemon-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Pokemon-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
-		<area name="dex-button-outline" xywh="0,0,9,9" splitx="L2,R2" splity="T2,B2"/>
-		<area name="dex-button-inner" xywh="9,0,9,9" splitx="L2,R2" splity="T2,B2" tint="#26FFFFFF"/>
 		<area name="dex-button-active1" xywh="0,11,46,2" splity="T0,B2" tint="main-color"/>
 		<area name="dex-button-active2" xywh="0,13,46,2" splity="T0,B2" tint="sub-color"/>
-		<animation name="dex-button-active1-animation" timeSource="enabled">
+		<grid name="dex-button-active1" weightsX="1" weightsY="1,0">
+			<area xywh="0,0,0,0"/>
+			<alias ref="Gradient" sizeOverwriteV="2"/>
+		</grid>
+		<grid name="dex-button-active2" weightsX="1" weightsY="1,0">
+			<area xywh="0,0,0,0"/>
+			<alias ref="Secondary-Color-Pure" sizeOverwriteV="2"/>
+		</grid>
+		<animation name="dex-button-active1-animation" timeSource="keyboardFocus">
 			<frame duration="1500" ref="dex-button-active1"/>
 			<frame duration="1500" ref="dex-button-active1" tint="#80FFFFFF"/>
 		</animation>
@@ -1590,19 +1618,21 @@
 			<alias ref="dex-button-active2"/>
 			<alias ref="dex-button-active1-animation"/>
 		</composed>
+		<composed name="PokeDex-Default">
+			<alias ref="Pure" tint="#10FFFFFF"/>
+			<alias ref="Pure" tint="#60FFFFFF" if="hover | keyboardFocus"/>
+			<alias ref="Window-Accent"/>
+		</composed>
 		<composed name="PokeDex-Button" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="accent-color"/>
-			<alias ref="dex-button-inner" tint="accent-color" if="hover | keyboardFocus"/>
+			<alias ref="PokeDex-Default" tint="sub-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="xp-color"/>
-			<alias ref="dex-button-inner" tint="xp-color" if="hover | keyboardFocus"/>
+			<alias ref="PokeDex-Default" tint="xp-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
-			<alias ref="dex-button-outline" tint="hp-high-color"/>
-			<alias ref="dex-button-inner" tint="hp-high-color" if="hover | keyboardFocus"/>
+			<alias ref="PokeDex-Default" tint="hp-high-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 	</images>
@@ -1631,6 +1661,27 @@
 		</composed>
 	</images>
 	
+	<images file="res/custom/D7wRvcSChn/Bag-Icon.png" filter="lineal">
+		<area name="Bag-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Battle-Bag-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="Bag-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Bag-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Bag-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+	</images>
+
 	<images file="res/custom/cs0o8e55UY/Town-Map-Icon.png" filter="lineal">
 		<area name="Town-Map-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Town-Map-Window">

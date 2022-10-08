@@ -11,7 +11,7 @@
 	</theme>
 
 	<theme name="monsterdex-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>alphabeta-dex</font></param>
 		<param name="border"><border>1,3</border></param>
 		<param name="background"><image>PokeDex-Button</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>

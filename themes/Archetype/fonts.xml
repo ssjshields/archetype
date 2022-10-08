@@ -46,6 +46,13 @@
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 	
+	<fontDef name="battle-label-highlight-safari" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-secondary-color" kerning="true" hinting="AutoSlight" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#26000000" size="12" size_cjk="12" offsetX="-20" offsetY="-8" incremental="false" characters="1234567890">
+        <fontParam if="disabled" color="font-disabled-color"/>
+        <fontParam if="hover" color="font-main-color"/>
+        <fontParam if="selected" color="font-main-color"/>
+        <fontParam if="keyboardFocus" color="font-main-color"/>
+    </fontDef>
+
 	<fontDef name="alphabeta-highlight-button-battle" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="16" size_cjk="16">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
@@ -102,11 +109,11 @@
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 	
-	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-44" offsetY="-69"/>
-	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="16" offsetY="79"/>
+	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-77" offsetY="-69"/>
+	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-24" offsetY="79"/>
 	
 	<fontDef name="hotkey-button" filename="res/fonts/NotoSans-Medium.ttc" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
-	<fontDef name="hotkey-button2" ref="hotkey-button"  color="#26FFFFFF"/>
+	<fontDef name="hotkey-button2" ref="hotkey-button"  color="font-disabled-color"/>
 	
 	<fontDef name="title-font-black-bag" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14"/>
 	
@@ -171,6 +178,12 @@
 	<fontDef name="alphabeta-small" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="alphabeta-battle" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="12.7" size_cjk="12.7"/>
 
+	<fontDef name="alphabeta-dex" ref="alphabeta" color="font-tertiary-color">
+		<fontParam if="hover" color="font-main-color"/>
+		<fontParam if="selected" color="font-main-color"/>
+		<fontParam if="keyboardFocus" color="font-main-color"/>
+	</fontDef>
+
 	<fontDef name="pb-dark" ref="alphabeta" color="font-tertiary-color">
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
@@ -221,7 +234,7 @@
 	<fontDef name="console-orange" ref="alphabeta" color="#FF9900"/>
 	<fontDef name="console" ref="alphabeta" color="font-main-color"/>
 
-	<fontDef name="symbols-white-no-highlight" filename="res/fonts/DejaVuLGCSans.ttf" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="14" incremental="false" characters="┌├└─←→↑↓▸◂↖↗↙↘☒➤↻☒⇲"/>
+	<fontDef name="symbols-white-no-highlight" filename="res/fonts/DejaVuLGCSans.ttf" color="font-tertiary-color" kerning="true" hinting="AutoSlight" size="14" incremental="false" characters="┌├└─←→↑↓▸◂↖↗↙↘☒➤↻☒⇲"/>
 	<fontDef name="symbols-white" filename="res/fonts/DejaVuLGCSans.ttf" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="14" incremental="false" characters="┌├└─←→↑↓▸◂↖↗↙↘☒➤↻☒⇲">
 	<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>

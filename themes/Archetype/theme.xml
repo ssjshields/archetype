@@ -23,7 +23,7 @@
 
 <!--default: acb7b9--><constantDef name="font-tertiary-color"><color>#acb7b9</color></constantDef>
 
-<!--default: BF637073--><constantDef name="font-disabled-color"><color>#9984959b</color></constantDef>
+<!--default: 9984959b--><constantDef name="font-disabled-color"><color>#9984959b</color></constantDef>
 
 
 
@@ -41,7 +41,7 @@
 
 <!--default: 2eb2f8--><constantDef name="xp-color"><color>#2eb2f8</color></constantDef>
 
-<!--default: --><constantDef name="friendship-color"><color>#00a5c9</color></constantDef>
+<!--default: b61ae8--><constantDef name="friendship-color"><color>#b61ae8</color></constantDef>
 
 
 

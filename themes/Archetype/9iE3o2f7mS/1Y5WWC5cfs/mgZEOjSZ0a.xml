@@ -129,67 +129,7 @@
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
-	
-	<theme name="rbattle-fight" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>battle-label-highlight-new</font></param>
-		<param name="font2"><font>symbols-white</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Fight-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-	</theme>
-	
-	<theme name="rbattle-bag" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>battle-label-highlight-new</font></param>
-		<param name="font2"><font>symbols-white</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Bag-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-	</theme>
-	
-	<theme name="rbattle-pokemon" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>battle-label-highlight-new</font></param>
-		<param name="font2"><font>symbols-white</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-	</theme>
-
-	<theme name="rbattle-rotate" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>battle-label-highlight-new</font></param>
-		<param name="font2"><font>symbols-white</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-	</theme>
-	
-	<theme name="rbattle-run" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>battle-label-highlight-new</font></param>
-		<param name="font2"><font>symbols-white</font></param>
-		<param name="border"><border>0,0,1,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Run-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-	</theme>
-	
-	<theme name="rbattle-ball" ref="rbattle" allowWildcard="true">
-		<param name="font"><font>symbols-white</font></param>
-		<param name="font2"><font>battle-label-highlight-new</font></param>
-		<param name="border"><border>0,0,18,0</border></param>
-		<param name=""><image>button.*</image></param>
-		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
-		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-		<param name="textAlignment2"><enum type="alignment">CENTER</enum></param>
-	</theme>
-
+		
 	<theme name="togglebutton" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta-highlight-button</font></param>
 		<param name="border"><border>0,0</border></param>
@@ -198,7 +138,7 @@
 	</theme>
 
 	<theme name="popup-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>listbox-display-highlight-button</font></param>
+		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 		<param name="border"><border>2,2</border></param>
 		<param name=""><image>ui-popup-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -401,7 +341,7 @@
 			<theme name="display" ref="-defaults">
 				<param name="minHeight"><int>26</int></param>
 				<param name="minDisplayedRows"><int>1</int></param>
-				<param name="font"><font>listbox-display-highlight-button</font></param>
+				<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 				<param name="border"><border>0,0,2,0</border></param>
 				<param name=""><image>ui-popup-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -694,6 +634,7 @@
 		<theme name="spanrenderer" ref="-defaults"/>
 		<theme name="treeButton" ref="button"/>
 		<theme name="columnHeader" ref="button">
+			<param name="font"><font>pb-dark</font></param>
 			<param name="border"><border>0,8,0,10</border></param>
 			<param name=""><image>ui-table-header.*</image></param>
 		</theme>
