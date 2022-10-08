@@ -12,8 +12,8 @@
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
 		</grid>
 		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#66FFFFFF"/>
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#33FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#70FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#35FFFFFF"/>
 		</animation>
 	</images>
 
@@ -1456,10 +1456,6 @@
 			<alias ref="Bag-HUD-Buttons"/>
 			<alias ref="Bag-HUD-Icons"/>
 		</composed>
-	</images>
-
-	<images file="res/custom/D7wRvcSChn/Bag-HUD.png" filter="lineal">
-		<area name="Bag-HUD-Background" xywh="*" inset="0,0,-1,0" splity="T100,B50"/>
 		<composed name="Bag-HUD" inset="0,2,-1,0">
 			<alias ref="Shadow-Background"/>
 			<alias ref="Window-Main-Background"/>
@@ -1470,7 +1466,7 @@
 			<alias ref="Highlight-Overlay" inset="2,3,2,2"/>
 		</composed>
 	</images>
-	
+
 	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Default.png" filter="nearest">
 		<area name="Bag-Close-Button-Default" xywh="*"/>
 	</images>
@@ -1495,10 +1491,6 @@
 			<alias ref="Bag-Tab-New.default" tint="main-color" if="selected"/>
 			<alias ref="Bag-Tab-New.default" tint="sub-color"/>
 		</select>
-	</images>
-	
-	<images file="res/custom/D7wRvcSChn/Bag-Frame-Item-Box.png" filter="lineal">
-		<area name="Bag-Frame-Item-Box" xywh="*"/>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Default.png" filter="lineal">
@@ -1600,8 +1592,6 @@
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
-		<area name="dex-button-active1" xywh="0,11,46,2" splity="T0,B2" tint="main-color"/>
-		<area name="dex-button-active2" xywh="0,13,46,2" splity="T0,B2" tint="sub-color"/>
 		<grid name="dex-button-active1" weightsX="1" weightsY="1,0">
 			<area xywh="0,0,0,0"/>
 			<alias ref="Gradient" sizeOverwriteV="2"/>
@@ -1726,14 +1716,6 @@
 		<area name="Move-Forget-Window-Overlay" xywh="*"/>
 	</images>
 	
-	
-	<images file="res/custom/t4iajP1aNf/Trade-Window.png" filter="lineal">
-		<area name="Trade-Window-Background" xywh="*"/>
-		<composed name="Trade-Window">
-			<alias ref="Trade-Window-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
 	<images file="res/custom/t4iajP1aNf/Trade-Icon.png" filter="lineal">
 		<area name="Trade-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Trade-Window">
