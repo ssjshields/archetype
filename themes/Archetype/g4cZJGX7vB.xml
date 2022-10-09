@@ -19,7 +19,7 @@
 		<composed name="ui-frame.background-old">
 			<alias ref="Shadow-Background"/>
 			<alias ref="Window-Main-Background"/>
-			<alias ref="Secondary-Color-Pure" inset="5"/>
+			<alias ref="Sub-Color-Pure" inset="5"/>
         </composed>
 
 		<composed name="ui-frame.background">
@@ -315,8 +315,8 @@
 
 		<area name="ui-spacer.default" xywh="330,8,8,3"/>
 
-		<area name="ui-inputbox.main" xywh="326,16,16,16" splitx="L3,R3" splity="T3,B3" tint="secondary-color"/>
-		<area name="ui-inputbox.accent" xywh="326,0,16,16" splitx="L3,R3" splity="T3,B3" tint="sub-color"/>
+		<area name="ui-inputbox.main" xywh="326,16,16,16" splitx="L3,R3" splity="T3,B3" tint="sub-color"/>
+		<area name="ui-inputbox.accent" xywh="326,0,16,16" splitx="L3,R3" splity="T3,B3" tint="button-color"/>
 		<composed name="ui-inputbox.default">
 			<alias ref="ui-inputbox.main"/>
 			<alias ref="ui-inputbox.accent"/>
@@ -466,7 +466,7 @@
 		<composed name="ui-popup.background" sizeOverwriteH="42" sizeOverwriteV="42" inset="-1">
 			<alias ref="Shadow-Background"/>
 			<alias ref="Window-Main-Background"/>
-			<alias ref="Secondary-Color-Pure" inset="5"/>
+			<alias ref="Sub-Color-Pure" inset="5"/>
 		</composed>
 		<area name="ui-popup-button.selected" xywh="364,254,35,29" splitx="L4,R4" splity="T4,B4"/>
 
@@ -481,7 +481,7 @@
 		</composed>
 
 		<composed name="ui-misc-btn.background"> 
-			<alias ref="Sub-Color-Pure" inset="1" tint="#80FFFFFF"/>
+			<alias ref="Button-Color-Pure" inset="1" tint="#80FFFFFF"/>
 		</composed>
 
 		<composed name="ui-header.background">
@@ -489,7 +489,7 @@
 		</composed>
 
 		<composed name="ui-header-alt.background">
-			<alias ref="ui-misc-btn.background" tint="sub-color"/>
+			<alias ref="ui-misc-btn.background" tint="button-color"/>
 		</composed>
 
 		<area name="ui-table-sort-default.background" xywh="390,125,9,14" splitx="L0,R9" splity="T14,B0" inset="6,8" tint="font-main-color"/>
@@ -573,7 +573,7 @@
 		</select>
 
 		<composed name="ui-copymenu.background" sizeOverwriteV="2" sizeOverwriteH="2">
-			<alias ref="Secondary-Color-Pure"/>
+			<alias ref="Sub-Color-Pure"/>
 		</composed>
 		
 	</images>

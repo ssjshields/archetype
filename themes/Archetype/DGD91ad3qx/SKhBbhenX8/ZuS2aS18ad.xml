@@ -245,6 +245,7 @@
 	</theme>
 
 	<theme name="broker-window" ref="base-tabbed-frame">
+		<param name="minHeight"><int>569</int></param>
 		<param name="background"><image>GTL-Window</image></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="tabbedpane" ref="base-tabbed-pane">
