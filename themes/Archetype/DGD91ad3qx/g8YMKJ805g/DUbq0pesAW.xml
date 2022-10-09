@@ -123,7 +123,7 @@
 	</theme>
 
 	<theme name="hotkeybar" ref="resizableframe">
-		<param name="background"><image>Hotkey-Bar-Frame</image></param>
+		<param name="background"><image>Menu-HUD</image></param>
 		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>0</int></param>
@@ -134,11 +134,6 @@
 		<param name="hasResizeHandle"><bool>false</bool></param>
 		<param name="resizeHandleX"><int>0</int></param>
 		<param name="resizeHandleY"><int>0</int></param>
-		<param name="fadeColorInactive"><color>#FFFFFFFF</color></param>
-		<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>150</int></param>
-		<param name="fadeDurationShow"><int>0</int></param>
-		<param name="fadeDurationHide"><int>0</int></param>
 		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">left</enum></param>
@@ -146,30 +141,28 @@
 		</theme>
 		<theme name="closeButton" ref="-defaults"/>
 		<theme name="resizeHandle" ref="-defaults"/>
-		<param name="border"><border>0,2,0,2</border></param>
+		<param name="border"><border>3,6,6,6</border></param>
 		<theme name="content" ref="-defaults">
-			<param name="defaultGap"><dimension>7,5</dimension></param>
-			<param name="border"><border>3,5,0,5</border></param>
+				<param name="background"><image>none</image></param>
+			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="border"><border>0,0,0,0</border></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="item-slot" ref="-defaults">
-				<param name="background"><image>none</image></param>
-				<param name="border"><border>7,3,7,3</border></param>
-				<param name="font2"><font>hotkey-button</font></param>
-				<!--alphabeta-white-shadow-->
-				
+				<param name="background"><image>Hotkey-Button</image></param>
+				<param name="border"><border>7,4,1,4</border></param>
 				<param name="font"><font>hotkey-button2</font></param>	
-				<param name="minWidth"><int>41</int></param>
-				<param name="maxWidth"><int>42</int></param>
+				<param name="font2"><font>hotkey-button</font></param>
+				<param name="minWidth"><int>44</int></param>
+				<param name="maxWidth"><int>44</int></param>
 				<param name="minHeight"><int>36</int></param>	
-				<param name="textAlignment2"><enum type="alignment">TOPLEFT</enum></param>
 				<param name="textAlignment"><enum type="alignment">BOTTOMLEFT</enum></param>		
+				<param name="textAlignment2"><enum type="alignment">TOPLEFT</enum></param>
 			</theme>
 		</theme>
 	</theme>
 	<theme name="hotkeybar-frame-visible" ref="hotkeybar">
-		<param name="background"><image>Hotkey-Bar-Frame</image></param>	
 	</theme>
 </themes>

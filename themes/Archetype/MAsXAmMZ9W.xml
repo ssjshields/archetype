@@ -138,10 +138,10 @@
 		<select name="button-small.background" sizeOverwriteH="66" sizeOverwriteV="30">
 			<alias ref="button.background" inset="-1,-2,-1,1"/>
 		</select>
-
 		<composed name="button-tiny.background">
 			<alias ref="button-small.background"/>
 		</composed>
+
 	</images>
 	
 	
@@ -1269,31 +1269,6 @@
 			<alias ref="Mod-Management-Icon" inset="10,15,0,0"/>
 		</composed>
 	</images>
-	
-	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
-		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
-		<composed name="Battle-Run-Overlay">
-			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
-			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
-			<alias ref="Sub-Color-Pure" inset="2"/>
-			<alias ref="Instance-Icon" inset="11,6"/>
-		</composed>
-		<grid name="Battle-Run-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
-			<alias ref="Battle-Run-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-		</grid>
-		<composed name="Instance-Window">
-			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Instance-Icon" inset="10,15,0,0"/>
-		</composed>
-	</images>
 
 	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="lineal">
 		<area name="Chat-Minimized-Bar-Default" xywh="*"/>
@@ -1335,68 +1310,71 @@
 		</composed>
 	</images>
 	
-	<images file="res/custom/PeZyHRX0G6/alert-background-new.png" filter="lineal">
-		<area name="alert-background-new" xywh="*" inset="0,-39,0,0"/>
-	</images>
-	
-	<images file="res/custom/PeZyHRX0G6/mail-alert-icon-new.png" filter="lineal">
-		<area name="mail-alert-icon-new" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/PeZyHRX0G6/location-alert-icon-new.png" filter="lineal">
-		<area name="location-alert-icon-new" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/PeZyHRX0G6/money-alert-icon-new.png" filter="lineal">
-		<area name="money-alert-icon-new" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/PeZyHRX0G6/moon-alert-icon-new.png" filter="lineal">
-		<area name="moon-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="lineal">
+		<area name="Alert-Icon" xywh="*" tint="secondary-color"/>
 	</images>
 
-	<images file="res/custom/PeZyHRX0G6/sun-up-alert-icon-new.png" filter="lineal">
-		<area name="sun-up-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Money-Alert-Icon.png" filter="lineal">
+		<area name="Money-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="money-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Money-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
+	</images>
+	
+	<images file="res/custom/PeZyHRX0G6/Moon-Alert-Icon.png" filter="lineal">
+		<area name="Moon-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="moon-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Moon-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 
-	<images file="res/custom/PeZyHRX0G6/sun-alert-icon-new.png" filter="lineal">
-		<area name="sun-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Sun-Up-Alert-Icon.png" filter="lineal">
+		<area name="Sun-Up-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="sun-up-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Sun-Up-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/PeZyHRX0G6/Sun-Alert-Icon.png" filter="lineal">
+		<area name="Sun-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="sun-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Sun-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>	
 	
-	<images file="res/custom/PeZyHRX0G6/active-alert-icon-new.png" filter="lineal">
-		<area name="active-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Active-Alert-Icon.png" filter="lineal">
+		<area name="Active-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="active-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Active-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 
-	<images file="res/custom/PeZyHRX0G6/repel-alert-icon-new.png" filter="lineal">
-		<area name="repel-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Time-Alert-Icon.png" filter="lineal">
+		<area name="Time-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="time-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Time-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 	
-	<images file="res/custom/PeZyHRX0G6/time-alert-icon-new.png" filter="lineal">
-		<area name="time-alert-icon-new" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/Donator-Alert-Icon.png" filter="lineal">
+		<area name="Donator-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="donator-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Donator-Alert-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 	
-	<images file="res/custom/PeZyHRX0G6/donator-alert-new.png" filter="lineal">
-		<area name="donator-alert-new" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/SCI0vPmuJ3/Menu-HUD-Overlay.png" filter="lineal">
-		<area name="Menu-HUD-Overlay" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/SCI0vPmuJ3/Small-HUD.png" filter="lineal">
-		<area name="Small-HUD" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay.png" filter="lineal">
-		<area name="Small-HUD-Overlay" xywh="*"/>
-	</images>
-	
-	<images file="res/custom/SCI0vPmuJ3/Menu-HUD.png" filter="lineal">
-		<area name="Menu-HUD" xywh="*" splitx="L10,R10"/>
-	</images>
-	
-	<images file="res/custom/SCI0vPmuJ3/Hotkey-Bar-Frame.png" filter="lineal">
-		<area name="Hotkey-Bar-Frame" xywh="*"/>
+	<images file="res/custom/PeZyHRX0G6/alert-background.png" filter="lineal">
+		<grid name="alert-background" weightsX="0,1" weightsY="1" inset="0,-39,0,0">
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+			<area xywh="*" tint="secondary-color"/>
+		</grid>
 	</images>
 	
 	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="lineal">
@@ -1502,6 +1480,35 @@
 			<alias ref="TM-Button-Overlay-Disabled" if="disabled"/>
 			<alias ref="TM-Button-Overlay-Default"/>
 		</select>
+	</images>
+	
+	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
+		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Battle-Run-Overlay">
+			<alias ref="Secondary-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Sub-Color-Pure" inset="2"/>
+			<alias ref="Instance-Icon" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Run-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Run-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+		<composed name="Instance-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Instance-Icon" inset="10,15,0,0"/>
+		</composed>
+		<composed name="repel-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Instance-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/Team-Icon.png" filter="lineal">
@@ -1641,6 +1648,10 @@
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Mail-Icon" inset="10,15,0,0"/>
 		</composed>
+		<composed name="mail-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Mail-Icon" inset="3,12,-3,-12"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Icon.png" filter="lineal">
@@ -1672,11 +1683,51 @@
 		</grid>
 	</images>
 
+	<images file="res/custom/u7wRvcSChn/Trainer-Card-Icon.png" filter="lineal">
+		<area name="Trainer-Card-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+	</images>	
+
+	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay1.png" filter="lineal">
+		<area name="Small-HUD-Overlay1" xywh="*"/>
+	</images>	
+	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay2.png" filter="lineal">
+		<area name="Small-HUD-Overlay2" xywh="*"/>
+		<grid name="Small-HUD-Overlay3" weightsX="1,1,1,1,1,1,1,1,1,0" weightsY="1" inset="17,20,-17,-20">
+			<alias ref="Bag-Icon" sizeOverwriteH="49"/>
+			<alias ref="Trainer-Card-Icon" sizeOverwriteH="49"/>
+			<alias ref="Login-CharSelect-Icon" sizeOverwriteH="49"/>
+			<alias ref="MM-Signup-Icon" sizeOverwriteH="49"/>
+			<alias ref="PokeDex-Icon" sizeOverwriteH="49"/>
+			<alias ref="GTL-Icon" sizeOverwriteH="49"/>
+			<alias ref="Mail-Icon" sizeOverwriteH="49"/>
+			<alias ref="Gift-Shop-Icon" sizeOverwriteH="49"/>
+			<alias ref="Settings-Icon" sizeOverwriteH="49"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="7"/>
+		</grid>
+		<composed name="Small-HUD-Overlay">
+			<alias ref="Small-HUD-Overlay1" tint="sub-color"/>
+			<alias ref="Small-HUD-Overlay2" tint="accent-color"/>
+			<alias ref="Small-HUD-Overlay3"/>
+		</composed>
+		<grid name="Menu-HUD" weightsX="0,1,0" weightsY="1" inset="0,0,0,0" sizeOverwriteV="50">
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+			<alias ref="Secondary-Color-Pure"/>
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+		</grid>
+		<composed name="Hotkey-Button">
+			<alias ref="ui-button.default" inset="3,0,0,0"/>
+		</composed>
+	</images>
+	
 	<images file="res/custom/cs0o8e55UY/Town-Map-Icon.png" filter="lineal">
 		<area name="Town-Map-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Town-Map-Window">
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Town-Map-Icon" inset="10,15,0,0"/>
+		</composed>
+		<composed name="location-alert-icon-new">
+			<alias ref="Alert-Icon"/>
+			<alias ref="Town-Map-Icon" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	

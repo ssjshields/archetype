@@ -112,7 +112,7 @@
 	<fontDef name="mechabold-battle-ability-fix" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-77" offsetY="-69"/>
 	<fontDef name="mechabold-battle-ability-fix-enemy" filename="res/fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-24" offsetY="79"/>
 	
-	<fontDef name="hotkey-button" filename="res/fonts/NotoSans-Medium.ttc" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
+	<fontDef name="hotkey-button" filename="res/fonts/NotoSans-Medium.ttc" color="font-secondary-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="hotkey-button2" ref="hotkey-button"  color="font-disabled-color"/>
 	
 	<fontDef name="title-font-black-bag" filename="res/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14"/>

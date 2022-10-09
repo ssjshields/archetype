@@ -821,7 +821,7 @@
 			<theme name="label" ref="-defaults" allowWildcard="true">
 				<param name="font"><font>alphabeta-border-HUD</font></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="background"><image>alert-background-new</image></param>
+				<param name="background"><image>alert-background</image></param>
 						<param name="border"><border>0,1</border></param>				
 			</theme>
 			<theme name="label-location" ref="-defaults" allowWildcard="true">
@@ -849,7 +849,7 @@
 					 <param name="border"><border>0</border></param> 
 			</theme>
 			<theme name="label-uptime" ref="-defaults" allowWildcard="true">
-				<param name="background"><image>donator-alert-new</image></param>
+				<param name="background"><image>donator-alert-icon-new</image></param>
 					 <param name="border"><border>0</border></param> 
 			</theme>
 			<theme name="label-mail" ref="-defaults" allowWildcard="true">
