@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><themes>
+
+<constantDef name="main-color"><color>#42b9ff</color></constantDef><!--default: #42b9ff-->
+<constantDef name="sub-color"><color>#1c2328</color></constantDef><!--default: #1c2328-->
+<constantDef name="button-color"><color>#263238</color></constantDef><!--default: #263238-->
+<constantDef name="accent-color"><color>#2d3b40</color></constantDef><!--default: #2d3b40-->
+
+
+<constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
+<constantDef name="highlight-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
+
+
+<constantDef name="font-main-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
+<constantDef name="font-sub-color"><color>#acb7b9</color></constantDef><!--default: #acb7b9-->
+<constantDef name="font-button-color"><color>#84959b</color></constantDef><!--default: #84959b-->
+<constantDef name="font-disabled-color"><color>#9984959b</color></constantDef><!--default: #9984959b-->
+
+
+<constantDef name="reshiram-color"><color>#cb4e03</color></constantDef><!--default: #cb4e03-->
+<constantDef name="zekrom-color"><color>#00a5c9</color></constantDef><!--default: #00a5c9-->
+
+
+<constantDef name="hp-high-color"><color>#82e026</color></constantDef><!--default: #82e026-->
+<constantDef name="hp-mid-color"><color>#ecd031</color></constantDef><!--default: #ecd031-->
+<constantDef name="hp-low-color"><color>#dc2222</color></constantDef><!--default: #dc2222-->
+<constantDef name="xp-color"><color>#2eb2f8</color></constantDef><!--default: #2eb2f8-->
+<constantDef name="friendship-color"><color>#b61ae8</color></constantDef><!--default: #b61ae8-->
+
+</themes>

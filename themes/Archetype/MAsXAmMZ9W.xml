@@ -4,16 +4,16 @@
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
-			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#70FFFFFF"/>
-			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#35FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#80FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#30FFFFFF"/>
 		</animation>
 		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
 			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
 		</grid>
 		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#70FFFFFF"/>
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#35FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#80FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#30FFFFFF"/>
 		</animation>
 	</images>
 
@@ -113,6 +113,7 @@
 		</animation>
 
 		<select name="button.background" sizeOverwriteH="52" sizeOverwriteV="52">
+			<alias ref="button.disabled-focus" if="disabled + (keyboardFocus | hover)" inset="2,2,2,-1"/>
 			<alias ref="button.disabled" if="disabled" inset="2,2,2,-1"/>
 			<alias ref="button.hover" if="hover" inset="2,2,2,-1"/>
 			<alias ref="button.keyboardFocus" if="keyboardFocus" inset="2,2,2,-1"/>
@@ -518,7 +519,7 @@
 		<composed name="health-progressbar-orange.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
 		<composed name="health-progressbar-green.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
 		<composed name="health-progressbar-xp.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
-		<composed name="time-progressbar.background" inset="1,-49,-4,-3"><alias ref="health-progressbar.background"/></composed>
+		<composed name="time-progressbar.background" inset="0,0,-2,-2"><alias ref="health-progressbar.background"/></composed>
 		<composed name="xp-progressbar.background" inset="-1,-49,-1,-3">
 			<area name="xp-progressbar-shadow" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3"/>
 			<alias ref="Sub-Color-Pure" inset="0,0,2,2"/>
@@ -616,39 +617,7 @@
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/main-hud.png" filter="nearest">
-		<grid name="mapsBack" weightsX="0,1,0" weightsY="0,1">
-            <area xywh="347,168,78,112"/>
-            <area xywh="425,168,96,112"/>
-            <area xywh="521,168,39,112"/>
-            <area xywh="347,280,78,1"/>
-            <area xywh="425,280,96,1"/>
-            <area xywh="521,280,39,1"/>
-        </grid>
 		<area name="ul-list" xywh="383,17,12,15"/>
-
-		<area name="frame-split.background1" xywh="101,233,89,173" splitx="L3,R3" splity="T3,B3"/>
-		<grid name="frame-split.background2" weightsX="0,1,0" weightsY="0,1,0">
-			<area xywh="3,181,3,3"/>
-			<area xywh="6,181,8,3"/>
-			<area xywh="89,181,3,3"/>
-			<area xywh="3,184,3,8"/>
-			<area xywh="104,236,83,167" repeatX="true" repeatY="true" sizeOverwriteV="0"/>
-			<area xywh="89,184,3,8"/>
-			<area xywh="3,223,3,3"/>
-			<area xywh="6,223,3,3"/>
-			<area xywh="89,223,3,3"/>
-		</grid>
-		<grid name="frame-split.background" weightsX="0,1,0" weightsY="0,1,0">
-			<area xywh="3,181,3,3"/>
-			<area xywh="6,181,8,3"/>
-			<area xywh="89,181,3,3"/>
-			<area xywh="3,184,3,8"/>
-			<area xywh="12,188,8,8" repeatX="true" repeatY="true"/>
-			<area xywh="89,184,3,8"/>
-			<area xywh="3,223,3,3"/>
-			<area xywh="6,223,3,3"/>
-			<area xywh="89,223,3,3"/>
-		</grid>
 
 		<grid name="frame-draggable.background" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="99,179,7,7"/>
@@ -680,28 +649,23 @@
 			<area xywh="185,223,5,3"/>
 		</grid>
 
-		<area name="Blue-Highlight" xywh="200,181,5,46" splitx="L0,R4"/>
-		<animation name="Blue-Highlight-Animation" timeSource="enabled">
-			<frame duration="1500" ref="Blue-Highlight" tint="#2a96da"/>
-			<frame duration="1500" ref="Blue-Highlight" tint="#bff0ff"/>
+		<grid name="Main-Color-Highlight" weightsX="1,0" weightsY="1">
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+		</grid>
+		<animation name="Main-Color-Highlight-Animation" timeSource="enabled">
+			<frame duration="1500" ref="Main-Color-Highlight" tint="#ffffff"/>
+			<frame duration="1500" ref="Main-Color-Highlight" tint="#60ffffff"/>
 		</animation>
 
-		<composed name="frame-draggable-alpha-highlight.background">
-			<alias ref="frame-draggable-alpha.background"/>
-			<alias ref="Blue-Highlight-Animation"/>
+		<composed name="frame-draggable-alpha.background">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Main-Color-Highlight"/>
 		</composed>
-
-		<grid name="frame-alpha.background" weightsX="0,1,0" weightsY="0,1,0">
-			<area xywh="3,181,3,3"/>
-			<area xywh="6,181,8,3"/>
-			<area xywh="89,181,3,3"/>
-			<area xywh="3,184,3,8"/>
-			<area xywh="13,189,8,8" repeatX="true" repeatY="true" tint="#99FFFFFF"/>
-			<area xywh="89,184,3,8"/>
-			<area xywh="3,223,3,3"/>
-			<area xywh="6,223,3,3"/>
-			<area xywh="89,223,3,3"/>
-		</grid>
+		<composed name="frame-draggable-alpha-highlight.background">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Main-Color-Highlight-Animation"/>
+		</composed>
 
 		<area name="chat.top.background" tint="#FFFFFFFF" xywh="171,309,29,29" splitx="L5,R5" splity="T5,B1" inset="-10,-3,-3,-3"/>
 		<area name="chat.bottom.background" tint="#FFFFFFFF" xywh="240,308,5,5" inset="-5,-3,0,-3"/>
@@ -713,7 +677,7 @@
 		<area name="label3.background" tint="#9900aeff" xywh="9,191,5,5" inset="0,0,0,0"/>
 		<area name="label4.background" tint="#99ff0000" xywh="9,191,5,5" inset="0,0,0,0"/>
 		<area name="label5.background" tint="#55FFFFFF" xywh="9,191,5,5" inset="0,0,0,0"/>
-		<area name="label6.background" tint="#FF999999" xywh="108,184,5,5" inset="0,0,0,0"/>
+		<area name="label6.background" tint="#FF999999" xywh="9,191,5,5" inset="0,0,0,0"/>
 
 		<area name="table-row.background" tint="#99949494" xywh="9,191,5,5" inset="1,1,1,1"/>
 		<area name="table-row.background2" tint="#99bcd6ff" xywh="108,184,5,5" inset="1,1,1,1"/>
@@ -862,24 +826,15 @@
 			<area xywh="279,457,234,52"/>
 		</grid>
 		<area name="mi-frame-type" xywh="279,226,229,231" tint="#c68a55"/>
-		<area name="mi-tab1.default" xywh="5,32,20,20"/>
-		<area name="mi-tab1.selected" xywh="5,6,20,20"/>
-		<area name="mi-tab2.default" xywh="31,32,20,20"/>
-		<area name="mi-tab2.selected" xywh="31,6,20,20"/>
-		<area name="mi-tab3.default" xywh="56,32,20,20"/>
-		<area name="mi-tab3.selected" xywh="56,6,20,20"/>
-		<area name="mi-tab4.default" xywh="85,32,20,20"/>
-		<area name="mi-tab4.selected" xywh="85,6,20,20"/>
-		<area name="mi-tab5.selected" xywh="112,6,20,20"/>
-		<area name="mi-tab5.default" xywh="112,32,20,20"/>
-		<area name="mi-tab6.selected" xywh="138,6,20,20"/>
-		<area name="mi-tab6.default" xywh="138,32,20,20"/>
-		<area name="mi-tab7.selected" xywh="158,6,20,20"/>
-		<area name="mi-tab7.default" xywh="158,32,20,20"/>
-		<area name="mi-tab8.selected" xywh="243,6,20,20"/>
-		<area name="mi-tab8.default" xywh="243,32,20,20"/>
-		<area name="mi-tab9.selected" xywh="263,6,20,20"/>
-		<area name="mi-tab9.default" xywh="263,32,20,20"/>
+		<area name="mi-tab1" xywh="5,6,20,20"/>
+		<area name="mi-tab2" xywh="31,6,20,20"/>
+		<area name="mi-tab3" xywh="56,6,20,20"/>
+		<area name="mi-tab4" xywh="85,6,20,20"/>
+		<area name="mi-tab5" xywh="112,6,20,20"/>
+		<area name="mi-tab6" xywh="138,6,20,20"/>
+		<area name="mi-tab7" xywh="158,6,20,20"/>
+		<area name="mi-tab8" xywh="243,6,20,20"/>
+		<area name="mi-tab9" xywh="263,6,20,20"/>
 
 		<select name="mi-skill-use.background">
 			<alias ref="mi-skill-use-selected" if="selected | hover"/>
@@ -887,40 +842,40 @@
 		</select>
 
 		<select name="mi-tab1.background">
-			<alias ref="mi-tab1.selected" if="selected | hover"/>
-			<alias ref="mi-tab1.default"/>
+			<alias ref="mi-tab1" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab1" tint="button-color"/>
 		</select>
 		<select name="mi-tab2.background">
-			<alias ref="mi-tab2.selected" if="selected | hover"/>
-			<alias ref="mi-tab2.default"/>
+			<alias ref="mi-tab2" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab2" tint="button-color"/>
 		</select>
 		<select name="mi-tab3.background">
-			<alias ref="mi-tab3.selected" if="selected | hover"/>
-			<alias ref="mi-tab3.default"/>
+			<alias ref="mi-tab3" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab3" tint="button-color"/>
 		</select>
 		<select name="mi-tab4.background">
-			<alias ref="mi-tab4.selected" if="selected | hover"/>
-			<alias ref="mi-tab4.default"/>
+			<alias ref="mi-tab4" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab4" tint="button-color"/>
 		</select>
 		<select name="mi-tab5.background">
-			<alias ref="mi-tab5.selected" if="selected | hover"/>
-			<alias ref="mi-tab5.default"/>
+			<alias ref="mi-tab5" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab5" tint="button-color"/>
 		</select>
 		<select name="mi-tab6.background">
-			<alias ref="mi-tab6.selected" if="selected | hover"/>
-			<alias ref="mi-tab6.default"/>
+			<alias ref="mi-tab6" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab6" tint="button-color"/>
 		</select>
 		<select name="mi-tab7.background">
-			<alias ref="mi-tab7.selected" if="selected | hover"/>
-			<alias ref="mi-tab7.default"/>
+			<alias ref="mi-tab7" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab7" tint="button-color"/>
 		</select>
 		<select name="mi-tab8.background">
-			<alias ref="mi-tab8.selected" if="selected | hover"/>
-			<alias ref="mi-tab8.default"/>
+			<alias ref="mi-tab8" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab8" tint="button-color"/>
 		</select>
 		<select name="mi-tab9.background">
-			<alias ref="mi-tab9.selected" if="selected | hover"/>
-			<alias ref="mi-tab9.default"/>
+			<alias ref="mi-tab9" tint="icon-color" if="selected | hover"/>
+			<alias ref="mi-tab9" tint="button-color"/>
 		</select>
 		<area name="mi-xpbar.progressImage" xywh="72,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-xpbar.background" weightsX="0,1,0" weightsY="1">
@@ -943,12 +898,8 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-orange-party.progressImage" xywh="67,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-orange-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
-			<area xywh="201,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="mi-hpbar-orange-party.progressImage" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
+		<composed name="mi-hpbar-orange-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
 
 		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<animation name="mi-hpbar-red.progressImage" timeSource="enabled">
@@ -974,17 +925,11 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 
-		<area name="mi-hpbar-base-party.progressImage" xywh="52,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
-		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled">
-			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
-			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
+		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled" inset="1,1,4,-1">
+			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
+			<frame duration="1000" ref="progressbar.progressImage"/>
 		</animation>
-
-		<grid name="mi-hpbar-red-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
-			<area xywh="201,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="mi-hpbar-red-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
 
 		<area name="mi-hpbar.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar.background" weightsX="0,1,0" weightsY="1">
@@ -993,14 +938,6 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 		
-		<area name="mi-hpbar-party.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="0,1,2,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
-			<area xywh="201,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-
-
 		<area name="mi-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-green.background" weightsX="0,1,0" weightsY="1">
 			<area xywh="7,88,1,8"/>
@@ -1015,13 +952,8 @@
 			<area xywh="201,88,1,8"/>
 		</grid>
 
-		
-		<area name="mi-hpbar-green-party.progressImage" xywh="12,89,5,4" repeatX="true" inset="0,1,2,-1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-green-party.background" weightsX="0,1,0" weightsY="1" inset="0,0,-1,-2">
-			<area xywh="201,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="mi-hpbar-green-party.progressImage" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
+		<composed name="mi-hpbar-green-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
 
 		<area name="mi-hpbar-violet.progressImage" xywh="62,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
 		<grid name="mi-hpbar-violet.background" weightsX="0,1,0" weightsY="1">
@@ -1385,16 +1317,22 @@
 		<area name="battle-item-frame" xywh="*"/>
 	</images>
 
-	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box.png" filter="lineal">
-		<area name="Party-Frame-Box" xywh="*"/>
-	</images>
-	
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay.png" filter="lineal">
-		<area name="Party-Frame-Box-Overlay" xywh="*" inset="0,-1,0,-3"/>
+		<area name="Party-Frame-Box-Overlay" xywh="*" inset="0,-1,0,-3" tint="sub-color"/>
+		<area name="Party-Frame-Box" xywh="*"/>
+		<composed name="Party-Frame-Box">
+			<alias ref="ui-button.default" inset="-1,0,3,0"/>
+		</composed>
 	</images>
 		
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="lineal">
 		<area name="Party-Frame-Box-Disabled" xywh="*"/>
+		<composed name="Party-Frame-Box-Disabled" inset="0,1,4,1">
+			<alias ref="ui-button.default" inset="-1"/>
+			<alias ref="Sub-Color-Pure" inset="1"/>
+			<alias ref="Button-Color-Pure" tint="#80ffffff" inset="2"/>
+			<area xywh="*" tint="accent-color" inset="2,2,2,2"/>
+		</composed>
 	</images>
 		
 	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
@@ -1459,7 +1397,7 @@
 
 	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
 		<area name="Bag-Tab-New.default" xywh="*"/>
-		<animation name="Bag-Tab-New.keyboardFocus" timeSource="enabled">
+		<animation name="Bag-Tab-New.keyboardFocus" timeSource="keyboardFocus">
 			<frame duration="1500" ref="Bag-Tab-New.default" tint="main-color"/>
 			<frame duration="1500" ref="Bag-Tab-New.default" tint="accent-color"/>
 		</animation>

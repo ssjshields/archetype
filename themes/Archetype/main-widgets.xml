@@ -810,7 +810,7 @@
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>0</int></param>
 		<param name="border"><border>6,6,0,0</border></param>
-		<param name="background"><image>mapsBack</image></param>
+		<param name="background"><image>none</image></param>
 		<theme name="content" ref="-defaults">
 			<param name="defaultGap"><dimension>0,0</dimension></param>
 			<param name="smallGap"><dimension>7,5</dimension></param>
@@ -820,9 +820,9 @@
 			<param name="border"><border>5</border></param>
 			<theme name="label" ref="-defaults" allowWildcard="true">
 				<param name="font"><font>alphabeta-border-HUD</font></param>
-				<param name="border"><border>0,0,0,0</border></param>
+				<param name="border"><border>0,0,1,0</border></param>
 				<param name="background"><image>alert-background</image></param>
-						<param name="border"><border>0,1</border></param>				
+				<param name="minHeight"><int>22</int></param>
 			</theme>
 			<theme name="label-location" ref="-defaults" allowWildcard="true">
 				<param name="background"><image>location-alert-icon-new</image></param>

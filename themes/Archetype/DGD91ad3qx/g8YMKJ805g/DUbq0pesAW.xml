@@ -152,14 +152,14 @@
 			<param name="namedGaps"><map/></param>
 			<theme name="item-slot" ref="-defaults">
 				<param name="background"><image>Hotkey-Button</image></param>
-				<param name="border"><border>7,4,1,4</border></param>
+				<param name="border"><border>7,4,7,4</border></param>
 				<param name="font"><font>hotkey-button2</font></param>	
 				<param name="font2"><font>hotkey-button</font></param>
 				<param name="minWidth"><int>44</int></param>
 				<param name="maxWidth"><int>44</int></param>
 				<param name="minHeight"><int>36</int></param>	
-				<param name="textAlignment"><enum type="alignment">BOTTOMLEFT</enum></param>		
-				<param name="textAlignment2"><enum type="alignment">TOPLEFT</enum></param>
+				<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+				<param name="textAlignment2"><enum type="alignment">BOTTOMRIGHT</enum></param>		
 			</theme>
 		</theme>
 	</theme>

@@ -261,6 +261,8 @@
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="minWidth"><int>105</int></param>
+			<param name="maxWidth"><int>105</int></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>battle-button-arrows</font></param>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<include filename="Choose Your Colors.xml"/>
+	<include filename="Choose_Your_Colors.xml"/>
 	<include filename="fonts.xml"/>
 	<fontGen/>
 	<include filename="CI0qVFbRMm.xml"/>

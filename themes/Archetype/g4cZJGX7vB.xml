@@ -468,7 +468,6 @@
 			<alias ref="Window-Main-Background"/>
 			<alias ref="Sub-Color-Pure" inset="5"/>
 		</composed>
-		<area name="ui-popup-button.selected" xywh="364,254,35,29" splitx="L4,R4" splity="T4,B4"/>
 
 		<select name="ui-popup-button.background">
 			<alias ref="ui-button.hover" if="hover"/>
@@ -476,8 +475,8 @@
 			<alias ref="ui-button.hover" if="selected"/>
 		</select>
 
-		<composed name="monster-slot-selected" inset="-1,-1,2,-1">
-			<alias ref="ui-popup-button.selected"/>
+		<composed name="monster-slot-selected" inset="-1,0,3,0">
+			<alias ref="ui-button.hover"/>
 		</composed>
 
 		<composed name="ui-misc-btn.background"> 

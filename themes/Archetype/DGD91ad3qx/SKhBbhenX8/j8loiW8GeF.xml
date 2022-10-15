@@ -111,7 +111,7 @@
 	<theme name="gameshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>Gift-Shop-Window</image></param>
-		<param name="minWidth"><int>550</int></param>
+		<param name="minWidth"><int>683</int></param>
 		<param name="minHeight"><int>593</int></param>
 		<param name="border"><border>26,0,3,5</border></param>
 		<param name="closeButtonY"><int>8</int></param>
