@@ -16,7 +16,7 @@
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
-		<theme name="label">
+		<theme name="label" ref="label">
 			<param name="background"><image>chat-bubble.background</image></param>
 			<param name="font"><font>tooltip-font</font></param>
 			<param name="border"><border>7,5,3,5</border></param>

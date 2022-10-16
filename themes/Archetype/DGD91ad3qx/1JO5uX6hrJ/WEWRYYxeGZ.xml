@@ -31,22 +31,21 @@
 
 	<theme name="label-area-monsterdex" ref="-defaults">
 		<param name="background"><image>none</image></param>
-		<param name="border"><border>0,4,0,0</border></param>
+		<param name="border"><border>0,0,0,0</border></param>
 		<param name="defaultGap"><dimension>0,0</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
-		<param name="minWidth"><int>567</int></param>
-		<param name="maxWidth"><int>567</int></param>
 		<param name="minHeight"><int>510</int></param>
-
+		<param name="spacing"><int>0</int></param>
+		<param name="alignment"><enum type="alignment">LEFT</enum></param>
 		<theme name="widget" ref="label" allowWildcard="true">
 			<param name="background"><image>ui-table-header.background</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
-			<param name="border"><border>36,6,1,6</border></param>
-			<param name="minWidth"><int>262</int></param>
-			<param name="minHeight"><int>78</int></param>
+			<param name="border"><border>38,30,0,0</border></param>
+			<param name="minWidth"><int>311</int></param>
+			<param name="minHeight"><int>77</int></param>
 			<param name="font"><font>pb-dark</font></param>
 
 			<theme name="progressbar-hp" ref="-defaults" allowWildcard="true">
@@ -82,32 +81,34 @@
 		</theme>
 	</theme>
 
+	<theme name="boxlayout" ref="-defaults" allowWildcard="true">
+		<param name="minHeight"><int>30</int></param>
+		<param name="spacing"><int>0</int></param>
+		<param name="alignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+
 	<theme name="monsterdex-frame" ref="base-tabbed-frame">
-	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>PokeDex-Window</image></param>
-		<!--<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>900</int></param>-->
-		<param name="fadeDurationShow"><int>200</int></param>
-		<param name="fadeDurationHide"><int>200</int></param>
+		<param name="border"><border>0,0,0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>4,20,5,9</border></param>
-			<param name="defaultGap"><dimension>6,5</dimension></param>
+			<param name="border"><border>9,30,9,14</border></param>
+			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="editfield-search" ref="editfield-search">
-				<param name="maxWidth"><int>246</int></param>
+				<param name="maxWidth"><int>299</int></param>
 			</theme>
 			<theme name="label" ref="label" allowWildcard="true">
 				<param name="background"><image>bag-category-label</image></param>
 				<param name="border"><border>0,15,0,0</border></param>
 			</theme>
 			<theme name="progressbar-blue" ref="-defaults" allowWildcard="true">	
-				<param name=""><image>mi-xpbar.*</image></param>
+				<param name=""><image>mi-hpbar-orange.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>182</int></param>
+				<param name="minWidth"><int>148</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -115,7 +116,7 @@
 			<theme name="progressbar-green" ref="-defaults" allowWildcard="true">
 				<param name=""><image>mi-hpbar-green.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>182</int></param>
+				<param name="minWidth"><int>148</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -123,7 +124,15 @@
 			<theme name="progressbar-white" ref="-defaults" allowWildcard="true">
 				<param name=""><image>progressbar-white.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>182</int></param>
+				<param name="minWidth"><int>148</int></param>
+				<param name="minHeight"><int>8</int></param>
+				<param name="maxHeight"><int>8</int></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			</theme>
+			<theme name="progressbar-pink" ref="-defaults" allowWildcard="true">
+				<param name=""><image>mi-hpbar-violet.*</image></param>
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="minWidth"><int>148</int></param>
 				<param name="minHeight"><int>8</int></param>
 				<param name="maxHeight"><int>8</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -138,51 +147,49 @@
 					<param name="border"><border>5,1,4,0</border></param>
 				</theme>
 				<theme name="vscrollbar" ref="vscrollbar-white">
-							<theme name="upbutton" ref="-defaults">
-								<param name="border"><border>2,0,0,0</border></param>
-							</theme>
-							<theme name="downbutton" ref="-defaults">
-								<param name="border"><border>4,0,0,0</border></param>
-							</theme>
-			</theme>
+					<theme name="upbutton" ref="-defaults">
+						<param name="border"><border>2,0,0,0</border></param>
+					</theme>
+					<theme name="downbutton" ref="-defaults">
+						<param name="border"><border>4,0,0,0</border></param>
+					</theme>
+				</theme>
 			</theme>
 			<theme name="combobox" ref="combobox" allowWildcard="true">
 				<param name="border"><border>10,1</border></param>
 			</theme>
 		</theme>
-		<param name="border"><border>5,3,8,1</border></param>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
 			<param name="background"><image>none</image></param>
 			<param name="minWidth"><int>100</int></param>
 			<param name="minHeight"><int>620</int></param>
-			<param name="border"><border>30,10,0,0</border></param>
+			<param name="border"><border>35,0,10,0</border></param>
 			<theme name="tabbox" ref="tabbox">
+				<param name="border"><border>1,30,0,0</border></param>
 				<param name="alignment"><enum type="alignment">FILL</enum></param>
 			</theme>
 			<theme name="container" ref="container">
-				<param name="border"><border>6,5,0,3</border></param>
+				<param name="border"><border>7,0,0,0</border></param>
 				<theme name="dialoglayout" ref="dialoglayout">
+					<param name="border"><border>0,25,10,0</border></param>
+					<param name="defaultGap"><dimension>5,11</dimension></param>
+					<param name="smallGap"><dimension>8,8</dimension></param>
+					<param name="mediumGap"><dimension>10,10</dimension></param>
+					<param name="largeGap"><dimension>15,15</dimension></param>
+					<param name="namedGaps"><map/></param>
 					<theme name="button" ref="button" allowWildcard="true">
 						<param name="font"><font>alphabeta-highlight-button</font></param>
 						<param name="border"><border>7,0</border></param>
 						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					</theme>
-					<param name="border"><border>0,0,2,0</border></param>
-					<param name="defaultGap"><dimension>5,9</dimension></param>
-					<param name="smallGap"><dimension>8,8</dimension></param>
-					<param name="mediumGap"><dimension>10,10</dimension></param>
-					<param name="largeGap"><dimension>15,15</dimension></param>
-					<param name="namedGaps"><map/></param>
 					<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-						<param name="border"><border>0,0,9,6</border></param>
+						<param name="minWidth"><int>630</int></param>
+						<param name="border"><border>0,0,0,9</border></param>
 						<theme name="vscrollbar" ref="vscrollbar-white">
-							<theme name="upbutton" ref="-defaults">
+							<theme name="downbutton" ref="-defaults">
 								<param name="border"><border>1,0,0,0</border></param>
 							</theme>
-							<theme name="downbutton" ref="-defaults">
-								<param name="border"><border>2,0,0,0</border></param>
-							</theme>
-					</theme>
+						</theme>
 					</theme>
 				</theme>
 			</theme>
@@ -202,17 +209,17 @@
 
     <theme name="label-title-dex" ref="label" allowWildcard="true">
         <param name="background"><image>ui-dex-info.background</image></param>
-        <param name="border"><border>21,5,21,5</border></param>
-        <param name="minWidth"><int>100</int></param>
+        <param name="border"><border>17,5,18,5</border></param>
+        <param name="minWidth"><int>130</int></param>
         <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
 
     <theme name="label-value-dex2" ref="label" allowWildcard="true">
         <param name="background"><image>none</image></param>
         <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-        <param name="border"><border>4,10,4,4</border></param>
-        <param name="minWidth"><int>274</int></param>
-        <param name="minHeight"><int>54</int></param>
+        <param name="border"><border>0,10,0,12</border></param>
+        <param name="minWidth"><int>304</int></param>
+        <param name="maxHeight"><int>50</int></param>
         <param name="font"><font>pb-dark</font></param>
     </theme>
 	
@@ -237,7 +244,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>
 		<param name="border"><border>1</border></param>
-		<param name="minWidth"><int>69</int></param>
+		<param name="minWidth"><int>74</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
 
@@ -253,7 +260,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>
 		<param name="border"><border>5</border></param>
-		<param name="minWidth"><int>69</int></param>
+		<param name="minWidth"><int>74</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
 
@@ -261,7 +268,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>
 		<param name="border"><border>5</border></param>
-		<param name="minWidth"><int>100</int></param>
+		<param name="minWidth"><int>110</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
 
@@ -269,7 +276,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<param name="border"><border>5</border></param>
-		<param name="minWidth"><int>222</int></param>
+		<param name="minWidth"><int>241</int></param>
 		<param name="minHeight"><int>30</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
@@ -301,23 +308,23 @@
 	<theme name="dex-move-table" ref="table" allowWildcard="true">
 		<param name="border"><border>0,0,0,0</border></param>
 		<theme name="stringcellrenderer" ref="stringcellrenderer">
-			<param name="border"><border>2,8,2,8</border></param>
+			<param name="border"><border>0</border></param>
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
 		<param name="columnWidths">
 			<map>
-				<param name="0"><int>100</int></param>
-				<param name="1"><int>200</int></param>
+				<param name="0"><int>110</int></param>
+				<param name="1"><int>230</int></param>
 				<param name="2"><int>65</int></param>
-				<param name="3"><int>65</int></param>
-				<param name="4"><int>65</int></param>
-				<param name="5"><int>65</int></param>
+				<param name="3"><int>68</int></param>
+				<param name="4"><int>68</int></param>
+				<param name="5"><int>68</int></param>
 			</map>
 		</param>
 		<theme name="box-layout-row" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>ui-table-row.background</image></param>
 			<param name="border"><border>0,0</border></param>
-			<param name="spacing"><int>30</int></param>
+			<param name="spacing"><int>0</int></param>
 			<param name="alignment"><enum type="alignment">CENTER</enum></param>
 			<theme name="label" ref="label">
 				<param name="border"><border>0,0</border></param>
@@ -325,7 +332,7 @@
 		</theme>
 	</theme>
 	<theme name="dex-move-table-name-label" ref="label">
-		<param name="minWidth"><int>200</int></param>
+		<param name="minWidth"><int>230</int></param>
 		<param name="minHeight"><int>28</int></param>
    		<param name="border"><border>2,8,2,8</border></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>

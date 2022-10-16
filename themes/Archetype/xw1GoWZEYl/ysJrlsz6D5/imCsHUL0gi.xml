@@ -6,19 +6,25 @@
 		<param name="border"><border>0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="border"><border>34,5,5,5</border></param>
-			<theme name="switch-map" ref="-defaults">
-				<param name="background"><image>none</image></param>
+			<theme name="switch-map" ref="-defaults"/>
+			<theme name="townmap-swarm-indicator" ref="boxlayout" allowWildcard="true">
+				<param name="background"><image>Swarm-Background</image></param>
+				<theme name="townmap-label" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>title-font</font></param>
+					<param name="border"><border>0,10,2,0</border></param> 
+				</theme>
 			</theme>
-			<theme name="townmap-label" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>battle-map</font></param>
-				<param name="border"><border>5,5,21,0</border></param> 
-				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+			<theme name="boxlayout" ref="boxlayout">
+				<param name="alignment"><enum type="alignment">left</enum></param>
+				<theme name="townmap-label" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>battle-map</font></param>
+					<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+				</theme>
 			</theme>
 			<theme name="townmap-cursor" ref="-defaults" allowWildcard="true">
 				<param name="font"><font>alphabeta</font></param>
-				<param name="border"><border>0,0</border></param>
 				<param name="background"><image>none</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 		</theme>
 	</theme>

@@ -8,7 +8,7 @@
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>-1</int></param>
-		<param name="closeButtonX"><int>211</int></param>
+		<param name="closeButtonX"><int>256</int></param>
 		<param name="closeButtonY"><int>-32</int></param>
 		<param name="border"><border>10,0,0,3</border></param>
 		<theme name="closeButton" ref="closeButton">
@@ -21,7 +21,7 @@
 		</theme>
 		<theme name="editfield" ref="editfield-search" allowWildcard="true">
 			<param name="background"><image>ui-inputbox-bag.background</image></param>
-			<param name="border"><border>0,2,0,12</border></param>
+			<param name="border"><border>0,12,0,22</border></param>
 			<param name="overlay"><image>Search-Icon-Bag</image></param>
 		</theme>
 		<theme name="dialoglayout" ref="-defaults">
@@ -32,14 +32,14 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="tabbedpane" ref="-defaults">
-				<param name="minHeight"><int>432</int></param>
-				<param name="maxHeight"><int>432</int></param>
-				<param name="minWidth"><int>435</int></param>
+				<param name="minHeight"><int>433</int></param>
+				<param name="maxHeight"><int>433</int></param>
+				<param name="minWidth"><int>526</int></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="tabbox" ref="-defaults">
 					<param name="overlay"><image>Bag-HUD-Overlay</image></param>
-					<param name="border"><border>0,2,20,0</border></param>
-					<param name="spacing"><int>6</int></param>
+					<param name="border"><border>0,3,20,0</border></param>
+					<param name="spacing"><int>7</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="tabbutton" ref="togglebutton">
@@ -77,7 +77,7 @@
 
 	<theme name="inventory-tab-empty" ref="-defaults" allowWildcard="true">
 		 <param name="background"><image>Bag-Tab-New.background</image></param>
-		 <param name="border"><border>24,6</border></param>
+		 <param name="border"><border>29,6</border></param>
 	</theme>
 
 	<theme name="inventory-button" ref="-defaults" allowWildcard="true">
@@ -115,8 +115,8 @@
 		<param name="background"><image>ui-button-bag.background</image></param>
 		<param name="border"><border>6,40,7,6</border></param>
 		<param name="font"><font>alphabeta-highlight-button</font></param>
-		<param name="minWidth"><int>197</int></param>
-		<param name="maxWidth"><int>197</int></param>
+		<param name="minWidth"><int>242</int></param>
+		<param name="maxWidth"><int>242</int></param>
 		<param name="minHeight"><int>36</int></param>
 		<param name="maxHeight"><int>36</int></param>
 		<param name="textAlignment"><enum type="alignment">LEFT</enum></param>

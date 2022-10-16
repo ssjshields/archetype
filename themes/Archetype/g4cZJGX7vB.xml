@@ -316,7 +316,7 @@
 		<area name="ui-spacer.default" xywh="330,8,8,3"/>
 
 		<area name="ui-inputbox.main" xywh="326,16,16,16" splitx="L3,R3" splity="T3,B3" tint="sub-color"/>
-		<area name="ui-inputbox.accent" xywh="326,0,16,16" splitx="L3,R3" splity="T3,B3" tint="button-color"/>
+		<area name="ui-inputbox.accent" xywh="326,0,16,16" splitx="L3,R3" splity="T3,B3" tint="accent-color"/>
 		<composed name="ui-inputbox.default">
 			<alias ref="ui-inputbox.main"/>
 			<alias ref="ui-inputbox.accent"/>
@@ -330,7 +330,7 @@
 			<alias ref="ui-inputbox.default"/>
 		</select>
 		<composed name="ui-inputbox-bag.background">
-			<alias ref="ui-inputbox.background" inset="0,-3,0,-12"/>
+			<alias ref="ui-inputbox.background" inset="0,7,0,-2"/>
 		</composed>
 		<composed name="ui-inputbox-pc.background">
 			<alias ref="ui-inputbox.background" inset="-2,0,-3,0"/>
@@ -500,24 +500,25 @@
 				<alias ref="ui-misc-btn.background"/>
 			</composed>
 			<composed if="sortAscending">
-				<alias ref="ui-misc-btn.background" inset="1"/>
+				<alias ref="ui-misc-btn.background" inset="0"/>
 				<alias ref="ui-table-sort-asc.background" inset="0"/>
 			</composed>
 			<composed if="sortDescending">
-				<alias ref="ui-misc-btn.background" inset="1"/>
+				<alias ref="ui-misc-btn.background" inset="0"/>
 				<alias ref="ui-table-sort-desc.background" inset="0"/>
 			</composed>
 			<composed>
-				<alias ref="ui-misc-btn.background" inset="1"/>
+				<alias ref="ui-misc-btn.background" inset="0"/>
 			</composed>
 		</select>
 
-		<select name="ui-table-row.background">
-			<alias ref="ui-inputbox.default" inset="1"/>
-		</select>
+		<composed name="ui-table-row.background" inset="1">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Window-Accent" tint="button-color"/>
+		</composed>
 		
-		<grid name="ui-dex-info.background" weightsX="102,278" weightsY="1" inset="0,0,0,-280">
-			<alias ref="ui-table-header.background"/>
+		<grid name="ui-dex-info.background" weightsX="117,270" weightsY="1" inset="0,0,0,-304">
+			<alias ref="ui-table-header.background" inset="0,0,0,0"/>
 			<alias ref="ui-table-row.background"/>
 		</grid>	
 		

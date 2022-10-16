@@ -66,6 +66,13 @@
 			<alias ref="Window-Main-Background"/>
 			<alias ref="Sub-Color-Pure" inset="7"/>
 		</composed>
+		<composed name="Swarm-Background" inset="-5">
+			<alias ref="Shadow-Background" inset="2,0,0,0"/>
+			<animation timeSource="enabled" inset="0,0,0,0">
+				<frame duration="1500" ref="Window-Main-Background"/>
+				<frame duration="1500" ref="Window-Main-Background" tint="#cccccc"/>
+			</animation>
+		</composed>
 
 		<composed name="ui-button.hover">
 			<alias ref="Window-Main-Background" inset="-1"/>
@@ -1354,7 +1361,7 @@
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
 		<area name="Search-Icon" xywh="*" tint="icon-color" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
 		<composed name="Search-Icon-Bag">
-			<alias ref="Search-Icon" inset="0,12,0,-12"/>
+			<alias ref="Search-Icon" inset="0,2,0,-2"/>
 		</composed>
 		<composed name="Search-Icon-PC">
 			<alias ref="Search-Icon" inset="3,0,-3,0"/>
@@ -1363,23 +1370,31 @@
 
 	
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Buttons.png" filter="lineal">
-		<area name="Bag-HUD-Buttons" xywh="*" splity="T35,B0"/>
+		<grid name="Bag-HUD-Buttons" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="*" splity="T35,B0"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Icons.png" filter="lineal">
-		<area name="Bag-HUD-Icons" xywh="*" tint="icon-color" splity="T35,B0"/>
+		<grid name="Bag-HUD-Icons" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="*" splity="T35,B0"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 		<composed name="Bag-HUD-Overlay">
 			<alias ref="Bag-HUD-Buttons"/>
 			<alias ref="Bag-HUD-Icons"/>
 		</composed>
-		<composed name="Bag-HUD" inset="0,2,-1,0">
+		<composed name="Bag-HUD" inset="0,0,-1,0">
 			<alias ref="Shadow-Background"/>
 			<alias ref="Window-Main-Background"/>
 			<alias ref="Sub-Color-Pure" inset="5"/>
-			<alias ref="Button-Color-Pure" inset="5,5,372,5"/>
-			<alias ref="Button-Color-Pure" inset="406,5,5,5"/>
+			<alias ref="Button-Color-Pure" inset="5,5,373,5"/>
+			<alias ref="Button-Color-Pure" inset="407,5,5,5"/>
 			<alias ref="Bag-HUD-Overlay" tint="#c6c6c6" inset="10,8,10,10"/>
-			<alias ref="Highlight-Overlay" inset="2,3,2,2"/>
+			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 
@@ -1563,7 +1578,7 @@
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught" inset="-2,0,1,0">
-			<alias ref="PokeDex-Default" tint="xp-color"/>
+			<alias ref="PokeDex-Default" tint="hp-mid-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
@@ -1714,6 +1729,6 @@
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
-		<area name="PokeDex-Mon-Background" xywh="*" inset="2,1,-2,1"/>
+		<area name="PokeDex-Mon-Background" xywh="*" inset="1,1,-10,1"/>
 	</images>
 </themes>

@@ -36,63 +36,66 @@
 			</theme>
 			
 			<theme name="label-value-medium" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>160</int></param>
 			</theme>
 			<theme name="label-value-medium2" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>184</int></param>
 			</theme>
 			<theme name="label-value-medium3" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>212</int></param>
 			</theme>
 			<theme name="label-value-medium4" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>296</int></param>
 			</theme>
+			<theme name="label-title-medium-red" ref="label-value-medium">
+				<param name="font"><font>pb-dark-red</font></param>
+			</theme>
 			<theme name="label-value-small" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>177</int></param>
 			</theme>
 			<theme name="label-value-small2" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>122</int></param>
 			</theme>
 			<theme name="label-value-smallest" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>80</int></param>
 			</theme>
 			<theme name="label-value-small2-warn" ref="label">
 				<param name="font"><font>alphabeta-gtl-yellow</font></param>
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>5</border></param>
 				<param name="minWidth"><int>122</int></param>
 			</theme>
 			<theme name="label-value-small2-danger" ref="label">
 				<param name="font"><font>alphabeta-gtl-red</font></param>
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>5</border></param>
 				<param name="minWidth"><int>122</int></param>
 			</theme>			
 			<theme name="label-value-small3" ref="label">
-				<param name="background"><image>ui-inputbox.default</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minWidth"><int>93</int></param>
@@ -263,7 +266,7 @@
 							
 						</theme>
 						<theme name="label-info" ref="label">
-							<param name="background"><image>ui-inputbox.default</image></param>
+							<param name="background"><image>ui-table-row.background</image></param>
 							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 							<param name="border"><border>20</border></param>
 							<param name="minWidth"><int>300</int></param>
