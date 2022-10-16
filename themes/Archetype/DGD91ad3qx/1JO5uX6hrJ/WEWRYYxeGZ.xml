@@ -219,7 +219,7 @@
         <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
         <param name="border"><border>0,10,0,12</border></param>
         <param name="minWidth"><int>304</int></param>
-        <param name="maxHeight"><int>50</int></param>
+        <param name="minHeight"><int>46</int></param>
         <param name="font"><font>pb-dark</font></param>
     </theme>
 	
