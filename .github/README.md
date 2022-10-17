@@ -47,7 +47,7 @@ more to be added
 
 &nbsp;
 # Installation
-**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21316.zip)
+**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21341.zip)
 
 **2.** Extract into `PokeMMO\data\themes`
 
