@@ -1,3 +1,12 @@
-1.0.3 - 10/5/22
-
-- TBA
+1.1.0 - 10/16/22
+- Updated to PokeMMO revision 21316
+- Remade 90% of the assets and the framework of the theme to prepare for future updates
+- Made theme independent from strings (No string edits needed anymore because ability popups and the login screens were overhauled)
+- Edited Matchmaking, Settings and Summary Windows for multi lang support
+- Fixed multiple PvP areas
+- Fixed bag resizing when activating item on hotkey bar
+- Added animated heart to in-battle hp indicator
+- Reworked Mail Window
+- PC Boxes are now scaling dynamically (Give short names to display more boxes simultaneously)
+- PokeMart Window realigned
+- Countless other fixes
