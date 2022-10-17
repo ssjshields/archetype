@@ -10,3 +10,6 @@
 - PC Boxes are now scaling dynamically (Give short names to display more boxes simultaneously)
 - PokeMart Window realigned
 - Countless other fixes
+
+1.1.1 - 10/17/22
+- Changed compatible PokeMMO revision to 21341
