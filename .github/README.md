@@ -14,7 +14,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 # Compatibility
-📚 multi-language support; custom text strings
+📚 multi-language support
 
 🎮 gamepad support
 
