@@ -1585,6 +1585,10 @@
 			<alias ref="PokeDex-Default" tint="hp-high-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
+		<composed name="PokeDex-Caught-Alpha" inset="-2,0,1,0">
+			<alias ref="PokeDex-Default" tint="friendship-color"/>
+			<alias ref="dex-button-active" if="keyboardFocus"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Icon.png" filter="lineal">

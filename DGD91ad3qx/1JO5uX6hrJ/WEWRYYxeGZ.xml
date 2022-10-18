@@ -24,6 +24,10 @@
 		<param name="background"><image>PokeDex-Caught-OT</image></param>
 	</theme>
 
+	<theme name="monsterdex-button-caught-alpha" ref="monsterdex-button" allowWildcard="true">
+		<param name="background"><image>PokeDex-Caught-Alpha</image></param>
+	</theme>
+
 	<theme name="monsterdex-button-evo-tree" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>symbols-white-no-highlight</font></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
