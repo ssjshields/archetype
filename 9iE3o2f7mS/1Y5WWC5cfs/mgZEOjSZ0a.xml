@@ -152,7 +152,7 @@
 	<theme name="popup-button" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 		<param name="border"><border>2,2</border></param>
-		<param name=""><image>ui-popup-button.*</image></param>
+		<param name=""><image>ui-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
@@ -355,7 +355,7 @@
 				<param name="minDisplayedRows"><int>1</int></param>
 				<param name="font"><font>alphabeta-chat-highlight-button</font></param>
 				<param name="border"><border>0,0,2,0</border></param>
-				<param name=""><image>ui-popup-button.*</image></param>
+				<param name=""><image>ui-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
 			</theme>
