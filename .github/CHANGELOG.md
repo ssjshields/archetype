@@ -13,3 +13,10 @@
 
 1.1.1 - 10/17/22
 - Changed compatible PokeMMO revision to 21341 (no theme assets / code were introduced or modified.)
+
+1.1.2 - 10/18/22
+- Updated to PokeMMO revision 21368
+- Added new Alpha features to the Dex (from 21368 base game.)
+- Added new Alpha icon
+- Fixed pop-up menus
+- Reworked login icons
