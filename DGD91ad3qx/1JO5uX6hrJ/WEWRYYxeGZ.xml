@@ -148,7 +148,7 @@
 			</theme>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 				<theme name="dialoglayout" ref="dialoglayout">
-					<param name="border"><border>5,1,4,0</border></param>
+					<param name="border"><border>5,1,3,0</border></param>
 				</theme>
 				<theme name="vscrollbar" ref="vscrollbar-white">
 					<theme name="upbutton" ref="-defaults">
