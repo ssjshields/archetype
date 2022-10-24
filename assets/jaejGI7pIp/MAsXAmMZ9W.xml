@@ -214,7 +214,7 @@
 			<frame ref="text-bubble-arrow.background2" duration="80"/>
 		</animation>
 	</images>
-	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="lineal">
+	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="nearest">
 		<area name="white.background" xywh="11,313,1,1"/>
 		<area name="input.background" xywh="146,13,45,19" splitx="L5,R5" splity="T5,B5" border="3,0"/>
 		<area name="popup.background" xywh="4,58,33,27" splity="T4,B4" border="8,5,3,5" splitx="L4,R4"/>
@@ -401,23 +401,46 @@
 			<area xywh="15,297,4,7"/>
 		</grid>
 
-		<grid name="tooltip-left.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5" inset="-6,-6,-6,-6">
-			<area xywh="3,325,8,8"/>
-			<area xywh="11,325,1,8"/>
-			<area xywh="12,325,9,8"/>
-			<area xywh="21,325,1,8"/>
-			<area xywh="22,325,8,8"/>
-			<area xywh="3,333,8,7"/>
-			<area xywh="11,333,1,7"/>
-			<area xywh="12,333,9,7"/>
-			<area xywh="21,333,1,7"/>
-			<area xywh="22,333,8,7"/>
-			<area xywh="3,340,8,12"/>
-			<area xywh="11,340,1,12"/>
-			<area xywh="12,340,9,12"/>
-			<area xywh="21,340,1,12"/>
-			<area xywh="22,340,8,12"/>
+		<grid name="tooltip-shadow.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="0,330,4,4"/>
+			<area xywh="4,330,1,4"/>
+			<area xywh="5,330,9,4"/>
+			<area xywh="14,330,1,4"/>
+			<area xywh="15,330,4,4"/>
+			<area xywh="0,334,4,7"/>
+			<area xywh="4,334,1,7"/>
+			<area xywh="5,334,9,7"/>
+			<area xywh="14,334,1,7"/>
+			<area xywh="15,334,4,7"/>
+			<area xywh="0,341,4,8"/>
+			<area xywh="4,341,1,8"/>
+			<area xywh="5,341,9,8"/>
+			<area xywh="14,341,1,8"/>
+			<area xywh="15,341,4,8"/>
 		</grid>
+		<grid name="tooltip-bottom.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="0,350,4,4"/>
+			<area xywh="4,350,1,4"/>
+			<area xywh="5,350,9,4"/>
+			<area xywh="14,350,1,4"/>
+			<area xywh="15,350,4,4"/>
+			<area xywh="0,354,4,7"/>
+			<area xywh="4,354,1,7"/>
+			<area xywh="5,354,9,7"/>
+			<area xywh="14,354,1,7"/>
+			<area xywh="15,354,4,7"/>
+			<area xywh="0,361,4,8"/>
+			<area xywh="4,361,1,8"/>
+			<area xywh="5,361,9,8"/>
+			<area xywh="14,361,1,8"/>
+			<area xywh="15,361,4,8"/>
+		</grid>
+		<composed name="tooltip-left.background">
+			<alias ref="tooltip-shadow.background" inset="-2"/>
+			<alias ref="Window-Accent" inset="0,0,6,0" tint="accent-color"/>
+			<alias ref="Button-Color-Pure" tint="#faffffff" inset="1,1,7,1"/>
+			<alias ref="tooltip-bottom.background" tint="main-color" inset="-2"/>
+		</composed>
 
 		<grid name="chat-npc-bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
 			<area xywh="4,325,4,4"/>
@@ -1469,20 +1492,29 @@
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Icon.png" filter="lineal">
-		<area name="PokeDex-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="PokeDex-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
+		<composed name="PokeDex-Window">
+			<alias ref="Tabbed-Window-Background-Highlight"/>
+			<alias ref="PokeDex-Icon" inset="6,11,0,0"/>
+		</composed>
+		<composed name="poke-summary-dex" inset="-192,208,175,2" splitx="L32,R0">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Button-Color-Pure" tint="#80ffffff"/>
+			<alias ref="PokeDex-Icon" inset="0,4,0,-4"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/d9nZVhUoCU/Move-Relearner-Icon.png" filter="lineal">
+		<area name="Move-Relearner-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Move-Relearner-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="PokeDex-Icon" inset="10,15,0,0"/>
-		</composed>
-		<composed name="PokeDex-Window">
-			<alias ref="Move-Relearner-Window"/>
-			<alias ref="Tabbox-Background"/>
+			<alias ref="Move-Relearner-Icon" inset="10,15,0,0"/>
 		</composed>
 		<composed name="Battle-Pokemon-Overlay">
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="PokeDex-Icon" inset="11,6"/>
+			<alias ref="Move-Relearner-Icon" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Pokemon-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1495,11 +1527,6 @@
 			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
-		<composed name="poke-summary-dex" inset="-192,208,175,2" splitx="L32,R0">
-			<alias ref="Sub-Color-Pure"/>
-			<alias ref="Button-Color-Pure" tint="#80ffffff"/>
-			<alias ref="PokeDex-Icon" inset="4,8,-4,-8"/>
-		</composed>
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="nearest">
@@ -1675,7 +1702,7 @@
 			<alias ref="Trainer-Card-Icon" sizeOverwriteH="49"/>
 			<alias ref="Login-CharSelect-Icon" sizeOverwriteH="49"/>
 			<alias ref="MM-Signup-Icon" sizeOverwriteH="49"/>
-			<alias ref="PokeDex-Icon" sizeOverwriteH="49"/>
+			<alias ref="PokeDex-Icon" sizeOverwriteH="49" inset="-4,-4,4,4"/>
 			<alias ref="GTL-Icon" sizeOverwriteH="49"/>
 			<alias ref="Mail-Icon" sizeOverwriteH="49"/>
 			<alias ref="Gift-Shop-Icon" sizeOverwriteH="49"/>
