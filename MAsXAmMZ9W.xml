@@ -3,17 +3,9 @@
 
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
-		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
+		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#80FFFFFF"/>
 			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#30FFFFFF"/>
-		</animation>
-		<grid name="Highlight-Overlay-Asset-Summary" weightsX="267,233" weightsY="1" inset="0,0,0,0">
-			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,0,0,0"/>
-			<area xywh="0,0,7,7" splitx="L3,R3" splity="T3,B3" inset="0,8,0,0"/>
-		</grid>
-		<animation name="Highlight-Overlay-Summary" timeSource="selected" if="hover | keyboardFocus" tint="highlight-color">
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#80FFFFFF"/>
-			<frame duration="2000" ref="Highlight-Overlay-Asset-Summary" tint="#30FFFFFF"/>
 		</animation>
 	</images>
 
@@ -39,7 +31,7 @@
 		<area name="Gradient" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" tint="main-color"/>
 		<composed name="Window-Main-Background">
 			<alias ref="Gradient" inset="2"/>
-			<alias ref="Gradient" inset="3" tint="#eaeff2"/>
+			<alias ref="Gradient" inset="3" tint="#f1f1f1"/>
 		</composed>
 	</images>
 
@@ -80,6 +72,10 @@
 		<composed name="ui-button.disabled"> 
 			<alias ref="Window-Accent" inset="1" tint="accent-color"/>
 		</composed>
+		<composed name="ui-button.disabled-focus">
+			<alias ref="ui-button.disabled"/>
+			<alias ref="ui-button.hover" tint="#40ffffff"/>
+		</composed>
 		<composed name="ui-button.default">
 			<alias ref="Button-Color-Pure"  inset="1"/>
 			<alias ref="Window-Accent" inset="1" tint="accent-color"/>
@@ -90,6 +86,7 @@
 		</animation>
 		
 		<select name="ui-button.background" sizeOverwriteH="29" sizeOverwriteV="29">
+			<alias ref="ui-button.disabled-focus" if="disabled + (keyboardFocus | hover)"/>
 			<alias ref="ui-button.disabled" if="disabled"/>
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
@@ -150,6 +147,46 @@
 			<alias ref="button-small.background"/>
 		</composed>
 
+		<composed name="special-ui-button.background" sizeOverwriteH="24" sizeOverwriteV="24">
+			<alias ref="ui-button.background"/>
+			<alias ref="Window-Accent" tint="sub-color"/>
+			<alias ref="Window-Accent" tint="sub-color" inset="0,0,1,0"/>
+		</composed>
+
+		<composed name="special-tab-button.default">
+			<alias ref="ui-button.default"/>
+			<alias ref="Window-Accent" tint="sub-color"/>
+			<alias ref="Window-Accent" tint="sub-color" inset="0,0,1,0"/>
+		</composed>
+
+		<animation name="bag-tab.keyboardFocus" timeSource="keyboardFocus">
+			<frame duration="1500" ref="Main-Color-Pure"/>
+			<frame duration="1500" ref="Main-Color-Pure" tint="#00ffffff"/>
+		</animation>
+		<composed name="bag-tab.background" sizeOverwriteH="58" sizeOverwriteV="28">
+			<alias ref="special-tab-button.default"/>
+			<grid weightsX="1" weightsY="1,0" inset="2">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<select sizeOverwriteV="2">
+					<alias ref="Main-Color-Pure" if="hover"/>
+					<alias ref="bag-tab.keyboardFocus" if="keyboardFocus"/>
+					<alias ref="Main-Color-Pure" if="selected"/>
+				</select>
+			</grid>
+		</composed>
+
+		<composed name="chat-tab.background" sizeOverwriteH="24" sizeOverwriteV="24">
+			<alias ref="ui-button.default"/>
+			<alias ref="ui-button.hover" if="hover + !selected"/>
+			<alias ref="Window-Accent" tint="sub-color"/>
+			<alias ref="Window-Accent" tint="sub-color" inset="0,0,1,0"/>
+			<grid weightsX="1" weightsY="1,0" inset="2">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<select sizeOverwriteV="2">
+					<alias ref="Main-Color-Pure" if="selected"/>
+				</select>
+			</grid>
+		</composed>
 	</images>
 	
 	
@@ -811,42 +848,41 @@
 	</images>
 
 	<images file="res/custom/x2eLtlMVtE/monster-info.png" filter="nearest">
-		<area name="mi-label-title" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
-		<area name="mi-label-title-inset" inset="0,6" xywh="7,58,15,24" splitx="L10,R0" splity="T16,B0"/>
-		<area name="mi-label-item" xywh="7,63,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,6,3,-6"/>
-		<area name="bag-category-label" xywh="7,63,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,1,3,-1"/>
-		<area name="mi-label-value" xywh="25,58,125,25" splitx="L2,R2" splity="T2,B2"/>
-		<area name="mi-label-value-blue" tint="#FFFFFF" xywh="181,21,57,47" splitx="L2,R2" splity="T2,B2"/>
-		<area name="mi-label-value-inset" xywh="25,58,125,25" inset="0,-22,0,0" splitx="L2,R2" splity="T2,B2"/>
-		<area name="mi-nameplate" xywh="7,101,165,17" splitx="L2,R2" splity="T6,B6"/>
-		<area name="mi-skill" xywh="22,118,164,42"/>
-		<area name="mi-skill-use" xywh="203,117,165,42"/>
-		<area name="mi-skill-use-selected" xywh="203,75,165,42"/>
-		<area name="mi-bg" xywh="279,226,234,231"/>
-		<area name="mi-frame" xywh="6,194,506,316"/>
-		<grid name="mi-frame-grid" weightsX="1,1" weightsY="1,1,1">
-			<area xywh="5,193,274,33"/>
-			<area xywh="279,193,234,33"/>
-			<area xywh="5,226,274,231"/>
-			<alias ref="mi-bg"/>
-			<area xywh="5,457,274,52"/>
-			<area xywh="279,457,234,52"/>
-		</grid>
-		<area name="mi-frame-type" xywh="279,226,229,231" tint="#c68a55"/>
-		<area name="mi-tab1" xywh="5,6,20,20"/>
-		<area name="mi-tab2" xywh="31,6,20,20"/>
-		<area name="mi-tab3" xywh="56,6,20,20"/>
-		<area name="mi-tab4" xywh="85,6,20,20"/>
-		<area name="mi-tab5" xywh="112,6,20,20"/>
-		<area name="mi-tab6" xywh="138,6,20,20"/>
-		<area name="mi-tab7" xywh="158,6,20,20"/>
-		<area name="mi-tab8" xywh="243,6,20,20"/>
-		<area name="mi-tab9" xywh="263,6,20,20"/>
+		<composed name="mi-label-value" sizeOverwriteH="125" sizeOverwriteV="25" tint="#80FFFFFF"><alias ref="Button-Color-Pure"/></composed>
+		<composed name="mi-label-value-inset" inset="0,-22,0,0"><alias ref="mi-label-value"/></composed>
+		<area name="mi-label-title" xywh="200,0,15,24" splitx="L10,R0" splity="T16,B0" tint="font-sub-color"/>
+		<area name="mi-label-title-inset" inset="0,6" xywh="200,0,15,24" splitx="L10,R0" splity="T16,B0" tint="font-sub-color"/>
+		<area name="mi-label-item" xywh="200,5,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,6,3,-6" tint="font-sub-color"/>
+		<area name="bag-category-label" xywh="200,5,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,1,3,-1" tint="font-sub-color"/>
 
+		<grid name="mi-skill" weightsX="0,0,1" weightsY="1" inset="3,3,2,0">
+			<alias ref="Button-Color-Pure" tint="#80ffffff" sizeOverwriteH="111"/>
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+		<grid name="mi-skill-use.default" weightsX="0,0,1" weightsY="1" inset="3,3,2,0">
+			<alias ref="ui-button.default" inset="-1" sizeOverwriteH="111"/>
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+		<grid name="mi-skill-use.selected" weightsX="0,1" weightsY="1" inset="3,3,2,0">
+			<alias ref="ui-button.hover" inset="-1" sizeOverwriteH="114"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 		<select name="mi-skill-use.background">
-			<alias ref="mi-skill-use-selected" if="selected | hover"/>
-			<alias ref="mi-skill-use"/>
+			<alias ref="mi-skill-use.selected" if="selected | hover"/>
+			<alias ref="mi-skill-use.default"/>
 		</select>
+
+		<area name="mi-tab1" xywh="0,0,20,20"/>
+		<area name="mi-tab2" xywh="20,0,20,20"/>
+		<area name="mi-tab3" xywh="40,0,20,20"/>
+		<area name="mi-tab4" xywh="60,0,20,20"/>
+		<area name="mi-tab5" xywh="80,0,20,20"/>
+		<area name="mi-tab6" xywh="100,0,20,20"/>
+		<area name="mi-tab7" xywh="120,0,20,20"/>
+		<area name="mi-tab8" xywh="140,0,20,20"/>
+		<area name="mi-tab9" xywh="160,0,20,20"/>
 
 		<select name="mi-tab1.background">
 			<alias ref="mi-tab1" tint="icon-color" if="selected | hover"/>
@@ -884,121 +920,63 @@
 			<alias ref="mi-tab9" tint="icon-color" if="selected | hover"/>
 			<alias ref="mi-tab9" tint="button-color"/>
 		</select>
-		<area name="mi-xpbar.progressImage" xywh="72,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="mi-xpbar.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
 
-		<area name="mi-hpbar-orange.progressImage" xywh="67,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-orange.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
 
-		<area name="switch-hpbar-orange.progressImage" xywh="67,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
-		<grid name="switch-hpbar-orange.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="mi-xpbar.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="xp-color"/></composed>
+		<composed name="mi-xpbar.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="mi-hpbar-green.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
+		<composed name="mi-hpbar-green.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="mi-hpbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
+		<composed name="mi-hpbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+		<animation name="mi-hpbar-red.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1" timeSource="enabled">
+			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
+			<frame duration="1000" ref="progressbar.progressImage"/>
+		</animation>		
+		<composed name="mi-hpbar-red.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="mi-hpbar-violet.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="friendship-color"/></composed>
+		<composed name="mi-hpbar-violet.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+
 		
-		<composed name="mi-hpbar-orange-party.progressImage" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
-		<composed name="mi-hpbar-orange-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="switch-hpbar-green.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,0,0,0"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
+		<composed name="switch-hpbar-green.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,7,0,4"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="switch-hpbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,0,0,0"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
+		<composed name="switch-hpbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,7,0,4"><alias ref="Accent-Color-Pure"/></composed>
+		<animation name="switch-hpbar-red.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,0,0,0" timeSource="enabled">
+			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
+			<frame duration="1000" ref="progressbar.progressImage"/>
+		</animation>		
+		<composed name="switch-hpbar-red.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="6,7,0,4"><alias ref="Accent-Color-Pure"/></composed>
 
-		<area name="mi-hpbar-base.progressImage" xywh="52,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<animation name="mi-hpbar-red.progressImage" timeSource="enabled">
-			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#dc2222"/>
-			<frame duration="1000" ref="mi-hpbar-base.progressImage" tint="#ffffff"/>
-		</animation>
-		
-		<grid name="mi-hpbar-red.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
 
-		<area name="switch-hpbar-base.progressImage" xywh="52,89,5,4" inset="4,0,0,0" sizeOverwriteH="0"/>
-		<animation name="switch-hpbar-red.progressImage" timeSource="enabled">
-			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#dc2222"/>
-			<frame duration="1000" ref="switch-hpbar-base.progressImage" tint="#ffffff"/>
-		</animation>
-		
-		<grid name="switch-hpbar-red.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-
-		<animation name="mi-hpbar-red-party.progressImage" timeSource="enabled" inset="1,1,4,-1">
+		<composed name="mi-hpbar-green-party.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
+		<composed name="mi-hpbar-green-party.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="mi-hpbar-orange-party.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
+		<composed name="mi-hpbar-orange-party.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
+		<animation name="mi-hpbar-red-party.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" timeSource="enabled" inset="1,1,4,-1">
 			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
 			<frame duration="1000" ref="progressbar.progressImage"/>
 		</animation>
-		<composed name="mi-hpbar-red-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
+		<composed name="mi-hpbar-red-party.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
 
-		<area name="mi-hpbar.progressImage" tint="#dc2222" xywh="77,89,5,4" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-		
-		<area name="mi-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-green.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
 
-		<area name="switch-hpbar-green.progressImage" xywh="12,89,5,4" repeatX="true" inset="4,0,0,0" sizeOverwriteH="0"/>
-		<grid name="switch-hpbar-green.background" weightsX="0,1,0" weightsY="1" inset="3,6,-3,3">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="progressbar-white.progressImage" sizeOverwriteH="0" sizeOverwriteV="8"inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="icon-color"/></composed>
+		<composed name="progressbar-white.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 
-		<composed name="mi-hpbar-green-party.progressImage" inset="1,1,4,-1"><alias ref="progressbar.progressImage" tint="hp-high-color"/></composed>
-		<composed name="mi-hpbar-green-party.background" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
-
-		<area name="mi-hpbar-violet.progressImage" xywh="62,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="mi-hpbar-violet.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-
-		<area name="progressbar-white.progressImage" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="progressbar-white.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-
-		<area name="progressbar-orange.progressImage" tint="#c68a55" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="progressbar-orange.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
-
-		<area name="progressbar-pink.progressImage" tint="#FF99CC" xywh="52,89,5,4" repeatX="true" inset="1,1,3,1" sizeOverwriteH="0"/>
-		<grid name="progressbar-pink.background" weightsX="0,1,0" weightsY="1">
-			<area xywh="7,88,1,8"/>
-			<area xywh="90,88,1,8"/>
-			<area xywh="201,88,1,8"/>
-		</grid>
+		<composed name="progressbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8"inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#c68a55"/></composed>
+		<composed name="progressbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 	</images>
+
 	<images file="res/custom/u7wRvcSChn/MainTCTexture.png">
 		<area name="trainer-card.background" xywh="0,0,454,287"/>
 	</images>
+
 	<images file="gameshop_lang">
 		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-9,11,8,-11"/>
 		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-9,11,8,-11"/>
 		<area name="shop-item-sale.background" xywh="133,0,57,57" inset="-9,11,8,-11"/>
 		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-9,11,8,-11"/>
 	</images>
+
 	<images file="res/water-levels.png" filter="nearest">
 		<area name="teardrop" xywh="3,3,8,11"/>
 		<area name="teardrop.warning" xywh="13,3,8,11"/>
@@ -1197,8 +1175,16 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/613wCZrdxv/Login-Server-Overlay.png" filter="lineal">
-		<area name="Login-Server-Overlay" xywh="*" inset="-94,-211,-31,-28"/>
+	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Icons.png" filter="lineal">
+		<area name="Login-Server-Overlay-Icons" xywh="*"/>
+	</images>
+
+	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Background.png" filter="lineal">
+		<area name="Login-Server-Overlay-Background" xywh="*"/>
+		<composed name="Login-Server-Overlay" inset="-94,-211,-31,-28">
+			<alias ref="Login-Server-Overlay-Background" tint="button-color"/>
+			<alias ref="Login-Server-Overlay-Icons" tint="icon-color"/>
+		</composed>
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Mod-Management-Icon.png" filter="lineal">
@@ -1229,26 +1215,13 @@
 		</composed>
 	</images>
 	
-	<images file="res/custom/WGRfhUrISa/Chat-Main-Buttons-Overlay.png" filter="lineal">
-		<area name="Chat-Main-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
-	</images>
-	
-	<images file="res/custom/WGRfhUrISa/Chat-Small-Buttons-Overlay.png" filter="lineal">
-		<area name="Chat-Small-Buttons-Overlay" xywh="*" splitx="L2,R2" splity="T2,B2"/>
-	</images>
-	
-	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Default.png" filter="lineal">
-		<area name="Chat-Minimize-Button-Default" xywh="*"/>
-	</images>
-
-	<images file="res/custom/WGRfhUrISa/Chat-Minimize-Button-Hover.png" filter="lineal">
-		<area name="Chat-Minimize-Button-Hover" xywh="*"/>
-		<composed name="Chat-Minimize-Button-Overlay">
-			<alias ref="Chat-Minimize-Button-Default"/>
-			<alias ref="Chat-Minimize-Button-Hover" if="hover | keyboardFocus"/>
+	<images file="res/custom/WGRfhUrISa/Chat-Close-Button.png" filter="lineal">
+		<composed name="Chat-Close-Button" inset="0,0,8,0">
+			<alias ref="special-ui-button.background"/>
+			<area xywh="*"/>
 		</composed>
 	</images>
-	
+
 	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="lineal">
 		<area name="Alert-Icon" xywh="*" tint="sub-color"/>
 	</images>
@@ -1341,19 +1314,7 @@
 			<area xywh="*" tint="accent-color" inset="2,2,2,2"/>
 		</composed>
 	</images>
-		
-	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
-		<area name="Poke-Summary-Window-Background" xywh="*" inset="0,0,-1,0"/>
-		<composed name="Poke-Summary-Window">
-			<alias ref="Poke-Summary-Window-Background"/>
-			<alias ref="Highlight-Overlay-Summary" inset="2,2,1,4"/>
-		</composed>
-	</images>
-		
-	<images file="res/custom/x2eLtlMVtE/poke-summary-dex.png" filter="lineal">
-		<area name="poke-summary-dex" xywh="*" inset="-192,208,175,-10" splitx="L32,R0"/>
-	</images>
-	
+			
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
 		<area name="MainTCTexture-Overlay" xywh="*"/>
 	</images>
@@ -1368,19 +1329,25 @@
 		</composed>
 	</images>
 
-	
-	<images file="res/custom/D7wRvcSChn/Bag-HUD-Buttons.png" filter="lineal">
-		<grid name="Bag-HUD-Buttons" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			<area xywh="*" splity="T35,B0"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-		</grid>
-	</images>
-
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Icons.png" filter="lineal">
 		<grid name="Bag-HUD-Icons" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="*" splity="T35,B0"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+		<grid name="Bag-HUD-Buttons" weightsX="1" weightsY="0,1" inset="0,0,0,0">
+			<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
 		<composed name="Bag-HUD-Overlay">
@@ -1393,48 +1360,27 @@
 			<alias ref="Sub-Color-Pure" inset="5"/>
 			<alias ref="Button-Color-Pure" inset="5,5,373,5"/>
 			<alias ref="Button-Color-Pure" inset="407,5,5,5"/>
-			<alias ref="Bag-HUD-Overlay" tint="#c6c6c6" inset="10,8,10,10"/>
+			<grid weightsX="1" weightsY="0,0,1" tint="#c6c6c6">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="10"/>
+				<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
+					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				</grid>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>
+			<alias ref="Bag-HUD-Icons" tint="#c6c6c6" inset="10,8,10,10"/>
 			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
 		</composed>
 	</images>
 
-	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Default.png" filter="nearest">
-		<area name="Bag-Close-Button-Default" xywh="*"/>
-	</images>
-
-	<images file="res/custom/D7wRvcSChn/Bag-Close-Button-Hover.png" filter="nearest">
-		<area name="Bag-Close-Button-Hover" xywh="*"/>
-		<composed name="Bag-Close-Button">
-			<alias ref="Bag-Close-Button-Default"/>
-			<alias ref="Bag-Close-Button-Hover" if="hover | keyboardFocus"/>
-		</composed>
-	</images>
-
-	<images file="res/custom/D7wRvcSChn/Bag-Tab-New.default.png" filter="lineal">
-		<area name="Bag-Tab-New.default" xywh="*"/>
-		<animation name="Bag-Tab-New.keyboardFocus" timeSource="keyboardFocus">
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="main-color"/>
-			<frame duration="1500" ref="Bag-Tab-New.default" tint="accent-color"/>
-		</animation>
-		<select name="Bag-Tab-New.background">
-			<alias ref="Bag-Tab-New.default" tint="main-color" if="hover"/>
-			<alias ref="Bag-Tab-New.keyboardFocus" if="keyboardFocus"/>
-			<alias ref="Bag-Tab-New.default" tint="main-color" if="selected"/>
-			<alias ref="Bag-Tab-New.default" tint="button-color"/>
-		</select>
-	</images>
-	
-	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Default.png" filter="lineal">
-		<area name="TM-Button-Overlay-Default" xywh="*" inset="0,1,2,1"/>
-	</images>
-	<images file="res/custom/D7wRvcSChn/TM-Button-Overlay-Disabled.png" filter="lineal">
-		<area name="TM-Button-Overlay-Disabled" xywh="*" inset="0,1,2,1"/>
-		<select name="TM-Button-Overlay">
-			<alias ref="TM-Button-Overlay-Disabled" if="disabled"/>
-			<alias ref="TM-Button-Overlay-Default"/>
-		</select>
-	</images>
-	
 	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
 		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Battle-Run-Overlay">
@@ -1549,6 +1495,11 @@
 			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
+		<composed name="poke-summary-dex" inset="-192,208,175,2" splitx="L32,R0">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Button-Color-Pure" tint="#80ffffff"/>
+			<alias ref="PokeDex-Icon" inset="4,8,-4,-8"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
@@ -1588,6 +1539,68 @@
 		<composed name="PokeDex-Caught-Alpha" inset="-2,0,1,0">
 			<alias ref="PokeDex-Default" tint="friendship-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
+		</composed>
+	</images>
+
+	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
+		<composed name="Poke-Summary-Window" inset="0,0,-1,2">
+			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+				<alias ref="Shadow-Background"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+				<alias ref="Shadow-Background"/>
+			</grid>
+			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+				<alias ref="Window-Main-Background"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+				<alias ref="Window-Main-Background"/>
+			</grid>
+			<grid weightsX="0,1" weightsY="1">
+				<alias ref="Sub-Color-Pure" sizeOverwriteH="266" inset="34,5,5,5"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="0,1" inset="34,5,5,5">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="*" sizeOverwriteH="224" sizeOverwriteV="228"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="Sub-Color-Pure" sizeOverwriteH="224" sizeOverwriteV="50"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="Button-Color-Pure" tint="#ffffff" sizeOverwriteH="224" sizeOverwriteV="50"/>
+			</grid>
+			<grid weightsX="235,0,249" weightsY="0,1" inset="8,0,0,0">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="mi-tab2.background" tint="#40ffffff"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="Window-Accent" tint="sub-color" sizeOverwriteH="34" sizeOverwriteV="34"/>
+			</grid>
+			<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="Sub-Color-Pure" tint="#80ffffff" sizeOverwriteH="34" sizeOverwriteV="34" inset="1"/>
+			</grid>
+			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+				<alias ref="Highlight-Overlay" inset="2"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+				<alias ref="Highlight-Overlay" inset="2"/>
+			</grid>
 		</composed>
 	</images>
 
@@ -1638,12 +1651,20 @@
 			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
+		<composed name="Bag-Close-Button">
+			<alias ref="special-ui-button.background"/>
+			<alias ref="Bag-Icon" inset="4,4,-4,-4"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/u7wRvcSChn/Trainer-Card-Icon.png" filter="lineal">
 		<area name="Trainer-Card-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
 	</images>	
 
+	<images file="res/custom/D7wRvcSChn/TM-Icon.png" filter="lineal">
+		<area name="TM-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+	</images>	
+	
 	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay1.png" filter="lineal">
 		<area name="Small-HUD-Overlay1" xywh="*"/>
 	</images>	

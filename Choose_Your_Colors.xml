@@ -7,7 +7,6 @@
 
 
 <constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
-<constantDef name="highlight-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
 
 
 <constantDef name="font-main-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->

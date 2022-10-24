@@ -81,28 +81,19 @@
 				<param name="background"><image>chat.top.background</image></param>
 
 				<theme name="togglebutton-normal" ref="button" allowWildcard="true">
-					<param name=""><image>ui-button.*</image></param>
+					<param name="background"><image>chat-tab.background</image></param>
 					<param name="border"><border>8,8,8,8</border></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
 				</theme>
 				<theme name="togglebutton-settings" ref="button" allowWildcard="true">
-					<param name=""><image>ui-button.*</image></param>
-					<param name="overlay"><image>Chat-Small-Buttons-Overlay</image></param>
+					<param name="background"><image>special-ui-button.background</image></param>
 					<param name="border"><border>8,8,8,8</border></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
 				</theme>
 				<theme name="togglebutton-notification" ref="button" allowWildcard="true">
-					<param name=""><image>ui-button.*</image></param>
-					<param name="overlay"><image>Chat-Small-Buttons-Overlay</image></param>
-					<param name="border"><border>8,8,8,8</border></param>
-					<param name="font"><font>pb-dark-highlight-button</font></param>
-					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
-				</theme>
-				<theme name="togglebutton-normal" ref="button" allowWildcard="true">
-					<param name="background"><image>ui-bag-tab-color.background</image></param>
-					<param name="overlay"><image>Chat-Main-Buttons-Overlay</image></param>
+					<param name="background"><image>special-ui-button.background</image></param>
 					<param name="border"><border>8,8,8,8</border></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
@@ -110,15 +101,12 @@
 
 				<theme name="spritetogglebutton" ref="button" allowWildcard="true">
 					<param name=""><image>ui-inputbox.*</image></param>
-					<param name="overlay"><image>Chat-Minimize-Button-Overlay</image></param>
 					<param name="border"><border>8,8,8,8</border></param>
 					<param name="maxWidth"><int>29</int></param>
 					<param name="maxHeight"><int>25</int></param>
 				</theme>
 				<theme name="hideButton" ref="button" allowWildcard="true">
-						<param name="overlay"><image>Chat-Minimize-Button-Overlay</image></param>
-					<param name=""><image>chaticon.*</image></param>
-					<!--<param name="border"><border>0</border></param>-->
+					<param name="background"><image>Chat-Close-Button</image></param>
 				</theme>
 			</theme>
 
@@ -128,7 +116,7 @@
 
 				<theme name="button" ref="button" allowWildcard="true">
 					<param name="border"><border>7,6</border></param>
-					<param name="overlay"><image>Chat-Main-Buttons-Overlay</image></param>
+					<param name="background"><image>special-ui-button.background</image></param>
 					<param name="font"><font>alphabeta-highlight-button</font></param>
 					<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 				</theme>

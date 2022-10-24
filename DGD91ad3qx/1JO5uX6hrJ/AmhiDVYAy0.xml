@@ -33,7 +33,6 @@
 			<theme name="label2" ref="-defaults">
 				<param name="font"><font>alphabeta-pokename</font></param>
 				<param name="border"><border>3</border></param>
-				<param name="background"><image>mi-nameplate</image></param>
 			</theme>
 			<param name="defaultGap"><dimension>2,0</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
@@ -49,11 +48,11 @@
 			<theme name="label" ref="-defaults">
 			<param name="background"><image>mi-label-item</image></param>
 			<param name="border"><border>0,20,0,4</border></param>
-				<param name="font"><font>alphabeta-small</font></param>		
+				<param name="font"><font>alphabeta-main-system</font></param>		
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
 			<theme name="label2" ref="-defaults">
-				<param name="font"><font>alphabeta-small</font></param>
+				<param name="font"><font>alphabeta-main-system</font></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<param name="background"><image>none</image></param>
 			</theme>
@@ -80,7 +79,7 @@
 					<theme name="tabbutton" ref="togglebutton">
 						<param name=""><image>ui-tab-button.*</image></param>
 					</theme>
-					<param name="border"><border>0,6,0,0</border></param>
+					<param name="border"><border>0,5,0,0</border></param>
 					<param name="spacing"><int>5</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
@@ -114,42 +113,42 @@
 								<param name="background"><image>mi-label-title</image></param>
 								<param name="border"><border>0,14,2,0</border></param>
 								<param name="minWidth"><int>112</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 							</theme>
 
 							<theme name="label-monster-title-wide" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-title-inset</image></param>
 								<param name="border"><border>0,15,0,5</border></param>
 								<param name="minWidth"><int>100</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 							</theme>
 
 							<theme name="label-monster-title-full" ref="label" allowWildcard="true">
 								<param name="background"><image>mi-label-title</image></param>
-								<param name="border"><border>0,15,0,5</border></param>
-								<param name="minWidth"><int>230</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="border"><border>0,14,2,0</border></param>
+								<param name="minWidth"><int>242</int></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 							</theme>
 
 							<theme name="label-skill-use-name" ref="button" allowWildcard="true">
-								<param name="background"><image>mi-skill-use</image></param>
+								<param name="background"><image>mi-skill-use.background</image></param>
 								<param name="border"><border>0,3,1,50</border></param>
 								<param name="minHeight"><int>42</int></param>
 								<param name="maxHeight"><int>42</int></param>
-								<param name="minWidth"><int>164</int></param>
-								<param name="maxWidth"><int>164</int></param>
+								<param name="minWidth"><int>165</int></param>
+								<param name="maxWidth"><int>165</int></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 								<param name="font"><font>alphabeta-highlight-button-summary-move</font></param>
 							</theme>
 
 							<theme name="label-skill-name" ref="button" allowWildcard="true">
-								<param name="background"><image>mi-skill-use</image></param>
+								<param name="background"><image>mi-skill</image></param>
 								<param name="border"><border>0,3,1,50</border></param>
 								<param name="minHeight"><int>42</int></param>
 								<param name="maxHeight"><int>42</int></param>
-								<param name="minWidth"><int>164</int></param>
-								<param name="maxWidth"><int>164</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="minWidth"><int>165</int></param>
+								<param name="maxWidth"><int>165</int></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 							</theme>
 
@@ -159,7 +158,7 @@
 								<param name="border"><border>4,5,5,10</border></param>
 								<param name="maxWidth"><int>110</int></param>
 								<param name="minWidth"><int>110</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 							</theme>
 							
 							<theme name="label-hidden-ability" ref="label-monster-value">
@@ -190,7 +189,7 @@
 								<param name="border"><border>15,25,15,25</border></param>
 								<param name="maxWidth"><int>110</int></param>
 								<param name="minWidth"><int>110</int></param>
-								<param name="font"><font>alphabeta-small</font></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 							</theme>
 
 							<theme name="label-monster-value-tooltip" ref="label-monster-value" allowWildcard="true">
@@ -236,7 +235,7 @@
 								<param name="border"><border>0</border></param>
 							</theme>
 							<theme name="label" ref="-defaults">
-								<param name="font"><font>alphabeta</font></param>
+								<param name="font"><font>alphabeta-main-system</font></param>
 								<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 							</theme>
 						</theme>

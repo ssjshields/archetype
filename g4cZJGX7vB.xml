@@ -227,12 +227,16 @@
 			<alias ref="ui-button.background"/>
 		</composed>
 
-		<composed name="ui-button-bag.background" inset="-1,0,1,0">
+		<composed name="ui-button-tm.background" inset="-1,0,1,0">
 			<alias ref="ui-button.background"/>
 		</composed>
 
 		<composed name="ui-button-item-bag.background" inset="-1,0,-1,0">
 			<alias ref="ui-button.background"/>
+		</composed>
+
+		<composed name="button-learn-bag.background" inset="-3,-1,-1,2">
+			<alias ref="button.background"/>
 		</composed>
 
 		<alias name="ui-button.background-defaultdex" ref="ui-button.background"/>
@@ -462,6 +466,23 @@
 				<alias ref="ui-inputbox-2px.selected.green"/>
 			</composed>
 		</select>
+
+		<grid name="TM-Button-Move-Overlay" weightsX="1,0" weightsY="1,0,1" if="disabled">
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<alias ref="TM-Icon" inset="0,-20,0,20"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
+		<grid name="TM-Button-Mon-Overlay" weightsX="1,0" weightsY="1,0,1" if="disabled">
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<alias ref="ui-checkbox.animation" inset="0,-20,0,20"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 
 		<composed name="ui-popup.background" sizeOverwriteH="42" sizeOverwriteV="42" inset="-1">
 			<alias ref="Shadow-Background"/>
