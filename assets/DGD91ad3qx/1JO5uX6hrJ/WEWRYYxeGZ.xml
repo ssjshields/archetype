@@ -110,7 +110,7 @@
 				<param name="border"><border>0,15,0,0</border></param>
 			</theme>
 			<theme name="progressbar-blue" ref="-defaults" allowWildcard="true">	
-				<param name=""><image>mi-hpbar-orange.*</image></param>
+				<param name=""><image>mi-xpbar.*</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<param name="minWidth"><int>148</int></param>
 				<param name="minHeight"><int>8</int></param>

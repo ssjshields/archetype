@@ -1529,7 +1529,7 @@
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught" inset="-2,0,1,0">
-			<alias ref="PokeDex-Default" tint="hp-mid-color"/>
+			<alias ref="PokeDex-Default" tint="xp-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
 		<composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
