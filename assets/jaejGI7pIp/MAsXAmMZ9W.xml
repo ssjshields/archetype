@@ -9,7 +9,7 @@
 		</animation>
 	</images>
 
-	<images file="res/custom/Tabbox-Background.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Tabbox-Background.png" filter="nearest">
 		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="button-color"/>
 		<area name="Pure" xywh="6,35,2,2"/>
 		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
@@ -18,16 +18,16 @@
 		<area name="Accent-Color-Pure" xywh="6,35,2,2" tint="accent-color"/>
 	</images>
 
-	<images file="res/custom/Window-Primary-Background.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Window-Primary-Background.png" filter="nearest">
 		<area name="Window-Sub-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="sub-color"/>
 	</images>
 
-	<images file="res/custom/Window-Sub-Background.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Window-Sub-Background.png" filter="nearest">
 		<area name="Window-Tertiary-Background" xywh="*" splitx="L50,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="button-color"/>
 		<area name="Window-Accent" xywh="5,5,36,26" splitx="L4,R4" splity="T4,B4" sizeOverwriteH="12"  sizeOverwriteV="12"/>
 	</images>
 
-	<images file="res/custom/Gradient.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Gradient.png" filter="nearest">
 		<area name="Gradient" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" tint="main-color"/>
 		<composed name="Window-Main-Background">
 			<alias ref="Gradient" inset="2"/>
@@ -35,12 +35,12 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/Fade.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Fade.png" filter="nearest">
 		<area name="Fade-Right" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
 		<area name="Fade-Left" xywh="0,0,-800,10" sizeOverwriteH="12" sizeOverwriteV="12"/>
 	</images>
 
-	<images file="res/custom/Shadow-Background.png" filter="lineal">
+	<images file="res/custom/Yzkkn9zM8H/Shadow-Background.png" filter="nearest">
 		<area name="Shadow-Background" xywh="*" splitx="L3,R3" splity="T3,B3"/>
 		<composed name="Window-Background-Highlight">
 			<alias ref="Shadow-Background"/>
@@ -190,7 +190,7 @@
 	</images>
 	
 	
-	<images file="res/custom/WGRfhUrISa/text-bubble-arrow.png" filter="nearest">
+	<images file="res/custom/WGRfhUrISa/text-bubble-arrow.png" filter="lineal">
 		<area name="text-bubble-arrow.background1" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
 		<area name="text-bubble-arrow.background2" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
 		<area name="text-bubble-arrow.background3" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
@@ -214,7 +214,7 @@
 			<frame ref="text-bubble-arrow.background2" duration="80"/>
 		</animation>
 	</images>
-	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="nearest">
+	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="lineal">
 		<area name="white.background" xywh="11,313,1,1"/>
 		<area name="input.background" xywh="146,13,45,19" splitx="L5,R5" splity="T5,B5" border="3,0"/>
 		<area name="popup.background" xywh="4,58,33,27" splity="T4,B4" border="8,5,3,5" splitx="L4,R4"/>
@@ -443,7 +443,7 @@
 		</grid>
 	</images>
 
-	<images file="res/custom/j4iabP1aXf/iconreel.png" filter="nearest">
+	<images file="res/custom/j4iabP1aXf/iconreel.png" filter="lineal">
 		<area name="icon.bookmark" xywh="0,0,16,16"/>
 		<area name="icon.home" xywh="16,0,16,16"/>
 		<area name="icon.arrow-up" xywh="32,0,16,16"/>
@@ -460,12 +460,12 @@
 		<area name="icon.edit" xywh="80,16,16,16"/>
 	</images>
 
-	<images file="textures/icon_set.png" filter="nearest">
+	<images file="textures/icon_set.png" filter="lineal">
 		<area name="icon.cross" xywh="0,0,16,16" center="true"/>
 		<area name="icon.colorwheel" xywh="16,0,16,16" center="true"/>
 	</images>
 
-	<images file="effectivity_buttons_lang" filter="nearest">
+	<images file="effectivity_buttons_lang" filter="lineal">
 		<area name="eff.bg" xywh="0,0,49,14" inset="2,143,2,-88"/>
 		<area name="eff.status" xywh="0,20,49,14" inset="2,143,2,-88"/>
 		<area name="eff.immune" xywh="0,40,49,14" inset="2,143,2,-88"/>
@@ -533,11 +533,11 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/bW6A5DARII/Battle-UI-Bug-Fix-Overlay.png" filter="lineal">
+	<images file="res/custom/bW6A5DARII/Battle-UI-Bug-Fix-Overlay.png" filter="nearest">
 		<area name="Battle-UI-Bug-Fix-Overlay" xywh="*" inset="1,-49,-2,0" tint="sub-color"/>
 	</images>
 
-	<images file="res/custom/bW6A5DARII/EXP-Overlay.png" filter="lineal">
+	<images file="res/custom/bW6A5DARII/EXP-Overlay.png" filter="nearest">
 		<area name="EXP-Overlay" xywh="*" inset="-1,-49,1,0" tint="sub-color"/>
 	</images>
 
@@ -847,7 +847,7 @@
 		</select>
 	</images>
 
-	<images file="res/custom/x2eLtlMVtE/monster-info.png" filter="nearest">
+	<images file="res/custom/x2eLtlMVtE/monster-info.png" filter="lineal">
 		<composed name="mi-label-value" sizeOverwriteH="125" sizeOverwriteV="25" tint="#80FFFFFF"><alias ref="Button-Color-Pure"/></composed>
 		<composed name="mi-label-value-inset" inset="0,-22,0,0"><alias ref="mi-label-value"/></composed>
 		<area name="mi-label-title" xywh="200,0,15,24" splitx="L10,R0" splity="T16,B0" tint="font-sub-color"/>
@@ -977,7 +977,7 @@
 		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-9,11,8,-11"/>
 	</images>
 
-	<images file="res/water-levels.png" filter="nearest">
+	<images file="res/water-levels.png" filter="lineal">
 		<area name="teardrop" xywh="3,3,8,11"/>
 		<area name="teardrop.warning" xywh="13,3,8,11"/>
 		<area name="water-level.background" xywh="3,17,14,15" splitx="L5,R5" splity="T5,B5"/>
@@ -1061,7 +1061,7 @@
 		</composed>
 	</images>
 	
-	<images file="res/contestgui.png" filter="nearest">
+	<images file="res/contestgui.png" filter="lineal">
 		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>
 		<area name="ui-contest-top.background" xywh="91,8,33,7" splitx="L5,R5" splity="T5,B0"/>
 		<area name="ui-contest-special.background" xywh="132,8,10,44" splity="T21,B22"/>
@@ -1127,7 +1127,7 @@
 
 	</images>
 
-	<images file="res/custom/613wCZrdxv/bg.png" filter="nearest">
+	<images file="res/custom/613wCZrdxv/bg.png" filter="lineal">
 		<area name="background-image" xywh="*"/>
 	</images>
 	
@@ -1179,7 +1179,7 @@
 		<area name="Login-Server-Overlay-Icons" xywh="*"/>
 	</images>
 
-	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Background.png" filter="lineal">
+	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Background.png" filter="nearest">
 		<area name="Login-Server-Overlay-Background" xywh="*"/>
 		<composed name="Login-Server-Overlay" inset="-94,-211,-31,-28">
 			<alias ref="Login-Server-Overlay-Background" tint="button-color"/>
@@ -1195,11 +1195,11 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="lineal">
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="nearest">
 		<area name="Chat-Minimized-Bar-Default" xywh="*"/>
 	</images>
 
-	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Hover.png" filter="lineal">
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Hover.png" filter="nearest">
 		<area name="Chat-Minimized-Bar-Hover" xywh="*"/>
 		<select name="Chat-Minimized-Bar">
 			<alias ref="Chat-Minimized-Bar-Hover" if="hover"/>
@@ -1222,7 +1222,7 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="lineal">
+	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="nearest">
 		<area name="Alert-Icon" xywh="*" tint="sub-color"/>
 	</images>
 
@@ -1282,22 +1282,22 @@
 		</composed>
 	</images>
 	
-	<images file="res/custom/PeZyHRX0G6/alert-background.png" filter="lineal">
+	<images file="res/custom/PeZyHRX0G6/alert-background.png" filter="nearest">
 		<grid name="alert-background" weightsX="0,1" weightsY="1" inset="0,-39,0,0">
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
 			<area xywh="*" tint="sub-color"/>
 		</grid>
 	</images>
 	
-	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="lineal">
+	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="nearest">
 		<area name="active-item-tl" xywh="*"/>
 	</images>
 		
-	<images file="res/custom/bW6A5DARII/battle-item-frame.png" filter="lineal">
+	<images file="res/custom/bW6A5DARII/battle-item-frame.png" filter="nearest">
 		<area name="battle-item-frame" xywh="*"/>
 	</images>
 
-	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay.png" filter="lineal">
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Overlay.png" filter="nearest">
 		<area name="Party-Frame-Box-Overlay" xywh="*" inset="0,-1,0,-3" tint="sub-color"/>
 		<area name="Party-Frame-Box" xywh="*"/>
 		<composed name="Party-Frame-Box">
@@ -1305,7 +1305,7 @@
 		</composed>
 	</images>
 		
-	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="lineal">
+	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="nearest">
 		<area name="Party-Frame-Box-Disabled" xywh="*"/>
 		<composed name="Party-Frame-Box-Disabled" inset="0,1,4,1">
 			<alias ref="ui-button.default" inset="-1"/>
@@ -1315,7 +1315,7 @@
 		</composed>
 	</images>
 			
-	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="lineal">
+	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="nearest">
 		<area name="MainTCTexture-Overlay" xywh="*"/>
 	</images>
 
@@ -1502,7 +1502,7 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="lineal">
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="nearest">
 		<grid name="dex-button-active1" weightsX="1" weightsY="1,0">
 			<area xywh="0,0,0,0"/>
 			<alias ref="Gradient" sizeOverwriteV="2"/>
@@ -1542,7 +1542,7 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="lineal">
+	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="nearest">
 		<composed name="Poke-Summary-Window" inset="0,0,-1,2">
 			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
 				<alias ref="Shadow-Background"/>
@@ -1741,7 +1741,7 @@
 		</composed>
 	</images>
 	
-	<images file="res/custom/Yeug7CU84O/Move-Forget-Window-Overlay.png" filter="lineal">
+	<images file="res/custom/Yeug7CU84O/Move-Forget-Window-Overlay.png" filter="nearest">
 		<area name="Move-Forget-Window-Overlay" xywh="*"/>
 	</images>
 	
@@ -1753,7 +1753,7 @@
 		</composed>
 	</images>
 	
-	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="lineal">
+	<images file="res/custom/d9nZVhUoCU/PokeDex-Mon-Background.png" filter="nearest">
 		<area name="PokeDex-Mon-Background" xywh="*" inset="1,1,-10,1"/>
 	</images>
 </themes>

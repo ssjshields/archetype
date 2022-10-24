@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="nearest">
+	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="lineal">
 		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="5,4,10,11"/>
 			<area xywh="18,4,10,11" tiled="true"/>
