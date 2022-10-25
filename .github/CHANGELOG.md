@@ -20,3 +20,11 @@
 - Added new Alpha icon
 - Fixed pop-up menus
 - Reworked login icons
+
+1.1.3 - 10/25/22
+- Fixed incompatibility with GEC due to the Choose_Your_Colors.xml
+- Further framework changes to prepare for future updates and improve stability (reworked summary and bag)
+- Fixed minor bug during scrolling in Pokedex 
+- Reverted color from caught Pokedex entries (changed from yellow to blue)
+- Remade several icons across the theme (e.g. Dex and Game Corner)
+- Improved hidden ability and alpha icons

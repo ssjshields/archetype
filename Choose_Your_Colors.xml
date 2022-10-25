@@ -6,9 +6,6 @@
 <constantDef name="accent-color"><color>#2d3b40</color></constantDef><!--default: #2d3b40-->
 
 
-<constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
-<constantDef name="highlight-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
-
 
 <constantDef name="font-main-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
 <constantDef name="font-sub-color"><color>#acb7b9</color></constantDef><!--default: #acb7b9-->
@@ -26,4 +23,7 @@
 <constantDef name="xp-color"><color>#2eb2f8</color></constantDef><!--default: #2eb2f8-->
 <constantDef name="friendship-color"><color>#b61ae8</color></constantDef><!--default: #b61ae8-->
 
+<!-- WARNING! If you use Gilan's Encounter Counter and want to change this value
+you will also have to edit the fonts.xml file accordingly! -->
+<constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
 </themes>

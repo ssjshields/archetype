@@ -20,7 +20,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 # Media
-(to be updated 10/17~10/18)
+(outdated, to be updated)
 
 ![login-compare](https://cdn.discordapp.com/attachments/859209706576805919/1007583380793200730/login.gif)
 <details>
@@ -47,7 +47,7 @@ more to be added
 
 &nbsp;
 # Installation
-**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21368.zip)
+**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21392.zip)
 
 **2.** Extract into `PokeMMO\data\themes`
 
