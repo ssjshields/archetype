@@ -2,35 +2,6 @@
 <themes>
 
 	<images file="res/custom/j4iabP1aXf/pokemmo_ui.png" filter="lineal">
-		<grid name="ui-frame.background-old" weightsX="0,1,0" weightsY="0,0,1,0">
-			<area xywh="5,4,10,11"/>
-			<area xywh="18,4,10,11" tiled="true"/>
-			<area xywh="30,4,10,11"/>
-			<area xywh="5,15,10,11"/>
-			<area xywh="22,15,10,11" tiled="true"/>
-			<area xywh="30,15,10,11"/>
-			<area xywh="5,26,10,21"/>
-			<area xywh="17,26,10,21"/>
-			<area xywh="30,26,10,21"/>
-			<area xywh="5,69,10,5"/>
-			<area xywh="17,69,10,5"/>
-			<area xywh="30,69,10,5"/>
-		</grid>
-		<composed name="ui-frame.background-old">
-			<alias ref="Shadow-Background"/>
-			<alias ref="Window-Main-Background"/>
-			<alias ref="Sub-Color-Pure" inset="5"/>
-        </composed>
-
-		<composed name="ui-frame.background">
-            <alias ref="ui-frame.background-old"/>
-            <alias ref="Highlight-Overlay" inset="-2,2,2,2"/>
-        </composed>
-
-		<composed name="gc.background" inset="4,-3,-3,-4">
-            <alias ref="ui-frame.background-old"/>
-        </composed>
-
 		<grid name="ui-inner-frame.background" weightsX="0,1,0" weightsY="0,0,1,0">
 			<area xywh="5,82,10,11"/>
 			<area xywh="33,82,10,11" tiled="true"/>
@@ -337,7 +308,7 @@
 			<alias ref="ui-inputbox.background" inset="0,7,0,-2"/>
 		</composed>
 		<composed name="ui-inputbox-pc.background">
-			<alias ref="ui-inputbox.background" inset="-2,0,-3,0"/>
+			<alias ref="ui-inputbox.background" inset="-2,0,-2,0"/>
 		</composed>
 
 		<composed name="ui-inputbox.red"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="#444e52"/></composed>

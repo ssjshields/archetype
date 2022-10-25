@@ -4,22 +4,26 @@
 	<theme name="pc-frame" ref="resizableframe">
 		<param name="border"><border>28,0,0,0</border></param>
 		<param name="background"><image>pc-frame</image></param>
-		<!--<param name="fadeColorInactive"><color>#99FFFFFF</color></param>
-		<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>210000</int></param>-->
 		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
 		<param name="titleAreaRight"><int>-1</int></param>
-		<param name="titleAreaBottom"><int>44</int></param>
+		<param name="titleAreaBottom"><int>41</int></param>
 		<theme name="title" ref="title">
-			<param name="border"><border>20,54,2,0</border></param>
+			<param name="border"><border>19,54,2,0</border></param>
 		</theme>
 		<param name="closeButtonX"><int>-23</int></param>
 		<param name="closeButtonY"><int>17</int></param>
-		<theme name="editfield" ref="editfield" allowWildcard="true">
-			<param name="border"><border>2,5,0,24</border></param>
+		<theme name="editfield" ref="editfield-search" allowWildcard="true">
+			<param name="border"><border>0,5,0,24</border></param>
 			<param name="background"><image>ui-inputbox-pc.background</image></param>
 			<param name="overlay"><image>Search-Icon-PC</image></param>
+		</theme>
+		<theme name="button" ref="button">
+			<param name="background"><image>special-ui-button.background</image></param>
+			<param name="border"><border>0,0,1,0</border></param>
+		</theme>
+		<theme name="button-symbol" ref="button-symbol">
+			<param name="background"><image>special-ui-button.background</image></param>
 		</theme>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>0</border></param>
@@ -27,11 +31,6 @@
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
-					<theme name="editfield" ref="editfield">
-						<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
-			<param name="border"><border>110</border></param>
-					</theme>
-
 			<param name="namedGaps"><map/></param>
 			<theme name="container" ref="-defaults">
 				<param name="background"><image>none</image></param>
@@ -158,9 +157,9 @@
 
 				</theme>
 				<theme name="tabbedpane" ref="-defaults">
-					<param name="minWidth"><int>663</int></param>
+					<param name="minWidth"><int>664</int></param>
 					<param name="background"><image>none</image></param>
-					<param name="border"><border>17,1,0,0</border></param>
+					<param name="border"><border>17,0,0,0</border></param>
 					<theme name="tabbox" ref="-defaults">
 						<theme name="tabbutton" ref="togglebutton">
 							<param name="font"><font>alphabeta-highlight-button</font></param>
@@ -192,28 +191,28 @@
 						</theme>
 					</theme>
 					<theme name="container" ref="-defaults">
-						<param name="border"><border>10,3,0,0</border></param>
+						<param name="border"><border>10,4,0,0</border></param>
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-							<param name="border"><border>10,0,14,0</border></param>
+							<param name="border"><border>10,0,10,0</border></param>
 							<param name="minWidth"><int>600</int></param>
 							<theme name="dialoglayout" ref="-defaults">
-							 <param name="defaultGap"><dimension>6,6</dimension></param>
-							 <param name="smallGap"><dimension>8,8</dimension></param>
-							 <param name="mediumGap"><dimension>10,10</dimension></param>
-							 <param name="largeGap"><dimension>15,15</dimension></param>
-							 <param name="namedGaps"><map/></param>
-							 <param name="border"><border>0,10,0,0</border></param>
-							 <theme name="pc-slot" ref="-defaults">
-								 <param name="background"><image>pc-slot.background</image></param>
-								 <param name="minWidth"><int>32</int></param>
-								 <param name="minHeight"><int>32</int></param>
-								 <theme name="label-dark" ref="label" allowWildcard="true">
-									 <param name="font"><font>alphabeta-highlight-button</font></param>
-									 <param name="border"><border>1,25,0,0</border></param>
-									 <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-								 </theme>
-							 </theme>
-						 </theme>
+								<param name="defaultGap"><dimension>6,6</dimension></param>
+								<param name="smallGap"><dimension>8,8</dimension></param>
+								<param name="mediumGap"><dimension>10,10</dimension></param>
+								<param name="largeGap"><dimension>15,15</dimension></param>
+								<param name="namedGaps"><map/></param>
+								<param name="border"><border>0,10,0,0</border></param>
+								<theme name="pc-slot" ref="-defaults">
+									<param name="background"><image>pc-slot.background</image></param>
+									<param name="minWidth"><int>32</int></param>
+									<param name="minHeight"><int>32</int></param>
+									<theme name="label-dark" ref="label" allowWildcard="true">
+										<param name="font"><font>alphabeta-highlight-button</font></param>
+										<param name="border"><border>1,25,0,0</border></param>
+										<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+									</theme>
+								</theme>
+							</theme>
 						</theme>
 						 <theme name="dialoglayout" ref="-defaults">
 							<param name="defaultGap"><dimension>6,5</dimension></param>

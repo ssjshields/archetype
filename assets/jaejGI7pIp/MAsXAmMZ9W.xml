@@ -3,7 +3,7 @@
 
 	<images file="res/custom/j4iabP1aXf/Highlight-Overlay.png" filter="lineal">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L3,R3" splity="T3,B3"/>
-		<animation name="Highlight-Overlay" timeSource="selected" if="hover | keyboardFocus">
+		<animation name="Highlight-Overlay" inset="2" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#80FFFFFF"/>
 			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#30FFFFFF"/>
 		</animation>
@@ -47,7 +47,7 @@
 			<alias ref="Window-Main-Background"/>
 			<alias ref="Window-Sub-Background"/>
 			<alias ref="Window-Tertiary-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Highlight-Overlay"/>
 		</composed>
 		<composed name="Tabbed-Window-Background-Highlight">
 			<alias ref="Window-Background-Highlight"/>
@@ -187,6 +187,17 @@
 				</select>
 			</grid>
 		</composed>
+
+		<composed name="ui-frame.background">
+			<alias ref="Shadow-Background"/>
+			<alias ref="Window-Main-Background"/>
+			<alias ref="Sub-Color-Pure" inset="5"/>
+            <alias ref="Highlight-Overlay"/>
+        </composed>
+
+		<composed name="gc.background" inset="4,-3,-3,-4">
+            <alias ref="ui-frame.background"/>
+        </composed>
 	</images>
 	
 	
@@ -518,43 +529,6 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/2sTxAVRCoW/pc_slots.png" filter="nearest">
-		<area name="pcslot.bg.default" xywh="3,1,58,48"/>
-		<area name="pcslot.bg.active" xywh="66,1,58,48"/>
-		<area name="pcslot.inner.default" xywh="3,53,58,48"/>
-		<area name="pcslot.inner.active" xywh="66,53,58,48"/>
-		<area name="pcslot.inner.filtered" xywh="129,53,58,48"/>
-		<area name="pcslot.bg.overlay.default" xywh="66,104,58,48"/>
-		<area name="pcslot.bg.overlay.disabled" xywh="3,104,58,48"/>
-		<area name="pcslot.border.default" xywh="3,157,58,48"/>
-		<area name="pcslot.border.selected" xywh="66,157,58,48"/>
-		<area name="pcslot.border.filtered" xywh="129,157,58,48"/>
-		<composed name="pc-slot.background">
-
-			<select center="true">
-				<alias ref="pcslot.border.filtered" if="filtered"/>
-				<alias ref="pcslot.bg.default" />
-			</select>
-
-			<select center="true">
-				<alias ref="pcslot.bg.overlay.disabled" if="obey"/>
-			</select>
-
-			<select center="true">
-				<alias ref="pcslot.inner.filtered" if="selected + filtered"/>
-				<alias ref="pcslot.inner.active" if="selected"/>
-				<alias ref="pcslot.inner.default" />
-			</select>
-
-			<select center="true">
-				<animation if="keyboardFocus" timeSource="keyboardFocus">
-					<frame duration="1500" ref="pcslot.border.selected" tint="#2a96da"/>
-					<frame duration="1500" ref="pcslot.border.selected" tint="#bff0ff"/>
-				</animation>
-				<alias ref="pcslot.border.default" />
-			</select>
-		</composed>
-	</images>
 
 	<images file="res/custom/bW6A5DARII/Battle-UI-Bug-Fix-Overlay.png" filter="nearest">
 		<area name="Battle-UI-Bug-Fix-Overlay" xywh="*" inset="1,-49,-2,0" tint="sub-color"/>
@@ -1076,14 +1050,6 @@
 
 	</images>
 	
-	<images file="res/custom/2sTxAVRCoW/pc-window.png" filter="nearest">
-		<area name="pc-frame-Background" xywh="*"/>
-		<composed name="pc-frame">
-			<alias ref="pc-frame-Background"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
-		</composed>
-	</images>
-	
 	<images file="res/contestgui.png" filter="lineal">
 		<area name="ui-contest.background" xywh="91,8,33,27" splitx="L5,R5" splity="T5,B5"/>
 		<area name="ui-contest-top.background" xywh="91,8,33,7" splitx="L5,R5" splity="T5,B0"/>
@@ -1196,6 +1162,34 @@
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Login-Server-Icon" inset="10,15,0,0"/>
 		</composed>
+	</images>
+
+	<images file="res/custom/2sTxAVRCoW/PC-Icon.png" filter="lineal">
+		<area name="PC-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="pc-frame">
+            <alias ref="ui-frame.background"/>
+			<grid name="ui-inner-frame.background" weightsX="1" weightsY="0,1">
+				<alias ref="Button-Color-Pure" sizeOverwriteV="46" inset="5"/>
+				<area xywh="0,0,0,0"/>
+			</grid>		
+			<grid weightsX="1" weightsY="0,1">
+				<alias ref="Button-Color-Pure" sizeOverwriteV="46" inset="5"/>
+				<area xywh="0,0,0,0"/>
+			</grid>		
+			<grid weightsX="0,1" weightsY="0,1" inset="10">
+				<alias ref="Accent-Color-Pure" sizeOverwriteH="36" sizeOverwriteV="26"/>
+				<area xywh="0,0,0,0"/>
+				<area xywh="0,0,0,0"/>
+				<area xywh="0,0,0,0"/>
+			</grid>		
+			<grid weightsX="0,1" weightsY="0,1" inset="11">
+				<alias ref="Sub-Color-Pure" sizeOverwriteH="34" sizeOverwriteV="24"/>
+				<area xywh="0,0,0,0"/>
+				<area xywh="0,0,0,0"/>
+				<area xywh="0,0,0,0"/>
+			</grid>		
+			<alias ref="PC-Icon" inset="15,20,0,0"/>
+      </composed>
 	</images>
 
 	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Icons.png" filter="lineal">
@@ -1329,15 +1323,13 @@
 	</images>
 		
 	<images file="res/custom/UMmxr3GO9U/Party-Frame-Box-Disabled.png" filter="nearest">
-		<area name="Party-Frame-Box-Disabled" xywh="*"/>
 		<composed name="Party-Frame-Box-Disabled" inset="0,1,4,1">
 			<alias ref="ui-button.default" inset="-1"/>
 			<alias ref="Sub-Color-Pure" inset="1"/>
-			<alias ref="Button-Color-Pure" tint="#80ffffff" inset="2"/>
-			<area xywh="*" tint="accent-color" inset="2,2,2,2"/>
+			<area xywh="*" tint="accent-color" inset="2"/>
 		</composed>
 	</images>
-			
+
 	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="nearest">
 		<area name="MainTCTexture-Overlay" xywh="*"/>
 	</images>
@@ -1348,7 +1340,7 @@
 			<alias ref="Search-Icon" inset="0,2,0,-2"/>
 		</composed>
 		<composed name="Search-Icon-PC">
-			<alias ref="Search-Icon" inset="3,0,-3,0"/>
+			<alias ref="Search-Icon" inset="2,0,-2,0"/>
 		</composed>
 	</images>
 
@@ -1400,7 +1392,7 @@
 				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			</grid>
 			<alias ref="Bag-HUD-Icons" tint="#c6c6c6" inset="10,8,10,10"/>
-			<alias ref="Highlight-Overlay" inset="2,2,2,2"/>
+			<alias ref="Highlight-Overlay"/>
 		</composed>
 	</images>
 
@@ -1569,6 +1561,30 @@
 		</composed>
 	</images>
 
+	<images file="res/custom/2sTxAVRCoW/PC-Slot-Disabled.png" filter="nearest">
+		<composed name="pc-slot.background" inset="1">
+			<composed if="obey">
+				<alias ref="Window-Accent" tint="accent-color"/>
+				<alias ref="Sub-Color-Pure" inset="1"/>
+				<area xywh="*" tint="accent-color" inset="2"/>
+			</composed>
+			<select>
+				<composed tint="hp-high-color" if="selected + filtered">
+					<alias ref="Pure" tint="#60ffffff"/>
+					<alias ref="Window-Accent"/>
+					<alias ref="Window-Accent" tint="#60ffffff" inset="1"/>
+				</composed>
+				<composed tint="xp-color" if="selected">
+					<alias ref="Pure" tint="#30ffffff"/>
+					<alias ref="Window-Accent"/>
+				</composed>
+				<alias ref="Window-Accent" tint="hp-high-color" if="filtered"/>
+				<alias ref="Window-Accent" tint="accent-color"/>
+			</select>
+			<alias ref="dex-button-active" if="keyboardFocus"/>
+		</composed>
+	</images>
+			
 	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="nearest">
 		<composed name="Poke-Summary-Window" inset="0,0,-1,2">
 			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
@@ -1624,9 +1640,9 @@
 				<alias ref="Sub-Color-Pure" tint="#80ffffff" sizeOverwriteH="34" sizeOverwriteV="34" inset="1"/>
 			</grid>
 			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
-				<alias ref="Highlight-Overlay" inset="2"/>
+				<alias ref="Highlight-Overlay"/>
 				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-				<alias ref="Highlight-Overlay" inset="2"/>
+				<alias ref="Highlight-Overlay"/>
 			</grid>
 		</composed>
 	</images>

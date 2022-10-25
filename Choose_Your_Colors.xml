@@ -6,7 +6,6 @@
 <constantDef name="accent-color"><color>#2d3b40</color></constantDef><!--default: #2d3b40-->
 
 
-
 <constantDef name="font-main-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
 <constantDef name="font-sub-color"><color>#acb7b9</color></constantDef><!--default: #acb7b9-->
 <constantDef name="font-button-color"><color>#84959b</color></constantDef><!--default: #84959b-->
