@@ -222,7 +222,7 @@
 		<area name="text-bubble-arrow.background6" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
 		<area name="text-bubble-arrow.background7" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
 
-		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="font-main-color">
+		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="icon-color">
 			<frame ref="text-bubble-arrow.background1" duration="110"/>
 			<frame ref="text-bubble-arrow.background2" duration="80"/>
 			<frame ref="text-bubble-arrow.background3" duration="40"/>
@@ -555,7 +555,7 @@
 		<area name="progressbar.progressImage" xywh="20,9,1,4"/>
 
 		<animation name="health-progressbar-red.progressImage" inset="1,-49,-1,0" timeSource="enabled">
-			<frame duration="1000" ref="progressbar.progressImage" tint="#dc2222"/>
+			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
 			<frame duration="1000" ref="progressbar.progressImage" tint="#ffffff"/>
 		</animation>
 		<composed name="health-progressbar-orange.progressImage" inset="1,-49,-1,0"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>

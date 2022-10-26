@@ -5,7 +5,7 @@
 	<fontDef name="battle-map" ref="battle" color="#ffffff" offsetY="4"/>
     <fontDef name="battle-name" filename="fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
 	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
-	<fontDef name="battle-item" ref="battle-hp-text" offsetY="6"/>
+	<fontDef name="battle-item" ref="battle-hp-text" color="icon-color" offsetY="6"/>
 	<fontDef name="braille" ref="battle"/>
 	<fontDef name="move-name" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
 		<fontParam if="disabled" color="font-disabled-color"/>
@@ -165,8 +165,8 @@
 	<fontDef name="alphabeta-border-overworld" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
 	<fontDef name="alphabeta-border-battle" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#d4dadc" kerning="true" hinting="AutoSlight" size="12.7" size_cjk="12.7"/>
 	<fontDef name="alphabeta-border-HUD" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
-	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1"/>
-	<fontDef name="alphabeta-border-active-item" ref="alphabeta-border-HUD" offsetY="-20"/>
+	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1" color="font-main-color"/>
+	<fontDef name="alphabeta-border-active-item" ref="alphabeta-border-HUD" offsetY="-20" color="icon-color"/>
 	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-sub-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#233031"/>
 	<fontDef name="alphabeta-border" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1.2" border_color="#233031"/>
@@ -212,7 +212,7 @@
 	<fontDef name="mechabold-tm" ref="mechabold" color="font-main-color"/>
 	<fontDef name="mechabold-issued" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="9.7" size_cjk="9.7"/>
 	<fontDef name="mechabold-TC-content" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.9" size_cjk="11.9"/>
-	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
+	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 	
 	<fontDef name="battle-button-arrows" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>
