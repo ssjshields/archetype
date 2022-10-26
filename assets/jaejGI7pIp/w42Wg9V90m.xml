@@ -1,161 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<images file="res/custom/613wCZrdxv/background.png" filter="lineal">
-		<area name="login-background" xywh="*"/>
-	</images>
-
-
-	<images file="res/custom/613wCZrdxv/background-animation-1.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-1.png" filter="lineal">
 		<area name="background-glow001" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-2.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-2.png" filter="lineal">
 		<area name="background-glow002" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-3.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-3.png" filter="lineal">
 		<area name="background-glow003" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-4.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-4.png" filter="lineal">
 		<area name="background-glow004" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-5.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-5.png" filter="lineal">
 		<area name="background-glow005" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-6.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-6.png" filter="lineal">
 		<area name="background-glow006" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-7.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-7.png" filter="lineal">
 		<area name="background-glow007" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-8.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-8.png" filter="lineal">
 		<area name="background-glow008" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-9.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-9.png" filter="lineal">
 		<area name="background-glow009" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-10.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-10.png" filter="lineal">
 		<area name="background-glow010" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-11.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-11.png" filter="lineal">
 		<area name="background-glow011" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-12.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-12.png" filter="lineal">
 		<area name="background-glow012" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-13.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-13.png" filter="lineal">
 		<area name="background-glow013" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-14.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-14.png" filter="lineal">
 		<area name="background-glow014" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-15.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-15.png" filter="lineal">
 		<area name="background-glow015" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-16.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-16.png" filter="lineal">
 		<area name="background-glow016" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-17.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-17.png" filter="lineal">
 		<area name="background-glow017" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-18.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-18.png" filter="lineal">
 		<area name="background-glow018" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-19.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-19.png" filter="lineal">
 		<area name="background-glow019" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-20.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-20.png" filter="lineal">
 		<area name="background-glow020" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-21.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-21.png" filter="lineal">
 		<area name="background-glow021" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-22.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-22.png" filter="lineal">
 		<area name="background-glow022" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-23.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-23.png" filter="lineal">
 		<area name="background-glow023" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-24.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-24.png" filter="lineal">
 		<area name="background-glow024" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-25.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-25.png" filter="lineal">
 		<area name="background-glow025" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-26.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-26.png" filter="lineal">
 		<area name="background-glow026" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-27.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-27.png" filter="lineal">
 		<area name="background-glow027" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-28.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-28.png" filter="lineal">
 		<area name="background-glow028" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-29.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-29.png" filter="lineal">
 		<area name="background-glow029" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-30.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-30.png" filter="lineal">
 		<area name="background-glow030" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-31.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-31.png" filter="lineal">
 		<area name="background-glow031" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-32.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-32.png" filter="lineal">
 		<area name="background-glow032" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-33.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-33.png" filter="lineal">
 		<area name="background-glow033" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-34.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-34.png" filter="lineal">
 		<area name="background-glow034" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-35.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-35.png" filter="lineal">
 		<area name="background-glow035" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-36.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-36.png" filter="lineal">
 		<area name="background-glow036" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-37.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-37.png" filter="lineal">
 		<area name="background-glow037" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-38.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-38.png" filter="lineal">
 		<area name="background-glow038" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-39.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-39.png" filter="lineal">
 		<area name="background-glow039" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-40.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-40.png" filter="lineal">
 		<area name="background-glow040" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-41.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-41.png" filter="lineal">
 		<area name="background-glow041" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-42.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-42.png" filter="lineal">
 		<area name="background-glow042" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-43.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-43.png" filter="lineal">
 		<area name="background-glow043" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-44.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-44.png" filter="lineal">
 		<area name="background-glow044" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-45.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-45.png" filter="lineal">
 		<area name="background-glow045" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-46.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-46.png" filter="lineal">
 		<area name="background-glow046" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-47.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-47.png" filter="lineal">
 		<area name="background-glow047" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-48.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-48.png" filter="lineal">
 		<area name="background-glow048" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-49.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-49.png" filter="lineal">
 		<area name="background-glow049" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-50.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-50.png" filter="lineal">
 		<area name="background-glow050" xywh="*"/>
 	</images>
-	<images file="res/custom/613wCZrdxv/background-animation-51.png" filter="lineal">
+	<images file="res/custom/6LqarL7ZGT/background-animation-51.png" filter="lineal">
 		<area name="background-glow051" xywh="*"/>
 	</images>
 
@@ -215,32 +210,67 @@
 		</animation>
 	</images>
 
-	<images file="res/custom/613wCZrdxv/background-overlay1.png" filter="lineal">
-		<area name="login-background-overlay1" xywh="*" tint="zekrom-color"/>
-		<animation name="login-background-overlay-blue" timeSource="enabled">
-			<frame ref="login-background-overlay1" duration="3000"/>
-			<frame ref="login-background-overlay1" tint="#50ffffff" duration="3000"/>
+
+
+	<images file="res/custom/6LqarL7ZGT/login-background-left.png" filter="lineal">
+		<area name="login-background-left" xywh="*"/>
+	</images>
+	<images file="res/custom/6LqarL7ZGT/login-background-right.png" filter="lineal">
+		<area name="login-background-right" xywh="*"/>
+	</images>
+
+
+	<images file="res/custom/6LqarL7ZGT/login-tailcover-left.png" filter="lineal">
+		<area name="login-tailcover-left" xywh="*"/>
+		<animation name="login-tailcover-left-animation" timeSource="enabled">
+			<frame ref="login-tailcover-left" tint="#00ffffff" duration="3000"/>
+			<frame ref="login-tailcover-left" tint="#eeffffff" duration="3000"/>
+		</animation>
+	</images>
+	<images file="res/custom/6LqarL7ZGT/login-tailcover-right.png" filter="lineal">
+		<area name="login-tailcover-right" xywh="*"/>
+		<animation name="login-tailcover-right-animation" timeSource="enabled">
+			<frame ref="login-tailcover-right" tint="#00ffffff" duration="3000"/>
+			<frame ref="login-tailcover-right" tint="#eeffffff" duration="3000"/>
 		</animation>
 	</images>
 
 
-
-	<images file="res/custom/613wCZrdxv/background-overlay2.png" filter="lineal">
-		<area name="login-background-overlay2" xywh="*" tint="reshiram-color"/>
-		<animation name="login-background-overlay-red" timeSource="enabled">
-			<frame ref="login-background-overlay2" duration="3000"/>
-			<frame ref="login-background-overlay2" tint="#50ffffff" duration="3000"/>
-		</animation>
+	<images file="res/custom/6LqarL7ZGT/login-legendary-left.png" filter="lineal">
+		<area name="login-legendary-left" xywh="*"/>
+	</images>
+	<images file="res/custom/6LqarL7ZGT/login-legendary-right.png" filter="lineal">
+		<area name="login-legendary-right" xywh="*"/>
 	</images>
 
+
+	<images file="res/custom/6LqarL7ZGT/login-overlay-left.png" filter="lineal">
+		<area name="login-overlay-left" xywh="*" tint="reshiram-aura"/>
+		<animation name="login-overlay-left-animation" timeSource="enabled">
+			<frame ref="login-overlay-left" duration="3000"/>
+			<frame ref="login-overlay-left" tint="#40ffffff" duration="3000"/>
+		</animation>
+	</images>
+	<images file="res/custom/6LqarL7ZGT/login-overlay-right.png" filter="lineal">
+		<area name="login-overlay-right" xywh="*" tint="zekrom-aura"/>
+		<animation name="login-overlay-right-animation" timeSource="enabled">
+			<frame ref="login-overlay-right" duration="3000"/>
+			<frame ref="login-overlay-right" tint="#40ffffff" duration="3000"/>
+		</animation>
+	</images>
 
 
 	<images>
 		<composed name="login-background-animation">
 			<alias ref="background-glow"/>
-			<alias ref="login-background"/>
-			<alias ref="login-background-overlay-blue"/>
-			<alias ref="login-background-overlay-red"/>
+			<alias ref="login-background-left" tint="zekrom-color"/>
+			<alias ref="login-background-right" tint="reshiram-color"/>
+			<alias ref="login-tailcover-left-animation" tint="reshiram-color"/>
+			<alias ref="login-tailcover-right-animation" tint="zekrom-color"/>
+			<alias ref="login-legendary-left" tint="reshiram-color"/>
+			<alias ref="login-legendary-right" tint="zekrom-color"/>
+			<alias ref="login-overlay-left-animation"/>
+			<alias ref="login-overlay-right-animation"/>
 		</composed>
 	</images>
 </themes>

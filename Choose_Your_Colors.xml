@@ -12,8 +12,10 @@
 <constantDef name="font-disabled-color"><color>#9984959b</color></constantDef><!--default: #9984959b-->
 
 
-<constantDef name="reshiram-color"><color>#cb4e03</color></constantDef><!--default: #cb4e03-->
-<constantDef name="zekrom-color"><color>#00a5c9</color></constantDef><!--default: #00a5c9-->
+<constantDef name="reshiram-color"><color>#1b2526</color></constantDef><!--default: #1b2526-->
+<constantDef name="reshiram-aura"><color>#cb4e03</color></constantDef><!--default: #cb4e03-->
+<constantDef name="zekrom-color"><color>#070b0b</color></constantDef><!--default: #070b0b-->
+<constantDef name="zekrom-aura"><color>#00a5c9</color></constantDef><!--default: #00a5c9-->
 
 
 <constantDef name="hp-high-color"><color>#82e026</color></constantDef><!--default: #82e026-->

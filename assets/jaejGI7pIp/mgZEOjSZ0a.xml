@@ -974,7 +974,7 @@
 			<theme name="label" ref="-defaults">
 				<param name="border"><border>5</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="font"><font>alphabeta-white</font></param>
+				<param name="font"><font>alphabeta-chat</font></param>
 			</theme>
 		</theme>
 		<theme name="label" ref="-defaults">
