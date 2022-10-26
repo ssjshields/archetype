@@ -317,12 +317,12 @@
 
 		<alias name="-frame.closeIcon" ref="close-handle" inset="2,3,3,3"/>
 		<select name="frame.closebutton.background">
-			<alias ref="-frame.closeIcon" if="armed"/>
-			<alias ref="-frame.closeIcon"/>
+			<alias ref="-frame.closeIcon" if="hover"/>
+			<alias ref="-frame.closeIcon" tint="#c0ffffff"/>
 		</select>
 		<select name="frame.minimizebutton.background">
-			<alias ref="-frame.minimizeIcon" if="armed"/>
-			<alias ref="-frame.minimizeIcon"/>
+			<alias ref="-frame.minimizeIcon" if="hover"/>
+			<alias ref="-frame.minimizeIcon" tint="#c0ffffff"/>
 		</select>
 
 		<select name="vscrollbar-white.thumb.background">
