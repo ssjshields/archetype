@@ -35,6 +35,11 @@
 		</composed>
 	</images>
 
+	<images file="res/custom/Yzkkn9zM8H/Gradient-Border.png" filter="nearest">
+		<area name="Gradient-Border" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5" tint="main-color"/>
+	</images>
+
+
 	<images file="res/custom/Yzkkn9zM8H/Fade.png" filter="nearest">
 		<area name="Fade-Right" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
 		<area name="Fade-Left" xywh="0,0,-800,10" sizeOverwriteH="12" sizeOverwriteV="12"/>
@@ -963,10 +968,6 @@
 		<composed name="progressbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 	</images>
 
-	<images file="res/custom/u7wRvcSChn/MainTCTexture.png">
-		<area name="trainer-card.background" xywh="0,0,454,287"/>
-	</images>
-
 	<images file="gameshop_lang">
 		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-9,11,8,-11"/>
 		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-9,11,8,-11"/>
@@ -1121,26 +1122,26 @@
 	</images>
 	
 	<images file="res/custom/k0Z2GYiAoU/Settings-Icon.png" filter="lineal">
-		<area name="Settings-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Settings-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Settings-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Settings-Icon" inset="10,15,0,0"/>
+			<alias ref="Settings-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/UYAXMcaF2k/FAQ-Icon.png" filter="lineal">
-		<area name="FAQ-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="FAQ-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="FAQ-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="FAQ-Icon" inset="10,15,0,0"/>
+			<alias ref="FAQ-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 		
 	<images file="res/custom/613wCZrdxv/Login-CharSelect-Icon.png" filter="lineal">
-		<area name="Login-CharSelect-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-CharSelect-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-CharSelect-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Login-CharSelect-Icon" inset="10,15,0,0"/>
+			<alias ref="Login-CharSelect-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="Social-Window">
 			<alias ref="Login-CharSelect-Window"/>
@@ -1149,26 +1150,26 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Icon.png" filter="lineal">
-		<area name="Login-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Login-Icon" inset="10,15,0,0"/>
+			<alias ref="Login-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Login-Server-Icon.png" filter="lineal">
-		<area name="Login-Server-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Login-Server-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Login-Server-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Login-Server-Icon" inset="10,15,0,0"/>
+			<alias ref="Login-Server-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/2sTxAVRCoW/PC-Icon.png" filter="lineal">
-		<area name="PC-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
-		<composed name="pc-frame">
+		<area name="PC-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="PC-Window">
             <alias ref="ui-frame.background"/>
-			<grid name="ui-inner-frame.background" weightsX="1" weightsY="0,1">
+			<grid weightsX="1" weightsY="0,1">
 				<alias ref="Button-Color-Pure" sizeOverwriteV="46" inset="5"/>
 				<area xywh="0,0,0,0"/>
 			</grid>		
@@ -1188,7 +1189,7 @@
 				<area xywh="0,0,0,0"/>
 				<area xywh="0,0,0,0"/>
 			</grid>		
-			<alias ref="PC-Icon" inset="15,20,0,0"/>
+			<alias ref="PC-Icon" tint="icon-color" inset="15,20,0,0"/>
       </composed>
 	</images>
 
@@ -1205,10 +1206,10 @@
 	</images>
 	
 	<images file="res/custom/613wCZrdxv/Mod-Management-Icon.png" filter="lineal">
-		<area name="Mod-Management-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Mod-Management-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mod-Management-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Mod-Management-Icon" inset="10,15,0,0"/>
+			<alias ref="Mod-Management-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
@@ -1225,10 +1226,10 @@
 	</images>
 	
 	<images file="res/custom/WGRfhUrISa/Chat-Icon.png" filter="lineal">
-		<area name="Chat-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Chat-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Chat-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Chat-Icon" inset="10,15,0,0"/>
+			<alias ref="Chat-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
@@ -1244,58 +1245,58 @@
 	</images>
 
 	<images file="res/custom/PeZyHRX0G6/Money-Alert-Icon.png" filter="lineal">
-		<area name="Money-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Money-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="money-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Money-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Money-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/Moon-Alert-Icon.png" filter="lineal">
-		<area name="Moon-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Moon-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="moon-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Moon-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Moon-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/PeZyHRX0G6/Sun-Up-Alert-Icon.png" filter="lineal">
-		<area name="Sun-Up-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Sun-Up-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="sun-up-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Sun-Up-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Sun-Up-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/PeZyHRX0G6/Sun-Alert-Icon.png" filter="lineal">
-		<area name="Sun-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Sun-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="sun-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Sun-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Sun-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>	
 	
 	<images file="res/custom/PeZyHRX0G6/Active-Alert-Icon.png" filter="lineal">
-		<area name="Active-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Active-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="active-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Active-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Active-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/PeZyHRX0G6/Time-Alert-Icon.png" filter="lineal">
-		<area name="Time-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Time-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="time-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Time-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Time-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/PeZyHRX0G6/Donator-Alert-Icon.png" filter="lineal">
-		<area name="Donator-Alert-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Donator-Alert-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="donator-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Donator-Alert-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Donator-Alert-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	
@@ -1330,22 +1331,18 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/u7wRvcSChn/MainTCTexture-Overlay.png" filter="nearest">
-		<area name="MainTCTexture-Overlay" xywh="*"/>
-	</images>
-
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
-		<area name="Search-Icon" xywh="*" tint="icon-color" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
+		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
 		<composed name="Search-Icon-Bag">
-			<alias ref="Search-Icon" inset="0,2,0,-2"/>
+			<alias ref="Search-Icon" tint="icon-color" inset="0,2,0,-2"/>
 		</composed>
 		<composed name="Search-Icon-PC">
-			<alias ref="Search-Icon" inset="2,0,-2,0"/>
+			<alias ref="Search-Icon" tint="icon-color" inset="2,0,-2,0"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Bag-HUD-Icons.png" filter="lineal">
-		<grid name="Bag-HUD-Icons" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
+		<grid name="Bag-HUD-Icons" tint="icon-color" weightsX="1,0,1" weightsY="1" splity="T35,B0" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="*" splity="T35,B0"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
@@ -1397,12 +1394,12 @@
 	</images>
 
 	<images file="res/custom/oYY1ozW6Ec/Instance-Icon.png" filter="lineal">
-		<area name="Instance-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Instance-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Battle-Run-Overlay">
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="Instance-Icon" inset="11,6"/>
+			<alias ref="Instance-Icon" tint="icon-color" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Run-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1417,29 +1414,29 @@
 		</grid>
 		<composed name="Instance-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Instance-Icon" inset="10,15,0,0"/>
+			<alias ref="Instance-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="repel-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Instance-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Instance-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/Team-Icon.png" filter="lineal">
-		<area name="Team-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Team-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Team-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="Team-Icon" inset="6,11,0,0"/>
+			<alias ref="Team-Icon" tint="icon-color" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/bW6A5DARII/Rotate-Icon.png" filter="lineal">
-		<area name="Rotate-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Rotate-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Battle-Rotate-Overlay">
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="Rotate-Icon" inset="11,6"/>
+			<alias ref="Rotate-Icon" tint="icon-color" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Rotate-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1455,10 +1452,10 @@
 	</images>
 
 	<images file="res/custom/CLyo0siyqa/MM-Signup-Icon.png" filter="lineal">
-		<area name="MM-Signup-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="MM-Signup-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="MM-Signup-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="MM-Signup-Icon" inset="10,15,0,0"/>
+			<alias ref="MM-Signup-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="Tournament-Window">
 			<alias ref="MM-Signup-Window"/>
@@ -1468,7 +1465,7 @@
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="MM-Signup-Icon" inset="11,6"/>
+			<alias ref="MM-Signup-Icon" tint="icon-color" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Fight-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1484,29 +1481,29 @@
 	</images>
 	
 	<images file="res/custom/d9nZVhUoCU/PokeDex-Icon.png" filter="lineal">
-		<area name="PokeDex-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
+		<area name="PokeDex-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="PokeDex-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="PokeDex-Icon" inset="6,11,0,0"/>
+			<alias ref="PokeDex-Icon" tint="icon-color" inset="6,11,0,0"/>
 		</composed>
 		<composed name="poke-summary-dex" inset="-192,208,175,2" splitx="L32,R0">
 			<alias ref="Sub-Color-Pure"/>
 			<alias ref="Button-Color-Pure" tint="#80ffffff"/>
-			<alias ref="PokeDex-Icon" inset="0,4,0,-4"/>
+			<alias ref="PokeDex-Icon" tint="icon-color" inset="0,4,0,-4"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/d9nZVhUoCU/Move-Relearner-Icon.png" filter="lineal">
-		<area name="Move-Relearner-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Move-Relearner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Move-Relearner-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Move-Relearner-Icon" inset="10,15,0,0"/>
+			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="Battle-Pokemon-Overlay">
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="Move-Relearner-Icon" inset="11,6"/>
+			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Pokemon-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1648,40 +1645,40 @@
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Icon.png" filter="lineal">
-		<area name="GTL-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="GTL-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="GTL-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="GTL-Icon" inset="10,15,0,0"/>
+			<alias ref="GTL-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/xKY3dlupNV/Mail-Icon.png" filter="lineal">
-		<area name="Mail-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Mail-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mail-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
 			<alias ref="Mail-Icon" inset="10,15,0,0"/>
 		</composed>
 		<composed name="mail-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Mail-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Mail-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/Rfpmn2lCyz/Gift-Shop-Icon.png" filter="lineal">
-		<area name="Gift-Shop-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Gift-Shop-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Gift-Shop-Window" inset="-4,0,0,0">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="Gift-Shop-Icon" inset="10,15,0,0"/>
+			<alias ref="Gift-Shop-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/D7wRvcSChn/Bag-Icon.png" filter="lineal">
-		<area name="Bag-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Bag-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Battle-Bag-Overlay">
 			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
 			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
 			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="Bag-Icon" inset="11,6"/>
+			<alias ref="Bag-Icon" tint="icon-color" inset="11,6"/>
 		</composed>
 		<grid name="Battle-Bag-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
 			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
@@ -1700,12 +1697,64 @@
 		</composed>
 	</images>
 
+	<images file="res/custom/u7wRvcSChn/Trainer-Card-Main.png">
+		<area name="Trainer-Card-Main" tint="sub-color" xywh="*"/>
+		<composed name="Trainer-Card-Overlay" inset="71,148,64,259">
+			<grid weightsX="0,1" weightsY="1">
+			<alias ref="Pure" sizeOverwriteH="2" inset="7,0,14,0" tint="font-sub-color"/>
+			<alias ref="Sub-Color-Pure"/>
+			</grid>		
+			<grid weightsX="1" weightsY="1,0,0,0,0,0,1" inset="5,19,0,0" tint="font-sub-color">
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<alias ref="PokeDex-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="-4,-4,4,4"/>
+				<alias ref="Money-Alert-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
+				<alias ref="MM-Signup-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
+				<alias ref="Time-Alert-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
+				<alias ref="FAQ-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>		
+		</composed>
+	</images>
 	<images file="res/custom/u7wRvcSChn/Trainer-Card-Icon.png" filter="lineal">
-		<area name="Trainer-Card-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Trainer-Card-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Trainer-Card-Window" inset="52,11,5,13">
+			<alias ref="Shadow-Background"/>
+			<alias ref="Gradient-Border" inset="2"/>
+			<alias ref="Gradient-Border" tint="#f1f1f1" inset="3"/>
+			<grid weightsX="1" weightsY="0,1">
+				<alias ref="Button-Color-Pure" sizeOverwriteV="46" inset="5"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>		
+			<grid weightsX="1" weightsY="0,1,0" inset="5">
+				<alias ref="Button-Color-Pure" sizeOverwriteV="36"/>
+				<alias ref="Trainer-Card-Main"/>
+				<alias ref="Button-Color-Pure" sizeOverwriteV="52"/>
+			</grid>		
+			<grid weightsX="0,1" weightsY="0,1" inset="10">
+				<alias ref="Accent-Color-Pure" sizeOverwriteH="36" sizeOverwriteV="26"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>		
+			<grid weightsX="0,1" weightsY="0,1" inset="11">
+				<alias ref="Sub-Color-Pure" sizeOverwriteH="34" sizeOverwriteV="24"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			</grid>		
+			<composed inset="5,23,5,23" repeatX="true">
+				<grid weightsX="1" weightsY="1,0">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="Sub-Color-Pure" sizeOverwriteH="48" sizeOverwriteV="52" tint="#80ffffff" inset="5,3,5,3"/>
+				</grid>		
+			</composed>
+			<alias ref="Trainer-Card-Icon" tint="icon-color" inset="15,20,0,0"/>
+ 			<alias ref="Highlight-Overlay"/>
+     </composed>
 	</images>	
 
 	<images file="res/custom/D7wRvcSChn/TM-Icon.png" filter="lineal">
-		<area name="TM-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="TM-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 	</images>	
 	
 	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay1.png" filter="lineal">
@@ -1714,15 +1763,15 @@
 	<images file="res/custom/SCI0vPmuJ3/Small-HUD-Overlay2.png" filter="lineal">
 		<area name="Small-HUD-Overlay2" xywh="*"/>
 		<grid name="Small-HUD-Overlay3" weightsX="1,1,1,1,1,1,1,1,1,0" weightsY="1" inset="17,20,-17,-20">
-			<alias ref="Bag-Icon" sizeOverwriteH="49"/>
-			<alias ref="Trainer-Card-Icon" sizeOverwriteH="49"/>
-			<alias ref="Login-CharSelect-Icon" sizeOverwriteH="49"/>
-			<alias ref="MM-Signup-Icon" sizeOverwriteH="49"/>
-			<alias ref="PokeDex-Icon" sizeOverwriteH="49" inset="-4,-4,4,4"/>
-			<alias ref="GTL-Icon" sizeOverwriteH="49"/>
-			<alias ref="Mail-Icon" sizeOverwriteH="49"/>
-			<alias ref="Gift-Shop-Icon" sizeOverwriteH="49"/>
-			<alias ref="Settings-Icon" sizeOverwriteH="49"/>
+			<alias ref="Bag-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="Trainer-Card-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="Login-CharSelect-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="MM-Signup-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="PokeDex-Icon" tint="icon-color" sizeOverwriteH="49" inset="-4,-4,4,4"/>
+			<alias ref="GTL-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="Mail-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="Gift-Shop-Icon" tint="icon-color" sizeOverwriteH="49"/>
+			<alias ref="Settings-Icon" tint="icon-color" sizeOverwriteH="49"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="7"/>
 		</grid>
 		<composed name="Small-HUD-Overlay">
@@ -1741,46 +1790,46 @@
 	</images>
 	
 	<images file="res/custom/cs0o8e55UY/Town-Map-Icon.png" filter="lineal">
-		<area name="Town-Map-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Town-Map-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Town-Map-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Town-Map-Icon" inset="10,15,0,0"/>
+			<alias ref="Town-Map-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="location-alert-icon-new">
 			<alias ref="Alert-Icon"/>
-			<alias ref="Town-Map-Icon" inset="3,12,-3,-12"/>
+			<alias ref="Town-Map-Icon" tint="icon-color" inset="3,12,-3,-12"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/vbJDdMc09s/Poke-Shop-Icon.png" filter="lineal">
-		<area name="Poke-Shop-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Poke-Shop-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Poke-Shop-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="Poke-Shop-Icon" inset="6,11,0,0"/>
+			<alias ref="Poke-Shop-Icon" tint="icon-color" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/FnTKbfeNe9/Breed-Icon.png" filter="lineal">
-		<area name="Breed-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Breed-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Breed-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Breed-Icon" inset="10,15,0,0"/>
+			<alias ref="Breed-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 
 	<images file="res/custom/3Ao0Pd5DxU/Game-Corner-Icon.png" filter="lineal">
-		<area name="Game-Corner-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Game-Corner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Game-Corner-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Game-Corner-Icon" inset="10,15,0,0"/>
+			<alias ref="Game-Corner-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
 	<images file="res/custom/Yeug7CU84O/Move-Forget-Icon.png" filter="lineal">
-		<area name="Move-Forget-Icon" xywh="*" tint="icon-color" splitx="L17,R0" splity="T17,B0"/>
+		<area name="Move-Forget-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Move-Forget-Window" inset="8,97,226,64">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Move-Forget-Icon" inset="10,15,0,0"/>
+			<alias ref="Move-Forget-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 	</images>
 	
@@ -1789,10 +1838,10 @@
 	</images>
 	
 	<images file="res/custom/t4iajP1aNf/Trade-Icon.png" filter="lineal">
-		<area name="Trade-Icon" xywh="*" tint="icon-color" splitx="L25,R0" splity="T25,B0"/>
+		<area name="Trade-Icon" xywh="*" splitx="L25,R0" splity="T25,B0"/>
 		<composed name="Trade-Window">
 			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Trade-Icon" inset="6,11,0,0"/>
+			<alias ref="Trade-Icon" tint="icon-color" inset="6,11,0,0"/>
 		</composed>
 	</images>
 	

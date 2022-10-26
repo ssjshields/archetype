@@ -442,7 +442,7 @@
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			<alias ref="TM-Icon" inset="0,-20,0,20"/>
+			<alias ref="TM-Icon" tint="icon-color" inset="0,-20,0,20"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
