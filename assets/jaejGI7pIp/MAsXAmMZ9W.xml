@@ -43,6 +43,13 @@
 	<images file="res/custom/Yzkkn9zM8H/Fade.png" filter="nearest">
 		<area name="Fade-Right" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
 		<area name="Fade-Left" xywh="0,0,-800,10" sizeOverwriteH="12" sizeOverwriteV="12"/>
+		<composed name="active-item-tl" sizeOverwriteH="20" sizeOverwriteV="20" inset="-15">
+			<alias ref="Fade-Right" tint="sub-color" inset="0,0,0,-10"/>
+			<grid weightsX="0,1" weightsY="1">
+				<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+				<area xywh="0,0,0,0"/>
+			</grid>
+		</composed>
 	</images>
 
 	<images file="res/custom/Yzkkn9zM8H/Shadow-Background.png" filter="nearest">
@@ -1307,10 +1314,6 @@
 		</grid>
 	</images>
 	
-	<images file="res/custom/SCI0vPmuJ3/active-item-tl.png" filter="nearest">
-		<area name="active-item-tl" xywh="*"/>
-	</images>
-		
 	<images file="res/custom/bW6A5DARII/battle-item-frame.png" filter="nearest">
 		<area name="battle-item-frame" xywh="*"/>
 	</images>
@@ -1491,34 +1494,6 @@
 			<alias ref="Button-Color-Pure" tint="#80ffffff"/>
 			<alias ref="PokeDex-Icon" tint="icon-color" inset="0,4,0,-4"/>
 		</composed>
-	</images>
-
-	<images file="res/custom/d9nZVhUoCU/Move-Relearner-Icon.png" filter="lineal">
-		<area name="Move-Relearner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
-		<composed name="Move-Relearner-Window">
-			<alias ref="Window-Background-Highlight"/>
-			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="10,15,0,0"/>
-		</composed>
-		<composed name="Battle-Pokemon-Overlay">
-			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
-			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
-			<alias ref="Button-Color-Pure" inset="2"/>
-			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="11,6"/>
-		</composed>
-		<grid name="Battle-Pokemon-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
-			<alias ref="Battle-Pokemon-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
-			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-		</grid>
-	</images>
-
-	<images file="res/custom/d9nZVhUoCU/PokeDex-Overlay.png" filter="nearest">
 		<grid name="dex-button-active1" weightsX="1" weightsY="1,0">
 			<area xywh="0,0,0,0"/>
 			<alias ref="Gradient" sizeOverwriteV="2"/>
@@ -1556,6 +1531,31 @@
 			<alias ref="PokeDex-Default" tint="friendship-color"/>
 			<alias ref="dex-button-active" if="keyboardFocus"/>
 		</composed>
+	</images>
+
+	<images file="res/custom/d9nZVhUoCU/Move-Relearner-Icon.png" filter="lineal">
+		<area name="Move-Relearner-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
+		<composed name="Move-Relearner-Window">
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="10,15,0,0"/>
+		</composed>
+		<composed name="Battle-Pokemon-Overlay">
+			<alias ref="Sub-Color-Pure" tint="#80FFFFFF"/>
+			<alias ref="Window-Accent" tint="accent-color" inset="1"/>
+			<alias ref="Button-Color-Pure" inset="2"/>
+			<alias ref="Move-Relearner-Icon" tint="icon-color" inset="11,6"/>
+		</composed>
+		<grid name="Battle-Pokemon-Icon" weightsX="0,0,1" weightsY="1,0,1" inset="0,0,0,0">
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="28"/>
+			<alias ref="Battle-Pokemon-Overlay" sizeOverwriteH="38" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="28"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="10" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="38" sizeOverwriteV="1"/>
+			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+		</grid>
 	</images>
 
 	<images file="res/custom/2sTxAVRCoW/PC-Slot-Disabled.png" filter="nearest">

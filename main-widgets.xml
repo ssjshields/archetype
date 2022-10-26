@@ -1263,24 +1263,19 @@
 		<param name="background"><image>none</image></param>
 		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
-		<param name="titleAreaRight"><int>0</int></param>
-		<param name="titleAreaBottom"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>-1</int></param>
 		<param name="hasCloseButton"><bool>false</bool></param>
 		<param name="closeButtonX"><int>0</int></param>
 		<param name="closeButtonY"><int>0</int></param>
 		<param name="hasResizeHandle"><bool>false</bool></param>
-		<!--<param name="resizeHandleX"><int>0</int></param>
-		<param name="resizeHandleY"><int>0</int></param>
-		<param name="fadeColorInactive"><color>#FFFFFFFF</color></param>-->
+		<param name="minWidth"><int>50</int></param>
+		<param name="minHeight"><int>50</int></param>
 		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
 		<param name="border"><border>0</border></param>
-		<param name="fadeDurationShow"><int>0</int></param>
-		<param name="fadeDurationHide"><int>0</int></param>
-		<param name="fadeDurationActivate"><int>0</int></param>
-		<param name="fadeDurationDeactivate"><int>0</int></param>
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="defaultGap"><dimension>5,5</dimension></param>
-			<param name="border"><border>5</border></param>
+			<param name="defaultGap"><dimension>0,0</dimension></param>
+			<param name="border"><border>26</border></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
@@ -1289,19 +1284,13 @@
 	</theme>
 
 	<theme name="effects-slot" ref="button">
-		<param name="defaultGap"><dimension>24,24</dimension></param>
-		<param name="border"><border>2</border></param>
+		<param name="background"><image>active-item-tl</image></param>
+		<param name="defaultGap"><dimension>0,0</dimension></param>
+		<param name="border"><border>0,0,0,0</border></param>
 		<param name="namedGaps"><map/></param>
-		<param name="fadeDurationShow"><int>0</int></param>
-		<param name="fadeDurationHide"><int>0</int></param>
-		<param name="fadeDurationActivate"><int>0</int></param>
-		<param name="fadeDurationDeactivate"><int>0</int></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-		<param name="minWidth"><int>50</int></param>
-		<param name="minHeight"><int>50</int></param>
-		<param name="background"><image>active-item-tl</image></param>
-		<param name="font"><font>alphabeta-border-HUD</font></param>
+		<param name="font"><font>alphabeta-border-active-item</font></param>
 	</theme>
 
 	<theme name="server-status-success" ref="label">
