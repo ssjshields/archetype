@@ -781,7 +781,7 @@
 			</theme>
 			<theme name="trainer-name" ref="-defaults">
 				<param name="font"><font>alphabeta-trainer-card</font></param>
-				<param name="border"><border>18,51,0,0</border></param>
+				<param name="border"><border>0</border></param>
                 <param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="label" ref="-defaults">

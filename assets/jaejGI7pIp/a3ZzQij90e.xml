@@ -130,7 +130,7 @@
 	<fontDef name="alphabeta-main-system" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-system-2" ref="alphabeta-battle-feed" color="font-sub-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12"/>
-	<fontDef name="alphabeta-white" ref="alphabeta" color="font-main-color"/>
+	<fontDef name="alphabeta-white" ref="alphabeta" color="icon-color"/>
 	<fontDef name="alphabeta-shiny" ref="alphabeta" color="#fef340"/>
 	<fontDef name="alphabeta-chat" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-gray" ref="alphabeta" color="#484848"/>
@@ -159,7 +159,7 @@
 	<fontDef name="alphabeta-gtl-yellow" ref="alphabeta" color="#FFD800"/>
 	<fontDef name="alphabeta-pokename" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#3d4d55"/>
 	<fontDef name="alphabeta-pokename-2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="15" size_cjk="15" border_width="0.4" border_color="font-main-color"/>
-	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14"/>
+	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" offsetX="51" offsetY="18"/>
 	<fontDef name="alphabeta-trainer-issue" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12" offsetY="-3"/>
 	<fontDef name="alphabeta-item-held" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#909a9e" kerning="true" hinting="AutoSlight" size="11.3" size_cjk="11.3"/>
 	<fontDef name="alphabeta-border-overworld" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
