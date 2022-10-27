@@ -325,7 +325,7 @@
 
 	<images file="res/custom/j4iabP1aXf/ui-button-picker.png" filter="lineal">
 		<select name="ui-button-picker.background" center="true">
-			<area xywh="*" tint="font-main-color" if="hover | keyboardFocus | selected"/>
+			<area xywh="*" tint="font-main-color" if="!disabled + (hover | keyboardFocus | selected)"/>
 			<area xywh="*" tint="font-disabled-color" if="disabled"/>
 			<area xywh="*" tint="font-button-color"/>
 		</select>
@@ -1278,18 +1278,6 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Default.png" filter="nearest">
-		<area name="Chat-Minimized-Bar-Default" xywh="*"/>
-	</images>
-
-	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Bar-Hover.png" filter="nearest">
-		<area name="Chat-Minimized-Bar-Hover" xywh="*"/>
-		<select name="Chat-Minimized-Bar">
-			<alias ref="Chat-Minimized-Bar-Hover" if="hover"/>
-			<alias ref="Chat-Minimized-Bar-Default"/>
-		</select>
-	</images>
-	
 	<images file="res/custom/WGRfhUrISa/Chat-Icon.png" filter="lineal">
 		<area name="Chat-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Chat-Window">
@@ -1298,6 +1286,36 @@
 		</composed>
 	</images>
 	
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Button-inner.hover.png" filter="nearest">
+		<area name="Chat-Minimized-Button-inner.hover" xywh="*"/>
+	</images>
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Button-outer.hover.png" filter="nearest">
+		<area name="Chat-Minimized-Button-outer.hover" xywh="*"/>
+	</images>
+	
+	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Icon.png" filter="nearest">
+		<composed name="Chat-Minimized-Icon">
+			<alias ref="Gradient"/>
+			<area xywh="*" center="true"/>
+		</composed>
+		<composed name="Chat-Minimized-Button">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="ui-button.default" inset="3,6"/>
+			<animation  timeSource="hover" count="1" if="hover" inset="3,6">
+				<frame duration="3000" ref="ui-button.hover"/>
+				<frame duration="1" ref="none"/>
+			</animation>
+			<alias ref="Chat-Minimized-Button-outer.hover" tint="accent-color"/>
+			<alias ref="Chat-Minimized-Button-inner.hover" tint="button-color"/>
+			<alias ref="Chat-Icon" center="true" inset="1,1,-1,-1"/>
+		</composed>
+		<grid name="Chat-Minimized-Bar" weightsX="0,1,0" weightsY="1" sizeOverwriteH="68" sizeOverwriteV="50">
+			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
+			<alias ref="Chat-Minimized-Button"/>
+			<alias ref="Chat-Minimized-Icon" sizeOverwriteH="15"/>
+		</grid>		
+	</images>
+
 	<images file="res/custom/WGRfhUrISa/Chat-Close-Button.png" filter="lineal">
 		<composed name="Chat-Close-Button" inset="0,0,8,0">
 			<alias ref="special-ui-button.background"/>
