@@ -220,6 +220,10 @@
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
+		<animation name="Main-Color-Vertical-Bar-Left-Animation" timeSource="enabled">
+			<frame duration="1500" ref="Main-Color-Vertical-Bar-Left" tint="#ffffff"/>
+			<frame duration="1500" ref="Main-Color-Vertical-Bar-Left" tint="#60ffffff"/>
+		</animation>
 
 		<select name="ui-tab-vertical.background" inset="1,0,1,0">
 			<alias ref="Main-Color-Vertical-Bar-Left" if="selected"/>
@@ -234,11 +238,11 @@
 			<frame duration="1500" ref="Main-Color-Vertical-Bar-Right" tint="#60ffffff"/>
 		</animation>
 
-		<composed name="Party-Frame.background">
+		<composed name="Party-Frame">
 			<alias ref="Sub-Color-Pure"/>
 			<alias ref="Main-Color-Vertical-Bar-Right"/>
 		</composed>
-		<composed name="Party-Frame-Unlocked.background">
+		<composed name="Party-Frame-Unlocked">
 			<alias ref="Sub-Color-Pure"/>
 			<alias ref="Main-Color-Vertical-Bar-Right-Animation"/>
 		</composed>
@@ -1903,6 +1907,11 @@
 			<alias ref="Sub-Color-Pure"/>
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
 		</grid>
+		<composed name="Menu-HUD-Bag" sizeOverwriteV="50">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Main-Color-Vertical-Bar-Left-Animation"/>
+			<alias ref="Main-Color-Vertical-Bar-Right-Animation"/>
+		</composed>
 		<composed name="Hotkey-Button">
 			<alias ref="ui-button.default" inset="3,0,0,0"/>
 		</composed>
