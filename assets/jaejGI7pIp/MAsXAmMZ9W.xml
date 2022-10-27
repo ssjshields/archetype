@@ -1411,12 +1411,12 @@
 	</images>
 
 	<images file="res/custom/D7wRvcSChn/Search-Icon.png" filter="lineal">
-		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4"/>
+		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4" tint="icon-color"/>
 		<composed name="Search-Icon-Bag">
-			<alias ref="Search-Icon" tint="icon-color" inset="0,2,0,-2"/>
+			<alias ref="Search-Icon" inset="0,2,0,-2"/>
 		</composed>
 		<composed name="Search-Icon-PC">
-			<alias ref="Search-Icon" tint="icon-color" inset="2,0,-2,0"/>
+			<alias ref="Search-Icon" inset="2,0,-2,0"/>
 		</composed>
 	</images>
 
@@ -1756,7 +1756,7 @@
 	
 	<images file="res/custom/D7wRvcSChn/TM-Icon.png" filter="lineal">
 		<area name="TM-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
-		<grid name="Bag-HUD-Icons" weightsX="1" weightsY="0,1" inset="0,0,0,0">
+		<grid name="Bag-HUD-Icons" weightsX="1" weightsY="0,1" inset="0,0,0,0" tint="icon-color">
 			<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
 				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 				<alias ref="Bag-Misc-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>

@@ -142,10 +142,10 @@
 	<fontDef name="alphabeta-orange-shadow" ref="alphabeta" color="#FF9900"/>
 	<fontDef name="alphabeta-battle" ref="alphabeta" color="#FFFF00"/>
 	<fontDef name="alphabeta-orange" ref="alphabeta" color="#FF9900"/>
-	<fontDef name="alphabeta-lightgreen" ref="alphabeta" color="#66FF66"/>
+	<fontDef name="alphabeta-lightgreen" ref="alphabeta" color="hp-high-color"/>
 	<fontDef name="alphabeta-purple" ref="alphabeta" color="#FF99FF"/>
 	<fontDef name="alphabeta-teal" ref="alphabeta" color="#81ddf1"/>
-	<fontDef name="alphabeta-red" ref="alphabeta" color="#f05858"/>
+	<fontDef name="alphabeta-red" ref="alphabeta" color="hp-low-color"/>
 	<fontDef name="alphabeta-yellow" ref="alphabeta" color="#e2c57e"/>
 	<fontDef name="alphabeta-hidden-ability" ref="alphabeta" color="#fffc01"/>
 	<fontDef name="alphabeta-brown" ref="alphabeta" color="#ff8484"/>
