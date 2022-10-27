@@ -1296,7 +1296,7 @@
 	<images file="res/custom/WGRfhUrISa/Chat-Minimized-Icon.png" filter="nearest">
 		<composed name="Chat-Minimized-Icon">
 			<alias ref="Gradient"/>
-			<area xywh="*" center="true"/>
+			<area xywh="*" center="true" tint="icon-color"/>
 		</composed>
 		<composed name="Chat-Minimized-Button">
 			<alias ref="Sub-Color-Pure"/>
@@ -1307,7 +1307,7 @@
 			</animation>
 			<alias ref="Chat-Minimized-Button-outer.hover" tint="accent-color"/>
 			<alias ref="Chat-Minimized-Button-inner.hover" tint="button-color"/>
-			<alias ref="Chat-Icon" center="true" inset="1,1,-1,-1"/>
+			<alias ref="Chat-Icon" center="true" inset="1,1,-1,-1" tint="icon-color"/>
 		</composed>
 		<grid name="Chat-Minimized-Bar" weightsX="0,1,0" weightsY="1" sizeOverwriteH="68" sizeOverwriteV="50">
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
