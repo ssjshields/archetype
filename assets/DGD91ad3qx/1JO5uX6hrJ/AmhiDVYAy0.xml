@@ -27,6 +27,7 @@
 			<param name="maxHeight"><int>34</int></param>
 			<param name="border"><border>5,7,4,3</border></param>
 			<theme name="label" ref="-defaults">
+			<param name="border"><border>0,0,1,0</border></param>
 				<param name="font"><font>alphabeta-pokename</font></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>

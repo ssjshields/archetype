@@ -142,7 +142,7 @@
 				<param name="border"><border>7,7</border></param>
 				<param name="background"><image>none</image></param>
 				<theme name="character-select-button" ref="-defaults" allowWildcard="true">
-					<param name="background"><image>ui-inputbox-mixed.background</image></param>
+					<param name="background"><image>ui-inputbox.background</image></param>
 					<param name="font"><font>alphabeta</font></param>
 					<param name="border"><border>7,7</border></param>
 
@@ -644,7 +644,7 @@
 	<theme name="spritetogglebutton-outline" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta</font></param>
 		<param name="border"><border>7,7</border></param>
-		<param name="background"><image>ui-button.selected-green</image></param>
+		<param name="background"><image>ui-button.hover</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
@@ -845,7 +845,7 @@
 					 <param name="border"><border>0</border></param>
 			</theme>
 			<theme name="label-ram" ref="-defaults" allowWildcard="true">
-				<param name="background"><image>trainer-icon6</image></param>
+				<param name="background"><image>ram-alert-icon-new</image></param>
 					 <param name="border"><border>0</border></param> 
 			</theme>
 			<theme name="label-uptime" ref="-defaults" allowWildcard="true">
@@ -938,14 +938,19 @@
 	</theme>
 
 	<theme name="movetutor" ref="base-frame-padded">
+		<param name="border"><border>36,0,7,0</border></param>
 		<param name="background"><image>Move-Relearner-Window</image></param>
 		<theme name="monster-panel">
+				<param name="minWidth"><int>114</int></param>
+				<param name="minHeight"><int>114</int></param>
 			<param name="background"><image>Move-Forget-Window</image></param>
-			<param name="overlay"><image>Move-Forget-Window-Overlay</image></param>
-			<param name="border"><border>50,30,0,0</border></param>
-			<theme name="battlebutton" ref="battle-move-button"/>
+			<param name="border"><border>50,0,0,0</border></param>
+			<theme name="battlebutton" ref="battle-move-button-left"/>
 			<theme name="rbattle" ref="battle-button-return"/>
 			<theme name="label" ref="label">
+				<param name="minWidth"><int>114</int></param>
+				<param name="maxWidth"><int>114</int></param>
+				<param name="border"><border>0,12,0,0</border></param>
 				<param name="font"><font>pb-dark</font></param>
 			</theme>
 		</theme>
@@ -958,7 +963,7 @@
 			<param name="namedGaps"><map/></param>
 			<theme name="dialoglayout" ref="-defaults">
 				<param name="background"><image>none</image></param>
-				<param name="border"><border>10,5,10,5</border></param>
+				<param name="border"><border>0</border></param>
 				<param name="minHeight"><int>120</int></param>
 				<param name="minWidth"><int>200</int></param>
 				<param name="maxWidth"><int>240</int></param>
@@ -968,24 +973,21 @@
 				<param name="largeGap"><dimension>15,15</dimension></param>
 				<param name="namedGaps"><map/></param>
 				<theme name="dialoglayout" ref="-dialog">
-					<param name="defaultGap"><dimension>3,3</dimension></param>
+					<param name="defaultGap"><dimension>0,0</dimension></param>
 					<param name="border"><border>0</border></param>
 					<theme name="label" ref="label-title" allowWildcard="true">
+						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+						<param name="minWidth"><int>90</int></param>
 						<param name="font"><font>pb-dark</font></param>
-						<param name="border"><border>5,3</border></param>
+						<param name="border"><border>6</border></param>
 						<param name="background"><image>ui-header.background</image></param>
 					</theme>
-					<theme name="label-value-type" ref="label" allowWildcard="true">
-						<param name="font"><font>pb-dark</font></param>
-						<param name="minWidth"><int>110</int></param>
-						<param name="border"><border>5,3</border></param>
+					<theme name="label-value" ref="label" allowWildcard="true">
+						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+						<param name="minWidth"><int>140</int></param>
 						<param name="background"><image>ui-inputbox.background</image></param>
 					</theme>
-					<theme name="label-value" ref="label" allowWildcard="true">
-						<param name="font"><font>pb-dark</font></param>
-						<param name="minWidth"><int>140</int></param>
-						<param name="border"><border>5,3</border></param>
-						<param name="background"><image>ui-inputbox.background</image></param>
+					<theme name="label-value-type" ref="label-value" allowWildcard="true">
 					</theme>
 				</theme>
 			</theme>
@@ -996,13 +998,12 @@
 					<param name="mediumGap"><dimension>10,10</dimension></param>
 					<param name="largeGap"><dimension>15,15</dimension></param>
 					<param name="namedGaps"><map/></param>
-					<param name="border"><border>5,5,5,5</border></param>
+					<param name="border"><border>5,0</border></param>
 					<theme name="battlebutton" ref="button">
 						<param name="minHeight"><int>32</int></param>
 						<param name="minWidth"><int>180</int></param>
 						<param name="maxWidth"><int>180</int></param>
 						<param name="border"><border>5,0</border></param>
-						<param name="font2"><font>alphabeta</font></param>
 						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					</theme>
 				</theme>

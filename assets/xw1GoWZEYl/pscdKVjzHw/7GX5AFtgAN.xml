@@ -20,7 +20,7 @@
 		<param name="titleAreaTop"><int>8</int></param>
 		<param name="titleAreaLeft"><int>8</int></param>
 		<param name="titleAreaRight"><int>-8</int></param>
-		<param name="titleAreaBottom"><int>40</int></param>
+		<param name="titleAreaBottom"><int>45</int></param>
 		<param name="hasCloseButton"><bool>false</bool></param>
 		<param name="closeButtonX"><int>22</int></param>
 		<param name="closeButtonY"><int>6</int></param>
@@ -39,69 +39,60 @@
 	</theme>
 
 	<theme name="chatframe" ref="chatresizableframe">
-		<param name="border"><border>0,3,0,5</border></param>
+		<param name="border"><border>0</border></param>
 		<theme name="content" ref="-dialog">
+			<param name="defaultGap"><dimension>0,0</dimension></param>
 			<theme name="scrollpane" ref="scrollpane">
-				<param name="background"><image>chat.bottom.background</image></param>
+				<param name="background"><image>Sub-Color-Pure</image></param>
 				<theme name="vscrollbar" ref="vscrollbar-white"/>
-				<param name="border"><border>0,2</border></param>
+				<param name="border"><border>5,0</border></param>
 				<theme name="textarea" ref="-defaults">
+					<param name="border"><border>0,5</border></param>
 					<param name="fonts"><map>
-						<param name="default"><font>alphabeta-main-system</font></param>
-						<param name="color0"><font>alphabeta-green</font></param>
-						<param name="color1"><font>alphabeta</font></param>
-						<param name="color2"><font>alphabeta</font></param>
-						<param name="link"><font>alphabeta-link</font></param>
-						<param name="normal"><font>alphabeta-white-chat</font></param>
-						<param name="shout"><font>alphabeta-orange</font></param>
-						<param name="whisper"><font>alphabeta-lightgreen</font></param>
-						<param name="trade"><font>alphabeta-purple</font></param>
-						<param name="global"><font>alphabeta-teal</font></param>
-						<param name="channel"><font>alphabeta-yellow</font></param>
-						<param name="team"><font>alphabeta-brown</font></param>
-						<param name="system"><font>alphabeta-main-system</font></param>
-						<param name="battle"><font>alphabeta-main-battle</font></param>
+					<param name="default"><font>alphabeta-main-system</font></param>
+					<param name="color0"><font>alphabeta-green</font></param>
+					<param name="color1"><font>alphabeta</font></param>
+					<param name="color2"><font>alphabeta</font></param>
+					<param name="link"><font>alphabeta-link</font></param>
+					<param name="normal"><font>alphabeta-white-chat</font></param>
+					<param name="shout"><font>alphabeta-orange</font></param>
+					<param name="whisper"><font>alphabeta-lightgreen</font></param>
+					<param name="trade"><font>alphabeta-purple</font></param>
+					<param name="global"><font>alphabeta-teal</font></param>
+					<param name="channel"><font>alphabeta-yellow</font></param>
+					<param name="team"><font>alphabeta-brown</font></param>
+					<param name="system"><font>alphabeta-main-system</font></param>
+					<param name="battle"><font>alphabeta-main-battle</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images"><map>
-						<param name="icon-gm"><image>icon-gm</image></param>
-						<param name="icon-cm"><image>icon-cm</image></param>
-						<param name="icon-hgm"><image>icon-hgm</image></param>
-						<param name="icon-dev"><image>icon-dev</image></param>
-						<param name="icon-sgm"><image>icon-sgm</image></param>
-						<param name="icon-jgm"><image>icon-jgm</image></param>
-						<param name="icon-mod"><image>icon-mod</image></param>
-						<param name="icon-adm"><image>icon-admin</image></param>
-						<param name="icon-friend"><image>icon7</image></param>
+					<param name="icon-gm"><image>icon-gm</image></param>
+					<param name="icon-cm"><image>icon-cm</image></param>
+					<param name="icon-hgm"><image>icon-hgm</image></param>
+					<param name="icon-dev"><image>icon-dev</image></param>
+					<param name="icon-sgm"><image>icon-sgm</image></param>
+					<param name="icon-jgm"><image>icon-jgm</image></param>
+					<param name="icon-mod"><image>icon-mod</image></param>
+					<param name="icon-adm"><image>icon-admin</image></param>
+					<param name="icon-friend"><image>icon7</image></param>
 					</map></param>
 				</theme>
 			</theme>
 			<theme name="top" ref="-dialog">	
-				<param name="border"><border>2,3,5,3</border></param>
-				<param name="background"><image>chat.top.background</image></param>
-
+				<param name="border"><border>8,5,5,5</border></param>
+				<param name="background"><image>chat-top.background</image></param>
 				<theme name="togglebutton-normal" ref="button" allowWildcard="true">
 					<param name="background"><image>chat-tab.background</image></param>
-					<param name="border"><border>8,8,8,8</border></param>
+					<param name="border"><border>8</border></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
-					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
 				</theme>
-				<theme name="togglebutton-settings" ref="button" allowWildcard="true">
+				<theme name="togglebutton-settings" ref="togglebutton-normal" allowWildcard="true">
 					<param name="background"><image>special-ui-button.background</image></param>
-					<param name="border"><border>8,8,8,8</border></param>
-					<param name="font"><font>pb-dark-highlight-button</font></param>
-					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
 				</theme>
-				<theme name="togglebutton-notification" ref="button" allowWildcard="true">
-					<param name="background"><image>special-ui-button.background</image></param>
-					<param name="border"><border>8,8,8,8</border></param>
-					<param name="font"><font>pb-dark-highlight-button</font></param>
-					<param name="fadeColorInactive"><color>#11FFFFFF</color></param>
+				<theme name="togglebutton-notification" ref="togglebutton-settings" allowWildcard="true">
 				</theme>
-
-				<theme name="spritetogglebutton" ref="button" allowWildcard="true">
+				<theme name="spritetogglebutton" ref="togglebutton-settings" allowWildcard="true">
 					<param name=""><image>ui-inputbox.*</image></param>
-					<param name="border"><border>8,8,8,8</border></param>
 					<param name="maxWidth"><int>29</int></param>
 					<param name="maxHeight"><int>25</int></param>
 				</theme>
@@ -111,11 +102,9 @@
 			</theme>
 
 			<theme name="bottom" ref="-dialog">
-				<param name="background"><image>chat.bottom-alt.background</image></param>
-				<param name="border"><border>0,4,6,0</border></param>
-
+				<param name="background"><image>Button-Color-Pure</image></param>
+				<param name="border"><border>5</border></param>
 				<theme name="button" ref="button" allowWildcard="true">
-					<param name="border"><border>7,6</border></param>
 					<param name="background"><image>special-ui-button.background</image></param>
 					<param name="font"><font>alphabeta-highlight-button</font></param>
 					<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
@@ -133,7 +122,7 @@
 					</theme>
 				</theme>
 				<theme name="chat-type-button" ref="button" allowWildcard="true">
-					<param name="border"><border>5,3,5,5</border></param>
+					<param name="border"><border>5</border></param>
 				</theme>
 			</theme>
 		</theme>

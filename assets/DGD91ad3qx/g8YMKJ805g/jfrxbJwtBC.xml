@@ -36,8 +36,8 @@
 				<param name="background"><image>none</image></param>
 				<param name="border"><border>0,0,0,0</border></param>
 				<theme name="search-dialog" ref="dialoglayout">
-					<param name="border"><border>18,0,0,0</border></param>
-	
+					<param name="border"><border>18,14,0,0</border></param>
+					<param name="defaultGap"><dimension>4,5</dimension></param>
 					<theme name="label-value-medium" ref="label">
 						<param name="background"><image>ui-inputbox.background</image></param>
 						<param name="textAlignment"><enum type="alignment">left</enum></param>
@@ -95,12 +95,12 @@
 					
 					<theme name="label-title-medium" ref="label-value-medium">
 						<param name="background"><image>ui-header.background</image></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 					<theme name="label-title-medium2" ref="label-value-medium2">
 						<param name="background"><image>ui-header.background</image></param>
 						<param name="textAlignment"><enum type="alignment">center</enum></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 					<theme name="label-title-medium3" ref="label-value-medium3">
 						<param name="background"><image>ui-header.background</image></param>
@@ -108,22 +108,22 @@
 					</theme>
 					<theme name="label-title-small" ref="label-value-small">
 						<param name="background"><image>ui-header.background</image></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 					<theme name="label-title-small2" ref="label-value-small2">
 						<param name="background"><image>ui-header.background</image></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 					<theme name="label-title-small2-centered" ref="label-title-small2">
 						<param name="textAlignment"><enum type="alignment">center</enum></param>
 					</theme>
 					<theme name="label-title-smallest" ref="label-value-smallest">
 						<param name="background"><image>ui-header.background</image></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 					<theme name="label-title-icon" ref="label-value-icon">
 						<param name="background"><image>ui-header.background</image></param>
-						<param name="minWidth"><int>163</int></param>
+						<param name="minWidth"><int>161</int></param>
 					</theme>
 				
 					<theme name="label-button-medium" ref="label-value-medium">

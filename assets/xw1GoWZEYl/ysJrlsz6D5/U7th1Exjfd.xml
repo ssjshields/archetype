@@ -96,7 +96,7 @@
 			<param name="font"><font>pb-dark</font></param>
 		</theme>
 		<theme name="label-colorpicker" ref="label">
-			<param name="background"><image>ui-color.icontint</image></param>
+			<param name="background"><image>none</image></param>
 			<param name="border"><border>0</border></param>
 		</theme>
 		<theme name="label-colorpicker-overlay" ref="label">
