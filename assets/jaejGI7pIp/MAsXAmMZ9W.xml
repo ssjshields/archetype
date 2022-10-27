@@ -1713,7 +1713,7 @@
 		<area name="Mail-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="Mail-Window">
 			<alias ref="Tabbed-Window-Background-Highlight"/>
-			<alias ref="Mail-Icon" inset="10,15,0,0"/>
+			<alias ref="Mail-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
 		<composed name="mail-alert-icon-new">
 			<alias ref="Alert-Icon"/>
