@@ -1055,10 +1055,14 @@
 	</images>
 
 	<images file="gameshop_lang">
-		<area name="shop-item-new.background" xywh="5,0,57,57" inset="-9,11,8,-11"/>
-		<area name="shop-item-limited.background" xywh="69,0,57,57" inset="-9,11,8,-11"/>
-		<area name="shop-item-sale.background" xywh="133,0,57,57" inset="-9,11,8,-11"/>
-		<area name="shop-item-seasonal.background" xywh="197,0,57,57" inset="-9,11,8,-11"/>
+		<area name="shop-item-new-addon.background" xywh="5,0,57,57" inset="1,5,-1,-5"/>
+		<area name="shop-item-limited-addon.background" xywh="69,0,57,57" inset="1,5,-1,-5"/>
+		<area name="shop-item-sale-addon.background" xywh="133,0,57,57" inset="1,5,-1,-5"/>
+		<area name="shop-item-seasonal-addon.background" xywh="197,0,57,57" inset="1,5,-1,-5"/>
+		<composed name="shop-item-new.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-limited.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-sale.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-seasonal.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
 	</images>
 
 	<images file="res/water-levels.png" filter="lineal">

@@ -111,7 +111,7 @@
 	<theme name="gameshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>Gift-Shop-Window</image></param>
-		<param name="minWidth"><int>683</int></param>
+		<param name="minWidth"><int>777</int></param>
 		<param name="minHeight"><int>593</int></param>
 		<param name="border"><border>26,0,3,5</border></param>
 		<param name="closeButtonY"><int>8</int></param>
@@ -132,13 +132,12 @@
 					<param name="border"><border>5,0,0,0</border></param>
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
-						<param name="background"><image>ui-tab.background</image></param>
 					</theme>
 				</theme>
 				<param name="minWidth"><int>250</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>30,0,33,5</border></param>
+					<param name="border"><border>30,0,33,0</border></param>
 					<theme name="dialoglayout" ref="-defaults">
 
 						<theme name="dialoglayout" ref="-dialog">
@@ -147,7 +146,7 @@
 								<param name="background"><image>none</image></param>
 								<param name="border"><border>0,0,0,0</border></param>
 								<theme name="tabbox" ref="-defaults">
-									<param name="border"><border>5,0</border></param>
+									<param name="border"><border>0,5,0,0</border></param>
 									<theme name="tabbutton" ref="button">
 										<param name="border"><border>10,5</border></param>
 									</theme>
@@ -155,7 +154,7 @@
 									<param name="alignment"><enum type="alignment">FILL</enum></param>
 								</theme>
 								<theme name="container" ref="-dialog">
-									<param name="border"><border>0,9,0,0</border></param>
+									<param name="border"><border>5,0,4,0</border></param>
 									<theme name="scrollpane" ref="scrollpane">
 									</theme>
 									<theme name="sp" ref="scrollpane">
@@ -188,25 +187,23 @@
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
-		<param name="minWidth"><int>310</int></param>
-		<param name="maxWidth"><int>310</int></param>
+		<param name="minWidth"><int>363</int></param>
+		<param name="maxWidth"><int>363</int></param>
 		<param name="namedGaps"><map/></param>
 		<theme name="label" ref="-defaults">
 			<param name="font"><font>pb-dark</font></param>
-			<param name="minWidth"><int>227</int></param>
+			<param name="minWidth"><int>281</int></param>
 		</theme>
 		<theme name="item-name" ref="-defaults">
-			<param name="textAlignment"><enum type="alignment">center</enum></param>
+			<param name="textAlignment"><enum type="alignment">left</enum></param>
 			<param name="font"><font>pb-dark</font></param>
-			<param name="background"><image>none</image></param>
-			<param name="border"><border>3</border></param>
+			<param name="border"><border>0</border></param>
 		</theme>
 		<theme name="button" ref="button">
 			<param name="minWidth"><int>80</int></param>
 			<param name="minHeight"><int>30</int></param>
 		</theme>
 		<theme name="label-special" ref="-defaults">
-			<param name="background"><image>none</image></param>
 			<param name="minWidth"><int>57</int></param>
 			<param name="minHeight"><int>57</int></param>
 			<param name="maxWidth"><int>57</int></param>
@@ -219,16 +216,19 @@
 	</theme>
 
 	<theme name="gameshop-item-addon" ref="gameshop-item" allowWildcard="true">
-		<theme name="dialoglayout" ref="dialoglayout">
+		<theme name="dialoglayout" ref="-defaults">
+			<param name="border"><border>0</border></param>
+			<param name="defaultGap"><dimension>0,5</dimension></param>
 			<theme name="label" ref="label">
-				<param name="minWidth"><int>200</int></param>
 				<param name="font"><font>pb-dark</font></param>
+				<param name="minWidth"><int>256</int></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="spritelabel" ref="spritelabel">
 				<param name="background"><image>none</image></param>
 			</theme>
 			<theme name="item-name" ref="-defaults">
+				<param name="border"><border>5,0,0,0</border></param>
 				<param name="font"><font>pb-dark</font></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
@@ -247,14 +247,14 @@
 	</theme>
 	
 	<theme name="gameshop-item-addon-limited" ref="gameshop-item-addon" allowWildcard="true">
-		<param name="background"><image>ui-inputbox.background</image></param>
+		<param name="background"><image>ui-popup.background</image></param>
 		<theme name="dialoglayout" ref="dialoglayout">
-			<param name="border"><border>0</border></param>
-			<param name="defaultGap"><dimension>0,5</dimension></param>
 			<theme name="limited-time" ref="label">
-				<param name="textAlignment"><enum type="alignment">center</enum></param>
+				<param name="border"><border>10,0,0,5</border></param>
+				<param name="textAlignment"><enum type="alignment">topright</enum></param>
+				<param name="font"><font>alphabeta-border-HUD</font></param>
 			</theme>
-			<theme name="label-special" ref="-defaults">
+			<theme name="label-special" ref="label-special">
 				<param name="background"><image>shop-item-limited.background</image></param>
 			</theme>
 		</theme>
@@ -263,7 +263,7 @@
 	<theme name="gameshop-item-addon-seasonal" ref="gameshop-item-addon-limited" allowWildcard="true">
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="label-special" ref="label-special">
-				<param name="background"><image>shop-item-seasonal.background</image></param>
+				<param name="background"><image>shop-item-seasonal-addon.background</image></param>
 			</theme>
 		</theme>
 	</theme>
@@ -290,24 +290,26 @@
 			<param name="background"><image>shop-item-limited.background</image></param>
 		</theme>
 		<theme name="limited-time" ref="label">
-			<param name="textAlignment"><enum type="alignment">center</enum></param>
+				<param name="border"><border>5,0,5,5</border></param>
+				<param name="textAlignment"><enum type="alignment">topright</enum></param>
+				<param name="font"><font>alphabeta-border-HUD</font></param>
 		</theme>
 	</theme>
 
 	<theme name="gameshop-item-seasonal" ref="gameshop-item-limited" allowWildcard="true">
-		<theme name="label-special" ref="-defaults">
+		<theme name="label-special" ref="label-special">
 			<param name="background"><image>shop-item-seasonal.background</image></param>
 		</theme>
 	</theme>
 	
 	<theme name="gameshop-item-sale" ref="gameshop-item-limited" allowWildcard="true">
-		<theme name="label-special" ref="-defaults">
+		<theme name="label-special" ref="label-special">
 			<param name="background"><image>shop-item-sale.background</image></param>
 		</theme>
 	</theme>
 	
 	<theme name="gameshop-item-new" ref="gameshop-item-limited" allowWildcard="true">
-		<theme name="label-special" ref="-defaults">
+		<theme name="label-special" ref="label-special">
 			<param name="background"><image>shop-item-new.background</image></param>
 		</theme>
 	</theme>
