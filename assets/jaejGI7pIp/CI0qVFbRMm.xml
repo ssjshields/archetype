@@ -12,8 +12,8 @@
 		<cursor name="cursor.text" hotSpotX="5" hotSpotY="9" xywh="2,1,9,17"/>
 		<cursor name="cursor.resizecolumn" hotSpotX="15" hotSpotY="8" xywh="58,8,29,14"/>
 		<cursor name="cursor.resizerow" hotSpotX="7" hotSpotY="14" xywh="43,1,12,27"/>
-		<cursor name="cursor.finger" hotSpotX="7" hotSpotY="2" xywh="52,32,19,22"/>
-		<cursor name="cursor.help" hotSpotX="2" hotSpotY="3" xywh="79,29,25,26"/>
-		<cursor name="cursor.default" hotSpotX="2" hotSpotY="3" xywh="3,21,15,23"/>
+		<cursor name="cursor.finger" hotSpotX="6" hotSpotY="1" xywh="52,32,19,22"/>
+		<cursor name="cursor.help" hotSpotX="1" hotSpotY="2" xywh="79,29,25,26"/>
+		<cursor name="cursor.default" hotSpotX="1" hotSpotY="2" xywh="3,21,15,23"/>
 	</images>
 </themes>
