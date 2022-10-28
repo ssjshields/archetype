@@ -34,9 +34,9 @@
 		</theme>
 		<theme name="login-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Window</image></param>
-			<param name="minWidth"><int>316</int></param>
+			<param name="minWidth"><int>355</int></param>
 			<param name="minHeight"><int>154</int></param>
-			<param name="maxWidth"><int>316</int></param>
+			<param name="maxWidth"><int>355</int></param>
 			<param name="maxHeight"><int>154</int></param>
 			<param name="border"><border>0,0</border></param>
 			<theme name="dialoglayout" ref="dialoglayout">
@@ -47,16 +47,17 @@
 		<theme name="serverselect-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Server-Window</image></param>
 			<param name="border"><border>0,0</border></param>
-			<param name="minWidth"><int>316</int></param>
+			<param name="minWidth"><int>355</int></param>
 			<param name="minHeight"><int>154</int></param>
-			<param name="maxWidth"><int>316</int></param>
+			<param name="maxWidth"><int>355</int></param>
 			<param name="maxHeight"><int>154</int></param>
 			<theme name="dialoglayout" ref="dialoglayout">
 				<param name="border"><border>37,0,0,0</border></param>
-				<param name="defaultGap"><dimension>15,13</dimension></param>
+				<param name="defaultGap"><dimension>0,13</dimension></param>
 				<theme name="label" ref="label">
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-					<param name="minWidth"><int>77</int></param>
+					<param name="minWidth"><int>100</int></param>
+					<param name="maxWidth"><int>100</int></param>
 					<param name="minHeight"><int>44</int></param>
 				</theme>
 				<theme name="button" ref="button">

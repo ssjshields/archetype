@@ -1284,12 +1284,12 @@
 	</images>
 
 	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Icons.png" filter="lineal">
-		<area name="Login-Server-Overlay-Icons" xywh="*"/>
+		<area name="Login-Server-Overlay-Icons" xywh="*" center="true"/>
 	</images>
 
 	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Background.png" filter="nearest">
-		<area name="Login-Server-Overlay-Background" xywh="*"/>
-		<composed name="Login-Server-Overlay" inset="-94,-211,-31,-28">
+		<area name="Login-Server-Overlay-Background" xywh="*" splitx="L30,R30"/>
+		<composed name="Login-Server-Overlay" inset="-94,-227,-31,-28">
 			<alias ref="Login-Server-Overlay-Background" tint="button-color"/>
 			<alias ref="Login-Server-Overlay-Icons" tint="icon-color"/>
 		</composed>
