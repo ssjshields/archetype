@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 	<include filename="CHOOSE_YOUR_COLORS.xml"/>
+	<include filename="CHOOSE_YOUR_LOGINSCREEN.xml"/>
 	<include filename="assets/jaejGI7pIp/a3ZzQij90e.xml"/>
 	<fontGen/>
 	<include filename="assets/jaejGI7pIp/CI0qVFbRMm.xml"/>
 	<include filename="assets/jaejGI7pIp/MAsXAmMZ9W.xml"/>
-	<include filename="assets/jaejGI7pIp/w42Wg9V90m.xml"/>
 	<include filename="assets/jaejGI7pIp/mgZEOjSZ0a.xml"/>
 	<include filename="assets/xw1GoWZEYl/ysJrlsz6D5/ds0OnWfUgc.xml"/>
 	<include filename="ui/battle.xml"/>
