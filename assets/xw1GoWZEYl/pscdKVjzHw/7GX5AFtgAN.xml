@@ -17,9 +17,9 @@
 		<param name="fadeDurationActivate"><int>150</int></param>
 		<param name="fadeDurationDeactivate"><int>90000</int></param>
 		<param name="border"><border>10,0,10,0</border></param>-->
-		<param name="titleAreaTop"><int>8</int></param>
-		<param name="titleAreaLeft"><int>8</int></param>
-		<param name="titleAreaRight"><int>-8</int></param>
+		<param name="titleAreaTop"><int>5</int></param>
+		<param name="titleAreaLeft"><int>5</int></param>
+		<param name="titleAreaRight"><int>-5</int></param>
 		<param name="titleAreaBottom"><int>45</int></param>
 		<param name="hasCloseButton"><bool>false</bool></param>
 		<param name="closeButtonX"><int>22</int></param>
@@ -38,14 +38,14 @@
 		<theme name="resizeHandle" ref="-defaults"/>
 	</theme>
 
-	<theme name="chatframe" ref="chatresizableframe">
-		<param name="border"><border>0</border></param>
+	<theme name="chatframe-locked" ref="chatresizableframe">
+		<param name="border"><border>5</border></param>
 		<theme name="content" ref="-dialog">
 			<param name="defaultGap"><dimension>0,0</dimension></param>
 			<theme name="scrollpane" ref="scrollpane">
-				<param name="background"><image>Sub-Color-Pure</image></param>
+				<param name="background"><image>chat-middle-locked.background</image></param>
 				<theme name="vscrollbar" ref="vscrollbar-white"/>
-				<param name="border"><border>5,0</border></param>
+				<param name="border"><border>0</border></param>
 				<theme name="textarea" ref="-defaults">
 					<param name="border"><border>0,5</border></param>
 					<param name="fonts"><map>
@@ -79,8 +79,8 @@
 				</theme>
 			</theme>
 			<theme name="top" ref="-dialog">	
-				<param name="border"><border>8,5,5,5</border></param>
-				<param name="background"><image>chat-top.background</image></param>
+				<param name="border"><border>3,0,5,0</border></param>
+				<param name="background"><image>chat-top-locked.background</image></param>
 				<theme name="togglebutton-normal" ref="button" allowWildcard="true">
 					<param name="background"><image>chat-tab.background</image></param>
 					<param name="border"><border>8</border></param>
@@ -102,24 +102,15 @@
 			</theme>
 
 			<theme name="bottom" ref="-dialog">
-				<param name="background"><image>Button-Color-Pure</image></param>
-				<param name="border"><border>5</border></param>
+				<param name="background"><image>chat-bottom-locked.background</image></param>
+				<param name="border"><border>5,0,0,0</border></param>
 				<theme name="button" ref="button" allowWildcard="true">
 					<param name="background"><image>special-ui-button.background</image></param>
 					<param name="font"><font>alphabeta-highlight-button</font></param>
 					<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 				</theme>
 				<theme name="button-link" ref="button" allowWildcard="true"/>
-
-
 				<theme name="editfield" ref="editfield">
-					<param name="background"><image>ui-inputbox.background</image></param>
-					<param name="border"><border>5</border></param>
-					<param name="columns"><int>1</int></param>
-					<theme name="renderer" ref="-input">
-						<param name="font"><font>alphabeta-chat</font></param>
-						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-					</theme>
 				</theme>
 				<theme name="chat-type-button" ref="button" allowWildcard="true">
 					<param name="border"><border>5</border></param>
@@ -135,10 +126,21 @@
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
-	<theme name="chatframe-locked" ref="chatframe">
-		<param name="fadeColorInactive"><color>#B3FFFFFF</color></param>
-		<param name="fadeDurationActivate"><int>150</int></param>
-		<param name="fadeDurationDeactivate"><int>15000</int></param>
+	<theme name="chatframe" ref="chatframe-locked">
+		<param name="fadeColorInactive"><color>#d3FFFFFF</color></param>
+		<param name="fadeDurationActivate"><int>300</int></param>
+		<param name="fadeDurationDeactivate"><int>300</int></param>
+		<theme name="content" ref="content">
+			<theme name="scrollpane" ref="scrollpane">
+				<param name="background"><image>chat-middle.background</image></param>
+			</theme>
+			<theme name="top" ref="top">	
+				<param name="background"><image>chat-top.background</image></param>
+			</theme>
+			<theme name="bottom" ref="bottom">
+				<param name="background"><image>chat-bottom.background</image></param>
+			</theme>
+		</theme>
 	</theme>
 
 	<theme name="chatframe-hidden" ref="-defaults">

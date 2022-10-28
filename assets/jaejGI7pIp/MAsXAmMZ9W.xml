@@ -254,10 +254,27 @@
 			</grid>
 		</select>
 
-		<grid name="chat-top.background" weightsX="1" weightsY="0,1">
+		<grid name="chat-top-locked.background" weightsX="1" weightsY="0,1" inset="-5,-5,0,-5">
 			<alias ref="Main-Color-Pure" sizeOverwriteV="3"/>
 			<alias ref="Button-Color-Pure"/>
 		</grid>
+		<composed name="chat-top.background">
+			<alias ref="chat-top-locked.background" tint="#e0ffffff"/>
+		</composed>
+
+		<composed name="chat-middle-locked.background" inset="0,-5,0,-5">
+			<alias ref="Sub-Color-Pure"/>
+		</composed>
+		<composed name="chat-middle.background">
+			<alias ref="chat-middle-locked.background" tint="#c0ffffff"/>
+		</composed>
+
+		<composed name="chat-bottom-locked.background" inset="0,-5,-5,-5">
+			<alias ref="Button-Color-Pure"/>
+		</composed>
+		<composed name="chat-bottom.background">
+			<alias ref="chat-bottom-locked.background" tint="#e0ffffff"/>
+		</composed>
 
 		<composed name="ui-status">
 			<alias ref="Pure" tint="#80ffffff"/>
