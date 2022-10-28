@@ -644,7 +644,7 @@
 	<theme name="spritetogglebutton-outline" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta</font></param>
 		<param name="border"><border>7,7</border></param>
-		<param name="background"><image>ui-button.hover</image></param>
+		<param name="background"><image>hotkey-summary.background</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 

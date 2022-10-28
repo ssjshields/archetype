@@ -150,6 +150,10 @@
 			<alias ref="ui-button.background" inset="1,0,2,0"/>
 		</select>
 
+		<select name="hotkey-summary.background">
+			<alias ref="button.background" inset="6,-2,-4,0"/>
+		</select>
+
 		<select name="button-tab.background" sizeOverwriteH="66" sizeOverwriteV="29" inset="1,0,1,0">
 			<alias ref="button.hover" if="hover | keyboardFocus"/>
 			<alias ref="button.default" if="disabled"/>
@@ -939,18 +943,18 @@
 		<area name="bag-category-label" xywh="200,5,10,11" splitx="L8,R2" splity="T2,B9" inset="-3,1,3,-1" tint="font-sub-color"/>
 		<area name="ul-list" xywh="200,04,12,15" tint="font-sub-color"/>
 
-		<grid name="mi-skill" weightsX="0,0,1" weightsY="1" inset="3,3,2,0">
-			<alias ref="Button-Color-Pure" tint="#80ffffff" sizeOverwriteH="111"/>
+		<grid name="mi-skill" weightsX="0,0,1" weightsY="1">
+			<alias ref="Button-Color-Pure" tint="#80ffffff" sizeOverwriteH="114"/>
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
-		<grid name="mi-skill-use.default" weightsX="0,0,1" weightsY="1" inset="3,3,2,0">
-			<alias ref="ui-button.default" inset="-1" sizeOverwriteH="111"/>
+		<grid name="mi-skill-use.default" weightsX="0,0,1" weightsY="1" >
+			<alias ref="ui-button.default" inset="-1" sizeOverwriteH="114"/>
 			<alias ref="Main-Color-Pure" sizeOverwriteH="3"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
-		<grid name="mi-skill-use.selected" weightsX="0,1" weightsY="1" inset="3,3,2,0">
-			<alias ref="ui-button.hover" inset="-1" sizeOverwriteH="114"/>
+		<grid name="mi-skill-use.selected" weightsX="0,1" weightsY="1" >
+			<alias ref="ui-button.hover" inset="-1" sizeOverwriteH="117"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
 		<select name="mi-skill-use.background">
@@ -2060,11 +2064,14 @@
 		<composed name="ui-inputbox.grey"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="main-color"/></composed>
 		<composed name="ui-inputbox.green"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="hp-high-color"/></composed>
 		
-		<grid name="TM-Button-Move-Overlay" weightsX="1,0" weightsY="1,0,1" if="disabled">
+		<grid name="TM-Button-Move-Overlay" weightsX="1,0" weightsY="1,0,1">
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			<alias ref="TM-Icon" tint="icon-color" inset="0,-20,0,20"/>
+			<select>
+			<alias ref="TM-Icon" tint="icon-color" inset="0,-20,0,20" if="disabled"/>
+			<alias ref="Fight-Icon" tint="icon-color" inset="0,-20,0,20"/>
+			</select>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
