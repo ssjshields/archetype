@@ -2,6 +2,6 @@
 <!-- CHOOSE YOUR LOGIN SCREEN! Enter one of the following animation names below:
 a. Unova.xml b. Allstars.xml c. Default.xml -->
 
-<include filename="assets/Unova.xml"/>
+<include filename="assets/Allstars.xml"/>
 
 </themes>
