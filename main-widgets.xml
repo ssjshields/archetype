@@ -30,7 +30,6 @@
 	<theme name="logingui" ref="-defaults">
 	<param name="background"><image>login-background-animation</image></param>
 		<theme name="logo" ref="-defaults">
-			<param name="background"><image>background-image</image></param>
 		</theme>
 		<theme name="login-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Window</image></param>
@@ -42,6 +41,12 @@
 			<theme name="dialoglayout" ref="dialoglayout">
 				<param name="defaultGap"><dimension>5,5</dimension></param>
 				<param name="border"><border>43,15,14,14</border></param>
+				<theme name="label" ref="label">
+					<param name="border"><border>0,7,0,0</border></param>
+				</theme>
+				<theme name="button" ref="button">
+					<param name="minWidth"><int>100</int></param>
+				</theme>
 			</theme>
 		</theme>
 		<theme name="serverselect-window" ref="new-base-frame" allowWildcard="true">

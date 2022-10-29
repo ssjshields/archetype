@@ -1206,10 +1206,6 @@
 		</select>
 
 	</images>
-
-	<images file="res/custom/613wCZrdxv/bg.png" filter="lineal">
-		<area name="background-image" xywh="*"/>
-	</images>
 	
 	<images file="res/custom/k0Z2GYiAoU/Settings-Icon.png" filter="lineal">
 		<area name="Settings-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
