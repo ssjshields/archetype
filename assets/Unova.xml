@@ -613,8 +613,8 @@
 	</images>
 	<images>
 		<grid name="Background-Glow" weightsX="1,1" weightsY="1,1">
-			<alias ref="none"/>
-			<alias ref="none"/>
+			<alias ref="none" sizeOverwriteH="940" sizeOverwriteV="540"/>
+			<alias ref="none" sizeOverwriteH="940" sizeOverwriteV="540"/>
 			<alias ref="Background-Fire"/>
 			<alias ref="Background-Electric"/>
 		</grid>

@@ -1122,6 +1122,10 @@
 
 	<theme name="changelog-frame" ref="resizableframe">
 		<param name="background"><image>none</image></param>
+		<theme name="title" ref="-defaults">
+			<param name="textAlignment"><enum type="alignment">center</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
