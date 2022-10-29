@@ -1869,20 +1869,21 @@
 
 	<images file="res/custom/u7wRvcSChn/Trainer-Card-Main.png">
 		<area name="Trainer-Card-Main" tint="sub-color" xywh="*" splitx="L1,R185" splity="T1,B155"/>
-		<composed name="Trainer-Card-Overlay" inset="71,148,64,259">
+		<composed name="Trainer-Card-Overlay" inset="70,148,62,259">
 			<grid weightsX="0,1" weightsY="1">
 			<alias ref="Pure" sizeOverwriteH="2" inset="7,0,14,0" tint="font-sub-color"/>
 			<alias ref="Sub-Color-Pure"/>
 			</grid>		
-			<grid weightsX="1" weightsY="1,0,0,0,0,0,1" inset="5,19,0,0" tint="font-sub-color">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<grid weightsX="1" weightsY="1,1,1,1,1" inset="5,18,0,0" center="true" tint="font-sub-color">
 				<alias ref="PokeDex-Icon" sizeOverwriteH="26" sizeOverwriteV="28"/>
 				<alias ref="Money-Alert-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
 				<alias ref="Fight-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
 				<alias ref="Time-Alert-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
 				<alias ref="FAQ-Icon" sizeOverwriteH="26" sizeOverwriteV="28" inset="0"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			</grid>		
+		</composed>
+		<composed name="Trainer-Card-Close-Divider" inset="-5,-12,0,28" tint="#b0ffffff">
+			<alias ref="Pure" tint="font-main-color"/>
 		</composed>
 	</images>
 	<images file="res/custom/u7wRvcSChn/Trainer-Card-Icon.png" filter="lineal">
