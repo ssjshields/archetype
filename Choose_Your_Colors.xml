@@ -20,13 +20,15 @@
 <constantDef name="friendship-color"><color>#b61ae8</color></constantDef><!--default: #b61ae8-->
 
 
+<!-- WARNING! If you use Gilan's Encounter Counter and want to change this value
+you will also have to edit the fonts.xml file accordingly! -->
+<constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
+
+
+<!-- These values are for customization of the Unova Login Screen. -->
 <constantDef name="reshiram-color"><color>#1b2526</color></constantDef><!--default: #1b2526-->
 <constantDef name="reshiram-aura"><color>#cb4e03</color></constantDef><!--default: #cb4e03-->
 <constantDef name="zekrom-color"><color>#070b0b</color></constantDef><!--default: #070b0b-->
 <constantDef name="zekrom-aura"><color>#00a5c9</color></constantDef><!--default: #00a5c9-->
-
-<!-- WARNING! If you use Gilan's Encounter Counter and want to change this value
-you will also have to edit the fonts.xml file accordingly! -->
-<constantDef name="icon-color"><color>#ffffff</color></constantDef><!--default: #ffffff-->
 
 </themes>
