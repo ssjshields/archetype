@@ -1879,7 +1879,7 @@
 			</grid>		
 		</composed>
 		<composed name="Trainer-Card-Close-Divider" inset="-5,-12,0,28" tint="#b0ffffff">
-			<alias ref="Pure" tint="font-main-color"/>
+			<alias ref="Pure" tint="sub-color"/>
 		</composed>
 	</images>
 	<images file="res/custom/u7wRvcSChn/Trainer-Card-Icon.png" filter="lineal">
