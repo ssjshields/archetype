@@ -1778,23 +1778,21 @@
 	<images file="res/custom/D7wRvcSChn/TM-Icon.png" filter="lineal">
 		<area name="TM-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<grid name="Bag-HUD-Icons" weightsX="1" weightsY="0,1" inset="0,0,0,0" tint="icon-color">
-			<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="Bag-Misc-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Bag-Medicine-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Fight-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Town-Map-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Pokeball-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="TM-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Bag-Berry-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
-				<alias ref="Bag-Cosmetics-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,26,-5,-26"/>
+			<grid weightsX="0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
+				<alias ref="Bag-Misc-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Bag-Medicine-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Fight-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Town-Map-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Pokeball-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="TM-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Bag-Berry-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
+				<alias ref="Bag-Cosmetics-Icon" sizeOverwriteH="65" sizeOverwriteV="28" inset="5,24,-5,-24"/>
 				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			</grid>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
 		<grid name="Bag-HUD-Buttons" weightsX="1" weightsY="0,1" inset="0,0,0,0">
-			<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+			<grid weightsX="0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
 				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
 				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
 				<alias ref="Button-Color-Pure" sizeOverwriteH="65" sizeOverwriteV="28" inset="2,10,4,10"/>
@@ -1819,21 +1817,20 @@
 			<alias ref="Button-Color-Pure" inset="407,5,5,5"/>
 			<grid weightsX="1" weightsY="0,0,1" tint="#c6c6c6">
 				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="10"/>
-				<grid weightsX="1,0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
-					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
-					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,2,0,5"/>
+				<grid weightsX="0,0,0,0,0,0,0,0,1" weightsY="1" inset="0">
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
+					<alias ref="special-tab-button.default" sizeOverwriteH="65" sizeOverwriteV="28" inset="0,13,0,-6"/>
 					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 				</grid>
 				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			</grid>
-			<alias ref="Bag-HUD-Icons" tint="#c6c6c6" inset="10,-1,10,1"/>
+			<alias ref="Bag-HUD-Icons" tint="#c6c6c6" inset="10,10,10,-10"/>
 			<alias ref="Highlight-Overlay"/>
 		</composed>
 	</images>
@@ -2070,13 +2067,13 @@
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<select>
-			<alias ref="TM-Icon" tint="icon-color" inset="0,-20,0,20" if="disabled"/>
-			<alias ref="Fight-Icon" tint="icon-color" inset="0,-20,0,20"/>
+				<alias ref="TM-Icon" tint="icon-color" inset="0,-20,0,20" if="disabled"/>
+				<alias ref="Fight-Icon" tint="icon-color" inset="0,-20,0,20"/>
 			</select>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 		</grid>
-		<grid name="TM-Button-Mon-Overlay" weightsX="1,0" weightsY="1,0,1" if="disabled">
+		<grid name="TM-Button-Mon-Overlay" weightsX="1,0" weightsY="1,0,1" if="!disabled">
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
 			<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
