@@ -289,23 +289,23 @@
 	</theme>
 
 	<theme name="label-title-dex-small" ref="label-value-dex-small" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-type" ref="label-value-dex-type" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-smallest" ref="label-value-dex-smallest" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-medium" ref="label-value-dex-medium" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-name" ref="label-value-dex-name" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="dex-move-table" ref="table" allowWildcard="true">
