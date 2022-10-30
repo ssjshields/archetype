@@ -181,7 +181,7 @@
 	</theme>
 	
 	<theme name="gameshop-item" ref="-defaults" allowWildcard="true">
-		<param name="background"><image>ui-inputbox.background</image></param>
+		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="border"><border>5,0,5,5</border></param>
 		<param name="defaultGap"><dimension>0,5</dimension></param>
 		<param name="smallGap"><dimension>8,8</dimension></param>
@@ -247,7 +247,7 @@
 	</theme>
 	
 	<theme name="gameshop-item-addon-limited" ref="gameshop-item-addon" allowWildcard="true">
-		<param name="background"><image>ui-popup.background</image></param>
+		<param name="background"><image>gift-shop-limited.background</image></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="limited-time" ref="label">
 				<param name="border"><border>10,0,0,5</border></param>
@@ -285,7 +285,7 @@
 	</theme>
 
 	<theme name="gameshop-item-limited" ref="gameshop-item" allowWildcard="true">
-		<param name="background"><image>ui-popup.background</image></param>
+		<param name="background"><image>gift-shop-limited.background</image></param>
 		<theme name="label-special" ref="label-special">
 			<param name="background"><image>shop-item-limited.background</image></param>
 		</theme>

@@ -458,6 +458,11 @@
 			<alias ref="Sub-Color-Pure"/>
 			<alias ref="Window-Accent" tint="button-color"/>
 		</composed>
+
+		<composed name="gift-shop-limited.background" inset="1">
+			<alias ref="Sub-Color-Pure"/>
+			<alias ref="Window-Accent" tint="main-color"/>
+		</composed>
 		
 		<grid name="ui-dex-info.background" weightsX="117,270" weightsY="1" inset="0,0,0,-304">
 			<alias ref="ui-header.background" inset="0,0,0,0"/>
