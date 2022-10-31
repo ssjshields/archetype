@@ -12,10 +12,10 @@
 	<images file="res/custom/Yzkkn9zM8H/Tabbox-Background.png" filter="nearest">
 		<area name="Tabbox-Background" xywh="*" splitx="L10,R10" splity="T70,B10" sizeOverwriteH="12" sizeOverwriteV="12" tint="button-color"/>
 		<area name="Pure" xywh="6,35,2,2"/>
-		<area name="Main-Color-Pure" xywh="6,35,2,2" tint="main-color"/>
-		<area name="Sub-Color-Pure" xywh="6,35,2,2" tint="sub-color"/>
-		<area name="Button-Color-Pure" xywh="6,35,2,2" tint="button-color"/>
-		<area name="Accent-Color-Pure" xywh="6,35,2,2" tint="accent-color"/>
+		<composed name="Main-Color-Pure" tint="main-color"><alias ref="Pure"/></composed>
+		<composed name="Sub-Color-Pure" tint="sub-color"><alias ref="Pure"/></composed>
+		<composed name="Button-Color-Pure" tint="button-color"><alias ref="Pure"/></composed>
+		<composed name="Accent-Color-Pure" tint="accent-color"><alias ref="Pure"/></composed>
 	</images>
 
 	<images file="res/custom/Yzkkn9zM8H/Window-Primary-Background.png" filter="nearest">
