@@ -28,3 +28,6 @@
 - Reverted color from caught Pokedex entries (changed from yellow to blue)
 - Remade several icons across the theme (e.g. Dex and Game Corner)
 - Improved hidden ability and alpha icons
+
+1.2.0 - 10/31/22
+- changelog coming soon
