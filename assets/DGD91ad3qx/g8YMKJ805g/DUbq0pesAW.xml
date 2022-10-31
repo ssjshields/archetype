@@ -161,5 +161,6 @@
 		</theme>
 	</theme>
 	<theme name="hotkeybar-frame-visible" ref="hotkeybar">
+		<param name="background"><image>Menu-HUD-Bag</image></param>
 	</theme>
 </themes>

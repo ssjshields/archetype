@@ -45,7 +45,7 @@
 		<param name="spacing"><int>0</int></param>
 		<param name="alignment"><enum type="alignment">LEFT</enum></param>
 		<theme name="widget" ref="label" allowWildcard="true">
-			<param name="background"><image>ui-table-header.background</image></param>
+			<param name="background"><image>ui-header.background</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 			<param name="border"><border>38,30,0,0</border></param>
 			<param name="minWidth"><int>311</int></param>
@@ -76,7 +76,7 @@
 		</theme>
 
 		<theme name="label" ref="label" allowWildcard="true">
-			<param name="background"><image>ui-table-header.background</image></param>
+			<param name="background"><image>ui-header.background</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			<param name="border"><border>5</border></param>
 			<param name="minWidth"><int>149</int></param>
@@ -160,7 +160,6 @@
 				</theme>
 			</theme>
 			<theme name="combobox" ref="combobox" allowWildcard="true">
-				<param name="border"><border>10,1</border></param>
 			</theme>
 		</theme>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
@@ -286,27 +285,27 @@
 	</theme>
 
 	<theme name="label-title-dex-long" ref="label-value-dex-long" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-small" ref="label-value-dex-small" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-type" ref="label-value-dex-type" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-smallest" ref="label-value-dex-smallest" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-medium" ref="label-value-dex-medium" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="label-title-dex-name" ref="label-value-dex-name" allowWildcard="true">
-		<param name="background"><image>ui-table-header.background</image></param>
+		<param name="background"><image>ui-header.background</image></param>
 	</theme>
 
 	<theme name="dex-move-table" ref="table" allowWildcard="true">

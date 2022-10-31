@@ -255,6 +255,12 @@
 				<theme name="container" ref="container">
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="dialoglayout">
+			<theme name="combobox" ref="combobox" allowWildcard="true">
+				<param name="minWidth"><int>194</int></param>
+				</theme>
+			<theme name="button" ref="button" allowWildcard="true">
+				<param name="minWidth"><int>131</int></param>
+				</theme>
 						<param name="border"><border>4,10,2,18</border></param>
 						<param name="namedGaps"><map/></param>
 						<param name="background"><image>none</image></param>

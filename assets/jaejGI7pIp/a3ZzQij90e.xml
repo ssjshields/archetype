@@ -4,8 +4,8 @@
 	<fontDef name="battle" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
 	<fontDef name="battle-map" ref="battle" color="#ffffff" offsetY="4"/>
     <fontDef name="battle-name" filename="fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
-	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
-	<fontDef name="battle-item" ref="battle-hp-text" offsetY="6"/>
+	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
+	<fontDef name="battle-item" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
 	<fontDef name="braille" ref="battle"/>
 	<fontDef name="move-name" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
 		<fontParam if="disabled" color="font-disabled-color"/>
@@ -60,21 +60,21 @@
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 	
-	<fontDef name="alphabeta-highlight-tm-button" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+	<fontDef name="alphabeta-highlight-tm-button" ref="move-name" color="font-button-color">
         <fontParam if="disabled" color="font-disabled-color"/>
         <fontParam if="hover" color="font-main-color"/>
         <fontParam if="selected" color="font-main-color"/>
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 
-	<fontDef name="alphabeta-highlight-tm-move-button" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+	<fontDef name="alphabeta-highlight-tm-move-button" ref="move-name" color="font-button-color">
         <fontParam if="disabled" color="hp-high-color"/>
         <fontParam if="hover" color="font-main-color"/>
         <fontParam if="selected" color="font-main-color"/>
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 
-	<fontDef name="alphabeta-highlight-tm-move-button2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+	<fontDef name="alphabeta-highlight-tm-move-button2" ref="move-pp" color="font-disabled-color">
         <fontParam if="disabled" color="hp-high-color"/>
         <fontParam if="hover" color="font-main-color"/>
         <fontParam if="selected" color="font-main-color"/>
@@ -102,6 +102,8 @@
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 	
+	<fontDef name="pb-dark-disabled-button" ref="pb-dark-highlight-button" color="font-disabled-color"/>
+
 	<fontDef name="switch-button" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
@@ -130,7 +132,7 @@
 	<fontDef name="alphabeta-main-system" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-system-2" ref="alphabeta-battle-feed" color="font-sub-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12"/>
-	<fontDef name="alphabeta-white" ref="alphabeta" color="font-main-color"/>
+	<fontDef name="alphabeta-white" ref="alphabeta" color="icon-color"/>
 	<fontDef name="alphabeta-shiny" ref="alphabeta" color="#fef340"/>
 	<fontDef name="alphabeta-chat" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-gray" ref="alphabeta" color="#484848"/>
@@ -140,10 +142,10 @@
 	<fontDef name="alphabeta-orange-shadow" ref="alphabeta" color="#FF9900"/>
 	<fontDef name="alphabeta-battle" ref="alphabeta" color="#FFFF00"/>
 	<fontDef name="alphabeta-orange" ref="alphabeta" color="#FF9900"/>
-	<fontDef name="alphabeta-lightgreen" ref="alphabeta" color="#66FF66"/>
+	<fontDef name="alphabeta-lightgreen" ref="alphabeta" color="hp-high-color"/>
 	<fontDef name="alphabeta-purple" ref="alphabeta" color="#FF99FF"/>
 	<fontDef name="alphabeta-teal" ref="alphabeta" color="#81ddf1"/>
-	<fontDef name="alphabeta-red" ref="alphabeta" color="#f05858"/>
+	<fontDef name="alphabeta-red" ref="alphabeta" color="hp-low-color"/>
 	<fontDef name="alphabeta-yellow" ref="alphabeta" color="#e2c57e"/>
 	<fontDef name="alphabeta-hidden-ability" ref="alphabeta" color="#fffc01"/>
 	<fontDef name="alphabeta-brown" ref="alphabeta" color="#ff8484"/>
@@ -159,14 +161,15 @@
 	<fontDef name="alphabeta-gtl-yellow" ref="alphabeta" color="#FFD800"/>
 	<fontDef name="alphabeta-pokename" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#3d4d55"/>
 	<fontDef name="alphabeta-pokename-2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="15" size_cjk="15" border_width="0.4" border_color="font-main-color"/>
-	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14"/>
-	<fontDef name="alphabeta-trainer-issue" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12"/>
+	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" offsetX="51" offsetY="18"/>
+	<fontDef name="alphabeta-trainer-issue" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12" offsetY="-3"/>
 	<fontDef name="alphabeta-item-held" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#909a9e" kerning="true" hinting="AutoSlight" size="11.3" size_cjk="11.3"/>
 	<fontDef name="alphabeta-border-overworld" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
 	<fontDef name="alphabeta-border-battle" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#d4dadc" kerning="true" hinting="AutoSlight" size="12.7" size_cjk="12.7"/>
 	<fontDef name="alphabeta-border-HUD" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
-	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1"/>
-	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#9facaf" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#233031"/>
+	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1" color="font-main-color"/>
+	<fontDef name="alphabeta-border-active-item" ref="alphabeta-border-HUD" offsetY="-20" color="icon-color"/>
+	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-sub-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#233031"/>
 	<fontDef name="alphabeta-border" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v3" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1" border_color="#233031"/>
@@ -188,7 +191,7 @@
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
 	<fontDef name="pb-dark-red" ref="pb-dark" color="#fc6a78"/>
-	<fontDef name="tooltip-font" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#dce3e4" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1"/>
+	<fontDef name="tooltip-font" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1"/>
 	<fontDef name="pb-dark-link" ref="pb-dark" color="#434343"/>
 	<fontDef name="pb-tab" filename="fonts/NotoSans-Medium.ttc" color="font-button-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>
@@ -211,7 +214,7 @@
 	<fontDef name="mechabold-tm" ref="mechabold" color="font-main-color"/>
 	<fontDef name="mechabold-issued" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="9.7" size_cjk="9.7"/>
 	<fontDef name="mechabold-TC-content" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.9" size_cjk="11.9"/>
-	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
+	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 	
 	<fontDef name="battle-button-arrows" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>

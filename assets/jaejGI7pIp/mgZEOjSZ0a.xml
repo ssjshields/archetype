@@ -79,7 +79,7 @@
 	<theme name="animatedlabel" ref="-defaults" allowWildcard="true"/>
 
 	<theme name="resizableframe" ref="-defaults" allowWildcard="true">
-		<param name="background"><image>frame-draggable.background</image></param>
+        <param name="background"><image>ui-frame.background</image></param>
 		<param name="border"><border>30,0,0,0</border></param>
 		<param name="titleAreaTop"><int>0</int></param>
 		<param name="titleAreaLeft"><int>0</int></param>
@@ -123,9 +123,9 @@
 	</theme>
 
 	<theme name="button-disabled" ref="-defaults">
-		<param name="font"><font>pb-dark-highlight-button</font></param>
-		<param name="border"><border>7,0</border></param>
-		<param name="background"><image>ui-button.disabled</image></param>
+		<param name="font"><font>pb-dark-disabled-button</font></param>
+		<param name="border"><border>6</border></param>
+		<param name="background"><image>ui-button-disabled.background</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
@@ -330,12 +330,12 @@
 		<theme name="display" ref="label">
 			<param name="font"><font>pb-dark-highlight-button</font></param>
 			<param name="focus"><image>input.background</image></param>
-			<param name="border"><border>5,5,5,0</border></param>
+			<param name="border"><border>5,19,5,0</border></param>
 			<param name="minWidth"><int>100</int></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<param name="font"><font>pb-dark-highlight-button</font></param>
-		<param name="border"><border>0,8,0,5</border></param>
+		<param name="border"><border>0,0,0,10</border></param>
 		<param name=""><image>ui-button.*</image></param>
 		<param name="minWidth"><int>150</int></param>
 		<param name="minHeight"><int>25</int></param>
@@ -343,7 +343,7 @@
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 		<theme name="button" ref="-defaults">
 			<param name=""><image>ui-button-picker.*</image></param>
-			<param name="border"><border>0,0,0,5</border></param>
+			<param name="border"><border>0,0,0,0</border></param>
 		</theme>
 	</theme>
 
@@ -533,7 +533,6 @@
 	</theme>
 
 	<theme name="new-base-frame" ref="resizableframe" allowWildcard="true">
-        <param name="background"><image>ui-frame.background</image></param>
         <param name="border"><border>2</border></param>
         <theme name="dialoglayout" ref="-defaults">
             <param name="border"><border>40,0,0,0</border></param>
@@ -571,7 +570,7 @@
 						<param name="minWidth"><int>123</int></param>
 						<param name="minHeight"><int>29</int></param>
 						<param name="border"><border>0,8,0,0</border></param>
-						<param name=""><image>ui-tab-vertical.*</image></param>
+						<param name="background"><image>ui-tab-vertical.background</image></param>
 						<param name="font"><font>pb-tab</font></param>
 						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 					</theme>
@@ -728,7 +727,7 @@
 	</theme>
 
 	<theme name="treecomboboxPopup" ref="-defaults">
-		<param name="background"><image>ui-inner-frame.background</image></param>
+		<param name="background"><image>Sub-Color-Pure</image></param>
 		<param name="border"><border>5</border></param>
 		<theme name="scrollpane" ref="scrollpane">
 
@@ -751,7 +750,7 @@
 			<param name="minDisplayedRows"><int>1</int></param>
 			<param name="font"><font>alphabeta-highlight-button</font></param>
 			<param name="border"><border>0,7</border></param>
-			<param name=""><image>button-popup.*</image></param>
+			<param name=""><image>ui-popup-button.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<param name="cellHeight"><int>22</int></param>

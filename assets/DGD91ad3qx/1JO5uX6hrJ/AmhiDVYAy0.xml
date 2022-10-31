@@ -27,6 +27,7 @@
 			<param name="maxHeight"><int>34</int></param>
 			<param name="border"><border>5,7,4,3</border></param>
 			<theme name="label" ref="-defaults">
+			<param name="border"><border>0,0,1,0</border></param>
 				<param name="font"><font>alphabeta-pokename</font></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			</theme>
@@ -132,9 +133,9 @@
 
 							<theme name="label-skill-use-name" ref="button" allowWildcard="true">
 								<param name="background"><image>mi-skill-use.background</image></param>
-								<param name="border"><border>0,3,1,50</border></param>
-								<param name="minHeight"><int>42</int></param>
-								<param name="maxHeight"><int>42</int></param>
+								<param name="border"><border>0,0,1,51</border></param>
+								<param name="minHeight"><int>40</int></param>
+								<param name="maxHeight"><int>40</int></param>
 								<param name="minWidth"><int>165</int></param>
 								<param name="maxWidth"><int>165</int></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -143,9 +144,9 @@
 
 							<theme name="label-skill-name" ref="button" allowWildcard="true">
 								<param name="background"><image>mi-skill</image></param>
-								<param name="border"><border>0,3,1,50</border></param>
-								<param name="minHeight"><int>42</int></param>
-								<param name="maxHeight"><int>42</int></param>
+								<param name="border"><border>0,0,1,51</border></param>
+								<param name="minHeight"><int>40</int></param>
+								<param name="maxHeight"><int>40</int></param>
 								<param name="minWidth"><int>165</int></param>
 								<param name="maxWidth"><int>165</int></param>
 								<param name="font"><font>alphabeta-main-system</font></param>

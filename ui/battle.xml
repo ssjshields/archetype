@@ -261,8 +261,9 @@
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-			<param name="minWidth"><int>105</int></param>
-			<param name="maxWidth"><int>105</int></param>
+			<param name="border"><border>0,5,0,0</border></param>
+			<param name="minWidth"><int>106</int></param>
+			<param name="maxWidth"><int>106</int></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>battle-button-arrows</font></param>
@@ -353,7 +354,7 @@
 	</theme>
 
 	<theme name="monster-preview-panel-label" ref="label">
-		<param name="border"><border>0</border></param>
+		<param name="border"><border>0,10,0,0</border></param>
 	</theme>
 
 	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
@@ -364,7 +365,7 @@
 		<param name="overlay"><image>Battle-Fight-Icon</image></param>
 	</theme>
 	<theme name="battle-switch" ref="rbattle" allowWildcard="true">
-		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
+		<param name="overlay"><image>Battle-Switch-Icon</image></param>
 	</theme>
 	<theme name="battle-bag" ref="rbattle" allowWildcard="true">
 		<param name="overlay"><image>Battle-Bag-Icon</image></param>
@@ -374,13 +375,13 @@
 	</theme>
 	<theme name="battle-win" ref="rbattle" allowWildcard="true"/>
 	<theme name="battle-shift" ref="rbattle" allowWildcard="true">
-		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
+		<param name="overlay"><image>Battle-Pokeball-Icon</image></param>
 	</theme>
     <theme name="battle-rotate" ref="rbattle" allowWildcard="true">
 		<param name="overlay"><image>Battle-Rotate-Icon</image></param>
 	</theme>
 	<theme name="battle-ball" ref="rbattle" allowWildcard="true">
-		<param name="overlay"><image>Battle-Pokemon-Icon</image></param>
+		<param name="overlay"><image>Battle-Pokeball-Icon</image></param>
 		<param name="font2"><font>battle-label-highlight-safari</font></param>
 		<param name="textAlignment2"><enum type="alignment">right</enum></param>
 	</theme>
