@@ -166,12 +166,6 @@
 
 	<theme name="mods-panel" ref="new-base-frame" allowWildcard="true">
 		<param name="background"><image>Mod-Management-Window</image></param>
-			<param name="titleAreaTop"><int>8</int></param>
-			<param name="titleAreaLeft"><int>44</int></param>
-			<param name="titleAreaRight"><int>-30</int></param>
-			<param name="titleAreaBottom"><int>30</int></param>
-			<param name="closeButtonX"><int>-26</int></param>
-			<param name="closeButtonY"><int>14</int></param>
 			<param name="minHeight"><int>400</int></param>
 			<param name="minWidth"><int>612</int></param>
 		<theme name="dialoglayout" ref="-dialog">
@@ -204,12 +198,6 @@
 
 	<theme name="rom-panel" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Mod-Management-Window</image></param>
-			<param name="titleAreaTop"><int>8</int></param>
-			<param name="titleAreaLeft"><int>44</int></param>
-			<param name="titleAreaRight"><int>-30</int></param>
-			<param name="titleAreaBottom"><int>30</int></param>
-			<param name="closeButtonX"><int>-26</int></param>
-			<param name="closeButtonY"><int>13</int></param>
 		<theme name="dialoglayout" ref="-dialog">
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="border"><border>40,10,5,7</border></param>

@@ -31,6 +31,8 @@
 	<param name="background"><image>login-background-animation</image></param>
 		<theme name="logo" ref="-defaults">
 		</theme>
+		<theme name="logo-hween" ref="-defaults">
+		</theme>
 		<theme name="login-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Window</image></param>
 			<param name="minWidth"><int>355</int></param>
