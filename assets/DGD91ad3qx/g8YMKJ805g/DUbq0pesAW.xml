@@ -14,7 +14,8 @@
 			<param name="background"><image>Bag-Close-Button</image></param>
 		</theme>
 		<theme name="title" ref="title">
-			<param name="border"><border>51,23,0,0</border></param>
+			<param name="border"><border>0,23,333,0</border></param>
+			<param name="textAlignment"><enum type="alignment">left</enum></param>
 		</theme>
 		<theme name="editfield" ref="editfield-search" allowWildcard="true">
 			<param name="background"><image>ui-inputbox-bag.background</image></param>
