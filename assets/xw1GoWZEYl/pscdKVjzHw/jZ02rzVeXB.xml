@@ -16,10 +16,8 @@
 	</theme>
 	
 	<theme name="mail-window" ref="base-tabbed-frame">
-	<!--<param name="fadeColorInactive"><color>#D4FFFFFF</color></param>-->
 		<param name="background"><image>Mail-Window</image></param>
 		<theme name="dialoglayout" ref="dialoglayout">
-						<param name="border"><border>0,3,0,0</border></param>
 			<theme name="tabbedpane" ref="base-tabbed-pane">
 				<theme name="tabbox" ref="tabbox">
 					<theme name="tabbutton" ref="tabbutton">
@@ -96,28 +94,28 @@
 			</theme>
 
 			<theme name="label-value-medium" ref="label" allowWildcard="true">
-				<param name="background"><image>ui-inputbox.background</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>153</int></param>
 			</theme>
 			<theme name="label-value-small" ref="label" allowWildcard="true">
-				<param name="background"><image>ui-inputbox.background</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>135</int></param>
 			</theme>
 			<theme name="label-value-small2" ref="label" allowWildcard="true">
-				<param name="background"><image>ui-inputbox.background</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 				<param name="border"><border>6</border></param>
 				<param name="minHeight"><int>29</int></param>
 				<param name="minWidth"><int>88</int></param>
 			</theme>
 			<theme name="label-value-smallest" ref="label" allowWildcard="true">
-				<param name="background"><image>ui-inputbox.background</image></param>
+				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 				<param name="border"><border>1</border></param>
 				<param name="minHeight"><int>29</int></param>
@@ -164,7 +162,6 @@
 			<theme name="editfield" ref="editfield">
 				<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 				<param name="autocompletion-height"><int>150</int></param>
-				<param name="minWidth"><int>250</int></param>
 				<param name="font"><font>title-font-black</font></param>
 			</theme>
 		</theme>
@@ -172,7 +169,7 @@
 
 	<theme name="read-mail" ref="mail-inner">
 		<param name="minWidth"><int>440</int></param>
-		<param name="minHeight"><int>400</int></param>
+		<param name="minHeight"><int>398</int></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 
 			<theme name="editfield" ref="editfield">
