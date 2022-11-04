@@ -5,7 +5,7 @@
 		<param name="defaultGap"><dimension>2,2</dimension></param>
 		<theme name="battle-text" ref="label" allowWildcard="true">
 			<param name="font"><font>battle</font></param>
-			<param name="border"><border>26,17,7,7</border></param>
+			<param name="border"><border>22,17,7,7</border></param>
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>battle-hp-text</font></param>
