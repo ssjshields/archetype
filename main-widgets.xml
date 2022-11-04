@@ -60,12 +60,12 @@
 			<param name="maxHeight"><int>154</int></param>
 			<theme name="dialoglayout" ref="dialoglayout">
 				<param name="border"><border>37,0,0,0</border></param>
-				<param name="defaultGap"><dimension>0,13</dimension></param>
+				<param name="defaultGap"><dimension>0,21</dimension></param>
 				<theme name="label" ref="label">
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					<param name="minWidth"><int>100</int></param>
 					<param name="maxWidth"><int>100</int></param>
-					<param name="minHeight"><int>44</int></param>
+					<param name="minHeight"><int>36</int></param>
 				</theme>
 				<theme name="button" ref="button">
 					<param name="overlay"><image>Login-Server-Overlay</image></param>
