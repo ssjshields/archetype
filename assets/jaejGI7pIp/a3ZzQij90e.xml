@@ -169,7 +169,7 @@
 	<fontDef name="alphabeta-border-HUD" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1" color="font-main-color"/>
 	<fontDef name="alphabeta-border-active-item" ref="alphabeta-border-HUD" offsetY="-20" color="icon-color"/>
-	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-sub-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#59000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#233031"/>
+	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#80000000"/>
 	<fontDef name="alphabeta-border" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v2" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1.2" border_color="#233031"/>
 	<fontDef name="alphabeta-border-v3" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="10" size_cjk="10" border_width="1" border_color="#233031"/>
