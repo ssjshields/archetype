@@ -73,7 +73,7 @@ Anything developed on a previous revision more than likely will not be forwards 
 &nbsp;
 # FAQ
 <details>
-  <summary>Click here to view</summary>
+  <summary>Click here to view more</summary>
 
 ### Does this work on mobile?
 > Unfortunately, no- desktop only
