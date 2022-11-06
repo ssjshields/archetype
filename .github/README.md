@@ -47,7 +47,7 @@ more to be added
 
 &nbsp;
 # Installation
-**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21578.zip)
+**1.** Download the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip) OR the [beta](https://github.com/ssjshields/archetype/archive/refs/heads/beta.zip)
 
 **2.** Extract into `PokeMMO\data\themes`
 
@@ -55,7 +55,7 @@ more to be added
 
 **4.** Restart client to refresh cached assets
 
-> #&#x2060; = PokeMMO revision
+> Refer to the **.github** folder for more info
 
 &nbsp;
 # Disclaimer
