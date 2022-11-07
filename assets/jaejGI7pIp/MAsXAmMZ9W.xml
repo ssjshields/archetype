@@ -29,6 +29,7 @@
 
 	<images file="res/custom/Yzkkn9zM8H/Gradient.png" filter="nearest">
 		<area name="Gradient" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" tint="main-color"/>
+		<area name="Gradient-Pure" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
 		<composed name="Window-Main-Background">
 			<alias ref="Gradient" inset="2"/>
 			<alias ref="Gradient" inset="3" tint="#f1f1f1"/>
@@ -1662,65 +1663,79 @@
 	</images>
 			
 	<images file="res/custom/x2eLtlMVtE/Poke-Summary-Window.png" filter="nearest">
-		<composed name="Poke-Summary-Window" inset="0,0,-1,2">
-			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
-				<alias ref="Shadow-Background"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-				<alias ref="Shadow-Background"/>
-			</grid>
-			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
-				<alias ref="Window-Main-Background"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-				<alias ref="Window-Main-Background"/>
-			</grid>
-			<grid weightsX="0,1" weightsY="1">
-				<alias ref="Sub-Color-Pure" sizeOverwriteH="266" inset="34,5,5,5"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			</grid>
-			<grid weightsX="1,0" weightsY="0,1" inset="34,5,5,5">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="*" sizeOverwriteH="224" sizeOverwriteV="228"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			</grid>
-			<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="Sub-Color-Pure" sizeOverwriteH="224" sizeOverwriteV="50"/>
-			</grid>
-			<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="Button-Color-Pure" tint="#ffffff" sizeOverwriteH="224" sizeOverwriteV="50"/>
-			</grid>
-			<grid weightsX="235,0,249" weightsY="0,1" inset="8,0,0,0">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="mi-tab2.background" tint="#40ffffff"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-			</grid>
-			<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="Window-Accent" tint="sub-color" sizeOverwriteH="34" sizeOverwriteV="34"/>
-			</grid>
-			<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
-				<alias ref="Sub-Color-Pure" tint="#80ffffff" sizeOverwriteH="34" sizeOverwriteV="34" inset="1"/>
-			</grid>
-			<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
-				<alias ref="Highlight-Overlay"/>
-				<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-				<alias ref="Highlight-Overlay"/>
-			</grid>
-		</composed>
+		<grid name="Poke-Summary-Window" weightsX="0,1" weightsY="0,1,0">
+			<alias ref="none"/>
+			<alias ref="none"/>
+			<alias ref="none"/>
+			<composed  inset="0,0,-1,2">
+				<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+					<alias ref="Shadow-Background"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+					<alias ref="Shadow-Background"/>
+				</grid>
+				<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+					<composed>
+						<alias ref="Gradient-Pure" inset="2"/>
+						<alias ref="Gradient-Pure" inset="3" tint="#f1f1f1"/>
+					</composed>
+					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+					<composed>
+						<alias ref="Gradient-Pure" inset="2"/>
+						<alias ref="Gradient-Pure" inset="3" tint="#f1f1f1"/>
+					</composed>
+				</grid>
+				<grid weightsX="1,0" weightsY="0,1" inset="34,5,5,5">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="*" sizeOverwriteH="224" sizeOverwriteV="228"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				</grid>
+			</composed>
+			<composed sizeOverwriteH="0" sizeOverwriteV="0" inset="-316,0,-1,-504">
+				<grid weightsX="0,1" weightsY="1">
+					<alias ref="Sub-Color-Pure" sizeOverwriteH="266" inset="34,5,5,5"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				</grid>
+				<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="Sub-Color-Pure" sizeOverwriteH="224" sizeOverwriteV="50"/>
+				</grid>
+				<grid weightsX="1,0" weightsY="1,0" inset="34,5,5,5">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="Button-Color-Pure" tint="#ffffff" sizeOverwriteH="224" sizeOverwriteV="50"/>
+				</grid>
+				<grid weightsX="235,0,249" weightsY="0,1" inset="8,0,0,0">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="mi-tab2.background" tint="#40ffffff"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+				</grid>
+				<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="Window-Accent" tint="sub-color" sizeOverwriteH="34" sizeOverwriteV="34"/>
+				</grid>
+				<grid weightsX="1,0" weightsY="1,0" inset="0,0,13,9">
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="1" sizeOverwriteV="1"/>
+					<alias ref="Sub-Color-Pure" tint="#80ffffff" sizeOverwriteH="34" sizeOverwriteV="34" inset="1"/>
+				</grid>
+				<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
+					<alias ref="Highlight-Overlay"/>
+					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
+					<alias ref="Highlight-Overlay"/>
+				</grid>
+			</composed>
+			<alias ref="none"/>
+		</grid>
 	</images>
 
 	<images file="res/custom/oxBkYbkgnn/GTL-Icon.png" filter="lineal">
