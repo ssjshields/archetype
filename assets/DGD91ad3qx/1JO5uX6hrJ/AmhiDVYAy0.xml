@@ -9,7 +9,7 @@
 		<param name="maxHeight"><int>312</int></param>
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
-			<param name="font"><font>title-font-black</font></param>
+			<param name="font"><font>title-font</font></param>
 			<param name="border"><border>0,292,5,5</border></param>
 		</theme>
 

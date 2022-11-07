@@ -162,7 +162,7 @@
 			<theme name="editfield" ref="editfield">
 				<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 				<param name="autocompletion-height"><int>150</int></param>
-				<param name="font"><font>title-font-black</font></param>
+				<param name="font"><font>title-font</font></param>
 			</theme>
 		</theme>
 	</theme>

@@ -266,7 +266,7 @@
 			<param name="maxWidth"><int>106</int></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>battle-button-arrows</font></param>
+			<param name="font"><font>alphabeta-highlight-button</font></param>
 			<param name=""><image>button-small.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
