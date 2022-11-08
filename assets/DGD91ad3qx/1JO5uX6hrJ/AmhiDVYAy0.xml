@@ -288,7 +288,7 @@
 		<param name=""><image>mi-xpbar.*</image></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="minWidth"><int>50</int></param>
-		<param name="overlay"><image>poke-summary-dex</image></param>
+		<param name="overlay"><image>Summary-Icon-Overlay</image></param>
 	</theme>
 
 	<theme name="monsterframe-hp-progressbar" ref="-defaults" allowWildcard="true">
