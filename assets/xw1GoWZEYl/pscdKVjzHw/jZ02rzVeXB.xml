@@ -116,6 +116,7 @@
 			</theme>
 			<theme name="label-value-smallest" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-table-row.background</image></param>
+				<param name="overlay"><image>icon.cross</image></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 				<param name="border"><border>1</border></param>
 				<param name="minHeight"><int>29</int></param>
@@ -143,6 +144,7 @@
 			</theme>
 			<theme name="label-title-smallest" ref="label-value-smallest" allowWildcard="true">
 				<param name="background"><image>ui-header.background</image></param>
+				<param name="overlay"><image>none</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="scrollpane" ref="scrollpane">

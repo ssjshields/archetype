@@ -754,7 +754,7 @@
 	</images>
 
 	<images file="res/icon_set.png" filter="lineal">
-		<area name="icon.cross" xywh="0,0,16,16" center="true"/>
+		<area name="icon.cross" xywh="0,0,16,16" center="true" tint="icon-color"/>
 		<area name="icon.colorwheel" xywh="16,0,16,16" center="true"/>
 	</images>
 
