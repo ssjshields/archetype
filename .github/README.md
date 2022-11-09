@@ -8,9 +8,11 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 # Features
-✨ total interface overhaul; new animations and windows
+🎨 custom framework that allows control of the color palette
 
 ✂️ new icons (moveset, types, abilities, alpha, shiny, etc.)
+
+✨ total interface overhaul; new animations and windows
 
 &nbsp;
 # Compatibility
@@ -72,14 +74,8 @@ Anything developed on a previous revision more than likely will not be forwards 
 
 &nbsp;
 # FAQ
-<details>
-  <summary>Click here to view more</summary>
-
 ### Does this work on mobile?
 > Unfortunately, no- desktop only
-
-### How can I download the Counter?
-> Check out the [counter branch](https://github.com/ssjshields/archetype/tree/counter)
 
 ### Which client version do I have?
 > Refer to `PokeMMO\revision.txt`
@@ -90,7 +86,6 @@ Anything developed on a previous revision more than likely will not be forwards 
 **1.** Ensure you have the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21316.zip)
 
 **2.** Attach the `console.log` found at `PokeMMO\log`
-</details>
 
 &nbsp;
 # Contact and Support
