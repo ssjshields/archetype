@@ -741,18 +741,20 @@
 	<images file="res/custom/j4iabP1aXf/iconreel.png" filter="lineal">
 		<area name="icon.bookmark" xywh="0,0,16,16"/>
 		<area name="icon.home" xywh="16,0,16,16"/>
-		<area name="icon.arrow-up" xywh="32,0,16,16"/>
-		<area name="icon.refresh" xywh="48,0,16,16"/>
+		<area name="icon.arrow-up" xywh="32,0,16,16" tint="main-color"/>
+		<composed name="icon.refresh" sizeOverwriteH="16" sizeOverwriteV="16">
+			<alias ref="button.background" inset="0,0,0,3"/>
+		</composed>
 		<area name="icon.folder" xywh="64,0,16,16"/>
 		<area name="icon.key" xywh="80,0,16,16"/>
 		<area name="icon.folder2" xywh="96,0,16,16"/>
 		<area name="icon.folder-open" xywh="112,0,16,16"/>
-		<area name="icon.select-none" xywh="0,16,16,16"/>
-		<area name="icon.select-all" xywh="16,16,16,16"/>
+		<area name="icon.select-none" xywh="0,16,16,16" tint="font-button-color"/>
+		<area name="icon.select-all" xywh="16,16,16,16" tint="main-color"/>
 		<area name="icon.market" xywh="32,16,16,16"/>
 		<area name="icon.color-picker" xywh="48,16,16,16"/>
 		<area name="icon.chat-baloon" xywh="64,16,16,16"/>
-		<area name="icon.edit" xywh="80,16,16,16"/>
+		<area name="icon.edit" xywh="80,16,16,16" tint="main-color"/>
 	</images>
 
 	<images file="res/icon_set.png" filter="lineal">
@@ -993,6 +995,8 @@
 			<alias ref="mi-tab9" tint="#b0000000"/>
 		</select>
 
+		<area name="move-arrow.up" xywh="220,0,16,16" center="true" tint="font-sub-color"/>
+		<area name="move-arrow.down" xywh="240,0,16,16" center="true" tint="font-sub-color"/>
 
 		<composed name="mi-xpbar.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="xp-color"/></composed>
 		<composed name="mi-xpbar.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
@@ -1656,7 +1660,7 @@
 				<grid weightsX="265,0,231" weightsY="1" sizeOverwriteH="0" sizeOverwriteV="0" inset="0,0,-317,-504" tint="#444444">
 					<composed>
 						<alias ref="Gradient-Pure" inset="2"/>
-						<alias ref="Gradient-Pure" inset="3" tint="#f1f1f1"/>
+						<alias ref="Gradient-Pure" inset="3" tint="#b1b1b1"/>
 					</composed>
 					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
 					<composed>
@@ -1673,11 +1677,11 @@
 					<alias ref="Shadow-Background"/>
 				</grid>
 				<grid weightsX="265,0,231" weightsY="1" inset="0,0,0,0">
-					<composed tint="#c0ffffff">
+					<composed tint="#d0ffffff">
 						<alias ref="Gradient-Pure" inset="2"/>
 					</composed>
 					<area xywh="0,0,0,0" sizeOverwriteH="4" sizeOverwriteV="1"/>
-					<composed tint="#c0ffffff">
+					<composed tint="#d0ffffff">
 						<alias ref="Gradient-Pure" inset="2"/>
 					</composed>
 				</grid>

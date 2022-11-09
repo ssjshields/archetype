@@ -216,20 +216,12 @@
 							</theme>
 
 							<theme name="label-skill-arrowdown" ref="label" allowWildcard="true">
-								<param name="background"><image>none</image></param>
+								<param name="background"><image>move-arrow.down</image></param>
 								<param name="textAlignment"><enum type="alignment">left</enum></param>
-								<param name="border"><border>0,4,0,1</border></param>
-								<param name="maxWidth"><int>104</int></param>
-								<param name="minWidth"><int>104</int></param>
-								<param name="font"><font>pb-dark</font></param>
 							</theme>
 							<theme name="label-skill-arrowup" ref="label" allowWildcard="true">
-								<param name="background"><image>none</image></param>
+								<param name="background"><image>move-arrow.up</image></param>
 								<param name="textAlignment"><enum type="alignment">left</enum></param>
-								<param name="border"><border>0,4,0,1</border></param>
-								<param name="maxWidth"><int>104</int></param>
-								<param name="minWidth"><int>104</int></param>
-								<param name="font"><font>pb-dark</font></param>
 							</theme>
 							<theme name="level-toggle" ref="button">
 								<param name="background"><image>icon.refresh</image></param>
