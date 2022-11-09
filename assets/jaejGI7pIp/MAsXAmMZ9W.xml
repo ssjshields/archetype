@@ -343,6 +343,12 @@
 		<composed name="ui-copymenu.background" sizeOverwriteV="2" sizeOverwriteH="2">
 			<alias ref="Sub-Color-Pure"/>
 		</composed>		
+
+		<composed name="monster-preview-bg" sizeOverwriteV="28" sizeOverwriteH="12" splitx="L2,R2" splity="T2,B2">
+			<alias ref="Main-Color-Pure"/>
+			<alias ref="Sub-Color-Pure" inset="1"/>
+
+		</composed>		
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/ui-button-picker.png" filter="lineal">
@@ -560,7 +566,6 @@
 			<area xywh="24,78,3,7"/>
 			<area xywh="33,78,4,7"/>
 		</grid>
-		<area name="monster-preview-bg" xywh="167,212,28,12" splitx="L2,R2" splity="T2,B2" inset="0,0" />
 
 		<area name="color-picker-default" xywh="5,308,13,11" splitx="L2,R2" splity="T2,B2" inset="1"/>
 		<select name="color-picker">
@@ -649,52 +654,6 @@
 			<alias ref="inventory-slot.default"/>
 		</select>
 
-		<grid name="chat-bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
-			<area xywh="4,287,4,4"/>
-			<area xywh="6,287,2,4"/>
-			<area xywh="8,287,7,4"/>
-			<area xywh="15,287,2,4"/>
-			<area xywh="15,287,4,4"/>
-			<area xywh="4,290,4,4"/>
-			<area xywh="6,290,2,4"/>
-			<area xywh="8,290,7,4"/>
-			<area xywh="15,290,2,4"/>
-			<area xywh="15,290,4,4"/>
-			<area xywh="4,292,4,2"/>
-			<area xywh="6,292,2,2"/>
-			<area xywh="8,292,7,2"/>
-			<area xywh="15,292,2,2"/>
-			<area xywh="15,292,4,2"/>
-			<area xywh="4,297,4,7"/>
-			<area xywh="6,297,2,7"/>
-			<area xywh="8,297,7,7"/>
-			<area xywh="15,297,2,7"/>
-			<area xywh="15,297,4,7"/>
-		</grid>
-
-		<grid name="bubble.background" weightsX="0,1,0,1,0" weightsY="0,0,1,0" border="0,5,5,5">
-			<area xywh="4,287,4,4"/>
-			<area xywh="6,287,2,4"/>
-			<area xywh="8,287,2,4"/>
-			<area xywh="15,287,2,4"/>
-			<area xywh="15,287,4,4"/>
-			<area xywh="4,290,4,4"/>
-			<area xywh="6,290,2,4"/>
-			<area xywh="8,290,2,4"/>
-			<area xywh="15,290,2,4"/>
-			<area xywh="15,290,4,4"/>
-			<area xywh="4,292,4,2"/>
-			<area xywh="6,292,2,2"/>
-			<area xywh="8,292,2,2"/>
-			<area xywh="15,292,2,2"/>
-			<area xywh="15,292,4,2"/>
-			<area xywh="4,297,4,7"/>
-			<area xywh="6,297,2,7"/>
-			<area xywh="14,297,2,7"/>
-			<area xywh="15,297,2,7"/>
-			<area xywh="15,297,4,7"/>
-		</grid>
-
 		<grid name="tooltip-shadow.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
 			<area xywh="0,330,4,4"/>
 			<area xywh="4,330,1,4"/>
@@ -734,6 +693,46 @@
 			<alias ref="Window-Accent" inset="0,0,6,0" tint="accent-color"/>
 			<alias ref="Button-Color-Pure" tint="#faffffff" inset="1,1,7,1"/>
 			<alias ref="tooltip-bottom.background" tint="main-color" inset="-2"/>
+		</composed>
+
+		<grid name="chat-bubble.inner" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="30,330,4,4"/>
+			<area xywh="34,330,1,4"/>
+			<area xywh="35,330,9,4"/>
+			<area xywh="44,330,1,4"/>
+			<area xywh="45,330,4,4"/>
+			<area xywh="30,334,4,7"/>
+			<area xywh="34,334,1,7"/>
+			<area xywh="35,334,9,7"/>
+			<area xywh="44,334,1,7"/>
+			<area xywh="45,334,4,7"/>
+			<area xywh="30,341,4,8"/>
+			<area xywh="34,341,1,8"/>
+			<area xywh="35,341,9,8"/>
+			<area xywh="44,341,1,8"/>
+			<area xywh="45,341,4,8"/>
+		</grid>
+		<grid name="chat-bubble.outer" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="30,350,4,4"/>
+			<area xywh="34,350,1,4"/>
+			<area xywh="35,350,9,4"/>
+			<area xywh="44,350,1,4"/>
+			<area xywh="45,350,4,4"/>
+			<area xywh="30,354,4,7"/>
+			<area xywh="34,354,1,7"/>
+			<area xywh="35,354,9,7"/>
+			<area xywh="44,354,1,7"/>
+			<area xywh="45,354,4,7"/>
+			<area xywh="30,361,4,8"/>
+			<area xywh="34,361,1,8"/>
+			<area xywh="35,361,9,8"/>
+			<area xywh="44,361,1,8"/>
+			<area xywh="45,361,4,8"/>
+		</grid>
+		<composed name="chat-bubble.background" inset="-2">
+			<alias ref="tooltip-shadow.background"/>
+			<alias ref="chat-bubble.inner" tint="sub-color"/>
+			<alias ref="chat-bubble.outer" tint="main-color"/>
 		</composed>
 	</images>
 

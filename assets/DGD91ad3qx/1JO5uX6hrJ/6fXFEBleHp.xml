@@ -16,7 +16,7 @@
 			<param name="namedGaps"><map/></param>
 		</theme>
 		<theme name="contestresulttext" ref="label">
-			<param name="background"><image>bubble.background</image></param>
+			<param name="background"><image>chat-bubble.background</image></param>
 			<param name="font"><font>alphabeta-gray</font></param>
 			<param name="border"><border>8</border></param>
 		</theme>
