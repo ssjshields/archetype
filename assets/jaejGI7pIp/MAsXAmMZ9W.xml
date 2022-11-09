@@ -1326,7 +1326,7 @@
 		</composed>
 	</images>
 
-	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="nearest">
+	<images file="res/custom/PeZyHRX0G6/Alert-Icon.png" filter="lineal">
 		<area name="Alert-Icon" xywh="*" tint="sub-color"/>
 	</images>
 

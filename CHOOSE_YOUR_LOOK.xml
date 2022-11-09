@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><themes>
+<!-- CHOOSE YOUR LOOK! -->
+
+<!-- Enter one of the following animation names below: 1. Unova.xml 2. Allstars.xml 3. Default.xml -->
+<include filename="assets/Unova.xml"/>
+
+<!-- Choose one of the following colors for your mouse cursor: 1. Cursors-Black.xml 2. Cursors-White.xml -->
+
+<include filename="assets/Cursors-Black.xml"/>
+</themes>

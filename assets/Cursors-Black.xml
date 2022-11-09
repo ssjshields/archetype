@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<images file="res/custom/45pYZKcs0t/cursors.png" filter="nearest">
+	<images file="jaejGI7pIp/res/custom/45pYZKcs0t/cursors-black.png" filter="nearest">
 		<cursor name="mouseCursor.top-left" hotSpotX="7" hotSpotY="7" xywh="26,32,19,19"/>
 		<cursor name="mouseCursor.top-right" hotSpotX="10" hotSpotY="10" xywh="19,4,19,19"/>
 		<cursor name="mouseCursor.left" hotSpotX="14" hotSpotY="9" xywh="58,6,29,17"/>
