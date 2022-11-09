@@ -57,7 +57,15 @@ more to be added
 
 **4.** Restart client to refresh cached assets
 
-> Refer to the **.github** folder for more info
+&nbsp;
+# Alternative Installation
+**1.** Clone this repository into `PokeMMO\data\themes` using Git Bash or Github Desktop, etc.
+
+> Choose either the stable or beta branch, pull to receive updates
+
+**2.** Select `archetype-#` under `Settings` → `Interface`
+
+**3.** Restart client to refresh cached assets
 
 &nbsp;
 # Disclaimer
@@ -81,8 +89,6 @@ Anything developed on a previous revision more than likely will not be forwards 
 > Refer to `PokeMMO\revision.txt`
 
 ### How can I report a bug?
-> Join our [Discord server](https://discord.gg/rYg7ntqQRY) Support channel
-
 **1.** Ensure you have the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21316.zip)
 
 **2.** Attach the `console.log` found at `PokeMMO\log`
