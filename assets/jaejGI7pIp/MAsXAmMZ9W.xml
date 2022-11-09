@@ -572,8 +572,6 @@
 			<alias ref="color-picker-default" inset="-2" if="keyboardFocus | hover"/>
 			<alias ref="color-picker-default"/>
 		</select>
-		<area name="close-handle" xywh="0,500,12,12" tint="font-main-color"/>
-		<area name="minimize-handle" xywh="29,500,12,12" tint="font-main-color"/>
 
 		<area name="console.background" xywh="43,100,1,1" tint="#B0000000"/>
 		<area name="-console.cursor" xywh="5,291,6,1" center="true" inset="14,0,0,0"/>
@@ -589,16 +587,20 @@
 		</animation>
 		<area name="editfield.selection" tint="main-color" xywh="0,496,1,1"/>
 
-		<alias name="-frame.minimizeIcon" ref="minimize-handle" inset="2,3,3,3"/>
-
-		<alias name="-frame.closeIcon" ref="close-handle" inset="2,3,3,3"/>
-		<select name="frame.closebutton.background">
-			<alias ref="-frame.closeIcon" if="hover"/>
-			<alias ref="-frame.closeIcon" tint="#b0ffffff"/>
+		<area name="close-handle" xywh="0,500,12,12" inset="2,3,3,3"/>
+		<select name="frame.closebutton.background" tint="font-main-color">
+			<alias ref="close-handle" if="hover"/>
+			<alias ref="close-handle" tint="#b0ffffff"/>
 		</select>
-		<select name="frame.minimizebutton.background">
-			<alias ref="-frame.minimizeIcon" if="hover"/>
-			<alias ref="-frame.minimizeIcon" tint="#b0ffffff"/>
+		<select name="frame.closebutton-summary.background">
+			<alias ref="close-handle" if="hover"/>
+			<alias ref="close-handle" tint="#b0ffffff"/>
+		</select>
+
+		<area name="minimize-handle" xywh="29,500,12,12" inset="2,3,3,3"/>
+		<select name="frame.minimizebutton.background" tint="font-main-color">
+			<alias ref="minimize-handle" if="hover"/>
+			<alias ref="minimize-handle" tint="#b0ffffff"/>
 		</select>
 
 		<select name="vscrollbar-white.thumb.background">
@@ -955,40 +957,40 @@
 		<area name="mi-tab9" xywh="160,0,20,20"/>
 
 		<select name="mi-tab1.background">
-			<alias ref="mi-tab1" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab1" tint="button-color"/>
+			<alias ref="mi-tab1" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab1" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab2.background">
-			<alias ref="mi-tab2" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab2" tint="button-color"/>
+			<alias ref="mi-tab2" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab2" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab3.background">
-			<alias ref="mi-tab3" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab3" tint="button-color"/>
+			<alias ref="mi-tab3" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab3" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab4.background">
-			<alias ref="mi-tab4" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab4" tint="button-color"/>
+			<alias ref="mi-tab4" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab4" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab5.background">
-			<alias ref="mi-tab5" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab5" tint="button-color"/>
+			<alias ref="mi-tab5" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab5" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab6.background">
-			<alias ref="mi-tab6" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab6" tint="button-color"/>
+			<alias ref="mi-tab6" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab6" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab7.background">
-			<alias ref="mi-tab7" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab7" tint="button-color"/>
+			<alias ref="mi-tab7" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab7" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab8.background">
-			<alias ref="mi-tab8" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab8" tint="button-color"/>
+			<alias ref="mi-tab8" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab8" tint="#b0000000"/>
 		</select>
 		<select name="mi-tab9.background">
-			<alias ref="mi-tab9" tint="icon-color" if="selected | hover"/>
-			<alias ref="mi-tab9" tint="button-color"/>
+			<alias ref="mi-tab9" tint="#ffffff" if="selected | hover"/>
+			<alias ref="mi-tab9" tint="#b0000000"/>
 		</select>
 
 

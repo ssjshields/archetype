@@ -180,6 +180,7 @@
 	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 	
 	<fontDef name="title-font" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
+	<fontDef name="title-font-summary" ref="title-font"/>
 	<fontDef name="trainer-name" filename="fonts/NotoSans-Medium.ttc" color="font-button-color" kerning="true" hinting="AutoSlight" size="17" size_cjk="17" incremental="false" characters="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"/>
 
 	<fontDef name="console-green" ref="alphabeta" color="#7CB147"/>

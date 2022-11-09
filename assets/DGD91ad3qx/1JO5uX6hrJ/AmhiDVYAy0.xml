@@ -9,7 +9,7 @@
 		<param name="maxHeight"><int>312</int></param>
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
-			<param name="font"><font>title-font</font></param>
+			<param name="font"><font>title-font-summary</font></param>
 			<param name="border"><border>0,292,5,5</border></param>
 		</theme>
 
@@ -20,7 +20,9 @@
 
 		<param name="closeButtonX"><int>-27</int></param>
 		<param name="closeButtonY"><int>12</int></param>
-
+		<theme name="closeButton" ref="closeButton">
+			<param name="background"><image>frame.closebutton-summary.background</image></param>
+		</theme>
 		<theme name="nameplate" ref="-defaults">
 			<param name="minWidth"><int>340</int></param>
 			<param name="minHeight"><int>34</int></param>
@@ -105,7 +107,7 @@
 
 							<theme name="button" ref="-defaults" allowWildcard="true">
 								<param name="font"><font>alphabeta-highlight-button</font></param>
-								<param name="border"><border>0,0,0,0</border></param>
+								<param name="border"><border>0,2,1,0</border></param>
 								<param name=""><image>button-small.*</image></param>
 								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 							</theme>
