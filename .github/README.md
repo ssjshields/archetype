@@ -14,6 +14,8 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 ✨ total interface overhaul; new animations and windows
 
+🧼 custom script that can remove any corrupt / modified strings
+
 &nbsp;
 # Compatibility
 📚 multi-language support
