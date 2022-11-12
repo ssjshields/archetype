@@ -23,5 +23,9 @@ Set-Location ..\..; Set-Location ..\..
 $StringsCleanResult = [System.Windows.Forms.MessageBox]::Show("Do you want to CLEAN the PokeMMO strings folder?","Archetype Strings Cleaner","YesNo","Question")
 if ($StringsCleanResult -match "Yes") { Get-ChildItem -Path "$PWD\data\strings" -File -Recurse | Where-Object { $_.Name -ne "strings_de.xml" -and $_.Name -ne "strings_en.xml" -and $_.Name -ne "strings_es.xml" -and $_.Name -ne "strings_fr.xml" -and $_.Name -ne "strings_it.xml" -and $_.Name -ne "strings_ja.xml" -and $_.Name -ne "strings_ko.xml" -and $_.Name -ne "strings_pl.xml" -and $_.Name -ne "strings_pt-BR.xml" -and $_.Name -ne "strings_zh.xml" -and $_.Name -ne "strings_zh-Hant.xml" } | Remove-Item }
 
+# Check for updater jar (Dialog prompt)
+$UpdaterJarResult = [System.Windows.Forms.MessageBox]::Show("Do you want RUN the pokemmo_updater.jar in order to ensure all assets are not corrupted?","Archetype Strings Cleaner","YesNo","Question")
+if ($UpdaterJarResult -match "Yes") { Start-Process "$PWD\pokemmo_updater.jar" }
+
 # Forces and current all Powershell process (To ensure it does not hang around)
 #Stop-Process $PID -Force 
