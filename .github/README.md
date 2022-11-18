@@ -8,11 +8,12 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 # Features
-🎨 custom framework that allows control of the color palette
+
+✨ total interface overhaul; new animations and windows
 
 ✂️ new icons (moveset, types, abilities, alpha, shiny, etc.)
 
-✨ total interface overhaul; new animations and windows
+🎨 modular framework that allows control of the color palette
 
 🧼 custom script that can remove any corrupt / modified strings
 
