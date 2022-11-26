@@ -377,14 +377,23 @@
 		<area name="icon7" xywh="80,0,16,16" inset="0,0,0,0" tint="icon-color"/>
 		<area name="is-leader" xywh="100,0,16,16" inset="0,0,0,0" tint="icon-color"/>
 
-		<area name="gmicon1.default" xywh="8,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<!-- <area name="gmicon1.default" xywh="8,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon2.default" xywh="33,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon3.default" xywh="58,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon4.default" xywh="83,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon5.default" xywh="105,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon6.default" xywh="129,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 		<area name="gmicon7.default" xywh="151,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
-		<area name="gmicon8.default" xywh="172,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon8.default" xywh="172,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/> -->
+
+		<area name="gmicon1.default" xywh="0,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon2.default" xywh="25,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon3.default" xywh="50,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon4.default" xywh="75,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon5.default" xywh="97,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon6.default" xywh="121,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon7.default" xywh="143,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
+		<area name="gmicon8.default" xywh="164,20,24,24" inset="0,0,0,0" sizeOverwriteH="24" sizeOverwriteV="24"/>
 
 		<select name="gmicon1.background">
 			<alias ref="gmicon1.default" tint="#a3e1ff" if="hover | keyboardFocus"/>
