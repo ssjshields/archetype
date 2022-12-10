@@ -7,7 +7,7 @@
 		<!--<theme name="hscrollbar" ref="hscrollbar"/>
 		<theme name="vscrollbar" ref="vscrollbar-white"/>-->
 		<param name="border"><border>0,0,0,0</border></param>
-		<param name="minWidth"><int>800</int></param>
+		<param name="minWidth"><int>758</int></param>
 		<param name="minHeight"><int>425</int></param>
 		<param name="maxWidth"><int>32767</int></param>
 		<param name="maxHeight"><int>32767</int></param>
@@ -45,19 +45,19 @@
 				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>184</int></param>
+				<param name="minWidth"><int>142</int></param>
 			</theme>
 			<theme name="label-value-medium3" ref="label">
 				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>212</int></param>
+				<param name="minWidth"><int>170</int></param>
 			</theme>
 			<theme name="label-value-medium4" ref="label">
 				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>296</int></param>
+				<param name="minWidth"><int>254</int></param>
 			</theme>
 			<theme name="label-title-medium-red" ref="label-value-medium">
 				<param name="font"><font>pb-dark-red</font></param>
@@ -66,7 +66,7 @@
 				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>177</int></param>
+				<param name="minWidth"><int>135</int></param>
 			</theme>
 			<theme name="label-value-small2" ref="label">
 				<param name="background"><image>ui-table-row.background</image></param>
@@ -135,7 +135,7 @@
 			<theme name="label-title-medium2" ref="label-value-medium2">
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="border"><border>6,0,7,0</border></param>
-				<param name="minWidth"><int>200</int></param>
+				<param name="minWidth"><int>179</int></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-medium3" ref="label-value-medium3">
