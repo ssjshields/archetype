@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><themes>
+	<fontDef name="messagebox" filename="jaejGI7pIp/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="#ffffff" kerning="false" hinting="Medium" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#484848"/>
+
+	<images file="jaejGI7pIp/res/custom/WGRfhUrISa/text-bubble-black.png" filter="lineal">
+		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
+
+
+
+
+
+		<area name="text-bubble-arrow.background1" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
+		<area name="text-bubble-arrow.background2" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
+		<area name="text-bubble-arrow.background3" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
+		<area name="text-bubble-arrow.background4" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="3,0,-3,0"/>
+		<area name="text-bubble-arrow.background5" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="4,0,-4,0"/>
+		<area name="text-bubble-arrow.background6" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
+		<area name="text-bubble-arrow.background7" xywh="128,0,32,32"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
+
+		<animation name="text-bubble-arrow.background" timeSource="enabled">
+			<frame ref="text-bubble-arrow.background1" duration="110"/>
+			<frame ref="text-bubble-arrow.background2" duration="80"/>
+			<frame ref="text-bubble-arrow.background3" duration="40"/>
+			<frame ref="text-bubble-arrow.background4" duration="20"/>
+			<frame ref="text-bubble-arrow.background5" duration="40"/>
+			<frame ref="text-bubble-arrow.background6" duration="80"/>
+			<frame ref="text-bubble-arrow.background7" duration="110"/>
+			<frame ref="text-bubble-arrow.background6" duration="80"/>
+			<frame ref="text-bubble-arrow.background5" duration="40"/>
+			<frame ref="text-bubble-arrow.background4" duration="20"/>
+			<frame ref="text-bubble-arrow.background3" duration="40"/>
+			<frame ref="text-bubble-arrow.background2" duration="80"/>
+		</animation>
+	</images>
+</themes>

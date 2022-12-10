@@ -177,7 +177,6 @@
 	<fontDef name="noto-8pt" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" border_width="1" border_color="#3f4449" kerning="true" hinting="AutoSlight" size="8" incremental="false" characters="0123456789ABCDEF"/>
 	<fontDef name="mechabold" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.7" size_cjk="11.7"/>
 	<fontDef name="mechabold-orange" ref="mechabold" color="#FF9900"/>
-	<fontDef name="messagebox" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 	
 	<fontDef name="title-font" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="title-font-summary" ref="title-font"/>

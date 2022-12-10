@@ -50,11 +50,6 @@
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="Tabbox-Background"/>
 		</composed>
-		<composed name="text-bubble.background" inset="8">
-			<alias ref="Shadow-Background"/>
-			<alias ref="Window-Main-Background"/>
-			<alias ref="Sub-Color-Pure-Edge" inset="7"/>
-		</composed>
 		<composed name="Swarm-Background" inset="-5">
 			<alias ref="Shadow-Background" inset="2,0,0,0"/>
 			<animation timeSource="enabled" inset="0,0,0,0">
@@ -464,31 +459,6 @@
 		</select>
 	</images>	
 	
-	<images file="res/custom/WGRfhUrISa/text-bubble-arrow.png" filter="lineal">
-		<area name="text-bubble-arrow.background1" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="0,0,0,0"/>
-		<area name="text-bubble-arrow.background2" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="1,0,-1,0"/>
-		<area name="text-bubble-arrow.background3" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="2,0,-2,0"/>
-		<area name="text-bubble-arrow.background4" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="3,0,-3,0"/>
-		<area name="text-bubble-arrow.background5" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="4,0,-4,0"/>
-		<area name="text-bubble-arrow.background6" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="5,0,-5,0"/>
-		<area name="text-bubble-arrow.background7" xywh="*"  sizeOverwriteH="32"  sizeOverwriteV="32" inset="6,0,-6,0"/>
-
-		<animation name="text-bubble-arrow.background" timeSource="enabled" tint="icon-color">
-			<frame ref="text-bubble-arrow.background1" duration="110"/>
-			<frame ref="text-bubble-arrow.background2" duration="80"/>
-			<frame ref="text-bubble-arrow.background3" duration="40"/>
-			<frame ref="text-bubble-arrow.background4" duration="20"/>
-			<frame ref="text-bubble-arrow.background5" duration="40"/>
-			<frame ref="text-bubble-arrow.background6" duration="80"/>
-			<frame ref="text-bubble-arrow.background7" duration="110"/>
-			<frame ref="text-bubble-arrow.background6" duration="80"/>
-			<frame ref="text-bubble-arrow.background5" duration="40"/>
-			<frame ref="text-bubble-arrow.background4" duration="20"/>
-			<frame ref="text-bubble-arrow.background3" duration="40"/>
-			<frame ref="text-bubble-arrow.background2" duration="80"/>
-		</animation>
-	</images>
-
 	<images file="res/custom/j4iabP1aXf/user-interface.png" filter="nearest">
 		<area name="white.background" xywh="11,313,1,1"/>
 		<area name="input.background" xywh="146,13,45,19" splitx="L5,R5" splity="T5,B5" border="3,0"/>
