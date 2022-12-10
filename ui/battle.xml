@@ -260,7 +260,7 @@
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="font"><font>alphabeta-main-system</font></param>
 			<param name="border"><border>0,5,0,0</border></param>
 			<param name="minWidth"><int>106</int></param>
 			<param name="maxWidth"><int>106</int></param>

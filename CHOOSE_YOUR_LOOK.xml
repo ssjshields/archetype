@@ -5,6 +5,9 @@
 <include filename="assets/Unova.xml"/>
 
 <!-- Choose one of the following colors for your mouse cursor: 1. Cursors-Black.xml 2. Cursors-White.xml -->
-
 <include filename="assets/Cursors-Black.xml"/>
+
+<!-- Choose the shape of the theme: 1. Sharp.xml 2. Round.xml -->
+<include filename="assets/Sharp.xml"/>
+
 </themes>

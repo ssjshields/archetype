@@ -46,7 +46,7 @@
 		<theme name="hud-item-button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>pb-dark</font></param>
 			<param name="border"><border>0,0,0,0</border></param>
-			<param name="background"><image>ui-button.background</image></param>
+			<param name="background"><image>Small-HUD-Button</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 	   		<param name="maxHeight"><int>43</int></param>
 			<param name="maxWidth"><int>143</int></param>

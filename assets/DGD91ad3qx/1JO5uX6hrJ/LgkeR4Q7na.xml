@@ -15,11 +15,11 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="button" ref="button" allowWildcard="true">
+				<param name="background"><image>party-button</image></param>
 				<param name="overlay"><image>icon1</image></param>
 			</theme> 
 			<theme name="button-move" ref="button" allowWildcard="true">
-		<param name="minWidth"><int>31</int></param>
-		<param name="minHeight"><int>22</int></param>
+				<param name="background"><image>party-button</image></param>
 				<param name="overlay"><image>icon-unlock</image></param>
 			</theme>
 		</theme>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Highlight-Overlay.png" filter="lineal">
+		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L5,R5" splity="T5,B5"/>
+		<animation name="Highlight-Overlay" inset="2" timeSource="selected" if="hover | keyboardFocus">
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#80FFFFFF"/>
+			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#30FFFFFF"/>
+		</animation>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Pure.png" filter="nearest">
+		<area name="Pure-Edge" xywh="*" sizeOverwriteH="2" sizeOverwriteV="2" splitx="L5,R5" splity="T5,B5"/>
+		<composed name="Main-Color-Pure-Edge" tint="main-color"><alias ref="Pure-Edge"/></composed>
+		<composed name="Sub-Color-Pure-Edge" tint="sub-color"><alias ref="Pure-Edge"/></composed>
+		<composed name="Button-Color-Pure-Edge" tint="button-color"><alias ref="Pure-Edge"/></composed>
+		<composed name="Accent-Color-Pure-Edge" tint="accent-color"><alias ref="Pure-Edge"/></composed>
+		<area name="Pure-Top-Edge" xywh="0,0,20,10" splitx="L5,R5" splity="T5,B0"/>
+		<area name="Pure-Bottom-Edge" xywh="0,10,20,10" splitx="L5,R5" splity="T0,B5"/>
+		<area name="Pure-Top-Edge-3px" xywh="0,0,20,3" splitx="L5,R5" splity="T3,B0"/>
+		<area name="Pure-Bottom-Edge-3px" xywh="0,0,20,3" splitx="L5,R5" splity="T0,B3"/>
+		<area name="Pure-Bottom-Edge-2px" xywh="0,18,20,2" splitx="L5,R5" splity="T0,B2"/>
+		<area name="Pure-Left-Edge-3px" xywh="0,0,3,20" splitx="L3,R0" splity="T5,B5"/>
+		<area name="Pure-Right-Edge-3px" xywh="17,0,3,20" splitx="L0,R3" splity="T5,B5"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Window-Accent.png" filter="nearest">
+		<area name="Window-Accent-Edge" xywh="*" splitx="L5,R5" splity="T5,B5" sizeOverwriteH="12"  sizeOverwriteV="12"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Gradient.png" filter="nearest">
+		<area name="Gradient-Pure" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5"/>
+		<area name="Gradient-Pure-Right-Edge" xywh="5,0,837,94" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5"/>
+		<area name="Gradient-Pure-Bottom-Edge-2px" xywh="0,92,842,2" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T0,B2"/>
+		<composed name="Gradient" tint="main-color"><alias ref="Gradient-Pure"/></composed>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Gradient-Border.png" filter="nearest">
+		<area name="Gradient-Border" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5" tint="main-color"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Map-Corners.png" filter="nearest">
+		<composed name="Map-Corners" tint="#f1f1f1"><area xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L10,R10" splity="T10,B10" tint="main-color" inset="31,2,2,2"/></composed>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Fade.png" filter="nearest">
+		<area name="Fade-Right" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12"/>
+		<area name="Fade-Left" xywh="0,0,-800,10" sizeOverwriteH="12" sizeOverwriteV="12"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Shadow-Background.png" filter="nearest">
+		<area name="Shadow-Background" xywh="*" splitx="L5,R5" splity="T5,B5"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/tooltip_bubble.png" filter="nearest">
+		<grid name="tooltip-shadow.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="0,0,7,7"/>
+			<area xywh="7,0,1,7"/>
+			<area xywh="8,0,9,7"/>
+			<area xywh="17,0,1,7"/>
+			<area xywh="18,0,7,7"/>
+			<area xywh="0,7,7,5"/>
+			<area xywh="7,7,1,5"/>
+			<area xywh="8,7,9,5"/>
+			<area xywh="17,7,1,5"/>
+			<area xywh="18,5,7,5"/>
+			<area xywh="0,12,7,12"/>
+			<area xywh="7,12,1,12"/>
+			<area xywh="8,12,9,12"/>
+			<area xywh="17,12,1,12"/>
+			<area xywh="18,12,7,12"/>
+		</grid>
+		<grid name="tooltip-bottom.background" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="0,30,7,7"/>
+			<area xywh="7,30,1,7"/>
+			<area xywh="8,30,9,7"/>
+			<area xywh="17,30,1,7"/>
+			<area xywh="18,30,7,7"/>
+			<area xywh="0,37,7,5"/>
+			<area xywh="7,37,1,5"/>
+			<area xywh="8,37,9,5"/>
+			<area xywh="17,37,1,5"/>
+			<area xywh="18,35,7,5"/>
+			<area xywh="0,42,7,12"/>
+			<area xywh="7,42,1,12"/>
+			<area xywh="8,42,9,12"/>
+			<area xywh="17,42,1,12"/>
+			<area xywh="18,42,7,12"/>
+		</grid>
+		<composed name="tooltip-left.background">
+			<alias ref="tooltip-shadow.background" inset="-2"/>
+			<alias ref="Button-Color-Pure-Edge" tint="#faffffff" inset="0,0,4,0"/>
+			<alias ref="Window-Accent-Edge" inset="0,0,4,0" tint="accent-color"/>
+			<alias ref="tooltip-bottom.background" tint="main-color" inset="-2"/>
+		</composed>
+
+		<grid name="chat-bubble.inner" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="30,0,7,7"/>
+			<area xywh="37,0,1,7"/>
+			<area xywh="38,0,9,7"/>
+			<area xywh="47,0,1,7"/>
+			<area xywh="48,0,7,7"/>
+			<area xywh="30,7,7,5"/>
+			<area xywh="37,7,1,5"/>
+			<area xywh="38,7,9,5"/>
+			<area xywh="47,7,1,5"/>
+			<area xywh="48,5,7,5"/>
+			<area xywh="30,12,7,12"/>
+			<area xywh="37,12,1,12"/>
+			<area xywh="38,12,9,12"/>
+			<area xywh="47,12,1,12"/>
+			<area xywh="48,12,7,12"/>
+		</grid>
+		<grid name="chat-bubble.outer" weightsX="0,1,0,1,0" weightsY="0,1,0" border="0,5,5,5">
+			<area xywh="30,30,7,7"/>
+			<area xywh="37,30,1,7"/>
+			<area xywh="38,30,9,7"/>
+			<area xywh="47,30,1,7"/>
+			<area xywh="48,30,7,7"/>
+			<area xywh="30,37,7,5"/>
+			<area xywh="37,37,1,5"/>
+			<area xywh="38,37,9,5"/>
+			<area xywh="47,37,1,5"/>
+			<area xywh="48,37,7,5"/>
+			<area xywh="30,42,7,12"/>
+			<area xywh="37,42,1,12"/>
+			<area xywh="38,42,9,12"/>
+			<area xywh="47,42,1,12"/>
+			<area xywh="48,42,7,12"/>
+		</grid>
+		<composed name="chat-bubble.background" inset="-2">
+			<alias ref="tooltip-shadow.background"/>
+			<alias ref="chat-bubble.inner" tint="sub-color"/>
+			<alias ref="chat-bubble.outer" tint="main-color"/>
+		</composed>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/x2eLtlMVtE/Poke-Summary-Window-Round.png" filter="nearest">
+		<area name="Poke-Summary-Window.background" xywh="*"/>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/d9nZVhUoCU/PokeDex-Mon-Background-Round.png" filter="nearest">
+		<composed name="PokeDex-Mon-Background" inset="1,1,-10,1">
+			<alias ref="Accent-Color-Pure-Edge"/>
+			<area name="PokeDex-Mon-Background" xywh="*" inset="1"/>
+		</composed>
+	</images>
+
+	<images file="jaejGI7pIp/res/custom/j4iabP1aXf/scrollbar-round.png" filter="nearest">
+		<select name="vscrollbar-white.thumb.background" inset="1">
+			<area xywh="*" splitx="L2,R2" splity="T2,B2" tint="main-color" if="pressed"/>
+			<area xywh="*" splitx="L2,R2" splity="T2,B2" tint="main-color" if="hover"/>
+			<area xywh="*" splitx="L2,R2" splity="T2,B2" tint="button-color"/>
+		</select>
+	</images>
+</themes>

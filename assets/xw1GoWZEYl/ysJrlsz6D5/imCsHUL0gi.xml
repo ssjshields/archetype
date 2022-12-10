@@ -3,6 +3,7 @@
 
 	<theme name="town-map" ref="base-tabbed-frame">
 		<param name="background"><image>Town-Map-Window</image></param>
+		<param name="overlay"><image>Map-Corners</image></param>
 		<param name="border"><border>0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="border"><border>34,5,5,5</border></param>
