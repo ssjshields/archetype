@@ -1213,7 +1213,7 @@
 			<alias ref="Pure-Left-Edge-3px" tint="main-color" sizeOverwriteH="3"/>
 			<area xywh="*" tint="sub-color"/>
 		</grid>
-		<grid name="alert-panel" weightsX="1" weightsY="0,0,1" inset="33,11,-33,10">
+		<grid name="alert-panel" weightsX="1" weightsY="0,0,1" inset="27,5,-27,5">
 			<grid weightsX="0,1" weightsY="1" inset="0,0,0,0">
 				<alias ref="Pure" tint="main-color" sizeOverwriteH="3" inset="0,-5"/>
 				<alias ref="alert-background-fade"/>

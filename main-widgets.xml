@@ -821,8 +821,9 @@
 		<param name="titleAreaRight"><int>-1</int></param>
 		<param name="titleAreaBottom"><int>0</int></param>
 		<param name="border"><border>6,6,0,0</border></param>
-		<param name="background"><image>alert-panel</image></param>
+		<param name="background"><image>none</image></param>
 		<theme name="content" ref="-defaults">
+			<param name="background"><image>alert-panel</image></param>
 			<param name="defaultGap"><dimension>0,3</dimension></param>
 			<param name="smallGap"><dimension>7,5</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
