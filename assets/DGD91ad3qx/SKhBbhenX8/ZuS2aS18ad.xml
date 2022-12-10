@@ -115,13 +115,13 @@
 
 			</theme>
 			<theme name="label-title-desc" ref="label-value-small2">
-				<param name="overlay"><image>ui-sort-desc.background</image></param>
+				<param name="overlay"><image>ui-sort-asc.background</image></param>
 				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="label-title-asc" ref="label-value-small2">
-				<param name="overlay"><image>ui-sort-asc.background</image></param>
+				<param name="overlay"><image>ui-sort-desc.background</image></param>
 				<param name="border"><border>6,0,7,0</border></param>
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
