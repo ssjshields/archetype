@@ -13,7 +13,7 @@
 		<theme name="hud-item-button" ref="-defaults" allowWildcard="true">
 			<param name="font"><font>pb-dark-highlight-button</font></param>
 			<param name="border"><border>0,27,0,0</border></param>
-			<param name="background"><image>main-hud-button.background</image></param>
+			<param name="background"><image>Large-HUD-Button</image></param>
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
 

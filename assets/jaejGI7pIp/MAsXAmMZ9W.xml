@@ -256,10 +256,6 @@
 			<alias ref="ui-button.default"/>
 		</select>
 
-		<composed name="main-hud-button.background" inset="-3,0,-3,0">
-			<alias ref="ui-button.background"/>
-		</composed>
-
 		<composed name="ui-button-tm.background" inset="-1,0,1,0">
 			<alias ref="ui-button.background"/>
 		</composed>
@@ -1779,6 +1775,11 @@
 			<alias ref="ui-button.default" inset="-6,-10,0,-10"/>
 			<alias ref="Pure-Bottom-Edge-2px" inset="-5,-9,1,-9" tint="main-color" if="hover"/>
 			<alias ref="bag-tab.keyboardFocus" inset="-5,-9,1,-9" tint="main-color" if="keyboardFocus"/>
+		</composed>
+		<composed name="Large-HUD-Button" sizeOverwriteH="29" sizeOverwriteV="29" inset="0,-3">
+			<alias ref="ui-button.default"/>
+			<alias ref="Pure-Bottom-Edge-2px" inset="1" tint="main-color" if="hover"/>
+			<alias ref="bag-tab.keyboardFocus" inset="1" tint="main-color" if="keyboardFocus"/>
 		</composed>
 		<composed name="Menu-HUD" sizeOverwriteV="50">
 			<alias ref="Sub-Color-Pure-Edge"/>
