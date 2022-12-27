@@ -50,9 +50,9 @@ more to be added
 
 &nbsp;
 # Installation
-> If present, remove previous versions of archetype entirely before installing the latest updates
-
 **1.** Download the latest [stable](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip) OR [beta](https://github.com/ssjshields/archetype/archive/refs/heads/beta.zip) files
+
+> Delete previous versions of archetype entirely, if present on your system
 
 **2.** Extract into `PokeMMO\data\`
 
