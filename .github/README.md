@@ -50,18 +50,20 @@ more to be added
 
 &nbsp;
 # Installation
-> If present, remove previous versions entirely before installing the latest updates
+> If present, remove previous versions of archetype entirely before installing the latest updates
 
 **1.** Download the latest [stable](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip) OR [beta](https://github.com/ssjshields/archetype/archive/refs/heads/beta.zip) files
 
 **2.** Extract into `PokeMMO\data\`
 
-**3.** Select `archetype-#` under `Settings` → `Interface`
+> Linux / OSX users MUST merge directories, DO NOT REPLACE
+
+**3.** Select `archetype` under `Settings` → `Interface`
 
 **4.** Restart client to refresh cached assets
 
 &nbsp;
-# Unistallation
+# Removal
 **1.** Select `default` under `Settings` → `Interface`
 
 **2.** Delete the `archetype` folder from  `PokeMMO\data\themes`
