@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+	<images file="res/custom/45pYZKcs0t/cursors.png" filter="nearest">
+		<cursor name="mouseCursor.top-left" hotSpotX="7" hotSpotY="7" xywh="26,32,19,19"/>
+		<cursor name="mouseCursor.top-right" hotSpotX="10" hotSpotY="10" xywh="19,4,19,19"/>
+		<cursor name="mouseCursor.left" hotSpotX="14" hotSpotY="9" xywh="58,6,29,17"/>
+		<cursor name="mouseCursor.top" hotSpotX="8" hotSpotY="15" xywh="41,0,16,29"/>
+		<cursor name="mouseCursor.bottom-left" ref="mouseCursor.top-right"/>
+		<cursor name="mouseCursor.bottom-right" ref="mouseCursor.top-left"/>
+		<cursor name="mouseCursor.bottom" ref="mouseCursor.top"/>
+		<cursor name="mouseCursor.right" ref="mouseCursor.left"/>
+		<cursor name="cursor.text" hotSpotX="5" hotSpotY="9" xywh="2,1,9,17"/>
+		<cursor name="cursor.resizecolumn" hotSpotX="15" hotSpotY="8" xywh="58,8,29,14"/>
+		<cursor name="cursor.resizerow" hotSpotX="7" hotSpotY="14" xywh="43,1,12,27"/>
+		<cursor name="cursor.finger" hotSpotX="6" hotSpotY="1" xywh="52,32,19,22"/>
+		<cursor name="cursor.help" hotSpotX="1" hotSpotY="2" xywh="79,29,25,26"/>
+		<cursor name="cursor.default" hotSpotX="1" hotSpotY="2" xywh="3,21,15,23"/>
+	</images>
+</themes>
