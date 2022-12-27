@@ -54,9 +54,11 @@ more to be added
 
 > Delete previous versions of archetype entirely, if present on your system
 
-**2.** Open the `archetype-#` folder; extract into `PokeMMO\data\`
+**2.** Open the `archetype-#` folder; extract contents into `PokeMMO\data\`
 
-> Linux / OSX users MUST merge directories, DO NOT REPLACE
+> Overwrite when prompted (main.png)
+
+> Linux / OSX users MUST merge, DO NOT REPLACE DIRECTORIES
 
 **3.** Select `archetype` under `Settings` → `Interface`
 
