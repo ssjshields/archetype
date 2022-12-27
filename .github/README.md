@@ -15,8 +15,6 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 🎨 modular framework that allows control of the color palette
 
-🧼 custom script that can remove any corrupt / modified strings
-
 &nbsp;
 # Compatibility
 📚 multi-language support
@@ -52,23 +50,23 @@ more to be added
 
 &nbsp;
 # Installation
+> If present, remove previous versions entirely before installing the latest updates
+
 **1.** Download the latest [stable](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip) OR [beta](https://github.com/ssjshields/archetype/archive/refs/heads/beta.zip) files
 
-**2.** Extract into `PokeMMO\data\themes`
+**2.** Extract into `PokeMMO\data\`
 
 **3.** Select `archetype-#` under `Settings` → `Interface`
 
 **4.** Restart client to refresh cached assets
 
 &nbsp;
-# Alternative Installation
-**1.** Clone this repository into `PokeMMO\data\themes` using Git Bash or Github Desktop, etc.
+# Unistallation
+**1.** Select `default` under `Settings` → `Interface`
 
-> Choose either the stable or beta branch, pull to receive updates
+**2.** Delete the `archetype` folder from  `PokeMMO\data\themes`
 
-**2.** Select `archetype-#` under `Settings` → `Interface`
-
-**3.** Restart client to refresh cached assets
+**3.** Repair client from main menu or run the `pokemmo_updater.jar`
 
 &nbsp;
 # Disclaimer
@@ -92,7 +90,7 @@ Anything developed on a previous revision more than likely will not be forwards 
 > Refer to `PokeMMO\revision.txt`
 
 ### How can I report a bug?
-**1.** Ensure you have the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/21316.zip)
+**1.** Ensure you have the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip)
 
 **2.** Attach the `console.log` found at `PokeMMO\log`
 
