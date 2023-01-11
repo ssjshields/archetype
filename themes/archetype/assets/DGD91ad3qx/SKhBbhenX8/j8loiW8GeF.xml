@@ -255,7 +255,7 @@
 				<param name="font"><font>alphabeta-border-HUD</font></param>
 			</theme>
 			<theme name="label-special" ref="label-special">
-				<param name="background"><image>shop-item-limited.background</image></param>
+				<param name="background"><image>shop-item-limited-addon.background</image></param>
 			</theme>
 		</theme>
 	</theme>
@@ -271,7 +271,7 @@
 	<theme name="gameshop-item-addon-sale" ref="gameshop-item-addon-limited" allowWildcard="true">
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="label-special" ref="label-special">
-				<param name="background"><image>shop-item-sale.background</image></param>
+				<param name="background"><image>shop-item-sale-addon.background</image></param>
 			</theme>
 		</theme>
 	</theme>
@@ -279,7 +279,7 @@
 	<theme name="gameshop-item-addon-new" ref="gameshop-item-addon-limited" allowWildcard="true">
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="label-special" ref="label-special">
-				<param name="background"><image>shop-item-new.background</image></param>
+				<param name="background"><image>shop-item-new-addon.background</image></param>
 			</theme>
 		</theme>
 	</theme>

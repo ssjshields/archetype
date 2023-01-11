@@ -147,6 +147,10 @@
 			<alias ref="button-small.background"/>
 		</composed>
 
+		<composed name="battle-move-button.overlay" if="!(hover | keyboardFocus)">
+			<alias ref="Window-Accent2px-Edge" tint="main-color" inset="3,3,3,0"/>
+		</composed>
+
 		<composed name="special-ui-button.background" sizeOverwriteH="24" sizeOverwriteV="24">
 			<alias ref="Pure-Edge" tint="sub-color"/>
 			<alias ref="ui-button.background"/>
@@ -826,15 +830,15 @@
 	</images>
 
 	<images file="effectivity_buttons_lang" filter="lineal">
-		<area name="eff.bg" xywh="0,0,49,14" inset="2,143,2,-88"/>
-		<area name="eff.status" xywh="0,20,49,14" inset="2,143,2,-88"/>
-		<area name="eff.immune" xywh="0,40,49,14" inset="2,143,2,-88"/>
-		<area name="eff.nve" xywh="0,60,49,14" inset="2,143,2,-88"/>
-		<area name="eff.e" xywh="0,80,49,14" inset="2,143,2,-88"/>
-		<area name="eff.se" xywh="0,100,49,14" inset="2,143,2,-88"/>
+		<area name="eff.status" xywh="0,0,49,14" inset="2,143,2,-88"/>
+		<area name="eff.immune" xywh="0,20,49,14" inset="2,143,2,-88"/>
+		<area name="eff.nve" xywh="0,40,49,14" inset="2,143,2,-88"/>
+		<area name="eff.e" xywh="0,60,49,14" inset="2,143,2,-88" tint="#3c494d"/>
+		<area name="eff.se" xywh="0,80,49,14" inset="2,143,2,-88"/>
 
 		<composed name="eff.status.background">
-			<composed tint="#a0b2ff" inset="0,141,0,-90">
+			<composed tint="#63c297" inset="0,141,0,-90">
+				<alias ref="Gradient-Border2px" inset="-23,-148,-5,-5" tint="#e2e2e2"/>
 				<alias ref="Gradient-Pure" inset="2"/>
 				<alias ref="Gradient-Pure" inset="3" tint="#eeeeee"/>
 			</composed>
@@ -842,6 +846,7 @@
 		</composed>
 		<composed name="eff.immune.background">
 			<composed tint="#854f9c" inset="0,141,0,-90">
+				<alias ref="Gradient-Border2px" inset="-23,-148,-5,-5" tint="#e2e2e2"/>
 				<alias ref="Gradient-Pure" inset="2"/>
 				<alias ref="Gradient-Pure" inset="3" tint="#eeeeee"/>
 			</composed>
@@ -849,6 +854,7 @@
 		</composed>
 		<composed name="eff.nve.background">
 			<composed tint="#ff4040" inset="0,141,0,-90">
+				<alias ref="Gradient-Border2px" inset="-23,-148,-5,-5" tint="#e2e2e2"/>
 				<alias ref="Gradient-Pure" inset="2"/>
 				<alias ref="Gradient-Pure" inset="3" tint="#eeeeee"/>
 			</composed>
@@ -856,6 +862,7 @@
 		</composed>
 		<composed name="eff.e.background">
 			<composed tint="#ffffff" inset="0,141,0,-90">
+				<alias ref="Gradient-Border2px" inset="-23,-148,-5,-5" tint="#e2e2e2"/>
 				<alias ref="Gradient-Pure" inset="2"/>
 				<alias ref="Gradient-Pure" inset="3" tint="#eeeeee"/>
 			</composed>
@@ -863,6 +870,7 @@
 		</composed>
 		<composed name="eff.se.background">
 			<composed tint="#ffaa25" inset="0,141,0,-90">
+				<alias ref="Gradient-Border2px" inset="-23,-148,-5,-5" tint="#e2e2e2"/>
 				<alias ref="Gradient-Pure" inset="2"/>
 				<alias ref="Gradient-Pure" inset="3" tint="#eeeeee"/>
 			</composed>
@@ -875,9 +883,9 @@
 		<area name="shop-item-limited-addon.background" xywh="69,0,57,57" inset="1,5,-1,-5"/>
 		<area name="shop-item-sale-addon.background" xywh="133,0,57,57" inset="1,5,-1,-5"/>
 		<area name="shop-item-seasonal-addon.background" xywh="197,0,57,57" inset="1,5,-1,-5"/>
-		<composed name="shop-item-new.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
-		<composed name="shop-item-limited.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
-		<composed name="shop-item-sale.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-new.background"><alias ref="shop-item-new-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-limited.background"><alias ref="shop-item-limited-addon.background" inset="-5,3,5,-3"/></composed>
+		<composed name="shop-item-sale.background"><alias ref="shop-item-sale-addon.background" inset="-5,3,5,-3"/></composed>
 		<composed name="shop-item-seasonal.background"><alias ref="shop-item-seasonal-addon.background" inset="-5,3,5,-3"/></composed>
 	</images>
 

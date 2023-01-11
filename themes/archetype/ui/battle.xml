@@ -112,6 +112,7 @@
 	</theme>
 
 	<theme name="battle-move-button" ref="-defaults" allowWildcard="true">
+		<param name="overlay"><image>battle-move-button.overlay</image></param>
 		<param name="font"><font>move-name</font></param>
 		<param name="font2"><font>move-pp</font></param>
 		<param name="border"><border>13,12,7,92</border></param>

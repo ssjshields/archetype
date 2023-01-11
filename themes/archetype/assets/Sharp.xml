@@ -27,6 +27,10 @@
 		<area name="Window-Accent-Edge" xywh="*" splitx="L5,R5" splity="T5,B5" sizeOverwriteH="12"  sizeOverwriteV="12"/>
 	</images>
 
+	<images file="jaejGI7pIp/res/custom/Yzkkn9zM8H/Window-Accent2px.png" filter="nearest">
+		<area name="Window-Accent2px-Edge" xywh="*" splitx="L5,R5" splity="T5,B5" sizeOverwriteH="12"  sizeOverwriteV="12"/>
+	</images>
+
 	<images file="jaejGI7pIp/res/custom/Yzkkn9zM8H/Gradient.png" filter="nearest">
 		<area name="Gradient-Pure" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5"/>
 		<area name="Gradient-Pure-Right-Edge" xywh="5,0,837,94" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5"/>
@@ -38,7 +42,11 @@
 		<area name="Gradient-Border" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5" tint="main-color"/>
 	</images>
 
-	<images file="jaejGI7pIp/res/custom/xbazbQAVpo/Map-Corners.png" filter="nearest">
+	<images file="jaejGI7pIp/res/custom/Yzkkn9zM8H/Gradient-Border2px.png" filter="nearest">
+		<area name="Gradient-Border2px" xywh="*" sizeOverwriteH="12" sizeOverwriteV="12" splitx="L5,R5" splity="T5,B5"/>
+	</images>
+
+	<images filter="nearest">
 		<composed name="Map-Corners"><alias ref="none"/></composed>
 	</images>
 
