@@ -203,8 +203,8 @@
 		</theme>
 	</theme>
     <theme name="scoreboard-window" ref="new-base-frame">
-        <param name="minWidth"><int>400</int></param>
-        <param name="minHeight"><int>320</int></param>
+        <param name="minWidth"><int>550</int></param>
+        <param name="minHeight"><int>360</int></param>
         <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
             <param name="background"><image>none</image></param>
             <param name="border"><border>40,8,5,8</border></param>
@@ -223,11 +223,10 @@
         </theme>
     </theme>
     <theme name="scoreboard-table" ref="table" allowWildcard="true">
-        <param name="minWidth"><int>200</int></param>
         <param name="columnWidths">
             <map>
-                <param name="0"><int>font.EM * 12</int></param>
-                <param name="1"><int>80</int></param>
+                <param name="0"><int>font.EM * 18</int></param>
+                <param name="1"><int>90</int></param>
             </map>
         </param>
         <theme name="stringcellrenderer" ref="stringcellrenderer">
