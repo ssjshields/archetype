@@ -652,10 +652,10 @@
 			<alias ref="Pure-Right-Edge-3px" tint="main-color"/>
 		</composed>
 
-		<composed name="battle-area" inset="1,0,0,0">
-			<alias ref="Fade-Right" tint="sub-color" inset="0,3,0,0"/>
-			<alias ref="Pure-Left-Edge-3px" tint="main-color"/>
-		</composed>
+		<grid name="battle-area" weightsX="0,1" weightsY="1" inset="1,0,0,0">
+			<alias ref="battle-area-edge" tint="main-color"/>
+			<alias ref="Fade-Right" tint="sub-color"/>
+		</grid>
 		<composed name="battle-learn-label" inset="1,0,0,0">
 			<alias ref="Sub-Color-Pure" inset="0,3,0,3"/>
 			<alias ref="Pure-Left-Edge-3px" tint="main-color"/>

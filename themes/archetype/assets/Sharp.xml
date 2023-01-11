@@ -23,6 +23,10 @@
 		<area name="Pure-Right-Edge-3px" xywh="17,0,3,20" splitx="L0,R3" splity="T5,B5"/>
 	</images>
 
+	<images file="jaejGI7pIp/res/custom/Yzkkn9zM8H/battle-area.png" filter="nearest">
+		<area name="battle-area-edge" xywh="*" splitx="L3,R0"/>
+	</images>
+
 	<images file="jaejGI7pIp/res/custom/Yzkkn9zM8H/Window-Accent.png" filter="nearest">
 		<area name="Window-Accent-Edge" xywh="*" splitx="L5,R5" splity="T5,B5" sizeOverwriteH="12"  sizeOverwriteV="12"/>
 	</images>
