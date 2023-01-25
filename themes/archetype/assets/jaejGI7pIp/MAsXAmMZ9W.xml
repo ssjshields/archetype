@@ -427,7 +427,7 @@
 		</select>
 		<composed name="ui-table-header.background">
 			<alias ref="ui-misc-btn.background"/>
-			<alias ref="ui-sort.background" />
+			<alias ref="ui-sort.background"/>
 		</composed>
 
 		<composed name="ui-table-row.background" inset="1">

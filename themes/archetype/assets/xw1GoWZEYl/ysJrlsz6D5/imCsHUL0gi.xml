@@ -158,11 +158,12 @@
     </theme>
 
 	<theme name="high-score-window" ref="new-base-frame">
-		<param name="minWidth"><int>770</int></param>
-		<param name="minHeight"><int>400</int></param>
+		<param name="background"><image>MM-Signup-Window</image></param>
+		<param name="minWidth"><int>730</int></param>
+		<param name="minHeight"><int>602</int></param>
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>40,8,5,8</border></param>
+			<param name="border"><border>48,0,19,0</border></param>
 			<param name="defaultGap"><dimension>1,1</dimension></param>
 			<param name="smallGap"><dimension>2,2</dimension></param>
 			<param name="mediumGap"><dimension>4,4</dimension></param>
@@ -179,17 +180,22 @@
 	</theme>
 
 	<theme name="high-score-table" ref="table" allowWildcard="true">
-		<param name="minWidth"><int>650</int></param>
+		<param name="border"><border>0</border></param>
+		<param name="minWidth"><int>705</int></param>
 		<param name="columnWidths">
 			<map>
 				<param name="0"><int>40</int></param>
-				<param name="1"><int>font.EM * 20</int></param>
-				<param name="2"><int>80</int></param>
-				<param name="3"><int>200</int></param>
+				<param name="1"><int>350</int></param>
+				<param name="2"><int>100</int></param>
+				<param name="3"><int>160</int></param>
 			</map>
 		</param>
 		<theme name="stringcellrenderer" ref="stringcellrenderer">
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		</theme>
+		<theme name="columnHeader" ref="button">
+			<param name="font"><font>pb-dark</font></param>
+			<param name=""><image>ui-misc-btn.*</image></param>
 		</theme>
 		<theme name="box-layout-row" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>ui-table-row.background</image></param>
@@ -198,8 +204,7 @@
 			<param name="alignment"><enum type="alignment">RIGHT</enum></param>
 			<theme name="label" ref="label">
 				<param name="border"><border>0,0</border></param>
-			
-				</theme>
+			</theme>
 		</theme>
 	</theme>
     <theme name="scoreboard-window" ref="new-base-frame">
