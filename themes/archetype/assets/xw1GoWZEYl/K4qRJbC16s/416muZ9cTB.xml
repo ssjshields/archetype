@@ -893,4 +893,19 @@
 		<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 		<param name="border"><border>5</border></param>
 	</theme>
+
+	<theme name="instance-matchmaking-frame" ref="new-base-frame">
+		<param name="background"><image>Login-CharSelect-Window</image></param>
+		<param name="border"><border>30,12,6,6</border></param>
+		<param name="minWidth"><int>480</int></param>
+		<param name="minHeight"><int>430</int></param>
+		<theme name="label" ref="label" allowWildcard="true">
+			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+			<param name="border"><border>0,0,6,20</border></param>
+		</theme>
+		<theme name="button" ref="button" allowWildcard="true">
+			<param name="minWidth"><int>200</int></param>
+			<param name="minHeight"><int>50</int></param>
+		</theme>
+	</theme>
 </themes>

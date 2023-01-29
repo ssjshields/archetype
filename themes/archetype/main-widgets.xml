@@ -938,7 +938,9 @@
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
-
+			<theme name="combobox" ref="combobox" allowWildcard="true">
+				<param name="minWidth"><int>220</int></param>
+			</theme>
 			<theme name="progressbar" ref="-defaults" allowWildcard="true">
 				<param name=""><image>progressbar.*</image></param>
 				<param name="border"><border>background.border</border></param>
