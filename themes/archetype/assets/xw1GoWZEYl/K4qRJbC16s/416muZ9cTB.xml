@@ -898,7 +898,9 @@
 		<param name="background"><image>Login-CharSelect-Window</image></param>
 		<param name="border"><border>30,12,6,6</border></param>
 		<param name="minWidth"><int>480</int></param>
+		<param name="maxWidth"><int>480</int></param>
 		<param name="minHeight"><int>430</int></param>
+		<param name="maxHeight"><int>430</int></param>
 		<theme name="label" ref="label" allowWildcard="true">
 			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 			<param name="border"><border>0,0,6,20</border></param>

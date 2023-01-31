@@ -96,7 +96,6 @@
 		<param name="fadeDurationDeactivate"><int>0</int></param>
 		<param name="fadeDurationShow"><int>200</int></param>
 		<param name="fadeDurationHide"><int>200</int></param>
-		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
 		<theme name="title" ref="-defaults">
 			<param name="border"><border>14,49,2,0</border></param>
 			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
