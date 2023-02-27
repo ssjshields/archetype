@@ -32,6 +32,10 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 ![menu](https://media.discordapp.net/attachments/1032300868491546654/1067705151781097502/image.png)
 
+![notifications](https://user-images.githubusercontent.com/88489119/221467006-e427b6b3-4f99-4e6d-939f-b399a660ed5b.gif)
+
+![notifications2](https://user-images.githubusercontent.com/88489119/221467134-36f68bdd-bc4a-4ff3-af7d-aec8f9ba2565.png)
+
 ![chatexpand](https://media.discordapp.net/attachments/1032300868491546654/1067704459825778811/chat.png)
 
 ![chatbutton](https://media.discordapp.net/attachments/1032300868491546654/1067703371890442341/image.png)
@@ -40,11 +44,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 ![modularhotbar2](https://media.discordapp.net/attachments/1032300868491546654/1067703345789276191/image.png)
 
-![partybar](https://user-images.githubusercontent.com/88489119/221467181-8c81cbbe-5eba-4acf-8945-b81f2dfda689.png)
-
-![notifications](https://user-images.githubusercontent.com/88489119/221467006-e427b6b3-4f99-4e6d-939f-b399a660ed5b.gif)
-
-![notifications2](https://user-images.githubusercontent.com/88489119/221467134-36f68bdd-bc4a-4ff3-af7d-aec8f9ba2565.png)
+![partybar](https://user-images.githubusercontent.com/88489119/221469097-e86509b4-3664-496b-8a88-49b01c55f3d9.png)
 
 ![trainercard](https://media.discordapp.net/attachments/1032300868491546654/1067706152135172136/tc.png)
 
@@ -80,7 +80,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 > Overwrite the main.png when prompted 
 
-> Linux / OSX users MUST merge, **DO NOT REPLACE DIRECTORIES**
+> Linux / OSX users MUST merge directories, **DO NOT REPLACE**
 
 **2.** Select `archetype` under `Settings` → `Interface`
 
