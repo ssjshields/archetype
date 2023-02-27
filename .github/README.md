@@ -98,6 +98,8 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 # Customization
+*Note: These files can be opened with any text edtior*
+
 `CHOOSE_YOUR_COLORS.xml`
 
 > Modify hex values to personalize your theme
