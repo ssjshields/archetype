@@ -78,7 +78,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 > `#` = release branch (stable, beta, etc.)
 
-> Overwrite the main.png when prompted 
+> Overwrite the `main.png` when prompted (aka the atlas sheet .)
 
 > Linux / OSX users MUST merge directories, **DO NOT REPLACE**
 
@@ -94,7 +94,21 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 **3.** Repair client from main menu or run the `pokemmo_updater.jar`
 
-> Repairing the client restores the original main.png
+> Repairing the client restores the original atlas sheet
+
+&nbsp;
+# Customization
+`CHOOSE_YOUR_COLORS.xml`
+
+> Modify hex values to personalize your theme
+
+> [Color Guide](https://github.com/ssjshields/archetype/blob/alpha/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png?raw=true), showcases the defined areas of the interface
+
+&nbsp;
+
+`CHOOSE_YOUR_LOGINSCREEN.xml` and `CHOOSE_YOUR_LOOK.xml`
+
+> Modify simple conditional flags to personalize your theme
 
 &nbsp;
 # FAQ
