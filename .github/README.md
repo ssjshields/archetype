@@ -2,67 +2,89 @@
 
 Archetype is a custom user interface for the online video game [PokeMMO](https://pokemmo.com/).
 
-Expect this project to update in tandem with official revisions.
-
 Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjshields/archetype-counter/tree/beta#readme) a try.
 
 &nbsp;
 # Features
-
-✨ total interface overhaul; new animations and windows
+🌱 total interface overhaul; new animations and windows
 
 ✂️ new icons (moveset, types, abilities, alpha, shiny, etc.)
 
-🎨 modular framework that allows control of the color palette
+🛠️ modular framework that allows control of the color palette
 
-&nbsp;
-# Compatibility
-📚 multi-language support
-
-🎮 gamepad support
+📚 multi-language support (utilizes Noto Sans.)
 
 &nbsp;
 # Media
-(outdated, to be updated)
 
-![login-compare](https://cdn.discordapp.com/attachments/859209706576805919/1007583380793200730/login.gif)
+![logincompare](https://cdn.discordapp.com/attachments/1032300868491546654/1079600914719059968/juxtapose-gif.gif)
+
+![textbubble](https://user-images.githubusercontent.com/88489119/221465604-27ff57bc-97d1-4e70-95f5-d80cc3a9dcc1.gif)
+
+![summaries](https://user-images.githubusercontent.com/88489119/221465411-26f16a8e-2ef3-450c-82ce-48c31f0822fd.gif)
 <details>
   <summary>Click here to view more</summary>
 &nbsp;
 
-![archetype server select](https://user-images.githubusercontent.com/88489119/187584889-b7675b6e-5c5f-419f-9884-75aeee05754a.png)
+![serverselect](https://media.discordapp.net/attachments/1032300868491546654/1067707541892628511/image.png)
 
-![j9g6i0_AdobeExpress](https://user-images.githubusercontent.com/88489119/187600117-3df08add-9a39-4f02-97a0-7b2b73a5f12b.gif)
+![characterselect](https://media.discordapp.net/attachments/1032300868491546654/1067707308785799268/char_select.png)
 
-![archetype main preview 1](https://user-images.githubusercontent.com/88489119/187584837-9769bbe4-2f20-4ad8-a592-a848f9a4c86e.png)
+![menu](https://media.discordapp.net/attachments/1032300868491546654/1067705151781097502/image.png)
 
-![archetype main preview 2](https://user-images.githubusercontent.com/88489119/187584873-abf196fb-7e60-4b9b-9a09-bd70f5b4f794.png)
+![chatexpand](https://media.discordapp.net/attachments/1032300868491546654/1067704459825778811/chat.png)
 
-![archetype battle preview 1](https://user-images.githubusercontent.com/88489119/187585153-8ea91f61-570b-4a24-9920-01eda6b3313c.png)
+![chatbutton](https://media.discordapp.net/attachments/1032300868491546654/1067703371890442341/image.png)
 
-![archetype battle preview 3](https://user-images.githubusercontent.com/88489119/187585398-661f0fde-2ea1-4227-a194-48a85932b17d.png)
+![modularhotbar1](https://user-images.githubusercontent.com/88489119/221466511-54171452-20c6-4122-a8ce-8d023cfa5240.png)
 
-![archetype battle preview 2](https://user-images.githubusercontent.com/88489119/187585248-36764fa9-ebd4-496b-8340-c699edf1a73a.png)
+![modularhotbar2](https://media.discordapp.net/attachments/1032300868491546654/1067703345789276191/image.png)
 
-more to be added
+![partybar](https://user-images.githubusercontent.com/88489119/221467181-8c81cbbe-5eba-4acf-8945-b81f2dfda689.png)
+
+![notifications](https://user-images.githubusercontent.com/88489119/221467006-e427b6b3-4f99-4e6d-939f-b399a660ed5b.gif)
+
+![notifications2](https://user-images.githubusercontent.com/88489119/221467134-36f68bdd-bc4a-4ff3-af7d-aec8f9ba2565.png)
+
+![trainercard](https://media.discordapp.net/attachments/1032300868491546654/1067706152135172136/tc.png)
+
+![inventory](https://media.discordapp.net/attachments/1032300868491546654/1067705413568569354/image.png)
+
+![map](https://user-images.githubusercontent.com/88489119/221467163-8d464373-7bc2-4e9a-86a5-9a74c2f2c96d.png)
+
+![berries](https://user-images.githubusercontent.com/88489119/221467213-80fc4999-6b76-4365-aa99-6fffbe012ac8.png)
+
+![battlemain](https://user-images.githubusercontent.com/88489119/221467070-a44569da-592f-48b4-9739-b1bd69149605.png)
+
+![hpbars](https://user-images.githubusercontent.com/88489119/221466807-7e2b3e9f-3087-48ed-86a2-83952eb7062b.gif)
+
+![hpbars2](https://user-images.githubusercontent.com/88489119/221466810-8d9fefae-b838-4819-9dcd-4aa0a6eb55ff.gif)
+
+![battlebag](https://user-images.githubusercontent.com/88489119/221467034-d31935b2-d865-4c37-8a22-3a3374a82885.png)
+
+![battlebuttons](https://user-images.githubusercontent.com/88489119/221467269-a87e41ed-c055-4308-af08-c830cb48c4b3.png)
+
+![battleswitch](https://user-images.githubusercontent.com/88489119/221467104-ac2aa32a-663f-4a37-b553-3f5714735d7a.png)
+
+![battletext](https://user-images.githubusercontent.com/88489119/221467114-7d471f31-5bda-44bc-8b4d-b467143fb040.png)
 
 </details>
 
 &nbsp;
 # Installation
-**1.** Download the latest [stable](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip) OR [beta](https://github.com/ssjshields/archetype/archive/refs/heads/beta.zip) files
+*Note: Before installing, if previous versions are present on your system, delete them entirely*
 
-> Delete previous versions of archetype entirely, if present on your system
+**1.** Open the `archetype-#` folder; extract contents into `PokeMMO\data\`
 
-**2.** Open the `archetype-#` folder; extract contents into `PokeMMO\data\`
+> `#` = release branch (stable, beta, etc.)
 
-> Overwrite when prompted (main.png)
+> Overwrite the main.png when prompted 
 
-> Linux / OSX users MUST merge, DO NOT REPLACE DIRECTORIES
+> Linux / OSX users MUST merge, **DO NOT REPLACE DIRECTORIES**
 
-**3.** Select `archetype` under `Settings` → `Interface`
+**2.** Select `archetype` under `Settings` → `Interface`
 
-**4.** Restart client to refresh cached assets
+**3.** Restart client to refresh cached assets
 
 &nbsp;
 # Removal
@@ -72,31 +94,25 @@ more to be added
 
 **3.** Repair client from main menu or run the `pokemmo_updater.jar`
 
-&nbsp;
-# Disclaimer
-
-Files are modified during official updates and the majority of these changes are not logged in the patch notes. 
-
-Using deprecated content could lead to bugs such as; broken and or missing animations, icons, menus and windows.
-
-Regular difference checks must be performed by creators- this is relevant for all custom interfaces.
-
-Anything developed on a previous revision more than likely will not be forwards compatible.
-
-**Use outdated content at your own risk.**
+> Repairing the client restores the original main.png
 
 &nbsp;
 # FAQ
 ### Does this work on mobile?
-> Unfortunately, no- desktop only
+> Unfortunately, no- desktop clients only
 
 ### Which client version do I have?
 > Refer to `PokeMMO\revision.txt`
 
 ### How can I report a bug?
-**1.** Ensure you have the latest [theme](https://github.com/ssjshields/archetype/archive/refs/heads/stable.zip)
+> Attach a screenshot and the `console.log` found at `PokeMMO\log`
 
-**2.** Attach the `console.log` found at `PokeMMO\log`
+&nbsp;
+# Disclaimer
+
+Files are modified during official updates and the majority of these changes are not logged in the patch notes. Using deprecated content could lead to bugs such as; broken and or missing animations, icons, menus and windows. Regular difference checks must be performed by creators- this is relevant for all custom interfaces. Anything developed on a previous revision more than likely will not be forwards compatible.
+
+**Use outdated content at your own risk.**
 
 &nbsp;
 # Contact and Support
