@@ -80,7 +80,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 > `#` = release branch (stable, beta, etc.)
 
-> Overwrite the `main.png` when prompted (aka the atlas sheet .)
+> Overwrite the `main.png` when prompted
 
 > Linux / OSX users MUST merge directories, **DO NOT REPLACE**
 
@@ -96,7 +96,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 **3.** Repair client from main menu or run the `pokemmo_updater.jar`
 
-> Repairing the client restores the original atlas sheet
+> Repairing the client restores the original `main.png`
 
 &nbsp;
 # Customization
@@ -118,6 +118,14 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 # FAQ
 ### Does this work on mobile?
 > Unfortunately, no- desktop clients only
+
+### Why aren't the custom icons showing?
+> Ensure the `main.png` is overwrote during installation
+
+> The game utilizes a single sprite sheet which contains all of the icons
+
+### Why aren't my customization edits showing?
+> Ensure that you are modifying the correct values, not the commented references
 
 ### How can I report a bug?
 > Attach a screenshot and the `console.log` found at `PokeMMO\log`
