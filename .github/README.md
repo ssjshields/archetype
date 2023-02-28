@@ -30,6 +30,8 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 ![characterselect](https://media.discordapp.net/attachments/1032300868491546654/1067707308785799268/char_select.png)
 
+![prompts](https://user-images.githubusercontent.com/88489119/221712129-7e554d82-d17e-4e2f-a3e6-59e690ba09f5.gif)
+
 ![menu](https://media.discordapp.net/attachments/1032300868491546654/1067705151781097502/image.png)
 
 ![notifications](https://user-images.githubusercontent.com/88489119/221467006-e427b6b3-4f99-4e6d-939f-b399a660ed5b.gif)
@@ -108,7 +110,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 &nbsp;
 
-`CHOOSE_YOUR_LOGINSCREEN.xml` and `CHOOSE_YOUR_LOOK.xml`
+`CHOOSE_YOUR_LOOK.xml`
 
 > Modify simple conditional flags to personalize your theme
 
@@ -116,9 +118,6 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 # FAQ
 ### Does this work on mobile?
 > Unfortunately, no- desktop clients only
-
-### Which client version do I have?
-> Refer to `PokeMMO\revision.txt`
 
 ### How can I report a bug?
 > Attach a screenshot and the `console.log` found at `PokeMMO\log`
