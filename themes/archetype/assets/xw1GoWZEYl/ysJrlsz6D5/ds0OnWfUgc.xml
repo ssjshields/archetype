@@ -106,8 +106,7 @@
 	<theme name="tooltip-markup" ref="tooltipwindow">
     <theme name="label" ref="label">
       <param name="font">
-        <!--<font>tooltip-font-markup</font>-->
-		<font>tooltip-font</font>
+        <font>tooltip-font-markup</font>
       </param>
     </theme>
 	</theme>
