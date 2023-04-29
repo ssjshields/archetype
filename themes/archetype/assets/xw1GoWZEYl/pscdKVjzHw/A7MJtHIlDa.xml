@@ -175,7 +175,8 @@
 				<theme name="button" ref="-defaults" allowWildcard="true">
 					<param name="font"><font>alphabeta</font></param>
 					<param name="border"><border>7,4</border></param>
-					<param name=""><image>button-tiny.*</image></param>
+					<!--<param name=""><image>button-tiny.*</image></param>-->
+					<param name=""><image>ui-button.*</image></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					<param name="minWidth"><int>140</int></param>
 				</theme>
