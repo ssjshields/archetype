@@ -103,6 +103,15 @@
 		</theme>
 	</theme>
 
+	<theme name="tooltip-markup" ref="tooltipwindow">
+    <theme name="label" ref="label">
+      <param name="font">
+        <!--<font>tooltip-font-markup</font>-->
+		<font>tooltip-font</font>
+      </param>
+    </theme>
+	</theme>
+
 	<theme name="tooltip-help" ref="tooltipwindow">
 		<param name="fadeInTime"><int>0</int></param>
 	</theme>
