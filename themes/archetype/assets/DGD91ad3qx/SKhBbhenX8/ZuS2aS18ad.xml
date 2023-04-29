@@ -255,17 +255,51 @@
 				<theme name="container" ref="container">
 					<param name="background"><image>none</image></param>
 					<theme name="dialoglayout" ref="dialoglayout">
-						<theme name="combobox" ref="combobox" allowWildcard="true">
-							<param name="minWidth"><int>194</int></param>
-						</theme>
-						<theme name="button" ref="button" allowWildcard="true">
-							<param name="minWidth"><int>131</int></param>
-						</theme>
+	<theme name="scrollpane" ref="scrollpane">
+              <theme name="label-value-medium4" ref="label">
+                <param name="background"><image>ui-inputbox.background</image></param>
+                <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+                <param name="border"><border>6</border></param>
+                <param name="minWidth"><int>239</int></param>
+              </theme>
+              <theme name="label-value-small" ref="label">
+                <param name="background"><image>ui-inputbox.background</image></param>
+                <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+                <param name="border"><border>6</border></param>
+                <param name="minWidth"><int>80</int></param>
+              </theme>
+
+              <theme name="label-title-small" ref="label-value-small">
+                <param name="background">
+                  <image>ui-header.background</image>
+                </param>
+                <param name="textAlignment">
+                  <enum type="alignment">CENTER</enum>
+                </param>
+              </theme>
+
+              <theme name="label-title-medium4" ref="label-value-medium4">
+                <param name="background">
+                  <image>ui-header.background</image>
+                </param>
+                <param name="textAlignment">
+                  <enum type="alignment">CENTER</enum>
+                </param>
+              </theme>
+              <theme name="label-info" ref="label">
+                <param name="background"><image>ui-inputbox.background</image></param>
+                <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+                <param name="border"><border>6</border></param>
+                <param name="minWidth"><int>300</int></param>
+                <param name="minHeight"><int>50</int></param>
+              </theme>
+            </theme>
 						<param name="border"><border>4,10,2,18</border></param>
 						<param name="namedGaps"><map/></param>
 						<param name="background"><image>none</image></param>
 						<theme name="editfield" ref="editfield-search" allowWildcard="true">
 						</theme>
+						
 						<theme name="label" ref="label" allowWildcard="true">
 							<param name="border"><border>10,10,0,0</border></param>
 							<param name="background"><image>none</image></param>
