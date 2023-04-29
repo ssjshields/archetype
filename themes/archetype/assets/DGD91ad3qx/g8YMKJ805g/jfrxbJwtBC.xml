@@ -284,6 +284,16 @@
   <!-- PC Storage GUI's -->
   <theme name="pc-frame" ref="resizableframe">
   <param name="background"><image>PC-Window</image></param>
+  <param name="border"><border>28,0,0,0</border></param>
+		<param name="titleAreaTop"><int>0</int></param>
+		<param name="titleAreaLeft"><int>0</int></param>
+		<param name="titleAreaRight"><int>-1</int></param>
+		<param name="titleAreaBottom"><int>41</int></param>
+		<theme name="title" ref="title">
+			<param name="border"><border>19,54,2,0</border></param>
+		</theme>
+		<param name="closeButtonX"><int>-28</int></param>
+		<param name="closeButtonY"><int>15</int></param>
     <theme name="pc-box-button" ref="button">
       <param name="background">
         <image>ui-button.background</image>
