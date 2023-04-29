@@ -280,6 +280,7 @@
 		</composed>
 
 		<select name="ui-popup-button.background">
+			<alias ref="ui-button.tinted.green" if="picked"/>
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.hover" if="selected"/>
