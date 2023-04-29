@@ -558,8 +558,6 @@
 			<theme name="label-tiering-updated-time" ref="label" allowWildcard="true">
 				<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 			</theme>
-			<theme name="tiering-combobox" ref="combobox">
-			</theme>
 			<theme name="label-name-spectate-value-button" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-table-row.background</image></param>
 				<param name="border"><border>6</border></param>
