@@ -88,6 +88,12 @@
 				<param name="font"><font>tooltip-font</font></param>
 				<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
 			</theme>
+			
+			  <theme name="label-alt" ref="-defaults">
+              <param name="font"><font>pb-tab</font></param>
+              <param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+            </theme>
+			
 			<theme name="label-normal" ref="-defaults">
 				<param name="font"><font>pb-dark</font></param>
 				<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
