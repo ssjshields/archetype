@@ -121,5 +121,10 @@
 
 	<theme name="monster-slot-selected" ref="-defaults">
 		<param name="background"><image>monster-slot-selected</image></param>
+	<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true">
+      <param name=""><image>mi-hpbar-green.*</image></param>
+      <param name="border"><border>background.border</border></param>
+      <param name="minWidth"><int>100</int></param>
+		</theme>
 	</theme>
 </themes>
