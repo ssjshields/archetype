@@ -165,6 +165,26 @@
 		</theme>
 		
 		<theme name="admin-small-frame" ref="resizableframe">
+			<param name="border"><border>15</border></param>
+			<param name="defaultGap"><dimension>5,5</dimension></param>
+			<param name="smallGap"><dimension>8,8</dimension></param>
+			<param name="mediumGap"><dimension>10,10</dimension></param>
+			<param name="largeGap"><dimension>15,15</dimension></param>
+			<param name="namedGaps"><map/></param>
+			<theme name="button" ref="-defaults" allowWildcard="true">
+				<param name="font"><font>alphabeta</font></param>
+				<param name="border"><border>7,4</border></param>
+				<param name=""><image>ui-button.*</image></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<param name="minWidth"><int>140</int></param>
+			</theme>
+			<theme name="label-title" ref="label" allowWildcard="true">
+				<param name="background"><image>label2.background</image></param>
+				<param name="textAlignment"><enum type="alignment">left</enum></param>
+				<param name="border"><border>5,5,5,5</border></param>
+				<param name="minWidth"><int>250</int></param>
+				<param name="font"><font>alphabeta</font></param>
+			</theme>
 			<theme name="dialoglayout" ref="-defaults">
 				<param name="border"><border>15</border></param>
 				<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -175,8 +195,7 @@
 				<theme name="button" ref="-defaults" allowWildcard="true">
 					<param name="font"><font>alphabeta</font></param>
 					<param name="border"><border>7,4</border></param>
-					<!--<param name=""><image>button-tiny.*</image></param>-->
-					<param name=""><image>ui-button.*</image></param>
+					<param name=""><image>button-tiny.*</image></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					<param name="minWidth"><int>140</int></param>
 				</theme>

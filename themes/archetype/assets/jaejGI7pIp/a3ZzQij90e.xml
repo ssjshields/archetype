@@ -108,10 +108,7 @@
 	<fontDef name="alphabeta" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true">
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
-	<fontDef name="alphabeta-markup" markup="true" filename="res/fonts/NotoSansCJK-Medium.ttc" ref="alphabeta" unique_atlas="true">
-    <fontParam if="disabled" color="font-disabled-color"/>
-    <fontParam if="pressed" offsetX="1" offsetY="1"/>
-	</fontDef>
+	<fontDef name="alphabeta-markup-sub" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true" markup="true"/>
 	<fontDef name="alphabeta-white-chat" ref="alphabeta" color="font-main-color"/>
 	<fontDef name="alphabeta-main-system" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="font-sub-color"/>
@@ -168,9 +165,7 @@
 	</fontDef>
 	<fontDef name="pb-dark-red" ref="pb-dark" color="#fc6a78"/>
 	<fontDef name="tooltip-font" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1"/>
-	<fontDef name="tooltip-font-markup" filename="res/fonts/NotoSans-Medium.ttc" markup="true" ref="tooltip-font">
-		<fontParam if="disabled" color="font-disabled-color"/>
-	</fontDef>
+	<fontDef name="tooltip-font-markup" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1" markup="true"/>
 	<fontDef name="pb-dark-link" ref="pb-dark" color="#434343"/>
 	<fontDef name="pb-tab" ref="alphabeta" color="font-button-color">
 		<fontParam if="disabled" color="font-disabled-color"/>

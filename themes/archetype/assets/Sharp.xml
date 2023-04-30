@@ -150,10 +150,15 @@
 		<area name="Poke-Summary-Window.background" xywh="*"/>
 	</images>
 
+	<images file="jaejGI7pIp/res/custom/2sTxAVRCoW/PC-Mon-Background-Base-Sharp.png" filter="nearest">
+		<area name="PC-Mon-Background-Base" xywh="*"/>
+	</images>
+
 	<images file="jaejGI7pIp/res/custom/d9nZVhUoCU/PokeDex-Mon-Background-Sharp.png" filter="nearest">
+		<area name="PokeDex-Mon-Background-Base" xywh="*"/>
 		<composed name="PokeDex-Mon-Background" inset="1,1,-10,1">
 			<alias ref="Accent-Color-Pure-Edge"/>
-			<area name="PokeDex-Mon-Background" xywh="*" inset="1"/>
+			<alias ref="PokeDex-Mon-Background-Base" inset="1"/>
 		</composed>
 	</images>
 

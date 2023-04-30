@@ -245,7 +245,7 @@
 							<param name="minHeight"><int>40</int></param>
 							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 						</theme>
-
+						<theme name="tiering-combobox" ref="combobox"></theme>
 						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 							<param name="border"><border>0</border></param>
 							<theme name="dialoglayout" ref="dialoglayout">
@@ -557,6 +557,8 @@
 			</theme>
 			<theme name="label-tiering-updated-time" ref="label" allowWildcard="true">
 				<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+			</theme>
+			<theme name="tiering-combobox" ref="combobox">
 			</theme>
 			<theme name="label-name-spectate-value-button" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-table-row.background</image></param>

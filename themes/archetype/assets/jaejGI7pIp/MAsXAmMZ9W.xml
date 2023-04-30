@@ -280,7 +280,6 @@
 		</composed>
 
 		<select name="ui-popup-button.background">
-			<!--<alias ref="ui-button.tinted.green" if="picked"/>-->
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
 			<alias ref="ui-button.hover" if="selected"/>
@@ -1079,25 +1078,13 @@
 	<images file="res/custom/2sTxAVRCoW/PC-Icon.png" filter="lineal">
 		<area name="PC-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
 		<composed name="PC-Window">
-            <alias ref="ui-frame.background"/>
-			<grid weightsX="1" weightsY="0,1">
-				<alias ref="Pure-Top-Edge" tint="button-color" sizeOverwriteV="46" inset="5"/>
-				<area xywh="0,0,0,0"/>
-			</grid>		
-			<grid weightsX="0,1" weightsY="0,1" inset="10">
-				<alias ref="Accent-Color-Pure-Edge" sizeOverwriteH="36" sizeOverwriteV="26"/>
-				<area xywh="0,0,0,0"/>
-				<area xywh="0,0,0,0"/>
-				<area xywh="0,0,0,0"/>
-			</grid>		
-			<grid weightsX="0,1" weightsY="0,1" inset="11">
-				<alias ref="Sub-Color-Pure-Edge" sizeOverwriteH="34" sizeOverwriteV="24"/>
-				<area xywh="0,0,0,0"/>
-				<area xywh="0,0,0,0"/>
-				<area xywh="0,0,0,0"/>
-			</grid>		
-			<alias ref="PC-Icon" tint="icon-color" inset="15,20,0,0"/>
-      </composed>
+			<alias ref="Window-Background-Highlight"/>
+			<alias ref="PC-Icon" tint="icon-color" inset="10,15,0,0"/>
+		</composed>
+		<composed name="PC-Mon-Background" sizeOverwriteH="12" sizeOverwriteV="12">
+			<alias ref="PC-Mon-Background-Base" inset="2,2,2,-2"/>
+			<alias ref="Window-Accent-Edge" inset="2,2,2,-2" tint="#cccccc"/>
+		</composed>
 	</images>
 
 	<images file="res/custom/613wCZrdxv/Login-Server-Overlay-Icons.png" filter="lineal">
@@ -1255,9 +1242,6 @@
 		<area name="Search-Icon" xywh="*" splitx="L1,R17" splity="T1,B17" inset="-5,-4,5,4" tint="icon-color"/>
 		<composed name="Search-Icon-Bag">
 			<alias ref="Search-Icon" inset="0,2,0,-2"/>
-		</composed>
-		<composed name="Search-Icon-PC">
-			<alias ref="Search-Icon" inset="2,0,-2,0"/>
 		</composed>
 	</images>
 
@@ -1899,7 +1883,7 @@
 			<alias ref="ui-inputbox.background" inset="0,7,0,-2"/>
 		</composed>
 		<composed name="ui-inputbox-pc.background">
-			<alias ref="ui-inputbox.background" inset="-2,0,-2,0"/>
+			<alias ref="ui-inputbox.background" inset="0,5"/>
 		</composed>
 
 		<composed name="ui-inputbox.red"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="hp-low-color"/></composed>
