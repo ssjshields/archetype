@@ -37,7 +37,7 @@
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 			</theme>
 			<theme name="border-container" ref="label">
-				<param name="border"><border>3,4,10,0</border></param>
+				<param name="border"><border>2,4,10,0</border></param>
 				<param name="background"><image>PC-Mon-Background</image></param>
 			</theme>
 			<theme name="label" ref="label" allowWildcard="true">
