@@ -233,91 +233,88 @@
 				<param name="border"><border>0,0,0,0</border></param>
 				<param name="minWidth"><int>556</int></param>
 				<theme name="dialoglayout" ref="dialoglayout">
-						<param name="defaultGap"><dimension>5,5</dimension></param>
-						<param name="smallGap"><dimension>8,8</dimension></param>
-						<param name="mediumGap"><dimension>10,10</dimension></param>
-						<param name="largeGap"><dimension>15,15</dimension></param>
+					<param name="defaultGap"><dimension>3,3</dimension></param>
+					<param name="smallGap"><dimension>8,8</dimension></param>
+					<param name="mediumGap"><dimension>10,10</dimension></param>
+					<param name="largeGap"><dimension>15,15</dimension></param>
+					<param name="border"><border>0</border></param>
+					<theme name="label-game-mode" ref="button" allowWildcard="true">
+						<param name="background"><image>ui-header.background</image></param>
+						<param name="border"><border>12</border></param>
+						<param name="minWidth"><int>420</int></param>
+						<param name="minHeight"><int>40</int></param>
+						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+					</theme>
+					<theme name="editfield" ref="editfield-search">
+						<param name="minWidth"><int>187</int></param>
+					</theme>
+					<theme name="tiering-combobox" ref="combobox">
+						<param name="minWidth"><int>184</int></param>
+					</theme>
+					<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 						<param name="border"><border>0</border></param>
-						<theme name="label-game-mode" ref="button" allowWildcard="true">
+						<theme name="dialoglayout" ref="dialoglayout">
+							<param name="border"><border>0</border></param>
+							<param name="minWidth"><int>547</int></param>
+						</theme>
+						<theme name="vscrollbar" ref="vscrollbar-white"/>
+						<param name="scrollbarsAlwaysVisible"><bool>true</bool></param>
+					</theme>
+					<theme name="signup-button" ref="button">
+						<param name="minWidth"><int>212</int></param>
+					</theme>
+					<theme name="label-time" ref="label" allowWildcard="true">
+						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+						<param name="border"><border>5</border></param>
+					</theme>
+					<theme name="tier-mode" ref="dialoglayout" allowWildcard="true">
+						<param name="border"><border>10,10,10,10</border></param>
+						<param name="background"><image>ui-header.background</image></param>
+						<theme name="label-tier-type" ref="button" allowWildcard="true">
 							<param name="background"><image>ui-header.background</image></param>
-							<param name="border"><border>12</border></param>
-							<param name="minWidth"><int>420</int></param>
-							<param name="minHeight"><int>40</int></param>
+							<param name="font"><font>title-font</font></param>
+							<param name="border"><border>6</border></param>
+							<param name="minWidth"><int>15</int></param>
 							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 						</theme>
-						<theme name="tiering-combobox" ref="combobox"></theme>
-						<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-							<param name="border"><border>0</border></param>
-							<theme name="dialoglayout" ref="dialoglayout">
-								<param name="border"><border>0</border></param>
-								<param name="minWidth"><int>547</int></param>
-							</theme>
-							<theme name="vscrollbar" ref="vscrollbar-white"/>
-							<param name="scrollbarsAlwaysVisible"><bool>true</bool></param>
+						<theme name="buttondouble" ref="button">
+							<param name="minWidth"><int>156</int></param>
+							<param name="maxWidth"><int>156</int></param>
+							<param name="minHeight"><int>30</int></param>
 						</theme>
-
-						<theme name="signup-button" ref="button">
-							<param name="minWidth"><int>212</int></param>
+						<theme name="progressbar" ref="-defaults" allowWildcard="true">
+							<param name=""><image>mi-xpbar.*</image></param>
+							<param name="border"><border>background.border</border></param>
+							<param name="minWidth"><int>100</int></param>
+							<param name="minHeight"><int>9</int></param>
+							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 						</theme>
-
+						<theme name="label-animation" ref="label" allowWildcard="true">
+							<param name="minWidth"><int>100</int></param>
+							<param name="minHeight"><int>100</int></param>
+						</theme>
 						<theme name="label-time" ref="label" allowWildcard="true">
-							<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-							<param name="border"><border>5</border></param>
+							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 						</theme>
-
-						<theme name="tier-mode" ref="dialoglayout" allowWildcard="true">
-							<param name="border"><border>10,10,10,10</border></param>
-							<param name="background"><image>ui-header.background</image></param>
-							<theme name="label-tier-type" ref="button" allowWildcard="true">
-								<param name="background"><image>ui-header.background</image></param>
-								<param name="font"><font>title-font</font></param>
-								<param name="border"><border>6</border></param>
-								<param name="minWidth"><int>15</int></param>
-								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-							</theme>
-
-							<theme name="buttondouble" ref="button">
-								<param name="minWidth"><int>156</int></param>
-								<param name="maxWidth"><int>156</int></param>
-								<param name="minHeight"><int>30</int></param>
-							</theme>
-							<theme name="progressbar" ref="-defaults" allowWildcard="true">
-								<param name=""><image>mi-xpbar.*</image></param>
-								<param name="border"><border>background.border</border></param>
-								<param name="minWidth"><int>100</int></param>
-								<param name="minHeight"><int>9</int></param>
-								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-							</theme>
-							<theme name="label-animation" ref="label" allowWildcard="true">
-								<param name="minWidth"><int>100</int></param>
-								<param name="minHeight"><int>100</int></param>
-							</theme>
-							<theme name="label-time" ref="label" allowWildcard="true">
-								<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-							</theme>
-						</theme>
-
-						<theme name="signup-combobox" ref="combobox">
-							<param name="minWidth"><int>1</int></param>
-							<param name="maxWidth"><int>212</int></param>
-							<param name="minHeight"><int>50</int></param>
-						</theme>
-
-						<theme name="label-monster-slot" ref="label" allowWildcard="true">
-							<param name="background"><image>ui-inputbox.default</image></param>
-						</theme>
-						<theme name="label-unbanned-monster" ref="label-monster-slot" allowWildcard="true">
-							<param name="background"><image>ui-inputbox.grey</image></param>
-						</theme>
-						<theme name="label-banned-monster" ref="label-monster-slot" allowWildcard="true">
-							<param name="background"><image>ui-inputbox.red</image></param>
-						</theme>
-						<theme name="label-suspect-testing-monster" ref="label-monster-slot" allowWildcard="true">
-							<param name="background"><image>ui-inputbox.yellow</image></param>
-						</theme>
+					</theme>
+					<theme name="signup-combobox" ref="combobox">
+						<param name="minWidth"><int>1</int></param>
+						<param name="maxWidth"><int>212</int></param>
+						<param name="minHeight"><int>50</int></param>
+					</theme>
+					<theme name="label-monster-slot" ref="label" allowWildcard="true">
+						<param name="background"><image>ui-inputbox.default</image></param>
+					</theme>
+					<theme name="label-unbanned-monster" ref="label-monster-slot" allowWildcard="true">
+						<param name="background"><image>ui-inputbox.grey</image></param>
+					</theme>
+					<theme name="label-banned-monster" ref="label-monster-slot" allowWildcard="true">
+						<param name="background"><image>ui-inputbox.red</image></param>
+					</theme>
+					<theme name="label-suspect-testing-monster" ref="label-monster-slot" allowWildcard="true">
+						<param name="background"><image>ui-inputbox.yellow</image></param>
+					</theme>
 				</theme>
-
-
 				<theme name="info-layout" ref="dialoglayout">
 					<param name="border"><border>6,0,0,0</border></param>
 					<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -325,7 +322,6 @@
 					<param name="mediumGap"><dimension>10,10</dimension></param>
 					<param name="largeGap"><dimension>15,15</dimension></param>
 					<param name="namedGaps"><map/></param>
-
 					<theme name="button" ref="button">
 						<param name="minWidth"><int>102</int></param>
 						<param name="minHeight"><int>30</int></param>
