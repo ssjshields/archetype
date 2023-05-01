@@ -181,29 +181,31 @@
 
 	<theme name="editfieldautocompletionwindow" ref="-defaults">
 		<theme name="listbox" ref="-defaults">
+			<param name="minDisplayedRows"><int>10</int></param>
 			<theme name="display" ref="-defaults">
 				<param name="minHeight"><int>26</int></param>
-				<param name="minDisplayedRows"><int>5</int></param>
+				<param name="minDisplayedRows"><int>1</int></param>
 				<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-				<param name="border"><border>15</border></param>
-				<param name=""><image>ui-popup-button.*</image></param>
+				<param name="border"><border>0,0,2,0</border></param>
+				<param name=""><image>ui-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
 			</theme>
-			<param name="cellHeight"><int>27</int></param>
+			<param name="cellHeight"><int>font.LineHeight + 7</int></param>
 			<param name="cellWidth"><constant>SINGLE_COLUMN</constant></param>
 			<param name="rowMajor"><bool>true</bool></param>
 			<param name="fixedCellWidth"><bool>false</bool></param>
 			<param name="fixedCellHeight"><bool>false</bool></param>
-			<param name="font"><font>alphabeta-highlight-button</font></param>
-			<param name="border"><border>4,7</border></param>
-			<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
-			<param name="maxHeight"><int>250</int></param>
+			<param name="font"><font>pb-dark-highlight-button</font></param>
+			<param name="border"><border>5</border></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			<param name="maxHeight"><int>270</int></param>
 			<param name="maxWidth"><int>250</int></param>
 		</theme>
-		<param name="font"><font>alphabeta</font></param>
 		<param name="border"><border>0</border></param>
-		<param name=""><image>ui-popup.*</image></param>
-		<param name="minHeight"><int>35</int></param>
+		<param name="background"><image>ui-popup.background</image></param>
+		<param name="minWidth"><int>250</int></param>
+		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
 	<theme name="textarea" ref="-defaults">
@@ -346,34 +348,7 @@
 		</theme>
 	</theme>
 
-	<theme name="comboboxPopup" ref="-defaults" allowWildcard="true">
-		<theme name="listbox" ref="-defaults">
-			<param name="minDisplayedRows"><int>1</int></param>
-			<theme name="display" ref="-defaults">
-				<param name="minHeight"><int>26</int></param>
-				<param name="minDisplayedRows"><int>1</int></param>
-				<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-				<param name="border"><border>0,0,2,0</border></param>
-				<param name=""><image>ui-button.*</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
-			</theme>
-			<param name="cellHeight"><int>font.LineHeight + 7</int></param>
-			<param name="cellWidth"><constant>SINGLE_COLUMN</constant></param>
-			<param name="rowMajor"><bool>true</bool></param>
-			<param name="fixedCellWidth"><bool>false</bool></param>
-			<param name="fixedCellHeight"><bool>false</bool></param>
-			<param name="font"><font>pb-dark-highlight-button</font></param>
-			<param name="border"><border>5</border></param>
-			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			<param name="maxHeight"><int>270</int></param>
-			<param name="maxWidth"><int>250</int></param>
-		</theme>
-
-		<param name="border"><border>0</border></param>
-		<param name="background"><image>ui-popup.background</image></param>
-		<param name="minWidth"><int>250</int></param>
-		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
+	<theme name="comboboxPopup" ref="editfieldautocompletionwindow" allowWildcard="true">
 	</theme>
 
 	<theme name="valueadjuster" ref="-defaults" allowWildcard="true">
