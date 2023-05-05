@@ -21,6 +21,8 @@
 			<param name="border"><border>0</border></param>
 		</theme>
 		<theme name="preview-frame" ref="-defaults">
+		    <!--<param name="background"><image>label7.background</image></param>
+			<param name="border"><border>0,0,0,0</border></param>-->
 			<param name="minWidth"><int>240</int></param>
 			<param name="maxWidth"><int>240</int></param>
 			<theme name="monster-name-label" ref="label" allowWildcard="true">
