@@ -426,6 +426,20 @@
 		</theme>
 	</theme>
 
+	<theme name="monster-slot-pc" ref="-defaults">
+    <param name="background"><image>Party-Frame-Box</image></param>
+	<param name="border"><border>0,4</border></param><!--gender/held item sprite-->
+	<theme name="slot-health-progressbar" ref="-defaults" allowWildcard="true"><!--do not remove, even though "unused"-->
+			<param name=""><image>mi-hpbar-green-party.*</image></param>
+			<param name="overlay"><image>Party-Frame-Box-Overlay</image></param>
+			<param name="border"><border>0,0,0,0</border></param>
+		</theme>
+	</theme>
+
+	<theme name="monster-slot-pc-empty" ref="monster-slot-pc">
+	<param name="background"><image>Party-Frame-Box-Disabled</image></param>
+	</theme>
+
 	<theme name="partyslot-shiny" ref="-defaults">
 		<param name="background"><image>trade-slot-shiny</image></param>
     	<param name="border"><border>8</border></param>
