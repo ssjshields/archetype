@@ -1082,9 +1082,9 @@
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="PC-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
-		<composed name="PC-Mon-Background" sizeOverwriteH="12" sizeOverwriteV="12" inset="0,-1,0,-2" splitx="10,10" splity="10,10">
-			<alias ref="PC-Mon-Background-Base" inset="2,2,2,-2"/>
-			<alias ref="Window-Accent-Edge" inset="2,2,2,-2" tint="#cccccc"/>
+		<composed name="PC-Mon-Background" splitx="10,10" splity="10,10">
+			<alias ref="PC-Mon-Background-Base" inset="-2,2,2,-2"/>
+			<alias ref="Window-Accent-Edge" inset="-26,0,-38,-2" tint="#cccccc"/>
 		</composed>
 	</images>
 

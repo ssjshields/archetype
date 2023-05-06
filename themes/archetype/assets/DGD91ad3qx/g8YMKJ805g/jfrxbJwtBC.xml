@@ -2,7 +2,7 @@
 <themes>
 
 	<theme name="pc-frame" ref="resizableframe">
-		<param name="border"><border>35,0,0,0</border></param>
+		<param name="border"><border>26,14,8,6</border></param>
 		<param name="background"><image>PC-Window</image></param>
 		<theme name="editfield" ref="editfield-search">
 			<param name="columns"><int>14</int></param>
@@ -17,20 +17,24 @@
 			</theme>
 		</theme>
 		<theme name="pc-box-button" ref="button">
+			<!--<param name="background"><image>ui-header.background</image></param>-->
 			<param name="minWidth"><int>48</int></param>
 			<param name="border"><border>0</border></param>
 		</theme>
 		<theme name="preview-frame" ref="-defaults">
-		    <!--<param name="background"><image>label7.background</image></param>
-			<param name="border"><border>0,0,0,0</border></param>-->
-			<param name="minWidth"><int>240</int></param>
-			<param name="maxWidth"><int>240</int></param>
-			<theme name="monster-name-label" ref="label" allowWildcard="true"><!--the one under summary preview-->
-				<param name="border"><border>0,0,2,0</border></param>
-				<param name="font"><font>alphabeta-pokename</font></param>
-				<param name="maxWidth"><int>240</int></param>
+			<param name="border"><border>0,0,0,0</border></param>
+			<theme name="label" ref="label" allowWildcard="true">
+				<param name="border"><border>4</border></param>
 			</theme>
-			<theme name="label-title" ref="label" allowWildcard="true"><!--stats-->
+			<theme name="monster-name-label" ref="label" allowWildcard="true"><!-- the one under summary preview -->
+				<param name="border"><border>0,20,0,10</border></param>
+				<param name="font"><font>summary-pc</font></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				<!--<param name="background"><image>ui-header.background</image></param>-->
+
+				<!--<param name="maxWidth"><int>240</int></param>-->
+			</theme>
+			<theme name="label-title" ref="label" allowWildcard="true"><!-- stats -->
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="border"><border>4,0,6,0</border></param>
 				<param name="minWidth"><int>90</int></param>
@@ -38,9 +42,10 @@
 				<param name="font"><font>alphabeta-main-system</font></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 			</theme>
-			<theme name="border-container" ref="label">
-				<param name="border"><border>2,4,10,0</border></param>
+			<theme name="border-container" ref="label"><!-- preview panel background, controls sprite / icon platement -->
+				<param name="border"><border>2,8</border></param>
 				<param name="background"><image>PC-Mon-Background</image></param>
+
 			</theme>
 			<theme name="label" ref="label" allowWildcard="true">
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
@@ -184,9 +189,9 @@
 			<param name="minWidth"><int>212</int></param>-->
 			<param name="font"><font>alphabeta</font></param>
 		</theme>
-		<theme name="container" ref="-defaults">
+		<theme name="container" ref="-defaults"> <!-- main slots -->
 			<param name="minWidth"><int>1000</int></param>
-			<param name="border"><border>5,38,10,0</border></param>
+			<param name="border"><border>0,14,10,0</border></param>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 				<param name="minHeight"><int>333</int></param>
 				<param name="border"><border>0</border></param>
@@ -215,8 +220,8 @@
 					</theme>
 				</theme>
 			</theme>
-			<theme name="dialoglayout" ref="-defaults">
-				<param name="border"><border>10,0,10,0</border></param>
+			<theme name="dialoglayout" ref="-defaults"><!-- overall "main" center area behind slots -->
+				<param name="border"><border>4,0,10,0</border></param>
 				<param name="defaultGap"><dimension>5,5</dimension></param>
 				<param name="smallGap"><dimension>8,8</dimension></param>
 				<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -224,11 +229,11 @@
 				<param name="namedGaps"><map/></param>
 				<theme name="pc-slot" ref="-defaults">
 					<param name="background"><image>pc-slot.background</image></param>
-					<param name="minWidth"><int>32</int></param>
-					<param name="minHeight"><int>32</int></param>
-					<theme name="label-dark" ref="label" allowWildcard="true">
-						<param name="font"><font>alphabeta</font></param>
-						<param name="border"><border>11,51,0,0</border></param>
+					<!--<param name="minWidth"><int>32</int></param>
+					<param name="minHeight"><int>36</int></param>-->
+					<theme name="label-dark" ref="label" allowWildcard="true"><!-- pc slot levels -->
+						<param name="font"><font>alphabeta-highlight-button</font></param>
+						<param name="border"><border>10,50,0,0</border></param>
 						<param name="textAlignment"><enum type="alignment">bottomright</enum></param>
 					</theme>
 				</theme>

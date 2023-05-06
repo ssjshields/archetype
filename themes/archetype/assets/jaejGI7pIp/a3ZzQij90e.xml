@@ -3,6 +3,7 @@
 
 	<fontDef name="battle" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
 	<fontDef name="battle-map" ref="battle" color="#ffffff" offsetY="4"/>
+	<fontDef name="summary-pc" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="14" hinting="Medium" offsetY="1"/>
     <fontDef name="battle-name" filename="fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
 	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
 	<fontDef name="battle-item" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
