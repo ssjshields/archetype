@@ -3,7 +3,6 @@
 
 	<fontDef name="battle" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
 	<fontDef name="battle-map" ref="battle" color="#ffffff" offsetY="4"/>
-	<fontDef name="summary-pc" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="14" hinting="Medium" offsetY="1"/>
     <fontDef name="battle-name" filename="fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
 	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
 	<fontDef name="battle-item" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
@@ -54,6 +53,9 @@
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
 		<fontParam if="keyboardFocus" color="font-main-color"/>
+	</fontDef>
+
+	<fontDef name="alphabeta-pc-title" ref="alphabeta-highlight-button-battle" color="font-sub-color">
 	</fontDef>
 	
 	<fontDef name="alphabeta-highlight-tm-button" ref="move-name" color="font-button-color">
@@ -109,7 +111,7 @@
 	<fontDef name="alphabeta" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true">
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
-	<fontDef name="alphabeta-markup-sub" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true" markup="true"/>
+	<fontDef name="alphabeta-markup" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true" markup="true"/>
 	<fontDef name="alphabeta-white-chat" ref="alphabeta" color="font-main-color"/>
 	<fontDef name="alphabeta-main-system" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="font-sub-color"/>

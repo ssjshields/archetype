@@ -333,7 +333,6 @@
 		<composed name="label4.background"><alias ref="label1.background" tint="#ff0000" inset="0,0,0,0"/></composed>
 		<composed name="label5.background"><alias ref="label1.background" tint="#55FFFFFF" inset="0,0,0,0"/></composed>
 		<composed name="label6.background"><alias ref="Pure-Edge" tint="#FF111111" inset="0,0,0,0"/></composed>
-		<!--<composed name="label7.background"><alias ref="label1.background" tint="#ff0000" inset="0,0,0,0"/></composed>-->
 		<composed name="table-row.background"><alias ref="label1.background" inset="1"/></composed>
 
 		<area name="icon1" xywh="0,0,12,12" inset="0,0,0,0" tint="icon-color"/>
@@ -1082,9 +1081,9 @@
 			<alias ref="Window-Background-Highlight"/>
 			<alias ref="PC-Icon" tint="icon-color" inset="10,15,0,0"/>
 		</composed>
-		<composed name="PC-Mon-Background" splitx="10,10" splity="10,10">
-			<alias ref="PC-Mon-Background-Base" inset="-2,2,2,-2"/>
-			<alias ref="Window-Accent-Edge" inset="-26,0,-38,-2" tint="#cccccc"/>
+		<composed name="PC-Mon-Background" sizeOverwriteH="12" sizeOverwriteV="12" inset="-33,1,-40,0" splitx="10,10" splity="10,10">
+			<alias ref="PC-Mon-Background-Base"/>
+			<alias ref="Window-Accent-Edge" tint="#cccccc"/>
 		</composed>
 	</images>
 
