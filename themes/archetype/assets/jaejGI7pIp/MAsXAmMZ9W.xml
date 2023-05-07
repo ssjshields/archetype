@@ -1083,7 +1083,7 @@
 		</composed>
 		<composed name="PC-Mon-Background" sizeOverwriteH="12" sizeOverwriteV="12" inset="-33,1,-40,0" splitx="10,10" splity="10,10">
 			<alias ref="PC-Mon-Background-Base"/>
-			<alias ref="Window-Accent-Edge" tint="#cccccc"/>
+			<alias ref="Window-Accent-Edge" tint="#80ffffff"/>
 		</composed>
 	</images>
 

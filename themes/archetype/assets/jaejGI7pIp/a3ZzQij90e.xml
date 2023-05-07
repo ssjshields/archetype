@@ -55,9 +55,6 @@
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 
-	<fontDef name="alphabeta-pc-title" ref="alphabeta-highlight-button-battle" color="font-sub-color">
-	</fontDef>
-	
 	<fontDef name="alphabeta-highlight-tm-button" ref="move-name" color="font-button-color">
         <fontParam if="disabled" color="font-disabled-color"/>
         <fontParam if="hover" color="font-main-color"/>
@@ -156,6 +153,9 @@
 	<fontDef name="alphabeta-border-friend" ref="alphabeta-border-overworld" color="#58ff64"/>
 	<fontDef name="alphabeta-border-team" ref="alphabeta-border-overworld" color="#00ffff"/>
 	<fontDef name="alphabeta-border-yellow" ref="alphabeta-border-overworld" color="#e2c57e"/>
+	<fontDef name="alphabeta-pc-title" ref="alphabeta-highlight-button-battle" color="icon-color"></fontDef>
+	<fontDef name="alphabeta-pc-level" ref="alphabeta" color="font-sub-color" offsetX="51"></fontDef>
+	
 
 	<fontDef name="alphabeta-dex" ref="alphabeta" color="font-sub-color">
 		<fontParam if="hover" color="font-main-color"/>

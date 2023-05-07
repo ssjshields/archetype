@@ -8,7 +8,7 @@
 			<param name="columns"><int>16</int></param>
 		</theme>
 		<theme name="monster-party-frame-locked" ref="-defaults">
-		<param name="border"><border>5,0,0,0</border></param>
+			<param name="border"><border>5,0,0,0</border></param>
 			<theme name="content" ref="-defaults">
 				<param name="defaultGap"><dimension>5,5</dimension></param>
 			</theme>
@@ -19,14 +19,14 @@
 		</theme>
 		<theme name="preview-frame" ref="-defaults">
 			<theme name="monster-name-label" ref="label" allowWildcard="true">
-				<param name="border"><border>0,0,0,0</border></param>
+				<param name="border"><border>0,0,0,5</border></param>
 				<param name="font"><font>alphabeta-pc-title</font></param>
 			</theme>
 			<theme name="label-title" ref="label" allowWildcard="true">
 				<param name="background"><image>ui-header.background</image></param>
 				<param name="border"><border>4,0,6,0</border></param>
-				<param name="minWidth"><int>100</int></param>
-				<param name="maxWidth"><int>100</int></param>
+				<param name="minWidth"><int>108</int></param>
+				<param name="maxWidth"><int>108</int></param>
 				<param name="font"><font>alphabeta-main-system</font></param>
 				<param name="textAlignment"><enum type="alignment">center</enum></param>
 			</theme>
@@ -198,8 +198,8 @@
 						<param name="minWidth"><int>32</int></param>
 						<param name="minHeight"><int>32</int></param>
 						<theme name="label-dark" ref="label" allowWildcard="true">
-							<param name="font"><font>alphabeta</font></param>
-						<param name="border"><border>11,51,0,0</border></param>
+						<param name="font"><font>alphabeta-pc-level</font></param>
+						<param name="border"><border>11,0,0,0</border></param>
 						<param name="textAlignment"><enum type="alignment">bottomright</enum></param>
 						</theme>
 					</theme>
@@ -217,8 +217,8 @@
 					<param name="minWidth"><int>32</int></param>
 					<param name="minHeight"><int>32</int></param>
 					<theme name="label-dark" ref="label" allowWildcard="true">
-						<param name="font"><font>alphabeta</font></param>
-						<param name="border"><border>11,51,0,0</border></param>
+						<param name="font"><font>alphabeta-pc-level</font></param>
+						<param name="border"><border>11,0,0,0</border></param>
 						<param name="textAlignment"><enum type="alignment">bottomright</enum></param>
 					</theme>
 				</theme>
