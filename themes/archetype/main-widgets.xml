@@ -1293,8 +1293,8 @@
 		<theme name="dialoglayout" ref="-defaults">
 		<param name="minHeight"><int>45</int></param>
 			<param name="background"><image>active-item-tl</image></param>
-			<param name="defaultGap"><dimension>10,0</dimension></param>
-			<param name="border"><border>10,8,10,5</border></param>
+			<param name="defaultGap"><dimension>16,0</dimension></param>
+			<param name="border"><border>10,11,10,8</border></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
@@ -1303,7 +1303,7 @@
 	</theme>
 
 	<theme name="effects-slot" ref="-defaults">
-		<param name="minWidth"><int>30</int></param>
+		<param name="minWidth"><int>24</int></param>
 		<param name="defaultGap"><dimension>0,0</dimension></param>
 		<param name="border"><border>0,0,0,0</border></param>
 		<param name="namedGaps"><map/></param>
