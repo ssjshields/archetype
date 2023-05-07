@@ -1288,13 +1288,13 @@
 		<param name="closeButtonX"><int>0</int></param>
 		<param name="closeButtonY"><int>0</int></param>
 		<param name="hasResizeHandle"><bool>false</bool></param>
-		<param name="minWidth"><int>50</int></param>
-		<param name="minHeight"><int>50</int></param>
 		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
-		<param name="border"><border>0</border></param>
+		<param name="border"><border>11,11,0,0</border></param>
 		<theme name="dialoglayout" ref="-defaults">
-			<param name="defaultGap"><dimension>0,0</dimension></param>
-			<param name="border"><border>26</border></param>
+		<param name="minHeight"><int>45</int></param>
+			<param name="background"><image>active-item-tl</image></param>
+			<param name="defaultGap"><dimension>10,0</dimension></param>
+			<param name="border"><border>10,8,10,5</border></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
 			<param name="largeGap"><dimension>15,15</dimension></param>
@@ -1302,8 +1302,8 @@
 		</theme>
 	</theme>
 
-	<theme name="effects-slot" ref="button">
-		<param name="background"><image>active-item-tl</image></param>
+	<theme name="effects-slot" ref="-defaults">
+		<param name="minWidth"><int>30</int></param>
 		<param name="defaultGap"><dimension>0,0</dimension></param>
 		<param name="border"><border>0,0,0,0</border></param>
 		<param name="namedGaps"><map/></param>

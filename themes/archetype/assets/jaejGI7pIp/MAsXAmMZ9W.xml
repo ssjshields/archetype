@@ -35,7 +35,7 @@
 			</grid>
 			<alias ref="none"/>
 		</grid>
-		<composed name="active-item-tl" sizeOverwriteH="20" sizeOverwriteV="20" inset="-15">
+		<composed name="active-item-tl" sizeOverwriteH="20" sizeOverwriteV="20" inset="0,0,2,0">
 			<alias ref="Fade-Right" tint="sub-color" inset="0,3,0,-10"/>
 			<alias ref="Pure-Left-Edge-3px" tint="main-color"/>
 		</composed>
