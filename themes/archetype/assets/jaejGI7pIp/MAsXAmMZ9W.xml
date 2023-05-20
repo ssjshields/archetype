@@ -168,7 +168,7 @@
 		<composed name="bag-tab.background" sizeOverwriteH="58" sizeOverwriteV="28">
 			<alias ref="Pure-Edge" tint="sub-color"/>
 			<alias ref="ui-button.default"/>
-			<select tint="main-color" inset="0,1">
+			<select tint="main-color" inset="1">
 				<alias ref="Pure-Bottom-Edge-2px" if="hover"/>
 				<alias ref="bag-tab.keyboardFocus" if="keyboardFocus"/>
 				<alias ref="Pure-Bottom-Edge-2px" if="selected"/>
