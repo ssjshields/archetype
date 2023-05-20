@@ -7,8 +7,8 @@
 <!-- Choose one of the following colors for your mouse cursor: 1. Cursors-Black.xml 2. Cursors-White.xml 3. Cursors-Black-Alt.xml 4. Cursors-White-Alt.xml -->
 <include filename="assets/Cursors-Black.xml"/>
 
-<!-- Choose the shape of the theme: 1. Sharp.xml 2. Round.xml -->
-<include filename="assets/Sharp.xml"/>
+<!-- Choose the shape of the theme (YOU MUST ALSO REPLACE THE MAIN.PNG in /sprites/atlas!): 1. Sharp.xml 2. Round.xml -->
+<include filename="assets/Round.xml"/>
 
 <!-- Choose the look of the npc speech bubbles: 1. Archetype.xml 2. Default-White.xml 3. Default-Black.xml -->
 <include filename="assets/Archetype.xml"/>
