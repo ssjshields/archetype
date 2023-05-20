@@ -1,12 +1,6 @@
 *.pak
 *.atlas
 resources.zip
-buttons/
-icons/
-mods/
-offsets/
-shaders/
-sprites/textures/
-strings/
-themes/default/
-themes/android/
+*/*
+!sprites/atlas
+!themes/archetype
