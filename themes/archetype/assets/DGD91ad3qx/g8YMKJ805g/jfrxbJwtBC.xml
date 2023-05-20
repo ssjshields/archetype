@@ -175,11 +175,11 @@
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
 		<theme name="container" ref="-defaults">
-			<param name="minWidth"><int>1000</int></param>
+			<param name="minWidth"><int>670</int></param>
 			<param name="border"><border>0,14,0,15</border></param>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 				<param name="minHeight"><int>333</int></param>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>0,0,5,0</border></param>
 				<theme name="dialoglayout" ref="-defaults">
 					<param name="defaultGap"><dimension>5,5</dimension></param>
 					<param name="smallGap"><dimension>8,8</dimension></param>
@@ -188,10 +188,10 @@
 					<param name="namedGaps"><map/></param>
 					<param name="border"><border>0,0,0,0</border></param>
 					<theme name="label-battle-box" ref="label" allowWildcard="true">
-						<param name="font"><font>alphabeta</font></param>
-						<param name="border"><border>8,1,0,0</border></param>
-						<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-						<param name="background"><image>none</image></param>
+						<param name="background"><image>ui-inputbox.background</image></param>
+						<param name="border"><border>4,0,6,0</border></param>
+						<param name="textAlignment"><enum type="alignment">center</enum></param>
+						<param name="mouseCursor"><cursor>cursor.text</cursor></param>
 					</theme>
 					<theme name="pc-slot" ref="-defaults">
 						<param name="background"><image>pc-slot.background</image></param>

@@ -1882,9 +1882,6 @@
 		<composed name="ui-inputbox-bag.background">
 			<alias ref="ui-inputbox.background" inset="0,7,0,-2"/>
 		</composed>
-		<composed name="ui-inputbox-pc.background">
-			<alias ref="ui-inputbox.background" inset="0,5"/>
-		</composed>
 
 		<composed name="ui-inputbox.red"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="hp-low-color"/></composed>
 		<composed name="ui-inputbox.yellow"><alias ref="ui-inputbox.default"/><alias ref="ui-inputbox.selected" tint="hp-mid-color"/></composed>
