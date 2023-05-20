@@ -175,8 +175,8 @@
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
 		<theme name="container" ref="-defaults">
-			<param name="minWidth"><int>670</int></param>
-			<param name="border"><border>0,14,0,15</border></param>
+			<param name="minWidth"><int>650</int></param>
+			<param name="border"><border>0,13,0,15</border></param>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 				<param name="minHeight"><int>333</int></param>
 				<param name="border"><border>0,0,5,0</border></param>
