@@ -657,9 +657,9 @@
 			<alias ref="Fade-Right" tint="sub-color"/>
 		</grid>
 		<composed name="battle-learn-label" inset="1,0,0,0">
-			<alias ref="Sub-Color-Pure" inset="0,3,0,3"/>
-			<alias ref="Pure-Left-Edge-3px" tint="main-color"/>
-			<alias ref="Pure-Right-Edge-3px" tint="main-color"/>
+			<alias ref="Sub-Color-Pure" inset="3,0"/>
+			<alias ref="battle-area-edge" tint="main-color"/>
+			<alias ref="battle-area-edge2" tint="main-color"/>
 		</composed>
 
 		<area name="Switch-Monster-Disabled-Small" xywh="60,0,34,34"/>
