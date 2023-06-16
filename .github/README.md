@@ -2,7 +2,7 @@
 
 Archetype is a custom user interface for the online video game [PokeMMO](https://pokemmo.com/).
 
-Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.com/ssjshields/archetype-counter/tree/beta#readme) a try.
+Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.com/ssjshields/archetype-counter) a try.
 
 &nbsp;
 # Features
