@@ -74,7 +74,7 @@ Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.
 
 &nbsp;
 # Installation
-*Note: Before installing, if previous versions are present on your system, delete them entirely*
+*Before installing, if previous versions are present on your system, delete them entirely*
 
 **1.** Open ZIP, then open the `archetype` folder; extract contents into `PokeMMO\data\`
 
@@ -98,7 +98,7 @@ Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.
 
 &nbsp;
 # Customization
-*Note: These files can be opened with any text edtior*
+*These files can be opened with any text edtior*
 
 `CHOOSE_YOUR_COLORS.xml`
 
