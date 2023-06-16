@@ -2,7 +2,7 @@
 
 Archetype is a custom user interface for the online video game [PokeMMO](https://pokemmo.com/).
 
-Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjshields/archetype-counter/tree/beta#readme) a try.
+Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.com/ssjshields/archetype-counter/tree/beta#readme) a try.
 
 &nbsp;
 # Features
@@ -23,7 +23,7 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 
 ![summaries](https://user-images.githubusercontent.com/88489119/221465411-26f16a8e-2ef3-450c-82ce-48c31f0822fd.gif)
 <details>
-  <summary>Click here to view more</summary>
+  <summary>Click here to view more images</summary>
 &nbsp;
 
 ![serverselect](https://media.discordapp.net/attachments/1032300868491546654/1067707541892628511/image.png)
@@ -76,13 +76,11 @@ Feel like exploring? Give our [encounter / Egg counter](https://github.com/ssjsh
 # Installation
 *Note: Before installing, if previous versions are present on your system, delete them entirely*
 
-**1.** Open the `archetype-#` folder; extract contents into `PokeMMO\data\`
+**1.** Open ZIP, then open the `archetype` folder; extract contents into `PokeMMO\data\`
 
-> `#` = release branch (stable, beta, etc.)
+> Linux / macOS users MUST merge directories, **DO NOT REPLACE**
 
-> Overwrite the `main.png` when prompted
-
-> Linux / OSX users MUST merge directories, **DO NOT REPLACE**
+> Overwriting the `main.png` sprite sheet is not required, however you will be missing the custom in-game icons
 
 **2.** Select `archetype` under `Settings` → `Interface`
 
