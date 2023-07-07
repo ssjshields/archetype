@@ -104,9 +104,8 @@ Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.
 
 > Modify hex values to personalize your theme
 
-> [Color Guide](https://github.com/ssjshields/archetype/blob/alpha/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png?raw=true), showcases the defined areas of the interface
+> [Color Guide](https://github.com/ssjshields/archetype/blob/main/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png), showcases the defined areas of the interface
 
-&nbsp;
 
 `CHOOSE_YOUR_LOOK.xml`
 
