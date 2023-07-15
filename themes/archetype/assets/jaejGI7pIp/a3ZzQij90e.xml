@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<fontDef name="battle" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
+	<fontDef name="battle" filename="fonts/FOT-RodinPro-M.otf" color="icon-color" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
 	<fontDef name="battle-map" ref="battle" color="#ffffff" offsetY="4"/>
-    <fontDef name="battle-name" filename="fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
-	<fontDef name="battle-hp-text" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
-	<fontDef name="battle-item" filename="fonts/NotoSans-Medium.ttc" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
+    <fontDef name="battle-name" filename="fonts/FOT-RodinPro-M.otf" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
+	<fontDef name="battle-hp-text" filename="fonts/FOT-RodinPro-M.otf" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
+	<fontDef name="battle-item" filename="fonts/FOT-RodinPro-M.otf" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
 	<fontDef name="braille" ref="battle"/>
-	<fontDef name="move-name" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+	<fontDef name="move-name" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
-	<fontDef name="move-pp" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-disabled-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
+	<fontDef name="move-pp" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-disabled-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 
-	<fontDef name="alphabeta-highlight-button" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
+	<fontDef name="alphabeta-highlight-button" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 	
-	<fontDef name="alphabeta-highlight-button-pc" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="9" size_cjk="9">
+	<fontDef name="alphabeta-highlight-button-pc" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="9" size_cjk="9">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 	
-	<fontDef name="battle-label-highlight-new" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#26000000" size="12" size_cjk="12">
+	<fontDef name="battle-label-highlight-new" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#26000000" size="12" size_cjk="12">
         <fontParam if="disabled" color="font-disabled-color"/>
         <fontParam if="hover" color="font-main-color"/>
         <fontParam if="selected" color="font-main-color"/>
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 	
-	<fontDef name="battle-label-highlight-safari" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#26000000" size="12" size_cjk="12" offsetX="-20" offsetY="-8" incremental="false" characters="1234567890">
+	<fontDef name="battle-label-highlight-safari" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#26000000" size="12" size_cjk="12" offsetX="-20" offsetY="-8" incremental="false" characters="1234567890">
         <fontParam if="disabled" color="font-disabled-color"/>
         <fontParam if="hover" color="font-main-color"/>
         <fontParam if="selected" color="font-main-color"/>
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 
-	<fontDef name="alphabeta-highlight-button-battle" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="16" size_cjk="16">
+	<fontDef name="alphabeta-highlight-button-battle" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="16" size_cjk="16">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
@@ -76,7 +76,7 @@
         <fontParam if="keyboardFocus" color="font-main-color"/>
     </fontDef>
 	
-	<fontDef name="alphabeta-chat-highlight-button" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
+	<fontDef name="alphabeta-chat-highlight-button" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>
 		<fontParam if="selected" color="font-main-color"/>
@@ -97,7 +97,7 @@
 	
 	<fontDef name="pb-dark-disabled-button" ref="pb-dark-highlight-button" color="font-disabled-color"/>
 	
-	<fontDef name="mechabold-battle-ability-fix" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-77" offsetY="-69"/>
+	<fontDef name="mechabold-battle-ability-fix" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1" border_color="#A6000000" offsetX="-77" offsetY="-69"/>
 	<fontDef name="mechabold-battle-ability-fix-enemy" ref="mechabold-battle-ability-fix" color="icon-color" border_color="#A6000000" offsetX="-24" offsetY="79"/>
 	
 	<fontDef name="hotkey-button" ref="alphabeta-chat-highlight-button" color="font-button-color"/>
@@ -105,10 +105,10 @@
 	
 	<fontDef name="title-font-black-bag" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" border_width="0.9" border_color="#80000000" kerning="true" hinting="AutoSlight" size="14" size_cjk="14"/>
 	
-	<fontDef name="alphabeta" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true">
+	<fontDef name="alphabeta" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true">
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
-	<fontDef name="alphabeta-markup" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true" markup="true"/>
+	<fontDef name="alphabeta-markup" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="11" size_cjk="11" default="true" unique_atlas="true" markup="true"/>
 	<fontDef name="alphabeta-white-chat" ref="alphabeta" color="font-main-color"/>
 	<fontDef name="alphabeta-main-system" ref="alphabeta" color="font-sub-color"/>
 	<fontDef name="alphabeta-main-battle" ref="alphabeta" color="font-sub-color"/>
@@ -139,16 +139,16 @@
 	<fontDef name="alphabeta-link" ref="alphabeta" color="#00e6b8"/>
 	<fontDef name="alphabeta-gtl-red" ref="alphabeta" color="hp-low-color"/>
 	<fontDef name="alphabeta-gtl-yellow" ref="alphabeta" color="hp-mid-color"/>
-	<fontDef name="alphabeta-pokename" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#3d4d55"/>
+	<fontDef name="alphabeta-pokename" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#3d4d55"/>
 	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" offsetX="51" offsetY="18"/>
 	<fontDef name="alphabeta-trainer-issue" ref="move-pp" color="font-main-color" offsetY="-3"/>
-	<fontDef name="alphabeta-border-overworld" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
+	<fontDef name="alphabeta-border-overworld" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
 	<fontDef name="alphabeta-border-HUD" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1" color="font-main-color"/>
 	<fontDef name="alphabeta-border-active-item" ref="alphabeta-border-HUD" offsetY="-20" color="icon-color"/>
 	<fontDef name="alphabeta-border-TC" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="0.3" border_color="#80000000"/>
-	<fontDef name="alphabeta-border" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
-	<fontDef name="alphabeta-pc" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="#a5b0b5" kerning="true" hinting="AutoSlight" size="10" size_cjk="10"/>
+	<fontDef name="alphabeta-border" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="#f1f2f3" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#233031"/>
+	<fontDef name="alphabeta-pc" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="#a5b0b5" kerning="true" hinting="AutoSlight" size="10" size_cjk="10"/>
 	<fontDef name="alphabeta-border-red" ref="alphabeta-border-overworld" color="#f09999"/>
 	<fontDef name="alphabeta-border-friend" ref="alphabeta-border-overworld" color="#58ff64"/>
 	<fontDef name="alphabeta-border-team" ref="alphabeta-border-overworld" color="#00ffff"/>
@@ -167,8 +167,8 @@
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>
 	<fontDef name="pb-dark-red" ref="pb-dark" color="#fc6a78"/>
-	<fontDef name="tooltip-font" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1"/>
-	<fontDef name="tooltip-font-markup" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1" markup="true"/>
+	<fontDef name="tooltip-font" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1"/>
+	<fontDef name="tooltip-font-markup" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" shadow_color="#20FFFFFF" shadow_offset_x="1" shadow_offset_y="1" markup="true"/>
 	<fontDef name="pb-dark-link" ref="pb-dark" color="#434343"/>
 	<fontDef name="pb-tab" ref="alphabeta" color="font-button-color">
 		<fontParam if="disabled" color="font-disabled-color"/>
@@ -179,13 +179,13 @@
 	<fontDef name="pb-dark-green" ref="pb-dark" color="#56d245"/>
 	<fontDef name="listbox-display" ref="pb-dark" color="#d4dadc"/>
 	<fontDef name="pb-dark-orange" ref="pb-dark" color="#BBBBBB"/>
-	<fontDef name="noto-8pt" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" border_width="1" border_color="#3f4449" kerning="true" hinting="AutoSlight" size="8" incremental="false" characters="0123456789ABCDEF"/>
-	<fontDef name="mechabold" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.7" size_cjk="11.7"/>
+	<fontDef name="noto-8pt" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" border_width="1" border_color="#3f4449" kerning="true" hinting="AutoSlight" size="8" incremental="false" characters="0123456789ABCDEF"/>
+	<fontDef name="mechabold" filename="fonts/FOT-RodinPro-M.otf" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.7" size_cjk="11.7"/>
 	<fontDef name="mechabold-orange" ref="mechabold" color="#FF9900"/>
 	
 	<fontDef name="title-font" filename="fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="title-font-summary" ref="title-font"/>
-	<fontDef name="trainer-name" filename="fonts/NotoSans-Medium.ttc" color="font-button-color" kerning="true" hinting="AutoSlight" size="17" size_cjk="17" incremental="false" characters="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"/>
+	<fontDef name="trainer-name" filename="fonts/FOT-RodinPro-M.otf" color="font-button-color" kerning="true" hinting="AutoSlight" size="17" size_cjk="17" incremental="false" characters="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"/>
 
 	<fontDef name="console-green" ref="alphabeta" color="#7CB147"/>
 	<fontDef name="console-red" ref="alphabeta" color="#FF0000"/>
