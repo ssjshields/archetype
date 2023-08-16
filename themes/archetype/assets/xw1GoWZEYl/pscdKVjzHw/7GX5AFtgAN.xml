@@ -39,15 +39,15 @@
 	</theme>
 
 	<theme name="chatframe-locked" ref="chatresizableframe">
-		<param name="border"><border>5</border></param>
+		<param name="border"><border>5,5,5,5</border></param>
 		<theme name="content" ref="-dialog">
 			<param name="defaultGap"><dimension>0,0</dimension></param>
 			<theme name="scrollpane" ref="scrollpane">
 				<param name="background"><image>chat-middle-locked.background</image></param>
 				<theme name="vscrollbar" ref="vscrollbar-white"/>
-				<param name="border"><border>0</border></param>
+				<param name="border"><border>5,0,0,0</border></param>
 				<theme name="textarea" ref="-defaults">
-					<param name="border"><border>0,5</border></param>
+					<param name="border"><border>0,0</border></param>
 					<param name="fonts"><map>
 					<param name="default"><font>alphabeta-main-system</font></param>
 					<param name="color0"><font>alphabeta-green</font></param>
@@ -79,25 +79,27 @@
 				</theme>
 			</theme>
 			<theme name="top" ref="-dialog">	
-				<param name="border"><border>3,0,5,0</border></param>
 				<param name="background"><image>chat-top-locked.background</image></param>
 				<theme name="togglebutton-normal" ref="button" allowWildcard="true">
 					<param name="background"><image>chat-tab.background</image></param>
-					<param name="border"><border>8</border></param>
+					<param name="border"><border>7,8,9,8</border></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 				</theme>
 				<theme name="togglebutton-settings" ref="togglebutton-normal" allowWildcard="true">
-					<param name="background"><image>special-ui-button.background</image></param>
+					<param name="overlay"><image>icon-chat-settings</image></param>
 				</theme>
 				<theme name="togglebutton-notification" ref="togglebutton-settings" allowWildcard="true">
+					<param name="overlay"><image>icon-chat-sounds</image></param>
 				</theme>
 				<theme name="spritetogglebutton" ref="togglebutton-settings" allowWildcard="true">
-					<param name=""><image>ui-inputbox.*</image></param>
-					<param name="maxWidth"><int>29</int></param>
-					<param name="maxHeight"><int>25</int></param>
+					<param name="background"><image>chat-tab-lock.background</image></param>
+					<param name="maxWidth"><int>24</int></param>
+					<param name="maxHeight"><int>24</int></param>
 				</theme>
 				<theme name="hideButton" ref="button" allowWildcard="true">
-					<param name="background"><image>Chat-Close-Button</image></param>
+					<param name="background"><image>frame.closebutton-chat</image></param>
+					<param name="minWidth"><int>24</int></param>
+					<param name="minHeight"><int>24</int></param>
 				</theme>
 			</theme>
 

@@ -105,7 +105,7 @@
 		<param name="overlay"><image>TM-Button-Mon-Overlay</image></param>
 		<param name="textAlignment"><enum type="alignment">TOP</enum></param>
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-		<param name="minWidth"><int>259</int></param>
+		<param name="minWidth"><int>229</int></param>
 		<param name="minHeight"><int>54</int></param>
     </theme>
 

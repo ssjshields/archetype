@@ -871,6 +871,9 @@
 			<param name="border"><border>6</border></param>
 			<param name="font"><font>pb-dark-highlight-button</font></param>
 		</theme>
+		<theme name="label-lalign" ref="label" allowWildcard="true">
+			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+		</theme>
 		<theme name="valueadjuster-small" ref="valueadjuster">
 			<param name="width"><int>92</int></param>
 		</theme>

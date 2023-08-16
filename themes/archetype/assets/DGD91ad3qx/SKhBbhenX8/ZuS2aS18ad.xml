@@ -1,310 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
+  <theme name="broker-table" ref="-defaults">
+    <param name="background"><image>none</image></param>
+    <param name="border"><border>0,0,0,0</border></param>
+    <param name="defaultGap"><dimension>5,5</dimension></param>
+    <param name="smallGap"><dimension>8,8</dimension></param>
+    <param name="mediumGap"><dimension>10,10</dimension></param>
+    <param name="largeGap"><dimension>15,15</dimension></param>
+    <param name="namedGaps"><map/></param>
 
-	<theme name="broker-inner" allowWildcard="true">
-		<param name="background"><image>none</image></param>
-		<param name="overlay"><image>none</image></param>
-		<!--<theme name="hscrollbar" ref="hscrollbar"/>
-		<theme name="vscrollbar" ref="vscrollbar-white"/>-->
-		<param name="border"><border>0,0,0,0</border></param>
-		<param name="minWidth"><int>800</int></param>
-		<param name="minHeight"><int>425</int></param>
-		<param name="maxWidth"><int>32767</int></param>
-		<param name="maxHeight"><int>32767</int></param>
-		<param name="hasDragButton"><bool>false</bool></param>
-		<param name="autoScrollArea"><int>5</int></param>
-		<param name="autoScrollSpeed"><int>10</int></param>
-		<param name="scrollbarsAlwaysVisible"><bool>false</bool></param>
-		<theme name="dialoglayout" ref="-defaults">
-			<param name="background"><image>none</image></param>
-			<param name="border"><border>17,0,0,0</border></param>
-			<param name="defaultGap"><dimension>4,4</dimension></param>
-			<param name="smallGap"><dimension>8,8</dimension></param>
-			<param name="mediumGap"><dimension>10,10</dimension></param>
-			<param name="largeGap"><dimension>15,15</dimension></param>
-			<param name="namedGaps"><map/></param>
-			<param name="minWidth"><int>300</int></param>
-			<param name="maxWidth"><int>300</int></param>
-			<theme name="button" ref="-defaults">
-				<param name="minWidth"><int>100</int></param>
-				<param name="width"><int>100</int></param>
-				<param name="border"><border>11,0</border></param>
-				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-			</theme>
-			<theme name="label" ref="label">
-				<param name="border"><border>14,0,0,0</border></param>
-			</theme>
-			
-			<theme name="label-value-medium" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>212</int></param>
-			</theme>
-			<theme name="label-value-medium2" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>184</int></param>
-			</theme>
-			<theme name="label-value-medium3" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>212</int></param>
-			</theme>
-			<theme name="label-value-medium4" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>296</int></param>
-			</theme>
-			<theme name="label-title-medium-red" ref="label-value-medium">
-				<param name="font"><font>pb-dark-red</font></param>
-			</theme>
-			<theme name="label-value-small" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>177</int></param>
-			</theme>
-			<theme name="label-value-small2" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>122</int></param>
-			</theme>
-			<theme name="label-value-smallest" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>80</int></param>
-			</theme>
-			<theme name="label-value-small2-warn" ref="label">
-				<param name="font"><font>alphabeta-gtl-yellow</font></param>
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>5</border></param>
-				<param name="minWidth"><int>122</int></param>
-			</theme>
-			<theme name="label-value-small2-danger" ref="label">
-				<param name="font"><font>alphabeta-gtl-red</font></param>
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>5</border></param>
-				<param name="minWidth"><int>122</int></param>
-			</theme>			
-			<theme name="label-value-small3" ref="label">
-				<param name="background"><image>ui-table-row.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>93</int></param>
-			</theme>
-			<theme name="label-value-icon" ref="label">
-				<param name="background"><image>none</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>24</int></param>
-			</theme>
-		
-			<theme name="label-title-normal" ref="label-value-small2">
-				<param name="overlay"><image>ui-sort-default.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    <theme name="label-info" ref="label">
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+      <param name="border"><border>0</border></param>
+    </theme>
 
-			</theme>
-			<theme name="label-title-desc" ref="label-value-small2">
-				<param name="overlay"><image>ui-sort-asc.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-asc" ref="label-value-small2">
-				<param name="overlay"><image>ui-sort-desc.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			
-			<theme name="label-title-medium" ref="label-value-medium">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-medium2" ref="label-value-medium2">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="minWidth"><int>200</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-medium3" ref="label-value-medium3">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-medium4" ref="label-value-medium4">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-small" ref="label-value-small">
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-			</theme>
-			<theme name="label-title-small2" ref="label-value-small2">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-small2-centered" ref="label-title-small2">
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-title-smallest" ref="label-value-smallest">
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="background"><image>ui-header.background</image></param>
-			</theme>
-			<theme name="label-title-icon" ref="label-value-icon">
-				<param name="border"><border>6,0,7,0</border></param>
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			
-			<theme name="label-button-medium" ref="label-value-medium">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-			</theme>
-			<theme name="label-button-medium2" ref="label-value-medium2">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-			</theme>
-			<theme name="label-button-small" ref="label-value-small">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-			</theme>
-			<theme name="label-button-small2" ref="button">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>122</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="label-button-small2-centered" ref="label-button-small2">
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
+    <theme name="button" ref="button">
+      <param name="minWidth"><int>100</int></param>
+      <param name="width"><int>100</int></param>
+      <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+    </theme>
 
-			<theme name="label-button-small3" ref="button">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-				<param name="border"><border>6</border></param>
-				<param name="minWidth"><int>93</int></param>
-			</theme>
-			<theme name="label-button-smallest" ref="label-value-smallest">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-			</theme>
-			<theme name="label-button-icon" ref="label-value-icon">
-				<param name="background"><image>ui-button.background</image></param>
-				<param name="font"><font>alphabeta-highlight-button</font></param>
-			</theme>
-			<theme name="editfield" ref="editfield">
-				<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
-				<param name="autocompletion-height"><int>150</int></param>
-			</theme>
-			<theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
-				<param name="width"><int>136</int></param>
-			</theme>
-			<theme name="item-slot" ref="item-slot">
-				<param name="background"><image>mail-slot.background</image></param>
-			</theme>
-			<theme name="monster-slot" ref="monster-slot">
-				<param name="background"><image>mail-slot.background</image></param>
-			</theme>
-			<theme name="combobox" ref="combobox" allowWildcard="true">
-				<param name="minWidth"><int>194</int></param>
-				<theme name="display" ref="display">
-				</theme>
-			</theme>
-		</theme>
-		<theme name="search-dialog" ref="dialoglayout">
-			<param name="border"><border>0,0,0,0</border></param>
-		</theme>
+    <!-- Sorting / Header columns -->
+    <theme name="header-column" ref="label">
+      <param name="background"><image>ui-header.background</image></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="header-column-sort-default" ref="header-column">
+      <param name="overlay"><image>ui-sort-default.background</image></param>
+    </theme>
+    <theme name="header-column-sort-desc" ref="header-column">
+      <param name="overlay"><image>ui-sort-asc.background</image></param>
+    </theme>
+    <theme name="header-column-sort-asc" ref="header-column">
+      <param name="overlay"><image>ui-sort-desc.background</image></param>
+    </theme>
+    
+    <!-- Cells -->
+    <theme name="cell" ref="label">
+      <param name="background"><image>ui-table-row.background</image></param>
+      <param name="border"><border>8,5</border></param>
+    </theme>
+    <theme name="cell-markup" ref="cell">
+      <param name="font"><font>alphabeta-markup</font></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="cell-warn" ref="cell">
+      <param name="font"><font>alphabeta-yellow</font></param>
+    </theme>
+    <theme name="cell-danger" ref="cell">
+      <param name="font"><font>alphabeta-red</font></param>
+    </theme>
+    <theme name="cell-button" ref="cell">
+	  <param name="font"><font>alphabeta-highlight-button</font></param>
+      <param name="background"><image>ui-button.background</image></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="cell-button-addon" ref="cell-button">
+      <param name="textAlignment"><enum type="alignment">left</enum></param>
+    </theme>
+    <theme name="cell-icon" ref="cell">
+		<param name="border"><border>0</border></param>
 	</theme>
+    <!-- special cells -->
+    <theme name="button-monster" ref="button">
+      <param name="minWidth"><int>0</int></param>
+      <param name="minHeight"><int>0</int></param>
+    </theme>
+    <theme name="button-species" ref="button"></theme>
 
-	<theme name="read-broker" ref="broker-inner">
-		<param name="minWidth"><int>340</int></param>
-		<param name="minHeight"><int>420</int></param>
-		<theme name="dialoglayout" ref="dialoglayout">
-			<theme name="editfield" ref="editfield">
-				<param name="background"><image>ui-header.background</image></param>
-				<param name="minHeight"><int>26</int></param>
-				<theme name="renderer" ref="renderer">
-					<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
-				</theme>
-			</theme>
-		</theme>
-	</theme>
+    <theme name="editfield" ref="editfield">
+      <param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+      <param name="autocompletion-height"><int>150</int></param>
+    </theme>
+    <theme name="editfield-red" ref="editfield">
+      <param name="font"><font>pb-dark-red</font></param>
+    </theme>
+    <theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
+      <param name="width"><int>92</int></param>
+    </theme>
+  </theme>
+
+  <theme name="broker-search-dialog" ref="dialoglayout">
+    <param name="border"><border>0,0,0,0</border></param>
+
+    <!-- adv search -->
+    <theme name="label-button-small2-centered" ref="button">
+      <param name="minWidth"><int>100</int></param>
+    </theme>
+    <theme name="label-title-medium2" ref="label">
+      <param name="background"><image>ui-header.background</image></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+      <param name="minWidth"><int>238</int></param>
+    </theme>
+    <theme name="valueadjuster" ref="valueadjuster">
+      <param name="minWidth"><int>184</int></param>
+    </theme>
+    <theme name="combobox" ref="combobox">
+      <param name="minWidth"><int>184</int></param>
+    </theme>
+    <theme name="editfield" ref="editfield">
+      <param name="maxWidth"><int>184</int></param>
+    </theme>
+  </theme>
 
 	<theme name="broker-window" ref="base-tabbed-frame">
-		<param name="minHeight"><int>569</int></param>
 		<param name="background"><image>GTL-Window</image></param>
-		<theme name="dialoglayout" ref="dialoglayout">
-			<theme name="tabbedpane" ref="base-tabbed-pane">
-				<theme name="container" ref="container">
+		<param name="minWidth"><int>900</int></param>
+		<param name="minHeight"><int>605</int></param>
+		<theme name="tabbedpane" ref="base-tabbed-pane">
+			<theme name="tabbox" ref="tabbox">
+				<theme name="tabbutton" ref="tabbutton"></theme>
+			</theme>
+			<theme name="container" ref="container">
+				<param name="border"><border>10</border></param>
+				<param name="namedGaps"><map/></param>
+				<theme name="editfield" ref="editfield-search"></theme>
+				<theme name="label" ref="label" allowWildcard="true">
+					<param name="border"><border>10,10,0,0</border></param>
 					<param name="background"><image>none</image></param>
-					<theme name="dialoglayout" ref="dialoglayout">
-						<theme name="combobox" ref="combobox" allowWildcard="true">
-							<param name="minWidth"><int>194</int></param>
-						</theme>
-						<theme name="button" ref="button" allowWildcard="true">
-							<param name="minWidth"><int>131</int></param>
-						</theme>
-						<theme name="scrollpane" ref="scrollpane">
-							<param name="border"><border>6,0,0,0</border></param>
-							<theme name="label-value-medium4" ref="label">
-								<param name="background"><image>ui-table-row.background</image></param>
-								<param name="textAlignment"><enum type="alignment">center</enum></param>
-								<param name="border"><border>6,0,7,0</border></param>
-								<param name="minWidth"><int>296</int></param>
-							</theme>
-							<theme name="label-value-small" ref="label-value-medium4">
-								<param name="minWidth"><int>94</int></param>
-							</theme>
-							<theme name="label-title-small" ref="label-value-small">
-								<param name="background"><image>ui-header.background</image></param>
-							</theme>
-							<theme name="label-title-medium4" ref="label-value-medium4">
-								<param name="background"><image>ui-header.background</image></param>
-							</theme>
-							<theme name="label-info" ref="label-value-medium4">
-								<param name="minHeight"><int>50</int></param>
-							</theme>
-						</theme>
-						<param name="border"><border>4,10,2,18</border></param>
-						<param name="namedGaps"><map/></param>
-						<param name="background"><image>none</image></param>
-						<theme name="editfield" ref="editfield-search" allowWildcard="true">
-						</theme>
-						<theme name="label" ref="label" allowWildcard="true">
-							<param name="border"><border>10,10,0,0</border></param>
-							<param name="background"><image>none</image></param>
-						</theme>
-						<theme name="label-info" ref="label">
-							<param name="background"><image>ui-table-row.background</image></param>
-							<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-							<param name="border"><border>20</border></param>
-							<param name="minWidth"><int>300</int></param>
-							<param name="minHeight"><int>100</int></param>
-						</theme>
+				</theme>
+				<theme name="dialoglayout" ref="-defaults">
+					<theme name="label-info" ref="label">
+						<param name="background"><image>ui-inputbox.background</image></param>
+						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+						<param name="border"><border>30</border></param>
 					</theme>
 				</theme>
-				<param name="inputMap"><inputMapDef>
-					<action name="nextTab">CTRL TAB</action>
-					<action name="prevTab">CTRL SHIFT TAB</action>
-				</inputMapDef></param>
 			</theme>
+			<param name="inputMap"><inputMapDef>
+				<action name="nextTab">CTRL TAB</action>
+				<action name="prevTab">CTRL SHIFT TAB</action>
+			</inputMapDef></param>
 		</theme>
 	</theme>
 </themes>

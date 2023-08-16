@@ -234,9 +234,11 @@
 			<param name="mediumGap"><dimension>10,0</dimension></param>
 			<param name="largeGap"><dimension>15,0</dimension></param>
 			<param name="namedGaps"><map/></param>
-			<theme name="label-black" ref="-defaults" allowWildcard="true">
-				<param name="border"><border>25,5,0,5</border></param>
-				<param name="font"><font>battle-item</font></param>
+			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+				<theme name="label-black" ref="-defaults" allowWildcard="true">
+					<param name="border"><border>25,5,0,5</border></param>
+					<param name="font"><font>battle-item</font></param>
+				</theme>
 			</theme>
 		</theme>
 		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
@@ -292,11 +294,13 @@
 			<param name="maxHeight"><int>500</int></param>
 			<param name="minHeight"><int>500</int></param>
 			<param name="namedGaps"><map/></param>
-			<theme name="label-black" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>battle-item</font></param>
-				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minHeight"><int>208</int></param>
-				<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+				<theme name="label-black" ref="-defaults" allowWildcard="true">
+					<param name="font"><font>battle-item</font></param>
+					<param name="border"><border>0,0,0,0</border></param>
+					<param name="minHeight"><int>208</int></param>
+					<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+				</theme>
 			</theme>
 		</theme>
 		<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
