@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-<fontDef name="battle-name" filename="assets/jaejGI7pIp/fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="19" hinting="Full" offsetY="-3"/>
+<fontDef name="battle-name" filename="assets/jaejGI7pIp/fonts/NotoSans-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#000000" size="18" hinting="Full" offsetY="-3"/>
 
 
 

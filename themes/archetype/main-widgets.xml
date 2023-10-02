@@ -27,6 +27,11 @@
 		</theme>
 	</theme>
 
+	<theme name="msgHeaderLabel" ref="label">
+		<param name="font"><font>alphabeta-pc-title</font></param>
+		<param name="border"><border>2</border></param>
+	</theme>
+
 	<theme name="logingui" ref="-defaults">
 	<param name="background"><image>login-background-animation</image></param>
 		<theme name="logo" ref="-defaults">
@@ -382,24 +387,33 @@
 		<param name="row.dropmarker"><image>none</image></param>
 		<param name="border"><border>3,1,0,0</border></param>
 		<param name="background"><image>none</image></param>
-		<param name="rowHeight"><int>25</int></param> <!-- the font line height is 14 -->
+		<param name="rowHeight"><int>32</int></param> <!-- the font line height is 14 -->
 		<theme name="stringcellrenderer" ref="-defaults">
 			<param name="border"><border>8</border></param>
-			<param name="minHeight"><int>60</int></param>
+			<param name="minHeight"><int>32</int></param>
 			<param name="font"><font>pb-dark</font></param>
 			<param name="background"><image>ui-table-row.background</image></param>
 		</theme>
-		<theme name="TreeLeafCellRenderer" ref="-treecellrenderer"/>
-		<theme name="TreeNodeCellRenderer" ref="-treecellrenderer"/>
+		<theme name="TreeLeafCellRenderer" ref="-treecellrenderer">
+      <param name="treeIndent"><int>16</int></param>
+      <param name="treeButtonSize"><dimension>32,32</dimension></param>
+    </theme>
+		<theme name="TreeNodeCellRenderer" ref="-treecellrenderer">
+      <param name="treeButtonSize"><dimension>32,32</dimension></param>
+    </theme>
 		<theme name="spanrenderer" ref="-defaults"/>
-		<theme name="treeButton" ref="button"/>
+		<theme name="treeButton" ref="button">
+      <param name="border"><border>1</border></param>
+      <param name="background"><image>icon.folder.background</image></param>
+      <param name="minWidth"><int>32</int></param>
+    </theme>
 		<theme name="columnHeader" ref="button">
 			<param name="border"><border>0,8,0,10</border></param>
 			<param name=""><image>ui-table-header.*</image></param>
 		</theme>
 		<theme name="rowButton" ref="button">
 			<param name="border"><border>5</border></param>
-			<param name="minHeight"><int>60</int></param>
+      <param name="minHeight"><int>32</int></param>
 		</theme>
 		<param name="columnHeaderWidth"><int>60</int></param>
 		<param name="columnHeaderHeight"><int>30</int></param>
@@ -414,9 +428,13 @@
 		<theme name="ComboBoxCellRenderer">
 			<param name="comboBoxHeight"><int>30</int></param>
 		</theme>
-		<theme name="EditFieldCellRenderer">
-			<param name="editFieldHeight"><int>30</int></param>
-		</theme>
+    <theme name="EditFieldCellRenderer">
+      <param name="editFieldHeight"><int>30</int></param>
+    </theme>
+    <theme name="spritebutton" ref="label">
+      <param name="background"><image>none</image></param>
+      <param name="height"><int>30</int></param>
+    </theme>
 	</theme>
 
 	<theme name="color-picker" ref="dialoglayout">
@@ -456,6 +474,10 @@
 	            <theme name="previewLabel" ref="label">
 	            </theme>
 	        </theme>
+
+          <theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
+            <param name="width"><int>50</int></param>
+          </theme>
 	        <param name="mouseCursor."><cursor>eforen.cursor.arrow.*</cursor></param>
 	    </theme>
 	</theme>
@@ -509,14 +531,17 @@
 			<param name="namedGaps"><map/></param>
 
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-					<param name="border"><border>7,7</border></param>
+					<param name="border"><border>0,0</border></param>
 					<theme name="maptextureview" ref="resizableframe" allowWildcard="true">
 						<param name="font"><font>pb-dark</font></param>
-						<param name="border"><border>7,7</border></param>
+						<param name="border"><border>10,10</border></param>
 						<param name="background"><image>label1.background</image></param>
 						<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 						<param name="maxHeight"><int>450</int></param>
-						<theme name="color-button" ref="-defaults" allowWildcard="true">
+            <theme name="section" ref="-defaults" allowWildcard="true">
+              <param name="background"><image>none</image></param>
+            </theme>
+            <theme name="color-button" ref="-defaults" allowWildcard="true">
 							<param name="font"><font>pb-dark</font></param>
 							<param name="border"><border>7,0</border></param>
 							<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>

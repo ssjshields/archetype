@@ -175,10 +175,10 @@
 			</select>
 		</composed>
 
-		<composed name="chat-tab.background" sizeOverwriteH="24" sizeOverwriteV="24">
+		<composed name="chat-tab.background" sizeOverwriteH="24" sizeOverwriteV="24" inset="1">
 			<alias ref="Pure-Edge" tint="sub-color"/>
 			<alias ref="ui-button.default"/>
-			<alias ref="Pure-Bottom-Edge-2px" tint="main-color" inset="1" if="hover | selected"/>
+			<alias ref="Pure-Bottom-Edge-2px" tint="main-color" inset="1" if="hover"/>
 		</composed>
 
 		<composed name="ui-frame.background">
@@ -224,7 +224,7 @@
 			</grid>
 		</select>
 
-		<grid name="chat-top-locked.background" weightsX="1" weightsY="0,1" inset="-5,-5,0,-5">
+		<grid name="chat-top-locked.background" weightsX="1" weightsY="0,1" inset="-8,-5,-5,-5">
 			<alias ref="Pure-Top-Edge-3px" tint="main-color"/>
 			<alias ref="Button-Color-Pure"/>
 		</grid>
@@ -232,7 +232,7 @@
 			<alias ref="chat-top-locked.background" tint="#e0ffffff"/>
 		</composed>
 
-		<composed name="chat-middle-locked.background" inset="0,-5,0,-5">
+		<composed name="chat-middle-locked.background" inset="5,-5,0,-5">
 			<alias ref="Sub-Color-Pure"/>
 		</composed>
 		<composed name="chat-middle.background">
@@ -336,13 +336,21 @@
 		<composed name="table-row.background"><alias ref="label1.background" inset="1"/></composed>
 
 		<area name="icon1" xywh="0,0,12,12" inset="0,0,0,0" tint="icon-color"/>
-		<area name="icon2" xywh="20,0,12,12" inset="0,0,0,0" tint="icon-color"/>
-		<area name="icon-unlock" xywh="40,0,12,12" inset="0,0,0,0" tint="icon-color"/>
+		<area name="icon2" xywh="20,0,12,12" inset="0,0,0,0" tint="icon-color" center="true"/>
+		<area name="icon-unlock" xywh="40,0,12,12" inset="0,0,0,0" tint="icon-color" center="true"/>
 		<area name="icon3" xywh="60,0,16,16" inset="0,0,0,0" tint="icon-color"/>
 		<composed name="icon4"><alias ref="icon3"/></composed>
 		<composed name="icon5"><alias ref="icon3"/></composed>
 		<area name="icon7" xywh="80,0,16,16" inset="0,0,0,0" tint="icon-color"/>
 		<area name="is-leader" xywh="100,0,16,16" inset="0,0,0,0" tint="icon-color"/>
+		<area name="icon-chat-sounds" xywh="120,0,16,16" center="true" tint="icon-color"/>
+		<area name="icon-chat-settings" xywh="140,0,16,16" center="true" tint="icon-color"/>
+
+		<composed name="chat-tab-lock.background">
+			<alias ref="chat-tab.background"/>
+			<alias ref="icon2" if="selected" inset="-1,0,1,0"/>
+			<alias ref="icon-unlock" if="!selected" inset="-1,0,1,0"/>
+		</composed>
 
 		<composed name="party-button"><alias ref="ui-button.background" inset="-1"/></composed>
 
@@ -548,12 +556,16 @@
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/Header-Icons.png" filter="lineal">
-		<area name="close-handle" xywh="0,00,12,12" inset="2,3,3,3"/>
+		<area name="close-handle" xywh="0,0,12,12" inset="2,3,3,3"/>
 		<select name="frame.closebutton.background" tint="font-main-color">
 			<alias ref="close-handle" if="hover"/>
 			<alias ref="close-handle" tint="#b0ffffff"/>
 		</select>
 		<select name="frame.closebutton-summary.background">
+			<alias ref="close-handle" if="hover"/>
+			<alias ref="close-handle" tint="#b0ffffff"/>
+		</select>
+		<select name="frame.closebutton-chat" tint="font-main-color" center="true" inset="2,2,-2,-2">
 			<alias ref="close-handle" if="hover"/>
 			<alias ref="close-handle" tint="#b0ffffff"/>
 		</select>
@@ -582,6 +594,11 @@
 		<area name="icon.color-picker" xywh="48,16,16,16"/>
 		<area name="icon.chat-baloon" xywh="64,16,16,16"/>
 		<area name="icon.edit" xywh="80,16,16,16" tint="main-color"/>
+
+		<select name="icon.folder.background">
+			<alias ref="icon.folder-open" if="selected"/>
+			<alias ref="icon.folder2"/>
+		</select>
 	</images>
 
 	<images file="res/icon_set.png" filter="lineal">
@@ -597,6 +614,11 @@
 		<area name="EXP-Overlay" xywh="*" inset="-1,-49,1,0" tint="sub-color"/>
 	</images>
 
+
+	<images file="res/custom/Yzkkn9zM8H/battle-area.png" filter="nearest">
+		<area name="battle-area-edge" xywh="*" splitx="L3,R0"/>
+		<area name="battle-area-edge2" xywh="*" splitx="L0,R3"/>
+	</images>
 
 	<images file="res/custom/bW6A5DARII/battle-hud.png" filter="nearest">
 		<area name="progressbar.progressImage" xywh="20,9,1,4"/>
@@ -1133,7 +1155,7 @@
 	</images>
 
 	<images file="res/custom/WGRfhUrISa/Chat-Close-Button.png" filter="lineal">
-		<composed name="Chat-Close-Button" inset="0,0,8,0">
+		<composed name="Chat-Close-Button">
 			<alias ref="special-ui-button.background"/>
 			<area xywh="*"/>
 		</composed>
@@ -1471,17 +1493,17 @@
 			
 	<images>
 		<grid name="Poke-Summary-Window" weightsX="0,1" weightsY="0,1,0">
-				<grid weightsX="265,0,231" weightsY="1" sizeOverwriteH="0" sizeOverwriteV="0" inset="0,0,-317,-504" tint="#444444">
-					<composed>
-						<alias ref="Gradient-Pure" inset="2"/>
-						<alias ref="Gradient-Pure" inset="3" tint="#b1b1b1"/>
-					</composed>
-					<alias ref="none" sizeOverwriteH="4" sizeOverwriteV="1"/>
-					<composed>
-						<alias ref="Gradient-Pure" inset="2"/>
-						<alias ref="Gradient-Pure" inset="3" tint="#b1b1b1"/>
-					</composed>
-				</grid>
+			<grid weightsX="265,0,231" weightsY="1" sizeOverwriteH="0" sizeOverwriteV="0" inset="0,0,-317,-504" tint="#444444">
+				<composed>
+					<alias ref="Gradient-Pure" inset="2"/>
+					<alias ref="Gradient-Pure" inset="3" tint="#b1b1b1"/>
+				</composed>
+				<alias ref="none" sizeOverwriteH="4" sizeOverwriteV="1"/>
+				<composed>
+					<alias ref="Gradient-Pure" inset="2"/>
+					<alias ref="Gradient-Pure" inset="3" tint="#b1b1b1"/>
+				</composed>
+			</grid>
 			<alias ref="none"/>
 			<alias ref="none"/>
 			<composed  inset="0,0,-1,2">
