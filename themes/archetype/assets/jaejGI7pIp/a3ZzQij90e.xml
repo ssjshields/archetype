@@ -163,6 +163,21 @@
 		<fontParam if="keyboardFocus" color="font-main-color"/>
 	</fontDef>
 
+	<fontDef name="chat-default" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" hinting_cjk="Slight" size="14" size_cjk="14" default="true" unique_atlas="true"/>
+	<fontDef name="chat-green" ref="chat-default" color="#7fc937"/>
+	<fontDef name="chat-link" ref="chat-default" color="#00e6b8"/>
+	<fontDef name="chat-white" ref="chat-default" color="font-main-color"/>
+	<fontDef name="chat-orange" ref="chat-default" color="#FF9900"/>
+	<fontDef name="chat-lightgreen" ref="chat-default" color="hp-high-color"/>
+	<fontDef name="chat-purple" ref="chat-default" color="#FF99FF"/>
+	<fontDef name="chat-teal" ref="chat-default" color="#81ddf1"/>
+	<fontDef name="chat-yellow" ref="chat-default" color="#e2c57e"/>
+	<fontDef name="chat-brown" ref="chat-default" color="#ff8484"/>
+	<fontDef name="chat-main-system" ref="chat-default" color="font-sub-color"/>
+	<fontDef name="chat-blue" ref="chat-default" color="#AACFFF"/>
+	<fontDef name="chat-shiny" ref="chat-default" color="#fef340"/>
+
+
 	<fontDef name="pb-dark" ref="alphabeta" color="font-sub-color">
 		<fontParam if="disabled" color="font-disabled-color"/>
 	</fontDef>

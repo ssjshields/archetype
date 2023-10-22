@@ -37,7 +37,7 @@
 				<theme name="tabbox" ref="-defaults">
 					<param name="overlay"><image>Bag-HUD-Overlay</image></param>
 					<param name="border"><border>0,3,20,0</border></param>
-					<param name="spacing"><int>7</int></param>
+					<param name="spacing"><int>6</int></param>
 					<param name="alignment"><enum type="alignment">FILL</enum></param>
 				</theme>
 				<theme name="tabbutton" ref="togglebutton">

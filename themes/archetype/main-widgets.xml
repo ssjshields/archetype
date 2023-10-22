@@ -667,6 +667,21 @@
 		</theme>
 	</theme>
 
+	<theme name="msgbox-move-selection-panel" ref="-defaults" allowWildcard="true">
+        <param name="background"><image>ui-frame.background</image></param>
+	</theme>
+
+	<theme name="msgbox-move-selection-button" ref="battle-move-button" allowWildcard="true">
+		<param name="border"><border>12,11,14,11</border></param>
+		<param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+		<param name="textAlignment2"><enum type="alignment">bottomleft</enum></param>
+		<param name="minWidth"><int>238</int></param>
+		<param name="minHeight"><int>50</int></param>
+	</theme>
+
+	<theme name="msgbox-return" ref="battle-button-return" allowWildcard="true">
+	</theme>
+
 	<theme name="spritetogglebutton" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>alphabeta</font></param>
 		<param name="border"><border>7,7</border></param>

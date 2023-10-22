@@ -859,17 +859,21 @@
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
-
+		<theme name="progressbar" ref="-defaults" allowWildcard="true">
+			<param name=""><image>progressbar.*</image></param>
+			<param name="minWidth"><int>100</int></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+		</theme>
 		<param name="namedGaps"><map/></param>
 		<theme name="label" ref="-defaults">
 			<param name="font"><font>alphabeta-white</font></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<theme name="label-title" ref="label" allowWildcard="true">
-			<param name="background"><image>ui-inputbox.background</image></param>
+			<param name="background"><image>ui-header.background</image></param>
 			<param name="minWidth"><int>120</int></param>
 			<param name="border"><border>6</border></param>
-			<param name="font"><font>pb-dark-highlight-button</font></param>
+			<param name="font"><font>pb-dark</font></param>
 		</theme>
 		<theme name="label-lalign" ref="label" allowWildcard="true">
 			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
@@ -880,60 +884,34 @@
 		<theme name="valueadjuster" ref="valueadjuster">
 			<param name="minWidth"><int>240</int></param>
 		</theme>
-		<theme name="togglebutton" ref="button">
-		</theme>
-	    <theme name="textarea" ref="-defaults">
-		<param name="minWidth">
-			<int>500</int>
-		</param>
-		<param name="minHeight">
-			<int>50</int>
-		</param>
-		<param name="fonts">
-			<map>
-        <param name="default">
-            <font>alphabeta</font>
-        </param>
-        <param name="link">
-            <font>alphabeta-blue</font>
-        </param>
-			</map>
-		</param>
-		<param name="classes">
-			<map/>
-		</param>
-		<param name="images">
-			<map/>
-		</param>
+		<theme name="togglebutton" ref="togglebutton"></theme>
+		<theme name="textarea" ref="-defaults">
+			<param name="minWidth"><int>500</int></param>
+			<param name="minHeight"><int>50</int></param>
+			<param name="fonts"><map>
+				<param name="default"><font>alphabeta</font></param>
+				<param name="link"><font>alphabeta-blue</font></param>
+			</map></param>
+			<param name="classes"><map/>
+				</param><param name="images">
+			<map/></param>
 		</theme>
 	</theme>
 
-	 <theme name="disconnection-widget" ref="confirm-widget" allowWildcard="true">
-    <theme name="confirm-panel" ref="confirm-panel">
-      <theme name="textarea" ref="-defaults">
-        <param name="minWidth">
-          <int>200</int>
-        </param>
-        <param name="minHeight">
-          <int>25</int>
-        </param>
-        <param name="maxWidth">
-          <int>700</int>
-        </param>
-        <param name="fonts">
-          <map>
-            <param name="default">
-              <font>alphabeta</font>
-            </param>
-            <param name="link">
-              <font>alphabeta-blue</font>
-            </param>
-          </map>
-        </param>
-      </theme>
-    </theme>
-  </theme>
-
+	<theme name="disconnection-widget" ref="confirm-widget" allowWildcard="true">
+		<theme name="confirm-panel" ref="confirm-panel">
+			<theme name="textarea" ref="-defaults">
+				<param name="minWidth"><int>200</int></param>
+				<param name="minHeight"><int>25</int></param>
+				<param name="maxWidth"><int>700</int></param>
+				<param name="fonts"><map>
+					<param name="default"><font>alphabeta</font></param>
+					<param name="link"><font>alphabeta-blue</font></param>
+				</map></param>
+			</theme>
+		</theme>
+	</theme>
+ 
 	<theme name="trade-confirm-widget" ref="confirm-widget">
 		<param name="minWidth"><int>500</int></param>
 		<param name="minHeight"><int>250</int></param>
@@ -1025,13 +1003,10 @@
 			<theme name="combobox" ref="combobox" allowWildcard="true">
 				<param name="minWidth"><int>188</int></param>
 			</theme>
-
 			<theme name="valueadjuster" ref="valueadjuster">
 				<param name="minWidth"><int>100</int></param>
 				<param name="maxWidth"><int>188</int></param>
 			</theme>
-
-
 		</theme>
 	</theme>
 </themes>

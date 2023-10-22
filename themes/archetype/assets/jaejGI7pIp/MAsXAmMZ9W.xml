@@ -305,7 +305,7 @@
 			<alias ref="Sub-Color-Pure-Edge"/>
 		</composed>		
 
-		<composed name="monster-preview-bg" sizeOverwriteV="28" sizeOverwriteH="12" splitx="L2,R2" splity="T2,B2">
+		<composed name="monster-preview-bg" inset="2" sizeOverwriteV="28" sizeOverwriteH="12" splitx="L2,R2" splity="T2,B2">
 			<alias ref="Main-Color-Pure-Edge"/>
 			<alias ref="Sub-Color-Pure-Edge" inset="1"/>
 		</composed>		
@@ -711,7 +711,10 @@
 		<area name="return-button-icon" xywh="0,70,20,30" splitx="L20,R0" tint="icon-color"/>
 		<composed name="battle-button-return.background" sizeOverwriteH="96" sizeOverwriteV="30">
 			<alias ref="button.background" inset="0,-3,-2,0"/>
-			<alias ref="Sub-Color-Pure-Edge" inset="10,5,7,77"/>
+			<grid weightsX="0,1" weightsY="1">
+				<alias ref="Sub-Color-Pure-Edge" sizeOverwriteH="14" inset="10,5,7,-5"/>
+				<alias ref="none"/>
+			</grid>
 			<alias ref="return-button-icon"/>
 		</composed>
 

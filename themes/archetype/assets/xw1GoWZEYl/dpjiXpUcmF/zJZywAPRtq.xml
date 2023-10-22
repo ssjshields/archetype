@@ -3,7 +3,7 @@
 
 	<theme name="instance-window" ref="new-base-frame">
 		<param name="background"><image>Instance-Window</image></param>
-		<param name="border"><border>0,0,180,8</border></param>
+		<param name="border"><border>0,0,8,8</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="roster">
 				<param name="background"><image>none</image></param>
@@ -95,9 +95,9 @@
 			</theme>
 		</theme>
 		<theme name="stringcellrenderer" ref="stringcellrenderer">
-			<param name="minHeight"><int>53</int></param>
+			<param name="minHeight"><int>33</int></param>
 			<param name="textAlignment"><enum type="alignment">center</enum></param>
 		</theme>
-		<param name="columnHeaderHeight"><int>53</int></param>
+		<param name="columnHeaderHeight"><int>33</int></param>
 	</theme>
 </themes>

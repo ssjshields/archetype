@@ -211,109 +211,58 @@
 	</theme>
 	
 	<theme name="tp-menu" ref="base-tabbed-frame" allowWildcard="true">
-		<param name="background">
-			<image>none</image>
-		</param>
-		<param name="border">
-			<border>20,18,6,6</border>
-		</param>
-		<param name="minHeight">
-			<int>500</int>
-		</param>
-		<param name="minWidth">
-			<int>670</int>
-		</param>
+		<param name="border"><border>20,18,6,6</border></param>
+		<param name="minHeight"><int>500</int></param>
+		<param name="minWidth"><int>670</int></param>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
-			<param name="tabPosition">
-				<enum type="tabposition">LEFT</enum>
-			</param>
-			<param name="background">
-				<image>none</image>
-			</param>
-			<param name="border">
-				<border>25,0,0,0</border>
-			</param>
+			<param name="tabPosition"><enum type="tabposition">LEFT</enum></param>
+			<param name="background"><image>none</image></param>
+			<param name="border"><border>25,0,0,0</border></param>
 			<theme name="tabbox" ref="tabbox">
-				<param name="border">
-					<border>0,10,0,20</border>
-				</param>
-				<param name="spacing">
-					<int>5</int>
-				</param>
-				<param name="alignment">
-					<enum type="alignment">FILL</enum>
-				</param>
+				<param name="border"><border>0,10,0,20</border></param>
+				<param name="spacing"><int>5</int></param>
+				<param name="alignment"><enum type="alignment">FILL</enum></param>
 				<theme name="tabbutton" ref="togglebutton">
-					<param name="border">
-						<border>5,0,5,10</border>
-					</param>
-					<param name="">
-						<image>ui-tab-vertical.*</image>
-					</param>
-					<param name="font">
-						<font>pb-tab</font>
-					</param>
-					<param name="textAlignment">
-						<enum type="alignment">LEFT</enum>
-					</param>
+					<param name="border"><border>5,0,5,10</border></param>
+					<param name=""><image>ui-tab-vertical.*</image></param>
+					<param name="font"><font>pb-tab</font></param>
+					<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				</theme>
 			</theme>
 			<theme name="container" ref="container">
 				<theme name="scrollpane" ref="scrollpane">
 					<theme name="label" ref="label">
-						<param name="border">
-							<border>5</border>
-						</param>
+						<param name="border"><border>5</border></param>
 					</theme>
 					<theme name="button" ref="button">
-						<param name="minWidth">
-              <int>130</int>
-						</param>
+						<param name="minWidth"><int>130</int></param>
 					</theme>
 				</theme>
 			</theme>
 		</theme>
 	</theme>
 
-  <theme name="tp-direction-widget" ref="resizableframe" allowWildcard="true">
-    <param name="minWidth">
-      <int>120</int>
-    </param>
-    <param name="minHeight">
-      <int>170</int>
-    </param>
-    <theme name="button" ref="-defaults" allowWildcard="true">
-      <param name="font">
-        <font>alphabeta</font>
-      </param>
-      <param name="border">
-        <border>0</border>
-      </param>
-      <param name="textAlignment">
-        <enum type="alignment">RIGHT</enum>
-      </param>
-    </theme>
-  </theme>
+	<theme name="tp-direction-widget" ref="resizableframe" allowWildcard="true">
+		<param name="minWidth"><int>120</int></param>
+		<param name="minHeight"><int>170</int></param>
+		<theme name="button" ref="-defaults" allowWildcard="true">
+			<param name="font"><font>alphabeta</font></param>
+			<param name="border"><border>0</border></param>
+			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+		</theme>
+	</theme>
 
 	<theme name="bulk-commands" ref="adminframe" allowWildcard="true">
 		<theme name="scrollpane" ref="scrollpane">
-			<param name="minWidth">
-				<int>450</int>
-			</param>
-			<param name="minHeight">
-				<int>500</int>
-			</param>
+			<param name="minWidth"><int>450</int></param>
+			<param name="minHeight"><int>500</int></param>
 			<theme name="editfield" ref="editfield" allowWildcard="true">
-				<param name="minWidth">
-					<int>450</int>
-				</param>
-				<param name="minHeight">
-					<int>500</int>
-				</param>
+				<param name="minWidth"><int>450</int></param>
+				<param name="minHeight"><int>500</int></param>
 			</theme>
 		</theme>
 	</theme>
-	
+
 	<theme name="console" ref="-dialog" allowWildcard="true">
 		<param name="background"><image>console.background</image></param>
 		<theme name="dialoglayout" ref="-dialog" allowWildcard="true">

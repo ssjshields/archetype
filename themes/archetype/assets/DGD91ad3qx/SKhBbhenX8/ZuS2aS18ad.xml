@@ -93,13 +93,13 @@
       <param name="minWidth"><int>238</int></param>
     </theme>
     <theme name="valueadjuster" ref="valueadjuster">
-      <param name="minWidth"><int>184</int></param>
+      <param name="minWidth"><int>191</int></param>
     </theme>
     <theme name="combobox" ref="combobox">
-      <param name="minWidth"><int>184</int></param>
+      <param name="minWidth"><int>191</int></param>
     </theme>
     <theme name="editfield" ref="editfield">
-      <param name="maxWidth"><int>184</int></param>
+      <param name="maxWidth"><int>191</int></param>
     </theme>
   </theme>
 
@@ -112,7 +112,7 @@
 				<theme name="tabbutton" ref="tabbutton"></theme>
 			</theme>
 			<theme name="container" ref="container">
-				<param name="border"><border>10</border></param>
+				<param name="border"><border>10,10,10,6</border></param>
 				<param name="namedGaps"><map/></param>
 				<theme name="editfield" ref="editfield-search"></theme>
 				<theme name="label" ref="label" allowWildcard="true">

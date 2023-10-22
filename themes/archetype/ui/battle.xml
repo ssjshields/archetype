@@ -347,6 +347,7 @@
 		<param name="spacing"><int>3</int></param>
 		<param name="alignment"><enum type="alignment">TOP</enum></param>
 		<param name="minWidth"><int>220</int></param>
+		<param name="maxWidth"><int>220</int></param>
 		<param name="minHeight"><int>325</int></param>
 		<param name="maxHeight"><int>325</int></param>
 	</theme>
@@ -358,40 +359,26 @@
 	</theme>
 
 	<theme name="monster-preview-panel-label" ref="label">
-		 <param name="border">
-      <border>0,5,0,0</border>
-    </param>
-    <param name="minWidth">
-      <int>140</int>
-    </param>
-    <param name="minHeight">
-      <int>25</int>
-    </param>
-  </theme>
+		<param name="border"><border>0,5,2,0</border></param>
+		<param name="minWidth"><int>110</int></param>
+		<param name="minHeight"><int>26</int></param>
+	</theme>
 
-  <theme name="monster-preview-panel-label-red" ref="monster-preview-panel-label">
-    <param name="font">
-      <font>alphabeta-red</font>
-    </param>
-  </theme>
+	<theme name="monster-preview-panel-label-red" ref="monster-preview-panel-label">
+		<param name="font"><font>alphabeta-red</font></param>
+	</theme>
 
-  <theme name="monster-preview-panel-label-grey" ref="monster-preview-panel-label">
-    <param name="font">
-      <font>alphabeta</font>
-    </param>
-  </theme>
+	<theme name="monster-preview-panel-label-grey" ref="monster-preview-panel-label">
+		<param name="font"><font>alphabeta</font></param>
+	</theme>
 
-  <theme name="monster-preview-panel-label-yellow" ref="monster-preview-panel-label">
-    <param name="font">
-      <font>alphabeta-yellow</font>
-    </param>
-  </theme>
+	<theme name="monster-preview-panel-label-yellow" ref="monster-preview-panel-label">
+		<param name="font"><font>alphabeta-yellow</font></param>
+	</theme>
 
-  <theme name="monster-preview-panel-label-teal" ref="monster-preview-panel-label">
-    <param name="font">
-      <font>alphabeta-teal</font>
-    </param>
-  </theme>
+	<theme name="monster-preview-panel-label-teal" ref="monster-preview-panel-label">
+		<param name="font"><font>alphabeta-teal</font></param>
+	</theme>
 
 	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
 		<param name="border"><border>55,0</border></param>
@@ -405,6 +392,8 @@
 	</theme>
 	<theme name="battle-bag" ref="rbattle" allowWildcard="true">
 		<param name="overlay"><image>Battle-Bag-Icon</image></param>
+		<param name="font2"><font>battle-label-highlight-safari</font></param>
+		<param name="textAlignment2"><enum type="alignment">right</enum></param>
 	</theme>
 	<theme name="battle-run" ref="rbattle" allowWildcard="true">
 		<param name="overlay"><image>Battle-Run-Icon</image></param>

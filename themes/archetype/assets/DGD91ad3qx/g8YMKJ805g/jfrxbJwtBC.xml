@@ -45,9 +45,9 @@
 				<param name="font"><font>alphabeta-markup</font></param>
 			</theme>
 		</theme>
-		<theme name="advanced-search-dialog" ref="advanced-search-dialog">
-		<param name="border"><border>11,0,0,0</border></param>
-    	</theme>
+    	<theme name="advanced-search-dialog" ref="advanced-search-dialog">
+				<param name="border"><border>9,0,0,0</border></param>
+		</theme>
 		<theme name="label-value-medium3" ref="label">
 			<param name="background"><image>ui-inputbox.background</image></param>
 			<param name="textAlignment"><enum type="alignment">center</enum></param>

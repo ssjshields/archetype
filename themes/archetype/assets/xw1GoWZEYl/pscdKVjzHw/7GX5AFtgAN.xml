@@ -2,13 +2,13 @@
 <themes>
 	<theme name="chat-monster-info" ref="button" allowWildcard="true">
 		<param name="background"><image>none</image></param>
-		<param name="font"><font>alphabeta-blue</font></param>
+		<param name="font"><font>chat-blue</font></param>
 		<!--<param name="textAlignment"><enum type="alignment">CENTER</enum></param>-->
 		<param name="border"><border>2,0</border></param>
 	</theme>
 
 	<theme name="chat-monster-info-shiny" ref="chat-monster-info" allowWildcard="true">
-		<param name="font"><font>alphabeta-shiny</font></param>
+		<param name="font"><font>chat-shiny</font></param>
 		<!--<param name="textAlignment"><enum type="alignment">CENTER</enum></param>-->
 	</theme>
 
@@ -49,20 +49,20 @@
 				<theme name="textarea" ref="-defaults">
 					<param name="border"><border>0,0</border></param>
 					<param name="fonts"><map>
-					<param name="default"><font>alphabeta-main-system</font></param>
-					<param name="color0"><font>alphabeta-green</font></param>
-					<param name="color1"><font>alphabeta</font></param>
-					<param name="color2"><font>alphabeta</font></param>
-					<param name="link"><font>alphabeta-link</font></param>
-					<param name="normal"><font>alphabeta-white-chat</font></param>
-					<param name="shout"><font>alphabeta-orange</font></param>
-					<param name="whisper"><font>alphabeta-lightgreen</font></param>
-					<param name="trade"><font>alphabeta-purple</font></param>
-					<param name="global"><font>alphabeta-teal</font></param>
-					<param name="channel"><font>alphabeta-yellow</font></param>
-					<param name="team"><font>alphabeta-brown</font></param>
-					<param name="system"><font>alphabeta-main-system</font></param>
-					<param name="battle"><font>alphabeta-main-battle</font></param>
+					<param name="default"><font>chat-default</font></param>
+					<param name="color0"><font>chat-green</font></param>
+					<param name="color1"><font>chat-default</font></param>
+					<param name="color2"><font>chat-default</font></param>
+					<param name="link"><font>chat-link</font></param>
+					<param name="normal"><font>chat-default</font></param>
+					<param name="shout"><font>chat-orange</font></param>
+					<param name="whisper"><font>chat-lightgreen</font></param>
+					<param name="trade"><font>chat-purple</font></param>
+					<param name="global"><font>chat-teal</font></param>
+					<param name="channel"><font>chat-yellow</font></param>
+					<param name="team"><font>chat-brown</font></param>
+					<param name="system"><font>chat-main-system</font></param>
+					<param name="battle"><font>chat-main-system</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images"><map>
@@ -91,55 +91,7 @@
 				<theme name="togglebutton-notification" ref="togglebutton-settings" allowWildcard="true">
 					<param name="overlay"><image>icon-chat-sounds</image></param>
 				</theme>
-				<theme name="msgbox-move-selection-panel" ref="-defaults" allowWildcard="true">
-    <param name="background">
-      <image>ui-popup.background</image>
-    </param>
-  </theme>
-
-  <theme name="msgbox-move-selection-button" ref="-defaults" allowWildcard="true">
-    <param name="font">
-      <font>mechabold</font>
-    </param>
-    <param name="font2">
-      <font>alphabeta-border</font>
-    </param>
-    <param name="border">
-      <border>11,12,14,9</border>
-    </param>
-    <param name="">
-      <image>button.*</image>
-    </param>
-    <param name="textAlignment">
-      <enum type="alignment">TOPLEFT</enum>
-    </param>
-    <param name="textAlignment2">
-      <enum type="alignment">BOTTOMRIGHT</enum>
-    </param>
-    <param name="minWidth">
-      <int>240</int>
-    </param>
-    <param name="minHeight">
-      <int>56</int>
-    </param>
-  </theme>
-
-  <theme name="msgbox-return" ref="-defaults" allowWildcard="true">
-    <param name="font">
-      <font>alphabeta-border</font>
-    </param>
-    <param name="border">
-      <border>2,0,4,4</border>
-    </param>
-    <param name="">
-      <image>battle-button-return.*</image>
-    </param>
-    <param name="textAlignment">
-      <enum type="alignment">RIGHT</enum>
-    </param>
-  </theme>
-
-  <theme name="spritetogglebutton" ref="-defaults" allowWildcard="true">
+				<theme name="spritetogglebutton" ref="togglebutton-settings" allowWildcard="true">
 					<param name="background"><image>chat-tab-lock.background</image></param>
 					<param name="maxWidth"><int>24</int></param>
 					<param name="maxHeight"><int>24</int></param>
@@ -172,7 +124,7 @@
 	<theme name="chat-playername" ref="button" allowWildcard="true">
 		<param name="border"><border>0,0,0,0</border></param>
 		<param name="background"><image>none</image></param>
-		<param name="font"><font>alphabeta-white</font></param>
+		<param name="font"><font>chat-white</font></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 

@@ -2,10 +2,7 @@
 <themes>
 
 	<theme name="guildwindow" ref="base-tabbed-frame">
-	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>
-	<param name="fadeDurationActivate"><int>150</int></param>
-	<param name="fadeDurationDeactivate"><int>210000</int></param>-->
-	<param name="background"><image>Team-Window</image></param>
+		<param name="background"><image>Team-Window</image></param>
 		<theme name="settings-frame" ref="resizableframe">
 			<param name="background"><image>ui-frame.background</image></param>
 			<theme name="changemotd" ref="-defaults" allowWildcard="true">
