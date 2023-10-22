@@ -338,18 +338,49 @@
 
 	<theme name="monster-preview-panel" ref="-defaults">
 		<param name="background"><image>none</image></param>
-		<param name="border"><border>0</border></param>
-	</theme>
+		  <param name="border">
+      <border>0,5,0,0</border>
+    </param>
+    <param name="minWidth">
+      <int>140</int>
+    </param>
+    <param name="minHeight">
+      <int>25</int>
+    </param>
+  </theme>
 
-	<theme name="monster-preview-panel-boxlayout" ref="boxlayout">
+  <theme name="monster-preview-panel-label-red" ref="monster-preview-panel-label">
+    <param name="font">
+      <font>alphabeta-red</font>
+    </param>
+  </theme>
+
+  <theme name="monster-preview-panel-label-grey" ref="monster-preview-panel-label">
+    <param name="font">
+      <font>alphabeta</font>
+    </param>
+  </theme>
+
+  <theme name="monster-preview-panel-label-yellow" ref="monster-preview-panel-label">
+    <param name="font">
+      <font>alphabeta-yellow</font>
+    </param>
+  </theme>
+
+  <theme name="monster-preview-panel-label-teal" ref="monster-preview-panel-label">
+    <param name="font">
+      <font>alphabeta-teal</font>
+    </param>
+  </theme>
+
+	<theme name="monster-preview-panel-boxlayout" ref="-defaults">
 		<param name="background"><image>monster-preview-bg</image></param>
 		<param name="border"><border>10</border></param>
 		<param name="spacing"><int>3</int></param>
 		<param name="alignment"><enum type="alignment">TOP</enum></param>
-		<param name="minWidth"><int>170</int></param>
-		<param name="maxWidth"><int>170</int></param>
-		<param name="minHeight"><int>305</int></param>
-		<param name="maxHeight"><int>305</int></param>
+		<param name="minWidth"><int>220</int></param>
+		<param name="minHeight"><int>325</int></param>
+		<param name="maxHeight"><int>325</int></param>
 	</theme>
 
 	<theme name="monster-preview-panel-boxlayout2" ref="boxlayout">

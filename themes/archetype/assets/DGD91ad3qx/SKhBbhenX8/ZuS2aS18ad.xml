@@ -80,7 +80,7 @@
     </theme>
   </theme>
 
-  <theme name="broker-search-dialog" ref="dialoglayout">
+  <theme name="advanced-search-dialog" ref="dialoglayout">
     <param name="border"><border>0,0,0,0</border></param>
 
     <!-- adv search -->

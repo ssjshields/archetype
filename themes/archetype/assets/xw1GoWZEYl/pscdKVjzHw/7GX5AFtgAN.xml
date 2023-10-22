@@ -91,7 +91,55 @@
 				<theme name="togglebutton-notification" ref="togglebutton-settings" allowWildcard="true">
 					<param name="overlay"><image>icon-chat-sounds</image></param>
 				</theme>
-				<theme name="spritetogglebutton" ref="togglebutton-settings" allowWildcard="true">
+				<theme name="msgbox-move-selection-panel" ref="-defaults" allowWildcard="true">
+    <param name="background">
+      <image>ui-popup.background</image>
+    </param>
+  </theme>
+
+  <theme name="msgbox-move-selection-button" ref="-defaults" allowWildcard="true">
+    <param name="font">
+      <font>mechabold</font>
+    </param>
+    <param name="font2">
+      <font>alphabeta-border</font>
+    </param>
+    <param name="border">
+      <border>11,12,14,9</border>
+    </param>
+    <param name="">
+      <image>button.*</image>
+    </param>
+    <param name="textAlignment">
+      <enum type="alignment">TOPLEFT</enum>
+    </param>
+    <param name="textAlignment2">
+      <enum type="alignment">BOTTOMRIGHT</enum>
+    </param>
+    <param name="minWidth">
+      <int>240</int>
+    </param>
+    <param name="minHeight">
+      <int>56</int>
+    </param>
+  </theme>
+
+  <theme name="msgbox-return" ref="-defaults" allowWildcard="true">
+    <param name="font">
+      <font>alphabeta-border</font>
+    </param>
+    <param name="border">
+      <border>2,0,4,4</border>
+    </param>
+    <param name="">
+      <image>battle-button-return.*</image>
+    </param>
+    <param name="textAlignment">
+      <enum type="alignment">RIGHT</enum>
+    </param>
+  </theme>
+
+  <theme name="spritetogglebutton" ref="-defaults" allowWildcard="true">
 					<param name="background"><image>chat-tab-lock.background</image></param>
 					<param name="maxWidth"><int>24</int></param>
 					<param name="maxHeight"><int>24</int></param>
