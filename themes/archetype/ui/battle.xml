@@ -338,7 +338,27 @@
 
 	<theme name="monster-preview-panel" ref="-defaults">
 		<param name="background"><image>none</image></param>
-		  <param name="border">
+		<param name="border"><border>0</border></param>
+	</theme>
+
+	<theme name="monster-preview-panel-boxlayout" ref="-defaults">
+		<param name="background"><image>monster-preview-bg</image></param>
+		<param name="border"><border>10</border></param>
+		<param name="spacing"><int>3</int></param>
+		<param name="alignment"><enum type="alignment">TOP</enum></param>
+		<param name="minWidth"><int>220</int></param>
+		<param name="minHeight"><int>325</int></param>
+		<param name="maxHeight"><int>325</int></param>
+	</theme>
+
+	<theme name="monster-preview-panel-boxlayout2" ref="boxlayout">
+		<param name="border"><border>0</border></param>
+		<param name="spacing"><int>3</int></param>
+		<param name="alignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+
+	<theme name="monster-preview-panel-label" ref="label">
+		 <param name="border">
       <border>0,5,0,0</border>
     </param>
     <param name="minWidth">
@@ -372,26 +392,6 @@
       <font>alphabeta-teal</font>
     </param>
   </theme>
-
-	<theme name="monster-preview-panel-boxlayout" ref="-defaults">
-		<param name="background"><image>monster-preview-bg</image></param>
-		<param name="border"><border>10</border></param>
-		<param name="spacing"><int>3</int></param>
-		<param name="alignment"><enum type="alignment">TOP</enum></param>
-		<param name="minWidth"><int>220</int></param>
-		<param name="minHeight"><int>325</int></param>
-		<param name="maxHeight"><int>325</int></param>
-	</theme>
-
-	<theme name="monster-preview-panel-boxlayout2" ref="boxlayout">
-		<param name="border"><border>0</border></param>
-		<param name="spacing"><int>3</int></param>
-		<param name="alignment"><enum type="alignment">LEFT</enum></param>
-	</theme>
-
-	<theme name="monster-preview-panel-label" ref="label">
-		<param name="border"><border>0,10,0,0</border></param>
-	</theme>
 
 	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
 		<param name="border"><border>55,0</border></param>

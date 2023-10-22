@@ -212,7 +212,7 @@
 	
 	<theme name="tp-menu" ref="base-tabbed-frame" allowWildcard="true">
 		<param name="background">
-			<image>ui-inner-frame-tab.background</image>
+			<image>none</image>
 		</param>
 		<param name="border">
 			<border>20,18,6,6</border>
