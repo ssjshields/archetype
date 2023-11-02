@@ -1229,18 +1229,21 @@
 	
 	<images file="res/custom/PeZyHRX0G6/alert-background.png" filter="nearest">
 		<area name="alert-background-fade" xywh="0,0,201,3" tint="sub-color"/>
-		<grid name="alert-background" weightsX="0,1" weightsY="1" inset="0,-39,0,0">
+		<grid name="alert-background" weightsX="0,0,1" weightsY="1" inset="0,-39,0,0">
 			<alias ref="Pure-Left-Edge-3px" tint="main-color" sizeOverwriteH="3"/>
-			<area xywh="*" tint="sub-color"/>
+			<area xywh="*" tint="sub-color" sizeOverwriteH="201"/>
+			<alias ref="none"/>
 		</grid>
 		<grid name="alert-panel" weightsX="1" weightsY="0,0,1" inset="27,5,-27,5">
-			<grid weightsX="0,1" weightsY="1" inset="0,0,0,0">
+			<grid weightsX="0,0,1" weightsY="1">
 				<alias ref="Pure" tint="main-color" sizeOverwriteH="3" inset="0,-5"/>
-				<alias ref="alert-background-fade"/>
+				<alias ref="alert-background-fade" sizeOverwriteH="201"/>
+				<alias ref="none"/>
 			</grid>
-			<grid weightsX="0,1" weightsY="1" inset="22,0,-22,0">
+			<grid weightsX="0,0,1" weightsY="1" inset="22,0,-22,0">
 				<alias ref="Pure" tint="main-color" sizeOverwriteH="3" inset="0,-5"/>
-				<alias ref="alert-background-fade"/>
+				<alias ref="alert-background-fade" sizeOverwriteH="201"/>
+				<alias ref="none"/>
 			</grid>
 			<alias ref="none" tint="sub-color"/>
 		</grid>
