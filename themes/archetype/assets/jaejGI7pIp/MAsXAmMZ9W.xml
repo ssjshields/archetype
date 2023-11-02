@@ -847,11 +847,14 @@
 		<composed name="mi-hpbar-red-party.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="1,1,4,-1"><alias ref="Accent-Color-Pure"/></composed>
 
 
-		<composed name="progressbar-white.progressImage" sizeOverwriteH="0" sizeOverwriteV="8"inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="icon-color"/></composed>
+		<composed name="progressbar-white.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="icon-color"/></composed>
 		<composed name="progressbar-white.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 
-		<composed name="progressbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8"inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#c68a55"/></composed>
+		<composed name="progressbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#c68a55"/></composed>
 		<composed name="progressbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+
+		<composed name="progressbar-halloween.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#dd84fd"/></composed>
+		<composed name="progressbar-halloween.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 	</images>
 
 	<images file="effectivity_buttons_lang" filter="lineal">
