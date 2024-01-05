@@ -216,7 +216,7 @@
 	</theme>
 
 	<theme name="battle-frame" ref="-defaults" allowWildcard="true">
-		<param name="background"><image>label1.background</image></param>
+		<param name="background"><image>timer-background</image></param>
 	</theme>
 	
 	<theme name="battle-panel" ref="-defaults" allowWildcard="true">
@@ -269,7 +269,8 @@
 			<param name="maxWidth"><int>106</int></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-highlight-button</font></param>
+			<param name="font"><font>battle-arrows</font></param>
+			<param name="border"><border>0,0,2,0</border></param>
 			<param name=""><image>button-small.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
@@ -295,10 +296,12 @@
 			<param name="minHeight"><int>500</int></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+					<param name="border"><border>0,0,6,0</border></param>
 				<theme name="label-black" ref="-defaults" allowWildcard="true">
 					<param name="font"><font>battle-item</font></param>
 					<param name="border"><border>0,0,0,0</border></param>
-					<param name="minHeight"><int>208</int></param>
+					<param name="minHeight"><int>204</int></param>
+					<param name="minWidth"><int>450</int></param>
 					<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 				</theme>
 			</theme>

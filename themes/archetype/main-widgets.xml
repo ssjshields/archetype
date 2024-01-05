@@ -1406,13 +1406,13 @@
 	</theme>
 
 	<theme name="hall-of-fame" ref="-defaults">
-    <param name="background"><image>none</image></param>
-    <theme name="label" ref="-defaults" allowWildcard="true">
-      <param name="background"><image>none</image></param>
-      <param name="font"><font>battle</font></param>
-    </theme>
-    <theme name="trainer-name" ref="-defaults">
-      <param name="font"><font>battle</font></param>
-    </theme>
-  </theme>
+		<param name="background"><image>none</image></param>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="background"><image>none</image></param>
+			<param name="font"><font>battle</font></param>
+		</theme>
+		<theme name="trainer-name" ref="-defaults">
+			<param name="font"><font>battle</font></param>
+		</theme>
+	</theme>
 </themes>
