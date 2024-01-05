@@ -119,7 +119,7 @@
 					<param name="border"><border>10,10,0,0</border></param>
 					<param name="background"><image>none</image></param>
 				</theme>
-				<theme name="dialoglayout" ref="-defaults">
+				<theme name="dialoglayout" ref="dialoglayout">
 					<theme name="label-info" ref="label">
 						<param name="background"><image>ui-inputbox.background</image></param>
 						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>

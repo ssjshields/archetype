@@ -891,6 +891,8 @@
 			<param name="fonts"><map>
 				<param name="default"><font>alphabeta</font></param>
 				<param name="link"><font>alphabeta-blue</font></param>
+				<param name="big-yellow"><font>mechabold-yellow</font></param>
+				<param name="big-red"><font>mechabold-red</font></param>
 			</map></param>
 			<param name="classes"><map/>
 				</param><param name="images">
