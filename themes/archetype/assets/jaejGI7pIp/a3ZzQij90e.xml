@@ -196,6 +196,7 @@
 	<fontDef name="pb-dark-orange" ref="pb-dark" color="#BBBBBB"/>
 	<fontDef name="noto-8pt" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" border_width="1" border_color="#3f4449" kerning="true" hinting="AutoSlight" size="8" incremental="false" characters="0123456789ABCDEF"/>
 	<fontDef name="mechabold" filename="fonts/NotoSans-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="11.7" size_cjk="11.7"/>
+	<fontDef name="mechabold-red" ref="mechabold" color="#F09999" />
 	<fontDef name="mechabold-orange" ref="mechabold" color="#FF9900"/>
 	<fontDef name="mechabold-green" ref="mechabold" color="#9BFF9B" />
 	<fontDef name="mechabold-blue" ref="mechabold" color="#87ceeb" />
