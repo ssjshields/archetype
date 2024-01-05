@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><themes>
-	<fontDef name="messagebox" filename="jaejGI7pIp/fonts/NotoSans-Bold.ttc" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
+	<fontDef name="messagebox" filename="jaejGI7pIp/fonts/NotoSans-Bold.ttf" faces="sc,tc,jp" color="icon-color" kerning="true" hinting="AutoSlight" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#3f4449"/>
 
 	<images file="jaejGI7pIp/res/custom/WGRfhUrISa/text-bubble-arrow.png" filter="lineal">
 		<composed name="text-bubble.background" inset="8">
