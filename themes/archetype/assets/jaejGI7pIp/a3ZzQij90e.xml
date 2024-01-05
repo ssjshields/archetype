@@ -147,8 +147,8 @@
 	<fontDef name="alphabeta-gtl-red" ref="alphabeta" color="hp-low-color"/>
 	<fontDef name="alphabeta-gtl-yellow" ref="alphabeta" color="hp-mid-color"/>
 	<fontDef name="alphabeta-pokename" filename="fonts/NotoSans-Medium.ttf" faces="sc,tc,jp" color="font-sub-color" kerning="true" hinting="AutoSlight" size="11" size_cjk="11" border_width="1.2" border_color="#3d4d55"/>
-	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttf" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" offsetX="51" offsetY="18"/>
-	<fontDef name="alphabeta-trainer-issue" ref="move-pp" color="font-main-color" offsetY="-3"/>
+	<fontDef name="alphabeta-trainer-card" filename="fonts/NotoSans-Bold.ttf" faces="sc,tc,jp" color="font-main-color" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" offsetX="51" offsetY="20"/>
+	<fontDef name="alphabeta-trainer-issue" ref="move-pp" color="font-main-color" offsetY="-4"/>
 	<fontDef name="alphabeta-border-overworld" filename="fonts/NotoSans-Medium.ttf" faces="sc,tc,jp" color="#ffffff" kerning="true" hinting="AutoSlight" size="14" size_cjk="14" border_width="1.1" border_color="#3c4c50"/>
 	<fontDef name="alphabeta-border-HUD" filename="fonts/NotoSans-Bold.ttf" faces="sc,tc,jp" color="icon-color" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" kerning="true" hinting="AutoSlight" size="11" size_cjk="11"/>
 	<fontDef name="alphabeta-border-time" ref="alphabeta-border-HUD" offsetY="-1" color="font-main-color"/>
