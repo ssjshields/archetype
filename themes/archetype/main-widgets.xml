@@ -33,11 +33,9 @@
 	</theme>
 
 	<theme name="logingui" ref="-defaults">
-	<param name="background"><image>login-background-animation</image></param>
-		<theme name="logo" ref="-defaults">
-		</theme>
-		<theme name="logo-hween" ref="-defaults">
-		</theme>
+		<param name="background"><image>login-background-animation</image></param>
+		<theme name="logo" ref="-defaults"></theme>
+		<theme name="logo-hween" ref="-defaults"></theme>
 		<theme name="login-window" ref="new-base-frame" allowWildcard="true">
 			<param name="background"><image>Login-Window</image></param>
 			<param name="minWidth"><int>355</int></param>
@@ -50,6 +48,17 @@
 				<param name="border"><border>43,15,14,14</border></param>
 				<theme name="label" ref="label">
 					<param name="border"><border>0,7,0,0</border></param>
+				</theme>
+				<theme name="combobox" ref="combobox" allowWildcard="true">
+					<theme name="display" ref="display">
+						<param name="border"><border>5,17,5,0</border></param>
+					</theme>
+				</theme>
+				<theme name="editfield" ref="editfield" allowWildcard="true">
+					<theme name="renderer" ref="renderer">
+						<param name="textAlignment"><enum type="alignment">center</enum></param>
+					<param name="border"><border>0,0,2,2</border></param>
+					</theme>
 				</theme>
 				<theme name="button" ref="button">
 					<param name="minWidth"><int>100</int></param>
@@ -1402,6 +1411,17 @@
 		<theme name="label" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>none</image></param>
 			<param name="font"><font>noto-8pt</font></param>
+		</theme>
+	</theme>
+
+	<theme name="hall-of-fame" ref="-defaults">
+		<param name="background"><image>none</image></param>
+		<theme name="label" ref="-defaults" allowWildcard="true">
+			<param name="background"><image>none</image></param>
+			<param name="font"><font>battle</font></param>
+		</theme>
+		<theme name="trainer-name" ref="-defaults">
+			<param name="font"><font>battle</font></param>
 		</theme>
 	</theme>
 </themes>

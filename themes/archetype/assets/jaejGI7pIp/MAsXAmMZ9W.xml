@@ -327,6 +327,7 @@
 	</images>
 
 	<images file="res/custom/j4iabP1aXf/main-hud.png" filter="lineal">
+		<composed name="timer-background"><alias ref="Pure" tint="#95111111" inset="0,0,0,0"/></composed>
 		<composed name="label1.background"><alias ref="Pure-Edge" tint="#95111111" inset="0,0,0,0"/></composed>
 		<composed name="label2.background"><alias ref="label1.background" inset="0,0,0,0"/></composed>
 		<composed name="label3.background"><alias ref="label1.background" tint="#00aeff" inset="0,0,0,0"/></composed>
