@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-<fontDef name="battle-name" filename="assets/jaejGI7pIp/fonts/NotoSans-Medium.ttf" color="#ffffff" border_width="1.1" border_color="#000000" size="18" hinting="Full" offsetY="-3"/>
+<fontDef name="battle-name" filename="assets/jaejGI7pIp/fonts/NotoSansCJK-Medium.ttc" color="#ffffff" border_width="1.1" border_color="#000000" size="18" hinting="Full" offsetY="-3"/>
 
 
 
@@ -10,7 +10,7 @@ in here as you did for "icon-color" in the CHOOSE_YOUR_COLORS.xml file.-->
 
 
 <fontDef color="#ffffff" 
-name="battle" filename="assets/jaejGI7pIp/fonts/NotoSans-Medium.ttf" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
+name="battle" filename="assets/jaejGI7pIp/fonts/NotoSansCJK-Medium.ttc" border_width="1.0" border_color="#A6000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#A6000000" size="28" hinting="Medium" offsetY="4"/>
 
 
 <fontDef color="#ffffff" 

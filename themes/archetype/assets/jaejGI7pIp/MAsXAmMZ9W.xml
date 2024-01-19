@@ -817,7 +817,9 @@
 		<composed name="mi-hpbar-green.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 		<composed name="mi-hpbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="hp-mid-color"/></composed>
 		<composed name="mi-hpbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
-		<animation name="mi-hpbar-red.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1" timeSource="enabled">
+		<composed name="mi-hpbar-red.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="hp-low-color"/></composed>
+		<composed name="mi-hpbar-red.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
+		<animation name="mi-hpbar-red-animated.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1" timeSource="enabled">
 			<frame duration="1000" ref="progressbar.progressImage" tint="hp-low-color"/>
 			<frame duration="1000" ref="progressbar.progressImage"/>
 		</animation>		
@@ -851,7 +853,7 @@
 		<composed name="progressbar-white.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="icon-color"/></composed>
 		<composed name="progressbar-white.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 
-		<composed name="progressbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#c68a55"/></composed>
+		<composed name="progressbar-orange.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#f48a55"/></composed>
 		<composed name="progressbar-orange.background" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="Accent-Color-Pure"/></composed>
 
 		<composed name="progressbar-halloween.progressImage" sizeOverwriteH="0" sizeOverwriteV="8" inset="3,1,3,1"><alias ref="progressbar.progressImage" tint="#dd84fd"/></composed>
