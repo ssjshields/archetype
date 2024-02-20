@@ -279,6 +279,10 @@
 			<alias ref="Sub-Color-Pure-Edge" inset="5"/>
 		</composed>
 
+		<composed name="coop-popup.background" inset="0,-5,0,-5">
+			<alias ref="ui-popup.background"/>
+		</composed>
+
 		<select name="ui-popup-button.background">
 			<alias ref="ui-button.hover" if="hover"/>
 			<alias ref="ui-button.keyboardFocus" if="keyboardFocus"/>
@@ -650,8 +654,8 @@
 		</composed>
 		<area name="health-progressbar-xp.background" xywh="0,10,9,6" splitx="L4,R4" splity="T2,B3"/>
 
-		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,34"/>
-		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,84"/>
+		<area name="battle-ui-enemy" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,21,6,26"/>
+		<area name="battle-ui-float" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="10,6,6,32"/>
 		<area name="battle-ui-self-slim" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="11,31,7,16"/>
 
 		<area name="battle-ui-heart1" xywh="0,50,16,16" splitx="L16,R0" splity="T16,B0" inset="4,83,-4,-83"/>
@@ -665,6 +669,8 @@
 			<alias ref="Sub-Color-Pure" inset="0,0,2,2" tint="#E0FFFFFF"/>
 			<alias ref="battle-ui-heart"/>
 		</composed>
+
+		<area name="battle-ui-boss" xywh="0,30,9,6" splitx="L4,R4" splity="T2,B3" inset="0,-33,4,13"/>
 
 		<composed name="battle-ability" inset="-91,7,69,53">
 			<alias ref="Fade-Left" tint="sub-color" inset="0,0,0,3"/>
@@ -1480,7 +1486,13 @@
 	</images>
 
 	<images file="res/custom/2sTxAVRCoW/PC-Slot-Disabled.png" filter="nearest">
+		<composed name="pc-toggle.background" tint="xp-color" inset="-1,-2,-2,-2" if="selected">
+			<alias ref="Window-Accent-Edge"/>
+		</composed>
 		<composed name="pc-slot.background" inset="1">
+			<composed if="battlebox" tint="friendship-color">
+				<alias ref="Pure-Edge" inset="1" tint="#40ffffff"/>
+			</composed>
 			<composed if="obey">
 				<alias ref="Window-Accent-Edge" tint="accent-color"/>
 				<alias ref="Sub-Color-Pure-Edge" inset="1"/>

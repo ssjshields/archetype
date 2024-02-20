@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<theme name="pc-frame" ref="resizableframe">
+	<theme name="pc-frame" ref="base-tabbed-frame">
 		<param name="border"><border>34,14,8,8</border></param>
 		<param name="background"><image>PC-Window</image></param>
 		<theme name="editfield" ref="editfield-search">
@@ -251,5 +251,11 @@
     	<param name="maxHeight"><int>16</int></param>
 	</theme>
 
+	<theme name="tooltip-help" ref="-defaults">
+		<param name="fadeInTime"><int>0</int></param>
+	</theme>
+	<theme name="hud-spritetoggle" ref="button" allowWildcard="true">
+		<param name="background"><image>pc-toggle.background</image></param>
+	</theme>
 </themes>
 

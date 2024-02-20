@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<theme name="monster-frame" ref="resizableframe">
+	<theme name="monster-frame" ref="base-tabbed-frame">
 		<param name="background"><image>Poke-Summary-Window</image></param>
 		<param name="border"><border>0,5,0,0</border></param>
 

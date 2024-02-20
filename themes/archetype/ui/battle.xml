@@ -67,9 +67,18 @@
 		<param name="background"><image>battle-ui-self-slim</image></param>
 	</theme>
 
+	<theme name="battle-gui-boss" ref="-defaults">
+		<param name="background"><image>battle-ui-boss</image></param>
+	</theme>
+
 	<theme name="redlabel" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>battle-name</font></param>
-		<param name="border"><border>0,0,3,0</border></param>
+		<param name="border"><border>0</border></param>
+	</theme>
+
+	<theme name="redlabel-large" ref="-defaults" allowWildcard="true">
+		<param name="font"><font>battle-name</font></param>
+		<param name="border"><border>0</border></param>
 	</theme>
 
 	<theme name="time-progressbar" ref="-defaults" allowWildcard="true">
@@ -385,6 +394,18 @@
 
 	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
 		<param name="border"><border>55,0</border></param>
+	</theme>
+
+	<theme name="coop-indicator-table" ref="table" allowWildcard="true">
+		<param name="fadeInTime"><int>500</int></param>
+		<param name="background"><image>coop-popup.background</image></param> 
+		<theme name="label" ref="-defaults">
+			<param name="font"><font>tooltip-font</font></param>
+			<param name="border"><border>9,5,0,5</border></param>
+		</theme>
+		<param name="columnWidths">
+			<map><param name="0"><int>60</int></param></map>
+		</param>
 	</theme>
 
 	<theme name="battle-fight" ref="rbattle" allowWildcard="true">

@@ -97,7 +97,7 @@
 		<param name="fadeDurationShow"><int>200</int></param>
 		<param name="fadeDurationHide"><int>200</int></param>
 		<theme name="title" ref="-defaults">
-			<param name="border"><border>14,49,2,0</border></param>
+			<param name="border"><border>12</border></param>
 			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 			<param name="font"><font>title-font</font></param>
 		</theme>
@@ -378,6 +378,11 @@
 	</theme>
 
 	<theme name="tabbedframe" ref="resizableframe">
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>14,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
 		<theme name="dialoglayout" ref="-defaults">
 			<param name="border"><border>5</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
@@ -507,6 +512,11 @@
 	</theme>
 
 	<theme name="new-base-frame" ref="resizableframe" allowWildcard="true">
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>14,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
         <param name="border"><border>2</border></param>
         <theme name="dialoglayout" ref="-defaults">
             <param name="border"><border>40,0,0,0</border></param>
@@ -530,6 +540,11 @@
 	<theme name="base-frame-vertical-tabs" ref="resizableframe" allowWildcard="true">
         <param name="background"><image>ui-frame.background</image></param>
         <param name="border"><border>0</border></param>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>14,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
         <theme name="dialoglayout" ref="dialoglayout">
 			<param name="border"><border>42,10,10,10</border></param>
 			<theme name="tabbedpane" ref="base-tabbed-pane">
@@ -569,9 +584,14 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 		</theme>
+		<theme name="title" ref="-defaults">
+			<param name="border"><border>14,49,2,0</border></param>
+			<param name="textAlignment"><enum type="alignment">topleft</enum></param>
+			<param name="font"><font>title-font</font></param>
+		</theme>
 	</theme>
 	
-	<theme name="base-tabbed-frame-customization" ref="resizableframe" allowWildcard="true">
+	<theme name="base-tabbed-frame-customization" ref="base-tabbed-frame" allowWildcard="true">
 		<param name="background"><image>Settings-Window</image></param>
 		<theme name="title" ref="title">
 			<param name="border"><border>4,37,2,0</border></param>
@@ -900,6 +920,22 @@
 		</theme>
 	</theme>
 
+	<theme name="release-widget" ref="confirm-widget" allowWildcard="true">
+		<theme name="confirm-panel" ref="confirm-panel">
+			<theme name="scrollpane" ref="scrollpane">
+				<param name="minWidth"><int>612</int></param>
+				<param name="minHeight"><int>480</int></param>
+				<theme name="label" ref="label" allowWildcard="true">
+					<param name="minWidth"><int>120</int></param>
+				</theme>
+				<theme name="label-markup" ref="label" allowWildcard="true">
+					<param name="border"><border>0,0,12,0</border></param>
+					<param name="font"><font>alphabeta-markup</font></param>
+				</theme>
+			</theme>
+		</theme>
+	</theme>
+
 	<theme name="disconnection-widget" ref="confirm-widget" allowWildcard="true">
 		<theme name="confirm-panel" ref="confirm-panel">
 			<theme name="textarea" ref="-defaults">
@@ -953,7 +989,7 @@
 
 	<theme name="notification" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-popup.background</image></param>
-		<param name="border"><border>5</border></param>
+		<param name="border"><border>15</border></param>
 		<param name="titleAreaTop"><int>25</int></param>
 		<param name="titleAreaLeft"><int>8</int></param>
 		<param name="titleAreaRight"><int>-8</int></param>
@@ -982,7 +1018,7 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="label" ref="-defaults">
-				<param name="border"><border>5</border></param>
+				<param name="border"><border>0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="font"><font>alphabeta-white</font></param>
 			</theme>
