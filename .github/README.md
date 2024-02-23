@@ -1,4 +1,4 @@
-![mainlogo](https://cdn.discordapp.com/attachments/894130957588766770/995035312592015420/archetype.png)
+![mainlogo](https://forums.pokemmo.com/uploads/monthly_2023_03/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3839343133303935373538-53033353331323539323031353432302f6172636865747970652e706e67.png.45a015b0cadb6a64986ea884f9a7e474.png)
 
 Archetype is a custom user interface for the online video game [PokeMMO](https://pokemmo.com/).
 
