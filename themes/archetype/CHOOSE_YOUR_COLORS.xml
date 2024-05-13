@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><themes>
 <!-- CHOOSE YOUR COLORS! Replace the hex code with a different value. -->
 
-<constantDef name="main-color"><color>#42b9ff</color></constantDef><!--default: #42b9ff-->
+<constantDef name="main-color"><color>#42b9ff</color></constantDef><!--default: #42b9ff, red: #df0d35, green: #82d40c, yellow: #f6c328, purple: #7757ad, pink: #ff527b -->
 <constantDef name="sub-color"><color>#1c2328</color></constantDef><!--default: #1c2328-->
 <constantDef name="button-color"><color>#263238</color></constantDef><!--default: #263238-->
 <constantDef name="accent-color"><color>#2d3b40</color></constantDef><!--default: #2d3b40-->
