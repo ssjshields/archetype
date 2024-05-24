@@ -1,9 +1,6 @@
 [![Download](https://img.shields.io/badge/%F0%9F%93%82-%20?style=flat&label=Download&color=blue)](https://github.com/ssjshields/archetype/archive/refs/heads/main.zip)
-[![Revision](https://img.shields.io/badge/26211-%20?style=flat&label=PokeMMO&link=https%3A%2F%2Fpokemmo.com%2Fen%2Fdownloads%2F&color=blue)](https://pokemmo.com/en/downloads/)
+[![Revision](https://img.shields.io/badge/26211-%20?style=flat&label=PokeMMO%20Revision&link=https%3A%2F%2Fpokemmo.com%2Fen%2Fdownloads%2F&color=blue)](https://pokemmo.com/en/downloads/)
 [![Discord](https://img.shields.io/discord/743352385262583858?style=flat&label=Discord&color=5865F2)](https://discord.com/invite/rYg7ntqQRY)
-
-
-
 
 ![mainlogo](https://forums.pokemmo.com/uploads/monthly_2023_03/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3839343133303935373538-53033353331323539323031353432302f6172636865747970652e706e67.png.45a015b0cadb6a64986ea884f9a7e474.png)
 
