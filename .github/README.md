@@ -81,17 +81,21 @@ Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.
 
 &nbsp;
 # Installation
-*Before installing, if previous versions are present on your system, delete them entirely*
+> [!IMPORTANT]
+If previous versions of Archetype were installed, remove them entirely before updating
 
 **1.** Open ZIP, then open the `archetype` folder; extract contents into `PokeMMO\data\`
 
-> Linux / macOS users MUST merge directories, **DO NOT REPLACE**
+> [!NOTE]
+If you would like to install Archetypes custom Sprite icons, during extraction overwrite the `main.png` 
 
-> Overwriting the `main.png` sprite sheet is not required, however you will be missing the custom in-game icons
+> Linux / macOS users see [this issue regarding the Launcher overwriting modified Sprites](/../../issues/46)
 
 **2.** Select `archetype` under `Settings` → `Interface`
 
-**3.** Restart client to refresh cached assets
+**3.** Restart the game to refresh the user interface
+
+
 
 &nbsp;
 # Removal
@@ -99,24 +103,29 @@ Feel like exploring? Give our [encounter / Egg / Fossil counter](https://github.
 
 **2.** Delete the `archetype` folder from  `PokeMMO\data\themes`
 
-**3.** Repair client from main menu or run the `pokemmo_updater.jar`
+**3.** If the `main.png` was replaced, repair the client from main menu or run the `pokemmo_updater.jar`
 
 > Repairing the client restores the original `main.png`
 
 &nbsp;
 # Customization
-*These files can be opened with any text edtior*
+Archetype is a unique compared to other themes- you can tweak the majority of the UI to your liking.
 
-`CHOOSE_YOUR_COLORS.xml`
+`CHOOSE_YOUR_LOOK.xml` - Modify simple conditional flags to personalize your theme, such as different Window styles and cursors
 
-> Modify hex values to personalize your theme
+`CHOOSE_YOUR_COLORS.xml` - Modify hex color values to personalize your theme
 
-> [Color Guide](https://github.com/ssjshields/archetype/blob/main/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png), showcases the defined areas of the interface
+![Color Guide](https://raw.githubusercontent.com/ssjshields/archetype/main/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png)
+
+> [!TIP]
+These files can be opened with any text edtior- instructions are commented inside the files
+
+> [!TIP]
+If [Customization XMLs](https://github.com/ssjshields/archetype/tree/main?tab=readme-ov-file#customization) are modified, they can be copied between updates unless announced otherwise
 
 
-`CHOOSE_YOUR_LOOK.xml`
 
-> Modify simple conditional flags to personalize your theme
+
 
 &nbsp;
 # FAQ
