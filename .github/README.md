@@ -111,17 +111,17 @@ If you would like to install Archetypes custom Sprite icons, during extraction o
 # Customization
 Archetype is a unique compared to other themes- you can tweak the majority of the UI to your liking.
 
-`CHOOSE_YOUR_LOOK.xml` - Modify simple conditional flags to personalize your theme, such as different Window styles and cursors
+`CHOOSE_YOUR_LOOK.xml` - Modify simple conditional flags to personalize your theme, such as different Login backgrounds, Window styles and Cursors
 
 `CHOOSE_YOUR_COLORS.xml` - Modify hex color values to personalize your theme
 
-![Color Guide](https://raw.githubusercontent.com/ssjshields/archetype/main/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png)
+![Color Guide](/themes/archetype/CHOOSE_YOUR_COLORS_GUIDE.png)
 
 > [!TIP]
 These files can be opened with any text edtior- instructions are commented inside the files
 
 > [!TIP]
-If [Customization XMLs](https://github.com/ssjshields/archetype/tree/main?tab=readme-ov-file#customization) are modified, they can be copied between updates unless announced otherwise
+If the Archetype Customization XMLs are modified, they can be copied between updates unless announced otherwise
 
 
 
