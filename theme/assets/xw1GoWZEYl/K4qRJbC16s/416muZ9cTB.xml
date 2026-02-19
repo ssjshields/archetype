@@ -121,7 +121,7 @@
 								</theme>
 								<theme name="label-name-value-button" ref="label" allowWildcard="true">
                                     <param name=""><image>ui-button.*</image></param>
-                                    <param name="font"><font>alphabeta-highlight-button</font></param>
+                                    <param name="font"><font>main-highlight-button</font></param>
                                     <param name="border"><border>6</border></param>
                                     <param name="minWidth"><int>180</int></param>
                                 </theme>
@@ -776,7 +776,7 @@
 				<param name="minWidth"><int>32</int></param>
 				<param name="minHeight"><int>32</int></param>
 				<theme name="label-dark" ref="label" allowWildcard="true">
-					<param name="font"><font>alphabeta</font></param>
+					<param name="font"><font>main</font></param>
 					<param name="border"><border>2,24,0,0</border></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				</theme>
@@ -970,7 +970,7 @@
 				<param name="minWidth"><int>169</int></param>
 			</theme>
     <theme name="label-hidden-ability" ref="label-name-monster-tiering-value" allowWildcard="true">
-      <param name="font"><font>alphabeta-yellow</font></param>
+      <param name="font"><font>main-yellow</font></param>
     </theme>
   </theme>
 </themes>

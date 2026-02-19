@@ -22,7 +22,7 @@
 				</theme>
 			</theme>
 			<theme name="townmap-cursor" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>alphabeta</font></param>
+				<param name="font"><font>main</font></param>
 				<param name="background"><image>none</image></param>
 				<param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
@@ -180,7 +180,7 @@
 				<param name="fadeDurationShow"><int>200</int></param>
 				<param name="fadeDurationHide"><int>0</int></param>
 				<param name="minWidth"><int>150</int></param>
-				<param name="font"><font>alphabeta</font></param>
+				<param name="font"><font>main</font></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 		</theme>
@@ -236,7 +236,7 @@
       </theme>
       <theme name="label-self" ref="label">
         <param name="border"><border>0,0</border></param>
-        <param name="font"><font>alphabeta-lightgreen</font></param>
+        <param name="font"><font>main-lightgreen</font></param>
       		</theme>
 		</theme>
 	</theme>

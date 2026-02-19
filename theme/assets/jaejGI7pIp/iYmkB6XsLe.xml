@@ -28,7 +28,7 @@
 	</theme>
 
 	<theme name="msgHeaderLabel" ref="label">
-		<param name="font"><font>alphabeta-pc-title</font></param>
+		<param name="font"><font>main-pc-title</font></param>
 		<param name="border"><border>2</border></param>
 	</theme>
 
@@ -89,7 +89,7 @@
 		</theme>
 		<!-- Loaded ROMs text -->
 		<theme name="label" ref="label">
-			<param name="font"><font>alphabeta-border</font></param>
+			<param name="font"><font>main-border</font></param>
 		</theme>
 		<theme name="warnlabel" ref="label">
 			<param name="font"><font>mechabold-orange</font></param>
@@ -114,7 +114,7 @@
 				<param name="border"><border>10,4</border></param>
 			</theme>
 			<theme name="label" ref="label">
-				<param name="font"><font>alphabeta-border</font></param>
+				<param name="font"><font>main-border</font></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="progressbar" ref="-defaults" allowWildcard="true">
@@ -140,10 +140,10 @@
 					<param name="minWidth"><int>550</int></param>
 					<param name="minHeight"><int>400</int></param>
 					<param name="fonts"><map>
-						<param name="default"><font>alphabeta</font></param>
-						    <param name="orange"><font>alphabeta-brown</font></param>
-           				 	<param name="bold"><font>alphabeta-yellow</font></param>
-						<param name="link"><font>alphabeta-blue</font></param>
+						<param name="default"><font>main</font></param>
+						    <param name="orange"><font>main-brown</font></param>
+           				 	<param name="bold"><font>main-yellow</font></param>
+						<param name="link"><font>main-blue</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images"><map/></param>
@@ -173,7 +173,7 @@
 				<param name="background"><image>none</image></param>
 				<theme name="character-select-button" ref="-defaults" allowWildcard="true">
 					<param name="background"><image>ui-inputbox.background</image></param>
-					<param name="font"><font>alphabeta</font></param>
+					<param name="font"><font>main</font></param>
 					<param name="border"><border>7,7</border></param>
 
 					<param name="minWidth"><int>200</int></param>
@@ -184,7 +184,7 @@
 							<param name="font"><font>pb-dark</font></param>
 						</theme>
 						<theme name="spritelabel" ref="-defaults" allowWildcard="true">
-							<param name="font"><font>alphabeta</font></param>
+							<param name="font"><font>main</font></param>
 						</theme>
 					</theme>
 				</theme>
@@ -206,7 +206,7 @@
 
 	<theme name="event-tracker" ref="-defaults">
 		<theme name="label" ref="label">
-			<param name="font"><font>alphabeta-border</font></param>
+			<param name="font"><font>main-border</font></param>
 		</theme>
 		<theme name="button-question" ref="button" allowWildcard="true">
 			<param name="background"><image>ui-button.background</image></param>
@@ -253,7 +253,7 @@
 		<theme name="label" ref="-defaults">
 			<param name="fadeDurationShow"><int>200</int></param>
 			<param name="fadeDurationHide"><int>200</int></param>
-			<param name="font"><font>alphabeta</font></param>
+			<param name="font"><font>main</font></param>
 		</theme>
 	</theme>
 	
@@ -381,7 +381,7 @@
 	<theme name="nameplategui" ref="-defaults">
 		<theme name="nameplate-staff" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>label2.background</image></param>
-			<param name="font"><font>alphabeta-border-overworld</font></param>
+			<param name="font"><font>main-border-overworld</font></param>
 			<param name="maxHeight"><int>16</int></param>
 			<param name="border"><border>0,0,2,3</border></param>
 		</theme>
@@ -423,13 +423,13 @@
 				<param name="minWidth"><int>50</int></param>
 				<param name="minHeight"><int>15</int></param>
 			</theme>
-			<param name="font"><font>alphabeta-border-overworld</font></param>
+			<param name="font"><font>main-border-overworld</font></param>
 		</theme>
 		<theme name="nameplate-friend" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-border-friend</font></param>
+			<param name="font"><font>main-border-friend</font></param>
 		</theme>
 		<theme name="nameplate-team" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-border-team</font></param>
+			<param name="font"><font>main-border-team</font></param>
 		</theme>
 		<theme name="message" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>chatframe.background</image></param>
@@ -779,14 +779,14 @@
 	</theme>
 
 	<theme name="spritetogglebutton" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 		<param name="border"><border>7,7</border></param>
 		<param name=""><image>button-toggle.*</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
 	<theme name="spritetogglebutton-outline" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 		<param name="border"><border>7,7</border></param>
 		<param name="background"><image>hotkey-summary.background</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
@@ -815,7 +815,7 @@
 		<param name="background"><image>label-bg-title</image></param>
 		<param name="border"><border>1,5,0,5</border></param>
 		<param name="minWidth"><int>85</int></param>
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 	</theme>
 
 	<theme name="label-value" ref="label" allowWildcard="true">
@@ -927,24 +927,24 @@
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
 			<theme name="trainer-name" ref="-defaults">
-				<param name="font"><font>alphabeta-trainer-card</font></param>
+				<param name="font"><font>main-trainer-card</font></param>
 				<param name="border"><border>0</border></param>
                 <param name="textAlignment"><enum type="alignment">left</enum></param>
 			</theme>
 			<theme name="label" ref="-defaults">
-				<param name="font"><font>alphabeta-border-TC</font></param>
+				<param name="font"><font>main-border-TC</font></param>
 				<param name="border"><border>6,0,0,0</border></param>
 			</theme>
 			<theme name="spritelabel" ref="-defaults">
-				<param name="font"><font>alphabeta-chat</font></param>
+				<param name="font"><font>main-chat</font></param>
 			</theme>
 			<theme name="label-centered" ref="-defaults">
-				<param name="font"><font>alphabeta-trainer-issue</font></param>
+				<param name="font"><font>main-trainer-issue</font></param>
 				<param name="border"><border>0,299,0,0</border></param>
 				<param name="textAlignment"><enum type="alignment">BOTTOMRIGHT</enum></param>
 			</theme>
 			<theme name="button" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>alphabeta-chat</font></param>
+				<param name="font"><font>main-chat</font></param>
 				<param name=""><image>ui-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
@@ -967,7 +967,7 @@
 			<param name="namedGaps"><map/></param>
 			<param name="border"><border>5</border></param>
 			<theme name="label" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>alphabeta-border-HUD</font></param>
+				<param name="font"><font>main-border-HUD</font></param>
 				<param name="border"><border>0,0,1,0</border></param>
 				<param name="background"><image>alert-background</image></param>
 				<param name="minHeight"><int>22</int></param>
@@ -1210,7 +1210,7 @@
 						<param name="default"><font>pb-dark</font></param>
 						<param name="chatdefault"><font>pb-dark</font></param>
 						<param name="orange"><font>pb-dark-orange</font></param>
-						<param name="link"><font>alphabeta-blue</font></param>
+						<param name="link"><font>main-blue</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images">
@@ -1274,7 +1274,7 @@
     <theme name="button" ref="label">
       <param name="background"><image>ui-button.background</image></param>
       <param name="border"><border>5</border></param>
-      <param name="font"><font>alphabeta-highlight-button</font></param>
+      <param name="font"><font>main-highlight-button</font></param>
       <param name="minWidth"><int>250</int></param>
       <param name="maxWidth"><int>250</int></param>
     </theme>
@@ -1289,7 +1289,7 @@
 			<!--<theme name="button" ref="label">
 				<param name="background"><image>label2.background</image></param>
 				<param name="border"><border>5</border></param>
-				<param name="font"><font>alphabeta</font></param>
+				<param name="font"><font>main</font></param>
 			</theme>-->
 			<theme name="faq-content">
 				<param name="background"><image>label1.background</image></param>
@@ -1310,8 +1310,8 @@
 					<param name="minHeight"><int>400</int></param>
 					<param name="fonts"><map>
 						<param name="default"><font>listbox-display</font></param>
-						<param name="orange"><font>alphabeta-blue</font></param>
-						<param name="link"><font>alphabeta-blue</font></param>
+						<param name="orange"><font>main-blue</font></param>
+						<param name="link"><font>main-blue</font></param>
 					</map></param>
 					<param name="classes"><map/></param>
 					<param name="images">
@@ -1457,7 +1457,7 @@
 		<param name="namedGaps"><map/></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
-		<param name="font"><font>alphabeta-border-active-item</font></param>
+		<param name="font"><font>main-border-active-item</font></param>
 	</theme>-->
 
 	<theme name="effects-slot" ref="button">
@@ -1473,7 +1473,7 @@
 		<param name="textAlignment2"><enum type="alignment">BOTTOM</enum></param>
 		<param name="minWidth"><int>50</int></param>
 		<param name="minHeight"><int>25</int></param>
-		<param name="font"><font>alphabeta-border-active-item</font></param>
+		<param name="font"><font>main-border-active-item</font></param>
 	</theme>
 	
 	<theme name="server-status-success" ref="label">
@@ -1485,7 +1485,7 @@
 		<param name="minHeight"><int>30</int></param>
 		<param name="background"><image>none</image></param>
 		<param name="background"><image>ui-status-success.default</image></param>
-		<param name="font"><font>alphabeta-border</font></param>
+		<param name="font"><font>main-border</font></param>
 	</theme>
 
 	<theme name="server-status-info" ref="server-status-success">

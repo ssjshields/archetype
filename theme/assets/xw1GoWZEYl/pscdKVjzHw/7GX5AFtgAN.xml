@@ -32,7 +32,7 @@
 		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">left</enum></param>
-			<param name="font"><font>alphabeta</font></param>
+			<param name="font"><font>main</font></param>
 		</theme>
 		<theme name="closeButton" ref="-defaults"/>
 		<theme name="resizeHandle" ref="-defaults"/>
@@ -130,7 +130,7 @@
 				<param name="border"><border>5,0,0,0</border></param>
 				<theme name="button" ref="button" allowWildcard="true">
 					<param name="background"><image>special-ui-button.background</image></param>
-					<param name="font"><font>alphabeta-highlight-button</font></param>
+					<param name="font"><font>main-highlight-button</font></param>
 					<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 				</theme>
 				<theme name="button-link" ref="button" allowWildcard="true"/>
@@ -298,7 +298,7 @@
 				<param name="autoScrollSpeed"><int>10</int></param>
 				<param name="minHeight"><int>170</int></param>
 				<theme name="editfield" ref="-defaults" allowWildcard="true">
-					<param name="font"><font>alphabeta</font></param>
+					<param name="font"><font>main</font></param>
 					<param name="background"><image>editfield.background</image></param>
 					<param name="selection"><image>editfield.selection</image></param>
 					<param name="border"><border>3</border></param>
@@ -319,7 +319,7 @@
 							<param name="default"><font>pb-dark</font></param>
 							<param name="chatdefault"><font>pb-dark</font></param>
 							<param name="orange"><font>pb-dark-orange</font></param>
-							<param name="link"><font>alphabeta-blue</font></param>
+							<param name="link"><font>main-blue</font></param>
 						</map></param>
 						<param name="classes"><map/></param>
 						<param name="images">

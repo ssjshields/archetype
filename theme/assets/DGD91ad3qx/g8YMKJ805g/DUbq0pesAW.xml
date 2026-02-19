@@ -79,15 +79,15 @@
 	</theme>
 
 	<theme name="inventory-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="border"><border>2,0,1,0</border></param>
 		<param name="background"><image>ui-button-item-bag.background</image></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 	</theme>
 
 	<theme name="item-move-dialog-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
+		<param name="font"><font>main-highlight-tm-move-button</font></param>
+		<param name="font2"><font>main-highlight-tm-move-button2</font></param>
 		<param name="border"><border>12,15,17,15</border></param>
 		<param name="background"><image>button-learn-bag.background</image></param>
 		<param name="overlay"><image>TM-Button-Move-Overlay</image></param>
@@ -98,8 +98,8 @@
     </theme>
 
     <theme name="item-use-dialog-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-tm-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-tm-button</font></param>
+		<param name="font"><font>main-highlight-tm-button</font></param>
+		<param name="font2"><font>main-highlight-tm-button</font></param>
 		<param name="border"><border>12,15,17,15</border></param>
 		<param name="background"><image>button-learn-bag.background</image></param>
 		<param name="overlay"><image>TM-Button-Mon-Overlay</image></param>
@@ -112,7 +112,7 @@
 	<theme name="tm-button" ref="-defaults" allowWildcard="true">
 		<param name="background"><image>ui-button-tm.background</image></param>
 		<param name="border"><border>6,40,7,6</border></param>
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="minWidth"><int>242</int></param>
 		<param name="maxWidth"><int>242</int></param>
 		<param name="minHeight"><int>36</int></param>
@@ -135,7 +135,7 @@
 		<param name="mouseCursor"><cursor>mouseCursor.*</cursor></param>
 		<theme name="title" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">left</enum></param>
-			<param name="font"><font>alphabeta-white</font></param>
+			<param name="font"><font>main-white</font></param>
 		</theme>
 		<theme name="closeButton" ref="-defaults"/>
 		<theme name="resizeHandle" ref="-defaults"/>

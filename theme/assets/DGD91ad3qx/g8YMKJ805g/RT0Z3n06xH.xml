@@ -4,7 +4,7 @@
 	<theme name="link-status" ref="-defaults">
 		<theme name="link-slot" ref="resizableframe">
 			<theme name="label" ref="label">
-				<param name="font"><font>alphabeta-border</font></param>
+				<param name="font"><font>main-border</font></param>
 			</theme>
 			<param name="background"><image>label2.background</image></param>
 			<param name="minSize"><int>150</int></param>

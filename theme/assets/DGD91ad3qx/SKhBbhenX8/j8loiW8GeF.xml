@@ -252,7 +252,7 @@
 			<theme name="limited-time" ref="label">
 				<param name="border"><border>10,0,0,5</border></param>
 				<param name="textAlignment"><enum type="alignment">topright</enum></param>
-				<param name="font"><font>alphabeta-border-HUD</font></param>
+				<param name="font"><font>main-border-HUD</font></param>
 			</theme>
 			<theme name="label-special" ref="label-special">
 				<param name="background"><image>shop-item-limited-addon.background</image></param>
@@ -292,7 +292,7 @@
 		<theme name="limited-time" ref="label">
 				<param name="border"><border>5,0,5,5</border></param>
 				<param name="textAlignment"><enum type="alignment">topright</enum></param>
-				<param name="font"><font>alphabeta-border-HUD</font></param>
+				<param name="font"><font>main-border-HUD</font></param>
 		</theme>
 	</theme>
 

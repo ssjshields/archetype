@@ -17,11 +17,11 @@
 		</theme>
 		<theme name="contestresulttext" ref="label">
 			<param name="background"><image>chat-bubble.background</image></param>
-			<param name="font"><font>alphabeta-gray</font></param>
+			<param name="font"><font>main-gray</font></param>
 			<param name="border"><border>8</border></param>
 		</theme>
 		<theme name="redlabel" ref="label">
-			<param name="font"><font>alphabeta</font></param>
+			<param name="font"><font>main</font></param>
 		</theme>
 		<theme name="contestresultmeter" ref="-defaults">
 			<param name="border"><border>0</border></param>
@@ -30,14 +30,14 @@
 				<param name="border"><border>0</border></param>
 			</theme>
 			<theme name="label" ref="label">
-				<param name="font"><font>alphabeta-gray</font></param>
+				<param name="font"><font>main-gray</font></param>
 			</theme>
 		</theme>
 	</theme>
 
 	<theme name="contest-button" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>mechabold</font></param>
-		<param name="font2"><font>alphabeta</font></param>
+		<param name="font2"><font>main</font></param>
 		<param name="border"><border>0,0,13,0</border></param>
 		<param name=""><image>ui-contest-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -67,7 +67,7 @@
 
 	<theme name="contest-button-return" ref="button">
 		<param name=""><image>ui-contest-button.*</image></param>
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 	</theme>
 	
 	<theme name="contest-panel" ref="-defaults" allowWildcard="true">
@@ -96,7 +96,7 @@
 			<param name="largeGap"><dimension>15,15</dimension></param>
 			<param name="namedGaps"><map/></param>
 			<theme name="label-black" ref="-defaults" allowWildcard="true">
-				<param name="font"><font>alphabeta</font></param>
+				<param name="font"><font>main</font></param>
 				<param name="border"><border>0,0,25,0</border></param>
 			</theme>
 		</theme>
@@ -104,7 +104,7 @@
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
-					<param name="font"><font>alphabeta</font></param>
+					<param name="font"><font>main</font></param>
 					<param name="border"><border>2,0,4,10</border></param>
 					<param name=""><image>button-small.*</image></param>
 					<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
@@ -112,10 +112,10 @@
 			</theme>
 		</theme>
 		<theme name="label-black" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta</font></param>
+			<param name="font"><font>main</font></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta</font></param>
+			<param name="font"><font>main</font></param>
 			<param name="border"><border>2,0,4,10</border></param>
 			<param name=""><image>button-small.*</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>

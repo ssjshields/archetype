@@ -60,7 +60,7 @@
 	</theme>
 	
 	<theme name="translate-link" ref="button">
-		<param name="font"><font>alphabeta-orange-shadow</font></param>
+		<param name="font"><font>main-orange-shadow</font></param>
 		<param name="minWidth"><int>455</int></param>
 		<param name="maxWidth"><int>455</int></param>
 		<param name="minHeight"><int>31</int></param>
@@ -186,7 +186,7 @@
 							<param name="background"><image>none</image></param>
 							<param name="textAlignment"><enum type="alignment">left</enum></param>
 							<param name="border"><border>0,0,0,0</border></param>
-							<param name="font"><font>alphabeta</font></param>
+							<param name="font"><font>main</font></param>
 							<param name="maxWidth"><int>250</int></param>
 							<param name="minWidth"><int>120</int></param>
 						</theme>
@@ -229,7 +229,7 @@
 							<param name="background"><image>none</image></param>
 							<param name="textAlignment"><enum type="alignment">left</enum></param>
 							<param name="border"><border>3,0,0,0</border></param>
-							<param name="font"><font>alphabeta</font></param>
+							<param name="font"><font>main</font></param>
 							<param name="maxWidth"><int>250</int></param>
 							<param name="minWidth"><int>100</int></param>
 						</theme>

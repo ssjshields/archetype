@@ -41,17 +41,17 @@
       <param name="border"><border>8,5</border></param>
     </theme>
     <theme name="cell-markup" ref="cell">
-      <param name="font"><font>alphabeta-markup</font></param>
+      <param name="font"><font>main-markup</font></param>
       <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
     <theme name="cell-warn" ref="cell">
-      <param name="font"><font>alphabeta-yellow</font></param>
+      <param name="font"><font>main-yellow</font></param>
     </theme>
     <theme name="cell-danger" ref="cell">
-      <param name="font"><font>alphabeta-red</font></param>
+      <param name="font"><font>main-red</font></param>
     </theme>
     <theme name="cell-button" ref="cell">
-	  <param name="font"><font>alphabeta-highlight-button</font></param>
+	  <param name="font"><font>main-highlight-button</font></param>
       <param name="background"><image>ui-button.background</image></param>
       <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
@@ -75,12 +75,12 @@
       <param name="border"><border>5</border></param>
     </theme>
     <theme name="cell-markup" ref="label">
-      <param name="font"><font>alphabeta-markup</font></param>
+      <param name="font"><font>main-markup</font></param>
       <param name="background"><image>ui-inputbox.background</image></param>
       <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
     <theme name="cell-warn" ref="label">
-      <param name="font"><font>alphabeta-yellow</font></param>
+      <param name="font"><font>main-yellow</font></param>
       <param name="background"><image>ui-inputbox.background</image></param>
       <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
       <param name="border"><border>5</border></param>
@@ -88,7 +88,7 @@
       <param name="minWidth"><int>50</int></param>
     </theme>
     <theme name="cell-danger" ref="label">
-      <param name="font"><font>alphabeta-red</font></param>
+      <param name="font"><font>main-red</font></param>
       <param name="background"><image>ui-inputbox.background</image></param>
       <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
       <param name="border"><border>5</border></param>
@@ -96,7 +96,7 @@
       <param name="minWidth"><int>50</int></param>
     </theme>
     <theme name="cell-positive" ref="label">
-      <param name="font"><font>alphabeta-darkgreen</font></param>
+      <param name="font"><font>main-darkgreen</font></param>
       <param name="background"><image>ui-inputbox.background</image></param>
       <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
       <param name="border"><border>5</border></param>

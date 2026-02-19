@@ -45,7 +45,7 @@
 	<theme name="-input">
 		<param name="background"><image>none</image></param>
 		<param name="overlay"><image>none</image></param>
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 		<param name="textAlignment"><enum type="alignment">topleft</enum></param>
 		<param name="minWidth"><int>0</int></param>
 		<param name="minHeight"><int>0</int></param>
@@ -166,7 +166,7 @@
 	
 		
 	<theme name="button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="border"><border>7,0</border></param>
 		<param name=""><image>ui-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -193,14 +193,14 @@
 	</theme>
 		
 	<theme name="togglebutton" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="border"><border>0,0</border></param>
 		<param name="background"><image>ui-checkbox.background</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
 	<theme name="popup-button" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font"><font>main-chat-highlight-button</font></param>
 		<param name="border"><border>2,2</border></param>
 		<param name=""><image>ui-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -236,7 +236,7 @@
 			<theme name="display" ref="-defaults">
 				<param name="minHeight"><int>26</int></param>
 				<param name="minDisplayedRows"><int>1</int></param>
-				<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+				<param name="font"><font>main-chat-highlight-button</font></param>
 				<param name="border"><border>0,0,2,0</border></param>
 				<param name=""><image>ui-button.*</image></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -448,7 +448,7 @@
 				<param name="maxHeight"><int>34</int></param>
 				<param name="border"><border>2,3</border></param>
 				<theme name="label" ref="-defaults">
-					<param name="font"><font>alphabeta</font></param>
+					<param name="font"><font>main</font></param>
 					<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
 				</theme>
 				<theme name="label2" ref="-defaults">
@@ -796,7 +796,7 @@
 		<theme name="display" ref="-defaults">
 			<param name="minHeight"><int>26</int></param>
 			<param name="minDisplayedRows"><int>1</int></param>
-			<param name="font"><font>alphabeta-highlight-button</font></param>
+			<param name="font"><font>main-highlight-button</font></param>
 			<param name="border"><border>0,7</border></param>
 			<param name=""><image>ui-popup-button.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -806,7 +806,7 @@
 		<param name="rowMajor"><bool>true</bool></param>
 		<param name="fixedCellWidth"><bool>false</bool></param>
 		<param name="fixedCellHeight"><bool>false</bool></param>
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="border"><border>4,7</border></param>
 		<param name="textAlignment"><enum type="alignment">BOTTOM</enum></param>
 		<param name="maxHeight"><int>250</int></param>
@@ -903,7 +903,7 @@
 	</theme>
 
 	<theme name="fpscounter" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-border</font></param>
+		<param name="font"><font>main-border</font></param>
 		<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 	</theme>
 
@@ -1038,8 +1038,8 @@
 			<param name="minWidth"><int>500</int></param>
 			<param name="minHeight"><int>50</int></param>
 			<param name="fonts"><map>
-				<param name="default"><font>alphabeta</font></param>
-				<param name="link"><font>alphabeta-blue</font></param>
+				<param name="default"><font>main</font></param>
+				<param name="link"><font>main-blue</font></param>
 				<!--<param name="big-yellow"><font>mechabold-yellow</font></param>
 				<param name="big-red"><font>mechabold-red</font></param>-->
 			</map></param>
@@ -1149,8 +1149,8 @@
       <param name="minHeight"><int>50</int></param>
       <param name="fonts">
         <map>
-          <param name="default"><font>alphabeta</font></param>
-          <param name="link"><font>alphabeta-blue</font></param>
+          <param name="default"><font>main</font></param>
+          <param name="link"><font>main-blue</font></param>
         </map>
       </param>
       <param name="classes"><map/></param>
@@ -1174,7 +1174,7 @@
 				</theme>
 				<theme name="label-markup" ref="label" allowWildcard="true">
 					<param name="border"><border>0,0,12,0</border></param>
-					<param name="font"><font>alphabeta-markup</font></param>
+					<param name="font"><font>main-markup</font></param>
 				</theme>
 			</theme>
 		</theme>
@@ -1189,15 +1189,15 @@
         <param name="font"><font>mechabold-yellow</font></param>
       </theme>
       <theme name="label-default" ref="label" allowWildcard="true">
-        <param name="font"><font>alphabeta</font></param>
+        <param name="font"><font>main</font></param>
       </theme>
 			<theme name="textarea" ref="-defaults">
 				<param name="minWidth"><int>200</int></param>
 				<param name="minHeight"><int>25</int></param>
 				<param name="maxWidth"><int>700</int></param>
 				<param name="fonts"><map>
-					<param name="default"><font>alphabeta</font></param>
-					<param name="link"><font>alphabeta-blue</font></param>
+					<param name="default"><font>main</font></param>
+					<param name="link"><font>main-blue</font></param>
 				</map></param>
 			</theme>
 		</theme>
@@ -1224,7 +1224,7 @@
 		<param name="namedGaps"><map/></param>
 
 		<theme name="label" ref="label">
-			<param name="font"><font>alphabeta-white</font></param>
+			<param name="font"><font>main-white</font></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<theme name="button" ref="button">
@@ -1273,13 +1273,13 @@
 			<theme name="label" ref="-defaults">
 				<param name="border"><border>0</border></param>
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-				<param name="font"><font>alphabeta-white</font></param>
+				<param name="font"><font>main-white</font></param>
 			</theme>
 		</theme>
 		<theme name="label" ref="-defaults">
 			<param name="border"><border>5</border></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			<param name="font"><font>alphabeta-white</font></param>
+			<param name="font"><font>main-white</font></param>
 		</theme>
 		<theme name="closeButton" ref="-defaults">
 			<param name="background"><image>frame.closebutton.background</image></param>

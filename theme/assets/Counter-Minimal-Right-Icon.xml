@@ -16,7 +16,7 @@
     <theme name="content" ref="-defaults">
       <theme name="label" ref="label">
         <param name="minWidth"><int>2</int></param>
-        <param name="font"><font>alphabeta-border-enc</font></param>
+        <param name="font"><font>main-border-enc</font></param>
         <param name="border"><border>0,0,0,5</border></param>
         <param name="textAlignment"><enum type="alignment">BOTTOMLEFT</enum></param>
       </theme>
@@ -59,7 +59,7 @@
     <theme name="content" ref="-defaults">
       <param name="border"><border>0,0,0,0</border></param>
       <theme name="button" ref="label">
-        <param name="font"><font>alphabeta-highlight-button</font></param>
+        <param name="font"><font>main-highlight-button</font></param>
         <param name="border"><border>7,7</border></param>
         <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
       </theme>
@@ -73,7 +73,7 @@
         <param name="border"><border>5</border></param>
       </theme>
       <theme name="cell-markup" ref="cell">
-        <param name="font"><font>alphabeta-markup</font></param>
+        <param name="font"><font>main-markup</font></param>
         <param name="border"><border>5</border></param>
       </theme>
       <theme name="button-reset" ref="button">

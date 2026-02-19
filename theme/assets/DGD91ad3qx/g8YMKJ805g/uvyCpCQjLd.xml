@@ -55,7 +55,7 @@
 						<param name="namedGaps"><map/></param>
 						<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
 						<param name="font"><font>pb-dark-highlight-button</font></param>
-						<param name="font2"><font>alphabeta-highlight-button</font></param>
+						<param name="font2"><font>main-highlight-button</font></param>
 					</theme>
 				</theme>
 				<theme name="label" ref="label" allowWildcard="true">

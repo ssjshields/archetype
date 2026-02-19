@@ -116,7 +116,7 @@
 	</theme>
 
 	<theme name="time-progressbar" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-border-time</font></param>
+		<param name="font"><font>main-border-time</font></param>
 		<param name=""><image>time-progressbar.*</image></param>
 		<param name="border"><border>background.border</border></param>
 		<param name="minWidth"><int>100</int></param>
@@ -186,28 +186,28 @@
 		</theme>
 	</theme>
 	<theme name="battle-move-button-red" ref="battle-move-button" allowWildcard="true">
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font"><font>main-chat-highlight-button</font></param>
 	</theme>
 	<theme name="battle-move-button-green" ref="battle-move-button" allowWildcard="true">
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font"><font>main-chat-highlight-button</font></param>
 	</theme>
 	<theme name="battle-move-button-left" ref="battle-move-button" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-tm-move-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-tm-move-button2</font></param>
+		<param name="font"><font>main-highlight-tm-move-button</font></param>
+		<param name="font2"><font>main-highlight-tm-move-button2</font></param>
 	</theme>
 
 	<theme name="battle-button-return" ref="-defaults" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
 		<param name="border"><border>2,25,1,8</border></param>
 		<param name=""><image>battle-button-return.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
 			<!--<param name="border"><border>2,4</border></param>-->
-			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="font"><font>main-chat-highlight-button</font></param>
 		</theme>
 		<theme name="label-button" ref="label" allowWildcard="true">
 			<param name="border"><border>4,4,0,4</border></param>
-			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="font"><font>main-chat-highlight-button</font></param>
 		</theme>
 	</theme>
 	<theme name="battle-button-confirm" ref="battle-button-return" allowWildcard="true">
@@ -217,25 +217,25 @@
 	
 	<theme name="battle-button-register" ref="-defaults" allowWildcard="true">
 		<param name="border"><border>2,4,4,4</border></param>
-		<param name="font"><font>alphabeta-border</font></param>
+		<param name="font"><font>main-border</font></param>
 		<param name=""><image>battle-button.*</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
     </theme>
     <theme name="label-button" ref="label" allowWildcard="true">
-		<param name="font"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
     </theme>
 	</theme>
 	
 	<theme name="battle-button" ref="-defaults" allowWildcard="true">
 		<param name=""><image>battle-button-switch.*</image></param>
-		<param name="font"><font>alphabeta-highlight-button</font></param>
-		<param name="font2"><font>alphabeta-highlight-button</font></param>
+		<param name="font"><font>main-highlight-button</font></param>
+		<param name="font2"><font>main-highlight-button</font></param>
 		<param name="border"><border>7,0</border></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<theme name="label" ref="label" allowWildcard="true">
-			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="font"><font>main-chat-highlight-button</font></param>
 			<param name="border"><border>8,10,0,0</border></param>
 		</theme>
 		<theme name="monsterframe-hp-progressbar" ref="-defaults" allowWildcard="true">
@@ -257,12 +257,12 @@
 
 	<theme name="battle-button-ui" ref="-defaults" allowWildcard="true">
 		<param name=""><image>ui-button.*</image></param>
-		<param name="font"><font>alphabeta-chat-highlight-button</font></param>
-		<param name="font2"><font>alphabeta-chat-highlight-button</font></param>
+		<param name="font"><font>main-chat-highlight-button</font></param>
+		<param name="font2"><font>main-chat-highlight-button</font></param>
 		<param name="border"><border>7,0</border></param>
 		<theme name="label" ref="label" allowWildcard="true">
 			<param name="border"><border>3,3</border></param>
-			<param name="font"><font>alphabeta-chat-highlight-button</font></param>
+			<param name="font"><font>main-chat-highlight-button</font></param>
 		</theme>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
@@ -314,7 +314,7 @@
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
-					<param name="font"><font>alphabeta-highlight-button</font></param>
+					<param name="font"><font>main-highlight-button</font></param>
 					<param name="border"><border>0</border></param>
 					<param name=""><image>button-small.*</image></param>
 					<param name="textAlignment"><enum type="alignment">center</enum></param>
@@ -328,13 +328,13 @@
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
 		<theme name="label" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-main-system</font></param>
+			<param name="font"><font>main-main-system</font></param>
 			<param name="border"><border>0,5,0,0</border></param>
 			<param name="minWidth"><int>106</int></param>
 			<param name="maxWidth"><int>106</int></param>
 		</theme>
 		<theme name="button" ref="-defaults" allowWildcard="true">
-			<param name="font"><font>alphabeta-highlight-button</font></param>
+			<param name="font"><font>main-highlight-button</font></param>
 			<param name="border"><border>0,0,2,0</border></param>
 			<param name=""><image>button-small.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -393,7 +393,7 @@
 			<theme name="dialoglayout" ref="-dialog">
 				<param name="defaultGap"><dimension>0,0</dimension></param>
 				<theme name="button" ref="-defaults" allowWildcard="true">
-					<param name="font"><font>alphabeta-highlight-button</font></param>
+					<param name="font"><font>main-highlight-button</font></param>
 					<param name="border"><border>2,0,3,0</border></param>
 					<param name=""><image>button-small.*</image></param>
 					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
@@ -438,19 +438,19 @@
 	</theme>
 
 	<theme name="monster-preview-panel-label-red" ref="monster-preview-panel-label">
-		<param name="font"><font>alphabeta-red</font></param>
+		<param name="font"><font>main-red</font></param>
 	</theme>
 
 	<theme name="monster-preview-panel-label-grey" ref="monster-preview-panel-label">
-		<param name="font"><font>alphabeta</font></param>
+		<param name="font"><font>main</font></param>
 	</theme>
 
 	<theme name="monster-preview-panel-label-yellow" ref="monster-preview-panel-label">
-		<param name="font"><font>alphabeta-yellow</font></param>
+		<param name="font"><font>main-yellow</font></param>
 	</theme>
 
 	<theme name="monster-preview-panel-label-teal" ref="monster-preview-panel-label">
-		<param name="font"><font>alphabeta-teal</font></param>
+		<param name="font"><font>main-teal</font></param>
 	</theme>
 
 	<theme name="monster-preview-panel-label-padded" ref="monster-preview-panel-label">
