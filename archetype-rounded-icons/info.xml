@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- built on 31914 -->
-<resource name="Archetype Icons - Rounded" version="1.0" description="PokeMMO icon overhaul." author="nurver, realmadrid1809,&#10;AnonymousPoke, juanlatorre" weblink="https://forums.pokemmo.com/index.php?/topic/149494-gui-archetype">
+<!-- updated 41626 using revision 31914 -->
+<resource name="Archetype Icons - Rounded" version="1.1" description="PokeMMO icon overhaul." author="nurver, realmadrid1809,&#10;AnonymousPoke, juanlatorre" weblink="https://forums.pokemmo.com/index.php?/topic/149494-gui-archetype">
 	<overlays>
 		<overlay path="data/sprites/atlas/"/>
 	</overlays>
