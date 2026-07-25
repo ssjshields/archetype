@@ -248,6 +248,16 @@
 	</theme>
 	<theme name="editfield-fancy" ref="editfield"/>
 
+	<theme name="editfield-errorinfowindow" ref="-defaults">
+		<param name=""><image>ui-popup.*</image></param>
+		<param name="minHeight"><int>35</int></param>
+		<theme name="label" ref="-defaults">
+			<param name="border"><border>10</border></param>
+			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			<param name="font"><font>pb-dark</font></param>
+		</theme>
+	</theme>
+
 	<theme name="editfieldautocompletionwindow" ref="-defaults">
 		<theme name="listbox" ref="-defaults">
 			<param name="minDisplayedRows"><int>10</int></param>
@@ -418,6 +428,15 @@
 	</theme>
 
 	<theme name="comboboxPopup" ref="editfieldautocompletionwindow" allowWildcard="true">
+	    <param name="minWidth"><int>226</int></param>
+		<theme name="listbox" ref="listbox">
+		    <param name="maxWidth"><int>226</int></param>
+			<param name="border"><border>8,12,8,4</border></param>
+			<theme name="display" ref="display">
+				<param name="border"><border>0,0,2,0</border></param>
+				<param name="minWidth"><int>114</int></param>
+			</theme>
+		</theme>
 	</theme>
 
 	<theme name="valueadjuster" ref="-defaults" allowWildcard="true">
@@ -1067,6 +1086,58 @@
 		</theme>
 	</theme>
 
+	<theme name="colorselector" ref="dialoglayout">
+		<theme name="label" ref="label"/>
+		<theme name="colorarea1d" ref="-defaults">
+			<param name="background"><image>label5.background</image></param>
+			<param name="cursor"><image>label6.background</image></param>
+			<param name="border"><border>2</border></param>
+			<param name="minWidth"><int>30</int></param>
+			<param name="minHeight"><int>128</int></param>
+		</theme>
+		<theme name="colorarea2d" ref="-defaults">
+			<param name="background"><image>label5.background</image></param>
+			<param name="cursor"><image>label6.background</image></param>
+			<param name="border"><border>2</border></param>
+			<param name="minWidth"><int>128</int></param>
+			<param name="minHeight"><int>128</int></param>
+		</theme>
+		<theme name="valueadjuster" ref="valueadjuster">
+			<param name="maxWidth"><int>32767</int></param>
+		</theme>
+		<theme name="hexColorEditField" ref="editfield">
+			<param name="maxWidth"><int>32767</int></param>
+		</theme>
+		<theme name="previewLabel" ref="label">
+			<param name="text"><string>Current color:</string></param>
+		</theme>
+		<theme name="preview" ref="dialoglayout">
+			<param name="border"><border>2</border></param>
+			<param name="minWidth"><int>64</int></param>
+			<param name="minHeight"><int>64</int></param>
+			<theme name="colorarea" ref="-defaults">
+				<param name="background"><image>white.background</image></param>
+			</theme>
+			<theme name="previewLabel" ref="label">
+			</theme>
+		</theme>
+		<theme name="valueadjuster" ref="valueadjuster" allowWildcard="true">
+			<param name="width"><int>50</int></param>
+		</theme>
+		<param name="mouseCursor."><cursor>mouseCursor.*</cursor></param>
+	</theme>
+
+	<theme name="collapsiblemenu" ref="-defaults">
+		<param name="background"><image>ui-popup.background</image></param>
+		<param name="border"><border>6</border></param>
+		<theme name="expandbutton-closed" ref="togglebutton">
+			<param name="background"><image>ui-button.background</image></param>
+		</theme>
+		<theme name="expandbutton-open" ref="togglebutton">
+			<param name="background"><image>ui-button.background</image></param>
+		</theme>
+	</theme>
+
 	<theme name="gtl-buy-panel" ref="-defaults" allowWildcard="true">
     <param name="background"><image>ui-popup.background</image></param>
     <param name="border"><border>20</border></param>
@@ -1231,6 +1302,28 @@
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
 		<param name="namedGaps"><map/></param>
+		<theme name="scrollpane" ref="scrollpane">
+			<param name="minWidth"><int>500</int></param>
+			<theme name="trade-frame-confirm-dialog" ref="-defaults">
+				<param name="border"><border>0</border></param>
+				<param name="defaultGap"><dimension>5,5</dimension></param>
+				<param name="smallGap"><dimension>8,8</dimension></param>
+				<param name="mediumGap"><dimension>10,10</dimension></param>
+				<param name="largeGap"><dimension>15,15</dimension></param>
+				<param name="namedGaps"><map/></param>
+				<theme name="label" ref="label">
+					<param name="font"><font>pb-dark</font></param>
+					<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+				</theme>
+				<theme name="label-markup" ref="label">
+					<param name="font"><font>alphabeta-markup</font></param>
+				</theme>
+				<theme name="button" ref="button">
+					<param name="minWidth"><int>102</int></param>
+					<param name="minHeight"><int>30</int></param>
+				</theme>
+			</theme>
+		</theme>
 	</theme>
 
 	<theme name="confirm-panel-dialog" ref="-defaults">
@@ -1316,6 +1409,20 @@
 				<param name="minWidth"><int>100</int></param>
 				<param name="maxWidth"><int>188</int></param>
 			</theme>
+      <theme name="collapsiblemenu" ref="collapsiblemenu">
+        <theme name="label-title" ref="label" allowWildcard="true">
+          <param name="background"><image>ui-inputbox.background</image></param>
+          <param name="minWidth"><int>100</int></param>
+          <param name="border"><border>6</border></param>
+          <param name="font"><font>pb-dark</font></param>
+        </theme>
+        <theme name="label-settings-value" ref="-dialog" allowWildcard="true">
+          <theme name="togglebutton" ref="togglebutton">
+            <param name="maxWidth"><int>30</int></param>
+            <param name="maxHeight"><int>30</int></param>
+          </theme>
+        </theme>
+      </theme>
 		</theme>
 	</theme>
 </themes>

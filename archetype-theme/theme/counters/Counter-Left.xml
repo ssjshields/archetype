@@ -119,6 +119,7 @@
             </theme>
             <theme name="cell-center" ref="cell">
               <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+              <param name="minWidth"><int>130</int></param>
             </theme>
           </theme>
         </theme>

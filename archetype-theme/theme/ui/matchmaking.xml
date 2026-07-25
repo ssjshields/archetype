@@ -757,8 +757,8 @@
 	<theme name="tournament-signup" ref="game-mode" allowWildcard="true">
 		<param name="border"><border>10,10,10,10</border></param>
 		<param name="background"><image>ui-inputbox.default</image></param>
-		<param name="minHeight"><int>250</int></param>
-		<param name="minWidth"><int>580</int></param>
+		<param name="minHeight"><int>245</int></param>
+		<param name="minWidth"><int>550</int></param>
 
 		<theme name="label-game-mode" ref="button" allowWildcard="true">
 			<param name="background"><image>ui-header.background</image></param>

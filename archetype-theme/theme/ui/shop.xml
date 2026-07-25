@@ -111,8 +111,8 @@
 	<theme name="gameshop" ref="base-tabbed-frame">
 	<!--<param name="fadeColorInactive"><color>#EBFFFFFF</color></param>-->
 		<param name="background"><image>Gift-Shop-Window</image></param>
-		<param name="minWidth"><int>777</int></param>
-		<param name="minHeight"><int>593</int></param>
+		<param name="minWidth"><int>880</int></param>
+		<param name="minHeight"><int>595</int></param>
 		<param name="border"><border>26,0,3,5</border></param>
 		<param name="closeButtonY"><int>8</int></param>
 		<theme name="title" ref="title">
@@ -137,34 +137,38 @@
 				<param name="minWidth"><int>870</int></param>
 				<param name="background"><image>none</image></param>
 				<theme name="container" ref="-defaults">
-					<param name="border"><border>30,0,33,0</border></param>
+					<param name="border"><border>30,0,42,0</border></param>
 					<theme name="dialoglayout" ref="-defaults">
 
 						<theme name="dialoglayout" ref="-dialog">
 							<theme name="tabbedpane" ref="tabbedpane">
-								<param name="minWidth"><int>250</int></param>
+								<param name="minWidth"><int>850</int></param>
 								<param name="background"><image>none</image></param>
 								<param name="border"><border>0,0,0,0</border></param>
 								<theme name="tabbox" ref="-defaults">
 									<param name="border"><border>0,5,0,0</border></param>
 									<theme name="tabbutton" ref="button">
-										<param name="border"><border>10,5</border></param>
+										<param name="border"><border>25,5</border></param>
 									</theme>
-									<param name="spacing"><int>1</int></param>
+									<param name="spacing"><int>4</int></param>
 									<param name="alignment"><enum type="alignment">FILL</enum></param>
 								</theme>
 								<theme name="container" ref="-dialog">
 									<param name="border"><border>5,0,4,0</border></param>
 									<theme name="scrollpane" ref="scrollpane">
+										<param name="minWidth"><int>850</int></param>
 									</theme>
 									<theme name="sp" ref="scrollpane">
+										<param name="minWidth"><int>850</int></param>
 										<theme name="vscrollbar" ref="vscrollbar-white"/>
 										<theme name="hscrollbar" ref="hscrollbar"/>
 									</theme>
 								</theme>
 							</theme>
 						</theme>
-						<param name="border"><border>5,5</border></param>
+						<param name="border"><border>8,5</border></param>
+						<param name="minWidth"><int>850</int></param>
+						<param name="maxWidth"><int>850</int></param>
 						<param name="defaultGap"><dimension>5,5</dimension></param>
 						<param name="smallGap"><dimension>8,8</dimension></param>
 						<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -187,12 +191,12 @@
 		<param name="smallGap"><dimension>8,8</dimension></param>
 		<param name="mediumGap"><dimension>10,10</dimension></param>
 		<param name="largeGap"><dimension>15,15</dimension></param>
-		<param name="minWidth"><int>363</int></param>
-		<param name="maxWidth"><int>363</int></param>
+		<param name="minWidth"><int>420</int></param>
+		<param name="maxWidth"><int>420</int></param>
 		<param name="namedGaps"><map/></param>
 		<theme name="label" ref="-defaults">
 			<param name="font"><font>pb-dark</font></param>
-			<param name="minWidth"><int>281</int></param>
+			<param name="minWidth"><int>300</int></param>
 		</theme>
 		<theme name="item-name" ref="-defaults">
 			<param name="textAlignment"><enum type="alignment">left</enum></param>
