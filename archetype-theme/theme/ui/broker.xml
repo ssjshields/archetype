@@ -69,6 +69,50 @@
       </param>
     </theme>
 
+    <!-- Market Info Boxes -->
+    <theme name="box-double" ref="label">
+      <param name="font2"><font>pb-dark</font></param>
+      <param name="font"><font>pb-dark</font></param>
+      <param name="background"><image>ui-header.background</image></param>
+      <param name="textAlignment"><enum type="alignment">TOPLEFT</enum></param>
+      <param name="textAlignment2"><enum type="alignment">LEFT</enum></param>
+      <param name="border"><border>10</border></param>
+      <param name="minWidth"><int>50</int></param>
+    </theme>
+    <theme name="box-double-warn" ref="box-double">
+      <param name="font2"><font>alphabeta-yellow</font></param>
+    </theme>
+    <theme name="box-double-danger" ref="box-double">
+      <param name="font2"><font>pb-dark-red</font></param>
+    </theme>
+    <theme name="box-double-positive" ref="box-double">
+      <param name="font2"><font>pb-dark-green</font></param>
+    </theme>
+
+    <!-- Market Stack Info -->
+    <theme name="market-section-header" ref="label">
+      <param name="font"><font>alphabeta-white</font></param>
+    </theme>
+    <theme name="market-stack-progressbar" ref="-defaults">
+      <param name="fadeDurationShow"><int>200</int></param>
+      <param name="fadeDurationHide"><int>200</int></param>
+      <param name=""><image>progressbar-white.*</image></param>
+      <param name="border"><border>2,4</border></param>
+      <param name="minWidth"><int>200</int></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="market-stack-button" ref="label">
+      <param name="background"><image>ui-button.background</image></param>
+      <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+    </theme>
+    <theme name="market-stack-right" ref="label">
+      <param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
+      <param name="border"><border>5</border></param>
+    </theme>
+    <theme name="label-muted" ref="label">
+      <param name="font"><font>alphabeta-white</font></param>
+    </theme>
+
     <!-- Cells -->
     <!--<theme name="cell" ref="label">
       <param name="background"><image>ui-table-row.background</image></param>

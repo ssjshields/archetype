@@ -64,10 +64,10 @@
 	<theme name="battle-gui-self" ref="-defaults">
 		<param name="background"><image>battle-ui-self</image></param>
 		<param name="border"><border>0,0,0,0</border></param>
-	<theme name="health-label" ref="label" allowWildcard="true">
-      <param name="font"><font>mechabold</font></param>
-	  <param name="border"><border>4,0,0,0</border></param>
-    </theme>	
+		<theme name="health-label" ref="label" allowWildcard="true">
+			<param name="font"><font>mechabold</font></param>
+			<param name="border"><border>0,0,0,0</border></param>
+		</theme>
 	</theme>
 
 	<theme name="battle-gui-self-slim" ref="battle-gui-self">
@@ -300,6 +300,10 @@
 			<param name="mediumGap"><dimension>10,0</dimension></param>
 			<param name="largeGap"><dimension>15,0</dimension></param>
 			<param name="namedGaps"><map/></param>
+			<theme name="label-black" ref="-defaults" allowWildcard="true">
+				<param name="border"><border>25,5,0,5</border></param>
+				<param name="font"><font>battle-item</font></param>
+			</theme>
 			<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
 				<theme name="label-black" ref="-defaults" allowWildcard="true">
 					<param name="border"><border>25,5,0,5</border></param>
@@ -340,6 +344,10 @@
 			<param name=""><image>button-small.*</image></param>
 			<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		</theme>
+		<theme name="battle-text" ref="label" allowWildcard="true">
+			<param name="font"><font>battle</font></param>
+			<param name="border"><border>17,17,7,7</border></param>
+		</theme>
 	</theme>
 
 	<theme name="battle-text" ref="label" allowWildcard="true">
@@ -350,6 +358,9 @@
 	<theme name="battle-panel-dark" ref="battle-panel" allowWildcard="true">
 		<param name="background"><image>battle-learn-label</image></param>
 		<param name="border"><border>5,8,0,0</border></param>
+		<theme name="label-big" ref="label" allowWildcard="true">
+			<param name="font"><font>mechabold</font></param>
+		</theme>
 	</theme>
 	
 	<theme name="battle-item-usage-panel" ref="battle-panel" allowWildcard="true">
@@ -469,6 +480,9 @@
 		<param name="columnWidths">
 			<map><param name="0"><int>60</int></param></map>
 		</param>
+		<theme name="stringcellrenderer" ref="stringcellrenderer">
+			<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+		</theme>
 	</theme>
 	
 	<theme name="rbattle-big" ref="rbattle">
@@ -508,8 +522,6 @@
 	<theme name="battle-rock" ref="rbattle-big" allowWildcard="true">
 		<param name="overlay"><image>Battle-Fight-Icon</image></param>
 	</theme>
-	<!--
 	<theme name="battle-sheet" ref="rbattle-big" allowWildcard="true"/>
 	<theme name="battle-carving" ref="rbattle-big" allowWildcard="true"/>
-	-->
 </themes>

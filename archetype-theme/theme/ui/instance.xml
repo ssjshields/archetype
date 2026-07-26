@@ -3,7 +3,7 @@
 
 	<theme name="instance-window" ref="new-base-frame">
 		<param name="background"><image>Instance-Window</image></param>
-		<param name="border"><border>0,0,80,8</border></param>
+		<param name="border"><border>35,8,8,18</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<theme name="roster">
 				<param name="background"><image>none</image></param>
@@ -20,7 +20,7 @@
 				<param name="autoScrollSpeed"><int>10</int></param>
 				<theme name="dialoglayout" ref="-defaults">
 					<param name="background"><image>none</image></param>
-					<param name="border"><border>0,0,0,8</border></param>
+					<param name="border"><border>0,0,0,14</border></param>
 					<param name="defaultGap"><dimension>4,5</dimension></param>
 					<param name="smallGap"><dimension>8,8</dimension></param>
 					<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -79,7 +79,7 @@
 	</theme>
 
 	<theme name="instance-table" ref="table" allowWildcard="true">
-		<param name="border"><border>6,17,0,8</border></param>
+		<param name="border"><border>6,17,0,14</border></param>
 		<param name="columnWidths">
 			<map>
 				<param name="0"><int>font.EM * 6</int></param>

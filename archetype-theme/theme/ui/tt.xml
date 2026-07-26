@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+
+	<theme name="tt-window" ref="base-frame">
+    <theme name="dialoglayout" ref="dialoglayout">
+      
+    </theme>
+	</theme>
+
+	<theme name="tt-table" ref="table" allowWildcard="true">
+    <theme name="header-table" ref="table" allowWildcard="true">
+      <param name="headerRowBackground"><image>ui-header.background</image></param>
+    </theme>
+    <theme name="scrollpane" ref="scrollpane">
+      <theme name="content-table" ref="table" allowWildcard="true">
+        <param name="headerRowBackground"><image>ui-inputbox.background</image></param>
+        <param name="teamRowBackground"><image>ui-inputbox.selected</image></param>
+        <param name="contentRowBackground"><image>ui-inputbox.background</image></param>
+        
+        <param name="background"><image>ui-table-row.background</image></param>
+        <theme name="tt-your-team" ref="label">
+          <param name="font"><font>mechabold</font></param>
+          <param name="background"><image>ui-inputbox.background</image></param>
+          <param name="border"><border>0,0,2,0</border></param>
+        </theme>
+        <theme name="tt-slot-icon" ref="-defaults" allowWildcard="true">
+          <param name="background"><image>ui-table-row.background</image></param>
+          <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+        </theme>
+        <theme name="tt-guild-tag" ref="-defaults" allowWildcard="true">
+          <param name="background"><image>ui-table-row.background</image></param>
+          <param name="border"><border>0,0,2,0</border></param>
+        </theme>
+        <theme name="tt-playername" ref="label" allowWildcard="true"/>
+      </theme>
+    </theme>
+
+	</theme>
+</themes>

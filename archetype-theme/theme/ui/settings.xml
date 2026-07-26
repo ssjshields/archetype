@@ -78,6 +78,11 @@
 		<param name="minWidth"><int>80</int></param>
 		<param name="textAlignment"><enum type="alignment">center</enum></param>
 	</theme>
+
+	<theme name="editfield-settings-value-small" ref="editfield" allowWildcard="true">
+		<param name="minWidth"><int>40</int></param>
+		<param name="columns"><int>3</int></param>
+	</theme>
 	
 	<theme name="label-settings-value" ref="label" allowWildcard="true">
 		<param name="background"><image>none</image></param>
@@ -164,8 +169,17 @@
 		</theme>
 	</theme>
 
+	<theme name="settings-colorselector" ref="colorselector">
+      <theme name="colorarea2d" ref="colorarea2d">
+          <param name="minWidth"><int>210</int></param>
+      </theme>
+	</theme>
+
+  <theme name="settings-collapsiblemenu" ref="collapsiblemenu">
+  </theme>
+
 	<theme name="mods-panel" ref="new-base-frame" allowWildcard="true">
-		<param name="background"><image>Mod-Management-Window</image></param>
+			<param name="background"><image>Mod-Management-Window</image></param>
 			<param name="minHeight"><int>400</int></param>
 			<param name="minWidth"><int>612</int></param>
 		<theme name="dialoglayout" ref="-dialog">

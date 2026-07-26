@@ -20,6 +20,7 @@
 	<include filename="ui/matchmaking.xml"/>
 	<include filename="ui/social.xml"/>
 	<include filename="ui/instance.xml"/>
+	<include filename="ui/tt.xml"/>
 	<include filename="ui/trade.xml"/>
 	<include filename="ui/shop.xml"/>
 	<include filename="ui/link.xml"/>

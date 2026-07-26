@@ -258,6 +258,12 @@
                 <param name="font"><font>pb-dark</font></param>
                 <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
             </theme>
+            <theme name="label-danger" ref="label">
+                <param name="font"><font>pb-dark-red</font></param>
+            </theme>
+            <theme name="label-good" ref="label">
+                <param name="font"><font>pb-dark-green</font></param>
+            </theme>
         </theme>
     </theme>
     <theme name="scoreboard-table" ref="table" allowWildcard="true">
@@ -280,7 +286,7 @@
             </theme>
         </theme>
     </theme>
-    <theme name="donation-link-dialog" ref="new-base-frame">
+	<theme name="donation-link-dialog" ref="new-base-frame">
 		<param name="minWidth"><int>350</int></param>
 		<param name="minHeight"><int>150</int></param>
 		<theme name="dialoglayout" ref="-defaults" allowWildcard="true">
@@ -301,4 +307,22 @@
 			</theme>
 		</theme>
 	</theme>
+
+    <theme name="setko-judge" ref="confirm-widget">
+        <param name="background"><image>none</image></param>
+    </theme>
+
+    <theme name="setko-judge-dialog" ref="dialoglayout">
+        <param name="background"><image>label1.background</image></param>
+        <param name="minWidth"><int>450</int></param>
+        <param name="minHeight"><int>270</int></param>
+        <theme name="label" ref="label">
+            <param name="fadeDurationShow"><int>200</int></param>
+            <param name="fadeDurationHide"><int>0</int></param>
+            <param name="minWidth"><int>150</int></param>
+            <param name="minHeight"><int>50</int></param>
+            <param name="font"><font>mechabold</font></param>
+            <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+        </theme>
+    </theme>
 </themes>

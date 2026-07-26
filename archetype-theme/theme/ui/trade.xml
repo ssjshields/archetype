@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
 
-	<theme name="trade-frame" ref="base-tabbed-frame">
+	<theme name="trade-frame" ref="base-frame">
 	<param name="background"><image>Trade-Window</image></param>
+		<param name="border"><border>45,5,5,5</border></param>
 		<param name="closeButtonY"><int>13</int></param>
+		<theme name="title" ref="title">
+			<param name="border"><border>14,49,2,0</border></param>
+		</theme>
 		<theme name="dialoglayout" ref="dialoglayout">
-			<param name="border"><border>15,9,6,4</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -14,6 +17,10 @@
 			<theme name="label" ref="label" allowWildcard="true">
 				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 				<param name="minWidth"><int>250</int></param>
+			</theme>
+			<theme name="tooltip-button" ref="tooltip-button">
+				<param name="background"><image>trade-tooltip-button.background</image></param>
+				<param name="minHeight"><int>20</int></param>
 			</theme>
 			<theme name="dialoglayout" ref="-defaults">
 				<param name="background"><image>ui-header.background</image></param>
@@ -74,7 +81,6 @@
 					<param name="background"><image>ui-inputbox.background</image></param>
 					<param name="textAlignment"><enum type="alignment">left</enum></param>
 					<param name="border"><border>7,5</border></param>
-					<param name="maxWidth"><int>100</int></param>
 					<param name="minHeight"><int>20</int></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 				</theme>
@@ -82,8 +88,8 @@
 					<param name="background"><image>none</image></param>
 					<param name="textAlignment"><enum type="alignment">left</enum></param>
 					<param name="border"><border>0</border></param>
-					<param name="maxWidth"><int>50</int></param>
 					<param name="minWidth"><int>50</int></param>
+					<param name="displaySuffix"><string/></param>
 					<param name="font"><font>pb-dark-highlight-button</font></param>
 				</theme>
 			</theme>

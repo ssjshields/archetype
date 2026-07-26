@@ -274,6 +274,15 @@
 	</theme>
     </theme>
 
+  <theme name="battle-party-select" ref="-defaults" allowWildcard="true">
+    <theme name="label-monster-slot" ref="label" allowWildcard="true">
+      <param name="background"><image>ui-inputbox.default</image></param>
+    </theme>
+    <theme name="label-monster-violation" ref="label-monster-slot" allowWildcard="true">
+      <param name="background"><image>ui-inputbox.red</image></param>
+    </theme>
+  </theme>
+
 	<theme name="gamemenugui" ref="-defaults">
 		<theme name="game-menu-panel" ref="-defaults" allowWildcard="true">
 			<param name="background"><image>ui-popup.background</image></param>
@@ -422,6 +431,9 @@
 				<param name="background"><image>water-level.blue</image></param>
 				<param name="minWidth"><int>50</int></param>
 				<param name="minHeight"><int>15</int></param>
+			</theme>
+			<theme name="misc-nameplate-nobg" ref="-defaults">
+				<param name="background"><image>water-level.background</image></param>
 			</theme>
 			<param name="font"><font>alphabeta-border-overworld</font></param>
 		</theme>
@@ -866,6 +878,13 @@
 		<param name="border"><border>5,5,0,5</border></param>
 		<param name="maxWidth"><int>99</int></param>
 		<param name="minWidth"><int>77</int></param>
+	</theme>
+
+	<theme name="label-tooltip" ref="label" allowWildcard="true">
+		<param name="textAlignment"><enum type="alignment">left</enum></param>
+		<param name="maxWidth"><int>100</int></param>
+		<param name="minWidth"><int>60</int></param>
+		<param name="font"><font>tooltip-font</font></param>
 	</theme>
 
 	<theme name="labelanimation" ref="label" allowWildcard="true">

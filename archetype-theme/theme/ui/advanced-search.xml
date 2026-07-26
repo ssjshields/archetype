@@ -43,4 +43,8 @@
       </param>
     </theme>
   </theme>
+
+  <theme name="advanced-search-frame" ref="resizableframe">
+    <param name="minHeight"><int>600</int></param>
+  </theme>
 </themes>
