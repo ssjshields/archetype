@@ -621,22 +621,22 @@
 	</images>
 
 
-	<images file="../res/custom/backgrounds/unova/login-background-left.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-background-left.png" filter="linear">
 		<area name="login-background-left" xywh="*"/>
 	</images>
-	<images file="../res/custom/backgrounds/unova/login-background-right.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-background-right.png" filter="linear">
 		<area name="login-background-right" xywh="*"/>
 	</images>
 
 
-	<images file="../res/custom/backgrounds/unova/login-tailcover-left.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-tailcover-left.png" filter="linear">
 		<area name="login-tailcover-left" xywh="*"/>
 		<animation name="login-tailcover-left-animation" timeSource="enabled">
 			<frame ref="login-tailcover-left" tint="#00ffffff" duration="3000"/>
 			<frame ref="login-tailcover-left" tint="#eeffffff" duration="3000"/>
 		</animation>
 	</images>
-	<images file="../res/custom/backgrounds/unova/login-tailcover-right.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-tailcover-right.png" filter="linear">
 		<area name="login-tailcover-right" xywh="*"/>
 		<animation name="login-tailcover-right-animation" timeSource="enabled">
 			<frame ref="login-tailcover-right" tint="#00ffffff" duration="3000"/>
@@ -645,22 +645,22 @@
 	</images>
 
 
-	<images file="../res/custom/backgrounds/unova/login-legendary-left.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-legendary-left.png" filter="linear">
 		<area name="login-legendary-left" xywh="*"/>
 	</images>
-	<images file="../res/custom/backgrounds/unova/login-legendary-right.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-legendary-right.png" filter="linear">
 		<area name="login-legendary-right" xywh="*"/>
 	</images>
 
 
-	<images file="../res/custom/backgrounds/unova/login-overlay-left.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-overlay-left.png" filter="linear">
 		<area name="login-overlay-left" xywh="*" tint="reshiram-aura"/>
 		<animation name="login-overlay-left-animation" timeSource="enabled">
 			<frame ref="login-overlay-left" duration="3000"/>
 			<frame ref="login-overlay-left" tint="#40ffffff" duration="3000"/>
 		</animation>
 	</images>
-	<images file="../res/custom/backgrounds/unova/login-overlay-right.png" filter="lineal">
+	<images file="../res/custom/backgrounds/unova/login-overlay-right.png" filter="linear">
 		<area name="login-overlay-right" xywh="*" tint="zekrom-aura"/>
 		<animation name="login-overlay-right-animation" timeSource="enabled">
 			<frame ref="login-overlay-right" duration="3000"/>

@@ -241,7 +241,7 @@
 		</theme>
 	</theme>
     <theme name="scoreboard-window" ref="new-base-frame">
-        <param name="minWidth"><int>550</int></param>
+        <param name="maxHeight"><int>360</int></param>
         <param name="minHeight"><int>360</int></param>
         <theme name="dialoglayout" ref="-defaults" allowWildcard="true">
             <param name="background"><image>none</image></param>

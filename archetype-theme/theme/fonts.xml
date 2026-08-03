@@ -7,6 +7,7 @@
 	<fontDef name="battle-hp-text" filename="fonts/NotoSansCJK-Medium.ttc" color="icon-color" border_width="0.9" border_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="0" offsetX="-12"/>
 	<fontDef name="battle-item" filename="fonts/NotoSansCJK-Medium.ttc" color="icon-color" border_width="1.0" border_color="#80000000" shadow_offset_x="1" shadow_offset_y="1" shadow_color="#80000000" size="16" hinting="Medium" offsetY="6"/>
 	<fontDef name="braille" ref="battle" color="#000000"/>
+	<fontDef name="marquee" ref="battle" markup="true"/>
 	<fontDef name="move-name" filename="fonts/NotoSansCJK-Medium.ttc" faces="sc,tc,jp" color="font-button-color" kerning="true" hinting="AutoSlight" size="12" size_cjk="12">
 		<fontParam if="disabled" color="font-disabled-color"/>
 		<fontParam if="hover" color="font-main-color"/>

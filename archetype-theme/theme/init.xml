@@ -928,6 +928,9 @@
 			<map><param name="menuitem"><gap>0</gap></param></map>
 		</param>
 	</theme>
+	<theme name="menupopupbattle" ref="menupopup">
+		<param name="border"><border>2</border></param>
+	</theme>
 
 	<theme name="headshot-menu-button" ref="popup-button">
 		<param name="border"><border>5,8</border></param>

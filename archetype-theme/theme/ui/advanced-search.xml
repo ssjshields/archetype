@@ -44,6 +44,22 @@
     </theme>
   </theme>
 
+  <theme name="advanced-search-dex" ref="advanced-search-dialog">
+    <param name="border"><border>24,0,0,0</border></param>
+    <theme name="label-title-medium2" ref="label-title-medium2">
+      <param name="minWidth"><int>140</int></param>
+    </theme>
+    <theme name="valueadjuster" ref="valueadjuster">
+      <param name="minWidth"><int>150</int></param>
+    </theme>
+    <theme name="combobox" ref="combobox">
+      <param name="minWidth"><int>150</int></param>
+    </theme>
+    <theme name="editfield" ref="editfield">
+      <param name="minWidth"><int>150</int></param>
+    </theme>
+  </theme>
+
   <theme name="advanced-search-frame" ref="resizableframe">
     <param name="minHeight"><int>600</int></param>
   </theme>

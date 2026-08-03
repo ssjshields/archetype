@@ -306,11 +306,11 @@
 		</animation>
 	</images>
 
-	<images file="../res/custom/backgrounds/allstars/background.png" filter="lineal">
+	<images file="../res/custom/backgrounds/allstars/background.png" filter="linear">
 		<area name="login-background" xywh="*"/>
 	</images>
 
-	<images file="../res/custom/backgrounds/allstars/background-overlay-ray.png" filter="lineal">
+	<images file="../res/custom/backgrounds/allstars/background-overlay-ray.png" filter="linear">
 		<area name="login-background-overlay-ray" xywh="*"/>
 		<animation name="login-background-overlay-green" timeSource="enabled">
 			<frame ref="login-background-overlay-ray" tint="#57613b" duration="2000"/>
@@ -318,7 +318,7 @@
 		</animation>
 	</images>
 
-	<images file="../res/custom/backgrounds/allstars/background-overlay-arc.png" filter="lineal">
+	<images file="../res/custom/backgrounds/allstars/background-overlay-arc.png" filter="linear">
 		<area name="login-background-overlay-arc" xywh="*"/>
 		<animation name="login-background-overlay-yellow" timeSource="enabled">
 			<frame ref="login-background-overlay-arc" tint="#2d391d" duration="2000"/>
@@ -326,7 +326,7 @@
 		</animation>
 	</images>
 
-	<images file="../res/custom/backgrounds/allstars/background-overlay-mew.png" filter="lineal">
+	<images file="../res/custom/backgrounds/allstars/background-overlay-mew.png" filter="linear">
 		<area name="login-background-overlay-mew" xywh="*"/>
 		<animation name="login-background-overlay-purple" timeSource="enabled">
 			<frame ref="login-background-overlay-mew" tint="#5f4f78" duration="2000"/>
@@ -334,7 +334,7 @@
 		</animation>
 	</images>
 
-	<images file="../res/custom/backgrounds/allstars/background-overlay-kel.png" filter="lineal">
+	<images file="../res/custom/backgrounds/allstars/background-overlay-kel.png" filter="linear">
 		<area name="login-background-overlay-kel" xywh="*"/>
 		<animation name="login-background-overlay-blue" timeSource="enabled">
 			<frame ref="login-background-overlay-kel" tint="#2d4767" duration="2000"/>
