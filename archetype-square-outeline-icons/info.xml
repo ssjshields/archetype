@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- built on 31914 -->
-<resource name="Archetype Icons – Square Outline" version="1.0" description="PokeMMO icon overhaul." author="nurver, realmadrid1809,&#10;AnonymousPoke, Cruzi, juanlatorre" weblink="https://forums.pokemmo.com/index.php?/topic/149494-gui-archetype">
+<!-- updated 8-3-26 using revision 32710 -->
+<resource name="Archetype Icons – Square Outline" version="1.2" description="PokeMMO icon overhaul." author="nurver, realmadrid1809,&#10;AnonymousPoke, Cruzi, juanlatorre, Ryukotsuki" weblink="https://forums.pokemmo.com/index.php?/topic/149494-gui-archetype">
 	<overlays>
 		<overlay path="data/sprites/atlas/"/>
 	</overlays>
