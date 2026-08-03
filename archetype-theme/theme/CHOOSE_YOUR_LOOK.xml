@@ -23,7 +23,7 @@ Theme shape:
 1. Sharp.xml
 2. Round.xml
 
-Note: To change the icons (moveset, type, etc.) you must also change the "sprite_atlas=" options in the theme's info.xml! Found at "mods\archetype\info.xml"
+Note: Move, type, and other sprite icons are distributed as separate Archetype icon overlay mods. Select one icon mod in Mod Management; no info.xml edit is required.
 -->
 <include filename="shapes/Round.xml"/>
 

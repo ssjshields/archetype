@@ -1469,22 +1469,22 @@
     </composed>
   </images>
 
-  <images file="res/custom/top-left-notification/alert-background.png" filter="nearest">
+<images file="res/custom/top-left-notification/alert-background.png" filter="nearest">
     <area name="alert-background-fade" xywh="0,0,201,3" tint="sub-color"/>
     <grid name="alert-background" weightsX="0,0,1" weightsY="1" inset="0,-44,0,0">
       <alias ref="Pure-Left-Edge-3px" tint="main-color" sizeOverwriteH="3"/>
       <area xywh="*" tint="sub-color" sizeOverwriteH="201"/>
       <alias ref="none"/>
     </grid>
-    <grid name="alert-panel" weightsX="1" weightsY="0,0,1" inset="27,5,-27,15">
+    <grid name="alert-panel" weightsX="1" weightsY="0,0,1" inset="28,5,-28,-5">
       <grid weightsX="0,0,1" weightsY="1">
         <alias ref="Pure" tint="main-color" sizeOverwriteH="3" inset="0,-18"/>
-        <alias ref="alert-background-fade" sizeOverwriteH="201"/>
+        <alias ref="alert-background-fade" sizeOverwriteH="201" inset="-1,0,-4,0"/>
         <alias ref="none"/>
       </grid>
       <grid weightsX="0,0,1" weightsY="1" inset="22,0,-22,0">
         <alias ref="Pure" tint="main-color" sizeOverwriteH="3" inset="0,-18"/>
-        <alias ref="alert-background-fade" sizeOverwriteH="201"/>
+        <alias ref="alert-background-fade" sizeOverwriteH="201" inset="4,0,-9,0"/>
         <alias ref="none"/>
       </grid>
       <alias ref="none" tint="sub-color"/>
@@ -1616,7 +1616,11 @@
   <images file="res/custom/dex/PokeDex-Icon.png" filter="linear">
     <area name="PokeDex-Icon" xywh="*" splitx="L17,R0" splity="T17,B0"/>
     <composed name="PokeDex-Window">
-      <alias ref="Tabbed-Window-Background-Highlight"/>
+      <alias ref="Window-Background-Highlight"/>
+      <grid weightsX="1" weightsY="0,1" inset="34,5,5,5">
+        <alias ref="Pure-Top-Edge" tint="button-color" sizeOverwriteV="32"/>
+        <alias ref="none"/>
+      </grid>
       <alias ref="PokeDex-Icon" tint="icon-color" inset="10,15,0,0"/>
     </composed>
     <composed name="dex-button-active1">

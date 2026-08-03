@@ -125,7 +125,7 @@
 		<param name="border"><border>0,0,0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>9,30,9,14</border></param>
+			<param name="border"><border>11,30,9,14</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -227,6 +227,10 @@
 							</theme>
 						</theme>
 					</theme>
+				</theme>
+				<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+					<param name="border"><border>0,7,0,0</border></param>
+					<theme name="vscrollbar" ref="vscrollbar-white"/>
 				</theme>
 			</theme>
 			<param name="inputMap"><inputMapDef>
