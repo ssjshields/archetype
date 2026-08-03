@@ -547,12 +547,21 @@
       <alias ref="Window-Accent-Edge" tint="button-color"/>
     </composed>
 
+    <composed name="ui-dex-value.background" inset="1,-1,1,1">
+      <alias ref="Sub-Color-Pure-Edge"/>
+      <alias ref="Window-Accent-Edge" tint="button-color"/>
+    </composed>
+
+    <composed name="ui-dex-summary-button.background" inset="6,0,-6,0">
+      <alias ref="ui-button.background"/>
+    </composed>
+
     <composed name="gift-shop-limited.background" inset="1">
       <alias ref="Sub-Color-Pure-Edge"/>
       <alias ref="Window-Accent-Edge" tint="main-color"/>
     </composed>
 
-    <grid name="ui-dex-info.background" weightsX="117,270" weightsY="1" inset="0,0,0,-304">
+    <grid name="ui-dex-info.background" weightsX="117,270" weightsY="1" inset="0,0,0,-327">
       <alias ref="ui-header.background" inset="0,0,0,0"/>
       <alias ref="ui-table-row.background"/>
     </grid>
@@ -1642,27 +1651,27 @@
       <alias ref="Pure-Edge" tint="#60FFFFFF" if="hover | keyboardFocus"/>
       <alias ref="Window-Accent-Edge"/>
     </composed>
-    <composed name="PokeDex-Button" inset="-2,0,1,0">
+    <composed name="PokeDex-Button" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="button-color"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
-    <composed name="PokeDex-Caught" inset="-2,0,1,0">
+    <composed name="PokeDex-Caught" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="xp-color"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
-    <composed name="PokeDex-Caught-OT" inset="-2,0,1,0">
+    <composed name="PokeDex-Caught-OT" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="hp-high-color"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
-    <composed name="PokeDex-Caught-Alpha" inset="-2,0,1,0">
+    <composed name="PokeDex-Caught-Alpha" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="friendship-color"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
-    <composed name="PokeDex-Caught-Shiny" inset="-2,0,1,0">
+    <composed name="PokeDex-Caught-Shiny" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="#d4af37"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
-    <composed name="PokeDex-Caught-Costume" inset="-2,0,1,0">
+    <composed name="PokeDex-Caught-Costume" inset="0,0,1,0">
       <alias ref="PokeDex-Default" tint="#c68a55"/>
       <alias ref="dex-button-active" if="keyboardFocus"/>
     </composed>
@@ -2217,6 +2226,10 @@
         <alias ref="ui-button.default"/>
       </select>
       <alias ref="ui-checkbox.animation" if="selected"/>
+    </composed>
+
+    <composed name="ui-dex-summary-toggle.background" inset="6,0,-6,0">
+      <alias ref="ui-checkbox.background"/>
     </composed>
 
     <composed name="ui-spacer.default" sizeOverwriteH="8" sizeOverwriteV="3" inset="1">
