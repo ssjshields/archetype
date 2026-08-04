@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <themes>
-	<images file="../res/custom/shapes/round/Highlight-Overlay.png" filter="lineal">
+	<images file="../res/custom/shapes/round/Highlight-Overlay.png" filter="linear">
 		<area name="Highlight-Overlay-Asset" xywh="*" splitx="L5,R5" splity="T5,B5"/>
 		<animation name="Highlight-Overlay" inset="2" timeSource="selected" if="hover | keyboardFocus">
 			<frame duration="2000" ref="Highlight-Overlay-Asset" tint="#80FFFFFF"/>

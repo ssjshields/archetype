@@ -75,7 +75,7 @@
 
 	<theme name="inventory-tab-empty" ref="-defaults" allowWildcard="true">
 		 <param name="background"><image>bag-tab.background</image></param>
-		 <param name="border"><border>29,6</border></param>
+		 <param name="border"><border>17,6</border></param>
 	</theme>
 
 	<theme name="inventory-button" ref="-defaults" allowWildcard="true">

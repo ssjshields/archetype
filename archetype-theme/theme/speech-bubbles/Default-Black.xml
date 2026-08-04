@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><themes>
 	<fontDef name="messagebox" filename="../fonts/NotoSansCJK-Medium.ttc" faces="sc,tc,jp" color="#ffffff" kerning="false" hinting="Medium" size="24" shadow_color="#40000000" shadow_offset_x="1" shadow_offset_y="1" border_width="0" border_color="#484848"/>
 
-	<images file="../res/custom/chat/text-bubble-black.png" filter="lineal">
+	<images file="../res/custom/chat/text-bubble-black.png" filter="linear">
 		<area name="text-bubble.background" xywh="0,0,128,128" splitx="L63,R63" splity="T63,B63"/>
 
 

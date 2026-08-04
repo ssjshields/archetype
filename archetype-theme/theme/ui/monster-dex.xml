@@ -27,6 +27,12 @@
 	<theme name="monsterdex-button-caught-alpha" ref="monsterdex-button" allowWildcard="true">
 		<param name="background"><image>PokeDex-Caught-Alpha</image></param>
 	</theme>
+	<theme name="monsterdex-button-caught-shiny" ref="monsterdex-button" allowWildcard="true">
+		<param name="background"><image>PokeDex-Caught-Shiny</image></param>
+	</theme>
+	<theme name="monsterdex-button-caught-costume" ref="monsterdex-button" allowWildcard="true">
+		<param name="background"><image>PokeDex-Caught-Costume</image></param>
+	</theme>
 
 	<theme name="monsterdex-button-evo-tree" ref="-defaults" allowWildcard="true">
 		<param name="font"><font>symbols-white-no-highlight</font></param>
@@ -44,33 +50,35 @@
 		<param name="minHeight"><int>510</int></param>
 		<param name="spacing"><int>0</int></param>
 		<param name="alignment"><enum type="alignment">LEFT</enum></param>
-		<theme name="widget" ref="label" allowWildcard="true">
+		<theme name="stat-widget" ref="label" allowWildcard="true">
 			<param name="background"><image>ui-header.background</image></param>
 			<param name="textAlignment"><enum type="alignment">RIGHT</enum></param>
-			<param name="border"><border>38,30,0,0</border></param>
-			<param name="minWidth"><int>311</int></param>
-			<param name="minHeight"><int>77</int></param>
+			<param name="border"><border>38,5,0,5</border></param>
 			<param name="font"><font>pb-dark</font></param>
 
-			<theme name="progressbar-hp" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar" ref="-defaults">
+				<param name="minWidth"><int>148</int></param>
+				<param name="minHeight"><int>10</int></param>
+			</theme>
+			<theme name="progressbar-hp" ref="progressbar" allowWildcard="true">
 				<param name=""><image>mi-hpbar-green.*</image></param>
 			</theme>
-			<theme name="progressbar-attack" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-attack" ref="progressbar" allowWildcard="true">
 				<param name=""><image>mi-hpbar-red.*</image></param>
 			</theme>
-			<theme name="progressbar-defense" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-defense" ref="progressbar" allowWildcard="true">
 				<param name=""><image>progressbar-orange.*</image></param>
 			</theme>
-			<theme name="progressbar-spatk" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-spatk" ref="progressbar" allowWildcard="true">
 				<param name=""><image>mi-hpbar-violet.*</image></param>
 			</theme>
-			<theme name="progressbar-spdef" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-spdef" ref="progressbar" allowWildcard="true">
 				<param name=""><image>mi-hpbar-orange.*</image></param>
 			</theme>
-			<theme name="progressbar-speed" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-speed" ref="progressbar" allowWildcard="true">
 				<param name=""><image>mi-xpbar.*</image></param>
 			</theme>
-			<theme name="progressbar-total" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-total" ref="progressbar" allowWildcard="true">
 				<param name=""><image>progressbar-white.*</image></param>
 			</theme>
 		</theme>
@@ -83,12 +91,36 @@
 			<param name="minHeight"><int>20</int></param>
 			<param name="font"><font>pb-dark</font></param>
 		</theme>
+		<theme name="boxlayout" ref="-defaults" allowWildcard="true">
+			<param name="minHeight"><int>30</int></param>
+			<param name="spacing"><int>15</int></param>
+			<param name="alignment"><enum type="alignment">LEFT</enum></param>
+		</theme>
 	</theme>
 
-	<theme name="boxlayout" ref="-defaults" allowWildcard="true">
-		<param name="minHeight"><int>30</int></param>
-		<param name="spacing"><int>0</int></param>
-		<param name="alignment"><enum type="alignment">LEFT</enum></param>
+	<theme name="wildlocations" ref="-defaults">
+		<theme name="tabbedpane" ref="base-tabbed-pane">
+			<param name="minWidth"><int>100</int></param>
+			<param name="tabPosition"><enum type="tabposition">TOP_RIGHT</enum></param>
+			<theme name="tabbox" ref="tabbox">
+				<param name="spacing"><int>2</int></param>
+				<param name="alignment"><enum type="alignment">FILL</enum></param>
+				<theme name="tabbutton" ref="tabbutton">
+					<param name="border"><border>0,20,0,20</border></param>
+				</theme>
+			</theme>
+			<theme name="container" ref="container">
+				<param name="border"><border>10,9,8,5</border></param>
+				<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+					<theme name="vscrollbar" ref="vscrollbar-white"/>
+					<param name="minWidth"><int>630</int></param>
+				</theme>
+			</theme>
+			<param name="inputMap"><inputMapDef>
+				<action name="nextTab">CTRL TAB</action>
+				<action name="prevTab">CTRL SHIFT TAB</action>
+			</inputMapDef></param>
+		</theme>
 	</theme>
 
 	<theme name="monsterdex-frame" ref="base-tabbed-frame">
@@ -96,7 +128,7 @@
 		<param name="border"><border>0,0,0,0</border></param>
 		<theme name="dialoglayout" ref="dialoglayout">
 			<param name="background"><image>none</image></param>
-			<param name="border"><border>9,30,9,14</border></param>
+			<param name="border"><border>11,30,9,14</border></param>
 			<param name="defaultGap"><dimension>5,5</dimension></param>
 			<param name="smallGap"><dimension>8,8</dimension></param>
 			<param name="mediumGap"><dimension>10,10</dimension></param>
@@ -109,37 +141,30 @@
 				<param name="background"><image>bag-category-label</image></param>
 				<param name="border"><border>0,15,0,0</border></param>
 			</theme>
-			<theme name="progressbar-blue" ref="-defaults" allowWildcard="true">	
+			<theme name="progressbar-base" ref="-defaults" allowWildcard="true">
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="minWidth"><int>148</int></param>
+				<param name="minHeight"><int>8</int></param>
+				<param name="maxHeight"><int>8</int></param>
+				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			</theme>
+			<theme name="progressbar-blue" ref="progressbar-base" allowWildcard="true">
 				<param name=""><image>mi-xpbar.*</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>148</int></param>
-				<param name="minHeight"><int>8</int></param>
-				<param name="maxHeight"><int>8</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
-			<theme name="progressbar-green" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-green" ref="progressbar-base" allowWildcard="true">
 				<param name=""><image>mi-hpbar-green.*</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>148</int></param>
-				<param name="minHeight"><int>8</int></param>
-				<param name="maxHeight"><int>8</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 			</theme>
-			<theme name="progressbar-white" ref="-defaults" allowWildcard="true">
-				<param name=""><image>progressbar-white.*</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>148</int></param>
-				<param name="minHeight"><int>8</int></param>
-				<param name="maxHeight"><int>8</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
-			</theme>
-			<theme name="progressbar-pink" ref="-defaults" allowWildcard="true">
+			<theme name="progressbar-pink" ref="progressbar-base" allowWildcard="true">
 				<param name=""><image>mi-hpbar-violet.*</image></param>
-				<param name="border"><border>0,0,0,0</border></param>
-				<param name="minWidth"><int>148</int></param>
-				<param name="minHeight"><int>8</int></param>
-				<param name="maxHeight"><int>8</int></param>
-				<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+			</theme>
+			<theme name="progressbar-gold" ref="progressbar-base" allowWildcard="true">
+				<param name=""><image>progressbar-gold.*</image></param>
+			</theme>
+			<theme name="progressbar-white" ref="progressbar-base" allowWildcard="true">
+				<param name=""><image>progressbar-white.*</image></param>
+			</theme>
+			<theme name="progressbar-orange" ref="progressbar-base" allowWildcard="true">
+				<param name=""><image>progressbar-orange.*</image></param>
 			</theme>
 			<theme name="togglebutton" ref="togglebutton" allowWildcard="true">
 				<param name="border"><border>0,0,0,0</border></param>
@@ -159,17 +184,32 @@
 					</theme>
 				</theme>
 			</theme>
+			<theme name="location-button" ref="button" allowWildcard="true">
+				<param name="border"><border>0,0,0,0</border></param>
+				<param name="minWidth"><int>32</int></param>
+			</theme>
 			<theme name="combobox" ref="combobox" allowWildcard="true">
+				<param name="border"><border>10,1</border></param>
+			</theme>
+			<theme name="combobox-small" ref="combobox" allowWildcard="true">
+				<param name="minWidth"><int>100</int></param>
+				<theme name="display" ref="display">
+					<param name="minWidth"><int>50</int></param>
+				</theme>
 			</theme>
 		</theme>
 		<theme name="tabbedpane" ref="base-tabbed-pane">
 			<param name="background"><image>none</image></param>
 			<param name="minWidth"><int>100</int></param>
-			<param name="minHeight"><int>620</int></param>
+			<param name="minHeight"><int>635</int></param>
+			<param name="maxHeight"><int>635</int></param>
 			<param name="border"><border>35,0,10,0</border></param>
 			<theme name="tabbox" ref="tabbox">
 				<param name="border"><border>1,30,0,0</border></param>
 				<param name="alignment"><enum type="alignment">FILL</enum></param>
+				<theme name="tabbutton" ref="tabbutton">
+					<param name="border"><border>0,20,0,20</border></param>
+				</theme>
 			</theme>
 			<theme name="container" ref="container">
 				<param name="border"><border>7,0,0,0</border></param>
@@ -182,11 +222,17 @@
 					<param name="namedGaps"><map/></param>
 					<theme name="button" ref="button" allowWildcard="true">
 						<param name="font"><font>alphabeta-highlight-button</font></param>
-						<param name="border"><border>7,0</border></param>
+						<param name="background"><image>ui-dex-summary-button.background</image></param>
+						<param name="border"><border>13,0,1,0</border></param>
+						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
+					</theme>
+					<theme name="togglebutton" ref="togglebutton" allowWildcard="true">
+						<param name="background"><image>ui-dex-summary-toggle.background</image></param>
+						<param name="border"><border>9,0,0,0</border></param>
+						<param name="minWidth"><int>20</int></param>
 						<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 					</theme>
 					<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
-						<param name="minWidth"><int>630</int></param>
 						<param name="border"><border>0,0,0,9</border></param>
 						<theme name="vscrollbar" ref="vscrollbar-white">
 							<theme name="downbutton" ref="-defaults">
@@ -194,6 +240,10 @@
 							</theme>
 						</theme>
 					</theme>
+				</theme>
+				<theme name="scrollpane" ref="scrollpane" allowWildcard="true">
+					<param name="border"><border>2,7,2,7</border></param>
+					<theme name="vscrollbar" ref="vscrollbar-white"/>
 				</theme>
 			</theme>
 			<param name="inputMap"><inputMapDef>
@@ -211,20 +261,33 @@
     </theme>
 
     <theme name="label-title-dex" ref="label" allowWildcard="true">
-        <param name="background"><image>ui-dex-info.background</image></param>
+        <param name="background"><image>ui-header.background</image></param>
         <param name="border"><border>17,5,18,5</border></param>
         <param name="minWidth"><int>130</int></param>
         <param name="textAlignment"><enum type="alignment">CENTER</enum></param>
     </theme>
 
     <theme name="label-value-dex2" ref="label" allowWildcard="true">
-        <param name="background"><image>none</image></param>
+        <param name="background"><image>ui-dex-value.background</image></param>
         <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
         <param name="border"><border>0,10,0,12</border></param>
         <param name="minWidth"><int>304</int></param>
         <param name="minHeight"><int>46</int></param>
         <param name="font"><font>pb-dark</font></param>
+        <theme name="label-value-dex2" ref="label">
+            <param name="background"><image>none</image></param>
+            <param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+            <param name="border"><border>0,10,0,12</border></param>
+            <param name="minWidth"><int>180</int></param>
+            <param name="minHeight"><int>46</int></param>
+            <param name="font"><font>pb-dark</font></param>
+        </theme>
     </theme>
+
+	<theme name="label-value-dex2-nobg" ref="label-value-dex2" allowWildcard="true">
+		<param name="minWidth"><int>215</int></param>
+		<param name="background"><image>none</image></param>
+	</theme>
 	
 
 	<theme name="label-value-dex" ref="label" allowWildcard="true">
@@ -249,6 +312,17 @@
 		<param name="border"><border>1</border></param>
 		<param name="minWidth"><int>74</int></param>
 		<param name="font"><font>pb-dark</font></param>
+	</theme>
+
+	<theme name="label-value-dex-small-nobg" ref="label-value-dex-small" allowWildcard="true">
+		<param name="background"><image>none</image></param>
+		<param name="border"><border>5</border></param>
+		<param name="minWidth"><int>0</int></param>
+		<param name="textAlignment"><enum type="alignment">LEFT</enum></param>
+	</theme>
+	<theme name="label-value-dex-small-nobg-noborder" ref="label-value-dex-small-nobg" allowWildcard="true">
+		<param name="border"><border>0</border></param>
+		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 	</theme>
 
 	<theme name="label-value-dex-type" ref="label" allowWildcard="true">
@@ -279,7 +353,7 @@
 		<param name="background"><image>ui-table-row.background</image></param>
 		<param name="textAlignment"><enum type="alignment">CENTER</enum></param>
 		<param name="border"><border>5</border></param>
-		<param name="minWidth"><int>241</int></param>
+		<param name="minWidth"><int>151</int></param>
 		<param name="minHeight"><int>30</int></param>
 		<param name="font"><font>pb-dark</font></param>
 	</theme>
@@ -306,6 +380,10 @@
 
 	<theme name="label-title-dex-name" ref="label-value-dex-name" allowWildcard="true">
 		<param name="background"><image>ui-header.background</image></param>
+	</theme>
+
+	<theme name="label-title-dex-long-but-not-to-long" ref="label-title-dex-name" allowWildcard="true">
+		<param name="minWidth"><int>125</int></param>
 	</theme>
 
 	<theme name="dex-move-table" ref="table" allowWildcard="true">
