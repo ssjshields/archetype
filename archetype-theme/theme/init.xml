@@ -1298,6 +1298,8 @@
 	<theme name="trade-confirm-widget" ref="confirm-widget">
 		<param name="minWidth"><int>500</int></param>
 		<param name="minHeight"><int>250</int></param>
+		<!-- Keep large multi-Pokemon trades inside the viewport; the child scrollpane handles overflow. -->
+		<param name="maxHeight"><int>600</int></param>
 
 		<param name="border"><border>5</border></param>
 		<param name="defaultGap"><dimension>5,5</dimension></param>
